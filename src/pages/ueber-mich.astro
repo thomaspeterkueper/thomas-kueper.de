@@ -1,0 +1,29 @@
+---
+// Pfad: src/pages/ueber-mich.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import authorPortrait from '../assets/header-avatar.jpg'; 
+---
+
+<BaseLayout title="Über mich" description="Thomas Peter Küper — Autor, Weltenbauer und IT-Consultant.">
+  <style>
+    .about-page { max-width: 900px; margin: 0 auto; padding: 6rem 2rem; font-family: 'Libre Baskerville', serif; line-height: 1.9; }
+    .about-hero h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; text-transform: uppercase; letter-spacing: 0.2em; text-align: center; margin-bottom: 4rem; }
+    .split-section { display: grid; grid-template-columns: 320px 1fr; gap: 5rem; align-items: start; }
+    .portrait-img { width: 100%; border: 1px solid var(--border); box-shadow: 0 20px 50px rgba(0,0,0,0.08); }
+    .text-gold { color: var(--gold); font-weight: bold; }
+  </style>
+
+  <article class="about-page">
+    <header class="about-hero">
+      <h1>Thomas Peter Küper</h1>
+    </header>
+
+    <div class="split-section">
+      <img src={authorPortrait.src} alt="Porträt" class="portrait-img" />
+      <div class="bio-text">
+        <p>Ich bin IT-Consultant mit über 30 Jahren Erfahrung und Weltenbauer aus Leidenschaft. In meiner Arbeit verbinde ich die Präzision technischer Architekturen mit der Tiefe philosophischer Fragen.</p>
+        <p>Mein Fokus liegt auf der <span class="text-gold">Omnizedenz</span> – dem Verständnis der Welt als Resonanzraum.</p>
+      </div>
+    </div>
+  </article>
+</BaseLayout>

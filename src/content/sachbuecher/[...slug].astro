@@ -1,0 +1,164 @@
+---
+// Pfad: src/pages/sachbuecher/[...slug].astro
+// Erstellt am: 07.02.2026, 18:58
+
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+// getStaticPaths erzeugt für jede Datei in src/content/sachbuecher/ eine eigene URL
+export async function getStaticPaths() {
+  const entries = await getCollection('sachbuecher');
+  return entries.map(entry => ({
+    params: { slug: entry.slug }, props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const { data } = entry;
+---
+
+<BaseLayout title={data.title} description={data.description} type="article">
+  <style is:inline>
+    .academic-wrapper {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 6rem 2rem 10rem;
+      font-family: 'Libre Baskerville', serif;
+      line-height: 1.8;
+      color: #1a1a1a;
+    }
+
+    .paper-header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 3rem;
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+
+    .journal-label {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #888;
+      display: block;
+      margin-bottom: 2rem;
+    }
+
+    .paper-title {
+      font-family: 'Crimson Pro', serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 300;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+
+    .metadata-line {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.85rem;
+      color: #666;
+      margin: 0.5rem 0;
+    }
+
+    .author-line {
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .abstract-section {
+      background: #faf9f6;
+      padding: 3rem;
+      border: 1px solid #eee;
+      margin: 4rem 0;
+    }
+
+    .abstract-section h2 {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #C9A961; /* Kupfer-Gold */
+      margin-bottom: 1.5rem;
+    }
+
+    .abstract-text {
+      font-style: italic;
+      color: #444;
+      font-size: 1.05rem;
+    }
+
+    .prose-content h2 {
+      font-family: 'Crimson Pro', serif;
+      font-size: 2.2rem;
+      margin: 5rem 0 2rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+
+    .prose-content p {
+      margin-bottom: 1.8rem;
+      text-align: justify;
+    }
+
+    .formula-box {
+      margin: 4rem 0;
+      padding: 3rem;
+      background: #1a1a1a;
+      color: #fff;
+      text-align: center;
+      font-family: 'Crimson Pro', serif;
+      font-size: 1.8rem;
+      border-radius: 4px;
+    }
+
+    .back-nav {
+      margin-top: 8rem;
+      text-align: center;
+      border-top: 1px solid #eee;
+      padding-top: 4rem;
+    }
+
+    @media (max-width: 800px) {
+      .academic-wrapper { padding-top: 4rem; }
+      .abstract-section { padding: 2rem; }
+    }
+  </style>
+
+  <article class="academic-wrapper">
+    <header class="paper-header">
+      <span class="journal-label">
+        {data.journal ? data.journal : (data.type === 'paper' ? 'Scientific Publication' : 'Research Monograph')}
+      </span>
+      <h1 class="paper-title">{data.title}</h1>
+      
+      <div class="metadata-line">
+        {data.genre && <span>{data.genre}</span>}
+        {data.status && <span> • {data.status}</span>}
+      </div>
+
+      <p class="author-line">Thomas Peter Küper</p>
+      
+      {data.doi && <p style="font-size: 0.7rem; color: #888; margin-top: 1rem;">DOI: {data.doi}</p>}
+    </header>
+
+    {data.abstract && (
+      <section class="abstract-section">
+        <h2>Abstract</h2>
+        <div class="abstract-text">{data.abstract}</div>
+      </section>
+    )}
+
+    <div class="prose-content">
+      <Content />
+    </div>
+
+    <footer class="back-nav">
+      <a href="/sachbuecher" style="text-decoration: none; color: #888; font-family: 'Lato', sans-serif; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">
+        ← Zurück zur Forschung
+      </a>
+    </footer>
+  </article>
+</BaseLayout>

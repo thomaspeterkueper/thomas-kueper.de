@@ -1,0 +1,124 @@
+---
+// Pfad: src/pages/philosophie/[...slug].astro
+// Erstellt am: 07.02.2026, 19:01
+
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('philosophie');
+  return entries.map(entry => ({
+    params: { slug: entry.slug }, props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const { data } = entry;
+---
+
+<BaseLayout title={data.title} description={data.teaser}>
+  <style is:inline>
+    .philosophy-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 8rem 2rem;
+      font-family: 'Libre Baskerville', serif;
+      line-height: 2;
+      color: #333;
+    }
+
+    .concept-header {
+      text-align: center;
+      margin-bottom: 6rem;
+    }
+
+    .concept-category {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #C9A961; /* Kupfer-Gold */
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+
+    .concept-title {
+      font-family: 'Crimson Pro', serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 200;
+      line-height: 1.1;
+      color: #2C4E7A; /* Warmes Dunkelblau */
+      margin-bottom: 1rem;
+    }
+
+    .teaser-box {
+      font-size: 1.25rem;
+      font-style: italic;
+      color: #666;
+      margin-bottom: 5rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .prose-block h2 {
+      font-family: 'Crimson Pro', serif;
+      font-size: 2.2rem;
+      margin: 4rem 0 1.5rem;
+      color: #1a1a1a;
+    }
+
+    .prose-block p { margin-bottom: 2rem; }
+
+    .tag-cloud {
+      margin-top: 6rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 0.4rem 1rem;
+      border: 1px solid #eee;
+      color: #888;
+    }
+
+    .footer-nav {
+      text-align: center;
+      margin-top: 8rem;
+      padding-top: 4rem;
+      border-top: 1px solid #eee;
+    }
+  </style>
+
+  <article class="philosophy-wrapper">
+    <header class="concept-header">
+      <span class="concept-category">{data.category}</span>
+      <h1 class="concept-title">{data.title}</h1>
+      {data.subtitle && <p style="font-size: 1.2rem; opacity: 0.6;">{data.subtitle}</p>}
+    </header>
+
+    <div class="teaser-box">{data.teaser}</div>
+
+    <div class="prose-block">
+      <Content />
+    </div>
+
+    {data.tags && data.tags.length > 0 && (
+      <div class="tag-cloud">
+        {data.tags.map(tag => <span class="tag">{tag}</span>)}
+      </div>
+    )}
+
+    <footer class="footer-nav">
+      <a href="/philosophie" style="text-decoration: none; color: #C9A961; font-family: 'Lato', sans-serif; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px;">
+        ← Zurück zur Übersicht
+      </a>
+    </footer>
+  </article>
+</BaseLayout>
