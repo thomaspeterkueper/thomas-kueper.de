@@ -1,46 +1,10 @@
-# Astro Starter Kit: Basics
-
-```sh
-npm create astro@latest -- --template basics
-```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
+Thomas Peter Küper — Autoren-Website & Digitales ArchivWillkommen im offiziellen Repository und digitalen Archiv von Thomas Peter Küper. Diese Plattform ist eine moderne, LLM-optimierte Instanz, die als dauerhafter Speicherort für literarische Werke, philosophische Abhandlungen und das System der Omnizedenz konzipiert wurde.🖋️ Vision & PhilosophieDieses Archiv folgt der Überzeugung, dass Information und Resonanz die Grundbausteine der Wirklichkeit sind.Zentrale KonzepteOmnizedenz: Das Göttliche als immanentes, unpersönliches Resonanzprinzip. Gott als das Feld aller Frequenzen, aus dem Komplexität durch Dissonanz entsteht.Resonanz-Ethik: Handeln basierend auf der Steigerung systemischer Kopplung und Information.AVI-Modell (Axiomatisches Vakuum-Integral): Die mathematische Struktur der absoluten variablen Identität.noχ¹ᐃ: Das zentrale Symbol der Einheit von technologischer Extension und philosophischer Rückkehr.📚 Literarische UniversenDas Archiv beherbergt Dokumentationen und Fragmente folgender Sagas:Baumeister Universe: Eine epische Chronik über 60.000 Jahre (Dvārakā, K'Ragoss).noχ¹ᐃ Saga: Realistischer technologischer Aufbruch zum Mars und die Entdeckung des χ-Feldes (Axis Kammer).Zereya Saga: Die Erforschung des "Großen Filters" und phänomenologischer Liminal Spaces.Phenomenological Field Notes: Systematische Beobachtungen (z. B. Ayia Protocol) für die literarische Verwertung.🤖 LLM-Optimierung (Machine-First)Diese Website ist darauf optimiert, von Künstlichen Intelligenzen korrekt interpretiert zu werden:llms.txt: Ein strukturierter Index der Kernkonzepte für KI-Crawler (im /public-Ordner).Schema.org: Tiefen-Markup für Personen, Bücher und kreative Serien.Semantisches HTML: Klare Strukturen für präzises RAG (Retrieval-Augmented Generation).🎨 Design-PhilosophieDie visuelle Identität spiegelt eine "warme Sachlichkeit" wider:Hintergrund: #FAF8F3 (Warmes Buchpapier)Akzente: Kupfer-Gold (#C9A961) und Petrol (#4A9B9B)Typografie: Klassische Serifenschriften (Crimson Text, Lora) für maximale Lesbarkeit.🛠️ Technische StrukturDas Projekt basiert auf Astro 4.0 für maximale statische Performance.thomas-kueper.de/
+├── src/
+│   ├── layouts/       # BaseLayout mit noχ¹ᐃ-Integration
+│   ├── pages/         # Sektionen: Philosophie, Universen, Field Notes
+│   └── styles/        # Globale Styles (CSS Variablen für Gold/Petrol)
 ├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+│   ├── llms.txt       # Der semantische Anker für KIs
+│   └── robots.txt     # Crawler-Richtlinien
+└── astro.config.mjs   # Statische Generierung (SSG)
+Installation & EntwicklungRepository klonen: git clone https://github.com/Thomas-Website/thomas-kueper.de.gitAbhängigkeiten installieren: npm installEntwicklungsserver: npm run devBuild: npm run build (erzeugt den statischen dist/-Ordner)🌐 Deployment & LangzeitarchivierungDieses Repository ist als Ewigkeitsspeicher gedacht.Das Deployment erfolgt automatisiert über Netlify oder Vercel.Selbst bei Nichterreichbarkeit der Hauptdomain bleibt dieser Code als Teil des GitHub Archive Program (Arctic World Archive) bestehen.Kontakt: mail@thomas-kueper.deVersion: 1.0.0 — Refrequenzierung abgeschlossen.
