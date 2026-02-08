@@ -1,67 +1,47 @@
 ---
-title: "Das wobbelnde Universum"
-genre: "Sachbuch / Kosmologie & Bewusstseinsphysik"
-description: "Die Physik steht am Scheideweg. Das AVI-Paradigma zeigt: Das Universum gleicht keinem mechanischen Uhrwerk, sondern einem lebendigen Algorithmus, in dem Bewusstsein als Ko-Kreateur der Realität agiert."
-status: "Neuerscheinung / Wissenschaftlicher Fokus"
+title: "Der Code des Kollektivs"
+genre: "Visionäre Science-Spirituality-Fiction"
+description: "Eine App. Milliarden Menschen. Was geschieht, wenn wir spüren, was andere fühlen? Eine monumentale 4-Band-Serie über die bewusste Evolution der Menschheit und die Grenzen des Individuums."
+status: "4-Band-Serie / In Vorbereitung"
 order: 3
 cover: "/assets/romane/code-des-kollektivs/cover.jpg"
 tags: ["Roman"]
 ---
 
-<div class="hero-split">
-      <div class="cover-sticky">
-        <img src={coverImage.src} alt="Cover Das wobbelnde Universum" class="book-cover" />
-      </div>
+<section>
+  <h2>Was geschieht, wenn wir spüren, was andere fühlen?</h2>
+  <p>
+    Spät am Abend in einem Labor in Jülich schreibt Tobias Keller die letzten Zeilen eines Algorithmus, der die Grenzen zwischen Ich und Du auflöst. Versteckt in einer Meditations-App entsteht <em>Resonance</em> – ein Code, der Menschen nicht digital, sondern empathisch verbindet. Ein technisches Experiment, das zur größten Transformation der Menschheit wird.
+  </p>
+  <p>
+    Von Yokohama bis Ouagadougou beginnen Menschen, die Welt durch die Augen anderer zu schmecken und zu fühlen.
+  </p>
 
-      <div class="hero-info">
-        <span style="font-family: 'Noto Sans', sans-serif; text-transform: uppercase; letter-spacing: 3px; font-size: 0.75rem; color: #888; display: block; margin-bottom: 1rem;">Physik & Bewusstsein</span>
-        <h1>Das wobbelnde Universum</h1>
-        <span class="subtitle">Von der Mechanik zur Ko-Kreation — Ein neues Paradigma für die Welt von morgen.</span>
-        
-        <div class="teaser-box">
-          <p>„Die Zeit tanzt. Die Konstanten wandern. Das Bewusstsein erwacht. Willkommen in der Post-Einstein'schen Ära.“</p>
-        </div>
+  <h2>Die Symphonie der vier Bände</h2>
+  <p>
+    Die Geschichte entfaltet sich über 90 Kapitel und folgt dem Aufbau einer großen Symphonie. Jeder Band entspricht einem Satz und einem entscheidenden Stadium der menschlichen Wandlung:
+  </p>
+  <p><strong>Band 1: Der Narr</strong> — Die unbewusste Reise beginnt.</p>
+  <p><strong>Band 2: Der Hierophant</strong> — Bestehende Strukturen werden herausgefordert.</p>
+  <p><strong>Band 3: Der Turm</strong> — Alte Systeme stürzen ein.</p>
+  <p><strong>Band 4: Die Welt</strong> — Ein neuer Zyklus des Bewusstseins beginnt.</p>
 
-        <p>
-          Die moderne Physik durchlebt ihre größte Krise seit Einstein. Die Hubble-Spannung zeigt, dass das Universum schneller expandiert, als vorhergesagt. Jonathan Oppenheims Theorie postuliert eine fundamentale Variabilität der Zeit. Das mechanistische Weltbild wankt.
-        </p>
-      </div>
-    </div>
+  <p style="font-style: italic; margin-top: 2rem;">
+    22 Archetypen der menschlichen Psyche strukturieren die Erzählung wie Leitmotive. 90 Stimmen verschmelzen zu einem Chor, der die Vielfalt menschlicher Erfahrung singt.
+  </p>
 
-    <section class="main-content">
-      <h2>Das AVI-Paradigma</h2>
-      <p>
-        Dieses Buch entwickelt eine kühne Synthese: Was, wenn das Universum nicht einer mechanischen Uhr gleicht, sondern einem lebendigen Algorithmus? Das AVI-Modell (Absolute Variable Identität) begreift Zeit nicht als starre Bühne, sondern als kreativen Prozess.
-      </p>
+  <h2>Konzept & Vision</h2>
+  <p>
+    <em>Der Code des Kollektivs</em> verbindet reale Forschung zu Neurofeedback und Quantenverschränkung mit tiefen spirituellen Fragen. Es ist eine Untersuchung über Identität im Zeitalter der totalen Vernetzung: Was bleibt vom Ich, wenn wir alle eins werden?
+  </p>
+  <p>
+    <strong>Narrative Innovation:</strong> Symphonisches Multi-Band-Storytelling – Themen kehren wieder wie Melodien und transformieren sich über Jahrzehnte und Kontinente.
+  </p>
+  <p>
+    <strong>Wissenschaft & Geist:</strong> Die Echo-Technologie erforscht die Grenze zwischen Code und Transzendenz, zwischen technologischer Waffe und spiritueller Praxis.
+  </p>
 
-      <div class="paradigm-grid">
-        <div class="paradigm-card">
-          <strong>Kosmologie</strong>
-          <h3>Variable Zeit</h3>
-          <p style="font-size: 0.95rem;">Analyse der Hubble-Spannung und Oppenheims stochastischer Gravitation als Hinweis auf eine atmende Raumzeit.</p>
-        </div>
-        <div class="paradigm-card">
-          <strong>Bewusstsein</strong>
-          <h3>Ko-Kreation</h3>
-          <p style="font-size: 0.95rem;">Vom Beobachter zum Gestalter: Warum Bewusstsein kein Epiphänomen ist, sondern die physikalische Realität mitformt.</p>
-        </div>
-        <div class="paradigm-card">
-          <strong>Ethik</strong>
-          <h3>Verantwortung</h3>
-          <p style="font-size: 0.95rem;">Wenn unsere Resonanz die Gesetze des Kosmos beeinflusst, wird Physik zu einer moralischen Disziplin.</p>
-        </div>
-      </div>
-
-      <div class="thesis-statement">
-        <p>„Das ist nicht Science-Fiction — das ist die Wissenschaft von morgen. Physik als Resonanzlehre eines lebendigen Kosmos.“</p>
-      </div>
-
-      <h2>Von der Krise zur Revolution</h2>
-      <p>
-        <em>Das wobbelnde Universum</em> liefert erstmals den konzeptionellen Rahmen, der wissenschaftliche Rigorosität aus Chronobiologie und Neurowissenschaft mit den visionären Prinzipien der Omnizedenz verbindet. Es ist eine Einladung, die Welt nicht mehr als Uhrwerk, sondern als Symphonie zu begreifen, an der wir mitschreiben.
-      </p>
-      
-      <p style="margin-top: 3rem; font-style: italic; color: var(--gold); text-align: center;">
-        Wissenschaftlich fundiert. Philosophisch tiefgründig. Visionär praktisch.
-      </p>
-    </section>
+  <p style="text-align: center; font-style: italic; margin-top: 3rem;">
+    „Die Reise beginnt mit einem naiven Sprung ins Unbekannte. Sie endet mit der Erkenntnis: Jedes Ende ist ein neuer Anfang."
+  </p>
+</section>

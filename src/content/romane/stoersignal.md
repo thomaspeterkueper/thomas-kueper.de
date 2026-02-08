@@ -8,4 +8,8 @@ cover: "/assets/romane/stoersignal/cover.jpg"
 tags: ["Roman"]
 ---
 
+<p>Martina Fischer ist achtzehn, als ihr Onkel Erik ihr in Amsterdam ein Paar Ohrringe schenkt. Sie sind schlicht, fast unscheinbar. Was sie auslösen, ist es nicht.</p>
+    <p>Eine Frequenz, ein Gefühl, eine Abhängigkeit, die sich anfühlt wie die Abwesenheit von Einsamkeit.</p>
+    <p><em>Störsignal</em> erzählt von der Grenze zwischen Fürsorge und Übergriff, zwischen Resonanz und Kontrolle.</p>
 
+»Wenn jemand deine Frequenz überschreibt, wer bist du dann noch?«

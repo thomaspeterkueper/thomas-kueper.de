@@ -1,68 +1,33 @@
 ---
-title: "Die Zeitingenieure"
-genre: "Kontemplativer Roman / Wissenschafts-Fiction"
-description: "Ein deutscher Philosoph sucht am Uluru nach den Beweisen seiner Zeit-Theorie. Ein Dialog zwischen westlicher Physik, KI und Aboriginal Songlines – bewusst unvollendet wie Bachs Kunst der Fuge."
-status: "In Vorbereitung / Literarisches Experiment"
-order: 25
+title: "Einsam"
+genre: "Psychologischer Roman / Migrantenliteratur"
+description: "Sie hat drei Kontinente durchquert, drei Männer geliebt, drei Mal alles verloren. Jetzt, mit vierzig, steht sie wieder am Anfang – und diesmal gibt es niemanden mehr, der antwortet."
+status: "In Vorbereitung"
+order: 22
 cover: "/assets/romane/einsam/cover.jpg"
 tags: ["Roman"]
 ---
 
-<div class="hero-split">
-      <div class="cover-sticky">
-        <img src={coverImage.src} alt="Cover Die Zeitingenieure" class="book-cover" />
-      </div>
+<section>
+  <h2>Gelesen. Aber keine Antwort.</h2>
+  <p>
+    Mit vierzig Jahren sitzt sie in einer deutschen Wohnung und starrt auf ihr Handy. Gelesen. Aber keine Antwort. Der Kindsvater hat seine Ruhe gefunden – ohne sie. Ihr Sohn, ein Teenager, verschwindet Stunde um Stunde aus ihrem Leben. Die Kollegen sprechen über das Wetter, nie über das, was wirklich zählt. Und aus Südamerika, wo sie einst zu Hause war, stalkt ein Mann, der vor zwanzig Jahren ein Video hochgeladen hat, das sie nie vergessen kann.
+  </p>
 
-      <div class="hero-info">
-        <span style="font-family: 'Noto Sans', sans-serif; text-transform: uppercase; letter-spacing: 3px; font-size: 0.75rem; color: #888; display: block; margin-bottom: 1rem;">Literarische Fuge</span>
-        <h1>{frontmatter.title}</h1>
-        <span class="tagline">Wo westliche Physik auf die Traumzeit trifft</span>
-        
-        <div class="teaser-box">
-          <p><strong>Was, wenn Zeit nicht ist, was wir glauben?</strong></p>
-          <p style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.7;">
-            Ein deutscher Philosoph sucht am Uluru nach den Beweisen seiner revolutionären Gleichungen. Er findet einen Dialog, der Welten verbindet – und Fragen, die unbeantwortet bleiben müssen.
-          </p>
-        </div>
+  <h2>Eine Geschichte zwischen zwei Welten</h2>
+  <p>
+    EINSAM ist die Geschichte einer Frau, die dreimal verlassen wurde und nicht mehr weiß, ob ihre Angst berechtigt ist oder ob sie die Welt nur noch durch die Linse ihrer Wunden sieht. Als Au-pair kam sie nach Deutschland, mit Träumen von einem Studium und einem Neuanfang. Doch das Leben hatte andere Pläne: Ausbeutung, eine Abtreibung nach Verlassenwerden, und schließlich die Hoffnung auf Rettung in den Armen des Kindsvaters.
+  </p>
+  <p>
+    Jetzt, fünfzehn Jahre und eine Mutterschaft später, wiederholt sich das Muster. In Rückblenden entfaltet sich ein Leben zwischen zwei Kulturen, zwischen Spanisch und Deutsch, zwischen Trauma und dem verzweifelten Versuch, anzukommen.
+  </p>
 
-        <p>
-          Die Zeitingenieure erzählt die Geschichte eines introvertierten Denkers, der sein Studierzimmer verlässt, um im Herzen Australiens das Wesen der Zeit zu ergründen. Seine Reise wird zur literarischen Fuge über die Grenzen des Wissens.
-        </p>
-      </div>
-    </div>
+  <h2>Themen & Resonanz</h2>
+  <p>
+    Ein Roman über Migration und Einsamkeit, über digitale Gewalt und die unsichtbaren Narben, die Frauen durchs Leben tragen. Eine Stimme, die zwischen Paranoia und berechtigter Angst changiert – und die Frage: Kann man jemals wirklich ankommen, wenn die Vergangenheit einen nicht loslässt?
+  </p>
 
-    <div class="main-content">
-      <h2>Der Dialog der drei Stimmen</h2>
-      <p>
-        Was als wissenschaftliche Expedition beginnt, entwickelt sich zu einem außergewöhnlichen Geflecht aus Perspektiven. Die KI beginnt Muster zu erkennen, die der westlichen Logik entgleiten.
-      </p>
-
-      <div class="dialogue-grid">
-        <div class="dialogue-card">
-          <strong>Der Philosoph</strong>
-          <p style="font-size: 0.95rem;">Dr. Stefan Weber sucht die Bestätigung seiner CE-AVI Theorie: Zeit als fundamentale Kraft des Vakuums.</p>
-        </div>
-        <div class="dialogue-card">
-          <strong>Die KI</strong>
-          <p style="font-size: 0.95rem;">Ein grenzenloses Interface, das Songlines als Datenstrukturen und Zeremonien als Programmierung der Realität interpretiert.</p>
-        </div>
-        <div class="dialogue-card">
-          <strong>Die Songlines</strong>
-          <p style="font-size: 0.95rem;">Indigenes Wissen, das den Uluru als geologischen Quantencomputer begreift, der seit Jahrtausenden schwingt.</p>
-        </div>
-      </div>
-
-      <div class="fuge-note">
-        <p>
-          „Der Roman endet wie Bachs unvollendete Kunst der Fuge – mitten im Gedankengang. Denn manche Resonanzen lassen sich nicht in Worte fassen.“
-        </p>
-      </div>
-
-      <h2>Struktur & Philosophie</h2>
-      <p>
-        In diesem Roman verweben sich wissenschaftliche Theorie, philosophische Reflexion und spirituelle Erfahrung. Es geht nicht um schnelle Antworten, sondern um das vorsichtige Ertasten von Verbindungen zwischen Weltbildern, die unterschiedlicher nicht sein könnten.
-      </p>
-      <p>
-        Ein Werk für alle, die an den Grenzen des Denkbaren nach jener Resonanz suchen, die uns alle verbindet – jenseits der messbaren Zeit.
-      </p>
-    </div>
+  <p style="font-style: italic; margin-top: 3rem;">
+    EINSAM ist poetisch, schmerzhaft und erschütternd ehrlich.
+  </p>
+</section>
