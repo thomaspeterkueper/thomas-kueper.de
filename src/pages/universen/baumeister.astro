@@ -1,0 +1,290 @@
+---
+// Dateipfad: src/pages/universen/baumeister.astro
+// Beschreibung: Die vollständige, ungekürzte 60.000-jährige Chronik.
+// Enthält alle Sektionen: Timeline, Ursprung, Historie, Moderne, Zukunft & Konzepte.
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="Baumeister Universe" 
+  description="60.000 Jahre Geschichte von den Uralten bis zur galaktischen Zukunft. Resonanz, Dvārakā und das Erbe der ersten Zivilisation.">
+  
+  <style is:inline>
+    .baumeister-content { padding: 4rem 0 10rem; font-family: 'Lora', serif; line-height: 1.9; color: #1a1a1a; }
+    
+    /* Hero */
+    .hero-title { text-align: center; margin-bottom: 6rem; padding: 4rem 0; background: #faf9f6; border-bottom: 1px solid #eee; }
+    .hero-title h1 { font-family: 'Crimson Text', serif; font-size: clamp(3rem, 8vw, 5rem); font-weight: 300; margin-bottom: 1rem; }
+    .hero-title .subtitle { font-family: 'Lato', sans-serif; text-transform: uppercase; letter-spacing: 4px; color: #c9a961; font-size: 0.9rem; font-weight: 700; }
+    
+    .section-intro { max-width: 850px; margin: 0 auto 8rem; font-size: 1.25rem; }
+    .text-gold { color: #c9a961; font-weight: 700; }
+    .text-petrol { color: #4a9b9b; font-weight: 700; }
+
+    /* Timeline */
+    .timeline-container { background: #ffffff; padding: 4rem 0; margin: 6rem 0; }
+    .timeline-container h2 { text-align: center; margin-bottom: 5rem; font-family: 'Crimson Text', serif; font-size: 3rem; }
+    
+    .highlight-box { 
+      background: #faf9f6; 
+      border-left: 4px solid #c9a961; 
+      padding: 3rem; 
+      margin-bottom: 2rem; 
+      box-shadow: 0 10px 30px rgba(0,0,0,0.02); 
+    }
+    .highlight-box h3 { margin-top: 0; font-family: 'Crimson Text', serif; font-size: 1.8rem; margin-bottom: 1rem; }
+
+    /* Grid Layouts */
+    .cards-grid { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); 
+      gap: 3rem; 
+      margin: 4rem 0; 
+    }
+    .card { 
+      background: #ffffff; 
+      border: 1px solid #eee; 
+      padding: 3rem; 
+      transition: all 0.4s ease;
+      height: 100%;
+    }
+    .card:hover { border-color: #c9a961; transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+    .card h3 { font-family: 'Crimson Text', serif; font-size: 2rem; margin-bottom: 0.5rem; }
+    .card .meta { font-family: 'Lato', sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: #c9a961; display: block; margin-bottom: 1.5rem; font-weight: 700; }
+    
+    .list-small { font-size: 0.9rem; line-height: 1.6; margin-top: 1rem; padding-left: 1.2rem; }
+    .list-small li { margin-bottom: 0.5rem; }
+
+    /* Special Sections */
+    .bg-soft { background-color: #faf9f6; padding: 8rem 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+    .concept-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .concept-card { padding: 2.5rem; background: #fff; border: 1px solid #eee; text-align: center; }
+
+    .btn-wrap { text-align: center; margin-top: 6rem; }
+    .btn { display: inline-block; padding: 1.2rem 3rem; text-decoration: none; font-family: 'Lato', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s; font-size: 0.8rem; }
+    .btn-primary { background: #1a1a1a; color: #fff; }
+    .btn-primary:hover { background: #c9a961; }
+    .btn-secondary { border: 1px solid #c9a961; color: #1a1a1a; }
+    .btn-secondary:hover { background: #c9a961; color: #fff; }
+
+    @media (max-width: 768px) {
+      .cards-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <article class="baumeister-content">
+    
+    <header class="hero-title">
+      <div class="container">
+        <span class="subtitle">60.000 Jahre Geschichte</span>
+        <h1>Baumeister Universe</h1>
+        <p style="font-style: italic; font-size: 1.4rem; color: #666; margin-top: 1.5rem;">Von den Uralten bis zu den Sternen</p>
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- Einführung -->
+      <section class="section-intro">
+        <p>
+          Das <span class="text-gold">Baumeister Universe</span> erzählt die Geschichte der Menschheit über 60.000 Jahre – von der ersten prähistorischen Zivilisation bis zur galaktischen Zukunft. Es zeigt: Geschichte verläuft nicht linear, sondern in <span class="text-petrol">Resonanzmustern</span>, die sich über Jahrtausende wiederholen, variieren und neu kombinieren.
+        </p>
+        <p style="margin-top: 2rem;">
+          Im Zentrum steht das Erbe von <span class="text-gold">Dvārakā</span> – die legendäre Baumeister-Stadt, deren Wissen nach dem Untergang in alle Himmelsrichtungen verstreut wurde. Und davor: Die <span class="text-petrol">Uralten</span>, die allererste Zivilisation, die das Prinzip der Resonanz verstand.
+        </p>
+      </section>
+
+      <!-- Die Zeitlinie -->
+      <section class="timeline-container">
+        <h2 style="font-family: 'Crimson Text', serif; font-size: 3rem; text-align: center; margin-bottom: 4rem;">Die Zeitlinie</h2>
+        <div style="max-width: 900px; margin: 0 auto;">
+          <div class="highlight-box">
+            <h3 class="text-gold">1. Die Uralten (62.000–50.000 v. Chr.)</h3>
+            <p>Prähistorische Bio-Zivilisation. Myzel-Netzwerke, lebende Architektur, empathische Demokratie. Die Ur-Quelle allen Wissens.</p>
+          </div>
+          <div class="highlight-box" style="border-left-color: #4a9b9b;">
+            <h3 class="text-petrol">2. Das Lied von Dvārakā (ca. 3.000 v. Chr.)</h3>
+            <p>Die achte Dvārakā – Kristall-basierte Baumeister-Zivilisation auf dem Höhepunkt. Ihr Untergang verstreut das Wissen in alle Himmelsrichtungen.</p>
+          </div>
+          <div class="highlight-box">
+            <h3 class="text-gold">3. Historische Chroniken (5.000 v. Chr. – 1900 n. Chr.)</h3>
+            <p>Das verstreute Erbe überlebt in antiken Kulturen: TAKARKORI, Alexandria, Nabatäer, durch Pythagoras, Leonardo, Ada Lovelace.</p>
+          </div>
+          <div class="highlight-box" style="border-left-color: #4a9b9b;">
+            <h3 class="text-petrol">4. Moderne Serien (1995–2025)</h3>
+            <p>Wiederentdeckung: Miriam, Yin Hua, Zereya, Minari, GEORGE. Die Hüter gegen die Bewahrer.</p>
+          </div>
+          <div class="highlight-box">
+            <h3 class="text-gold">5. Lian Thorn (Ferne Zukunft)</h3>
+            <p>Galaktisches Erbe: Schwarze Tropfen auf K'tharr, Trauma-Physik, der Baumeister-Kollaps auf fernen Welten.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ursprungsgeschichten -->
+      <section>
+        <h2 style="text-align: center; font-family: 'Crimson Text', serif; font-size: 3rem; margin-bottom: 2rem;">Ursprungsgeschichten</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 4rem; color: #666;">Wo alles begann: Die ersten Zivilisationen, die Resonanz verstanden.</p>
+        
+        <div class="cards-grid">
+          <!-- Die Uralten -->
+          <div class="card" style="border-top: 4px solid #c9a961;">
+            <span class="meta">5 Bände | 62.000-50.000 v. Chr.</span>
+            <h3>Die Uralten-Saga</h3>
+            <p>Die älteste Geschichte im Universum. Eine prähistorische Zivilisation in vollkommenem Einklang mit der Natur – lange vor der letzten Eiszeit.</p>
+            
+            <h4 style="margin-top: 1.5rem; font-size: 1rem; color: #4a9b9b;">Die 5 Bände:</h4>
+            <ul class="list-small">
+              <li><strong>Band 1:</strong> Das Erwachen des Lebendigen</li>
+              <li><strong>Band 2:</strong> Die Zeit der Harmonie</li>
+              <li><strong>Band 3:</strong> Die ersten Schatten</li>
+              <li><strong>Band 4:</strong> Der Sturm des Wandels</li>
+              <li><strong>Band 5:</strong> Die Große Zerstreuung</li>
+            </ul>
+            
+            <h4 style="margin-top: 1.5rem; font-size: 1rem; color: #c9a961;">Kernkonzepte:</h4>
+            <p style="font-size: 0.9rem; font-style: italic;">Myzel-Netzwerke, Lebende Architektur (Bio-Kalkstein), Empathische Demokratie.</p>
+          </div>
+          
+          <!-- Das Lied von Dvārakā -->
+          <div class="card" style="border-top: 4px solid #4a9b9b;">
+            <span class="meta">ca. 3000 v. Chr. | Die achte Dvārakā</span>
+            <h3>Das Lied von Dvārakā</h3>
+            <p>Die legendäre Baumeister-Stadt auf ihrem Höhepunkt. Kristall-Technologie statt Bio-Architektur. Hybris und der Preis der Perfektion.</p>
+            
+            <h4 style="margin-top: 1.5rem; font-size: 1rem;">Die Geschichte:</h4>
+            <p style="font-size: 0.95rem;">Varuna, Amrita und Kasyapa erleben das Experiment mit totem Metall (Osmium), das die Zivilisation ins Ungleichgewicht bringt.</p>
+            
+            <h4 style="margin-top: 1.5rem; font-size: 1rem; color: #c9a961;">Der Untergang:</h4>
+            <p style="font-size: 0.95rem;">Vier Überlebende retten <strong>dreizehn Samen des Wissens</strong> und tragen sie in die Welt, um das Erbe der Baumeister zu bewahren.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Historische Chroniken -->
+    <section class="bg-soft">
+      <div class="container">
+        <h2 style="text-align: center; font-family: 'Crimson Text', serif; font-size: 3rem; margin-bottom: 2rem;">Historische Chroniken</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 4rem; color: #666;">Das verstreute Erbe von Dvārakā überlebt in antiken Kulturen und historischen Figuren.</p>
+        
+        <div class="cards-grid">
+          <div class="card">
+            <span class="meta">ca. 5000 v. Chr.</span>
+            <h3>TAKARKORI</h3>
+            <p>Vor der Wüste: Eine Zeit, als die Sahara grün war und das Wissen der Uralten noch in der Landschaft lebte.</p>
+          </div>
+          <div class="card">
+            <span class="meta">48-47 v. Chr.</span>
+            <h3>Licht von Alexandria</h3>
+            <p>Beim Brand der großen Bibliothek werden fundamentale Geheimnisse gerettet – und andere gehen für immer verloren.</p>
+          </div>
+          <div class="card">
+            <span class="meta">Nabatäische Kultur</span>
+            <h3>Die Wasser-Chronik</h3>
+            <p>Mada'in Saleh: Die Nabatäer verstanden Wasser als Resonanz. Ihre Architektur trägt das Echo von Dvārakā.</p>
+          </div>
+          <div class="card">
+            <span class="meta">Geplant</span>
+            <h3>Chroniken der Hüter</h3>
+            <p>13 Geschichten zeigen, wie das Wissen durch Pythagoras, Leonardo da Vinci und Ada Lovelace überlebte.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- Moderne Serien -->
+      <section style="margin-top: 8rem;">
+        <h2 style="text-align: center; font-family: 'Crimson Text', serif; font-size: 3rem; margin-bottom: 2rem;">Moderne Serien (1995–2025)</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 4rem; color: #666;">Die Wiederentdeckung: Wissenschaftler und Künstler stoßen auf das alte Wissen.</p>
+        
+        <div class="cards-grid">
+          <div class="card">
+            <span class="meta">Mystischer Thriller</span>
+            <h3>Die Miriam Chroniken</h3>
+            <p>Dr. Miriam bat Rachael entwickelt die "Theorie der Resonanzfelder". Sie ist die Brücke zwischen antikem Mythos und moderner Forschung.</p>
+          </div>
+          <div class="card" style="background: #faf9f6; border-color: #c9a961;">
+            <span class="meta">KERN-SERIE ⭐</span>
+            <h3>Die Zereya Saga</h3>
+            <p>8 Bände. Peter Zimmermann und Zereya auf der Flucht. Hier steigt Dvārakā aus dem Meer auf und lokale Phänomene werden zu kosmischen Ereignissen.</p>
+          </div>
+          <div class="card">
+            <span class="meta">Klangarchäologie</span>
+            <h3>Yin Hua Chronik</h3>
+            <p>Eine rationale Archäologin untersucht spezifische Frequenzen (110 Hz) an antiken Stätten und schlägt die Brücke zur Mystik.</p>
+          </div>
+          <div class="card">
+            <span class="meta">Kunst & Bewahrung</span>
+            <h3>Minari</h3>
+            <p>Die südkoreanische Künstlerin Minari Park schafft durch ihre Kunst Räume, in denen verlorene Anteile wiederfinden können.</p>
+          </div>
+          <div class="card">
+            <span class="meta">Mystik im Alltag</span>
+            <h3>GEORGE</h3>
+            <p>In einer alten Spieldosenfabrik im Jura wird eine disharmonische Baumeister-Anomalie zum ungebetenen Mitbewohner.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Galaktische Zukunft -->
+      <section style="margin-top: 8rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+        <div class="highlight-box" style="border-left-color: #1a1a1a; padding: 4rem;">
+          <span class="meta">Ferne Zukunft | K'tharr</span>
+          <h2 style="font-family: 'Crimson Text', serif; font-size: 2.5rem; margin-bottom: 1.5rem;">Lian Thorn</h2>
+          <p style="font-size: 1.15rem; margin-bottom: 1.5rem;">
+            Auf dem Wüstenplaneten K'tharr entdeckt Lian "Schwarze Tropfen" – kristallisierte kosmische Trauma-Energie aus dem Baumeister-Kollaps. 
+          </p>
+          <p>
+            Literary Science Fiction, die Trauma-Physik, Horror und Heilung verbindet. Lian Thorn trägt unbewusst ein heilendes Lied in sich, das die Sterne erreichen könnte.
+          </p>
+        </div>
+      </section>
+
+      <!-- Kernkonzepte -->
+      <section style="margin-top: 8rem;">
+        <h2 style="text-align: center; font-family: 'Crimson Text', serif; font-size: 3rem; margin-bottom: 4rem;">Die Kernkonzepte</h2>
+        <div class="concept-grid">
+          <div class="concept-card">
+            <h4 class="text-gold">Resonanz</h4>
+            <p style="font-size: 0.9rem;">Bewusstsein als kollektives Frequenzphänomen über Jahrtausende.</p>
+          </div>
+          <div class="concept-card">
+            <h4 class="text-petrol">Dvārakā-Erbe</h4>
+            <p style="font-size: 0.9rem;">Verstreutes Wissen in dreizehn Samen, bewahrt in allen Kulturen.</p>
+          </div>
+          <div class="concept-card">
+            <h4 class="text-gold">Hüter vs. Bewahrer</h4>
+            <p style="font-size: 0.9rem;">Der ewige Konflikt zwischen Wissensweitergabe und Kontrolle.</p>
+          </div>
+          <div class="concept-card">
+            <h4 class="text-petrol">Disruption</h4>
+            <p style="font-size: 0.9rem;">Wenn Frequenzen durch Trauma oder Hybris gestört werden.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Einstieg -->
+      <section style="margin-top: 8rem; text-align: center;">
+        <h2 style="font-family: 'Crimson Text', serif; font-size: 2.5rem; margin-bottom: 2rem;">Wo anfangen?</h2>
+        <div style="max-width: 800px; margin: 0 auto; display: grid; gap: 2rem;">
+          <div class="card" style="padding: 2.5rem;">
+            <h3>Der Kern: Zereya Saga</h3>
+            <p>Starten Sie hier, wenn Sie das emotionale Herz des Universums erleben wollen.</p>
+            <a href="/universen/zereya" class="btn btn-secondary" style="margin-top: 1rem;">Zur Zereya Saga →</a>
+          </div>
+          <div class="card" style="padding: 2.5rem;">
+            <h3>Die Zukunft: Lian Thorn</h3>
+            <p>Starten Sie hier für Hard-SF mit tiefgreifender psychologischer Heilung.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="btn-wrap">
+        <p style="margin-bottom: 2rem; color: #666;">Alle Geschichten basieren auf der Omnizedenz-Philosophie.</p>
+        <a href="/philosophie" class="btn btn-primary">Die Philosophie entdecken →</a>
+      </footer>
+    </div>
+  </article>
+</BaseLayout>

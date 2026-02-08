@@ -1,0 +1,75 @@
+---
+// Dateipfad: src/pages/sachbuecher/index.astro
+// Beschreibung: Automatisierte Übersicht aller Sachbücher und philosophischen Abhandlungen.
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+// Scannt alle index.astro in den Unterordnern von sachbuecher/
+const books = await Astro.glob('./*/index.astro');
+
+const sortedBooks = books.sort((a, b) => {
+  return (a.frontmatter.order || 99) - (b.frontmatter.order || 99);
+});
+---
+
+<BaseLayout 
+  title="Sachbücher & Forschung" 
+  description="Wissenschaftliche und philosophische Publikationen von Thomas Peter Küper.">
+
+  <style>
+    .hero { padding: 6rem 0; background: #faf9f6; text-align: center; border-bottom: 1px solid var(--color-border); }
+    .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; font-weight: 300; }
+    
+    .container { max-width: 1000px; margin: 0 auto; padding: 4rem 2rem; }
+    
+    .book-grid { display: flex; flex-direction: column; gap: 6rem; }
+    
+    .book-card { 
+      display: grid; 
+      grid-template-columns: 240px 1fr; 
+      gap: 4rem; 
+      align-items: start;
+    }
+
+    .cover-box img {
+      width: 100%;
+      height: auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      border: 1px solid #eee;
+    }
+
+    .content h2 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; margin: 0 0 0.5rem; }
+    .genre { font-size: 0.8rem; text-transform: uppercase; color: var(--color-gold); letter-spacing: 2px; margin-bottom: 1.5rem; display: block; }
+    .description { font-family: 'Libre Baskerville', serif; font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 2rem; }
+    
+    .link { color: var(--color-gold); text-decoration: none; font-weight: 600; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+
+    @media (max-width: 700px) {
+      .book-card { grid-template-columns: 1fr; text-align: center; }
+      .cover-box { max-width: 200px; margin: 0 auto; }
+    }
+  </style>
+
+  <section class="hero">
+    <h1>Sachbücher & Forschung</h1>
+    <p style="font-family: 'Libre Baskerville', serif; font-style: italic; color: #666;">Chronobiologie, Systemtheorie und Philosophie</p>
+  </section>
+
+  <div class="container">
+    <div class="book-grid">
+      {sortedBooks.map((book) => (
+        <article class="book-card">
+          <div class="cover-box">
+            {book.frontmatter.cover && <img src={book.frontmatter.cover} alt={book.frontmatter.title} />}
+          </div>
+          <div class="content">
+            <h2>{book.frontmatter.title}</h2>
+            <span class="genre">{book.frontmatter.genre}</span>
+            <p class="description">{book.frontmatter.description}</p>
+            <a href={book.url} class="link">Zum Buchprojekt →</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

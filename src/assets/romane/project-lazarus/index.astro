@@ -1,0 +1,258 @@
+---
+// Dateipfad: src/pages/romane/project-lazarus/index.astro
+// Name: Project Lazarus - Detailseite
+// Beschreibung: Historischer Thriller über die Entstehung einer Epidemie.
+
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import coverImage from './cover.jpg';
+
+export const frontmatter = {
+  title: "Project Lazarus",
+  genre: "Historischer Thriller",
+  // Kurzbeschreibung für das Archiv (standalone.astro)
+  description: "San Francisco, 1977. Ein Kardinal plant eine 'göttliche Strafe' für Sünder. Ein historischer Thriller über die dunkle Geburt einer Epidemie – und die Frage, wie weit Glaube gehen darf, wenn er zur Waffe wird.",
+  status: "Historischer Thriller",
+  order: 14, // Einordnung im Archiv nach Schwellenwelten
+  cover: coverImage.src
+};
+---
+
+<BaseLayout title="Project Lazarus — Historischer Thriller von Thomas Peter Küper" description={frontmatter.description}>
+  <style>
+    .lazarus-page {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+      color: #1a1a1a;
+      font-family: 'Libre Baskerville', serif;
+      line-height: 1.9;
+    }
+
+    /* Hero Timeline */
+    .timeline-header {
+      text-align: center;
+      margin-bottom: 6rem;
+      padding: 4rem 2rem;
+      background: #faf9f6;
+      border-bottom: 1px solid #e5dcc8;
+    }
+
+    .timeline-steps {
+      display: flex;
+      justify-content: space-between;
+      max-width: 800px;
+      margin: 2rem auto;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #888;
+    }
+
+    .timeline-steps span {
+      position: relative;
+    }
+
+    .timeline-steps span::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      width: 4px;
+      height: 4px;
+      background: var(--color-gold);
+      border-radius: 50%;
+      transform: translateX(-50%);
+    }
+
+    /* Hero Section */
+    .hero-split {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 5rem;
+      align-items: start;
+      margin-bottom: 8rem;
+    }
+
+    .cover-sticky {
+      position: sticky;
+      top: 120px;
+    }
+
+    .book-cover {
+      width: 100%;
+      height: auto;
+      border-radius: 2px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 7vw, 5rem);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin: 0 0 1rem;
+      font-weight: 300;
+      line-height: 1;
+    }
+
+    .tagline {
+      font-size: 1.4rem;
+      color: var(--color-gold);
+      font-style: italic;
+      margin-bottom: 3rem;
+      display: block;
+    }
+
+    .nietzsche-quote {
+      background: #fff;
+      border-left: 3px solid #1a1a1a;
+      padding: 2rem;
+      margin-bottom: 3rem;
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+
+    /* Content Area */
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      margin: 5rem 0 2rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--color-gold);
+      margin: 3rem 0 1rem;
+      font-weight: 700;
+    }
+
+    .location-card {
+      background: #fafafa;
+      padding: 2.5rem;
+      border-radius: 4px;
+      margin-bottom: 2rem;
+      border: 1px solid #eee;
+    }
+
+    .location-card strong {
+      display: block;
+      font-family: 'Noto Sans', sans-serif;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      color: var(--color-gold);
+      margin-bottom: 1rem;
+    }
+
+    .warning-box {
+      margin-top: 6rem;
+      padding: 3rem;
+      background: #fff5f5;
+      border: 1px solid #feb2b2;
+      font-size: 0.9rem;
+      color: #702424;
+      font-family: 'Noto Sans', sans-serif;
+    }
+
+    .back-nav {
+      margin-top: 8rem;
+      text-align: center;
+      padding-top: 4rem;
+      border-top: 1px solid #eee;
+    }
+
+    .btn-archive {
+      text-decoration: none;
+      color: #888;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    @media (max-width: 850px) {
+      .hero-split { grid-template-columns: 1fr; text-align: center; }
+      .cover-sticky { position: relative; top: 0; max-width: 260px; margin: 0 auto 3rem; }
+      .timeline-steps { display: none; }
+    }
+  </style>
+
+  <article class="lazarus-page">
+    <header class="timeline-header">
+      <div class="timeline-steps">
+        <span>San Francisco 1977</span>
+        <span>Boston 1978</span>
+        <span>Kinshasa 1979</span>
+        <span>Rom 1983</span>
+      </div>
+      <h1>Project Lazarus</h1>
+      <span class="tagline">Sie wollten Gott spielen. Sie erschufen die Hölle.</span>
+    </header>
+
+    <div class="hero-split">
+      <div class="cover-sticky">
+        <img src={coverImage.src} alt="Cover Project Lazarus" class="book-cover" />
+      </div>
+
+      <div class="hero-content">
+        <div class="nietzsche-quote">
+          „Wer mit Ungeheuern kämpft, mag zusehn, dass er nicht dabei zum Ungeheuer wird.“
+          <span style="display:block; margin-top:1rem; font-size:0.8rem; font-style:normal; font-family:'Noto Sans',sans-serif; opacity:0.6;">— Friedrich Nietzsche</span>
+        </div>
+
+        <h2>Die Geschichte</h2>
+        <p>
+          <em>Project Lazarus</em> ist ein historischer Thriller, der eine verstörende Frage stellt: Was, wenn die AIDS-Epidemie kein Zufall war?
+        </p>
+        <p>
+          Die Geschichte beginnt 1977 in San Francisco. Kardinal Giuseppe Maria Rami beobachtet die Pride-Parade. Was er sieht, ist für ihn der Triumph der Sünde – und Sünde verlangt nach Strafe. Sein Plan: Eine moderne Plage als göttliche Gerechtigkeit.
+        </p>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <h3>Stationen des Zerfalls</h3>
+      
+      <div class="location-card">
+        <strong>Boston, 1978</strong>
+        <p>Dr. Jonathan Reed, ein brillanter Immunologe mit einem traumatischen Verlust in der Familie, entwickelt ein modifiziertes Retrovirus – getarnt als Hepatitis-Impfstoff. Ein Auftrag, der Glaube und Wissenschaft auf fatale Weise vereint.</p>
+      </div>
+
+      <div class="location-card">
+        <strong>Kinshasa, 1979</strong>
+        <p>Dr. Elias Ndlovu steht vor einem Rätsel. Siebzehn Nonnen sterben an einer mysteriösen Krankheit. Alle wurden geimpft. Es ist die erste Testphase eines Experiments, das niemand vermissen soll.</p>
+      </div>
+
+      <div class="location-card">
+        <strong>Rom, 1983</strong>
+        <p>Der Kreis schließt sich. Kardinal Rami liegt im Sterben. Das Virus, das er erschaffen ließ, frisst sich durch seinen eigenen Körper. Draußen schlagen Demonstranten gegen die Tore: „La chiesa tace! Noi moriamo!“ – Die Kirche schweigt. Wir sterben.</p>
+      </div>
+
+      <h2>Themen & Hintergründe</h2>
+      <p>
+        Ein Thriller über Schuld, Sühne und die Frage, wie weit der Glaube gehen darf, wenn er zur Ideologie wird. Project Lazarus verknüpft fiktive Spannung eng mit historischen Fakten der 70er und 80er Jahre.
+      </p>
+
+      <ul>
+        <li><strong>Wissenschaft als Waffe:</strong> Medizinischer Fortschritt als Instrument des Fanatismus.</li>
+        <li><strong>Unsichtbare Opfer:</strong> Eine Hommage an die vergessenen Toten der frühen Epidemie.</li>
+        <li><strong>Historischer Kontext:</strong> Die Hepatitis-B-Impfkampagnen und das lange Schweigen der Institutionen.</li>
+      </ul>
+
+      <div class="warning-box">
+        <strong>Hinweis:</strong> Dieses Buch behandelt schwere Themen wie Homophobie, religiösen Extremismus und die AIDS-Epidemie. Es ist ein fiktionaler Thriller zur Untersuchung moralischer Ambiguität.
+      </div>
+    </div>
+
+    <footer class="back-nav">
+      <a href="/romane/standalone" class="btn-archive">← Zurück zum Standalone-Archiv</a>
+    </footer>
+  </article>
+</BaseLayout>

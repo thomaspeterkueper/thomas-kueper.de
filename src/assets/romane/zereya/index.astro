@@ -1,0 +1,163 @@
+---
+// Dateipfad: src/pages/romane/zereya-band-1/index.astro
+// Name: Zereya - Band 1: Das Erwachen
+// Beschreibung: Eigenständige Saga des Großen Filters.
+
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import coverImage from './cover.jpg';
+
+export const frontmatter = {
+  title: "Zereya — Band 1",
+  genre: "Mystery / Resonanz-Thriller",
+  description: "Jakob kehrt in sein Elternhaus im Sauerland zurück. Er entdeckt eine Gabe: Frequenzen zu hören, die andere nicht wahrnehmen. Dann findet er Zereya – und einen Konflikt, der die Welt spaltet.",
+  status: "Zereya-Saga — Band 1",
+  universe: "zereya",
+  order: 45,
+  cover: coverImage.src
+};
+---
+
+<BaseLayout 
+  title="Zereya - Band 1 — T.P. KÜPER" 
+  description={frontmatter.description}>
+
+  <style is:inline>
+    /* RADIKALER RESET FÜR ZEREYA */
+    html, body, main {
+      background-color: #05070a !important;
+      color: #e2e8f0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .zereya-book-page {
+      background-color: #05070a;
+      min-height: 100vh;
+      font-family: 'Libre Baskerville', serif;
+      line-height: 1.8;
+      padding-bottom: 8rem;
+    }
+
+    .hero-zereya-book {
+      padding: 10rem 2rem 6rem;
+      background: linear-gradient(to bottom, #0f172a, #05070a), 
+                  radial-gradient(circle at center, #1e293b, #05070a);
+      text-align: center;
+      border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+    }
+
+    .hero-zereya-book h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.5rem, 8vw, 5.5rem);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #fff !important;
+      text-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
+      margin: 0;
+    }
+
+    .subtitle-tag {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: #3b82f6;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 350px 1fr;
+      gap: 6rem;
+      max-width: 1100px;
+      margin: 6rem auto;
+      padding: 0 2rem;
+      align-items: start;
+    }
+
+    .cover-sticky { position: sticky; top: 120px; }
+    .book-cover { 
+      width: 100%; 
+      border-radius: 2px; 
+      box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+    }
+
+    .teaser-box {
+      background: rgba(59, 130, 246, 0.05);
+      border-left: 3px solid #3b82f6;
+      padding: 3rem;
+      margin-bottom: 4rem;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #cbd5e1;
+    }
+
+    .text-block h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      color: #fff !important;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      padding-bottom: 0.5rem;
+    }
+
+    .back-nav-z {
+      text-align: center;
+      margin-top: 6rem;
+    }
+
+    .back-nav-z a {
+      color: #3b82f6;
+      text-decoration: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 900px) {
+      .content-grid { grid-template-columns: 1fr; }
+      .cover-sticky { position: relative; top: 0; max-width: 280px; margin: 0 auto 4rem; }
+    }
+  </style>
+
+  <div class="zereya-book-page">
+    <header class="hero-zereya-book">
+      <span class="subtitle-tag">Saga des Großen Filters</span>
+      <h1>Zereya</h1>
+      <p style="max-width: 700px; margin: 3rem auto 0; font-style: italic; color: #94a3b8; font-size: 1.1rem;">
+        „Das Haus atmete. Jakob hörte es nachts, wenn alles still war.“
+      </p>
+    </header>
+
+    <div class="content-grid">
+      <div class="cover-sticky">
+        <img src={coverImage.src} alt="Cover Zereya Band 1" class="book-cover" />
+      </div>
+
+      <div class="text-block">
+        <div class="teaser-box">
+          Jakob ist ausgebrannt. Nach dem Tod seiner Eltern kehrt der Frankfurter Architekt in sein Elternhaus im Sauerland zurück – ein Ort, den er Jahre gemieden hat.
+        </div>
+
+        <h2>Über das Buch</h2>
+        <p>
+          Das alte Haus scheint zu atmen. Die Narbe auf Jakobs Brust, seit seiner Kindheit ein stummer Zeuge, beginnt plötzlich zu vibrieren. Tief im Keller schlägt etwas gegen den Stein. Drei Mal. Es ist derselbe Rhythmus, den sein Sohn Elias in Frankfurt malt – immer wieder die gleichen Kreise.
+        </p>
+        <p>
+          Jakob entdeckt eine Gabe, die seine Familie seit Generationen im Verborgenen trägt: die Fähigkeit, Frequenzen zu hören, die für andere nur Stille sind. Doch diese Gabe lockt Aufmerksamkeit an – von jenen, die diese Verbindung kartografieren, kontrollieren und schließlich brechen wollen.
+        </p>
+        <p style="margin-top: 2rem;">
+          Dann findet er sie: Zereya. Die Frau aus seinen Träumen steht im Keller, ein Baby im Arm. Sie sucht Schutz an einem Ort, der mehr ist als nur ein Haus. Plötzlich ist Jakob nicht mehr nur ein ausgebrannter Architekt, sondern der Beschützer in einem Konflikt, dessen Ausmaß er erst langsam zu begreifen beginnt.
+        </p>
+
+        <div class="back-nav-z">
+          <a href="/universen/zereya">← Zurück zur Saga</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

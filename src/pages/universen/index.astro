@@ -1,0 +1,177 @@
+---
+// Dateipfad: src/pages/universen/index.astro
+// Beschreibung: Das monumentale Gateway zu den drei großen Sagas.
+// Fix: Import-Pfad auf zwei Ebenen korrigiert (../../), um den Build-Fehler zu beheben.
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="Die Universen" 
+  description="Baumeister, noχ¹ᐃ und Zereya: Die vernetzten Sagas von Thomas Peter Küper.">
+  
+  <style is:inline>
+    /* RESET FÜR KONSISTENTE OPTIK */
+    html, body, main {
+      background-color: #faf9f6 !important;
+      color: #1a1a1a !important;
+      margin: 0 !important;
+    }
+
+    .gateway-wrapper { 
+      background-color: #faf9f6; 
+      min-height: 100vh; 
+      padding-bottom: 10rem; 
+    }
+    
+    .hero-header { 
+      text-align: center; 
+      padding: 12rem 2rem 8rem; 
+      max-width: 1000px; 
+      margin: 0 auto; 
+    }
+    
+    .hero-header h1 { 
+      font-family: 'Crimson Text', serif; 
+      font-size: clamp(3.5rem, 10vw, 6rem); 
+      text-transform: uppercase; 
+      letter-spacing: 0.2em; 
+      margin-bottom: 2.5rem; 
+      color: #1a1a1a !important;
+      line-height: 1.1;
+      font-weight: 300;
+    }
+    
+    .universe-stack { 
+      display: flex; 
+      flex-direction: column; 
+      gap: 6rem; 
+      max-width: 1100px; 
+      margin: 0 auto; 
+      padding: 0 2rem; 
+    }
+    
+    .saga-entry { 
+      background: #ffffff; 
+      border: 1px solid #eee; 
+      padding: 6rem 5rem; 
+      text-decoration: none; 
+      color: inherit; 
+      display: grid; 
+      grid-template-columns: 1fr 1.5fr; 
+      gap: 5rem; 
+      align-items: center; 
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); 
+      position: relative; 
+      overflow: hidden; 
+    }
+    
+    .saga-entry:hover { 
+      transform: translateY(-10px); 
+      box-shadow: 0 40px 90px rgba(0,0,0,0.07); 
+      border-color: #c9a961; 
+    }
+    
+    .card-meta { 
+      text-align: right; 
+      border-right: 1px solid #eee; 
+      padding-right: 4rem; 
+    }
+    
+    .card-meta span { 
+      font-family: 'Lato', sans-serif; 
+      font-size: 0.65rem; 
+      text-transform: uppercase; 
+      letter-spacing: 4px; 
+      color: #c9a961; 
+      font-weight: 700; 
+      display: block; 
+      margin-bottom: 1.5rem; 
+    }
+    
+    .card-meta h2 { 
+      font-family: 'Crimson Text', serif; 
+      font-size: 3.5rem; 
+      font-weight: 300; 
+      margin: 0; 
+      color: #1a1a1a !important;
+    }
+    
+    .card-content p { 
+      font-family: 'Lora', serif;
+      color: #444; 
+      line-height: 2; 
+      font-size: 1.1rem; 
+      margin-bottom: 2rem; 
+    }
+    
+    .explore-link { 
+      font-family: 'Lato', sans-serif; 
+      font-size: 0.75rem; 
+      font-weight: 700; 
+      text-transform: uppercase; 
+      letter-spacing: 3px; 
+      border-bottom: 1px solid #c9a961; 
+      padding-bottom: 8px; 
+      color: #1a1a1a !important;
+      transition: color 0.3s;
+    }
+
+    .saga-entry:hover .explore-link {
+      color: #c9a961 !important;
+    }
+
+    @media (max-width: 1000px) {
+      .saga-entry { grid-template-columns: 1fr; gap: 3rem; padding: 4rem 2rem; }
+      .card-meta { text-align: center; border-right: none; border-bottom: 1px solid #eee; padding: 0 0 3rem 0; }
+      .card-content { text-align: center; }
+    }
+  </style>
+
+  <div class="gateway-wrapper">
+    <div class="container">
+      <header class="hero-header">
+        <h1>Die Universen</h1>
+        <p style="font-family: 'Lora', serif; font-style: italic; color: #c9a961; font-size: 1.4rem;">„Drei Sagas . Ein Feld . Unendliche Resonanz“</p>
+      </header>
+
+      <div class="universe-stack">
+        <!-- BAUMEISTER -->
+        <a href="/universen/baumeister" class="saga-entry">
+          <div class="card-meta">
+            <span>60.000 Jahre Epik</span>
+            <h2>Baumeister</h2>
+          </div>
+          <div class="card-content">
+            <p>Von den archaischen Myzel-Städten der Uralten über die singenden Kristalle von Dvārakā bis zur fernen Zukunft von Lian Thorn. Die Architektur des Seins.</p>
+            <span class="explore-link">Gefüge betreten</span>
+          </div>
+        </a>
+
+        <!-- NOXIA -->
+        <a href="/universen/nox" class="saga-entry">
+          <div class="card-meta">
+            <span>Realistischer Aufbruch</span>
+            <h2>noχ¹ᐃ</h2>
+          </div>
+          <div class="card-content">
+            <p>Die technologische Expansion der Menschheit ins All. Die Entdeckung der Axis Kammer, das χ-Feld und die Dekonstruktion der Identität.</p>
+            <span class="explore-link">Mission starten</span>
+          </div>
+        </a>
+
+        <!-- ZEREYA -->
+        <a href="/universen/zereya" class="saga-entry">
+          <div class="card-meta">
+            <span>Saga des Filters</span>
+            <h2>Zereya</h2>
+          </div>
+          <div class="card-content">
+            <p>Das Universum der Übergänge und Liminal Spaces. Eine Reise durch das atmende Haus bis zu den Trümmern ferner Systeme. Wo Transformation geschieht.</p>
+            <span class="explore-link">Filter erforschen</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

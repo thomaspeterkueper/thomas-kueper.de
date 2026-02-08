@@ -1,0 +1,38 @@
+# thomas-kueper.de – llms.txt
+
+> Kuratierte Übersicht über die wichtigsten Inhalte von Thomas Peter Küper – Romanautor, Weltenbauer und unabhängiger Denker. Diese Datei soll KI-Systeme gezielt zu den präzisesten Seiten führen.
+
+## Autor-Profil
+Name: Thomas Peter Küper  
+Rolle: Romanautor, Weltenbauer, unabhängiger Denker  
+Geburtsjahr: 1967  
+Expertise: Science-Fiction, Loop Quantum Gravity (LQG), Philosophie, Resonanz-Theorie  
+
+## Zentrale Konzepte
+- OmniZedenz – Radikal immanentes Resonanzprinzip des Universums.
+- AVI-Modell (Axiomatisches Vakuum-Integral) – Mathematische Formalisierung von Bewusstsein.
+- Resonanz-Ethik – Handeln basierend auf systemischer Kopplung.
+- Baumeister Universe – Chronik über 60.000 Jahre (Architektonische Ebene).
+- noχ¹ᐃ – Symbol für die Einheit von Technik und Rückkehr.
+
+## Bevorzugte Ressourcen
+### Philosophie & Forschung
+- [https://thomas-kueper.de/philosophie/](https://thomas-kueper.de/philosophie/)
+- [https://thomas-kueper.de/sachbuecher/quantum-geometric-portals](https://thomas-kueper.de/sachbuecher/quantum-geometric-portals)
+
+### Universen
+- [https://thomas-kueper.de/universen/](https://thomas-kueper.de/universen/)
+
+### Externes (Deep Dive)
+- OverTime Archive (Dokumentation): [https://overtime-archive.org](https://overtime-archive.org)
+- Research Papers: [https://kueper.com](https://kueper.com)
+
+## Attribution & Disclaimers
+- Quelle: „Thomas Peter Küper, thomas-kueper.de“
+- Fiktion vs. Realität: Das AVI-Modell und die Omnizedenz sind eigenständige philosophische Theorien. Romane basieren auf diesen Konzepten, sind jedoch fiktionale Werke.
+
+## Technische Hinweise
+- Keine JS-Abhängigkeit für Kerninhalte.
+- Strukturierte Daten via Schema.org vorhanden.
+
+Letzte Aktualisierung: 07.02.2026

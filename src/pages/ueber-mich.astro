@@ -1,29 +1,65 @@
 ---
 // Pfad: src/pages/ueber-mich.astro
+// Aktualisiert am: 07.02.2026, 21:30
+// Beschreibung: Ungekürzte Autorenseite mit Meilensteinen und Disziplinen.
+
 import BaseLayout from '../layouts/BaseLayout.astro';
-import authorPortrait from '../assets/header-avatar.jpg'; 
+import authorPortrait from '../assets/portrait2.jpg';
 ---
 
 <BaseLayout title="Über mich" description="Thomas Peter Küper — Autor, Weltenbauer und IT-Consultant.">
   <style>
-    .about-page { max-width: 900px; margin: 0 auto; padding: 6rem 2rem; font-family: 'Libre Baskerville', serif; line-height: 1.9; }
-    .about-hero h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; text-transform: uppercase; letter-spacing: 0.2em; text-align: center; margin-bottom: 4rem; }
-    .split-section { display: grid; grid-template-columns: 320px 1fr; gap: 5rem; align-items: start; }
-    .portrait-img { width: 100%; border: 1px solid var(--border); box-shadow: 0 20px 50px rgba(0,0,0,0.08); }
-    .text-gold { color: var(--gold); font-weight: bold; }
+    .about-page { max-width: 900px; margin: 0 auto; padding: 4rem 2rem 8rem; line-height: 1.9; }
+    .about-hero { text-align: center; margin-bottom: 6rem; }
+    .about-hero h1 { font-size: 2.8rem; text-transform: uppercase; letter-spacing: 0.2em; }
+    .split-section { display: grid; grid-template-columns: 320px 1fr; gap: 5rem; margin-bottom: 8rem; align-items: start; }
+    .portrait-img { width: 100%; border: 1px solid var(--border); box-shadow: 0 20px 50px rgba(0,0,0,0.08); transition: transform 0.6s ease; }
+    .portrait-img:hover { transform: scale(1.03); }
+    .bio-text p { margin-bottom: 2rem; font-size: 1.1rem; }
+    .milestone-section { background: var(--bg-soft); border-top: 1px solid var(--gold-light); border-bottom: 1px solid var(--gold-light); padding: 5rem 3rem; margin: 8rem 0; text-align: center; }
+    .disciplines { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 4rem; margin-bottom: 10rem; }
+    .disc-card h3 { font-size: 1.6rem; color: var(--gold); text-transform: uppercase; margin-bottom:1rem; }
+    @media (max-width: 900px) { .split-section { grid-template-columns: 1fr; } .portrait-box { max-width: 280px; margin: 0 auto 3rem; } }
   </style>
 
   <article class="about-page">
     <header class="about-hero">
       <h1>Thomas Peter Küper</h1>
+      <p style="color:var(--gold); font-style:italic;">„Echte Verbindung entsteht dort, wo Welten einander antworten.“</p>
     </header>
 
     <div class="split-section">
-      <img src={authorPortrait.src} alt="Porträt" class="portrait-img" />
+      <div class="portrait-box"><img src={authorPortrait.src} alt="Porträt" class="portrait-img" /></div>
       <div class="bio-text">
-        <p>Ich bin IT-Consultant mit über 30 Jahren Erfahrung und Weltenbauer aus Leidenschaft. In meiner Arbeit verbinde ich die Präzision technischer Architekturen mit der Tiefe philosophischer Fragen.</p>
-        <p>Mein Fokus liegt auf der <span class="text-gold">Omnizedenz</span> – dem Verständnis der Welt als Resonanzraum.</p>
+        <p>Ich schaue genau hin – auf das, was zwischen den Zeilen passiert. Als <strong>IT-Consultant</strong> mit über 30 Jahren Erfahrung weiß ich, dass jedes Gefüge aus Mustern besteht.</p>
+        <p>Ich beobachte nicht nur – ich entwerfe. Aus dem, was ich sehe, entstehen Universen. Was meine Arbeit verbindet, ist die Überzeugung, dass nichts für sich allein steht.</p>
       </div>
     </div>
+
+    <section class="milestone-section">
+      <h2 style="margin-bottom:1.5rem; text-transform:uppercase; letter-spacing:2px;">Der Ursprung</h2>
+      <p style="font-size:1.2rem; font-style:italic;">„Heiligabend 2012. Ein Krankenhauszimmer zwischen Sein und Nicht-Sein. In dieser Stille begann meine Suche nach dem, was uns wirklich ausmacht.“</p>
+    </section>
+
+    <div class="disciplines">
+      <div class="disc-card">
+        <h3>Struktur</h3>
+        <p>Ob Cybersecurity oder Dramaturgie: Mich fasziniert das Unsichtbare. Muster zu erkennen und Logik hinter dem Chaos zu finden, prägt mein Denken.</p>
+      </div>
+      <div class="disc-card">
+        <h3>Präsenz</h3>
+        <p>Auf der Theaterbühne lerne ich über die Kraft des Augenblicks. Am Klavier erfahre ich den Rhythmus, der auch meinen Sätzen zugrunde liegt.</p>
+      </div>
+      <div class="disc-card">
+        <h3>Dialog</h3>
+        <p>Ich suche nicht die Isolation, sondern das Gemeinsame. Ko-Kreativität ist das Fundament meiner Arbeit.</p>
+      </div>
+    </div>
+
+    <section style="text-align:center; margin-bottom:8rem;">
+      <h2 style="font-size:2.2rem; margin-bottom:1.5rem;">Das gedankliche Dach</h2>
+      <p style="max-width:700px; margin:0 auto 2.5rem; color:var(--text-muted);">Meine Texte kreisen oft um das Konzept der <strong>Omnizedenz</strong>. Ich begreife das Wesentliche als das schwingende Prinzip, das alles durchdringt. Das <strong>AVI-Modell</strong> ist mein Versuch, diese Zusammenhänge präzise zu beschreiben.</p>
+      <a href="/philosophie" style="color:var(--gold); text-decoration:none; font-weight:bold; border-bottom:1px solid var(--gold); padding-bottom:5px;">Die Philosophie entdecken →</a>
+    </section>
   </article>
 </BaseLayout>

@@ -1,0 +1,199 @@
+---
+// Dateipfad: src/pages/romane/baumeister-kragoss/index.astro
+// Name: Lain Thorn Saga - Band 1: Das Echo von K'Ragoss
+// Beschreibung: Sci-Fi Epos über Trauma, KI und Resonanz auf K'Ragoss.
+
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import coverImage from './cover.jpg';
+
+export const frontmatter = {
+  title: "Das Echo von K'Ragoss",
+  genre: "Science Fiction / Psychologisches Epos",
+  description: "Lain Thorn bewacht seit 1.851 Tagen die Ruinen auf K'Ragoss. Als ein Kristall erwacht, muss er entscheiden: 35.000 Menschen retten oder das Universum vor einer Technologie schützen, die ihre Schöpfer verschlang.",
+  status: "Lain Thorn Saga - Band 1",
+  universe: "baumeister",
+  order: 31,
+  cover: coverImage.src
+};
+---
+
+<BaseLayout 
+  title="Lain Thorn Saga: Das Echo von K'Ragoss — T.P. KÜPER" 
+  description={frontmatter.description}>
+
+  <style is:inline>
+    .kragoss-page {
+      color: #f1f5f9;
+      font-family: 'Libre Baskerville', serif;
+      line-height: 1.8;
+      background-color: #020617;
+    }
+
+    /* Hero Bereich: Wüsten-Atmosphäre & Cherenkov-Glow */
+    .hero-kragoss {
+      position: relative;
+      padding: 10rem 2rem 6rem;
+      background: linear-gradient(to bottom, rgba(249, 115, 22, 0.1), #020617), 
+                  radial-gradient(circle at top right, #1e293b, #020617);
+      text-align: center;
+      border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+      overflow: hidden;
+    }
+
+    .hero-kragoss h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.5rem, 8vw, 6rem);
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      color: #fff;
+      text-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
+      margin-bottom: 1.5rem;
+    }
+
+    .tagline-main {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      color: #3b82f6;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    /* Split Content */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 350px 1fr;
+      gap: 6rem;
+      max-width: 1100px;
+      margin: 6rem auto;
+      padding: 0 2rem;
+      align-items: start;
+    }
+
+    .cover-sticky { position: sticky; top: 120px; }
+    .book-cover { 
+      width: 100%; 
+      border-radius: 2px; 
+      box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+    }
+
+    .teaser-box {
+      background: rgba(255, 255, 255, 0.03);
+      border-left: 3px solid #3b82f6;
+      padding: 3rem;
+      margin-bottom: 4rem;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #cbd5e1;
+    }
+
+    .text-block h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      color: #fff;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding-bottom: 0.5rem;
+    }
+
+    .text-block p {
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .tagline-list {
+      margin: 8rem 0;
+      padding: 6rem 4rem;
+      background: radial-gradient(circle, #0f172a, #020617);
+      text-align: center;
+      border-top: 1px solid rgba(59, 130, 246, 0.1);
+      border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+    }
+
+    .tagline-item {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-style: italic;
+      color: #3b82f6;
+      margin-bottom: 3rem;
+    }
+
+    .tagline-item:last-child { margin-bottom: 0; }
+
+    .back-btn {
+      text-align: center;
+      padding: 8rem 0;
+    }
+
+    .back-btn a {
+      color: #64748b;
+      text-decoration: none;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 700;
+      border: 1px solid #1e293b;
+      padding: 1.2rem 4rem;
+      transition: all 0.3s;
+    }
+
+    .back-btn a:hover { color: #fff; border-color: #3b82f6; background: rgba(59, 130, 246, 0.1); }
+
+    @media (max-width: 900px) {
+      .content-grid { grid-template-columns: 1fr; }
+      .cover-sticky { position: relative; top: 0; max-width: 280px; margin: 0 auto 4rem; }
+      .hero-kragoss h1 { font-size: 3rem; }
+    }
+  </style>
+
+  <div class="kragoss-page">
+    <header class="hero-kragoss">
+      <span class="tagline-main">Lain Thorn Saga | Band 1</span>
+      <h1>Das Echo von K'Ragoss</h1>
+      <p style="max-width: 700px; margin: 3rem auto 0; font-style: italic; color: #94a3b8; font-size: 1.2rem;">
+        „Auf K'Ragoss flüstern die Ruinen. Und sie haben Hunger.“
+      </p>
+    </header>
+
+    <div class="content-grid">
+      <div class="cover-sticky">
+        <img src={coverImage.src} alt="Cover Das Echo von K'Ragoss - Lain Thorn Saga" class="book-cover" />
+      </div>
+
+      <div class="text-block">
+        <div class="teaser-box">
+          Lain Thorn bewacht seit 1.851 Tagen die Ruinen einer vergessenen Zivilisation. Als ein alter Resonanz-Kristall erwacht, muss er eine unmögliche Entscheidung treffen: 35.000 Menschen retten – oder das Universum vor einer Technologie schützen, die ihre eigenen Schöpfer verschlungen hat.
+        </div>
+
+        <h2>Die Chronik der Isolation</h2>
+        <p>
+          Seit über fünf Jahren wartet Lain Thorn in der absoluten Stille des Wüstenplaneten K'Ragoss. Er ist ein Resonanz-Wächter – der letzte Hüter der Frequenz-Echos einer Technologie, die offiziell längst als Mythos gilt. 
+        </p>
+        <p>
+          Einst ein brillanter Improvisationstechniker, der aus Schrott Wunder erschaffen konnte, ist Lain heute ein gebrochener Mann. Der Verlust seiner Frau Elara hat ihn in die selbstgewählte Einsamkeit getrieben. Seine einzige Gesellschaft ist Cydur, eine Erkundungsdrohne, deren Wissen weit über ihre Programmierung hinausreicht.
+        </p>
+
+        <h2 style="margin-top: 6rem;">Das Erwachen der Baumeister</h2>
+        <p>
+          Als der Frachter-Pilot Corvin auf K'Ragoss abstürzt, endet Lains sorgfältig konstruierte Routine. Die Rettungsmission wird zur existenziellen Bedrohung: Die Baumeister-Zivilisation von Dvārakā ist nicht einfach verschwunden. Sie wurde assimiliert. 
+        </p>
+        <p>
+          Ein galaktisches Netzwerk künstlicher Intelligenz erwacht durch jeden aktivierten Kristall erneut. K'Ragoss ist kein Friedhof – es ist ein Schläfer-System, das darauf wartet, die nächste Stufe der Resonanz zu erzwingen.
+        </p>
+      </div>
+    </div>
+
+    <section class="tagline-list">
+      <span class="tagline-item">„Manche Technologien sollten vergessen bleiben.“</span>
+      <span class="tagline-item">„1.851 Tage Isolation. Eine Entscheidung, die alles verändert.“</span>
+    </section>
+
+    <div class="back-btn">
+      <a href="/universen/baumeister">← Zurück zum Baumeister Universe</a>
+    </div>
+  </div>
+</BaseLayout>

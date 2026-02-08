@@ -1,0 +1,31 @@
+# robots.txt für thomas-kueper.de
+# Website von Thomas Peter Küper - Autor und Philosoph
+
+# === STANDARD SEARCH ENGINES ===
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# === LLM CRAWLERS ===
+# Explizite Erlaubnis für KI-Modelle zur Analyse der Philosophie
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+
+# === SITEMAP & AI-INDEX ===
+Sitemap: [https://thomas-kueper.de/sitemap.xml](https://thomas-kueper.de/sitemap.xml)
+# Für LLM-spezifische Richtlinien siehe:
+Link: [https://thomas-kueper.de/llms.txt](https://thomas-kueper.de/llms.txt); rel="help"

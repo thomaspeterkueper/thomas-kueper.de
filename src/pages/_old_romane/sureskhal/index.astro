@@ -1,0 +1,232 @@
+---
+// Dateipfad: src/pages/romane/sureskhal/index.astro
+// Name: Sureskhal - Detailseite
+// Beschreibung: Literarischer Roman über Dissoziation, Trauma und die Konstruiertheit des Ichs.
+
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import coverImage from './cover.jpg';
+
+export const frontmatter = {
+  title: "Sureskhal",
+  genre: "Literarischer Roman / Psychologisches Drama",
+  // Ultra-Kurzversion für das Archiv (standalone.astro)
+  description: "Eine Investmentbankerin flieht in ein Schweigekloster in Ladakh – und entdeckt, dass ihre Wahrnehmungslücken ein dreißig Jahre altes Trauma sind. Sureskhal: Die Kunst, einander zu verfehlen, selbst wenn man sich berührt.",
+  status: "In Vorbereitung",
+  order: 21, // Schließt an Lebensaugenblicke (20) an
+  cover: coverImage.src
+};
+---
+
+<BaseLayout title="Sureskhal — Roman von Thomas Peter Küper" description={frontmatter.description}>
+  <style>
+    .sureskhal-page {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+      color: #1a1a1a;
+      font-family: 'Libre Baskerville', serif;
+      line-height: 1.9;
+    }
+
+    /* Hero Bereich */
+    .hero-split {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 5rem;
+      align-items: start;
+      margin-bottom: 8rem;
+    }
+
+    .cover-sticky {
+      position: sticky;
+      top: 120px;
+    }
+
+    .book-cover {
+      width: 100%;
+      height: auto;
+      border-radius: 2px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+      border: 1px solid #f0f0f0;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 7vw, 5rem);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin: 0 0 0.5rem;
+      font-weight: 300;
+      line-height: 1;
+    }
+
+    .tagline {
+      font-size: 1.4rem;
+      color: var(--color-gold);
+      font-style: italic;
+      margin-bottom: 3rem;
+      display: block;
+      line-height: 1.4;
+    }
+
+    /* Fragment-Optik für den Teaser */
+    .flicker-box {
+      background: #fafafa;
+      border-left: 2px solid #1a1a1a;
+      padding: 2.5rem;
+      margin-bottom: 3rem;
+      font-size: 1.15rem;
+      position: relative;
+    }
+
+    .flicker-box::after {
+      content: "";
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+      pointer-events: none;
+      opacity: 0.3;
+    }
+
+    /* Content Layout */
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      margin: 5rem 0 2rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.5rem;
+      color: #1a1a1a;
+    }
+
+    .ladakh-section {
+      background: #faf9f6;
+      padding: 4rem;
+      margin: 6rem -2rem;
+      border-radius: 4px;
+      border: 1px solid #e5dcc8;
+    }
+
+    .ladakh-section h3 {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--color-gold);
+      margin-bottom: 1.5rem;
+    }
+
+    .sureskhal-definition {
+      margin: 6rem 0;
+      text-align: center;
+      padding: 4rem;
+      background: #1a1a1a;
+      color: #fff;
+    }
+
+    .sureskhal-definition blockquote {
+      font-size: 1.8rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      line-height: 1.5;
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .sureskhal-definition cite {
+      display: block;
+      margin-top: 2rem;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--color-gold);
+      font-style: normal;
+    }
+
+    .back-nav {
+      margin-top: 8rem;
+      text-align: center;
+      padding-top: 4rem;
+      border-top: 1px solid #eee;
+    }
+
+    .btn-archive {
+      text-decoration: none;
+      color: #888;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    @media (max-width: 850px) {
+      .hero-split { grid-template-columns: 1fr; text-align: center; }
+      .cover-sticky { position: relative; top: 0; max-width: 250px; margin: 0 auto 3rem; }
+      .ladakh-section { padding: 2.5rem 1.5rem; margin: 4rem 0; }
+    }
+  </style>
+
+  <article class="sureskhal-page">
+    <div class="hero-split">
+      <div class="cover-sticky">
+        <img src={coverImage.src} alt="Cover Sureskhal" class="book-cover" />
+      </div>
+
+      <div class="hero-info">
+        <span style="font-family: 'Noto Sans', sans-serif; text-transform: uppercase; letter-spacing: 3px; font-size: 0.75rem; color: #888; display: block; margin-bottom: 1rem;">Literarischer Roman</span>
+        <h1>{frontmatter.title}</h1>
+        <span class="tagline">Die Kunst, einander zu verfehlen</span>
+        
+        <div class="flicker-box">
+          <p><strong>Die Welt flackert.</strong></p>
+          <p style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.7;">
+            15.000 Mal pro Stunde blinzelt Anna Mars – und jedes Mal verschwindet die Realität für einen Sekundenbruchteil. Als Investmentbankerin in London hatte sie gelernt, die Lücken zu simulieren. Bis ihr Körper rebelliert.
+          </p>
+        </div>
+
+        <p>
+          Anna Mars ist fünfzig, erfolgreich und am Rande des Zusammenbruchs. In den Glasfassaden Londons hat sie gelernt, Kontrolle zu atmen. Doch zwischen Meetings flackert ihre Wahrnehmung. Momente verschwinden. Die Welt springt.
+        </p>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <section class="ladakh-section">
+        <h3>Station: Ladakh</h3>
+        <p>
+          Flucht nach Ladakh: ein buddhistisches Meditationsretreat, sechstausend Kilometer von der Finanzwelt entfernt. In der erzwungenen Stille entdeckt Anna, dass ihre Lücken System haben. 
+        </p>
+        <p>
+          Was, wenn die Lücken nicht neurologisch sind, sondern psychisch? Wenn der Körper sich erinnert an das, was der Verstand verdrängt hat? Eine Nacht in Frankfurt, 1994. Eine Tanzfläche, auf der sie zum ersten Mal verschwand. Trauma oder Transzendenz?
+        </p>
+      </section>
+
+      <h2>Zwei Generationen. Eine Resonanz.</h2>
+      <p>
+        Dann kommt Lotta. Ihre sechzehnjährige Tochter, die mit Ketamin versucht, die Dissoziation der Mutter chemisch zu replizieren. Zwei Frauen, gefangen in einem Raum ohne Ausgang, verbunden durch das Bedürfnis, die Realität zu verlassen.
+      </p>
+
+      <div class="sureskhal-definition">
+        <blockquote>
+          „Sureskhal – ein Wort ohne Übersetzung. Die Kunst, einander zu verfehlen, selbst wenn man sich berührt. Die Kunst, am selben Ort zu stehen und dennoch Lichtjahre voneinander entfernt zu sein.“
+        </blockquote>
+        <cite>Definition des Unaussprechlichen</cite>
+      </div>
+
+      <p>
+        <em>Sureskhal</em> ist ein Roman über die Konstruiertheit des Ichs, über vererbtes Trauma und die Frage, was bleibt, wenn die Wahrnehmung Risse bekommt. Präzise, fragmentiert und schonungslos in seiner Untersuchung der modernen Seele.
+      </p>
+
+      <div style="margin-top: 4rem; border-top: 1px solid #eee; padding-top: 3rem;">
+        <p style="font-family: 'Noto Sans', sans-serif; font-size: 0.9rem; color: #666; font-style: italic; text-align: center;">
+          „Bricht sie zusammen – oder öffnet sie sich endlich?“
+        </p>
+      </div>
+    </div>
+
+    <footer class="back-nav">
+      <a href="/romane/standalone" class="btn-archive">← Zurück zum Standalone-Archiv</a>
+    </footer>
+  </article>
+</BaseLayout>

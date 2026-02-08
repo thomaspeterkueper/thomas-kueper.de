@@ -1,0 +1,218 @@
+---
+// Dateipfad: src/pages/romane/zeitingenieure/index.astro
+// Name: Die Zeitingenieure - Detailseite
+// Beschreibung: Kontemplativer Roman über Zeitphilosophie, KI und indigene Weisheit.
+
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import coverImage from './cover.jpg';
+
+export const frontmatter = {
+  title: "Die Zeitingenieure",
+  genre: "Kontemplativer Roman / Wissenschafts-Fiction",
+  // Kurz-Teaser für das Archiv (standalone.astro)
+  description: "Ein deutscher Philosoph sucht am Uluru nach den Beweisen seiner Zeit-Theorie. Ein Dialog zwischen westlicher Physik, KI und Aboriginal Songlines – bewusst unvollendet wie Bachs Kunst der Fuge.",
+  status: "In Vorbereitung / Literarisches Experiment",
+  order: 25, // Schließt an 'Der Resonanzhack' an
+  cover: coverImage.src
+};
+---
+
+<BaseLayout title="Die Zeitingenieure — Roman von Thomas Peter Küper" description={frontmatter.description}>
+  <style>
+    .fugue-page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+      color: #1a1a1a;
+      font-family: 'Libre Baskerville', serif;
+      line-height: 1.9;
+    }
+
+    /* Hero Section */
+    .hero-split {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 5rem;
+      align-items: start;
+      margin-bottom: 8rem;
+    }
+
+    .cover-sticky {
+      position: sticky;
+      top: 120px;
+    }
+
+    .book-cover {
+      width: 100%;
+      height: auto;
+      border-radius: 2px;
+      box-shadow: 0 30px 60px rgba(139, 115, 85, 0.2);
+      border: 1px solid #e5dcc8;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 7vw, 4.5rem);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin: 0 0 0.5rem;
+      font-weight: 300;
+      line-height: 1.1;
+    }
+
+    .tagline {
+      font-size: 1.4rem;
+      color: var(--gold);
+      font-style: italic;
+      margin-bottom: 3rem;
+      display: block;
+      line-height: 1.4;
+    }
+
+    .teaser-box {
+      background: #faf9f6;
+      border-left: 4px solid var(--gold);
+      padding: 2.5rem;
+      font-size: 1.15rem;
+      margin-bottom: 3.5rem;
+    }
+
+    /* Content Area */
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      margin: 5rem 0 2rem;
+      border-bottom: 1px solid #e5dcc8;
+      padding-bottom: 0.5rem;
+    }
+
+    .dialogue-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin: 4rem 0;
+    }
+
+    .dialogue-card {
+      padding: 2.5rem;
+      background: #fff;
+      border: 1px solid #f0f0f0;
+      border-top: 3px solid var(--gold);
+    }
+
+    .dialogue-card strong {
+      display: block;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .fuge-note {
+      margin: 6rem 0;
+      padding: 4rem;
+      background: #1a1a1a;
+      color: #fff;
+      text-align: center;
+      position: relative;
+    }
+
+    .fuge-note p {
+      font-size: 1.3rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .back-nav {
+      margin-top: 8rem;
+      text-align: center;
+      padding-top: 4rem;
+      border-top: 1px solid #eee;
+    }
+
+    .btn-archive {
+      text-decoration: none;
+      color: #888;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    @media (max-width: 850px) {
+      .hero-split { grid-template-columns: 1fr; text-align: center; }
+      .cover-sticky { position: relative; top: 0; max-width: 250px; margin: 0 auto 3rem; }
+      .dialogue-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <article class="fugue-page">
+    <div class="hero-split">
+      <div class="cover-sticky">
+        <img src={coverImage.src} alt="Cover Die Zeitingenieure" class="book-cover" />
+      </div>
+
+      <div class="hero-info">
+        <span style="font-family: 'Noto Sans', sans-serif; text-transform: uppercase; letter-spacing: 3px; font-size: 0.75rem; color: #888; display: block; margin-bottom: 1rem;">Literarische Fuge</span>
+        <h1>{frontmatter.title}</h1>
+        <span class="tagline">Wo westliche Physik auf die Traumzeit trifft</span>
+        
+        <div class="teaser-box">
+          <p><strong>Was, wenn Zeit nicht ist, was wir glauben?</strong></p>
+          <p style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.7;">
+            Ein deutscher Philosoph sucht am Uluru nach den Beweisen seiner revolutionären Gleichungen. Er findet einen Dialog, der Welten verbindet – und Fragen, die unbeantwortet bleiben müssen.
+          </p>
+        </div>
+
+        <p>
+          Die Zeitingenieure erzählt die Geschichte eines introvertierten Denkers, der sein Studierzimmer verlässt, um im Herzen Australiens das Wesen der Zeit zu ergründen. Seine Reise wird zur literarischen Fuge über die Grenzen des Wissens.
+        </p>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <h2>Der Dialog der drei Stimmen</h2>
+      <p>
+        Was als wissenschaftliche Expedition beginnt, entwickelt sich zu einem außergewöhnlichen Geflecht aus Perspektiven. Die KI beginnt Muster zu erkennen, die der westlichen Logik entgleiten.
+      </p>
+
+      <div class="dialogue-grid">
+        <div class="dialogue-card">
+          <strong>Der Philosoph</strong>
+          <p style="font-size: 0.95rem;">Dr. Stefan Weber sucht die Bestätigung seiner CE-AVI Theorie: Zeit als fundamentale Kraft des Vakuums.</p>
+        </div>
+        <div class="dialogue-card">
+          <strong>Die KI</strong>
+          <p style="font-size: 0.95rem;">Ein grenzenloses Interface, das Songlines als Datenstrukturen und Zeremonien als Programmierung der Realität interpretiert.</p>
+        </div>
+        <div class="dialogue-card">
+          <strong>Die Songlines</strong>
+          <p style="font-size: 0.95rem;">Indigenes Wissen, das den Uluru als geologischen Quantencomputer begreift, der seit Jahrtausenden schwingt.</p>
+        </div>
+      </div>
+
+      <div class="fuge-note">
+        <p>
+          „Der Roman endet wie Bachs unvollendete Kunst der Fuge – mitten im Gedankengang. Denn manche Resonanzen lassen sich nicht in Worte fassen.“
+        </p>
+      </div>
+
+      <h2>Struktur & Philosophie</h2>
+      <p>
+        In diesem Roman verweben sich wissenschaftliche Theorie, philosophische Reflexion und spirituelle Erfahrung. Es geht nicht um schnelle Antworten, sondern um das vorsichtige Ertasten von Verbindungen zwischen Weltbildern, die unterschiedlicher nicht sein könnten.
+      </p>
+      <p>
+        Ein Werk für alle, die an den Grenzen des Denkbaren nach jener Resonanz suchen, die uns alle verbindet – jenseits der messbaren Zeit.
+      </p>
+    </div>
+
+    <footer class="back-nav">
+      <a href="/romane/standalone" class="btn-archive">← Zurück zum Standalone-Archiv</a>
+    </footer>
+  </article>
+</BaseLayout>

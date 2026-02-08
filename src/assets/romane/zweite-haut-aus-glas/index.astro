@@ -1,0 +1,198 @@
+---
+// Dateipfad: src/pages/romane/zweite-haut-aus-glas/index.astro
+// Name: Die zweite Haut aus Glas (Das Neonlicht-Projekt)
+// Beschreibung: Literarischer Roman über moderne Isolation und Präzision.
+
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import coverImage from './cover.jpg';
+
+export const frontmatter = {
+  title: "Die zweite Haut aus Glas",
+  genre: "Literary Fiction / Digital Noir",
+  // Kurz-Teaser für das Archiv (standalone.astro)
+  description: "0,02 Millimeter sind nicht 'fast richtig', sondern falsch. Jan hat sein Leben auf Präzision gebaut – bis eine Begegnung an der Supermarktkasse die Risse in seinem perfekt geordneten Alltag offenbart.",
+  status: "In Vorbereitung",
+  order: 16, // Folgt auf Marc Aurel
+  cover: coverImage.src
+};
+---
+
+<BaseLayout title="Die zweite Haut aus Glas — Roman von Thomas Peter Küper" description={frontmatter.description}>
+  <style>
+    .glass-page {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+      color: #1a1a1a;
+      font-family: 'Libre Baskerville', serif;
+      line-height: 1.9;
+    }
+
+    /* Hero Layout */
+    .hero-split {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 5rem;
+      align-items: start;
+      margin-bottom: 8rem;
+    }
+
+    .cover-sticky {
+      position: sticky;
+      top: 120px;
+    }
+
+    .book-cover {
+      width: 100%;
+      height: auto;
+      border-radius: 2px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+      border: 1px solid #e2e8f0;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin: 0 0 0.5rem;
+      font-weight: 300;
+      line-height: 1.1;
+    }
+
+    .project-subtitle {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: #94a3b8;
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+
+    .tagline {
+      font-size: 1.4rem;
+      color: var(--color-gold);
+      font-style: italic;
+      margin-bottom: 3rem;
+      display: block;
+    }
+
+    .neon-teaser {
+      background: #f8fafc;
+      border-left: 3px solid #cbd5e1;
+      padding: 2.5rem;
+      font-size: 1.15rem;
+      margin-bottom: 3.5rem;
+      color: #475569;
+    }
+
+    /* Content Area */
+    .main-content h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      margin: 4rem 0 1.5rem;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 0.5rem;
+      color: #1a1a1a;
+    }
+
+    .meta-info {
+      margin-top: 5rem;
+      padding-top: 3rem;
+      border-top: 1px solid #eee;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .meta-item h3 {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #94a3b8;
+      margin-bottom: 1rem;
+    }
+
+    .back-nav {
+      margin-top: 8rem;
+      text-align: center;
+      padding-top: 4rem;
+      border-top: 1px solid #eee;
+    }
+
+    .btn-back {
+      text-decoration: none;
+      color: #94a3b8;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: color 0.3s;
+    }
+
+    .btn-back:hover { color: var(--color-gold); }
+
+    @media (max-width: 850px) {
+      .hero-split { grid-template-columns: 1fr; text-align: center; }
+      .cover-sticky { position: relative; top: 0; max-width: 250px; margin: 0 auto 3rem; }
+      .neon-teaser { padding: 1.5rem; border-left-width: 2px; }
+      .meta-info { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <article class="glass-page">
+    <div class="hero-split">
+      <div class="cover-sticky">
+        <img src={coverImage.src} alt="Cover Die zweite Haut aus Glas" class="book-cover" />
+      </div>
+
+      <div class="hero-content">
+        <span class="project-subtitle">Das Neonlicht-Projekt</span>
+        <h1>{frontmatter.title}</h1>
+        <span class="tagline">Ein Roman über die Sehnsucht nach Unschärfe</span>
+        
+        <div class="neon-teaser">
+          <p>
+            „Unter Neonlicht wirkt alles klar umrissen und gleichzeitig fern, als läge eine Scheibe dazwischen.“
+          </p>
+        </div>
+
+        <p>
+          Jan lebt ein Leben in Präzision: 0,02 Millimeter sind in seiner Welt nicht „fast richtig“, sondern falsch. Als Qualitätsprüfer hat er seine Tage perfektioniert – Routinen ohne Abweichung, Kontrolle ohne Gefühl.
+        </p>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <h2>Die Story</h2>
+      <p>
+        In einer namenlosen deutschen Stadt, unter Leuchtstoffröhren, die nie ganz hell werden, ist für Jan alles sichtbar und nichts greifbar. Er hat sein Leben auf Zahlen und Protokolle gebaut, um der Unvorhersehbarkeit des Seins zu entkommen.
+      </p>
+      <p>
+        Bis eine kurze Begegnung an einer Supermarktkasse alles in Bewegung setzt. Kristin – eine Frau, die mehr Schichten hat, als sie zeigt – wird zu einem Riss in Jans sorgfältig geordnetem Alltag. Plötzlich ist nichts mehr so eindeutig wie die Toleranzwerte seiner Messgeräte.
+      </p>
+
+      <p style="margin-top: 3rem; font-style: italic; text-align: center; color: #64748b;">
+        Ein Roman über die Leere in funktionierenden Leben – und den Mut, die Glashaut zu durchbrechen.
+      </p>
+
+      <div class="meta-info">
+        <div class="meta-item">
+          <h3>Themenschwerpunkte</h3>
+          <p style="font-size: 0.95rem;">Moderne Isolation, das Bedürfnis nach Kontrolle vs. Lebendigkeit, Authentizität in einer funktionalisierten Welt.</p>
+        </div>
+        <div class="meta-item">
+          <h3>Setting & Atmosphäre</h3>
+          <p style="font-size: 0.95rem;">Urbane Anonymität, gegenwärtiges Deutschland. Digital Noir trifft auf feinsinnige Literary Fiction.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="back-nav">
+      <a href="/romane/standalone" class="btn-back">← Zurück zum Standalone-Archiv</a>
+    </footer>
+  </article>
+</BaseLayout>

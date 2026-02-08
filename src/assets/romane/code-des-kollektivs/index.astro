@@ -1,0 +1,234 @@
+---
+// Dateipfad: src/pages/sachbuecher/das-wobbelnde-universum/index.astro
+// Name: Das wobbelnde Universum - Sachbuch-Detailseite
+// Beschreibung: Eine Untersuchung über das Post-Einstein'sche Paradigma und das AVI-Modell.
+
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import coverImage from './cover.jpg';
+
+export const frontmatter = {
+  title: "Das wobbelnde Universum",
+  genre: "Sachbuch / Kosmologie & Bewusstseinsphysik",
+  // Mittel-Teaser für das Archiv
+  description: "Die Physik steht am Scheideweg. Das AVI-Paradigma zeigt: Das Universum gleicht keinem mechanischen Uhrwerk, sondern einem lebendigen Algorithmus, in dem Bewusstsein als Ko-Kreateur der Realität agiert.",
+  status: "Neuerscheinung / Wissenschaftlicher Fokus",
+  order: 3, // Drittes Sachbuch in der Reihe
+  cover: coverImage.src
+};
+---
+
+<BaseLayout 
+  title="Das wobbelnde Universum — Sachbuch von Thomas Peter Küper" 
+  description={frontmatter.description}>
+
+  <style>
+    .physics-page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+      color: var(--text);
+      font-family: 'Libre Baskerville', serif;
+      line-height: 1.8;
+    }
+
+    /* Hero Layout */
+    .hero-split {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 5rem;
+      align-items: start;
+      margin-bottom: 6rem;
+    }
+
+    .cover-sticky {
+      position: sticky;
+      top: 120px;
+    }
+
+    .book-cover {
+      width: 100%;
+      height: auto;
+      border-radius: 2px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+      border: 1px solid var(--border);
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin: 0 0 0.5rem;
+      font-weight: 300;
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      font-size: 1.3rem;
+      color: var(--gold);
+      font-style: italic;
+      margin-bottom: 3rem;
+      display: block;
+      line-height: 1.4;
+    }
+
+    .teaser-box {
+      background: var(--bg-soft);
+      border-left: 4px solid var(--gold);
+      padding: 2.5rem;
+      font-size: 1.15rem;
+      margin-bottom: 3.5rem;
+      color: var(--text-muted);
+    }
+
+    /* Paradigm Section */
+    .paradigm-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin: 5rem 0;
+    }
+
+    .paradigm-card {
+      padding: 2.5rem;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--dark);
+      transition: transform 0.3s ease;
+    }
+
+    .paradigm-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--gold);
+    }
+
+    .paradigm-card strong {
+      display: block;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .paradigm-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Content Area */
+    .main-content h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      margin: 5rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+
+    .thesis-statement {
+      margin: 6rem 0;
+      padding: 4rem;
+      background: var(--dark);
+      color: #fff;
+      text-align: center;
+    }
+
+    .thesis-statement p {
+      font-size: 1.5rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      color: var(--gold-light);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .back-nav {
+      margin-top: 8rem;
+      text-align: center;
+      padding-top: 4rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .btn-back {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    @media (max-width: 850px) {
+      .hero-split { grid-template-columns: 1fr; text-align: center; }
+      .cover-sticky { position: relative; top: 0; max-width: 250px; margin: 0 auto 3rem; }
+      .thesis-statement { padding: 3rem 1.5rem; }
+    }
+  </style>
+
+  <article class="physics-page">
+    <div class="hero-split">
+      <div class="cover-sticky">
+        <img src={coverImage.src} alt="Cover Das wobbelnde Universum" class="book-cover" />
+      </div>
+
+      <div class="hero-info">
+        <span style="font-family: 'Noto Sans', sans-serif; text-transform: uppercase; letter-spacing: 3px; font-size: 0.75rem; color: #888; display: block; margin-bottom: 1rem;">Physik & Bewusstsein</span>
+        <h1>Das wobbelnde Universum</h1>
+        <span class="subtitle">Von der Mechanik zur Ko-Kreation — Ein neues Paradigma für die Welt von morgen.</span>
+        
+        <div class="teaser-box">
+          <p>„Die Zeit tanzt. Die Konstanten wandern. Das Bewusstsein erwacht. Willkommen in der Post-Einstein'schen Ära.“</p>
+        </div>
+
+        <p>
+          Die moderne Physik durchlebt ihre größte Krise seit Einstein. Die Hubble-Spannung zeigt, dass das Universum schneller expandiert, als vorhergesagt. Jonathan Oppenheims Theorie postuliert eine fundamentale Variabilität der Zeit. Das mechanistische Weltbild wankt.
+        </p>
+      </div>
+    </div>
+
+    <section class="main-content">
+      <h2>Das AVI-Paradigma</h2>
+      <p>
+        Dieses Buch entwickelt eine kühne Synthese: Was, wenn das Universum nicht einer mechanischen Uhr gleicht, sondern einem lebendigen Algorithmus? Das AVI-Modell (Absolute Variable Identität) begreift Zeit nicht als starre Bühne, sondern als kreativen Prozess.
+      </p>
+
+      <div class="paradigm-grid">
+        <div class="paradigm-card">
+          <strong>Kosmologie</strong>
+          <h3>Variable Zeit</h3>
+          <p style="font-size: 0.95rem;">Analyse der Hubble-Spannung und Oppenheims stochastischer Gravitation als Hinweis auf eine atmende Raumzeit.</p>
+        </div>
+        <div class="paradigm-card">
+          <strong>Bewusstsein</strong>
+          <h3>Ko-Kreation</h3>
+          <p style="font-size: 0.95rem;">Vom Beobachter zum Gestalter: Warum Bewusstsein kein Epiphänomen ist, sondern die physikalische Realität mitformt.</p>
+        </div>
+        <div class="paradigm-card">
+          <strong>Ethik</strong>
+          <h3>Verantwortung</h3>
+          <p style="font-size: 0.95rem;">Wenn unsere Resonanz die Gesetze des Kosmos beeinflusst, wird Physik zu einer moralischen Disziplin.</p>
+        </div>
+      </div>
+
+      <div class="thesis-statement">
+        <p>„Das ist nicht Science-Fiction — das ist die Wissenschaft von morgen. Physik als Resonanzlehre eines lebendigen Kosmos.“</p>
+      </div>
+
+      <h2>Von der Krise zur Revolution</h2>
+      <p>
+        <em>Das wobbelnde Universum</em> liefert erstmals den konzeptionellen Rahmen, der wissenschaftliche Rigorosität aus Chronobiologie und Neurowissenschaft mit den visionären Prinzipien der Omnizedenz verbindet. Es ist eine Einladung, die Welt nicht mehr als Uhrwerk, sondern als Symphonie zu begreifen, an der wir mitschreiben.
+      </p>
+      
+      <p style="margin-top: 3rem; font-style: italic; color: var(--gold); text-align: center;">
+        Wissenschaftlich fundiert. Philosophisch tiefgründig. Visionär praktisch.
+      </p>
+    </section>
+
+    <footer class="back-nav">
+      <a href="/sachbuecher" class="btn-back">← Zurück zur Übersicht</a>
+    </footer>
+  </article>
+</BaseLayout>

@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const items = await getCollection('sachbuecher');
+  return items.map((x) => ({
+    params: { slug: x.slug },
+    props: { item: x },
+  }));
+}
+
+const { item } = Astro.props;
+const { Content } = await item.render();
+---
+
+<BaseLayout title={`${item.data.title} — Sachbuch`} description={item.data.description ?? ''}>
+  <article class="container" style="max-width: 950px; margin: 0 auto; padding: 6rem 2rem; line-height: 1.9;">
+    <h1>{item.data.title}</h1>
+
+    {item.data.cover && (
+      <img src={item.data.cover} alt={`Cover ${item.data.title}`} style="max-width:320px; height:auto; margin:2rem 0;" />
+    )}
+
+    <Content />
+  </article>
+</BaseLayout>

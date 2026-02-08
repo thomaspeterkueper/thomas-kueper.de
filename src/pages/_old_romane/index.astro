@@ -1,0 +1,146 @@
+---
+// Dateipfad: src/pages/romane/index.astro
+// Beschreibung: Überarbeitete Weiche mit drei ausbalancierten Karten.
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="Bibliothek" 
+  description="Wählen Sie zwischen vernetzten Universen, Einzeltiteln und wissenschaftlichen Sachbüchern.">
+
+  <style>
+    .gateway {
+      padding: 10rem 0;
+      background: var(--bg-soft);
+    }
+
+    .header-area {
+      text-align: center;
+      margin-bottom: 8rem;
+    }
+
+    .header-area h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 8vw, 5rem);
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      line-height: 1;
+    }
+
+    .header-area p {
+      font-family: 'Libre Baskerville', serif;
+      font-style: italic;
+      color: var(--gold);
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #eee;
+      padding: 5rem 3rem;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      border-color: var(--gold);
+      transform: translateY(-10px);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.05);
+    }
+
+    .card-label {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    .card h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+      line-height: 1;
+    }
+
+    .card p {
+      font-family: 'Libre Baskerville', serif;
+      font-style: italic;
+      color: #666;
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+
+    .card-arrow {
+      margin-top: 3rem;
+      font-size: 1.2rem;
+      color: var(--gold);
+      opacity: 0;
+      transform: translateX(-10px);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover .card-arrow {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    @media (max-width: 1000px) {
+      .grid { grid-template-columns: 1fr; padding: 0 2rem; }
+      .card { padding: 4rem 2rem; }
+    }
+  </style>
+
+  <section class="gateway">
+    <div class="container">
+      <header class="header-area">
+        <h1>Bibliothek</h1>
+        <p>Epen, Erzählungen und Forschung.</p>
+      </header>
+
+      <div class="grid">
+        <a href="/universen" class="card">
+          <span class="card-label">Sagas & Welten</span>
+          <h2>Universen</h2>
+          <p>Vernetzte Geschichten wie das Baumeister Universe oder die noχ¹ᐃ Saga.</p>
+          <div class="card-arrow">→</div>
+        </a>
+        
+        <a href="/romane/standalone" class="card">
+          <span class="card-label">Einzelwerke</span>
+          <h2>Standalone</h2>
+          <p>Psychologische Thriller, literarische Romane und Kurzgeschichten.</p>
+          <div class="card-arrow">→</div>
+        </a>
+
+        <a href="/sachbuecher" class="card">
+          <span class="card-label">Forschung</span>
+          <h2>Sachbücher</h2>
+          <p>Wissenschaftliche Analysen zu Zeit, Rhythmus und kollektiver Intelligenz.</p>
+          <div class="card-arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

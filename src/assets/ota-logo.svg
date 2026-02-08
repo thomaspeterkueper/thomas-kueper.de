@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120"><title>THE OVERTIME ARCHIVE</title><!-- Hintergrund: Warmes Papierweiß --><rect width="420" height="120" fill="#FAF9F6"/><!-- Symbol-Gruppe: Kompakter und linksbündig (x=45) -->
+<g transform="translate(45, 60)">
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#2C4E7A" stroke-width="2"/>
+    <rect x="-25" y="-25" width="50" height="50" fill="none" stroke="#C9A961" stroke-width="0.6" opacity="0.4" stroke-dasharray="3,3" transform="rotate(45)"/>
+    <polygon points="0,-20 -14,-5 14,-5" fill="none" stroke="#C9A961" stroke-width="2"/>
+    <polygon points="0,20 -14,5 14,5" fill="none" stroke="#C9A961" stroke-width="2"/>
+    <line x1="-14" y1="-5" x2="-14" y2="5" stroke="#C9A961" stroke-width="1.5"/>
+    <line x1="14" y1="-5" x2="14" y2="5" stroke="#C9A961" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="2" fill="#2C4E7A"/>
+</g>
+
+<!-- Typografie-Gruppe: Enger am Symbol (x=100) -->
+<g transform="translate(100, 0)">
+    <!-- "THE": Minimalistischer -->
+    <text y="48" fill="#C9A961" font-family="'Crimson Text', Georgia, serif" font-size="10" font-weight="bold" letter-spacing="4">THE</text>
+    
+    <!-- "OVERTIME ARCHIVE": Auf 28pt verkleinert für edlere Optik -->
+    <text y="84" fill="#121416" font-family="'Crimson Text', Georgia, serif" font-size="28" font-weight="bold" letter-spacing="0.5">OVERTIME ARCHIVE</text>
+    
+    <!-- Akzentlinie: Dezent und passgenau -->
+    <line x1="0" y1="94" x2="260" y2="94" stroke="#C9A961" stroke-width="1" opacity="0.5"/>
+</g>
+</svg>

@@ -1,0 +1,218 @@
+---
+// Pfad: src/pages/overtime-archive.astro
+// Aktualisiert am: 07.02.2026, 21:55
+// Beschreibung: Vollständige Infoseite mit dem offiziellen OTA-Logo und allen 17 Dokumentserien.
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import otaLogo from '../assets/ota-logo.svg';
+---
+
+<BaseLayout 
+  title="OverTime Archive" 
+  description="Das dokumentarische Fundament der Welten von Thomas Peter Küper. Ein Archiv über 62.000 Jahre Geschichte.">
+
+  <style>
+    .ota-page { 
+      max-width: 850px; 
+      margin: 0 auto; 
+      padding: 4rem 2rem 10rem; 
+      font-family: 'Libre Baskerville', serif; 
+      line-height: 1.8; 
+      color: var(--text); 
+    }
+    
+    .logo-container {
+      text-align: center;
+      margin-bottom: 6rem;
+    }
+
+    .ota-main-logo {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    }
+    
+    .ota-quote { 
+      font-style: italic; 
+      font-size: 1.3rem; 
+      color: var(--text-muted); 
+      border-left: 2px solid var(--gold-light); 
+      padding-left: 2rem; 
+      margin: 4rem 0; 
+      line-height: 1.6;
+    }
+    
+    .section-title { 
+      font-family: 'Crimson Text', serif; 
+      font-size: 2.2rem; 
+      margin: 5rem 0 2rem; 
+      color: var(--brand-blue); 
+      border-bottom: 1px solid var(--border); 
+      padding-bottom: 0.5rem; 
+    }
+    
+    .intro-text { font-size: 1.15rem; margin-bottom: 2.5rem; }
+
+    /* Dokumentserien Grid */
+    .series-grid { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+      gap: 1rem; 
+      margin: 3rem 0; 
+    }
+    
+    .series-card { 
+      background: var(--bg-soft); 
+      padding: 1.2rem; 
+      border: 1px solid var(--border); 
+      font-size: 0.85rem; 
+    }
+    
+    .series-tag { 
+      font-family: 'Lato', sans-serif; 
+      font-weight: 700; 
+      color: var(--brand-blue); 
+      display: block; 
+      margin-bottom: 0.3rem; 
+      letter-spacing: 1px;
+    }
+
+    /* Marker System */
+    .marker-wrap { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+      gap: 1rem; 
+      margin: 3rem 0; 
+    }
+    
+    .marker-item { 
+      font-family: 'Lato', sans-serif; 
+      font-size: 0.8rem; 
+      padding: 1rem; 
+      border: 1px solid var(--gold-light); 
+      background: #fff;
+    }
+    
+    .marker-item strong { color: var(--brand-blue); font-size: 1.1rem; margin-right: 0.5rem; }
+
+    /* Signatur Beispiel */
+    .signature-box { 
+      background: var(--dark); 
+      color: #fff; 
+      padding: 3rem; 
+      text-align: center; 
+      margin: 4rem 0; 
+      border-radius: 2px; 
+    }
+    
+    .sig-code { 
+      font-family: 'Lato', sans-serif; 
+      font-size: 1.6rem; 
+      letter-spacing: 5px; 
+      color: var(--gold-light); 
+      display: block; 
+      margin-bottom: 1rem; 
+    }
+
+    .cta-container { 
+      text-align: center; 
+      margin-top: 8rem; 
+      padding-top: 4rem;
+      border-top: 1px solid var(--border);
+    }
+    
+    .cta-btn { 
+      display: inline-block; 
+      background: var(--gold); 
+      color: #fff; 
+      padding: 1.2rem 3rem; 
+      text-decoration: none; 
+      font-family: 'Lato', sans-serif; 
+      text-transform: uppercase; 
+      letter-spacing: 2px; 
+      font-weight: 700; 
+      font-size: 0.85rem; 
+      transition: all 0.3s; 
+    }
+    
+    .cta-btn:hover { background: var(--text); transform: translateY(-3px); }
+  </style>
+
+  <article class="ota-page">
+    <header class="logo-container">
+      <img src={otaLogo.src} alt="The OverTime Archive Logo" class="ota-main-logo" />
+      <p class="ota-quote">„Manche Dokumente werden geschrieben. Andere fallen durch Risse in der Zeit.“</p>
+    </header>
+
+    <section>
+      <p class="intro-text">
+        Das <strong>OverTime Archive (OTA)</strong> ist ein wachsendes dokumentarisches Archiv, das die Welten hinter meinen Geschichten trägt. Es sammelt wissenschaftliche Publikationen, technische Spezifikationen, biographische Profile, kulturelle Artefakte und klassifizierte Akten — nicht für ein einzelnes Buch, sondern als gemeinsames Fundament aller meiner Werke.
+      </p>
+      <p>
+        Die Timeline des Archivs umspannt <strong>62.000 Jahre</strong>: von 60.000 v. Chr. bis weit ins dritte Jahrtausend. Jedes Dokument trägt eine eindeutige Signatur, einen temporalen Status und epistemologische Marker, die kenntlich machen, wo reale Wissenschaft aufhört und Fiktion beginnt. Denn das Archiv folgt einem Grundsatz: Es dokumentiert. Es spekuliert nicht.
+      </p>
+    </section>
+
+    <h2 class="section-title">Was Sie im Archiv finden</h2>
+    <p>Das OTA umfasst derzeit 17 Dokumentserien:</p>
+    
+    <div class="series-grid">
+      <div class="series-card"><span class="series-tag">FND</span> Foundational Documents — Gründungstexte und philosophische Grundlagen</div>
+      <div class="series-card"><span class="series-tag">SCI</span> Scientific Publications — Physikalische Wissenschaften, Kosmologie, χ-Feld-Theorie</div>
+      <div class="series-card"><span class="series-tag">LSC</span> Life Sciences — Neurowissenschaft, Physiologie, Resonanz-Biologie</div>
+      <div class="series-card"><span class="series-tag">TEC</span> Technical Manuals — Raumschiffe, Rover, Energiesysteme, Konstruktionen</div>
+      <div class="series-card"><span class="series-tag">BIO</span> Biographical Documents — Profile der Figuren aller Epochen</div>
+      <div class="series-card"><span class="series-tag">HIS</span> Historical Records — Ereignisse von der Vorgeschichte bis zur Zukunft</div>
+      <div class="series-card"><span class="series-tag">CUL</span> Cultural Documents — Kulturelle Artefakte und Traditionen</div>
+      <div class="series-card"><span class="series-tag">ORG</span> Organizational Files — Institutionen, Organisationen, Strukturen</div>
+      <div class="series-card"><span class="series-tag">RED</span> Redacted Files — Klassifizierte Akten, geschwärzt und fragmentarisch</div>
+      <div class="series-card"><span class="series-tag">NAR</span> Narrative Elements — Erzählfragmente und Geschichtssplitter</div>
+      <div class="series-card"><span class="series-tag">OBS</span> Observed Reality — Reale Ereignisse, die das Archiv beeinflusst haben</div>
+      <div class="series-card"><span class="series-tag">LIM</span> Liminal Entities — Emergente Systeme an der Grenze zwischen Werkzeug und Bewusstsein</div>
+      <div class="series-card"><span class="series-tag">MON</span> Monographs — Umfassende Einzelstudien</div>
+      <div class="series-card"><span class="series-tag">ART</span> Artifacts — Dokumentation von Artefakten</div>
+      <div class="series-card"><span class="series-tag">KARTE</span> Karten — Visualisierungen, Diagramme, Übersichtskarten</div>
+      <div class="series-card"><span class="series-tag">ARC</span> Archive Meta-Documents — Das Archiv über sich selbst</div>
+      <div class="series-card"><span class="series-tag">PRJ</span> Project Documents — Projektplanung und Entwicklung</div>
+    </div>
+
+    <p>Jedes Dokument ist so gestaltet, als wäre es ein authentisches Artefakt seiner Zeit: Ein Forschungsbericht aus dem Jahr 2091 liest sich anders als eine archäologische Analyse aus dem 21. Jahrhundert.</p>
+
+    <h2 class="section-title">Warum ein Archiv?</h2>
+    <p>
+      Meine Geschichten erzählen sich nicht nur durch Romane. Sie bauen Welten auf, die man betreten, durchsuchen und erforschen kann. Das OverTime Archive ist der Ort, an dem diese Welten greifbar werden — Dokument für Dokument, Signatur für Signatur.
+    </p>
+    <p>
+      Es ist zugleich Werkstatt und Weltenbau: Jede wissenschaftliche Theorie im Archiv wurzelt in realer Forschung, bevor sie ins Spekulative extrapoliert wird. Diese Methode — <em>Genesis vor Narration</em> — stellt sicher, dass die Fiktion auf einem Fundament steht, das der Überprüfung standhält.
+    </p>
+
+    <h2 class="section-title">Das Marker-System</h2>
+    <p>Alle Inhalte des Archivs sind epistemologisch gekennzeichnet:</p>
+    <div class="marker-wrap">
+      <div class="marker-item"><strong>[R]</strong> Real — Verifizierbar, peer-reviewed, historisch belegt</div>
+      <div class="marker-item"><strong>[S]</strong> Spekulativ — Extrapolation realer Daten</div>
+      <div class="marker-item"><strong>[F]</strong> Fiktiv — Erfundene Quellen, Autoren, Institutionen</div>
+      <div class="marker-item"><strong>[I]</strong> Interpretation — Kuratorische Deutung und Verbindungen</div>
+    </div>
+
+    <h2 class="section-title">Das Signatur-System</h2>
+    <p>Jedes Dokument ist eindeutig identifizierbar:</p>
+    <div class="signature-box">
+      <span class="sig-code">OTA-SCI-0007-2026-EN</span>
+      <p style="font-size: 0.9rem; opacity: 0.7; font-family: 'Lato', sans-serif;">
+        OverTime Archive | Scientific Publication | laufende Nummer 7 | archiviert 2026 | englisch
+      </p>
+    </div>
+
+    <p>So entsteht ein durchsuchbares, wachsendes Netzwerk aus Querverweisen — ein Archiv, das seine eigenen Lücken dokumentiert und offene Fragen nicht löscht, sondern als [AUSSTEHEND] markiert.</p>
+
+    <div class="cta-container">
+      <p style="margin-bottom: 2rem; color: var(--text-muted);">
+        Das OverTime Archive wird kuratiert von Thomas Peter Küper.
+      </p>
+      <a href="https://www.overtime-archive.org" target="_blank" class="cta-btn">ZUR VOLLSTÄNDIGEN PLATTFORM ↗</a>
+    </div>
+  </article>
+</BaseLayout>

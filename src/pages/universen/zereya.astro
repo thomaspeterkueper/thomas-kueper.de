@@ -1,0 +1,240 @@
+---
+// Dateipfad: src/pages/universen/zereya.astro
+// Beschreibung: Das bereinigte, design-stabile Dossier zur Zereya Saga.
+// Fokus: Klare Typografie, harmonische Farben, integriertes Cover.
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import coverImg from '../../assets/romane/zereya/cover.jpg';
+---
+
+<BaseLayout 
+  title="Zereya Saga" 
+  description="Eine Symphonie der Veränderung in 8 Bänden. Jakob Berger entdeckt im Sauerland das Geheimnis des summenden Hauses.">
+  
+  <style is:inline>
+    .zereya-wrapper {
+      padding-bottom: 10rem;
+      color: var(--text-main);
+    }
+
+    /* Hero: Dezent und luftig */
+    .z-hero {
+      padding: 10rem 2rem 6rem;
+      text-align: center;
+      background: linear-gradient(to bottom, rgba(74, 155, 155, 0.05), transparent);
+    }
+
+    .z-hero h1 {
+      font-family: 'Crimson Pro', serif;
+      font-size: clamp(3rem, 10vw, 5.5rem);
+      font-weight: 200;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--brand-blue);
+      margin-bottom: 1rem;
+    }
+
+    .z-hero .tagline {
+      font-family: 'Crimson Pro', serif;
+      font-style: italic;
+      font-size: 1.5rem;
+      color: var(--brand-gold);
+    }
+
+    .container-narrow {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* Fokus-Block: Cover & Teaser */
+    .focus-block {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 5rem;
+      margin: 6rem 0 10rem;
+      align-items: center;
+    }
+
+    .cover-art {
+      width: 100%;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+      border: 1px solid var(--border-soft);
+      border-radius: 2px;
+    }
+
+    .teaser-text {
+      font-family: 'Lora', serif;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      border-left: 3px solid var(--brand-gold);
+      padding-left: 2rem;
+    }
+
+    .teaser-text p {
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    /* Inhalts-Sektionen */
+    .content-section {
+      margin-bottom: 8rem;
+    }
+
+    .content-section h2 {
+      font-family: 'Crimson Pro', serif;
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: var(--brand-blue);
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border-soft);
+      padding-bottom: 0.5rem;
+    }
+
+    .content-section p {
+      font-family: 'Lora', serif;
+      font-size: 1.15rem;
+      line-height: 2;
+      margin-bottom: 2rem;
+    }
+
+    /* Infoboxen ohne harten Kontrast */
+    .info-panel {
+      background: rgba(74, 155, 155, 0.03);
+      border: 1px solid rgba(74, 155, 155, 0.1);
+      padding: 3rem;
+      margin: 4rem 0;
+    }
+
+    .info-panel h3 {
+      font-family: 'Crimson Pro', serif;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--brand-blue);
+    }
+
+    /* Figuren Grid */
+    .figures-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .figure-card {
+      padding: 2rem;
+      border: 1px solid var(--border-soft);
+      background: #fff;
+    }
+
+    .figure-card h4 {
+      font-family: 'Crimson Pro', serif;
+      color: var(--brand-gold);
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .meta-tag {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #999;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .btn-action {
+      display: inline-block;
+      margin-top: 4rem;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--brand-blue);
+      text-decoration: none;
+      border-bottom: 1px solid var(--brand-gold);
+      padding-bottom: 5px;
+    }
+
+    @media (max-width: 850px) {
+      .focus-block { grid-template-columns: 1fr; text-align: center; }
+      .focus-block img { max-width: 260px; margin: 0 auto; }
+      .figures-grid { grid-template-columns: 1fr; }
+      .teaser-text { border-left: none; border-top: 2px solid var(--brand-gold); padding: 2rem 0 0; }
+    }
+  </style>
+
+  <div class="zereya-wrapper">
+    <header class="z-hero">
+      <span class="meta-tag">Literarisches Epos in 8 Bänden</span>
+      <h1>Die Zereya Saga</h1>
+      <p class="tagline">„Die Welt besteht nicht aus Atomen. Sie besteht aus Liedern.“</p>
+    </header>
+
+    <div class="container-narrow">
+      
+      <section class="focus-block">
+        <img src={coverImg.src} alt="Zereya Band 1 Cover" class="cover-art" />
+        <div class="teaser-text">
+          <p>Das Haus summte.</p>
+          <p>Jakob hörte es nachts, wenn alles still war. Ein Pulsieren. Tief unter der Erde.</p>
+          <p>Seine Narbe antwortete.</p>
+          <p>Dann fand er sie. Im Keller. Die Frau aus seinen Träumen. Ein Kind im Arm.</p>
+          <strong style="color: var(--brand-gold); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">
+            „Sie kommen. Und du bist der Einzige, der uns hören kann.“
+          </strong>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>Der lebende Dreiklang</h2>
+        <p>
+          In einer Welt, die am Rande des Verstummens steht, erzählt Zereya die Geschichte eines unsichtbaren Gewebes. Jakob Berger, ein ausgebrannter Architekt, sucht im Sauerland die Stille – doch er findet ein Echo, das seine gesamte Existenz infrage stellt.
+        </p>
+        <p>
+          Zusammen mit Zereya, einer geheimnisvollen Hüterin uralten Wissens, und dem Kind Soraya bildet er einen Resonanzraum, der die Realität selbst zu transformieren vermag. Es ist der Beginn eines Konflikts zwischen lebendiger Freiheit und technologischer Kontrolle.
+        </p>
+
+        <div class="info-panel">
+          <h3>Band 1: Die Erweckung</h3>
+          <p>
+            Jakob entdeckt eine Gabe, die seine Familie seit Generationen im Verborgenen trägt: die Fähigkeit, das Fundament der Welt nicht nur zu sehen, sondern zu hören. Doch jede Resonanz zieht Aufmerksamkeit nach sich – von jenen, die das Feld beherrschen wollen.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>Die zentralen Figuren</h2>
+        <div class="figures-grid">
+          <div class="figure-card">
+            <h4>Jakob Berger</h4>
+            <p style="font-size: 0.95rem;">Der Architekt. Ein Mann der Strukturen, der lernen muss, dass das Wesentliche in den Schwingungen dazwischen liegt.</p>
+          </div>
+          <div class="figure-card">
+            <h4>Zereya</h4>
+            <p style="font-size: 0.95rem;">Die Gejagte. Sie trägt das Wissen um die Formgebung des Chaos und sucht Schutz an einem Ort, der atmet.</p>
+          </div>
+          <div class="figure-card">
+            <h4>Elias / Soraya</h4>
+            <p style="font-size: 0.95rem;">Zwei Kinder, zwei Pole. Der eine malt die Symbole in der Stadt, die andere ordnet die Welt im Wald neu.</p>
+          </div>
+          <div class="figure-card">
+            <h4>Frau Heddergott</h4>
+            <p style="font-size: 0.95rem;">Die Nachbarin. Eine stille Beobachterin, die weiß, dass manche Häuser niemals wirklich leer sind.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" style="text-align: center;">
+        <h2>Die Wahl der Resonanz</h2>
+        <p>
+          Die Saga ist auf 8 Bände ausgelegt. Sie stellt die radikale Frage nach unserer Verantwortung in einem vernetzten Universum: Haben wir den Mut, unsere eigene Dissonanz zu akzeptieren?
+        </p>
+        <a href="/romane" class="btn-action">Bibliothek erkunden</a>
+      </section>
+
+    </div>
+  </div>
+</BaseLayout>

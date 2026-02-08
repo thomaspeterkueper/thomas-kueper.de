@@ -1,7 +1,7 @@
 ---
 // Dateipfad: src/layouts/BaseLayout.astro
-// Beschreibung: Das definitive Basis-Layout. Premium-Design trifft auf technische Stabilität.
-// Inklusive: Vollständige Navigation, Avatar-Integration und optimierte Typografie.
+// Beschreibung: Das definitive Basis-Layout mit lokaler Font-Einbindung und OTA-Navigation.
+// Aktualisiert am: 07.02.2026, 20:15
 
 const { title, description } = Astro.props;
 
@@ -17,18 +17,54 @@ import headerAvatar from '../assets/header-avatar.jpg';
   <meta name="description" content={description || "Thomas Peter Küper – Autor, Weltenbauer und Philosoph. Erforschung der Omnizedenz und des AVI-Modells."} />
   <title>{title ? `${title} | T.P. KÜPER` : "T.P. KÜPER — Autor & Philosoph"}</title>
   
-  <!-- Google Fonts: Die typografische Seele der Seite -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-
   <style is:inline>
-    /* DESIGN-SYSTEM & GLOBALE VARIABLEN 
-       is:inline garantiert, dass das Design unter Windows/Astro sofort geladen wird.
-    */
+    /* LOKALE FONT-DEFINITIONEN (DSGVO-KONFORM) */
+    
+    /* Crimson Text - Für Logos und elegante Überschriften */
+    @font-face {
+      font-family: 'Crimson Text';
+      src: url('/fonts/crimson-text-v19-latin-regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Crimson Text';
+      src: url('/fonts/crimson-text-v19-latin-600.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* Lora - Für den Fließtext */
+    @font-face {
+      font-family: 'Lora';
+      src: url('/fonts/lora-v37-latin-regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* Lato - Für die Navigation und UI-Elemente */
+    @font-face {
+      font-family: 'Lato';
+      src: url('/fonts/lato-v25-latin-regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Lato';
+      src: url('/fonts/lato-v25-latin-700.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
     :root {
       --gold: #c9a961;
       --gold-light: #e5dcc8;
+      --brand-blue: #2C4E7A;
       --dark: #121416;
       --text: #1a1a1a;
       --text-muted: #64748b;
@@ -37,30 +73,24 @@ import headerAvatar from '../assets/header-avatar.jpg';
       --max-width: 1150px;
     }
 
-    /* Grundlegendes Reset */
-    * { 
-      box-sizing: border-box; 
-      margin: 0; 
-      padding: 0; 
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     
     html, body {
       height: 100%;
       background-color: #ffffff;
       color: var(--text);
-      font-family: 'Noto Sans', sans-serif;
+      font-family: 'Lato', sans-serif;
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
     }
 
-    .container {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
+    /* Typografie-Zuweisung */
+    h1, h2, h3, .logo-name { font-family: 'Crimson Text', serif; font-weight: 400; }
+    p, article, section { font-family: 'Lora', serif; }
 
-    /* SITE HEADER: Die schwebende Eleganz */
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 2rem; }
+
+    /* SITE HEADER */
     .site-header {
       background: rgba(255, 255, 255, 0.98);
       border-bottom: 1px solid var(--border);
@@ -70,29 +100,11 @@ import headerAvatar from '../assets/header-avatar.jpg';
       height: 100px;
       display: flex;
       align-items: center;
-      transition: all 0.3s ease;
     }
 
-    .nav-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-    }
+    .nav-inner { display: flex; justify-content: space-between; align-items: center; width: 100%; }
 
-    /* LOGO BEREICH */
-    .brand-logo {
-      display: flex;
-      align-items: center;
-      gap: 1.2rem;
-      text-decoration: none;
-      color: var(--text);
-      transition: opacity 0.3s ease;
-    }
-
-    .brand-logo:hover {
-      opacity: 0.8;
-    }
+    .brand-logo { display: flex; align-items: center; gap: 1.2rem; text-decoration: none; color: var(--text); }
 
     .header-avatar {
       width: 48px;
@@ -100,24 +112,16 @@ import headerAvatar from '../assets/header-avatar.jpg';
       border-radius: 50%;
       object-fit: cover;
       border: 1px solid var(--gold-light);
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
 
     .logo-name {
-      font-family: 'Cormorant Garamond', serif;
       font-size: 1.6rem;
       letter-spacing: 0.35em;
-      font-weight: 300;
       text-transform: uppercase;
-      margin-top: 2px;
     }
 
     /* NAVIGATIONSMENÜ */
-    .nav-menu {
-      display: flex;
-      gap: 2.2rem;
-      align-items: center;
-    }
+    .nav-menu { display: flex; gap: 2.2rem; align-items: center; }
 
     .nav-link {
       text-decoration: none;
@@ -126,102 +130,44 @@ import headerAvatar from '../assets/header-avatar.jpg';
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.25em;
-      transition: all 0.3s ease;
       position: relative;
       padding: 0.5rem 0;
     }
 
     .nav-link::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 1px;
-      background-color: var(--gold);
-      transition: width 0.3s ease;
+      content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px;
+      background-color: var(--gold); transition: width 0.3s ease;
     }
 
-    .nav-link:hover {
-      color: var(--gold);
-    }
+    .nav-link:hover { color: var(--gold); }
+    .nav-link:hover::after { width: 100%; }
 
-    .nav-link:hover::after {
-      width: 100%;
-    }
+    main { min-height: calc(100vh - 100px); }
 
-    /* MAIN CONTENT AREA */
-    main {
-      min-height: calc(100vh - 100px);
-    }
-
-    /* FOOTER: Abschluss in Dunkelheit & Gold */
+    /* FOOTER */
     .site-footer {
       padding: 10rem 0 5rem;
       background: var(--dark);
       color: #94a3b8;
       text-align: center;
-      margin-top: 0;
     }
 
-    .footer-content {
-      max-width: 600px;
-      margin: 0 auto;
-    }
+    .footer-title { font-size: 1.8rem; color: #ffffff; margin-bottom: 1rem; letter-spacing: 3px; text-transform: uppercase; }
+    .footer-divider { width: 40px; height: 1px; background: var(--gold); margin: 2rem auto; }
 
-    .footer-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.8rem;
-      color: #ffffff;
-      margin-bottom: 1rem;
-      letter-spacing: 3px;
-      font-weight: 300;
-      text-transform: uppercase;
-    }
-
-    .footer-tagline {
-      font-family: 'Libre Baskerville', serif;
-      font-style: italic;
-      font-size: 0.9rem;
-      margin-bottom: 3rem;
-      color: var(--gold-light);
-      opacity: 0.8;
-    }
-
-    .footer-divider {
-      width: 40px;
-      height: 1px;
-      background: var(--gold);
-      margin: 0 auto 3rem;
-    }
-
-    .copyright {
-      font-size: 0.65rem;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      opacity: 0.5;
-    }
-
-    /* RESPONSIVE DESIGN */
-    @media (max-width: 1050px) {
-      .nav-menu { gap: 1.5rem; }
-      .logo-name { font-size: 1.3rem; letter-spacing: 0.25em; }
-    }
+    .copyright { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 3px; opacity: 0.5; }
 
     @media (max-width: 900px) {
-      .nav-menu { display: none; } /* Hier könnte später ein Burger-Menü hin */
-      .site-header { height: 80px; }
+      .nav-menu { display: none; }
       .logo-name { font-size: 1.1rem; }
-      .header-avatar { width: 40px; height: 40px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header Navigation -->
   <header class="site-header">
     <nav class="container nav-inner">
-      <a href="/" class="brand-logo" title="Zur Startseite">
+      <a href="/" class="brand-logo">
         <img src={headerAvatar.src} alt="T.P. Küper Avatar" class="header-avatar" />
         <span class="logo-name">T.P. KÜPER</span>
       </a>
@@ -232,29 +178,24 @@ import headerAvatar from '../assets/header-avatar.jpg';
         <a href="/sachbuecher" class="nav-link">Sachbücher</a>
         <a href="/philosophie" class="nav-link">Philosophie</a>
         <a href="/ueber-mich" class="nav-link">Über mich</a>
+        <a href="/overtime-archive" class="nav-link">OTA</a>
       </div>
     </nav>
   </header>
 
-  <!-- Hauptinhalt der jeweiligen Seite -->
   <main>
     <slot />
   </main>
 
-  <!-- Globaler Footer -->
   <footer class="site-footer">
     <div class="container footer-content">
       <h4 class="footer-title">Thomas Peter Küper</h4>
-      <p class="footer-tagline">Weltenbauer . IT-Consultant . Philosoph</p>
-      
       <div class="footer-divider"></div>
-      
-      <div style="margin-bottom: 4rem; display: flex; justify-content: center; gap: 2rem;">
-        <!-- Platzhalter für Social Links oder Kontakt -->
-        <a href="mailto:mail@thomas-kueper.de" style="color: inherit; text-decoration: none; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px;">Kontakt</a>
-        <a href="/impressum" style="color: inherit; text-decoration: none; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px;">Impressum</a>
+      <div style="margin-bottom: 4rem; display: flex; justify-content: center; gap: 2rem; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px;">
+        <a href="mailto:mail@thomas-kueper.de" style="color: inherit; text-decoration: none;">Kontakt</a>
+        <a href="/impressum" style="color: inherit; text-decoration: none;">Impressum</a>
+        <a href="/datenschutz" style="color: inherit; text-decoration: none;">Datenschutz</a>
       </div>
-
       <p class="copyright">
         &copy; {new Date().getFullYear()} — Alle Rechte vorbehalten. <br/>
         Konstruktion von Welten & Sinn.

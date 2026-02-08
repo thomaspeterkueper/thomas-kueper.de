@@ -1,0 +1,214 @@
+---
+// Dateipfad: src/pages/romane/marc-aurel/index.astro
+// Name: Marc Aurel - Der Mann, der die Liebe zerstörte
+// Beschreibung: Psychologischer Generationenroman über Trauma und emotionale Kälte.
+
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import coverImage from './cover.jpg';
+
+export const frontmatter = {
+  title: "Marc Aurel",
+  genre: "Psychologischer Generationenroman",
+  // Kurzbeschreibung für das Archiv (standalone.astro)
+  description: "Er trug den Namen eines Philosophen der Liebe. Aber er lehrte die Welt, nicht zu fühlen. Ein Roman über drei Generationen, ein kriegstraumatisiertes System und den Preis der Gefühllosigkeit.",
+  status: "In Vorbereitung",
+  order: 15, // Einordnung im Archiv nach Project Lazarus
+  cover: coverImage.src
+};
+---
+
+<BaseLayout title="Marc Aurel — Roman von Thomas Peter Küper" description={frontmatter.description}>
+  <style>
+    .ma-page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+      color: #1a1a1a;
+      font-family: 'Libre Baskerville', serif;
+      line-height: 1.9;
+    }
+
+    /* Hero Layout */
+    .hero-split {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 5rem;
+      align-items: start;
+      margin-bottom: 8rem;
+    }
+
+    .cover-sticky {
+      position: sticky;
+      top: 120px;
+    }
+
+    .book-cover {
+      width: 100%;
+      height: auto;
+      border-radius: 2px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+      border: 1px solid #eee;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 7vw, 4.5rem);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin: 0 0 0.5rem;
+      font-weight: 300;
+      line-height: 1.1;
+    }
+
+    .tagline {
+      font-size: 1.4rem;
+      color: var(--color-gold);
+      font-style: italic;
+      margin-bottom: 3rem;
+      display: block;
+      line-height: 1.4;
+    }
+
+    .clinical-box {
+      background: #f8fafc;
+      border-left: 4px solid #cbd5e1;
+      padding: 2.5rem;
+      margin-bottom: 3rem;
+      font-size: 1.1rem;
+      color: #334155;
+    }
+
+    /* Generationen Timeline */
+    .timeline {
+      margin: 6rem 0;
+      border-top: 1px solid #eee;
+      padding-top: 4rem;
+    }
+
+    .timeline-item {
+      margin-bottom: 4rem;
+    }
+
+    .year-label {
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 3px;
+      color: var(--color-gold);
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      margin: 0 0 1.5rem;
+      font-weight: 300;
+    }
+
+    /* Special Sections */
+    .quote-section {
+      text-align: center;
+      margin: 8rem 0;
+      padding: 4rem;
+      background: #faf9f6;
+      border-radius: 4px;
+    }
+
+    .quote-section blockquote {
+      font-size: 1.6rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      color: #1a1a1a;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .back-nav {
+      margin-top: 8rem;
+      text-align: center;
+      padding-top: 4rem;
+      border-top: 1px solid #eee;
+    }
+
+    .btn-back {
+      text-decoration: none;
+      color: #888;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    @media (max-width: 850px) {
+      .hero-split { grid-template-columns: 1fr; text-align: center; }
+      .cover-sticky { position: relative; top: 0; max-width: 250px; margin: 0 auto 3rem; }
+      .clinical-box { padding: 1.5rem; }
+    }
+  </style>
+
+  <article class="ma-page">
+    <div class="hero-split">
+      <div class="cover-sticky">
+        <img src={coverImage.src} alt="Cover Marc Aurel" class="book-cover" />
+      </div>
+
+      <div class="hero-content">
+        <span style="font-family: 'Noto Sans', sans-serif; text-transform: uppercase; letter-spacing: 3px; font-size: 0.75rem; color: #888; display: block; margin-bottom: 1rem;">Psychologischer Generationenroman</span>
+        <h1>{frontmatter.title}</h1>
+        <span class="tagline">Der Mann, der die Liebe zerstörte</span>
+        
+        <div class="clinical-box">
+          <p><strong>„Er trug den Namen eines Philosophen der Liebe. Aber er zerstörte, was er nie besitzen konnte.“</strong></p>
+        </div>
+
+        <p>
+          Ein Name, der für Weisheit und Menschlichkeit steht – missbraucht für das größte Verbrechen der Moderne. Dr. Marc Aurel ist der gefeierte Kinderpsychiatrie-Visionär des 21. Jahrhunderts. Doch hinter der Fassade der Effizienz verbirgt sich ein System der emotionalen Verstümmelung.
+        </p>
+      </div>
+    </div>
+
+    <section class="timeline">
+      <div class="timeline-item">
+        <span class="year-label">1954 | Bayern</span>
+        <h2>Die Wurzel der Kälte</h2>
+        <p>
+          Der siebenjährige Heinrich lernt von seinem kriegsversehrten Onkel, dass Männer nicht weinen. In den Ruinen des Nachkriegsdeutschlands wird aus dem weinenden Kind ein emotionaler Roboter – das Fundament für ein Trauma, das über Generationen weitergereicht wird.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <span class="year-label">2019 | Heidelberg</span>
+        <h2>Die Pathologisierung des Gefühls</h2>
+        <p>
+          Dr. Marc Aurel „heilt“ Tausende, indem er sie lehrt, dass Gefühle Pathologien sind. Seine Methoden versprechen emotionale Stabilität durch Kälte. Eine halbe Million Kinder werden nach seinem System behandelt, während die Welt ihn als Heiler feiert.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <span class="year-label">2025 | Berlin</span>
+        <h2>Der Widerstand des Geistes</h2>
+        <p>
+          Seine Ex-Frau Claudia entdeckt die bittere Ironie: Marc trägt den Namen des antiken Philosophen Marcus Aurelius, doch er hat dessen Lehren nie verstanden. Mit den echten Worten der Stoa beginnt sie den Kampf um das Erbe einer halben Million Kinder.
+        </p>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <blockquote>
+        "Dies ist die Geschichte davon, wie Kälte als Stärke verkauft wurde. Wie Heilung zur Zerstörung wurde. Und wie die Liebe schließlich zurückkämpfte."
+      </blockquote>
+    </section>
+
+    <div style="max-width: 750px; margin: 0 auto; text-align: center;">
+      <p>
+        <em>Marc Aurel</em> ist eine erschütternde Untersuchung über die unsichtbaren Kosten der Effizienz und die Frage, was geschieht, wenn Menschen glauben, die Menschheit von ihrer eigenen Menschlichkeit „befreien“ zu müssen.
+      </p>
+    </div>
+
+    <footer class="back-nav">
+      <a href="/romane/standalone" class="btn-back">← Zurück zum Standalone-Archiv</a>
+    </footer>
+  </article>
+</BaseLayout>

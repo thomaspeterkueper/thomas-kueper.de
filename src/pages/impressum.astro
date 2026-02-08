@@ -1,12 +1,45 @@
 ---
+// Pfad: src/pages/impressum.astro
+// Aktualisiert am: 07.02.2026, 19:50
+
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<BaseLayout title="Impressum">
-  <div class="container" style="padding: 10rem 2rem; max-width: 800px;">
-    <h1 style="font-family:'Cormorant Garamond', serif; margin-bottom: 2rem;">Impressum</h1>
-    <p><strong>Thomas Peter Küper</strong><br/>Bogenstraße 15, 59486 Sundern</p>
-    <p>E-Mail: mail@thomas-kueper.de</p>
-    <h2 style="margin-top: 3rem;">Urheberrecht</h2>
-    <p>Alle philosophischen Konzepte (AVI-Modell, Omnizedenz) sowie die fiktionalen Universen sind geistiges Eigentum von Thomas Peter Küper.</p>
-  </div>
+
+<BaseLayout 
+  title="Impressum" 
+  description="Impressum und Kontaktinformationen von Thomas Peter Küper">
+  
+  <article class="container" style="max-width: 800px; padding: 8rem 2rem; font-family: 'Libre Baskerville', serif; line-height: 1.8;">
+    <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 3rem; margin-bottom: 3rem; border-bottom: 1px solid var(--gold-light); padding-bottom: 1rem;">Impressum</h1>
+    
+    <section style="margin-bottom: 3rem;">
+      <h2 style="font-family: 'Noto Sans', sans-serif; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 1rem;">Angaben gemäß § 5 TMG</h2>
+      <p>
+        <strong>Thomas Peter Küper</strong><br>
+        Bogenstraße 15<br>
+        59486 Sundern<br>
+        Deutschland
+      </p>
+    </section>
+
+    <section style="margin-bottom: 3rem;">
+      <h2 style="font-family: 'Noto Sans', sans-serif; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 1rem;">Kontakt</h2>
+      <p><strong>E-Mail:</strong> <a href="mailto:mail@thomas-kueper.de" style="color: var(--brand-blue);">mail@thomas-kueper.de</a></p>
+    </section>
+
+    <section style="margin-bottom: 3rem;">
+      <h2 style="font-family: 'Noto Sans', sans-serif; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 1rem;">Verantwortlich für den Inhalt</h2>
+      <p>Thomas Peter Küper<br>Bogenstraße 15, 59486 Sundern</p>
+    </section>
+
+    <section style="font-size: 0.9rem; color: var(--text-muted);">
+      <h2 style="font-family: 'Noto Sans', sans-serif; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 1rem;">Urheberrecht</h2>
+      <p>
+        Alle literarischen Werke, philosophischen Konzepte (insbesondere das AVI-Modell und die Omnizedenz-Philosophie), sowie alle fiktionalen Universen (OmniZedenz-Saga, Baumeister Universe, noχ¹ᐃ Universe, Zereya Saga) sind geistiges Eigentum von Thomas Peter Küper. 
+      </p>
+      <p style="margin-top: 1rem;">
+        Die durch die Seitenbetreiber erstellten Inhalte auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung und Verbreitung bedürfen der schriftlichen Zustimmung.
+      </p>
+    </section>
+  </article>
 </BaseLayout>

@@ -1,0 +1,213 @@
+---
+// Dateipfad: src/pages/romane/hydrolysis/index.astro
+// Name: HYDROLYSIS - Die Trilogie
+// Beschreibung: Detailseite für die Science-Thriller-Trilogie.
+
+// 1. Bild importieren
+import coverImage from './cover.jpg';
+
+// 2. Daten für das Archiv exportieren
+export const frontmatter = {
+  title: "HYDROLYSIS",
+  genre: "Symphonischer Science-Thriller",
+  description: "Ein Tropfen genügt. Ein Planet ist nicht genug. Ein Neuanfang. Ein selbstreplizierendes Bakterium verwandelt Wasser in eine tödliche Waffe. Eine globale Krise, die zur kosmischen Bedrohung eskaliert.",
+  status: "Trilogie",
+  order: 7, // Ersetzt den Platz von H2O
+  cover: coverImage.src
+};
+
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="HYDROLYSIS — Science-Thriller Trilogie" description={frontmatter.description}>
+  <style>
+    .page-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+      color: #1a1a1a;
+      line-height: 1.8;
+    }
+
+    .trilogy-hero {
+      text-align: center;
+      margin-bottom: 8rem;
+    }
+
+    .trilogy-hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3.5rem, 10vw, 6rem);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-bottom: 1rem;
+      font-weight: 300;
+    }
+
+    .symphony-badge {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: var(--color-gold);
+      font-weight: 600;
+    }
+
+    .main-teaser {
+      max-width: 750px;
+      margin: 4rem auto;
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+      color: #444;
+    }
+
+    .book-sections {
+      display: flex;
+      flex-direction: column;
+      gap: 10rem;
+    }
+
+    .book-entry {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .book-entry:nth-child(even) { direction: rtl; }
+    .book-entry:nth-child(even) .text-content { direction: ltr; }
+
+    .book-cover-wrapper img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 2/3;
+      object-fit: cover;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+      border-radius: 2px;
+    }
+
+    .text-content h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      font-weight: 300;
+    }
+
+    .book-meta {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      display: block;
+      color: var(--color-gold);
+      letter-spacing: 1px;
+    }
+
+    .why-hydrolysis {
+      background: #faf9f6;
+      padding: 6rem 4rem;
+      margin: 10rem -2rem 0;
+      border-radius: 4px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-top: 3rem;
+    }
+
+    .feature-item strong {
+      display: block;
+      font-family: 'Noto Sans', sans-serif;
+      color: var(--color-gold);
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-nav {
+      margin-top: 8rem;
+      text-align: center;
+      padding-top: 4rem;
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 850px) {
+      .book-entry { grid-template-columns: 1fr; text-align: center; }
+      .book-entry:nth-child(even) { direction: ltr; }
+      .feature-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <article class="page-container">
+    <header class="trilogy-hero">
+      <span class="symphony-badge">Symphonische Science-Thriller-Trilogie</span>
+      <h1>HYDROLYSIS</h1>
+      <div class="main-teaser">
+        „Ein Tropfen genügt. Ein Planet ist nicht genug. Ein Neuanfang.“
+      </div>
+    </header>
+
+    <div class="book-sections">
+      <section class="book-entry">
+        <div class="book-cover-wrapper">
+          <img src={coverImage.src} alt="Hydrolysis 1 - Durst" />
+        </div>
+        <div class="text-content">
+          <span class="book-meta">Band 1: DURST</span>
+          <h3>Ein Tropfen genügt</h3>
+          <p>
+            Ein Laborunfall in München. Ein modifiziertes Bakterium macht jedes Wasser auf der Erde tödlich. Während die Menschheit gegen ihr ältestes Verlangen kämpft – Durst – wird klar: Die Erde ist verloren.
+          </p>
+        </div>
+      </section>
+
+      <section class="book-entry">
+        <div class="book-cover-wrapper">
+          <img src={coverImage.src} alt="Hydrolysis 2 - Flucht" />
+        </div>
+        <div class="text-content">
+          <span class="book-meta">Band 2: FLUCHT</span>
+          <h3>Ein Planet ist nicht genug</h3>
+          <p>
+            Zwei Jahre später auf dem Mars. Geologen entdecken versteinerte Wasserspuren, die beweisen: Die Katastrophe ist schon einmal passiert. Die Menschheit ist nicht die erste Spezies, die daran scheitert.
+          </p>
+        </div>
+      </section>
+
+      <section class="book-entry">
+        <div class="book-cover-wrapper">
+          <img src={coverImage.src} alt="Hydrolysis 3 - Quelle" />
+        </div>
+        <div class="text-content">
+          <span class="book-meta">Band 3: QUELLE</span>
+          <h3>Ein Neuanfang</h3>
+          <p>
+            Erde. Mars. Und eine Menschheit, die begreift: Flucht ist keine Lösung. Weltraum-Technologie trifft auf antikes Wissen – ein Neuanfang für eine Spezies, die durch Weisheit überlebt.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <section class="why-hydrolysis">
+      <h2 style="text-align: center; font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; margin-bottom: 2rem;">Das Profil der Trilogie</h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <strong>Wissenschaftlich fundiert</strong>
+          Basierend auf echter Wasserstoff-Forschung und Mikrobiologie.
+        </div>
+        <div class="feature-item">
+          <strong>Symphonisch strukturiert</strong>
+          Drei Bände, die zusammen ein philosophisches Gesamtkunstwerk bilden.
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-nav">
+      <a href="/romane/standalone" style="text-decoration: none; color: #888; font-family: 'Noto Sans', sans-serif; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">
+        ← Zurück zum Archiv
+      </a>
+    </footer>
+  </article>
+</BaseLayout>

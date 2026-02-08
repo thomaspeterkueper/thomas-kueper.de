@@ -1,0 +1,263 @@
+---
+// Dateipfad: src/pages/romane/code-des-kollektivs/index.astro
+// Name: Der Code des Kollektivs - Detailseite
+// Beschreibung: Monumentale 4-Band-Serie über Bewusstseinsevolution und digitale Empathie.
+
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import coverImage from './cover.jpg';
+
+export const frontmatter = {
+  title: "Der Code des Kollektivs",
+  genre: "Visionäre Science-Spirituality-Fiction",
+  // Kurz-Teaser für das Archiv (standalone.astro)
+  description: "Eine App. Milliarden Menschen. Was geschieht, wenn wir spüren, was andere fühlen? Eine monumentale 4-Band-Serie über die bewusste Evolution der Menschheit und die Grenzen des Individuums.",
+  status: "4-Band-Serie / In Vorbereitung",
+  order: 27, // Schließt an 'EINSAM' (26) an
+  cover: coverImage.src
+};
+---
+
+<BaseLayout title="Der Code des Kollektivs — Roman-Serie von Thomas Peter Küper" description={frontmatter.description}>
+  <style>
+    .collective-page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+      color: var(--text);
+      font-family: 'Libre Baskerville', serif;
+      line-height: 1.9;
+    }
+
+    /* Hero Section */
+    .hero-split {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 5rem;
+      align-items: start;
+      margin-bottom: 8rem;
+    }
+
+    .cover-sticky {
+      position: sticky;
+      top: 120px;
+    }
+
+    .book-cover {
+      width: 100%;
+      height: auto;
+      border-radius: 2px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+      border: 1px solid var(--border);
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin: 0 0 0.5rem;
+      font-weight: 300;
+      line-height: 1;
+    }
+
+    .tagline {
+      font-size: 1.4rem;
+      color: var(--gold);
+      font-style: italic;
+      margin-bottom: 3rem;
+      display: block;
+      line-height: 1.4;
+    }
+
+    .teaser-box {
+      background: var(--bg-soft);
+      border-left: 4px solid var(--gold);
+      padding: 2.5rem;
+      font-size: 1.15rem;
+      margin-bottom: 3.5rem;
+    }
+
+    /* Symphony / Volume Grid */
+    .symphony-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin: 5rem 0;
+    }
+
+    .volume-card {
+      padding: 2rem;
+      background: #fff;
+      border: 1px solid var(--border);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .volume-card:hover { transform: translateY(-5px); border-color: var(--gold); }
+
+    .volume-num {
+      display: block;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .volume-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    /* Content Area */
+    .main-content h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      margin: 5rem 0 2rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+
+    .archetype-note {
+      margin: 6rem 0;
+      padding: 4rem;
+      background: var(--dark);
+      color: #fff;
+      text-align: center;
+    }
+
+    .archetype-note p {
+      font-size: 1.4rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      color: var(--gold-light);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-top: 4rem;
+    }
+
+    .feature-item strong {
+      display: block;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .back-nav {
+      margin-top: 8rem;
+      text-align: center;
+      padding-top: 4rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .btn-back {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    @media (max-width: 850px) {
+      .hero-split { grid-template-columns: 1fr; text-align: center; }
+      .cover-sticky { position: relative; top: 0; max-width: 250px; margin: 0 auto 3rem; }
+      .feature-list { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <article class="collective-page">
+    <div class="hero-split">
+      <div class="cover-sticky">
+        <img src={coverImage.src} alt="Cover Der Code des Kollektivs" class="book-cover" />
+      </div>
+
+      <div class="hero-info">
+        <span style="font-family: 'Noto Sans', sans-serif; text-transform: uppercase; letter-spacing: 3px; font-size: 0.75rem; color: #888; display: block; margin-bottom: 1rem;">Symphonischer Bewusstseinsroman</span>
+        <h1>{frontmatter.title}</h1>
+        <span class="tagline">Eine App. Milliarden Menschen. Eine neue Evolution.</span>
+        
+        <div class="teaser-box">
+          <p><strong>Was geschieht, wenn wir spüren, was andere fühlen?</strong></p>
+          <p style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.7;">
+            Tobias Keller versteckt in einer Meditations-App einen Code, der alles verändert. <em>Resonance</em> verbindet Menschen nicht digital, sondern empathisch. Ein technisches Experiment, das zur größten Transformation der Menschheit wird.
+          </p>
+        </div>
+
+        <p>
+          Spät am Abend in einem Labor in Jülich schreibt Tobias Keller die letzten Zeilen eines Algorithmus, der die Grenzen zwischen Ich und Du auflöst. Von Yokohama bis Ouagadougou beginnen Menschen, die Welt durch die Augen anderer zu schmecken und zu fühlen.
+        </p>
+      </div>
+    </div>
+
+    <section class="main-content">
+      <h2>Die Symphonie der vier Bände</h2>
+      <p>
+        Die Geschichte entfaltet sich über 90 Kapitel und folgt dem Aufbau einer großen Symphonie. Jeder Band entspricht einem Satz und einem entscheidenden Stadium der menschlichen Wandlung:
+      </p>
+
+      <div class="symphony-grid">
+        <div class="volume-card">
+          <span class="volume-num">Band 1</span>
+          <span class="volume-title">Der Narr</span>
+          <p style="font-size: 0.85rem; margin-top: 1rem; color: #666;">Die unbewusste Reise beginnt.</p>
+        </div>
+        <div class="volume-card">
+          <span class="volume-num">Band 2</span>
+          <span class="volume-title">Der Hierophant</span>
+          <p style="font-size: 0.85rem; margin-top: 1rem; color: #666;">Bestehende Strukturen werden herausgefordert.</p>
+        </div>
+        <div class="volume-card">
+          <span class="volume-num">Band 3</span>
+          <span class="volume-title">Der Turm</span>
+          <p style="font-size: 0.85rem; margin-top: 1rem; color: #666;">Alte Systeme stürzen ein.</p>
+        </div>
+        <div class="volume-card">
+          <span class="volume-num">Band 4</span>
+          <span class="volume-title">Die Welt</span>
+          <p style="font-size: 0.85rem; margin-top: 1rem; color: #666;">Ein neuer Zyklus des Bewusstseins beginnt.</p>
+        </div>
+      </div>
+
+      <div class="archetype-note">
+        <p>„22 Archetypen der menschlichen Psyche strukturieren die Erzählung wie Leitmotive. 90 Stimmen verschmelzen zu einem Chor, der die Vielfalt menschlicher Erfahrung singt.“</p>
+      </div>
+
+      <h2>Konzept & Vision</h2>
+      <p>
+        <em>Der Code des Kollektivs</em> verbindet reale Forschung zu Neurofeedback und Quantenverschränkung mit tiefen spirituellen Fragen. Es ist eine Untersuchung über Identität im Zeitalter der totalen Vernetzung: Was bleibt vom Ich, wenn wir alle eins werden?
+      </p>
+
+      <div class="feature-list">
+        <div class="feature-item">
+          <strong>Narrative Innovation</strong>
+          <p style="font-size: 0.95rem;">Symphonisches Multi-Band-Storytelling: Themen kehren wieder wie Melodien und transformieren sich über Jahrzehnte und Kontinente.</p>
+        </div>
+        <div class="feature-item">
+          <strong>Wissenschaft & Geist</strong>
+          <p style="font-size: 0.95rem;">Die Echo-Technologie erforscht die Grenze zwischen Code und Transzendenz, zwischen technologischer Waffe und spiritueller Praxis.</p>
+        </div>
+      </div>
+
+      <p style="text-align: center; font-style: italic; color: var(--gold); margin-top: 6rem; font-size: 1.2rem;">
+        „Die Reise beginnt mit einem naiven Sprung ins Unbekannte. Sie endet mit der Erkenntnis: Jedes Ende ist ein neuer Anfang.“
+      </p>
+    </section>
+
+    <footer class="back-nav">
+      <a href="/romane/standalone" class="btn-back">← Zurück zum Standalone-Archiv</a>
+    </footer>
+  </article>
+</BaseLayout>

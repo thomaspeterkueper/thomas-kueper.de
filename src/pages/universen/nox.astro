@@ -1,0 +1,186 @@
+---
+// Dateipfad: src/pages/universen/nox.astro
+// Beschreibung: Vollständige Detailseite zur noχ¹ᐃ (Noxia) Saga.
+// Korrektur: Kontrast für Meta-Texte erhöht, Links vereinheitlicht, volle Inhaltslänge.
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="noχ¹ᐃ Universe" 
+  description="Realistische Science-Fiction über die Eroberung des Weltraums, das χ-Feld und die Grenzen der Identität.">
+  
+  <style is:inline>
+    .nox-page { padding: 4rem 0 10rem; font-family: 'Lora', serif; line-height: 1.9; color: #1a1a1a; }
+    
+    .hero-section { text-align: center; margin-bottom: 8rem; padding: 8rem 0; background: #faf9f6; border-bottom: 1px solid #eee; }
+    .hero-section h1 { font-family: 'Crimson Text', serif; font-size: clamp(3rem, 10vw, 5.5rem); font-weight: 300; letter-spacing: 0.15em; color: #2a4e7a; margin-bottom: 1.5rem; }
+    .subtitle { color: #8a6d2b; /* Dunkleres Gold für besseren Kontrast */ font-size: 1.1rem; letter-spacing: 5px; text-transform: uppercase; font-weight: 700; font-family: 'Lato', sans-serif; }
+
+    .content-block { max-width: 850px; margin: 0 auto 6rem; }
+    .intro-lead { font-size: 1.35rem; margin-bottom: 2.5rem; border-left: 4px solid #c9a961; padding-left: 2rem; color: #1a1a1a; }
+
+    .field-info { background: #121416; color: #fff; padding: 10rem 0; margin: 8rem 0; }
+    .field-info h2 { color: #c9a961; font-size: 3rem; margin-bottom: 2.5rem; font-family: 'Crimson Text', serif; }
+    
+    .highlight-box { 
+      background: rgba(255, 255, 255, 0.05); 
+      border-left: 4px solid #c9a961; 
+      padding: 4rem; 
+      margin: 4rem 0; 
+    }
+    .highlight-box h3 { color: #c9a961; margin-top: 0; font-family: 'Crimson Text', serif; font-size: 2rem; }
+
+    .series-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-top: 8rem; }
+    .series-card { border: 1px solid #eee; padding: 5rem 4rem; background: #fff; transition: all 0.5s ease; height: 100%; display: flex; flex-direction: column; }
+    .series-card:hover { transform: translateY(-10px); border-color: #c9a961; box-shadow: 0 40px 80px rgba(0,0,0,0.06); }
+    .series-card h3 { font-size: 2.8rem; margin-bottom: 1rem; font-family: 'Crimson Text', serif; color: #2a4e7a; font-weight: 400; }
+    
+    /* KORREKTUR: HÖHERER KONTRAST FÜR META-TEXT */
+    .series-meta { 
+      font-family: 'Lato', sans-serif; 
+      color: #7a5f20; /* Deutlich dunkleres Gold für Lesbarkeit auf Weiß */
+      font-size: 0.85rem; 
+      text-transform: uppercase; 
+      letter-spacing: 3px; 
+      font-weight: 800; 
+      display: block; 
+      margin-bottom: 2.5rem; 
+    }
+
+    .character-list { font-size: 1rem; margin-top: 2.5rem; border-top: 1px solid #eee; padding-top: 2.5rem; list-style: none; padding-left: 0; flex-grow: 1; }
+    .character-list li { margin-bottom: 1rem; color: #444; }
+    .character-list strong { color: #2a4e7a; }
+
+    .plausibility-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 6rem; }
+    .plausibility-item { background: #faf9f6; padding: 3rem 2rem; border: 1px solid #eee; text-align: center; }
+    .plausibility-item h4 { font-family: 'Lato', sans-serif; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 2px; margin-bottom: 1.5rem; color: #2a4e7a; font-weight: 700; }
+
+    .btn-betreten { 
+      display: inline-block; 
+      margin-top: 3rem;
+      font-family: 'Lato', sans-serif; 
+      font-size: 0.8rem; 
+      font-weight: 700; 
+      text-transform: uppercase; 
+      letter-spacing: 3px; 
+      border-bottom: 1px solid #c9a961; 
+      padding-bottom: 8px; 
+      text-decoration: none;
+      color: #1a1a1a;
+      transition: color 0.3s;
+    }
+    .btn-betreten:hover { color: #c9a961; }
+
+    @media (max-width: 1000px) { .series-grid { grid-template-columns: 1fr; } }
+  </style>
+
+  <article class="nox-page">
+    <div class="container">
+      
+      <header class="hero-section">
+        <span class="subtitle">Realistische Weltraumeroberung</span>
+        <h1>noχ¹ᐃ Universe</h1>
+        <p style="font-style: italic; color: #666; margin-top: 2rem; font-size: 1.4rem;">„Wir verlassen die Erde nicht, um zu gehen. Wir gehen, um zu werden.“</p>
+      </header>
+
+      <section class="content-block">
+        <p class="intro-lead">
+          Das <strong style="color:#c9a961">noχ¹ᐃ Universe</strong> erzählt die Geschichte der Menschheit im Weltraum – nicht als utopische Vision, sondern als <strong>realistische Auseinandersetzung</strong> mit den psychologischen und technologischen Härten der interplanetaren Kolonisation.
+        </p>
+        <p>
+          Bis zum Jahr 2087 folgt die Chronik den bekannten physikalischen Pfaden. Die Entdeckung einer Axis-Kammer unter dem Mars-Regolith und der darin verborgenen hexagonalen Monolithen ändert jedoch alles. Basierend auf dem <strong>AVI-Modell</strong> öffnet sich der Zugriff auf das χ-Feld – ein Medium, das Information und Bewusstsein über Raum und Zeit hinweg koppelt.
+        </p>
+      </section>
+
+      <section class="field-info">
+        <div class="container">
+          <div style="max-width: 850px; margin: 0 auto;">
+            <h2>Das χ-Feld (Chi-Feld)</h2>
+            <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 3rem;">
+              Es ist eine fundamentale Eigenschaft des Raums auf der Ebene von <strong>Bewusstsein und Information</strong>. Das χ-Feld manifestiert das Prinzip der Omnizedenz in der messbaren Realität.
+            </p>
+            
+            <div class="highlight-box">
+              <h3>Fähigkeiten & Anomalien</h3>
+              <ul style="line-height: 2; list-style-type: square; padding-left: 1.5rem; font-size: 1.1rem;">
+                <li><strong>Instantane Kopplung:</strong> Kommunikation über Lichtjahre ohne Latenz.</li>
+                <li><strong>Neuro-Interfaces:</strong> Die direkte Verschmelzung von Geist und technologischer Struktur.</li>
+                <li><strong>Resonanz-Echo:</strong> Der Zugriff auf das kollektive Informationsfeld früherer Baumeister-Phasen.</li>
+                <li><strong>χ-Antrieb:</strong> Raumkrümmung durch Resonanz statt durch klassische Massenverdrängung.</li>
+              </ul>
+            </div>
+
+            <div style="border-top: 1px solid #444; padding-top: 3rem; margin-top: 4rem;">
+              <h3 style="color: #c9a961; font-family: 'Crimson Text', serif; font-size: 2rem; margin-bottom: 1.5rem;">Ereignis: Die Große Stille (2087)</h3>
+              <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.8;">
+                Wenige Tage nach der Entdeckung der Monolithen geschieht das Unfassbare: Alle konventionelle Langstrecken-Kommunikation im Sonnensystem fällt aus. Der Mars ist isoliert. In dieser totalen Stille muss die Kolonie autark überleben, während sie gleichzeitig die Natur der Monolithe entschlüsselt, die möglicherweise für die Störung verantwortlich sind.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-block">
+        <h2 style="font-family:'Crimson Text', serif; font-size: 3.5rem; text-align: center; margin-bottom: 6rem;">Zwei Serien, ein Universum</h2>
+        
+        <div class="series-grid">
+          <!-- ADULT SERIE -->
+          <div class="series-card" style="border-top: 4px solid #2a4e7a;">
+            <span class="series-meta">Hauptserie | Erwachsene | 2087–2150+</span>
+            <h3>noχ¹ᐃ</h3>
+            <p>Kosmischer Horror trifft Hard-SF. Es behandelt die soziopolitischen Spannungen der Mars-Kolonie unter dem Einfluss der HeliosCorp und die Dekonstruktion der menschlichen Identität.</p>
+            <ul class="character-list">
+              <li>• <strong>Kasumi Nakahara:</strong> Astrophysikerin, die als erste die Baumeister-Muster in den Signalen erkennt.</li>
+              <li>• <strong>Darian Kostas:</strong> Der leitende Ingenieur, der die Axis-Kammer öffnet.</li>
+              <li>• <strong>Sahana Iyengar:</strong> Eine Therapeutin, die zum moralischen Anker der isolierten Kolonie wird.</li>
+              <li>• <strong>Arjun Chen:</strong> Ein Ex-Söldner, dessen Weg durch eine Mission der Rache geprägt ist.</li>
+            </ul>
+            <a href="/romane#nox-main" class="btn-betreten">BETRETEN</a>
+          </div>
+
+          <!-- YA SERIE -->
+          <div class="series-card" style="border-top: 4px solid #c9a961;">
+            <span class="series-meta">YA-Serie | Generation Mars | ab 2091</span>
+            <h3>Generation Mars</h3>
+            <p>Vier Jahre nach der Großen Stille. Eine Generation wächst auf, für die die Erde nur noch ein Mythos in Datenarchiven ist. Sie entdecken Signale, die andere nicht hören können.</p>
+            <ul class="character-list">
+              <li>• <strong>Lena Kowalski:</strong> „Die Hörerin“ – sie ist sensitiv für Frequenzen des χ-Feldes.</li>
+              <li>• <strong>Keiko Nakamura:</strong> Eine Analystin, die nach der Wahrheit hinter dem Verschwinden ihres Vaters sucht.</li>
+              <li>• <strong>Rashid Al-Mansouri:</strong> Ein Programmierer, der die Muster der hexagonalen Strukturen versteht.</li>
+            </ul>
+            <a href="/romane#nox-ya" class="btn-betreten">BETRETEN</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-block">
+        <h2 style="font-family:'Crimson Text', serif; font-size: 2.8rem; text-align: center; margin-bottom: 4rem;">Hard-SF Fundament</h2>
+        <div class="plausibility-grid">
+          <div class="plausibility-item">
+            <h4>Orbital-Mechanik</h4>
+            <p style="font-size: 0.9rem;">Hohmann-Transferfenster und präzise Delta-V-Budgets bilden die Grundlage der Logistik.</p>
+          </div>
+          <div class="plausibility-item">
+            <h4>Mars-Physik</h4>
+            <p style="font-size: 0.9rem;">0.38g Schwerkraft, Strahlungsschutz und die ständige Gefahr durch Staubstürme.</p>
+          </div>
+          <div class="plausibility-item">
+            <h4>Psychologie</h4>
+            <p style="font-size: 0.9rem;">Die Erforschung von Generationentrauma und dem „Heimweh nach dem Blau“.</p>
+          </div>
+          <div class="plausibility-item">
+            <h4>Ökonomie</h4>
+            <p style="font-size: 0.9rem;">Ressourcenknappheit und die Monopolstellung interplanetarer Konzerne.</p>
+          </div>
+        </div>
+      </section>
+
+      <div style="text-align: center; margin-top: 10rem; padding-top: 5rem; border-top: 1px solid #eee;">
+        <p style="font-family: 'Lato', sans-serif; text-transform: uppercase; letter-spacing: 3px; font-size: 0.8rem; color: #666; margin-bottom: 2rem;">Hintergrundmaterial & Dokumentation</p>
+        <a href="/overtime-archive" style="display: inline-block; background: #1a1a1a; color: #fff; padding: 1.5rem 4rem; text-decoration: none; font-family: 'Lato', sans-serif; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; transition: 0.3s; font-size: 0.85rem;">OTA BETRETEN</a>
+      </div>
+
+    </div>
+  </article>
+</BaseLayout>

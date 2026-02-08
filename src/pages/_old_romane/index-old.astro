@@ -1,0 +1,33 @@
+---
+// Dateipfad: src/pages/romane/index.astro
+// Diese Seite ist die Weiche. Sie darf KEINE harten Buch-Karten mehr enthalten.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Romane & Welten" description="Wählen Sie zwischen den großen Universen und den Einzeltiteln.">
+  <style>
+    .hero { padding: 8rem 0 4rem; text-align: center; background: #faf9f6; border-bottom: 1px solid #eee; }
+    .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: 4rem; margin: 0; }
+    .choice-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; max-width: 1000px; margin: 6rem auto; padding: 0 2rem; }
+    .choice-card { border: 1px solid #eee; padding: 5rem 2rem; text-align: center; text-decoration: none; color: inherit; transition: 0.4s; background: white; }
+    .choice-card:hover { border-color: var(--color-gold); transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+    .choice-card h2 { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; margin-bottom: 1rem; }
+    .choice-card p { font-family: 'Libre Baskerville', serif; font-style: italic; color: #666; }
+  </style>
+
+  <section class="hero">
+    <h1>Meine Romane</h1>
+    <p style="color: var(--color-gold); font-style: italic; margin-top: 1rem;">Welchen Pfad möchten Sie beschreiten?</p>
+  </section>
+
+  <div class="choice-grid">
+    <a href="/universen" class="choice-card">
+      <h2>Universen</h2>
+      <p>Die großen Epen wie das Baumeister Universe oder die noχ¹ᐃ Saga.</p>
+    </a>
+    <a href="/romane/standalone" class="choice-card">
+      <h2>Standalone</h2>
+      <p>Das vollständige Archiv der 17 Einzeltitel und psychologischen Romane.</p>
+    </a>
+  </div>
+</BaseLayout>

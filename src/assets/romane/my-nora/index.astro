@@ -1,0 +1,244 @@
+---
+// Dateipfad: src/pages/romane/my-nora/index.astro
+// Name: My Nora - Detailseite (Aktualisiert)
+// Beschreibung: Psychologischer Roman über Machtmissbrauch und Manipulation im akademischen Raum.
+
+import coverImage from './cover.jpg';
+
+export const frontmatter = {
+  title: "My Nora",
+  genre: "Literarischer psychologischer Roman",
+  // Version 1 (Ultra-kompakt) für das automatisierte Archiv
+  description: "Dilnoza kommt aus Taschkent nach Boston, um Klavier zu studieren. Ihr Mentor verspricht eine Weltkarriere, doch Großzügigkeit hat ihren Preis. Ein Roman über Manipulation und die Fragilität von Vertrauen.",
+  status: "Erschienen",
+  order: 6,
+  cover: coverImage.src 
+};
+
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title={frontmatter.title} description={frontmatter.description}>
+  <style>
+    .book-page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+      color: #1a1a1a;
+    }
+
+    /* Header Sektion */
+    .header-area {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3.5rem, 8vw, 5.5rem);
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin: 0;
+      line-height: 1;
+    }
+
+    .tagline {
+      font-family: 'Libre Baskerville', serif;
+      font-style: italic;
+      font-size: 1.4rem;
+      color: var(--color-gold);
+      display: block;
+      margin-top: 1.5rem;
+    }
+
+    /* Split Layout */
+    .split-layout {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .cover-sidebar {
+      position: sticky;
+      top: 120px;
+    }
+
+    .book-cover {
+      width: 100%;
+      height: auto;
+      border-radius: 2px;
+      box-shadow: 0 30px 70px rgba(0,0,0,0.15);
+    }
+
+    /* Content */
+    .main-content {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.15rem;
+      line-height: 2;
+      color: #333;
+    }
+
+    .intro-teaser {
+      font-size: 1.3rem;
+      color: #1a1a1a;
+      line-height: 1.8;
+      margin-bottom: 3rem;
+      border-left: 3px solid var(--color-gold);
+      padding-left: 2rem;
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      margin: 4rem 0 1.5rem;
+      border-bottom: 1px solid #f0f0f0;
+      padding-bottom: 0.5rem;
+      color: #1a1a1a;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.7rem;
+      color: var(--color-gold);
+      margin: 2.5rem 0 1rem;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 3rem 0;
+    }
+
+    .feature-list li {
+      padding-left: 1.5rem;
+      position: relative;
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+    }
+
+    .feature-list li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--color-gold);
+      font-weight: bold;
+    }
+
+    .perspective-box {
+      background: #faf9f6;
+      padding: 2.5rem;
+      margin: 4rem 0;
+      border-radius: 4px;
+    }
+
+    .perspective-box h4 {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #999;
+      margin-bottom: 1.5rem;
+    }
+
+    .back-nav {
+      margin-top: 8rem;
+      text-align: center;
+      padding-top: 4rem;
+      border-top: 1px solid #eee;
+    }
+
+    .btn-back {
+      text-decoration: none;
+      color: #888;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .btn-back:hover { color: var(--color-gold); }
+
+    @media (max-width: 900px) {
+      .split-layout { grid-template-columns: 1fr; }
+      .cover-sidebar { position: relative; top: 0; max-width: 280px; margin: 0 auto 4rem; }
+      h1 { font-size: 3rem; }
+    }
+  </style>
+
+  <article class="book-page">
+    <header class="header-area">
+      <h1>{frontmatter.title}</h1>
+      <span class="tagline">Wann Mentorschaft zu Besitz wird</span>
+    </header>
+
+    <div class="split-layout">
+      <aside class="cover-sidebar">
+        <img src={coverImage.src} alt={`Cover von ${frontmatter.title}`} class="book-cover" />
+      </aside>
+
+      <div class="main-content">
+        <!-- Version 2 - Erweitert -->
+        <div class="intro-teaser">
+          <p>
+            Als die neunzehnjährige Pianistin Dilnoza Rahimova ein Vollstipendium am Lockwood Conservatory erhält, scheint ein Traum wahr zu werden. Ihr Mentor, der charismatische Professor Martin Winter, öffnet ihr Türen, die verschlossen schienen.
+          </p>
+        </div>
+
+        <p>
+          Doch unter der Oberfläche von Großzügigkeit und künstlerischer Exzellenz liegt ein System der Kontrolle, das sich so subtil entfaltet, dass Dilnoza es erst begreift, als alle Wege zurück versperrt sind. Und Emma, die Tochter der Winters, weiß: Sie ist nicht die Erste.
+        </p>
+
+        <!-- Langbeschreibung -->
+        <h2>Die Architektur der Falle</h2>
+        <p>
+          Cambridge, Massachusetts, 2019. 
+          Professor Martin Winter, einst gefeierter Konzertpianist, nun einer der einflussreichsten Pädagogen des Landes, sieht Dilnozas Potential. Er verspricht nicht nur technische Brillanz, sondern künstlerische Transformation. Seine Frau Rebecca nimmt Dilnoza in ihr Heim auf – das Winter House in Cambridge wird zu ihrer Zuflucht, ihre Ersatzfamilie.
+        </p>
+
+        <p>
+          Aber Großzügigkeit ist nie bedingungslos. Was als Mentorschaft beginnt, wird allmählich zu etwas anderem. Kleine Verschiebungen. Subtile Grenzüberschreitungen. Ein Kommentar zu viel. Eine Berührung, die eine Sekunde zu lange dauert. Die sanfte Suggestion, ihren Namen zu ändern – <em>Nora</em> klingt einfacher, professioneller.
+        </p>
+
+        <div class="perspective-box">
+          <h4>Vier Jahre. Vier Perspektiven.</h4>
+          <p style="margin-bottom: 1.5rem;">
+            Der Roman entfaltet sich über vier Jahre und wechselt zwischen den Stimmen der Beteiligten:
+          </p>
+          <ul style="list-style: none; padding: 0;">
+            <li><strong>Dilnoza:</strong> Die ehrgeizige Künstlerin im goldenen Käfig.</li>
+            <li><strong>Martin:</strong> Der narzisstische Manipulator, der glaubt, er tue das Richtige.</li>
+            <li><strong>Emma:</strong> Die sechzehnjährige Tochter und ohnmächtige Zeugin.</li>
+            <li><strong>Rebecca:</strong> Die elegante Ehefrau und subtile Komplizin.</li>
+          </ul>
+        </div>
+
+        <h3>Psychologische Präzision</h3>
+        <p>
+          <em>My Nora</em> nimmt sich Zeit – Zeit, um zu zeigen, wie Manipulation wirklich funktioniert. Nicht durch spektakuläre Übergriffe, sondern durch hundert kleine, rationalisierbare Schritte. Ein System institutionellen Machtmissbrauchs, das weiterhin funktioniert, weil es unsichtbar bleibt, solange alle mitspielen.
+        </p>
+
+        <ul class="feature-list">
+          <li><strong>Keine einfachen Antworten:</strong> Ein Porträt über die Ambivalenz von Abhängigkeit.</li>
+          <li><strong>Akademische Machtstrukturen:</strong> Hinter den Kulissen renommierter Musikinstitute.</li>
+          <li><strong>Kulturelle Grenzen:</strong> Dilnozas Hunger nach Erfolg als Motor der Manipulation.</li>
+          <li><strong>Literarischer Thriller:</strong> Subtil verstörend statt laut und plakativ.</li>
+        </ul>
+
+        <p style="font-style: italic; color: #666; text-align: center; margin-top: 4rem;">
+          Ein Roman über die Psychologie von Kontrolle und die Frage, wie Menschen sich selbst täuschen, um zu überleben.
+        </p>
+      </div>
+    </div>
+
+    <footer class="back-nav">
+      <a href="/romane/standalone" class="btn-back">← Zurück zum Standalone-Archiv</a>
+    </footer>
+  </article>
+</BaseLayout>

@@ -1,0 +1,228 @@
+---
+// Dateipfad: src/pages/romane/der-stuhl-in-der-ecke/index.astro
+// Name: Der Stuhl in der Ecke - Detailseite
+// Beschreibung: Psychothriller über soziale Angst, Isolation und die Transformation zur Täterin.
+
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import coverImage from './cover.jpg';
+
+export const frontmatter = {
+  title: "Der Stuhl in der Ecke",
+  genre: "Psychothriller",
+  // Kurzer Teaser für das Archiv (standalone.astro)
+  description: "Sie versteckt sich hinter Hecken. Bis sie lernt, dass Nehmen einfacher ist als Geben. Ein psychologischer Thriller über die Grenze zwischen Opfer und Täterin – und darüber, was geschieht, wenn diese Grenze verschwindet.",
+  status: "Erschienen",
+  order: 9, // Einordnung im Archiv
+  cover: coverImage.src
+};
+---
+
+<BaseLayout title="Der Stuhl in der Ecke — Psychothriller von Thomas Peter Küper" description={frontmatter.description}>
+  <style>
+    .thriller-page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+      color: #1a1a1a;
+      font-family: 'Noto Sans', sans-serif;
+    }
+
+    /* Hero Section */
+    .hero-split {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 5rem;
+      align-items: start;
+      margin-bottom: 8rem;
+    }
+
+    .cover-sticky {
+      position: sticky;
+      top: 120px;
+    }
+
+    .book-cover {
+      width: 100%;
+      height: auto;
+      border-radius: 2px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin: 0 0 1rem;
+      font-weight: 300;
+      line-height: 1.1;
+    }
+
+    .genre-tag {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #888;
+      display: block;
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+
+    .hero-teaser {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.25rem;
+      line-height: 1.7;
+      color: var(--color-gold);
+      font-style: italic;
+      margin-bottom: 3rem;
+    }
+
+    /* Content Area */
+    .content-area {
+      font-family: 'Libre Baskerville', serif;
+      line-height: 2;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .content-area p {
+      margin-bottom: 2rem;
+    }
+
+    .impact-statement {
+      margin: 5rem 0;
+      padding: 4rem;
+      background: #0a0a0a;
+      color: #fff;
+      text-align: center;
+      position: relative;
+    }
+
+    .impact-statement blockquote {
+      font-size: 1.5rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      margin: 0;
+    }
+
+    .impact-statement cite {
+      display: block;
+      margin-top: 1.5rem;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--color-gold);
+      font-style: normal;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-top: 6rem;
+      border-top: 1px solid #eee;
+      padding-top: 4rem;
+    }
+
+    .meta-item h3 {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #999;
+      margin-bottom: 1rem;
+    }
+
+    .back-nav {
+      margin-top: 8rem;
+      text-align: center;
+    }
+
+    .btn-archive {
+      text-decoration: none;
+      color: #1a1a1a;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border: 1px solid #1a1a1a;
+      padding: 1rem 2.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .btn-archive:hover {
+      background: #1a1a1a;
+      color: #fff;
+    }
+
+    @media (max-width: 850px) {
+      .hero-split { grid-template-columns: 1fr; text-align: center; }
+      .cover-sticky { position: relative; top: 0; max-width: 260px; margin: 0 auto 3rem; }
+      .meta-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <article class="thriller-page">
+    <div class="hero-split">
+      <div class="cover-sticky">
+        <img src={coverImage.src} alt="Cover Der Stuhl in der Ecke" class="book-cover" />
+      </div>
+
+      <div class="hero-text">
+        <span class="genre-tag">{frontmatter.genre}</span>
+        <h1>{frontmatter.title}</h1>
+        <p class="hero-teaser">
+          „Sie versteckt sich hinter Hecken. Bis sie lernt, dass Nehmen einfacher ist als Geben.“
+        </p>
+        
+        <div class="content-area">
+          <p>
+            Sie ist die Frau, die sich hinter Büschen versteckt, wenn jemand sie erwartet. Die in Ecken steht, mit dem Rücken zur Wand. Die nachts im Chat schreibt, was sie will – und tagsüber nicht einmal an einer Bushaltestelle stehen kann.
+          </p>
+          <p>
+            Mit 23 Jahren lebt sie isoliert in ihrer chaotischen Wohnung, gefangen in sozialer Angst und Depression. Ihre einzige Verbindung zur Welt: anonyme Online-Chats.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-area">
+      <p>
+        Als sie einen geduldigen Mann aus Angst wegstößt, öffnet sich eine andere Tür. <strong>ER</strong> bietet keine Wärme, sondern Kälte. Keine Rettung, sondern Kontrolle. Was als Hilfe beginnt – ein kaputter Abfluss, eine starke Hand – wird zu systematischer Ausbeutung. Sie lernt, dass ihr Körper sie verrät. Dass Hilflosigkeit eine Währung ist.
+      </p>
+
+      <div class="impact-statement">
+        <blockquote>
+          „Täter werden ist einfacher als Opfer bleiben. Man muss nur die Seite des Stuhls wechseln.“
+        </blockquote>
+        <cite>Psychologische Transformation</cite>
+      </div>
+
+      <p>
+        Dann trifft sie Lea. Jung, zerbrechlich, unsichtbar. Ein Spiegelbild dessen, was sie selbst einmal war. Und in diesem Moment versteht sie: Es gibt einen Ausweg aus ihrer Falle. Jemand anders kann ihren Platz einnehmen.
+      </p>
+
+      <p>
+        <em>Der Stuhl in der Ecke</em> zeigt die erbarmungslose Verwandlung einer Frau, die ihre eigene Ohnmacht als Werkzeug entdeckt. Ohne Romantisierung, ohne Erlösung. Kalt. Präzise.
+      </p>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <h3>Themenschwerpunkte</h3>
+          <p style="font-size: 0.95rem;">Soziale Phobie, Toxische Machtstrukturen, Psychologische Transformation, Identitätsverlust.</p>
+        </div>
+        <div class="meta-item">
+          <h3>Stilistik</h3>
+          <p style="font-size: 0.95rem;">Literarischer Thriller. Fokus auf die inneren Abgründe und die De-Konstruktion von Moral.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="back-nav">
+      <a href="/romane/standalone" class="btn-archive">← Zum Standalone-Archiv</a>
+    </footer>
+  </article>
+</BaseLayout>

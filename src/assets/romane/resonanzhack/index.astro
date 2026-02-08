@@ -1,0 +1,226 @@
+---
+// Dateipfad: src/pages/romane/resonanz-hack/index.astro
+// Name: Der Resonanzhack - Detailseite
+// Beschreibung: IT-Thriller über Cyberkriminalität, Phishing und die menschliche Firewall.
+
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import coverImage from './cover.jpg';
+
+export const frontmatter = {
+  title: "Der Resonanzhack",
+  genre: "IT-Thriller / Cyber-Crime",
+  // Kurz-Teaser für das Archiv (standalone.astro)
+  description: "IT-Profi trifft Thriller-Autor: Wenn Cyberkriminalität zur fesselnden Spannung wird. Ein packender Thriller über digitale Manipulation und die Verletzlichkeit unserer vernetzten Gesellschaft.",
+  status: "Erschienen / IT-Expertise",
+  order: 24, // Schließt an 'Ein Duft, der bleibt' an
+  cover: coverImage.src
+};
+---
+
+<BaseLayout title="Der Resonanzhack — IT-Thriller von Thomas Peter Küper" description={frontmatter.description}>
+  <style>
+    .thriller-page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+      color: #1a1a1a;
+      font-family: 'Libre Baskerville', serif;
+      line-height: 1.9;
+    }
+
+    /* Hero Section */
+    .hero-split {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 5rem;
+      align-items: start;
+      margin-bottom: 8rem;
+    }
+
+    .cover-sticky {
+      position: sticky;
+      top: 120px;
+    }
+
+    .book-cover {
+      width: 100%;
+      height: auto;
+      border-radius: 2px;
+      box-shadow: 0 30px 60px rgba(15, 23, 42, 0.2); /* Dunklerer, technischer Schatten */
+      border: 1px solid #e2e8f0;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 7vw, 4.5rem);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin: 0 0 0.5rem;
+      font-weight: 300;
+      line-height: 1.1;
+    }
+
+    .tagline {
+      font-size: 1.4rem;
+      color: var(--gold);
+      font-style: italic;
+      margin-bottom: 3rem;
+      display: block;
+      line-height: 1.4;
+    }
+
+    .tech-teaser {
+      background: #0f172a; /* Deep Navy / Tech-Hintergrund */
+      color: #f1f5f9;
+      padding: 2.5rem;
+      border-left: 4px solid var(--gold);
+      margin-bottom: 4rem;
+      font-family: 'Noto Sans', sans-serif;
+    }
+
+    .tech-teaser p {
+      font-size: 1.15rem;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* Content Area */
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      margin: 5rem 0 2rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+
+    .mission-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin: 4rem 0;
+    }
+
+    .mission-card {
+      padding: 2rem;
+      background: #fff;
+      border: 1px solid #f0f0f0;
+      transition: all 0.3s ease;
+    }
+
+    .mission-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-5px);
+    }
+
+    .mission-card strong {
+      display: block;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .quote-box {
+      margin: 6rem 0;
+      text-align: center;
+      padding: 4rem;
+      background: #faf9f6;
+      border-radius: 4px;
+    }
+
+    .quote-box blockquote {
+      font-size: 1.6rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      line-height: 1.5;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .back-nav {
+      margin-top: 8rem;
+      text-align: center;
+      padding-top: 4rem;
+      border-top: 1px solid #eee;
+    }
+
+    .btn-archive {
+      text-decoration: none;
+      color: #888;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    @media (max-width: 850px) {
+      .hero-split { grid-template-columns: 1fr; text-align: center; }
+      .cover-sticky { position: relative; top: 0; max-width: 250px; margin: 0 auto 3rem; }
+    }
+  </style>
+
+  <article class="thriller-page">
+    <div class="hero-split">
+      <div class="cover-sticky">
+        <img src={coverImage.src} alt="Cover Der Resonanzhack" class="book-cover" />
+      </div>
+
+      <div class="hero-info">
+        <span style="font-family: 'Noto Sans', sans-serif; text-transform: uppercase; letter-spacing: 3px; font-size: 0.75rem; color: #888; display: block; margin-bottom: 1rem;">Cyber-Thriller</span>
+        <h1>{frontmatter.title}</h1>
+        <span class="tagline">Wenn IT-Expertise auf Storytelling trifft</span>
+        
+        <div class="tech-teaser">
+          <p>„IT-Profi trifft Thriller-Autor: Wenn Cyberkriminalität zur fesselnden Spannung wird.“</p>
+        </div>
+
+        <p>
+          Thomas Peter Küper verbindet als IT-Administrator das technische Know-how der digitalen Welt mit der Kunst des spannenden Erzählens. Seine Thriller basieren auf realen Cyberbedrohungen – packend, lehrreich und erschreckend nah an der Realität. 
+        </p>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <h2>Authentizität ist die beste Firewall</h2>
+      <p>
+        Die Idee zu seinem Debüt-Thriller <em>„Der Resonanzhack“</em> entstand aus einem realen Phishing-Test für sein Unternehmen. Was als simpler Sicherheitstest begann, entwickelte sich zu einer packenden Geschichte über digitale Manipulation, psychologische Tricks und die Verletzlichkeit unserer vernetzten Gesellschaft.
+      </p>
+      
+      <p>
+        Seine Mission: Komplexe IT-Sicherheitsthemen so zu erzählen, dass sie fesseln statt einschläfern. Denn Cyberkriminalität ist keine dystopische Fantasie – sie ist Alltag. Und die beste Verteidigung dagegen ist Wissen.
+      </p>
+
+      <div class="mission-grid">
+        <div class="mission-card">
+          <strong>Authentizität</strong>
+          <p style="font-size: 0.95rem;">Jede Technik, jeder Hack und jede Sicherheitslücke basiert auf realen Bedrohungen und fundiertem Expertenwissen.</p>
+        </div>
+        <div class="mission-card">
+          <strong>Spannung</strong>
+          <p style="font-size: 0.95rem;">Keine trockenen Sicherheitstipps, sondern mitreißende Thriller-Action, die unter die Haut geht.</p>
+        </div>
+        <div class="mission-card">
+          <strong>Aufklärung</strong>
+          <p style="font-size: 0.95rem;">Lerneffekt inklusive – nach der letzten Seite wissen Sie nicht nur, wie die Geschichte ausgeht, sondern wie Sie sich schützen können.</p>
+        </div>
+      </div>
+
+      <div class="quote-box">
+        <blockquote>
+          „Meine Leser sollen am Ende nicht nur wissen, wie die Geschichte ausgeht – sondern auch, wie sie ihre eigene digitale Identität verteidigen.“
+        </blockquote>
+      </div>
+
+      <p style="text-align: center; font-style: italic; color: #666; margin-top: 4rem;">
+        Ein Roman über aktuelle Cyberbedrohungen, KI-gestützte Manipulation und die Frage: Wie weit würdest du für deine digitale Sicherheit gehen?
+      </p>
+    </div>
+
+    <footer class="back-nav">
+      <a href="/romane/standalone" class="btn-archive">← Zurück zum Standalone-Archiv</a>
+    </footer>
+  </article>
+</BaseLayout>
