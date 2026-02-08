@@ -1,6 +1,7 @@
 ---
 // Pfad: src/pages/index.astro
-// Aktualisiert am: 07.02.2026, 21:15
+// Aktualisiert am: 08.02.2026
+// Änderung: Zereya Saga als dritte Universen-Karte hinzugefügt, Grid-Layout angepasst.
 
 import BaseLayout from '../layouts/BaseLayout.astro';
 import authorImg from '../assets/portrait3.jpg';
@@ -16,10 +17,99 @@ import authorImg from '../assets/portrait3.jpg';
     .lead-text { font-family: 'Lora', serif; font-size: 1.25rem; color: var(--gold); font-style: italic; margin-bottom: 2rem; display: block; }
     .btn-primary { display: inline-block; text-decoration: none; background-color: var(--text); color: #fff; padding: 1.2rem 3rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em; transition: 0.3s; }
     .btn-primary:hover { background-color: var(--gold); transform: translateY(-3px); }
-    .universe-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 4rem; }
-    .uni-card { background: #fff; border: 1px solid var(--border); padding: 5rem 4rem; text-decoration: none; color: inherit; text-align: center; transition: 0.4s; }
-    .uni-card:hover { border-color: var(--gold); transform: translateY(-10px); }
-    @media (max-width: 950px) { .hero-grid { grid-template-columns: 1fr; text-align: center; } .portrait-box { max-width: 320px; margin: 0 auto; } }
+
+    /* ===== UNIVERSEN-SEKTION ===== */
+    .universen-section { padding: 10rem 0; }
+    .universen-section h2 { text-align: center; font-size: 3.5rem; margin-bottom: 5rem; }
+
+    .universe-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+      margin-top: 0;
+    }
+
+    .uni-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      padding: 4rem 3rem;
+      text-decoration: none;
+      color: inherit;
+      text-align: center;
+      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .uni-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--card-accent, var(--gold));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.5s ease;
+    }
+
+    .uni-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-10px);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.05);
+    }
+
+    .uni-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .uni-card .card-label {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+
+    .uni-card h3 {
+      font-family: 'Crimson Text', serif;
+      font-size: 2.2rem;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+
+    .uni-card p {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    .uni-card .enter-link {
+      display: inline-block;
+      margin-top: 2rem;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--text);
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 4px;
+      transition: color 0.3s;
+    }
+
+    .uni-card:hover .enter-link { color: var(--gold); }
+
+    @media (max-width: 950px) {
+      .hero-grid { grid-template-columns: 1fr; text-align: center; }
+      .portrait-box { max-width: 320px; margin: 0 auto; }
+      .universe-cards { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+      .uni-card { padding: 3.5rem 2.5rem; }
+    }
   </style>
 
   <section class="home-hero">
@@ -34,18 +124,32 @@ import authorImg from '../assets/portrait3.jpg';
     </div>
   </section>
 
-  <section style="padding: 10rem 0;">
+  <section class="universen-section">
     <div class="container">
-      <h2 style="text-align:center; font-size:3.5rem; margin-bottom: 4rem;">Die Universen</h2>
+      <h2>Die Universen</h2>
       <div class="universe-cards">
-        <a href="/universen/baumeister" class="uni-card">
-          <h3 style="font-size:2.5rem;">Baumeister</h3>
-          <p style="font-style:italic;">60.000 Jahre. Ein Gefüge. Die Architektur des Seins.</p>
+        
+        <a href="/universen/baumeister" class="uni-card" style="--card-accent: #c9a961;">
+          <span class="card-label">60.000 Jahre Epik</span>
+          <h3>Baumeister</h3>
+          <p>Von den Uralten bis zu den Sternen. Die Architektur des Seins.</p>
+          <span class="enter-link">Gefüge betreten</span>
         </a>
-        <a href="/universen/nox" class="uni-card">
-          <h3 style="font-size:2.5rem;">noχ¹ᐃ</h3>
-          <p style="font-style:italic;">Der Mars, das χ-Feld und die Grenzen der Identität.</p>
+
+        <a href="/universen/nox" class="uni-card" style="--card-accent: #2C4E7A;">
+          <span class="card-label">Realistischer Aufbruch</span>
+          <h3>noχ¹ᐃ</h3>
+          <p>Der Mars, das χ-Feld und die Grenzen der Identität.</p>
+          <span class="enter-link">Mission starten</span>
         </a>
+
+        <a href="/universen/zereya" class="uni-card" style="--card-accent: #4a9b9b;">
+          <span class="card-label">Saga in 8 Bänden</span>
+          <h3>Zereya</h3>
+          <p>Das summende Haus. Der lebende Dreiklang. Wo Transformation geschieht.</p>
+          <span class="enter-link">Filter erforschen</span>
+        </a>
+
       </div>
     </div>
   </section>
