@@ -1,86 +1,42 @@
 ---
-title: "Der Code des Kollektivs"
-genre: "Visionäre Science-Spirituality-Fiction"
-description: "Eine App. Milliarden Menschen. Was geschieht, wenn wir spüren, was andere fühlen? Eine monumentale 4-Band-Serie über die bewusste Evolution der Menschheit und die Grenzen des Individuums."
+title: "Bon Air"
+genre: "Climate Fiction / Science-Thriller"
+description: "Die Erde zu retten war einfach. Sie zu überleben wird unmöglich. Fünf Forschungsgruppen entwickeln geniale Lösungen gegen die Klimakrise – doch ihre Erfolge werden zur Katastrophe."
 status: "4-Band-Serie / In Vorbereitung"
 order: 27
 cover: "/assets/romane/bon-air/cover.jpg"
 tags: ["Roman"]
 ---
 
-<div class="hero-split">
-      <div class="cover-sticky">
-        <img src={coverImage.src} alt="Cover Der Code des Kollektivs" class="book-cover" />
-      </div>
+<section>
+  <h2>Wir wollten die Erde retten – jetzt stirbt sie auf fünf verschiedene Arten gleichzeitig.</h2>
+  <p>
+    <strong>2048. Die Klimakrise hat ihren Kipppunkt erreicht.</strong> Fünf internationale Forschungsgruppen arbeiten parallel an der Rettung des Planeten. In München entwickelt Dr. Keiko Hoffmann genetisch veränderte Mega-Bäume, die CO₂ tausendfach schneller absorbieren als normale Pflanzen. In Tokyo konstruiert Dr. Enzo Dubois massive Atmosphären-Filterstationen. An den Küsten São Paulos züchtet Dr. Maria Santos hypereffiziente Algen. In London synthetisiert Dr. Rebecca Johnson chemische Katalysatoren. Und in Mumbai erschafft Dr. Anita Kellner CO₂-fressende Mikroorganismen.
+  </p>
 
-      <div class="hero-info">
-        <span style="font-family: 'Noto Sans', sans-serif; text-transform: uppercase; letter-spacing: 3px; font-size: 0.75rem; color: #888; display: block; margin-bottom: 1rem;">Symphonischer Bewusstseinsroman</span>
-        <h1>{frontmatter.title}</h1>
-        <span class="tagline">Eine App. Milliarden Menschen. Eine neue Evolution.</span>
-        
-        <div class="teaser-box">
-          <p><strong>Was geschieht, wenn wir spüren, was andere fühlen?</strong></p>
-          <p style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.7;">
-            Tobias Keller versteckt in einer Meditations-App einen Code, der alles verändert. <em>Resonance</em> verbindet Menschen nicht digital, sondern empathisch. Ein technisches Experiment, das zur größten Transformation der Menschheit wird.
-          </p>
-        </div>
+  <h2>Dann beginnen die Nebenwirkungen.</h2>
+  <p>
+    Keikos Bäume produzieren so viel Sauerstoff, dass Menschen an „zu reiner Luft" sterben. Enzos Filtersysteme lösen permanente Stürme aus. Marias Algen vergiften die Ozeane. Rebeccas Chemikalien verwandeln Londons Böden in glitzernde Todeslandschaften. Anitas Mikroben mutieren außer Kontrolle.
+  </p>
+  <p>
+    Als die fünf Systeme miteinander zu interagieren beginnen, verwandelt sich die Erde in eine sich ständig wandelnde Dystopie. London verschwindet unter 300-Meter-Bäumen. Der Himmel über Tokyo färbt sich violett. Neue Kontinente aus Algen entstehen auf den Ozeanen.
+  </p>
 
-        <p>
-          Spät am Abend in einem Labor in Jülich schreibt Tobias Keller die letzten Zeilen eines Algorithmus, der die Grenzen zwischen Ich und Du auflöst. Von Yokohama bis Ouagadougou beginnen Menschen, die Welt durch die Augen anderer zu schmecken und zu fühlen.
-        </p>
-      </div>
-    </div>
+  <h2>Die ultimative Wahl</h2>
+  <p>
+    Keiko steht vor einer unmöglichen Entscheidung: Ihr Ex-Partner Henrik Nakamura plant, hundert Millionen „Schwache" sterben zu lassen, um eine Milliarde „Genetisch Geeignete" zu retten. Er besitzt die einzige Waffe gegen die Sauerstoffhölle – aber der Preis ist Massenmord. Gemeinsam mit Enzo entwickelt Keiko einen verzweifelten Plan, doch jeder Rettungsversuch beschleunigt nur den Kollaps.
+  </p>
+  <p>
+    Die Welt verändert sich mit jedem Kapitel drastischer. Und niemand weiß, ob die Menschheit das überleben wird.
+  </p>
 
-    <section class="main-content">
-      <h2>Die Symphonie der vier Bände</h2>
-      <p>
-        Die Geschichte entfaltet sich über 90 Kapitel und folgt dem Aufbau einer großen Symphonie. Jeder Band entspricht einem Satz und einem entscheidenden Stadium der menschlichen Wandlung:
-      </p>
+  <h2>Die vier Bände</h2>
+  <p><strong>Band 1: DIE HOFFNUNG</strong> (2048–2050) — Science-Thriller. Optimistisch, dann beunruhigend. Erste Experimente, erste Warnzeichen.</p>
+  <p><strong>Band 2: DER SCHOCK</strong> (2050–2055) — Disaster Horror. Systeme kollidieren, Millionen fliehen. London überwuchert.</p>
+  <p><strong>Band 3: DER KRIEG</strong> (2055–2065) — Post-Apocalyptic Action. Überlebende kämpfen um Ressourcen und Lösungen.</p>
+  <p><strong>Band 4: DIE NEUE WELT</strong> (2065–2080) — Philosophical SF. Erde und Menschheit finden eine neue, fremdartige Symbiose.</p>
 
-      <div class="symphony-grid">
-        <div class="volume-card">
-          <span class="volume-num">Band 1</span>
-          <span class="volume-title">Der Narr</span>
-          <p style="font-size: 0.85rem; margin-top: 1rem; color: #666;">Die unbewusste Reise beginnt.</p>
-        </div>
-        <div class="volume-card">
-          <span class="volume-num">Band 2</span>
-          <span class="volume-title">Der Hierophant</span>
-          <p style="font-size: 0.85rem; margin-top: 1rem; color: #666;">Bestehende Strukturen werden herausgefordert.</p>
-        </div>
-        <div class="volume-card">
-          <span class="volume-num">Band 3</span>
-          <span class="volume-title">Der Turm</span>
-          <p style="font-size: 0.85rem; margin-top: 1rem; color: #666;">Alte Systeme stürzen ein.</p>
-        </div>
-        <div class="volume-card">
-          <span class="volume-num">Band 4</span>
-          <span class="volume-title">Die Welt</span>
-          <p style="font-size: 0.85rem; margin-top: 1rem; color: #666;">Ein neuer Zyklus des Bewusstseins beginnt.</p>
-        </div>
-      </div>
-
-      <div class="archetype-note">
-        <p>„22 Archetypen der menschlichen Psyche strukturieren die Erzählung wie Leitmotive. 90 Stimmen verschmelzen zu einem Chor, der die Vielfalt menschlicher Erfahrung singt.“</p>
-      </div>
-
-      <h2>Konzept & Vision</h2>
-      <p>
-        <em>Der Code des Kollektivs</em> verbindet reale Forschung zu Neurofeedback und Quantenverschränkung mit tiefen spirituellen Fragen. Es ist eine Untersuchung über Identität im Zeitalter der totalen Vernetzung: Was bleibt vom Ich, wenn wir alle eins werden?
-      </p>
-
-      <div class="feature-list">
-        <div class="feature-item">
-          <strong>Narrative Innovation</strong>
-          <p style="font-size: 0.95rem;">Symphonisches Multi-Band-Storytelling: Themen kehren wieder wie Melodien und transformieren sich über Jahrzehnte und Kontinente.</p>
-        </div>
-        <div class="feature-item">
-          <strong>Wissenschaft & Geist</strong>
-          <p style="font-size: 0.95rem;">Die Echo-Technologie erforscht die Grenze zwischen Code und Transzendenz, zwischen technologischer Waffe und spiritueller Praxis.</p>
-        </div>
-      </div>
-
-      <p style="text-align: center; font-style: italic; color: var(--gold); margin-top: 6rem; font-size: 1.2rem;">
-        „Die Reise beginnt mit einem naiven Sprung ins Unbekannte. Sie endet mit der Erkenntnis: Jedes Ende ist ein neuer Anfang.“
-      </p>
-    </section>
+  <p style="font-style: italic; margin-top: 3rem;">
+    BON AIR ist ein vierbändiger Science-Thriller über die unbeabsichtigten Folgen unserer besten Absichten – und darüber, dass manchmal die Rettung gefährlicher ist als die Katastrophe selbst.
+  </p>
+</section>
