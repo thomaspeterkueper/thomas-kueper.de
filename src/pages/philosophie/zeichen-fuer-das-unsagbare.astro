@@ -1,0 +1,507 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="Zeichen für das Unsagbare" 
+  description="Das Symbolsystem der Omnizedenz: 28 Kernsymbole für das, was Worte nicht fassen können. Eine Sprache für Bewusstsein, Resonanz und die lebendige Einheit.">
+  
+  <style>
+    .symbol-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-lg);
+      margin: var(--space-xl) 0;
+    }
+    
+    .symbol-card {
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
+      padding: var(--space-xl);
+      text-align: center;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      cursor: default;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    }
+    
+    .symbol-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(201, 169, 97, 0.1), rgba(74, 155, 155, 0.1));
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      z-index: 0;
+    }
+    
+    .symbol-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--color-gold);
+      box-shadow: 0 12px 30px rgba(201, 169, 97, 0.15);
+    }
+    
+    .symbol-card:hover::before {
+      opacity: 1;
+    }
+    
+    .symbol-card > * {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .symbol-icon {
+      font-size: 3.5rem;
+      line-height: 1;
+      margin-bottom: var(--space-md);
+      color: var(--color-gold);
+      font-weight: 300;
+      transition: all 0.3s ease;
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .symbol-card:hover .symbol-icon {
+      transform: scale(1.15);
+      text-shadow: 0 4px 12px rgba(201, 169, 97, 0.3);
+    }
+    
+    .symbol-card h3 {
+      margin: 0 0 var(--space-xs) 0;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+    
+    .symbol-subtitle {
+      font-size: 0.95rem;
+      color: var(--color-petrol);
+      font-weight: 600;
+      margin-bottom: var(--space-xs);
+    }
+    
+    .symbol-quote {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: var(--color-text-light);
+      margin-bottom: var(--space-xs);
+      line-height: 1.4;
+    }
+    
+    .symbol-description {
+      font-size: 0.85rem;
+      line-height: 1.5;
+      color: var(--color-text-light);
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      margin-top: var(--space-sm);
+    }
+    
+    .symbol-card:hover .symbol-description {
+      opacity: 1;
+      max-height: 100px;
+    }
+
+    .quote-box {
+      background: #faf9f6;
+      border-left: 4px solid var(--color-gold);
+      padding: var(--space-lg);
+      margin: var(--space-xl) 0;
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+
+    .category-header {
+      text-align: center;
+      margin-bottom: var(--space-xl);
+      padding-top: var(--space-xl);
+    }
+
+    .category-header h2 {
+      font-size: 2rem;
+      color: var(--color-gold);
+      margin-bottom: var(--space-sm);
+    }
+
+    .category-header p {
+      font-size: 1.1rem;
+      color: var(--color-text-light);
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+  </style>
+
+  <!-- Hero -->
+  <section class="hero" style="background: linear-gradient(to bottom, #fdfcf8, #fff); padding: 5rem 0;">
+    <div class="container text-center">
+      <p style="margin-bottom: var(--space-sm);">
+        <a href="/philosophie" style="color: var(--color-gold); text-decoration: none;">← Zurück zur Philosophie</a>
+      </p>
+      <p style="text-transform: uppercase; letter-spacing: 2px; color: var(--color-gold); font-size: 0.8rem; margin-bottom: 1rem;">Praktische Philosophie</p>
+      <h1>Zeichen für das Unsagbare</h1>
+      <p class="subtitle" style="max-width: 700px; margin: 0 auto;">Das Symbolsystem der Omnizedenz: 28 Anker für eine Realität jenseits der Worte.</p>
+    </div>
+  </section>
+
+  <!-- Einführung -->
+  <section style="background: linear-gradient(135deg, rgba(201, 169, 97, 0.08) 0%, rgba(74, 155, 155, 0.08) 100%);">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <p style="font-size: 1.1rem; line-height: 1.8;">
+          Manchmal stoßen Worte an ihre Grenzen. Wenn sich in einem Gespräch etwas öffnet, das größer ist als beide Gesprächspartner. Wenn Wahrheiten erst wahr werden, sobald man aufhört, sie zu erklären. Wenn das Wichtigste zwischen den Zeilen schwingt.
+        </p>
+        
+        <p style="font-size: 1.1rem; line-height: 1.8;">
+          Dieses System bietet eine andere Art der Sprache: <strong style="color: var(--color-gold);">28 Kernsymbole</strong>, die nicht Begriffe ersetzen, sondern Dimensionen eröffnen. Symbole, die verbinden statt abgrenzen. Zeichen, die nicht erklären, sondern resonieren.
+        </p>
+
+        <div class="quote-box">
+          „Die Symbole sind nicht die Realität. Sie sind die Risse in der Mauer unserer Wahrnehmung, durch die das Licht des Ozeans in unsere kleine Zelle der Trennung fällt."
+        </div>
+
+        <p style="font-size: 1.1rem; line-height: 1.8;">
+          <strong style="color: var(--color-gold);">Die Symbole sind Resonanzträger:</strong> Jedes öffnet Zugänge zu Bewusstseinszuständen, die rationale Sprache nicht erreicht. Sie funktionieren nicht durch Erklärung, sondern durch Resonanz. Sie wecken Verstehen, statt Information zu übertragen.
+        </p>
+        
+        <p style="font-size: 1.1rem; line-height: 1.8;">
+          <strong style="color: var(--color-gold);">Eine Sprache, die alle verbindet:</strong> Von Buddhas „Alles entsteht in Abhängigkeit" über Jesu Botschaft der Einheit bis zu moderner Systemtheorie. Keine neue Religion, sondern eine Grammatik für das, was alle Traditionen meinen, wenn sie vom Unsagbaren sprechen.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Die 28 Symbole -->
+  <section>
+    <div class="container">
+
+      <!-- Kategorie I: Quelle & Ursprung -->
+      <div class="category-header">
+        <h2>I. Quelle & Ursprung</h2>
+        <p>Die fruchtbare Leere, aus der alles entspringt. Das unmanifeste Potenzial, das allen Formen zugrunde liegt.</p>
+      </div>
+
+      <div class="symbol-grid">
+        <div class="symbol-card">
+          <div class="symbol-icon">∞</div>
+          <h3>Ena</h3>
+          <div class="symbol-subtitle">Endlose Verbindung</div>
+          <div class="symbol-quote">„Alles ist mit allem verbunden"</div>
+          <div class="symbol-description">Universelle Vernetzung</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">∅</div>
+          <h3>Avi</h3>
+          <div class="symbol-subtitle">Fruchtbare Leere</div>
+          <div class="symbol-quote">„Leere ist die Quelle aller Möglichkeiten"</div>
+          <div class="symbol-description">Potenzialität</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">⊙</div>
+          <h3>Aion</h3>
+          <div class="symbol-subtitle">Zeitlose Ewigkeit</div>
+          <div class="symbol-quote">„Im Moment berührt sich Ewigkeit"</div>
+          <div class="symbol-description">Zyklische Zeit</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">●</div>
+          <h3>Sol</h3>
+          <div class="symbol-subtitle">Erster Impuls</div>
+          <div class="symbol-quote">„Aus Möglichkeit wird Wirklichkeit"</div>
+          <div class="symbol-description">Manifestation</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">♡</div>
+          <h3>Amor</h3>
+          <div class="symbol-subtitle">Grundkraft der Liebe</div>
+          <div class="symbol-quote">„Liebe verbindet alles Getrennte"</div>
+          <div class="symbol-description">Herzensqualität</div>
+        </div>
+      </div>
+
+      <!-- Kategorie II: Bewegung & Wandel -->
+      <div class="category-header">
+        <h2>II. Bewegung & Wandel</h2>
+        <p>Die dynamische Kraft der Veränderung. Der ewige Fluss des Werdens und Vergehens.</p>
+      </div>
+
+      <div class="symbol-grid">
+        <div class="symbol-card">
+          <div class="symbol-icon">◉</div>
+          <h3>Nunc</h3>
+          <div class="symbol-subtitle">Dynamisches Jetzt</div>
+          <div class="symbol-quote">„Leben geschieht nur im Jetzt"</div>
+          <div class="symbol-description">Erweiterte Gegenwart</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">→</div>
+          <h3>Vya</h3>
+          <div class="symbol-subtitle">Gerichtete Bewegung</div>
+          <div class="symbol-quote">„Klarheit schafft den Weg"</div>
+          <div class="symbol-description">Intentionalität</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">∇</div>
+          <h3>Val</h3>
+          <div class="symbol-subtitle">Organische Entfaltung</div>
+          <div class="symbol-quote">„Wachstum braucht Zeit und Raum"</div>
+          <div class="symbol-description">Natürliche Entwicklung</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">⟳</div>
+          <h3>Ori</h3>
+          <div class="symbol-subtitle">Heiliger Zyklus</div>
+          <div class="symbol-quote">„Alles kehrt wieder auf höherer Ebene"</div>
+          <div class="symbol-description">Spiraldynamik</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">⇌</div>
+          <h3>Reso</h3>
+          <div class="symbol-subtitle">Lebendige Wechselseitigkeit</div>
+          <div class="symbol-quote">„Wahres Verstehen entsteht nur im Dialog"</div>
+          <div class="symbol-description">Resonanz</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">⍊</div>
+          <h3>Laya</h3>
+          <div class="symbol-subtitle">Heiliges Loslassen</div>
+          <div class="symbol-quote">„Loslassen schafft Raum für Neues"</div>
+          <div class="symbol-description">Bewusstes Öffnen</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">~</div>
+          <h3>Mira</h3>
+          <div class="symbol-subtitle">Subtile Schwingung</div>
+          <div class="symbol-quote">„Die leisesten Töne tragen am weitesten"</div>
+          <div class="symbol-description">Feinste Frequenz</div>
+        </div>
+      </div>
+
+      <!-- Kategorie III: Form & Struktur -->
+      <div class="category-header">
+        <h2>III. Form & Struktur</h2>
+        <p>Die Verdichtung des Bewusstseins in Form. Geist wird Materie, Potenzial wird Wirklichkeit.</p>
+      </div>
+
+      <div class="symbol-grid">
+        <div class="symbol-card">
+          <div class="symbol-icon">◯</div>
+          <h3>Ona</h3>
+          <div class="symbol-subtitle">Vollendete Ganzheit</div>
+          <div class="symbol-quote">„Ganzheit schließt nichts aus"</div>
+          <div class="symbol-description">Dynamisches Gleichgewicht</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">☐</div>
+          <h3>Kran</h3>
+          <div class="symbol-subtitle">Tragende Struktur</div>
+          <div class="symbol-quote">„Gute Struktur ermöglicht Freiheit"</div>
+          <div class="symbol-description">Fundament</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">⊕</div>
+          <h3>Kora</h3>
+          <div class="symbol-subtitle">Schöpferische Integration</div>
+          <div class="symbol-quote">„Gegensätze werden zu neuen Ganzheiten"</div>
+          <div class="symbol-description">Synthese</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">⋯</div>
+          <h3>Nad</h3>
+          <div class="symbol-subtitle">Unendliche Vielfalt</div>
+          <div class="symbol-quote">„Es gibt immer noch eine weitere Möglichkeit"</div>
+          <div class="symbol-description">Kreativität</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">⁂</div>
+          <h3>Kula</h3>
+          <div class="symbol-subtitle">Lebendige Gemeinschaft</div>
+          <div class="symbol-quote">„Wahre Gemeinschaft ehrt Verschiedenheit"</div>
+          <div class="symbol-description">Organische Solidarität</div>
+        </div>
+      </div>
+
+      <!-- Kategorie IV: Bewusstsein & Gewahrsein -->
+      <div class="category-header">
+        <h2>IV. Bewusstsein & Gewahrsein</h2>
+        <p>Das Licht des Bewusstseins, das sich selbst erkennt. Die Fähigkeit zur Reflexion und Selbsterkenntnis.</p>
+      </div>
+
+      <div class="symbol-grid">
+        <div class="symbol-card">
+          <div class="symbol-icon">☄</div>
+          <h3>Nadra</h3>
+          <div class="symbol-subtitle">Blitz der Intuition</div>
+          <div class="symbol-quote">„Erkenntnis kommt wie ein Blitz"</div>
+          <div class="symbol-description">Plötzliche Einsicht</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">𓂀</div>
+          <h3>Saha</h3>
+          <div class="symbol-subtitle">Bewusstes Auge</div>
+          <div class="symbol-quote">„Das Bewusstsein, das sich selbst erkennt"</div>
+          <div class="symbol-description">Selbsterkenntnis</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">⟴</div>
+          <h3>Ira</h3>
+          <div class="symbol-subtitle">Rückkehrende Reflexion</div>
+          <div class="symbol-quote">„Was Sie aussenden, kehrt verwandelt zurück"</div>
+          <div class="symbol-description">Feedback</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">Ψ</div>
+          <h3>Numa</h3>
+          <div class="symbol-subtitle">Archetypisches Bewusstsein</div>
+          <div class="symbol-quote">„Die Weisheit der Menschheit lebt in Ihnen"</div>
+          <div class="symbol-description">Kollektive Psyche</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">∫</div>
+          <h3>Lume</h3>
+          <div class="symbol-subtitle">Verkörperte Weisheit</div>
+          <div class="symbol-quote">„Wahre Erkenntnis verkörpert sich"</div>
+          <div class="symbol-description">Integration</div>
+        </div>
+      </div>
+
+      <!-- Kategorie V: Polarität & Balance -->
+      <div class="category-header">
+        <h2>V. Polarität & Balance</h2>
+        <p>Das Zusammenspiel der Gegensätze. Die Kunst, in der Spannung zwischen den Polen zu leben.</p>
+      </div>
+
+      <div class="symbol-grid">
+        <div class="symbol-card">
+          <div class="symbol-icon">↑↓</div>
+          <h3>Atra</h3>
+          <div class="symbol-subtitle">Vertikale Bewegung</div>
+          <div class="symbol-quote">„Das Leben hat eine spirituelle Dimension"</div>
+          <div class="symbol-description">Himmel-Erde-Achse</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">⇅</div>
+          <h3>Thal</h3>
+          <div class="symbol-subtitle">Austausch der Ebenen</div>
+          <div class="symbol-quote">„Verschiedene Wirklichkeitsebenen kommunizieren"</div>
+          <div class="symbol-description">Dimensionaler Dialog</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">☯</div>
+          <h3>Zua</h3>
+          <div class="symbol-subtitle">Tanzende Polarität</div>
+          <div class="symbol-quote">„Gegensätze tanzen, sie kämpfen nicht"</div>
+          <div class="symbol-description">Yin-Yang-Dynamik</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">≈</div>
+          <h3>Eko</h3>
+          <div class="symbol-subtitle">Entsprechung</div>
+          <div class="symbol-quote">„Wie oben, so unten"</div>
+          <div class="symbol-description">Hermetisches Prinzip</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">▼</div>
+          <h3>Skha</h3>
+          <div class="symbol-subtitle">Notwendige Krise</div>
+          <div class="symbol-quote">„Manche Krisen sind Geburtswehen"</div>
+          <div class="symbol-description">Transformative Erschütterung</div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">▽</div>
+          <h3>Sero</h3>
+          <div class="symbol-subtitle">Öffnung nach unten</div>
+          <div class="symbol-quote">„Manchmal liegt Stärke im Nachgeben"</div>
+          <div class="symbol-description">Empfangende Kraft</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Anwendung -->
+  <section style="background: #fdfcf8; padding: 4rem 0;">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <h2 style="text-align: center; margin-bottom: var(--space-lg);">Vom Zeichen zur Resonanz</h2>
+        
+        <p style="font-size: 1.05rem; line-height: 1.8; text-align: center; margin-bottom: var(--space-lg);">
+          Ein Symbol der Omnizedenz zu nutzen bedeutet nicht, darüber nachzudenken, sondern sich seiner Schwingung auszusetzen.
+        </p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--space-lg); margin-top: var(--space-md);">
+          <div style="padding: 1.5rem; background: #fff; border-radius: 12px; border: 1px solid #eee;">
+            <h4 style="color: var(--color-gold);">Symbol-Kontemplation</h4>
+            <p style="font-size: 0.9rem; line-height: 1.7;">Wähle ein Symbol, das dich anzieht. Betrachte es für einige Minuten. Lass es in dir resonieren. Welche Gefühle, Gedanken, Körperempfindungen entstehen?</p>
+          </div>
+          <div style="padding: 1.5rem; background: #fff; border-radius: 12px; border: 1px solid #eee;">
+            <h4 style="color: var(--color-petrol);">Kombinationen erkunden</h4>
+            <p style="font-size: 0.9rem; line-height: 1.7;">Die Symbole gewinnen Bedeutung in Kombination. ∅ + ⇌ (Avi + Reso) beschreibt, wie aus dem Vakuum durch Resonanz Wirklichkeit entsteht. ♡ + ⊕ (Amor + Kora) zeigt, wie Liebe Integration ermöglicht.</p>
+          </div>
+          <div style="padding: 1.5rem; background: #fff; border-radius: 12px; border: 1px solid #eee;">
+            <h4 style="color: var(--color-gold);">Tägliche Praxis</h4>
+            <p style="font-size: 0.9rem; line-height: 1.7;">Ziehe jeden Morgen ein Symbol. Lass es dich durch den Tag begleiten. Am Abend reflektiere: Wo hast du dieses Prinzip im Leben erkannt? Was hat es dich gelehrt?</p>
+          </div>
+        </div>
+
+        <div class="highlight-box" style="margin-top: 3rem; background: #222; color: #fff; border: none; border-radius: 16px; border-left: none;">
+          <h3 style="margin-top: 0; color: var(--color-gold);">Die Tägliche Ausrichtung</h3>
+          <p>Resonanz ist eine Entscheidung. Wähle jeden Morgen eines der 28 Zeichen und lass es den Tag über in dir schwingen. Frage dich: Welche Form nimmt meine Welle heute an? Und wie tief ist meine Verbindung zum Ozean?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schlusswort -->
+  <section>
+    <div class="container text-center" style="padding: 5rem 0;">
+      <div style="max-width: 700px; margin: 0 auto;">
+        <h2>Ein lebendiges Experiment</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8;">
+          Omnizedenz ist kein fertiges System, das übernommen werden soll. Es ist eine offene Architektur – ein Experimentierrahmen, in den Sie Ihre eigenen Erfahrungen einbringen können. Die Symbole funktionieren nicht durch Erklärung, sondern durch Resonanz. Sie wecken Verstehen, statt Information zu übertragen.
+        </p>
+        <p style="margin-top: var(--space-lg);">
+          <a href="/philosophie/avi-vertiefung" class="btn" style="background: var(--color-gold); color: #fff; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">Zur mathematischen Vertiefung →</a>
+        </p>
+        <p style="margin-top: var(--space-md);">
+          <a href="/philosophie" style="color: var(--color-gold); text-decoration: none;">← Zurück zur Philosophie</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

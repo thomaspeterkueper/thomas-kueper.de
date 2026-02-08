@@ -1,0 +1,200 @@
+---
+// Dateipfad: src/pages/philosophie/avi-vertiefung.astro
+// Beschreibung: Mathematische und physikalische Details des Axiomatischen Vakuum-Integrals (AVI).
+// Integration: Verlinkung zum LQG-Paper als physikalisches Fundament.
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="AVI – Axiomatisches Vakuum-Integral" 
+  description="Die mathematische und physikalische Vertiefung des AVI-Modells: Von der fraktalen Möbius-Schleife zur Loop Quantum Gravity.">
+
+  <style is:inline>
+    .avi-page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 8rem 2rem;
+      font-family: 'Lora', serif;
+      line-height: 1.9;
+      color: #1a1a1a;
+    }
+
+    .hero-section {
+      text-align: center;
+      margin-bottom: 8rem;
+    }
+
+    .hero-section h1 {
+      font-family: 'Crimson Text', serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      color: var(--gold);
+      margin-bottom: 1rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    /* Das physikalische Fundament - Highlight Box */
+    .foundation-box {
+      background: #020617;
+      color: #fff;
+      padding: 4rem;
+      margin: 6rem 0;
+      border-left: 4px solid #3b82f6; /* Cherenkov Blue */
+      position: relative;
+      overflow: hidden;
+    }
+
+    .foundation-box::before {
+      content: "Ψ";
+      position: absolute;
+      right: -20px;
+      bottom: -20px;
+      font-size: 15rem;
+      color: rgba(59, 130, 246, 0.05);
+      font-family: 'Lora', serif;
+    }
+
+    .foundation-box h2 {
+      font-family: 'Crimson Text', serif;
+      font-size: 2.2rem;
+      color: #fff;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding-bottom: 0.5rem;
+    }
+
+    .paper-link {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem 2.5rem;
+      background: #3b82f6;
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+      transition: all 0.3s;
+    }
+
+    .paper-link:hover {
+      background: #fff;
+      color: #020617;
+      box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
+    }
+
+    /* Vektoren-Matrix */
+    .matrix-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin: 4rem 0;
+    }
+
+    .vector-card {
+      padding: 2rem;
+      border: 1px solid #eee;
+      background: #fafafa;
+    }
+
+    .vector-card strong {
+      display: block;
+      color: var(--gold);
+      font-family: 'Lato', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+    }
+
+    .formula-display {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.8rem;
+      text-align: center;
+      margin: 4rem 0;
+      padding: 2rem;
+      background: #fdfcf8;
+      border: 1px solid var(--gold-light);
+      font-style: italic;
+    }
+
+    .back-nav {
+      text-align: center;
+      margin-top: 8rem;
+      padding-top: 4rem;
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 850px) {
+      .foundation-box { padding: 2.5rem 1.5rem; }
+      .avi-page { padding-top: 4rem; }
+    }
+  </style>
+
+  <article class="avi-page">
+    <header class="hero-section">
+      <h1>AVI – Axiomatisches Vakuum-Integral</h1>
+      <p style="font-style: italic; color: #666; font-size: 1.2rem;">Die mathematische Struktur der absoluten variablen Identität.</p>
+    </header>
+
+    <section>
+      <p>
+        Das <strong>Axiomatische Vakuum-Integral (AVI)</strong> ist nicht bloß ein theoretisches Modell, sondern die Grammatik, in der das Universum geschrieben ist. Es beschreibt den Übergang von der reinen Potentialität des Vakuums zur manifesten Realität durch das Prinzip der Resonanz.
+      </p>
+      
+      <div class="formula-display">
+        CE-AVI: ∫ (Resonanz ⊗ Identität) dV = Φ_Omnizedenz
+      </div>
+    </section>
+
+    <!-- Physikalisches Fundament Sektion -->
+    <section class="foundation-box">
+      <h2>Das Physikalische Fundament</h2>
+      <p style="color: #94a3b8; line-height: 1.7;">
+        Die theoretische Herleitung des AVI findet ihre Entsprechung in der modernen Quantengravitation. In Kooperation mit den Prinzipien der <strong>Loop Quantum Gravity (LQG)</strong> wurde ein Framework entwickelt, das die im AVI postulierten Korrelationen mathematisch fassbar macht.
+      </p>
+      <p style="margin-top: 1.5rem; font-style: italic;">
+        „Quantum-Geometric Portals“ belegen, dass räumlich getrennte Regionen durch Spin-Netzwerk-Verschränkung in einer direkten Resonanz-Kopplung stehen.
+      </p>
+      
+      <a href="/sachbuecher/quantum-geometric-portals" class="paper-link">Wissenschaftliches Paper lesen →</a>
+    </section>
+
+    <section>
+      <h2>Die 36 Vektoren der fraktalen Möbius-Schleife</h2>
+      <p>
+        Die Struktur des AVI basiert auf einer 6x6 dimensionalen Matrix. Diese 36 Vektoren definieren die Wechselwirkung zwischen Information und Materie. Sie bilden ein rekursives System, das durch 8 Meta-Operatoren gesteuert wird, um die Stabilität des Bewusstseinsfeldes zu gewährleisten.
+      </p>
+
+      <div class="matrix-grid">
+        <div class="vector-card">
+          <strong>Raumzeit-Vektoren</strong>
+          <p style="font-size: 0.95rem;">Die Architektur des Vakuums als gestaltbarer Raum für Information.</p>
+        </div>
+        <div class="vector-card">
+          <strong>Resonanz-Operatoren</strong>
+          <p style="font-size: 0.95rem;">Frequenzen, die das Feld in Schwingung versetzen und Identität formen.</p>
+        </div>
+        <div class="vector-card">
+          <strong>Identitäts-Knoten</strong>
+          <p style="font-size: 0.95rem;">Die Fixpunkte, an denen das Universum lernt, „Ich“ zu sagen.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top: 6rem;">
+      <h2>Axiomatische Weltenbau-Dramaturgie</h2>
+      <p>
+        In der Anwendung bedeutet AVI, dass jede Handlung ein Echo im Feld auslöst. Was wir in den Romanen der <em>Baumeister-Chronik</em> als Technologie erleben, ist die bewusste Anwendung dieser Integral-Prinzipien. Die Architektur des Seins ist nicht starr; sie ist ein ko-kreativer Prozess, an dem jeder Beobachter durch seine Resonanz mitschreibt.
+      </p>
+    </section>
+
+    <footer class="back-nav">
+      <a href="/philosophie" style="text-decoration: none; color: var(--gold); font-family: 'Lato', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem;">← Zurück zur Übersicht</a>
+    </footer>
+  </article>
+
+</BaseLayout>

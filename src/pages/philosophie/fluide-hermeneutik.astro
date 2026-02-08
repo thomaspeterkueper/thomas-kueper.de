@@ -1,0 +1,269 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="Fluide Hermeneutik – Verstehen als lebendiger Prozess" 
+  description="Eine innovative Methode für das 21. Jahrhundert: Bedeutung als dynamisches Resonanzfeld zwischen Text, Körper und Welt.">
+
+  <style>
+    .article-container {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+      font-family: 'Lora', serif;
+      line-height: 1.9;
+      color: #2c2c2c;
+    }
+
+    h1 {
+      font-family: 'Crimson Text', serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      color: #1a1a1a;
+      text-align: center;
+    }
+
+    .teaser-text {
+      font-size: 1.25rem;
+      font-style: italic;
+      color: var(--color-gold);
+      text-align: center;
+      margin-bottom: 5rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    h2 {
+      font-family: 'Crimson Text', serif;
+      font-size: 2.2rem;
+      margin: 5rem 0 2rem;
+      color: #1a1a1a;
+      border-bottom: 1px solid #e5dcc8;
+      padding-bottom: 0.5rem;
+    }
+
+    .principle-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      margin: 4rem 0;
+    }
+
+    .principle-card {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 4px;
+      border-left: 3px solid var(--color-gold);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    }
+
+    .principle-card h3 {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.6rem;
+      margin: 0.5rem 0 1rem;
+      color: #1a1a1a;
+    }
+
+    .symbol-badge {
+      display: inline-block;
+      font-family: 'Crimson Text', serif;
+      font-size: 1.2rem;
+      color: var(--color-gold);
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    /* Ersatz für den schwarzen Kasten: Ein elegantes Vergleichs-Element */
+    .method-comparison {
+      background: #faf9f6;
+      border: 1px solid #e5dcc8;
+      padding: 3rem;
+      border-radius: 2px;
+      margin: 5rem 0;
+      position: relative;
+    }
+
+    .method-comparison::before {
+      content: "Praxis der Deutung";
+      position: absolute;
+      top: -12px;
+      left: 2rem;
+      background: #faf9f6;
+      padding: 0 1rem;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--color-gold);
+    }
+
+    .method-step {
+      margin-bottom: 2rem;
+    }
+
+    .method-step:last-child {
+      margin-bottom: 0;
+    }
+
+    .method-step h4 {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #888;
+      margin-bottom: 0.5rem;
+    }
+
+    .method-step p {
+      font-style: italic;
+      margin-bottom: 0;
+    }
+
+    .criteria-list {
+      margin: 3rem 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .criteria-list li {
+      margin-bottom: 2rem;
+      padding-left: 2rem;
+      position: relative;
+    }
+
+    .criteria-list li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--color-gold);
+      font-weight: bold;
+    }
+
+    .criteria-list strong {
+      color: #1a1a1a;
+      display: block;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.2rem;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 6rem;
+      text-decoration: none;
+      color: var(--color-gold);
+      font-family: 'Lato', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.85rem;
+      transition: opacity 0.2s;
+    }
+
+    .back-link:hover {
+      opacity: 0.7;
+    }
+
+    @media (max-width: 700px) {
+      .principle-grid { grid-template-columns: 1fr; }
+      .method-comparison { padding: 2rem; }
+    }
+  </style>
+
+  <article class="article-container">
+    <h1>Fluide Hermeneutik</h1>
+    <p class="teaser-text">
+      Verstehen heißt nicht, einen Code zu knacken. Es heißt, in ein lebendiges Gespräch mit der Welt zu treten.
+    </p>
+
+    <section>
+      <p>
+        In einer Welt, in der algorithmische Texte und menschliches Bewusstsein zunehmend verschmelzen, reichen traditionelle Analysemethoden nicht mehr aus. Die <strong>Fluide Hermeneutik</strong> ist die methodische Antwort auf die Herausforderungen des 21. Jahrhunderts. Sie begreift Bedeutung nicht als statische Information, sondern als dynamischen Prozess, der im Resonanzfeld zwischen Beobachter, Objekt und Kontext entsteht.
+      </p>
+      <p>
+        Durch die Integration von somatischer Intelligenz, Intuition und systemischer Ko-Kreativität eröffnet sie neue Wege, um mit Komplexität und Paradoxien produktiv umzugehen – sei es in der Literaturwissenschaft, der Kunsttherapie oder der Gestaltung digitaler Zukünfte.
+      </p>
+    </section>
+
+    <h2>Die vier Grundprinzipien</h2>
+    <div class="principle-grid">
+      <div class="principle-card">
+        <span class="symbol-badge">∅ Avi</span>
+        <h3>Kreative Leere</h3>
+        <p>Aus der Stille kommt die Klarheit. Die Kunst, im Nicht-Wissen zu verweilen und Mehrdeutigkeit als schöpferischen Nährboden zu nutzen.</p>
+      </div>
+      <div class="principle-card">
+        <span class="symbol-badge">⇌ Reso</span>
+        <h3>Resonanz</h3>
+        <p>Bedeutung entsteht im Dazwischen. Verstehen als schwingende Wechselwirkung zwischen Subjekt, Gegenstand und dem umgebenden Feld.</p>
+      </div>
+      <div class="principle-card">
+        <span class="symbol-badge">∫ Lume</span>
+        <h3>Verkörperung</h3>
+        <p>Der Körper als Resonanzraum. Die Einbeziehung somatischer Reaktionen und emotionaler Intelligenz in den kognitiven Deutungsprozess.</p>
+      </div>
+      <div class="principle-card">
+        <span class="symbol-badge">⊕ Kora</span>
+        <h3>Integration</h3>
+        <p>Die Ganzheit jenseits des Dualismus. Paradoxien werden nicht aufgelöst, sondern in eine höhere, dynamische Stimmigkeit integriert.</p>
+      </div>
+    </div>
+
+    <!-- Neue, seriöse Darstellung der Praxisanwendung -->
+    <div class="method-comparison">
+      <div class="method-step">
+        <h4>Klassische Hermeneutik</h4>
+        <p>Analyse eines Textes: Wer ist der Autor? Was ist die Intention? Welche historische Wahrheit liegt in den Worten verborgen?</p>
+      </div>
+      <div style="margin: 2rem 0; border-top: 1px solid #e5dcc8; opacity: 0.5;"></div>
+      <div class="method-step">
+        <h4>Fluide Hermeneutik</h4>
+        <p>Welches Resonanzfeld erzeugt dieser Text im Jetzt? Welche körperliche Reaktion löst er aus? Wie verändern meine Vorannahmen das Feld und welche Handlungsräume entstehen durch die Schwingung?</p>
+      </div>
+    </div>
+
+    <h2>Kriterien der Validität</h2>
+    <p>
+      Fluide Hermeneutik entzieht sich der Beliebigkeit durch klare methodische Maßstäbe, die den Deutungsprozess im Feld der Omnizedenz verankern:
+    </p>
+    <ul class="criteria-list">
+      <li>
+        <strong>Innere Kohärenz</strong> 
+        Die Deutung muss im Gesamtzusammenhang des Werkes und des Kontextes eine tragfähige, widerspruchsfreie Struktur bilden.
+      </li>
+      <li>
+        <strong>Transformative Kraft</strong> 
+        Eine valide Interpretation ist wirksam. Sie muss das Potenzial haben, neue Perspektiven zu eröffnen oder festgefahrene Systeme in Bewegung zu bringen.
+      </li>
+      <li>
+        <strong>Anschlussfähigkeit</strong> 
+        Die Resonanz muss kommunizierbar und im interdisziplinären Dialog prüfbar bleiben.
+      </li>
+      <li>
+        <strong>Ethische Verantwortung</strong> 
+        Der Interpret reflektiert die Wirkung seiner Deutung auf das soziale und materielle Gefüge.
+      </li>
+    </ul>
+
+    <section>
+      <h2>Anwendungsbereiche</h2>
+      <p>
+        Diese Methode dient als Werkzeug für all jene, die Verstehen als aktiven Gestaltungsprozess begreifen. Sie findet Anwendung in der <strong>literarischen Dekonstruktion</strong>, der <strong>Konfliktmediation</strong> sowie in der <strong>ethischen Begleitung künstlicher Intelligenz</strong>.
+      </p>
+      <p style="text-align: center; font-style: italic; margin-top: 3rem; color: #666;">
+        Verstehen als bewusstes Mit-Schwingen – achtsam gegenüber der Stille, offen für die Resonanz.
+      </p>
+    </section>
+
+    <a href="/philosophie" class="back-link">← Zurück zur Philosophie</a>
+  </article>
+
+</BaseLayout>

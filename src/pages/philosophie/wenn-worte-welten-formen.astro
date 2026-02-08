@@ -1,0 +1,183 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="Wenn Worte Welten formen" 
+  description="Ein Gedicht von Thomas Peter Küper über die schöpferische Kraft der Sprache und das Echo der Resonanz.">
+
+  <style>
+    .poem-container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 8rem 2rem;
+      text-align: center;
+    }
+
+    .poem-header {
+      margin-bottom: 5rem;
+    }
+
+    .poem-header h1 {
+      font-family: 'Crimson Text', serif;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
+    }
+
+    .poem-header .author {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      font-weight: 600;
+    }
+
+    .poem-content {
+      font-family: 'Lora', serif;
+      font-size: clamp(1.1rem, 2vw, 1.3rem);
+      line-height: 2.2;
+      color: #333;
+      font-style: italic;
+    }
+
+    .poem-stanza {
+      margin-bottom: 3rem;
+    }
+
+    .poem-stanza:last-child {
+      margin-bottom: 0;
+    }
+
+    .resonance-note {
+      margin-top: 6rem;
+      padding-top: 4rem;
+      border-top: 1px solid #f0f0f0;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9rem;
+      color: #888;
+      line-height: 1.6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 4rem;
+      text-decoration: none;
+      color: var(--color-gold);
+      font-family: 'Lato', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+    }
+
+    .back-link:hover {
+      opacity: 0.7;
+    }
+
+    /* Subtile Einblend-Animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: reveal 1.5s ease forwards;
+    }
+
+    @keyframes reveal {
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+  <article class="poem-container">
+    <header class="poem-header fade-in">
+      <h1>Wenn Worte Welten formen</h1>
+      <span class="author">Thomas Peter Küper</span>
+    </header>
+
+    <div class="poem-content fade-in" style="animation-delay: 0.5s;">
+      <div class="poem-stanza">
+        Am Anfang war das Wort,<br>
+        ein tönendes Sein,<br>
+        es formte die Welten,<br>
+        es sprach sie hinein.
+      </div>
+
+      <div class="poem-stanza">
+        Aus Stille geboren,<br>
+        von Flammen durchdrungen,<br>
+        in Zeilen geflossen,<br>
+        in Herzen gesungen.
+      </div>
+
+      <div class="poem-stanza">
+        Worte können heilen,<br>
+        Worte können verletzen,<br>
+        sie können befreien,<br>
+        können Grenzen setzen.
+      </div>
+
+      <div class="poem-stanza">
+        Sprich nicht aus Zorn,<br>
+        sprich nicht aus Gier,<br>
+        denn jedes Echo<br>
+        kehrt zurück zu dir.
+      </div>
+
+      <div class="poem-stanza">
+        Ein jedes Wort,<br>
+        ein Funke, der entfacht,<br>
+        ein Kreislauf,<br>
+        der sich selbst bewacht.
+      </div>
+
+      <div class="poem-stanza">
+        Sprich mit Klarheit,<br>
+        mit strahlendem Geist,<br>
+        Denn Worte formen,<br>
+        was die Zeit vereist.
+      </div>
+
+      <div class="poem-stanza">
+        Doch schweige,<br>
+        wo Wahrheit nicht tragen kann,<br>
+        sonst zieht einen das Unheil<br>
+        in seinen Bann.
+      </div>
+
+      <div class="poem-stanza">
+        Manche Wahrheiten<br>
+        wandeln sich leise,<br>
+        sie blühen in Stille,<br>
+        auf sanfte Weise.
+      </div>
+
+      <div class="poem-stanza">
+        Im Lied der Wellen,<br>
+        im Tanz eines Blatts,<br>
+        dort ruht die Wahrheit,<br>
+        dem, der sie erfasst.
+      </div>
+
+      <div class="poem-stanza">
+        Nicht jede Stimme,<br>
+        die dröhnt, trägt Gewicht,<br>
+        doch in leisen Tönen<br>
+        erwacht das echte Licht.
+      </div>
+    </div>
+
+    <footer class="resonance-note fade-in" style="animation-delay: 1s;">
+      <p>
+        In der Philosophie der Omnizedenz ist Sprache keine bloße Beschreibung der Welt, sondern die Schwingung, die das Feld in Form zwingt. Dieses Gedicht dient als tägliche Erinnerung an die Verantwortung des Antwortenden.
+      </p>
+      <a href="/philosophie" class="back-link">← Zurück zur Philosophie</a>
+    </footer>
+  </article>
+
+</BaseLayout>
