@@ -1,11 +1,10 @@
 ---
 // Dateipfad: src/layouts/BaseLayout.astro
-// Beschreibung: Das definitive Basis-Layout mit lokaler Font-Einbindung und OTA-Navigation.
-// Aktualisiert am: 07.02.2026, 20:15
+// Beschreibung: Basis-Layout mit lokaler Font-Einbindung, OTA-Navigation und Mobile-Hamburger-Menü.
+// Aktualisiert am: 08.02.2026
 
 const { title, description } = Astro.props;
 
-// Sicherer Import des Icons für die Kopfzeile
 import headerAvatar from '../assets/header-avatar.jpg';
 ---
 
@@ -19,49 +18,34 @@ import headerAvatar from '../assets/header-avatar.jpg';
   
   <style is:inline>
     /* LOKALE FONT-DEFINITIONEN (DSGVO-KONFORM) */
-    
-    /* Crimson Text - Für Logos und elegante Überschriften */
     @font-face {
       font-family: 'Crimson Text';
       src: url('/fonts/crimson-text-v19-latin-regular.woff2') format('woff2');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
+      font-weight: 400; font-style: normal; font-display: swap;
     }
     @font-face {
       font-family: 'Crimson Text';
       src: url('/fonts/crimson-text-v19-latin-600.woff2') format('woff2');
-      font-weight: 600;
-      font-style: normal;
-      font-display: swap;
+      font-weight: 600; font-style: normal; font-display: swap;
     }
-
-    /* Lora - Für den Fließtext */
     @font-face {
       font-family: 'Lora';
       src: url('/fonts/lora-v37-latin-regular.woff2') format('woff2');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
+      font-weight: 400; font-style: normal; font-display: swap;
     }
-
-    /* Lato - Für die Navigation und UI-Elemente */
     @font-face {
       font-family: 'Lato';
       src: url('/fonts/lato-v25-latin-regular.woff2') format('woff2');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
+      font-weight: 400; font-style: normal; font-display: swap;
     }
     @font-face {
       font-family: 'Lato';
       src: url('/fonts/lato-v25-latin-700.woff2') format('woff2');
-      font-weight: 700;
-      font-style: normal;
-      font-display: swap;
+      font-weight: 700; font-style: normal; font-display: swap;
     }
 
     :root {
+      /* Primäre Design-Tokens */
       --gold: #c9a961;
       --gold-light: #e5dcc8;
       --brand-blue: #2C4E7A;
@@ -71,6 +55,19 @@ import headerAvatar from '../assets/header-avatar.jpg';
       --border: #f1f1f1;
       --bg-soft: #faf9f6;
       --max-width: 1150px;
+
+      /* Kompatibilität: Aliase für ältere Philosophie-Seiten */
+      --color-gold: #c9a961;
+      --color-petrol: #4a9b9b;
+      --color-petrol-light: rgba(74, 155, 155, 0.08);
+      --color-border: #f1f1f1;
+      --color-text: #1a1a1a;
+      --color-text-light: #64748b;
+      --space-xs: 0.5rem;
+      --space-sm: 1rem;
+      --space-md: 2rem;
+      --space-lg: 4rem;
+      --space-xl: 6rem;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -84,13 +81,12 @@ import headerAvatar from '../assets/header-avatar.jpg';
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Typografie-Zuweisung */
     h1, h2, h3, .logo-name { font-family: 'Crimson Text', serif; font-weight: 400; }
     p, article, section { font-family: 'Lora', serif; }
 
     .container { max-width: var(--max-width); margin: 0 auto; padding: 0 2rem; }
 
-    /* SITE HEADER */
+    /* ===== SITE HEADER ===== */
     .site-header {
       background: rgba(255, 255, 255, 0.98);
       border-bottom: 1px solid var(--border);
@@ -107,10 +103,8 @@ import headerAvatar from '../assets/header-avatar.jpg';
     .brand-logo { display: flex; align-items: center; gap: 1.2rem; text-decoration: none; color: var(--text); }
 
     .header-avatar {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      object-fit: cover;
+      width: 48px; height: 48px;
+      border-radius: 50%; object-fit: cover;
       border: 1px solid var(--gold-light);
     }
 
@@ -120,18 +114,14 @@ import headerAvatar from '../assets/header-avatar.jpg';
       text-transform: uppercase;
     }
 
-    /* NAVIGATIONSMENÜ */
+    /* ===== DESKTOP NAVIGATION ===== */
     .nav-menu { display: flex; gap: 2.2rem; align-items: center; }
 
     .nav-link {
-      text-decoration: none;
-      color: var(--text);
-      font-size: 0.65rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.25em;
-      position: relative;
-      padding: 0.5rem 0;
+      text-decoration: none; color: var(--text);
+      font-size: 0.65rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.25em;
+      position: relative; padding: 0.5rem 0;
     }
 
     .nav-link::after {
@@ -142,9 +132,113 @@ import headerAvatar from '../assets/header-avatar.jpg';
     .nav-link:hover { color: var(--gold); }
     .nav-link:hover::after { width: 100%; }
 
+    /* ===== HAMBURGER BUTTON ===== */
+    .hamburger {
+      display: none;
+      background: none; border: none; cursor: pointer;
+      width: 44px; height: 44px;
+      position: relative; z-index: 1100;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .hamburger-line {
+      display: block;
+      width: 24px; height: 1.5px;
+      background: var(--text);
+      position: absolute; left: 10px;
+      transition: transform 0.35s cubic-bezier(0.77, 0, 0.175, 1),
+                  opacity 0.25s ease;
+    }
+
+    .hamburger-line:nth-child(1) { top: 14px; }
+    .hamburger-line:nth-child(2) { top: 21px; }
+    .hamburger-line:nth-child(3) { top: 28px; }
+
+    /* Hamburger → X Animation */
+    .hamburger.is-active .hamburger-line:nth-child(1) {
+      top: 21px; transform: rotate(45deg);
+    }
+    .hamburger.is-active .hamburger-line:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.is-active .hamburger-line:nth-child(3) {
+      top: 21px; transform: rotate(-45deg);
+    }
+
+    /* ===== MOBILE OVERLAY ===== */
+    .mobile-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      z-index: 1050;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .mobile-overlay.is-open {
+      display: flex;
+      opacity: 1;
+    }
+
+    .mobile-nav-link {
+      text-decoration: none;
+      color: var(--text);
+      font-family: 'Crimson Text', serif;
+      font-size: 2.2rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      padding: 0.8rem 0;
+      position: relative;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.4s ease, transform 0.4s ease, color 0.3s ease;
+    }
+
+    .mobile-overlay.is-open .mobile-nav-link {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Staggered entrance */
+    .mobile-overlay.is-open .mobile-nav-link:nth-child(1) { transition-delay: 0.08s; }
+    .mobile-overlay.is-open .mobile-nav-link:nth-child(2) { transition-delay: 0.14s; }
+    .mobile-overlay.is-open .mobile-nav-link:nth-child(3) { transition-delay: 0.20s; }
+    .mobile-overlay.is-open .mobile-nav-link:nth-child(4) { transition-delay: 0.26s; }
+    .mobile-overlay.is-open .mobile-nav-link:nth-child(5) { transition-delay: 0.32s; }
+    .mobile-overlay.is-open .mobile-nav-link:nth-child(6) { transition-delay: 0.38s; }
+
+    .mobile-nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0.4rem; left: 50%; transform: translateX(-50%);
+      width: 0; height: 1px;
+      background: var(--gold);
+      transition: width 0.3s ease;
+    }
+
+    .mobile-nav-link:hover { color: var(--gold); }
+    .mobile-nav-link:hover::after { width: 60%; }
+
+    .mobile-nav-divider {
+      width: 30px; height: 1px;
+      background: var(--gold-light);
+      margin: 2rem 0;
+      opacity: 0;
+      transition: opacity 0.5s ease 0.45s;
+    }
+
+    .mobile-overlay.is-open .mobile-nav-divider { opacity: 1; }
+
     main { min-height: calc(100vh - 100px); }
 
-    /* FOOTER */
+    /* ===== FOOTER ===== */
     .site-footer {
       padding: 10rem 0 5rem;
       background: var(--dark);
@@ -155,10 +249,21 @@ import headerAvatar from '../assets/header-avatar.jpg';
     .footer-title { font-size: 1.8rem; color: #ffffff; margin-bottom: 1rem; letter-spacing: 3px; text-transform: uppercase; }
     .footer-divider { width: 40px; height: 1px; background: var(--gold); margin: 2rem auto; }
 
+    .footer-links {
+      margin-bottom: 4rem;
+      display: flex; justify-content: center; gap: 2rem;
+      font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px;
+    }
+
+    .footer-links a { color: inherit; text-decoration: none; transition: color 0.3s; }
+    .footer-links a:hover { color: var(--gold); }
+
     .copyright { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 3px; opacity: 0.5; }
 
+    /* ===== RESPONSIVE ===== */
     @media (max-width: 900px) {
       .nav-menu { display: none; }
+      .hamburger { display: block; }
       .logo-name { font-size: 1.1rem; }
     }
   </style>
@@ -180,8 +285,25 @@ import headerAvatar from '../assets/header-avatar.jpg';
         <a href="/ueber-mich" class="nav-link">Über mich</a>
         <a href="/overtime-archive" class="nav-link">OTA</a>
       </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
     </nav>
   </header>
+
+  <!-- Mobile Fullscreen Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay">
+    <a href="/romane" class="mobile-nav-link">Romane</a>
+    <a href="/universen" class="mobile-nav-link">Universen</a>
+    <a href="/sachbuecher" class="mobile-nav-link">Sachbücher</a>
+    <a href="/philosophie" class="mobile-nav-link">Philosophie</a>
+    <a href="/ueber-mich" class="mobile-nav-link">Über mich</a>
+    <a href="/overtime-archive" class="mobile-nav-link">OTA</a>
+    <div class="mobile-nav-divider"></div>
+  </div>
 
   <main>
     <slot />
@@ -191,10 +313,10 @@ import headerAvatar from '../assets/header-avatar.jpg';
     <div class="container footer-content">
       <h4 class="footer-title">Thomas Peter Küper</h4>
       <div class="footer-divider"></div>
-      <div style="margin-bottom: 4rem; display: flex; justify-content: center; gap: 2rem; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px;">
-        <a href="mailto:mail@thomas-kueper.de" style="color: inherit; text-decoration: none;">Kontakt</a>
-        <a href="/impressum" style="color: inherit; text-decoration: none;">Impressum</a>
-        <a href="/datenschutz" style="color: inherit; text-decoration: none;">Datenschutz</a>
+      <div class="footer-links">
+        <a href="mailto:mail@thomas-kueper.de">Kontakt</a>
+        <a href="/impressum">Impressum</a>
+        <a href="/datenschutz">Datenschutz</a>
       </div>
       <p class="copyright">
         &copy; {new Date().getFullYear()} — Alle Rechte vorbehalten. <br/>
@@ -202,6 +324,38 @@ import headerAvatar from '../assets/header-avatar.jpg';
       </p>
     </div>
   </footer>
+
+  <script is:inline>
+    const hamburger = document.getElementById('hamburger');
+    const overlay = document.getElementById('mobileOverlay');
+    
+    hamburger.addEventListener('click', () => {
+      const isOpen = hamburger.classList.toggle('is-active');
+      overlay.classList.toggle('is-open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    // Schließen bei Link-Klick
+    overlay.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('is-active');
+        overlay.classList.remove('is-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Schließen bei Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && overlay.classList.contains('is-open')) {
+        hamburger.classList.remove('is-active');
+        overlay.classList.remove('is-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+    });
+  </script>
 
 </body>
 </html>
