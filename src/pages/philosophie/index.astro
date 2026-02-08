@@ -1,0 +1,576 @@
+---
+// Dateipfad: src/pages/philosophie/index.astro
+// Beschreibung: Gateway zur Omnizedenz-Philosophie, AVI-Modell und Resonanz-Ethik.
+// Verwendet die bestehenden standalone .astro Unterseiten.
+// Aktualisiert am: 08.02.2026
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="Philosophie" 
+  description="Omnizedenz, AVI-Modell und Fluide Hermeneutik: Bewusstsein als materielle Resonanz verstehen. Die philosophischen Grundlagen der Werke von Thomas Peter Küper.">
+
+  <style is:inline>
+    /* ===== HERO ===== */
+    .philo-hero {
+      padding: 10rem 2rem 8rem;
+      text-align: center;
+      background: linear-gradient(180deg, #faf9f6 0%, #ffffff 100%);
+      border-bottom: 1px solid #eee;
+    }
+
+    .philo-hero .label {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: #c9a961;
+      display: block;
+      margin-bottom: 2rem;
+    }
+
+    .philo-hero h1 {
+      font-family: 'Crimson Text', serif;
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      line-height: 1.1;
+    }
+
+    .philo-hero .epigraph {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 1.35rem;
+      color: #c9a961;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* ===== INTRO ===== */
+    .philo-intro {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+    }
+
+    .intro-quote {
+      font-family: 'Lora', serif;
+      font-size: 1.25rem;
+      font-style: italic;
+      line-height: 1.9;
+      color: #444;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .intro-body {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      line-height: 2;
+      color: #555;
+      text-align: center;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      padding: 3rem 2rem;
+    }
+
+    .intro-body strong { color: #1a1a1a; }
+
+    /* ===== DIE DREI SÄULEN ===== */
+    .pillars-section {
+      background: #faf9f6;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      padding: 8rem 2rem;
+    }
+
+    .pillars-header {
+      text-align: center;
+      margin-bottom: 6rem;
+    }
+
+    .pillars-header h2 {
+      font-family: 'Crimson Text', serif;
+      font-size: 3rem;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+
+    .pillars-header p {
+      font-family: 'Lora', serif;
+      color: #64748b;
+      font-style: italic;
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .pillar-card {
+      background: #ffffff;
+      border: 1px solid #eee;
+      padding: 4rem 3rem;
+      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      position: relative;
+    }
+
+    .pillar-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--pillar-accent, #c9a961);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.5s ease;
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.05);
+      border-color: transparent;
+    }
+
+    .pillar-card:hover::before { transform: scaleX(1); }
+
+    .pillar-symbol {
+      font-size: 2.5rem;
+      display: block;
+      margin-bottom: 2rem;
+      line-height: 1;
+    }
+
+    .pillar-card h3 {
+      font-family: 'Crimson Text', serif;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .pillar-card .pillar-subtitle {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #c9a961;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 2rem;
+    }
+
+    .pillar-card p {
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    /* ===== KATEGORIE-SEKTIONEN ===== */
+    .category-section {
+      padding: 8rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .category-section.alt-bg {
+      background: #faf9f6;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      max-width: 100%;
+    }
+
+    .category-section.alt-bg .category-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .category-header {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    .category-header h2 {
+      font-family: 'Crimson Text', serif;
+      font-size: 3rem;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+
+    .category-header p {
+      font-family: 'Lora', serif;
+      color: #64748b;
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+
+    .essay-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .essay-card {
+      background: #ffffff;
+      border: 1px solid #eee;
+      padding: 3.5rem 3rem;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .essay-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.05);
+      border-color: #c9a961;
+    }
+
+    .essay-card .card-type {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #c9a961;
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+
+    .essay-card h3 {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    .essay-card p {
+      font-family: 'Lora', serif;
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: #555;
+      flex-grow: 1;
+      margin-bottom: 2rem;
+    }
+
+    .essay-card .card-cta {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #1a1a1a;
+      border-bottom: 1px solid #c9a961;
+      padding-bottom: 4px;
+      align-self: flex-start;
+      transition: color 0.3s;
+    }
+
+    .essay-card:hover .card-cta { color: #c9a961; }
+
+    /* ===== ZENTRALE THESE ===== */
+    .thesis-section {
+      padding: 10rem 2rem;
+      background: #121416;
+      color: #ffffff;
+    }
+
+    .thesis-inner {
+      max-width: 850px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .thesis-inner .label {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: #c9a961;
+      display: block;
+      margin-bottom: 3rem;
+    }
+
+    .thesis-inner blockquote {
+      font-family: 'Crimson Text', serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 300;
+      line-height: 1.4;
+      margin: 0 0 3rem;
+      color: #e5dcc8;
+    }
+
+    .thesis-inner p {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      line-height: 2;
+      color: #94a3b8;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* ===== CTA / OMNIZEDENZ.DE ===== */
+    .extern-cta {
+      text-align: center;
+      padding: 8rem 2rem;
+      border-top: 1px solid #eee;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .extern-cta h3 {
+      font-family: 'Crimson Text', serif;
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+
+    .extern-cta p {
+      font-family: 'Lora', serif;
+      color: #64748b;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+    }
+
+    .cta-link {
+      display: inline-block;
+      background: #1a1a1a;
+      color: #fff;
+      padding: 1.2rem 3rem;
+      text-decoration: none;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .cta-link:hover {
+      background: #c9a961;
+      transform: translateY(-3px);
+    }
+
+    .cta-link-subtle {
+      display: inline-block;
+      margin-top: 1.5rem;
+      text-decoration: none;
+      color: #c9a961;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      transition: opacity 0.3s;
+    }
+
+    .cta-link-subtle:hover { opacity: 0.7; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .pillars-grid { grid-template-columns: 1fr; max-width: 500px; }
+      .pillar-card { padding: 3rem 2rem; }
+      .essay-grid { grid-template-columns: 1fr; }
+      .thesis-section { padding: 6rem 2rem; }
+      .category-section { padding: 5rem 2rem; }
+    }
+  </style>
+
+  <!-- Hero -->
+  <section class="philo-hero">
+    <span class="label">Das gedankliche Fundament</span>
+    <h1>Philosophie</h1>
+    <p class="epigraph">„Omnizedenz & das AVI-Modell"</p>
+  </section>
+
+  <!-- Einführung -->
+  <section class="philo-intro">
+    <p class="intro-quote">
+      „Wir alle leben in individuellen Realitätsblasen. Meine Geschichten sind Expeditionen zur vollständigen Realität – jenseits aller Wahrnehmungsfilter."
+    </p>
+    <div class="intro-body">
+      <p>
+        Hier finden Sie die theoretischen Ankerpunkte meines Schaffens. 
+        Im Zentrum stehen <strong>Omnizedenz</strong>, das <strong>AVI-Modell</strong> 
+        und die <strong>Resonanz-Ethik</strong>. Diese Konzepte bilden das Gerüst 
+        für meine literarischen Welten.
+      </p>
+    </div>
+  </section>
+
+  <!-- Die drei Säulen -->
+  <section class="pillars-section">
+    <div class="pillars-header">
+      <h2>Die drei Säulen</h2>
+      <p>Drei Perspektiven auf dieselbe Frage: Was hält alles zusammen?</p>
+    </div>
+
+    <div class="pillars-grid">
+      <div class="pillar-card" style="--pillar-accent: #c9a961;">
+        <span class="pillar-symbol">∅</span>
+        <h3>Omnizedenz</h3>
+        <span class="pillar-subtitle">Das Resonanzprinzip</span>
+        <p>
+          Das Göttliche ist kein Gegenüber — es ist das Feld. 
+          Ein radikal immanentes Prinzip: Gott als die Summe aller Frequenzen, 
+          aus deren Interferenz Komplexität, Bewusstsein und Materie entstehen.
+        </p>
+      </div>
+
+      <div class="pillar-card" style="--pillar-accent: #2C4E7A;">
+        <span class="pillar-symbol">⇌</span>
+        <h3>AVI-Modell</h3>
+        <span class="pillar-subtitle">Axiomatisches Vakuum-Integral</span>
+        <p>
+          Die mathematische Formalisierung der Omnizedenz. Das AVI-Modell beschreibt, 
+          wie aus dem Vakuumzustand — der kreativen Leere — durch Resonanz 
+          die Strukturen der Wirklichkeit emergieren.
+        </p>
+      </div>
+
+      <div class="pillar-card" style="--pillar-accent: #4a9b9b;">
+        <span class="pillar-symbol">⟳</span>
+        <h3>Resonanz-Ethik</h3>
+        <span class="pillar-subtitle">Handeln als Frequenz</span>
+        <p>
+          Wenn alles Resonanz ist, dann hat jede Handlung eine Frequenz. 
+          Ethik wird zur Frage der Kopplung: Verstärke ich das System — 
+          oder erzeuge ich Dissonanz?
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zentrale These -->
+  <section class="thesis-section">
+    <div class="thesis-inner">
+      <span class="label">Die zentrale These</span>
+      <blockquote>
+        Bewusstsein ist kein Produkt der Materie. Materie ist ein Produkt der Resonanz.
+      </blockquote>
+      <p>
+        Die Omnizedenz-Philosophie kehrt die gewohnte Hierarchie um: 
+        Nicht das Gehirn erzeugt Bewusstsein, sondern Bewusstsein ist das fundamentale 
+        Medium, in dem sich materielle Strukturen als stehende Wellen manifestieren. 
+        Das AVI-Modell liefert den formalen Rahmen, die Romane liefern die Narration.
+      </p>
+    </div>
+  </section>
+
+  <!-- KATEGORIE 1: Fundamente -->
+  <section class="category-section">
+    <div class="category-header">
+      <h2>Fundamente</h2>
+      <p>Grundlegende Essays, Lyrik und Projekte — die Wurzeln meines Denkens.</p>
+    </div>
+
+    <div class="essay-grid">
+      <a href="/philosophie/wenn-worte-welten-formen" class="essay-card">
+        <span class="card-type">Gedicht / Manifest</span>
+        <h3>Wenn Worte Welten formen</h3>
+        <p>Ein lyrisches Manifest über die schöpferische Kraft der Sprache und die Verantwortung des ehrlichen Wortes.</p>
+        <span class="card-cta">Gedicht lesen →</span>
+      </a>
+
+      <a href="/philosophie/spirale-zwei-urspruenge" class="essay-card">
+        <span class="card-type">Projekt</span>
+        <h3>Die Spirale der Zwei Ursprünge</h3>
+        <p>Genesis und das Echo der Phaistos-Scheibe: Ein Projekt über das Überschreiben etablierter Narrative.</p>
+        <span class="card-cta">Zum Projekt →</span>
+      </a>
+
+      <a href="/philosophie/evolution-des-schoepfers" class="essay-card">
+        <span class="card-type">Essay</span>
+        <h3>Die Evolution des Schöpfers</h3>
+        <p>Kann das Geschaffene mehr sein als sein Schöpfer? Eine Untersuchung über Emergenz und Freiheit.</p>
+        <span class="card-cta">Essay lesen →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- KATEGORIE 2: Systematik & Anwendung -->
+  <section class="category-section alt-bg">
+    <div class="category-inner">
+      <div class="category-header">
+        <h2>Systematik & Anwendung</h2>
+        <p>Die mathematische, hermeneutische und ethische Ausarbeitung des Systems.</p>
+      </div>
+
+      <div class="essay-grid">
+        <a href="/philosophie/fluide-hermeneutik" class="essay-card">
+          <span class="card-type">Methode</span>
+          <h3>Fluide Hermeneutik</h3>
+          <p>Verstehen als lebendiger Prozess im 21. Jahrhundert. Die Methode der Resonanz zwischen Text, Körper und Feld.</p>
+          <span class="card-cta">Methode erkunden →</span>
+        </a>
+
+        <a href="/philosophie/avi-vertiefung" class="essay-card">
+          <span class="card-type">Mathematik</span>
+          <h3>AVI-Vertiefung</h3>
+          <p>Die mathematische Formalisierung des AVI-Modells. Operatoren, physikalische Analogien und Bewusstseinstheorie.</p>
+          <span class="card-cta">Mathematik erkunden →</span>
+        </a>
+
+        <a href="/philosophie/zeichen-fuer-das-unsagbare" class="essay-card">
+          <span class="card-type">Symbolsystem</span>
+          <h3>Zeichen für das Unsagbare</h3>
+          <p>Die 28 Symbole der Omnizedenz — ein Zeichensystem für das, was sich der gewöhnlichen Sprache entzieht.</p>
+          <span class="card-cta">Symbole entdecken →</span>
+        </a>
+
+        <a href="/philosophie/wirtschaftspsychologie-omnizedenz" class="essay-card">
+          <span class="card-type">Essay</span>
+          <h3>Wenn die Klinke sinkt</h3>
+          <p>Wirtschaftspsychologie im Feld der Omnizedenz: Resonanz in Organisationen und das Ayia-Protokoll.</p>
+          <span class="card-cta">Essay lesen →</span>
+        </a>
+
+        <a href="/philosophie/resonanz-ethik" class="essay-card">
+          <span class="card-type">Ethik</span>
+          <h3>Grundlagen der Resonanzethik</h3>
+          <p>Handeln jenseits von Pflicht und Nutzen. Eine Ethik basierend auf der Kohärenz des Gesamtsystems.</p>
+          <span class="card-cta">Ethik erkunden →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- KATEGORIE 3: Kulturelle Resonanzräume -->
+  <section class="category-section">
+    <div class="category-header">
+      <h2>Kulturelle Resonanzräume</h2>
+      <p>Neuinterpretationen klassischer Werke durch die Linse der Omnizedenz.</p>
+    </div>
+
+    <div class="essay-grid">
+      <a href="/philosophie/faust-omnizedenz" class="essay-card">
+        <span class="card-type">Analyse</span>
+        <h3>Faust im Licht der Omnizedenz</h3>
+        <p>Streben, Schatten und Transformation: Das Faust-Drama als archetypische Reise im omnizenten Feld.</p>
+        <span class="card-cta">Analyse lesen →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA: omnizedenz.de -->
+  <section class="extern-cta">
+    <h3>Vollständige Ausarbeitung</h3>
+    <p>
+      Die detaillierte philosophische Entfaltung der Omnizedenz 
+      finden Sie auf der dedizierten Projektseite.
+    </p>
+    <a href="https://omnizedenz.de" target="_blank" rel="noopener" class="cta-link">omnizedenz.de besuchen →</a>
+    <br />
+    <a href="/sachbuecher" class="cta-link-subtle">Sachbücher & Forschung →</a>
+  </section>
+
+</BaseLayout>
