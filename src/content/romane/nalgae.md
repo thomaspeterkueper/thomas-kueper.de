@@ -1,9 +1,10 @@
 ---
-# Dateipfad: src/content/romane/nalgae.md
 title: "Nalgae"
-saga: "Zereya"
-erscheinungsjahr: 2026
-cover: ""
+genre: "Literary Fiction / Coming of Age"
+description: "Hana Ra sieht Dinge, die andere nicht sehen. In den Linien, die ihre Hand zeichnet, ohne dass ihr Kopf befiehlt. Eine Reise von Seoul nach Frankfurt. Von Schweigen zu Stimme."
+status: "In Arbeit"
+order: 32
+cover: "/assets/romane/nalgae/cover.jpg"
 tags: ["Roman", "Zereya Saga", "Baumeister Universe", "Coming of Age"]
 ---
 
