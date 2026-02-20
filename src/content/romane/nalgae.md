@@ -1,12 +1,10 @@
 ---
 # Dateipfad: src/content/romane/nalgae.md
 title: "Nalgae"
-genre: "Literary Fiction / Coming of Age"
-description: "Hana Ra sieht Dinge, die andere nicht sehen. In den Linien, die ihre Hand zeichnet, ohne dass ihr Kopf befiehlt. Eine Reise von Seoul nach Frankfurt. Von Schweigen zu Stimme."
-status: "In Arbeit"
-order: 24
+saga: "Zereya"
+erscheinungsjahr: 2026
 cover: ""
-tags: ["Roman", "Zereya Saga", "Baumeister Universe"]
+tags: ["Roman", "Zereya Saga", "Baumeister Universe", "Coming of Age"]
 ---
 
 <p style="font-style: italic; color: var(--gold);">Die Flügel. Für die, die den Weg nicht kennen, aber trotzdem gehen.</p>
