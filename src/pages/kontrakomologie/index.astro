@@ -1,1 +1,161 @@
 
+---
+// Dateipfad: src/pages/kontrakomologie/index.astro
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allEntries = await getCollection('kontrakomologie');
+const entries = allEntries.sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+
+const kategorieLabels: Record<string, string> = {
+  pop: 'Pop & Rock',
+  klassik: 'Klassik',
+  jazz: 'Jazz',
+};
+
+const richtungLabels: Record<string, string> = {
+  'musik-zu-text': 'Musik → Text',
+  'text-zu-musik': 'Text → Musik',
+};
+---
+
+<BaseLayout
+  title="Kontrakomologie"
+  description="Kontrakomologie — Kontrapunktische Koexistenz in Musik und Text. Essays über Pop, Klassik und Jazz von Thomas Peter Küper.">
+
+  <style is:inline>
+    .kontrak-hero {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 5rem 2rem 2rem;
+      text-align: center;
+    }
+    .kontrak-hero h1 {
+      font-family: 'Crimson Text', serif;
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+    .kontrak-hero .subtitle {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      color: #c9a961;
+      font-size: 1.1rem;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .kontrak-hero .intro {
+      font-family: 'Lora', serif;
+      color: #666;
+      line-height: 1.8;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .kontrak-divider {
+      width: 60px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #c9a961, transparent);
+      margin: 2rem auto;
+    }
+    .kontrak-grid {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 1rem 2rem 5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .kontrak-card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      padding: 2rem;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      transition: all 0.25s ease;
+      background: white;
+    }
+    .kontrak-card:hover {
+      border-color: #c9a961;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      transform: translateY(-2px);
+    }
+    .kontrak-card-meta {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    .kontrak-card-kategorie {
+      color: #4A9B9B;
+      font-weight: 600;
+    }
+    .kontrak-card-richtung {
+      color: #999;
+    }
+    .kontrak-card h2 {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin: 0 0 0.3rem;
+    }
+    .kontrak-card .werk {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      color: #c9a961;
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+    .kontrak-card p {
+      font-family: 'Lora', serif;
+      color: #666;
+      line-height: 1.7;
+      font-size: 0.95rem;
+      margin: 0;
+    }
+    @media (max-width: 600px) {
+      .kontrak-hero { padding: 4rem 1.2rem 1.5rem; }
+      .kontrak-grid { padding: 1rem 1.2rem 4rem; }
+    }
+  </style>
+
+  <section class="kontrak-hero">
+    <h1>Kontrakomologie</h1>
+    <span class="subtitle">Kontrapunktische Koexistenz in Musik und Text</span>
+    <div class="kontrak-divider"></div>
+    <p class="intro">
+      Musik spricht nicht. Text klingt nicht. Und doch gibt es Momente,
+      in denen beide dasselbe sagen — gleichzeitig, ohne sich zu berühren.
+      Diese Essays untersuchen solche Momente.
+    </p>
+  </section>
+
+  <div class="kontrak-grid">
+    {entries.map(entry => (
+      <a href={`/kontrakomologie/${entry.id}/`} class="kontrak-card">
+        <div class="kontrak-card-meta">
+          {entry.data.kategorie && (
+            <span class="kontrak-card-kategorie">{kategorieLabels[entry.data.kategorie] || entry.data.kategorie}</span>
+          )}
+          {entry.data.richtung && (
+            <span class="kontrak-card-richtung">{richtungLabels[entry.data.richtung] || entry.data.richtung}</span>
+          )}
+          {entry.data.jahr && (
+            <span class="kontrak-card-richtung">{entry.data.jahr}</span>
+          )}
+        </div>
+        <h2>{entry.data.title}</h2>
+        {(entry.data.kuenstler || entry.data.werk) && (
+          <span class="werk">
+            {entry.data.kuenstler}{entry.data.kuenstler && entry.data.werk ? ' — ' : ''}{entry.data.werk}
+          </span>
+        )}
+        {entry.data.description && <p>{entry.data.description}</p>}
+      </a>
+    ))}
+  </div>
+
+</BaseLayout>
