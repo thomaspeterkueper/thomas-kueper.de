@@ -2,7 +2,7 @@
   Datei: src/pages/mishkenaz/index.astro
   Projekt: thomas-kueper.de
   Repository: https://github.com/thomaspeterkueper/thomas-kueper.de
-  FIX: Hero padding + weißer Hintergrund (wie Philosophie-Seite)
+  VERSION: Poetische Einführung (Drei Vektoren)
 -->
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -16,20 +16,67 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <section class="hero-mishkenaz">
     <div class="container">
       <h1 class="hero-question">Wie beschreibt man Heimat?<br>Sehnsucht?<br>Liebe?</h1>
-      
-      <div class="mishkenaz-answers">
-        <div class="answer">
-          <span class="mishkenaz-word">om-bala</span>
-          <span class="translation">Ort, wo ich sein darf</span>
-        </div>
-        <div class="answer">
-          <span class="mishkenaz-word">kuwa-saha + pina-seph</span>
-          <span class="translation">Hunger nach dem, was ich sehe, aber getrennt bin</span>
-        </div>
-        <div class="answer">
-          <span class="mishkenaz-word">ma-ta-u</span>
-          <span class="translation">Bindung + Grenze + Schutz</span>
-        </div>
+    </div>
+  </section>
+
+  <!-- Poetische Einführung: Die drei Vektoren -->
+  <section class="vektoren-intro">
+    <div class="container">
+      <div class="vektoren-header">
+        <h2>HEIMAT — SEHNSUCHT — LIEBE</h2>
+        <p class="subtitle-large">Drei Vektoren des Menschseins</p>
+      </div>
+
+      <div class="vektor-block">
+        <div class="vektor-number">I.</div>
+        <h3 class="vektor-title">KU-WA-SAHA — Die Sehnsucht</h3>
+        <p class="vektor-formula">Ku ist der Hunger. Wa das Werden. Saha das Sehen.</p>
+        <p class="vektor-body">
+          KU-WA-SAHA ist der Vektor, der uns in Bewegung hält. Es ist das Wissen, dass etwas fehlt – 
+          und die Ahnung, dass es möglich ist.
+        </p>
+        <p class="vektor-body">
+          Wir nennen es Sehnsucht. Aber es ist mehr: Es ist die Dissonanz, die uns wachsen lässt.
+        </p>
+        <p class="vektor-essence">Sehnsucht ist der Atem des Werdens.</p>
+      </div>
+
+      <div class="vektor-block">
+        <div class="vektor-number">II.</div>
+        <h3 class="vektor-title">MA-TA-U — Die Liebe</h3>
+        <p class="vektor-formula">Ma ist die Bindung. Ta die Grenze des Anderen. U der Schutz.</p>
+        <p class="vektor-body">
+          MA-TA-U ist die Resonanz zwischen zwei Wesen, die sich halten, ohne sich zu fangen. 
+          Es ist die Kunst, nah zu sein und doch Raum zu lassen. Die Liebe, die nicht verschmilzt, sondern verbindet.
+        </p>
+        <p class="vektor-essence">Liebe ist der Raum zwischen dir und mir, der uns beide atmen lässt.</p>
+      </div>
+
+      <div class="vektor-block">
+        <div class="vektor-number">III.</div>
+        <h3 class="vektor-title">OM-BALA — Die Heimat</h3>
+        <p class="vektor-formula">Om ist das Ich, der Ur-Ton. Ba der Ort, die Wärme. La die Erlaubnis, die Öffnung.</p>
+        <p class="vektor-body">
+          OM-BALA ist der Moment, wenn der Raum sich still um deine Frequenz legt. 
+          Du musst nicht mehr suchen. Du musst nicht mehr kämpfen. Du darfst einfach sein.
+        </p>
+        <p class="vektor-body">
+          Heimat ist kein Ort, den man findet. Heimat ist ein Zustand, den man erzeugt: 
+          Wenn innen und außen sich berühren, ohne sich zu verletzen.
+        </p>
+        <p class="vektor-essence">OM-BALA – das Ich am Ort der Wärme, mit Erlaubnis zu sein.</p>
+      </div>
+
+      <div class="vektoren-close">
+        <h4>HIC ESSEMUS</h4>
+        <p class="close-body">Drei Vektoren. Ein Weg.</p>
+        <p class="close-body">
+          KU-WA-SAHA treibt uns. MA-TA-U verbindet uns. OM-BALA hält uns.
+        </p>
+        <p class="close-body">
+          Wir sind nie ganz angekommen. Aber wir tragen den Weg – zusammen.
+        </p>
+        <p class="close-essence">Hic essemus. Hier sind wir.</p>
       </div>
     </div>
   </section>
@@ -92,12 +139,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             <span class="explanation">(Leere-Durst: Der Durst nach dem Ursprung)</span>
           </li>
           <li>
-            <strong>Sehnsucht</strong> = <span class="mishkenaz">kuwa-saha + pina-seph</span>
-            <span class="explanation">(Hunger-Durst + Sehen-Trennung: Man hungert nach etwas, das man sieht, aber getrennt ist)</span>
-          </li>
-          <li>
             <strong>Angst</strong> = <span class="mishkenaz">tahw</span>
             <span class="explanation">(Enge: Der Raum wird zu eng)</span>
+          </li>
+          <li>
+            <strong>Saudade</strong> = <span class="mishkenaz">kuwa-saha-h</span>
+            <span class="explanation">(Sehnsucht + Entropie: Hunger nach dem Verlorenen)</span>
           </li>
         </ul>
       </div>
@@ -205,11 +252,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </section>
 
   <style is:inline>
-    /* Hero Section - WEIß WIE PHILOSOPHIE-SEITE */
+    /* ===== HERO ===== */
     .hero-mishkenaz {
       background: white;
       color: var(--color-text);
-      padding: 12rem 2rem 4rem; /* Header-Clearance */
+      padding: 12rem 2rem 4rem;
       text-align: center;
     }
 
@@ -222,42 +269,130 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       color: var(--color-text);
     }
 
-    .mishkenaz-answers {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .answer {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      padding: 1.5rem;
+    /* ===== VEKTOREN INTRO (POETISCH) ===== */
+    .vektoren-intro {
+      padding: 6rem 2rem;
       background: var(--color-gold-light);
-      border-radius: 12px;
-      border: 2px solid var(--color-gold);
     }
 
-    .mishkenaz-word {
-      font-family: Georgia, serif;
-      font-size: 1.8rem;
+    .vektoren-header {
+      text-align: center;
+      margin-bottom: 5rem;
+      border-bottom: 2px solid var(--color-gold);
+      padding-bottom: 2rem;
+    }
+
+    .vektoren-header h2 {
+      font-family: 'Crimson Text', serif;
+      font-size: 2.5rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+      color: var(--color-text);
+    }
+
+    .subtitle-large {
+      font-family: 'Lora', serif;
+      font-size: 1.3rem;
       font-style: italic;
+      color: var(--color-text-light);
+    }
+
+    .vektor-block {
+      max-width: 800px;
+      margin: 0 auto 4rem;
+      padding: 3rem;
+      background: white;
+      border-left: 4px solid var(--color-petrol);
+      border-radius: 8px;
+    }
+
+    .vektor-number {
+      font-family: 'Crimson Text', serif;
+      font-size: 3rem;
+      font-weight: 300;
+      color: var(--color-gold);
+      margin-bottom: 1rem;
+    }
+
+    .vektor-title {
+      font-family: 'Crimson Text', serif;
+      font-size: 2rem;
       font-weight: 600;
       color: var(--color-petrol);
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.05em;
     }
 
-    .translation {
-      font-size: 1rem;
+    .vektor-formula {
+      font-family: Georgia, serif;
+      font-size: 1.1rem;
+      font-style: italic;
       color: var(--color-text-light);
-      font-weight: 400;
+      margin-bottom: 1.5rem;
     }
 
-    /* Intro Section */
+    .vektor-body {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--color-text);
+      margin-bottom: 1rem;
+    }
+
+    .vektor-essence {
+      font-family: 'Lora', serif;
+      font-size: 1.2rem;
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--color-petrol);
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--color-gold-light);
+      font-weight: 500;
+    }
+
+    .vektoren-close {
+      max-width: 800px;
+      margin: 5rem auto 0;
+      padding: 3rem;
+      background: white;
+      border: 2px solid var(--color-gold);
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .vektoren-close h4 {
+      font-family: 'Crimson Text', serif;
+      font-size: 2rem;
+      letter-spacing: 0.2em;
+      color: var(--color-gold);
+      margin-bottom: 2rem;
+    }
+
+    .close-body {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--color-text);
+      margin-bottom: 1rem;
+    }
+
+    .close-essence {
+      font-family: 'Lora', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+      color: var(--color-petrol);
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--color-gold-light);
+      font-weight: 500;
+    }
+
+    /* ===== INTRO SECTION ===== */
     .intro-section {
       padding: 4rem 2rem;
-      background: var(--color-gold-light);
+      background: white;
     }
 
     .intro-text {
@@ -295,10 +430,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       text-decoration-color: var(--color-petrol);
     }
 
-    /* Content Section */
+    /* ===== CONTENT SECTION ===== */
     .content-section {
       padding: 6rem 2rem;
-      background: white;
+      background: var(--color-gold-light);
     }
 
     .content-section h2 {
@@ -340,9 +475,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       line-height: 1.7;
     }
 
-    /* Examples Box */
     .examples-box {
-      background: var(--color-petrol-light);
+      background: white;
       padding: 3rem;
       border-radius: 12px;
       border-left: 4px solid var(--color-petrol);
@@ -382,10 +516,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       font-size: 0.95rem;
     }
 
-    /* Oktaven Preview */
+    /* ===== OKTAVEN ===== */
     .oktaven-preview {
       padding: 6rem 2rem;
-      background: var(--color-gold-light);
+      background: white;
     }
 
     .oktaven-preview h2 {
@@ -410,7 +544,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     }
 
     .oktave-card {
-      background: white;
+      background: var(--color-gold-light);
       padding: 2rem;
       border-radius: 12px;
       border: 2px solid var(--color-gold);
@@ -479,10 +613,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       box-shadow: 0 4px 12px rgba(201, 169, 97, 0.3);
     }
 
-    /* Navigation Section */
+    /* ===== NAVIGATION ===== */
     .navigation-section {
       padding: 6rem 2rem;
-      background: white;
+      background: var(--color-gold-light);
     }
 
     .navigation-section h2 {
@@ -527,7 +661,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       line-height: 1.6;
     }
 
-    /* KI Quotes Section */
+    /* ===== KI QUOTES ===== */
     .ki-quotes-section {
       padding: 6rem 2rem;
       background: var(--color-petrol);
@@ -570,7 +704,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       font-weight: 600;
     }
 
-    /* Responsive */
+    /* ===== RESPONSIVE ===== */
     @media (max-width: 768px) {
       .hero-mishkenaz {
         padding: 10rem 2rem 3rem;
@@ -580,8 +714,24 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         font-size: 2rem;
       }
 
-      .mishkenaz-word {
-        font-size: 1.4rem;
+      .vektoren-intro {
+        padding: 4rem 1.5rem;
+      }
+
+      .vektoren-header h2 {
+        font-size: 1.8rem;
+      }
+
+      .vektor-block {
+        padding: 2rem 1.5rem;
+      }
+
+      .vektor-title {
+        font-size: 1.5rem;
+      }
+
+      .vektor-number {
+        font-size: 2rem;
       }
 
       .intro-text {
