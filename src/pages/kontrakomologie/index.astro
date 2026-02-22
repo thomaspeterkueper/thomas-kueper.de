@@ -3,12 +3,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
 const allEssays = await getCollection('kontrakomologie');
-const essays = allEssays.sort((a, b) => (a.data.order || 99) - (b.data.order || 99));
+const sorted = allEssays.sort((a, b) => (a.data.order || 99) - (b.data.order || 99));
+const grundlagen = sorted.filter(e => e.data.kategorie === 'grundlagen');
+const analysen = sorted.filter(e => e.data.kategorie !== 'grundlagen');
 
 const kategorieLabels: Record<string, string> = {
   'pop': 'Pop & Rock',
   'klassik': 'Klassik',
   'jazz': 'Jazz',
+  'grundlagen': 'Grundlagen',
 };
 
 const richtungLabels: Record<string, string> = {
@@ -102,12 +105,37 @@ const richtungLabels: Record<string, string> = {
     </div>
   </section>
 
-  <!-- Essays -->
-  <section class="kk-essays">
+  <!-- Grundlagen -->
+  <section class="kk-section">
     <div class="container">
-      <h2>Essays</h2>
+      <h2>Grundlagen</h2>
+      <p class="kk-section-intro">Methode, Prinzipien, Systematik — was Kontrakomologie ist und wie sie arbeitet.</p>
       <div class="essays-grid">
-        {essays.map((entry) => (
+        {grundlagen.map((entry) => (
+          <a href={`/kontrakomologie/${entry.id.replace('.md', '')}/`} class="essay-card">
+            <div class="essay-meta">
+              <span class="essay-kategorie">{kategorieLabels[entry.data.kategorie!] || entry.data.kategorie}</span>
+            </div>
+            <h3>{entry.data.title}</h3>
+            {entry.data.subtitle && (
+              <p class="essay-subtitle">{entry.data.subtitle}</p>
+            )}
+            {entry.data.description && (
+              <p class="essay-description">{entry.data.description}</p>
+            )}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Analysen -->
+  <section class="kk-section">
+    <div class="container">
+      <h2>Analysen</h2>
+      <p class="kk-section-intro">Einzelne Werke — gehört, beschrieben, kontrakomologisch gelesen.</p>
+      <div class="essays-grid">
+        {analysen.map((entry) => (
           <a href={`/kontrakomologie/${entry.id.replace('.md', '')}/`} class="essay-card">
             <div class="essay-meta">
               {entry.data.kategorie && (
@@ -302,15 +330,22 @@ const richtungLabels: Record<string, string> = {
     margin: 0;
   }
 
-  /* Essays Section */
-  .kk-essays {
+  /* Sections (Grundlagen + Analysen) */
+  .kk-section {
     padding: 2rem 0 3rem;
     border-top: 1px solid rgba(201, 169, 97, 0.15);
   }
-  .kk-essays h2 {
+  .kk-section h2 {
     font-family: 'Crimson Text', 'Georgia', serif;
     font-size: 1.6rem;
     color: var(--color-gold, #c9a961);
+    margin-bottom: 0.3rem;
+  }
+  .kk-section-intro {
+    font-family: 'Lora', 'Georgia', serif;
+    font-size: 0.95rem;
+    color: var(--color-text-light, #666);
+    font-style: italic;
     margin-bottom: 1.5rem;
   }
   .essays-grid {
