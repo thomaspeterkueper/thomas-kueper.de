@@ -32,7 +32,7 @@ const kontrakomologie = defineCollection({
     title: z.string(),
     subtitle: z.string().optional(),
     description: z.string().optional(),
-    kategorie: z.enum(['pop', 'klassik', 'jazz', 'grundlagen']).optional(),
+    kategorie: z.enum(['pop', 'klassik', 'jazz', 'grundlagen', 'eigenes-werk']).optional(),
     richtung: z.enum(['text-zu-musik', 'musik-zu-text']).optional(),
     kuenstler: z.string().optional(),
     werk: z.string().optional(),
