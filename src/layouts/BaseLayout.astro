@@ -1,7 +1,7 @@
 ---
 // Dateipfad: src/layouts/BaseLayout.astro
 // Beschreibung: Basis-Layout mit lokaler Font-Einbindung, OTA-Navigation und Mobile-Hamburger-Menü.
-// Aktualisiert am: 08.02.2026
+// Aktualisiert am: 22.02.2026 (Mishkenaz hinzugefügt)
 
 const { title, description } = Astro.props;
 
@@ -215,6 +215,7 @@ import headerAvatar from '../assets/header-avatar.jpg';
     .mobile-overlay.is-open .mobile-nav-link:nth-child(4) { transition-delay: 0.26s; }
     .mobile-overlay.is-open .mobile-nav-link:nth-child(5) { transition-delay: 0.32s; }
     .mobile-overlay.is-open .mobile-nav-link:nth-child(6) { transition-delay: 0.38s; }
+    .mobile-overlay.is-open .mobile-nav-link:nth-child(7) { transition-delay: 0.44s; }
 
     .mobile-nav-link::after {
       content: '';
@@ -233,7 +234,7 @@ import headerAvatar from '../assets/header-avatar.jpg';
       background: var(--gold-light);
       margin: 2rem 0;
       opacity: 0;
-      transition: opacity 0.5s ease 0.45s;
+      transition: opacity 0.5s ease 0.5s;
     }
 
     .mobile-overlay.is-open .mobile-nav-divider { opacity: 1; }
@@ -284,6 +285,7 @@ import headerAvatar from '../assets/header-avatar.jpg';
         <a href="/universen" class="nav-link">Universen</a>
         <a href="/sachbuecher" class="nav-link">Sachbücher</a>
         <a href="/philosophie" class="nav-link">Philosophie</a>
+        <a href="/mishkenaz" class="nav-link">Mishkenaz</a>
         <a href="/ueber-mich" class="nav-link">Über mich</a>
         <a href="/overtime-archive" class="nav-link">OTA</a>
       </div>
@@ -302,6 +304,7 @@ import headerAvatar from '../assets/header-avatar.jpg';
     <a href="/universen" class="mobile-nav-link">Universen</a>
     <a href="/sachbuecher" class="mobile-nav-link">Sachbücher</a>
     <a href="/philosophie" class="mobile-nav-link">Philosophie</a>
+    <a href="/mishkenaz" class="mobile-nav-link">Mishkenaz</a>
     <a href="/ueber-mich" class="mobile-nav-link">Über mich</a>
     <a href="/overtime-archive" class="mobile-nav-link">OTA</a>
     <div class="mobile-nav-divider"></div>
