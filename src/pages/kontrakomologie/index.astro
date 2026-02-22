@@ -135,7 +135,7 @@ const richtungLabels: Record<string, string> = {
 
   <div class="kontrak-grid">
     {entries.map(entry => (
-      <a href={`/kontrakomologie/${entry.id}/`} class="kontrak-card">
+      <a href={`/kontrakomologie/${entry.id.replace('.md', '')}/`} class="kontrak-card">
         <div class="kontrak-card-meta">
           {entry.data.kategorie && (
             <span class="kontrak-card-kategorie">{kategorieLabels[entry.data.kategorie] || entry.data.kategorie}</span>
