@@ -1,3 +1,4 @@
+// Dateipfad: src/content.config.ts
 import { defineCollection, z } from 'astro:content';
 
 const romane = defineCollection({
@@ -25,4 +26,20 @@ const sachbuecher = defineCollection({
   schema: z.object({}).passthrough(),
 });
 
-export const collections = { romane, philosophie, sachbuecher };
+const kontrakomologie = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    subtitle: z.string().optional(),
+    description: z.string().optional(),
+    kategorie: z.enum(['pop', 'klassik', 'jazz']).optional(),
+    richtung: z.enum(['text-zu-musik', 'musik-zu-text']).optional(),
+    kuenstler: z.string().optional(),
+    werk: z.string().optional(),
+    jahr: z.number().optional(),
+    order: z.number().optional(),
+    tags: z.array(z.string()).default([]),
+  }),
+});
+
+export const collections = { romane, philosophie, sachbuecher, kontrakomologie };
