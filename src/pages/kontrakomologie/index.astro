@@ -5,13 +5,15 @@ import { getCollection } from 'astro:content';
 const allEssays = await getCollection('kontrakomologie');
 const sorted = allEssays.sort((a, b) => (a.data.order || 99) - (b.data.order || 99));
 const grundlagen = sorted.filter(e => e.data.kategorie === 'grundlagen');
-const analysen = sorted.filter(e => e.data.kategorie !== 'grundlagen');
+const eigeneWerke = sorted.filter(e => e.data.kategorie === 'eigenes-werk');
+const analysen = sorted.filter(e => e.data.kategorie !== 'grundlagen' && e.data.kategorie !== 'eigenes-werk');
 
 const kategorieLabels: Record<string, string> = {
   'pop': 'Pop & Rock',
   'klassik': 'Klassik',
   'jazz': 'Jazz',
   'grundlagen': 'Grundlagen',
+  'eigenes-werk': 'Eigenes Werk',
 };
 
 const richtungLabels: Record<string, string> = {
@@ -160,6 +162,35 @@ const richtungLabels: Record<string, string> = {
       </div>
     </div>
   </section>
+
+  <!-- Eigene Werke -->
+  {eigeneWerke.length > 0 && (
+  <section class="kk-section">
+    <div class="container">
+      <h2>Eigene Werke</h2>
+      <p class="kk-section-intro">Kontrakomologisch komponiert — Musik, die aus diesen Prinzipien entstanden ist.</p>
+      <div class="essays-grid">
+        {eigeneWerke.map((entry) => (
+          <a href={`/kontrakomologie/${entry.id.replace('.md', '')}/`} class="essay-card">
+            <div class="essay-meta">
+              <span class="essay-kategorie">{kategorieLabels[entry.data.kategorie!] || entry.data.kategorie}</span>
+              {entry.data.jahr && (
+                <span class="essay-jahr">{entry.data.jahr}</span>
+              )}
+            </div>
+            <h3>{entry.data.title}</h3>
+            {entry.data.subtitle && (
+              <p class="essay-subtitle">{entry.data.subtitle}</p>
+            )}
+            {entry.data.description && (
+              <p class="essay-description">{entry.data.description}</p>
+            )}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+  )}
 
   <!-- Für wen -->
   <section class="kk-audience">
