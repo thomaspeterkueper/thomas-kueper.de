@@ -1,0 +1,150 @@
+---
+// Dateipfad: src/pages/kontrakomologie/[slug].astro
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('kontrakomologie');
+  return entries.map(entry => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const kategorieLabels: Record<string, string> = {
+  pop: 'Pop & Rock',
+  klassik: 'Klassik',
+  jazz: 'Jazz',
+};
+
+const richtungLabels: Record<string, string> = {
+  'musik-zu-text': 'Musik → Text',
+  'text-zu-musik': 'Text → Musik',
+};
+---
+
+<BaseLayout
+  title={entry.data.title}
+  description={entry.data.description || ''}>
+
+  <style is:inline>
+    .essay-page {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+      font-family: 'Lora', serif;
+      line-height: 1.9;
+      color: #1a1a1a;
+    }
+    .essay-meta {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    .essay-meta .kategorie { color: #4A9B9B; font-weight: 600; }
+    .essay-meta .richtung { color: #999; }
+    .essay-page h1 {
+      font-family: 'Crimson Text', serif;
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      font-weight: 400;
+      margin-bottom: 0.3rem;
+      line-height: 1.15;
+    }
+    .essay-page .subtitle {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      color: #c9a961;
+      font-size: 1.05rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .essay-page .author {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #888;
+      margin-bottom: 3rem;
+      display: block;
+    }
+    .essay-page h2 {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.7rem;
+      font-weight: 400;
+      margin: 3.5rem 0 1.2rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid #eee;
+    }
+    .essay-page h3 {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 2.5rem 0 1rem;
+    }
+    .essay-page p { margin-bottom: 1.2rem; }
+    .essay-page blockquote {
+      border-left: 3px solid #c9a961;
+      margin: 2rem 0;
+      padding: 1rem 1.5rem;
+      font-style: italic;
+      color: #555;
+      background: #faf9f6;
+    }
+    .essay-page strong { font-weight: 600; }
+    .essay-page em { font-style: italic; }
+    .back-nav {
+      margin-top: 5rem;
+      padding-top: 2rem;
+      border-top: 1px solid #eee;
+      text-align: center;
+    }
+    .back-nav a {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #888;
+      text-decoration: none;
+    }
+    .back-nav a:hover { color: #c9a961; }
+    @media (max-width: 600px) {
+      .essay-page { padding: 4rem 1.2rem; }
+    }
+  </style>
+
+  <article class="essay-page">
+
+    <div class="essay-meta">
+      {entry.data.kategorie && (
+        <span class="kategorie">{kategorieLabels[entry.data.kategorie] || entry.data.kategorie}</span>
+      )}
+      {entry.data.richtung && (
+        <span class="richtung">{richtungLabels[entry.data.richtung] || entry.data.richtung}</span>
+      )}
+      {entry.data.jahr && (
+        <span class="richtung">{entry.data.jahr}</span>
+      )}
+    </div>
+
+    <h1>{entry.data.title}</h1>
+    {entry.data.subtitle && (
+      <span class="subtitle">{entry.data.subtitle}</span>
+    )}
+    <span class="author">Thomas Peter Küper</span>
+
+    <Content />
+
+    <footer class="back-nav">
+      <a href="/kontrakomologie/">← Zurück zur Kontrakomologie</a>
+    </footer>
+  </article>
+
+</BaseLayout>
