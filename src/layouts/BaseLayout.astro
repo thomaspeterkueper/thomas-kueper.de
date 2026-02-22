@@ -1,7 +1,7 @@
 ---
 // Dateipfad: src/layouts/BaseLayout.astro
-// Beschreibung: Basis-Layout mit lokaler Font-Einbindung, OTA-Navigation und Mobile-Hamburger-Menü.
-// Aktualisiert am: 22.02.2026 (Mishkenaz hinzugefügt)
+// Beschreibung: Basis-Layout mit Dropdown-Menü für Bücher (Romane, Sachbücher, Universen)
+// Aktualisiert am: 22.02.2026 (Kontrakomologie & Mishkenaz als Hauptmenüpunkte)
 
 const { title, description } = Astro.props;
 
@@ -133,6 +133,73 @@ import headerAvatar from '../assets/header-avatar.jpg';
 
     .nav-link:hover { color: var(--gold); }
     .nav-link:hover::after { width: 100%; }
+
+    /* ===== DROPDOWN MENU ===== */
+    .nav-dropdown {
+      position: relative;
+    }
+
+    .dropdown-trigger {
+      text-decoration: none; color: var(--text);
+      font-size: 0.65rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.25em;
+      position: relative; padding: 0.5rem 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .dropdown-trigger::after {
+      content: '▾';
+      font-size: 0.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-dropdown:hover .dropdown-trigger::after {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: calc(100% + 1rem);
+      left: 0;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      min-width: 180px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+      z-index: 100;
+    }
+
+    .nav-dropdown:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown-link {
+      display: block;
+      padding: 0.8rem 1.2rem;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      transition: all 0.2s ease;
+      border-left: 2px solid transparent;
+    }
+
+    .dropdown-link:hover {
+      background: var(--gold-light);
+      border-left-color: var(--gold);
+      color: var(--gold);
+    }
 
     /* ===== HAMBURGER BUTTON ===== */
     .hamburger {
@@ -281,10 +348,18 @@ import headerAvatar from '../assets/header-avatar.jpg';
       </a>
       
       <div class="nav-menu">
-        <a href="/romane" class="nav-link">Romane</a>
-        <a href="/universen" class="nav-link">Universen</a>
-        <a href="/sachbuecher" class="nav-link">Sachbücher</a>
+        <!-- Dropdown für Bücher -->
+        <div class="nav-dropdown">
+          <span class="dropdown-trigger">Bücher</span>
+          <div class="dropdown-menu">
+            <a href="/romane" class="dropdown-link">Romane</a>
+            <a href="/sachbuecher" class="dropdown-link">Sachbücher</a>
+            <a href="/universen" class="dropdown-link">Universen</a>
+          </div>
+        </div>
+        
         <a href="/philosophie" class="nav-link">Philosophie</a>
+        <a href="/kontrakomologie" class="nav-link">Kontrakomologie</a>
         <a href="/mishkenaz" class="nav-link">Mishkenaz</a>
         <a href="/ueber-mich" class="nav-link">Über mich</a>
         <a href="/overtime-archive" class="nav-link">OTA</a>
@@ -301,12 +376,12 @@ import headerAvatar from '../assets/header-avatar.jpg';
   <!-- Mobile Fullscreen Overlay -->
   <div class="mobile-overlay" id="mobileOverlay">
     <a href="/romane" class="mobile-nav-link">Romane</a>
-    <a href="/universen" class="mobile-nav-link">Universen</a>
     <a href="/sachbuecher" class="mobile-nav-link">Sachbücher</a>
+    <a href="/universen" class="mobile-nav-link">Universen</a>
     <a href="/philosophie" class="mobile-nav-link">Philosophie</a>
+    <a href="/kontrakomologie" class="mobile-nav-link">Kontrakomologie</a>
     <a href="/mishkenaz" class="mobile-nav-link">Mishkenaz</a>
     <a href="/ueber-mich" class="mobile-nav-link">Über mich</a>
-    <a href="/overtime-archive" class="mobile-nav-link">OTA</a>
     <div class="mobile-nav-divider"></div>
   </div>
 
