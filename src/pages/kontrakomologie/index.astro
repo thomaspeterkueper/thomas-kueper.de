@@ -1,16 +1,14 @@
-
 ---
-// Dateipfad: src/pages/kontrakomologie/index.astro
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
-const allEntries = await getCollection('kontrakomologie');
-const entries = allEntries.sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+const allEssays = await getCollection('kontrakomologie');
+const essays = allEssays.sort((a, b) => (a.data.order || 99) - (b.data.order || 99));
 
 const kategorieLabels: Record<string, string> = {
-  pop: 'Pop & Rock',
-  klassik: 'Klassik',
-  jazz: 'Jazz',
+  'pop': 'Pop & Rock',
+  'klassik': 'Klassik',
+  'jazz': 'Jazz',
 };
 
 const richtungLabels: Record<string, string> = {
@@ -19,143 +17,391 @@ const richtungLabels: Record<string, string> = {
 };
 ---
 
-<BaseLayout
-  title="Kontrakomologie"
-  description="Kontrakomologie — Kontrapunktische Koexistenz in Musik und Text. Essays über Pop, Klassik und Jazz von Thomas Peter Küper.">
+<BaseLayout title="Kontrakomologie" description="Kontrapunktische Koexistenz in Musik und Text. Essays von Thomas Peter Küper.">
 
-  <style is:inline>
-    .kontrak-hero {
-      max-width: 780px;
-      margin: 0 auto;
-      padding: 5rem 2rem 2rem;
-      text-align: center;
-    }
-    .kontrak-hero h1 {
-      font-family: 'Crimson Text', serif;
-      font-size: clamp(2.5rem, 5vw, 3.5rem);
-      font-weight: 400;
-      margin-bottom: 0.5rem;
-    }
-    .kontrak-hero .subtitle {
-      font-family: 'Lora', serif;
-      font-style: italic;
-      color: #c9a961;
-      font-size: 1.1rem;
-      display: block;
-      margin-bottom: 1rem;
-    }
-    .kontrak-hero .intro {
-      font-family: 'Lora', serif;
-      color: #666;
-      line-height: 1.8;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .kontrak-divider {
-      width: 60px;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, #c9a961, transparent);
-      margin: 2rem auto;
-    }
-    .kontrak-grid {
-      max-width: 780px;
-      margin: 0 auto;
-      padding: 1rem 2rem 5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-    .kontrak-card {
-      display: block;
-      text-decoration: none;
-      color: inherit;
-      padding: 2rem;
-      border: 1px solid #eee;
-      border-radius: 8px;
-      transition: all 0.25s ease;
-      background: white;
-    }
-    .kontrak-card:hover {
-      border-color: #c9a961;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-      transform: translateY(-2px);
-    }
-    .kontrak-card-meta {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 0.5rem;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-    }
-    .kontrak-card-kategorie {
-      color: #4A9B9B;
-      font-weight: 600;
-    }
-    .kontrak-card-richtung {
-      color: #999;
-    }
-    .kontrak-card h2 {
-      font-family: 'Crimson Text', serif;
-      font-size: 1.5rem;
-      font-weight: 400;
-      margin: 0 0 0.3rem;
-    }
-    .kontrak-card .werk {
-      font-family: 'Lora', serif;
-      font-style: italic;
-      color: #c9a961;
-      font-size: 0.95rem;
-      margin-bottom: 0.75rem;
-      display: block;
-    }
-    .kontrak-card p {
-      font-family: 'Lora', serif;
-      color: #666;
-      line-height: 1.7;
-      font-size: 0.95rem;
-      margin: 0;
-    }
-    @media (max-width: 600px) {
-      .kontrak-hero { padding: 4rem 1.2rem 1.5rem; }
-      .kontrak-grid { padding: 1rem 1.2rem 4rem; }
-    }
-  </style>
-
-  <section class="kontrak-hero">
-    <h1>Kontrakomologie</h1>
-    <span class="subtitle">Kontrapunktische Koexistenz in Musik und Text</span>
-    <div class="kontrak-divider"></div>
-    <p class="intro">
-      Musik spricht nicht. Text klingt nicht. Und doch gibt es Momente,
-      in denen beide dasselbe sagen — gleichzeitig, ohne sich zu berühren.
-      Diese Essays untersuchen solche Momente.
-    </p>
+  <section class="kk-hero">
+    <div class="container">
+      <h1>Kontrakomologie</h1>
+      <p class="subtitle">Grundlagen der kontrapunktischen Realitätswissenschaft</p>
+    </div>
   </section>
 
-  <div class="kontrak-grid">
-    {entries.map(entry => (
-      <a href={`/kontrakomologie/${entry.id.replace('.md', '')}/`} class="kontrak-card">
-        <div class="kontrak-card-meta">
-          {entry.data.kategorie && (
-            <span class="kontrak-card-kategorie">{kategorieLabels[entry.data.kategorie] || entry.data.kategorie}</span>
-          )}
-          {entry.data.richtung && (
-            <span class="kontrak-card-richtung">{richtungLabels[entry.data.richtung] || entry.data.richtung}</span>
-          )}
-          {entry.data.jahr && (
-            <span class="kontrak-card-richtung">{entry.data.jahr}</span>
-          )}
+  <!-- Einführung -->
+  <section class="kk-intro">
+    <div class="container">
+      <div class="kk-lead">
+        <p>Kontrakomologie ist eine Methode des Hörens.</p>
+        <p>Nicht des Analysierens im technischen Sinn, nicht des Messens, nicht des Kategorisierens. Sondern des Hörens auf das, was in einem Musikwerk gleichzeitig wahr ist — und wie diese gleichzeitigen Wahrheiten zueinander stehen, ohne sich aufzuheben.</p>
+      </div>
+
+      <p>Das Wort kommt von <em>Kontrapunkt</em>: der Kunst, mehrere Stimmen gleichzeitig zu führen, jede nach ihrer eigenen inneren Logik, und durch ihr Zusammenspiel etwas zu erzeugen, das keine der Stimmen allein besitzt. In einer Bach-Fuge verlaufen vier Stimmen gleichzeitig. Keine ist Begleitung, keine ist Hauptstimme. Alle sind gleichzeitig wahr. Das Ergebnis ist eine Ordnung, die sich selbst trägt — ohne Dirigenten, ohne Hierarchie, ohne dass eine Stimme der anderen erklärt, was sie zu tun hat.</p>
+
+      <p>Die Kontrakomologie überträgt dieses Prinzip. Nicht von der Partitur auf die Welt — sondern von der satztechnischen Simultanität auf eine Haltung des Wahrnehmens. Der Schritt lautet: Was im Kontrapunkt als gleichzeitige lineare Autonomie zweier Stimmen gilt, wird in der Kontrakomologie zur Frage der gleichzeitigen Geltung zweier Wahrheiten.</p>
+
+      <details class="kk-details">
+        <summary>Was ist kontrapunktische Koexistenz?</summary>
+        <div class="kk-details-content">
+          <p>In der klassischen Logik schließen sich Gegensätze aus. Entweder — oder. Die Kontrakomologie ersetzt das nicht durch Widerspruchstoleranz — als wäre alles möglich und nichts falsch. Sie beobachtet etwas Präziseres: In großen Musikwerken koexistieren mehrere Bedeutungsebenen, ohne sich auf eine reduzieren zu lassen. Das ist keine logische Nachsicht. Das ist Struktur.</p>
+          <p>Bachs <em>Kunst der Fuge</em> bewegt sich vorwärts und rückwärts gleichzeitig. Beethoven schreibt in der Neunten Symphonie eine Frage, die sich erst am Ende des ersten Satzes als Frage erweist — rückwärts gehört. Coltrane spielt auf <em>A Love Supreme</em> ein Bassmotiv, das aufgehört hat, Motiv zu sein, und Atem geworden ist. Bill Evans hält inne zwischen zwei Tönen — und diese Pause ist nicht Schweigen, sondern eine andere Form von Anwesenheit.</p>
+          <p>Jedes dieser Beispiele zeigt dasselbe: Mehrere Zeitebenen, mehrere Bedeutungsschichten, mehrere Wahrheiten wirken gleichzeitig — nicht nacheinander, nicht aufgelöst in eine Synthese, sondern nebeneinander bestehend, jede in ihrer eigenen Logik.</p>
         </div>
-        <h2>{entry.data.title}</h2>
-        {(entry.data.kuenstler || entry.data.werk) && (
-          <span class="werk">
-            {entry.data.kuenstler}{entry.data.kuenstler && entry.data.werk ? ' — ' : ''}{entry.data.werk}
-          </span>
-        )}
-        {entry.data.description && <p>{entry.data.description}</p>}
-      </a>
-    ))}
-  </div>
+      </details>
+
+      <details class="kk-details">
+        <summary>Bidirektionale Zeitarchitektur</summary>
+        <div class="kk-details-content">
+          <p>Ein Stück Musik, das man nur vorwärts hört, hat eine Zeitrichtung. Es beginnt, es entwickelt sich, es endet.</p>
+          <p>Ein Stück, das kontrakomologisch wirkt — bewusst oder unbewusst komponiert — trägt beide Richtungen gleichzeitig. Es enthält seinen Anfang in seinem Ende und sein Ende in seinem Anfang. Man hört es und befindet sich gleichzeitig in der Vergangenheit des Werks und in seiner Gegenwart.</p>
+          <p>Chopins 4. Ballade ist ein Beispiel. Das Stück beginnt mit einer Melodie von fast naiver Schönheit — und endet in einer Katastrophe. Rückwärts gehört: Die Katastrophe war in der Schönheit schon angelegt. Nicht als Vorahnung, die man bewusst wahrnimmt. Als Struktur, die man erst im Nachhinein versteht — und die dann das Stück ein zweites Mal verändert, ohne dass auch nur eine Note geändert wurde.</p>
+        </div>
+      </details>
+
+      <details class="kk-details">
+        <summary>Was die Kontrakomologie nicht ist</summary>
+        <div class="kk-details-content">
+          <p>Sie ist keine Behauptung, dass Komponisten Physikmodelle illustriert haben. Bach hat keine Quantenmechanik komponiert. Beethoven hat keine Bewusstseinstechnologie entwickelt.</p>
+          <p>Sie ist auch keine Methode, die ein Stück erklärt und damit erledigt. Ein Stück, das sich vollständig erklären lässt, hat seine Qualität verloren. Das Ziel der kontrakomologischen Analyse ist nicht, das Stück kleiner zu machen als es ist — sondern hörbar zu machen, was immer schon da war.</p>
+          <p>Und sie ist keine Theorie, die von oben auf Musik angewendet wird. Der Ausgangspunkt ist immer das Stück selbst. Die Theorie folgt dem Hören, nicht umgekehrt.</p>
+        </div>
+      </details>
+
+      <details class="kk-details">
+        <summary>Wie man kontrakomologisch hört</summary>
+        <div class="kk-details-content">
+          <p><strong>Erste Operation: Stimmen isolieren, ohne Hierarchie zu setzen.</strong> Bei Bach ist das physisch hörbar: vier Stimmen, gleichzeitig, gleichberechtigt. Bei Evans ist es subtiler: die Stimme des Klaviers und die Stimme der Stille dazwischen. Wer kontrakomologisch hört, fragt zuerst: Wie viele Stimmen sind hier? Und welche davon habe ich noch nicht gehört?</p>
+          <p><strong>Zweite Operation: Gleichzeitigkeit wahrnehmen, nicht Abfolge.</strong> Die meisten Menschen hören Musik als Erzählung. Kontrakomologisches Hören fragt anders: Was ist in diesem Moment alles gleichzeitig wahr? Was klingt, was schweigt, was hallt nach?</p>
+          <p><strong>Dritte Operation: Zeit rückwirkend neu hören.</strong> Nach dem ersten Durchgang eines Stücks hat man mehr Information als zu Beginn. Die Frage ist: Was hat das Ende dem Anfang hinzugefügt? Und was hat der Anfang dem Ende schon mitgegeben?</p>
+          <p><strong>Vierte Operation: Nicht auf Auflösung reduzieren.</strong> Das ist die schwierigste. Das Gehör sucht nach Schluss, nach Heimkehr. Kontrakomologisches Hören hält die Spannung aus. Wer aushält, nicht zu verstehen, und trotzdem weiter hört, hört kontrakomologisch.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- Die Werke / Komponisten -->
+  <section class="kk-composers">
+    <div class="container">
+      <h2>Die Werke</h2>
+      <p class="kk-composers-intro">Die Kontrakomologie hat sich an einer Reihe von Werken entwickelt — von Barock bis Gegenwart, von Klassik bis Jazz bis Pop.</p>
+      <div class="kk-composers-grid">
+        <div class="kk-composer-card">
+          <span class="kk-composer-label">Struktur</span>
+          <h3>Bach</h3>
+          <p>Kontrapunktische Koexistenz als handwerkliche Tatsache. Mehrere Stimmen, gleichzeitig, gleichberechtigt — das ist nicht Metapher, das ist Partitur.</p>
+        </div>
+        <div class="kk-composer-card">
+          <span class="kk-composer-label">Kosmos</span>
+          <h3>Beethoven</h3>
+          <p>Zeit selbst als kompositorisches Material. Die Mondscheinsonate, die Neunte — Werke, die Zeitebenen tragen, die gleichzeitig wirken.</p>
+        </div>
+        <div class="kk-composer-card">
+          <span class="kk-composer-label">Seele</span>
+          <h3>Chopin</h3>
+          <p>Die persönliche, psychologische Dimension. Zustände, die man durchläuft, ohne zu wissen, wohin man geht.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Essays -->
+  <section class="kk-essays">
+    <div class="container">
+      <h2>Essays</h2>
+      <div class="essays-grid">
+        {essays.map((entry) => (
+          <a href={`/kontrakomologie/${entry.id.replace('.md', '')}/`} class="essay-card">
+            <div class="essay-meta">
+              {entry.data.kategorie && (
+                <span class="essay-kategorie">{kategorieLabels[entry.data.kategorie] || entry.data.kategorie}</span>
+              )}
+              {entry.data.richtung && (
+                <span class="essay-richtung">{richtungLabels[entry.data.richtung] || entry.data.richtung}</span>
+              )}
+              {entry.data.jahr && (
+                <span class="essay-jahr">{entry.data.jahr}</span>
+              )}
+            </div>
+            <h3>{entry.data.title}</h3>
+            {entry.data.subtitle && (
+              <p class="essay-subtitle">{entry.data.subtitle}</p>
+            )}
+            {entry.data.description && (
+              <p class="essay-description">{entry.data.description}</p>
+            )}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Für wen -->
+  <section class="kk-audience">
+    <div class="container">
+      <div class="kk-audience-box">
+        <p>Für alle, die jemals ein Stück gehört haben und nicht sagen konnten, was es ihnen angetan hat — aber wussten, dass es etwas Echtes war.</p>
+        <p>Für Musiker, die wissen, dass Noten nicht das Ganze sind.</p>
+        <p>Für alle, die glauben, dass <em>gleichzeitig wahr</em> besser ist als <em>entweder — oder</em>.</p>
+      </div>
+    </div>
+  </section>
 
 </BaseLayout>
+
+<style>
+  /* Hero */
+  .kk-hero {
+    padding: 4rem 0 2rem;
+    text-align: center;
+  }
+  .kk-hero h1 {
+    font-family: 'Crimson Text', 'Georgia', serif;
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    color: var(--color-gold, #c9a961);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.02em;
+  }
+  .kk-hero .subtitle {
+    font-family: 'Lora', 'Georgia', serif;
+    font-size: 1.1rem;
+    color: var(--color-text-light, #666);
+    font-style: italic;
+  }
+
+  /* Container */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* Intro */
+  .kk-intro {
+    padding: 2rem 0 3rem;
+  }
+  .kk-lead {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(201, 169, 97, 0.2);
+  }
+  .kk-lead p:first-child {
+    font-family: 'Crimson Text', 'Georgia', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-text, #2d2d2d);
+    margin-bottom: 0.75rem;
+  }
+  .kk-lead p:last-child {
+    font-family: 'Lora', 'Georgia', serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--color-text, #2d2d2d);
+  }
+  .kk-intro > .container > p {
+    font-family: 'Lora', 'Georgia', serif;
+    font-size: 1.02rem;
+    line-height: 1.8;
+    color: var(--color-text, #2d2d2d);
+    margin-bottom: 1.5rem;
+  }
+
+  /* Expandable Details */
+  .kk-details {
+    margin-bottom: 0.5rem;
+    border: 1px solid rgba(201, 169, 97, 0.15);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .kk-details summary {
+    padding: 0.8rem 1.2rem;
+    font-family: 'Crimson Text', 'Georgia', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-gold, #c9a961);
+    cursor: pointer;
+    transition: background 0.2s;
+    list-style: none;
+  }
+  .kk-details summary::-webkit-details-marker {
+    display: none;
+  }
+  .kk-details summary::before {
+    content: '▸ ';
+    font-size: 0.9rem;
+  }
+  .kk-details[open] summary::before {
+    content: '▾ ';
+  }
+  .kk-details summary:hover {
+    background: rgba(201, 169, 97, 0.05);
+  }
+  .kk-details-content {
+    padding: 0 1.2rem 1.2rem;
+  }
+  .kk-details-content p {
+    font-family: 'Lora', 'Georgia', serif;
+    font-size: 0.98rem;
+    line-height: 1.8;
+    color: var(--color-text, #2d2d2d);
+    margin-bottom: 0.8rem;
+  }
+  .kk-details-content p:last-child {
+    margin-bottom: 0;
+  }
+  .kk-details-content strong {
+    color: var(--color-gold, #c9a961);
+  }
+
+  /* Composers Section */
+  .kk-composers {
+    padding: 2rem 0 3rem;
+    border-top: 1px solid rgba(201, 169, 97, 0.15);
+  }
+  .kk-composers h2 {
+    font-family: 'Crimson Text', 'Georgia', serif;
+    font-size: 1.6rem;
+    color: var(--color-gold, #c9a961);
+    margin-bottom: 0.5rem;
+  }
+  .kk-composers-intro {
+    font-family: 'Lora', 'Georgia', serif;
+    font-size: 1rem;
+    color: var(--color-text-light, #666);
+    margin-bottom: 1.5rem;
+  }
+  .kk-composers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+  .kk-composer-card {
+    padding: 1.2rem;
+    border: 1px solid rgba(201, 169, 97, 0.15);
+    border-radius: 4px;
+    transition: border-color 0.2s;
+  }
+  .kk-composer-card:hover {
+    border-color: rgba(201, 169, 97, 0.4);
+  }
+  .kk-composer-label {
+    font-family: 'Lora', 'Georgia', serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-petrol, #4A9B9B);
+  }
+  .kk-composer-card h3 {
+    font-family: 'Crimson Text', 'Georgia', serif;
+    font-size: 1.2rem;
+    color: var(--color-text, #2d2d2d);
+    margin: 0.3rem 0 0.5rem;
+  }
+  .kk-composer-card p {
+    font-family: 'Lora', 'Georgia', serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--color-text-light, #666);
+    margin: 0;
+  }
+
+  /* Essays Section */
+  .kk-essays {
+    padding: 2rem 0 3rem;
+    border-top: 1px solid rgba(201, 169, 97, 0.15);
+  }
+  .kk-essays h2 {
+    font-family: 'Crimson Text', 'Georgia', serif;
+    font-size: 1.6rem;
+    color: var(--color-gold, #c9a961);
+    margin-bottom: 1.5rem;
+  }
+  .essays-grid {
+    display: grid;
+    gap: 1.2rem;
+  }
+  .essay-card {
+    display: block;
+    padding: 1.5rem;
+    border: 1px solid rgba(201, 169, 97, 0.15);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .essay-card:hover {
+    border-color: var(--color-gold, #c9a961);
+    transform: translateY(-2px);
+  }
+  .essay-meta {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.7rem;
+  }
+  .essay-kategorie,
+  .essay-richtung,
+  .essay-jahr {
+    font-family: 'Lora', 'Georgia', serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.15rem 0.5rem;
+    border-radius: 2px;
+  }
+  .essay-kategorie {
+    background: rgba(201, 169, 97, 0.1);
+    color: var(--color-gold, #c9a961);
+  }
+  .essay-richtung {
+    background: rgba(74, 155, 155, 0.1);
+    color: var(--color-petrol, #4A9B9B);
+  }
+  .essay-jahr {
+    color: var(--color-text-light, #666);
+  }
+  .essay-card h3 {
+    font-family: 'Crimson Text', 'Georgia', serif;
+    font-size: 1.3rem;
+    color: var(--color-text, #2d2d2d);
+    margin: 0 0 0.3rem;
+  }
+  .essay-subtitle {
+    font-family: 'Lora', 'Georgia', serif;
+    font-size: 0.95rem;
+    color: var(--color-gold, #c9a961);
+    font-style: italic;
+    margin: 0 0 0.5rem;
+  }
+  .essay-description {
+    font-family: 'Lora', 'Georgia', serif;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: var(--color-text-light, #666);
+    margin: 0;
+  }
+
+  /* Audience Section */
+  .kk-audience {
+    padding: 2rem 0 3rem;
+    border-top: 1px solid rgba(201, 169, 97, 0.15);
+  }
+  .kk-audience-box {
+    padding: 1.5rem 2rem;
+    border-left: 3px solid var(--color-gold, #c9a961);
+    background: rgba(201, 169, 97, 0.03);
+  }
+  .kk-audience-box p {
+    font-family: 'Lora', 'Georgia', serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text, #2d2d2d);
+    margin-bottom: 0.5rem;
+  }
+  .kk-audience-box p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .kk-composers-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
