@@ -41,11 +41,11 @@ tags: ["Eigenes Werk", "Kontrakomologie", "Dreisprachigkeit", "Pentatonik", "Zei
 
 <h2>Drei Sprachen als drei Stimmen</h2>
 
-<p>Gealjot Lumina singt in drei Sprachen gleichzeitig: Englisch, Latein, und Baumeister — eine erfundene Ursprache, konstruiert mit eigener Phonetik und innerer Logik. Keine der drei ist Übersetzung einer anderen. Jede trägt ihre eigene Bedeutungsebene, ihre eigene Zeitqualität.</p>
+<p>Gealjot Lumina singt in drei Sprachen gleichzeitig: Englisch, Latein, und Mishkenaz — eine erfundene Ursprache, konstruiert mit eigener Phonetik und innerer Logik. Keine der drei ist Übersetzung einer anderen. Jede trägt ihre eigene Bedeutungsebene, ihre eigene Zeitqualität.</p>
 
 <p>Englisch: die Gegenwart, direkt, verletzlich. Die Stimme, die beschreibt, was ist. <em>The inner light I seek. They try to drain the light from skin.</em> Klar, ohne Metaphernschutz.</p>
 
-<p>Baumeister: die Ursprache, vor der Benennung. <em>Balpuer habethan pakshala</em> — die Flügel tragen, auch wenn die Stunde verraten ist. Pakshala bedeutet Flügel und Kraft zugleich. Die Sprache der Baumeister kennt keine Trennung zwischen dem, was etwas ist, und dem, was es kann. Gealjot ist das innere Licht — aber auch der Zustand vor dem Sprechen, die Qualität des Sehens nach innen, bevor es Worte gibt.</p>
+<p>Mishkenaz: die Ursprache, die Sprache der Baumeister, vor der Benennung. <em>Balpuer habethan pakshala</em> — die Flügel tragen, auch wenn die Stunde verraten ist. Pakshala bedeutet Flügel und Kraft zugleich. Die Sprache der Baumeister kennt keine Trennung zwischen dem, was etwas ist, und dem, was es kann. Gealjot ist das innere Licht — aber auch der Zustand vor dem Sprechen, die Qualität des Sehens nach innen, bevor es Worte gibt.</p>
 
 <p>Latein: die alte Welt-Sprache, die weiß, dass sie alt ist. <em>Hic essemus</em> — hier wären wir, hier sind wir. Bewusst gewählt als Brücke zwischen der Ursprache und dem, was die Zivilisation aus Sprache gemacht hat.</p>
 
