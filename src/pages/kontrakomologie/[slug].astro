@@ -117,6 +117,44 @@ const richtungLabels: Record<string, string> = {
       text-decoration: none;
     }
     .back-nav a:hover { color: #c9a961; }
+    /* Audio Player */
+    .audio-player {
+      margin: 2.5rem 0;
+      padding: 1.5rem;
+      background: linear-gradient(135deg, #faf9f6 0%, #f5f0e8 100%);
+      border: 1px solid rgba(201, 169, 97, 0.3);
+      border-radius: 8px;
+    }
+    .audio-player .audio-label {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #4A9B9B;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+    .audio-player .audio-title {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.15rem;
+      color: #1a1a1a;
+      margin-bottom: 0.8rem;
+    }
+    .audio-player audio {
+      width: 100%;
+      height: 42px;
+      border-radius: 4px;
+    }
+    .audio-player audio::-webkit-media-controls-panel {
+      background: #f5f0e8;
+    }
+    .audio-player .audio-note {
+      font-family: 'Lora', serif;
+      font-size: 0.8rem;
+      font-style: italic;
+      color: #999;
+      margin-top: 0.5rem;
+    }
     @media (max-width: 600px) {
       .essay-page { padding: 4rem 1.2rem; }
     }
