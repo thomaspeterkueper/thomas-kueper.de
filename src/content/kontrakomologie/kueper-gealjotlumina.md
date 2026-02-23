@@ -1,7 +1,7 @@
 ---
 title: "Das Licht, das spricht, bevor es Worte hat"
 subtitle: "Thomas Peter Küper – Gealjot Lumina (2024/25)"
-description: "Gealjot Lumina ist das erste kontrakomologisch komponierte Werk. Drei Sprachen gleichzeitig, eine Pentatonik ohne Leitton, vier Phasen die rückwirkend als eine einzige Bewegung erkennbar werden. Und am Ende: ein Ton, der schwebt, bis er von selbst verschwindet."
+description: "Gealjot Lumina ist das erste kontrakomologisch komponierte Werk. Drei Sprachen gleichzeitig, eine Pentatonik ohne Leitton, vier Phasen die rückwirkend als eine einzige Bewegung erkennbar werden."
 kategorie: "eigenes-werk"
 richtung: "musik-zu-text"
 kuenstler: "Thomas Peter Küper"
@@ -10,6 +10,16 @@ jahr: 2025
 order: 1
 tags: ["Eigenes Werk", "Kontrakomologie", "Dreisprachigkeit", "Pentatonik", "Zeitarchitektur"]
 ---
+
+<div class="audio-player">
+  <p class="audio-label">Anhören</p>
+  <p class="audio-title">Gealjot Lumina</p>
+  <audio controls preload="metadata">
+    <source src="/audio/gealjot.mp3" type="audio/mpeg" />
+    Dein Browser unterstützt kein Audio.
+  </audio>
+  <p class="audio-note">Komponiert nach kontrakomologischen Prinzipien · Umgesetzt mit Gemini</p>
+</div>
 
 <p style="font-style: italic; color: var(--gold);">Der erste Ton darf unhörbar beginnen. Er muss gefunden werden, nicht gesetzt.</p>
 
