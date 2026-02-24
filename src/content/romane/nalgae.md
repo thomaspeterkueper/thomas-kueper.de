@@ -57,9 +57,7 @@ tags: ["Roman", "Zereya Saga", "Baumeister Universe", "Coming of Age"]
   Golden Scars — Moderner koreanischer Folk &amp; Ambient Pop · Komponiert mit Gemini
 </p>
 
-<blockquote>
-  육자배기 펜타토닉 스케일을 기반으로 한 오보에와 해금의 애절한 선율, 첼로의 낮은 드론과 펠트 피아노의 아르페지오 — 킨츠기의 미학을 담은 Hmmaj7 코드가 상처 입은 아름다움을 소리로 구현합니다. 여성 보컬은 속삭이듯 시작하여 내면의 Gealjot을 찾아가는 과정을 그려냅니다.
-</blockquote>
+
 
 <p style="font-style: italic; color: var(--gold); font-size: 0.95rem; line-height: 1.9;">
   길 잃은 Nalgae, 내 조각난 꿈 Maomkoro —<br />
