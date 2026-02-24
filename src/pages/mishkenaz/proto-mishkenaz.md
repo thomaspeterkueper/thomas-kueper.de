@@ -456,7 +456,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     .proto-hero h1 {
       font-family: 'Crimson Text', serif;
-      font-size: clamp(3rem, 8vw, 5.5rem);
+      font-size: clamp(2.5rem, 6vw, 4rem);
       font-weight: 300;
       letter-spacing: 0.15em;
       text-transform: uppercase;
