@@ -1,0 +1,552 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Die Physik der Einsamkeit — Zwölf Archetypen der Existenz" description="Vom Neutrino bis zur lebenden Zelle: Einsamkeit ist keine Störung, sondern die Bedingung des Seins. Eine Ontologie zwischen Quantenphysik und Existenzphilosophie.">
+
+<style>
+  /* ═══ Page Container ═══ */
+  .einsamkeit-page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 2rem 5rem;
+  }
+
+  /* ═══ Hero ═══ */
+  .einsamkeit-hero {
+    text-align: center;
+    padding: 5rem 1rem 3.5rem;
+    position: relative;
+  }
+  .einsamkeit-hero::before {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, var(--color-gold, #C9A961));
+  }
+  .einsamkeit-hero .label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-gold, #C9A961);
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+  .einsamkeit-hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(2.2rem, 5.5vw, 3.2rem);
+    font-weight: normal;
+    font-style: italic;
+    color: var(--color-text, #2D2D2D);
+    margin: 0 0 0.8rem;
+    line-height: 1.2;
+  }
+  .einsamkeit-hero .untertitel {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    color: var(--color-text-light, #666);
+  }
+
+  /* ═══ Prosa ═══ */
+  .einsamkeit-page p {
+    font-family: Georgia, serif;
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: var(--color-text, #2D2D2D);
+    margin-bottom: 1.3rem;
+  }
+  .einsamkeit-page p.lead {
+    font-size: 1.15rem;
+    color: var(--color-text, #2D2D2D);
+    line-height: 1.9;
+  }
+
+  /* ═══ Sections ═══ */
+  .einsamkeit-page h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--color-text, #2D2D2D);
+    margin: 3.5rem 0 1.2rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid rgba(201, 169, 97, 0.25);
+  }
+
+  /* ═══ Epigraph ═══ */
+  .epigraph {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    margin: 2rem 0 3rem;
+  }
+  .epigraph p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: var(--color-text, #2D2D2D);
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .epigraph .rule {
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: var(--color-gold, #C9A961);
+    margin: 1.5rem auto 0;
+  }
+
+  /* ═══ Drei Teile Übersicht ═══ */
+  .teile-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+    background: rgba(201, 169, 97, 0.12);
+    border: 1px solid rgba(201, 169, 97, 0.12);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 2rem 0 2.5rem;
+  }
+  .teil {
+    background: #fff;
+    padding: 1.8rem 2rem;
+  }
+  .teil-header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .teil-num {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-gold, #C9A961);
+    white-space: nowrap;
+  }
+  .teil-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--color-text, #2D2D2D);
+  }
+  .teil p {
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.7;
+  }
+
+  /* ═══ Archetypen-Matrix ═══ */
+  .archetypen-matrix {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1px;
+    background: rgba(201, 169, 97, 0.1);
+    border: 1px solid rgba(201, 169, 97, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 1.5rem 0 2.5rem;
+  }
+  .archetyp {
+    background: #fafaf7;
+    padding: 1.2rem 1rem;
+    text-align: center;
+    transition: background 0.2s;
+  }
+  .archetyp:hover {
+    background: #f5f3ee;
+  }
+  .archetyp-num {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-gold, #C9A961);
+    margin-bottom: 0.3rem;
+  }
+  .archetyp-name {
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--color-text, #2D2D2D);
+    margin-bottom: 0.25rem;
+  }
+  .archetyp-essenz {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    color: var(--color-text-light, #666);
+    line-height: 1.4;
+  }
+
+  /* ═══ Teaser-Archetyp (Leseprobe) ═══ */
+  .leseprobe {
+    margin: 3rem 0;
+    position: relative;
+  }
+  .leseprobe-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-petrol, #4A9B9B);
+    margin-bottom: 1rem;
+    display: block;
+  }
+  .leseprobe-text {
+    padding: 2.5rem 2rem;
+    background: linear-gradient(135deg, rgba(201, 169, 97, 0.04), rgba(74, 155, 155, 0.04));
+    border-left: 3px solid var(--color-gold, #C9A961);
+    border-radius: 0 4px 4px 0;
+  }
+  .leseprobe-text h3 {
+    font-family: Georgia, serif;
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-style: italic;
+    color: var(--color-text, #2D2D2D);
+    margin: 0 0 0.3rem;
+  }
+  .leseprobe-text .archetyp-sub {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color: var(--color-text-light, #666);
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+  .leseprobe-text p {
+    font-size: 1.02rem;
+    line-height: 1.85;
+  }
+  .leseprobe-fade {
+    position: relative;
+    overflow: hidden;
+    max-height: 400px;
+  }
+  .leseprobe-fade::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: linear-gradient(to bottom, transparent, #fafaf8);
+    pointer-events: none;
+  }
+
+  /* ═══ Preis-Zeile ═══ */
+  .preis-formel {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.3rem 1.2rem;
+    margin: 1.5rem 0 2rem;
+    font-family: Georgia, serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .preis-formel .was {
+    color: var(--color-text, #2D2D2D);
+    text-align: right;
+  }
+  .preis-formel .womit {
+    color: var(--color-text-light, #666);
+    font-style: italic;
+  }
+
+  /* ═══ Schluss-Zitat ═══ */
+  .schluss-zitat {
+    text-align: center;
+    padding: 3rem 2rem;
+    margin: 3rem 0 2rem;
+    position: relative;
+  }
+  .schluss-zitat::before,
+  .schluss-zitat::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 1px;
+    background: var(--color-gold, #C9A961);
+  }
+  .schluss-zitat::before { top: 0; }
+  .schluss-zitat::after { bottom: 0; }
+  .schluss-zitat p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 2;
+    color: var(--color-text, #2D2D2D);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* ═══ CTA ═══ */
+  .buch-hinweis {
+    background: linear-gradient(135deg, rgba(74, 155, 155, 0.06), rgba(201, 169, 97, 0.06));
+    border: 1px solid rgba(74, 155, 155, 0.15);
+    border-radius: 4px;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .buch-hinweis p {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+  .buch-hinweis .note {
+    font-size: 0.85rem;
+    color: var(--color-text-light, #666);
+    font-style: italic;
+  }
+
+  /* ═══ Back Link ═══ */
+  .back-link {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    color: var(--color-gold, #C9A961);
+    text-decoration: none;
+    margin-bottom: 2rem;
+    transition: opacity 0.2s;
+  }
+  .back-link:hover { opacity: 0.7; }
+
+  @media (max-width: 600px) {
+    .einsamkeit-hero { padding: 3.5rem 1rem 2.5rem; }
+    .leseprobe-text { padding: 1.8rem 1.2rem; }
+    .preis-formel { grid-template-columns: 1fr; gap: 0.2rem; }
+    .preis-formel .was { text-align: left; }
+  }
+</style>
+
+<div class="einsamkeit-page">
+
+  <a href="/philosophie" class="back-link">← Philosophie</a>
+
+  <div class="einsamkeit-hero">
+    <span class="label">Philosophisches Sachbuch</span>
+    <h1>Die Physik der Einsamkeit</h1>
+    <span class="untertitel">Zwölf Archetypen der Existenz</span>
+  </div>
+
+  <div class="epigraph">
+    <p>
+      Vom kleinsten Neutrino bis zur lebenden Zelle —<br>
+      überall dieselbe Struktur:<br>
+      Einsamkeit ist keine Störung,<br>
+      sondern die Bedingung des Seins.
+    </p>
+    <span class="rule"></span>
+  </div>
+
+  <!-- ═══════════════════════ -->
+  <!-- EINFÜHRUNG              -->
+  <!-- ═══════════════════════ -->
+
+  <p class="lead">
+    Was bedeutet es für ein Neutrino, zu existieren? Für ein Proton? Für eine Zelle? Dieses Buch verfolgt eine einzige These durch alle Ebenen der Materie: Existenz ist Einsamkeit. Doch sie verändert ihre Gestalt auf jeder Stufe. Aus fundamentaler Unmöglichkeit wird Gefangenschaft, aus Gefangenschaft Identität, aus Identität Leben.
+  </p>
+
+  <p>
+    In zwölf Archetypen — vom Neutrino, das vor der Erinnerung an die Ur-Einheit flieht, bis zur Zelle, die ihre Membran gegen die Welt verteidigt — entsteht eine Ontologie, die Quantenphysik und Existenzphilosophie zusammenführt. Jede neue Stufe der Komplexität wird mit einer neuen Form der Isolation erkauft. Der Preis bleibt, nur seine Währung ändert sich.
+  </p>
+
+  <div class="preis-formel">
+    <span class="was">Atome zahlen mit</span>
+    <span class="womit">Abgrenzung</span>
+    <span class="was">Moleküle zahlen mit</span>
+    <span class="womit">Abhängigkeit</span>
+    <span class="was">Leben zahlt mit</span>
+    <span class="womit">Sterblichkeit</span>
+  </div>
+
+  <p>
+    Am Ende steht keine Erlösung, nur die Erkenntnis: Einsamkeit kann produktiv werden, ohne zu verschwinden. Das Universum hat keine Lösung für die Einsamkeit gefunden. Aber es hat gelernt, produktiv mit ihr umzugehen.
+  </p>
+
+  <!-- ═══════════════════════ -->
+  <!-- STRUKTUR                -->
+  <!-- ═══════════════════════ -->
+
+  <h2>Die drei Teile</h2>
+
+  <div class="teile-grid">
+    <div class="teil">
+      <div class="teil-header">
+        <span class="teil-num">Teil I</span>
+        <span class="teil-title">Die Fundamentalen</span>
+      </div>
+      <p>Neutrinos, Photonen, verschränkte Teilchen, Quarks, virtuelle Prozesse, Wellenfunktionen. Einsamkeit ist hier Tragödie: formlose Prozesse, Kollaps statt Verbindung, Flucht statt Gemeinschaft.</p>
+    </div>
+    <div class="teil">
+      <div class="teil-header">
+        <span class="teil-num">Teil II</span>
+        <span class="teil-title">Die Zusammengesetzten</span>
+      </div>
+      <p>Protonen, Neutronen, Elektronen. Transformation beginnt: Unsterblichkeit durch Gefangenschaft, Stabilität durch Bindung, Chemie durch Begrenzung. Einsamkeit erzeugt nun Strukturen.</p>
+    </div>
+    <div class="teil">
+      <div class="teil-header">
+        <span class="teil-num">Teil III</span>
+        <span class="teil-title">Die Emergenten</span>
+      </div>
+      <p>Atome, Moleküle, lebende Zellen. Einsamkeit wird produktiv: Identität durch Abgrenzung, Komplexität durch Abhängigkeit, Vielfalt durch Isolation.</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ -->
+  <!-- 12 ARCHETYPEN           -->
+  <!-- ═══════════════════════ -->
+
+  <h2>Die zwölf Archetypen</h2>
+
+  <div class="archetypen-matrix">
+    <div class="archetyp">
+      <div class="archetyp-num">I</div>
+      <div class="archetyp-name">Die Einsamsten</div>
+      <div class="archetyp-essenz">Neutrinos — Flucht vor Erinnerung</div>
+    </div>
+    <div class="archetyp">
+      <div class="archetyp-num">II</div>
+      <div class="archetyp-name">Die Bindungslosen</div>
+      <div class="archetyp-essenz">Photonen — Sterben im Moment des Empfangs</div>
+    </div>
+    <div class="archetyp">
+      <div class="archetyp-num">III</div>
+      <div class="archetyp-name">Die Verschränkten</div>
+      <div class="archetyp-essenz">Verbindung ohne Berührung</div>
+    </div>
+    <div class="archetyp">
+      <div class="archetyp-num">IV</div>
+      <div class="archetyp-name">Die Untrennbaren</div>
+      <div class="archetyp-essenz">Quarks — Nähe als Gefängnis</div>
+    </div>
+    <div class="archetyp">
+      <div class="archetyp-num">V</div>
+      <div class="archetyp-name">Die Flüchtigen</div>
+      <div class="archetyp-essenz">Virtuelle Teilchen — Gestohlene Zeit</div>
+    </div>
+    <div class="archetyp">
+      <div class="archetyp-num">VI</div>
+      <div class="archetyp-name">Die Kollabierenden</div>
+      <div class="archetyp-essenz">Wellenfunktionen — Erzwungene Wahl</div>
+    </div>
+    <div class="archetyp">
+      <div class="archetyp-num">VII</div>
+      <div class="archetyp-name">Die Fundamente</div>
+      <div class="archetyp-essenz">Protonen — Gefängnis als Ewigkeit</div>
+    </div>
+    <div class="archetyp">
+      <div class="archetyp-num">VIII</div>
+      <div class="archetyp-name">Die Geretteten</div>
+      <div class="archetyp-essenz">Neutronen — Überleben durch Unterwerfung</div>
+    </div>
+    <div class="archetyp">
+      <div class="archetyp-num">IX</div>
+      <div class="archetyp-name">Die Beweglichen</div>
+      <div class="archetyp-essenz">Elektronen — Freiheit innerhalb der Unfreiheit</div>
+    </div>
+    <div class="archetyp">
+      <div class="archetyp-num">X</div>
+      <div class="archetyp-name">Die Ersten</div>
+      <div class="archetyp-essenz">Atome — Identität durch Abgrenzung</div>
+    </div>
+    <div class="archetyp">
+      <div class="archetyp-num">XI</div>
+      <div class="archetyp-name">Die Verbundenen</div>
+      <div class="archetyp-essenz">Moleküle — Bindung als neue Grenze</div>
+    </div>
+    <div class="archetyp">
+      <div class="archetyp-num">XII</div>
+      <div class="archetyp-name">Die Erwachten</div>
+      <div class="archetyp-essenz">Zellen — Die Membran als letzte Grenze</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ -->
+  <!-- LESEPROBE               -->
+  <!-- ═══════════════════════ -->
+
+  <h2>Leseprobe</h2>
+
+  <div class="leseprobe">
+    <span class="leseprobe-label">Archetyp II · Die Fundamentalen</span>
+    <div class="leseprobe-text">
+      <h3>Die Bindungslosen</h3>
+      <span class="archetyp-sub">Geboren, um anzukommen. Gestorben im Moment des Empfangs.</span>
+
+      <div class="leseprobe-fade">
+        <p>
+          Stell dir vor, deine ganze Existenz ist Bewegung. Nicht: Du bewegst dich. Sondern: Du <em>bist</em> die Bewegung. Hältst du an, bist du nicht mehr. Das ist die Natur der Photonen.
+        </p>
+        <p>
+          Ihre Geburt ist ein Ausstoß. Sie entstehen aus Unmöglichkeit: ein Elektron, das zu viel Energie trägt für seine Bahn, das überschüssig wird. Das Photon ist das, was nicht bleiben durfte. Geboren nicht aus Fülle, sondern aus einem Zuviel — der erste Akt einer Existenz im Exil.
+        </p>
+        <p>
+          Sie sind masselos — reine Information, reiner Impuls. Die Botschaft ohne Boten. Sie vermitteln alle Bedeutung, tragen aber keine eigene.
+        </p>
+        <p>
+          Das große Paradoxon: Für sie selbst vergeht keine Zeit. Während zwischen ihrer Geburt im Herz eines Sterns und ihrem Tod auf deiner Netzhaut Äonen vergehen — für das Photon ist diese Reise ein einziger, zusammengefalteter Punkt. Keine Dauer, keine Geschichte. Nur Geographie.
+        </p>
+        <p>
+          Und so erreichen sie ihr Schicksal: die Ankunft. Ein Elektron empfängt sie. In diesem einzigen Moment echter Berührung, für den ihr ganzes Dasein nur die Vorbereitung war, erfüllen sie ihren Zweck.
+        </p>
+        <p>
+          Sie sterben, indem sie sich verschenken.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ -->
+  <!-- OMNIZEDENZ-VERBINDUNG   -->
+  <!-- ═══════════════════════ -->
+
+  <h2>Im Kontext der Omnizedenz</h2>
+
+  <p>
+    Die Physik der Einsamkeit ist angewandte Omnizedenz — gelesen nicht an Mythen oder Musik, sondern an der Materie selbst. Die Grundstruktur ist dieselbe: Aus Avi (Leere, Vakuum) emergiert durch Sa (Bruch, Symmetriebrechung) die erste Differenz. Die Neutrinos tragen das Pauli-Prinzip — die Narbe der Ur-Trennung. Die Quarks leben die untrennbare Bindung, die Mishkenaz als Ma'kora (Verschmelzung ohne Grenze) benennt. Und die Zelle errichtet die Ta-Konstante als Membran: die Grenze, die Identität überhaupt erst möglich macht.
+  </p>
+
+  <p>
+    Der letzte Satz des Buches ist im Grunde die Muschel-Perle-Formel:
+  </p>
+
+  <div class="schluss-zitat">
+    <p>
+      Die Trennung ist die Art und Weise,<br>
+      wie die Einheit sich selbst umarmt.
+    </p>
+  </div>
+
+  <!-- ═══════════════════════ -->
+  <!-- BUCH-HINWEIS            -->
+  <!-- ═══════════════════════ -->
+
+  <div class="buch-hinweis">
+    <p>
+      <strong>Die Physik der Einsamkeit</strong> — Zwölf Archetypen der Existenz<br>
+      Meditationen zwischen Physik und Poesie
+    </p>
+    <p class="note">
+      Thomas Peter Küper · In Vorbereitung
+    </p>
+  </div>
+
+  <p style="text-align: center; margin-top: 2rem;">
+    <a href="/philosophie" class="back-link">← Zurück zur Philosophie</a>
+  </p>
+
+</div>
+
+</BaseLayout>
