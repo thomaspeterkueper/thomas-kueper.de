@@ -36,28 +36,17 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       </p>
     </div>
 
-    <!-- Zwei-Ebenen-Box -->
     <div class="two-level-box">
       <h3>Methodische Anmerkung</h3>
       <div class="level">
-        <strong>Archäologischer Befund:</strong>
-        <p>
-          Die Zeichenfolgen des Schwäbischen Aurignacien gelten als strukturiertes, 
-          nicht-sprachliches Symbolsystem mit wiederkehrenden Mustern und statistischer Ordnung. 
-          Ihre Funktion ist ungeklärt (Kalender, Zählung, Ritualmarker u. a.).
-        </p>
+        <span class="level-label">Archäologischer Befund:</span>
+        <p>Die Zeichenfolgen des Schwäbischen Aurignacien gelten als strukturiertes, nicht-sprachliches Symbolsystem mit wiederkehrenden Mustern und statistischer Ordnung. Ihre Funktion ist ungeklärt (Kalender, Zählung, Ritualmarker u. a.).</p>
       </div>
       <div class="level">
-        <strong>Mishkenaz-Deutung (in-world):</strong>
-        <p>
-          Im Rahmen des Baumeister-Universums sind diese Muster materielle Projektionen 
-          der zehn Proto-Primitive – Operatorsequenzen ohne Phonologie.
-        </p>
+        <span class="level-label">Mishkenaz-Deutung (in-world):</span>
+        <p>Im Rahmen des Baumeister-Universums sind diese Muster materielle Projektionen der zehn Proto-Primitive – Operatorsequenzen ohne Phonologie.</p>
       </div>
-      <p class="note">
-        Diese Seite beschreibt eine fiktionale Lesart realer archäologischer Befunde. 
-        Die Archäologie beschreibt Struktur – Mishkenaz interpretiert Bedeutung.
-      </p>
+      <p class="note">Diese Seite beschreibt eine fiktionale Lesart realer archäologischer Befunde. Die Archäologie beschreibt Struktur – Mishkenaz interpretiert Bedeutung.</p>
     </div>
   </section>
 
@@ -529,12 +518,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       margin-bottom: 2rem;
     }
 
-    .level strong {
+    .level-label {
       font-family: 'Lato', sans-serif;
       font-size: 0.7rem;
       text-transform: uppercase;
       letter-spacing: 2px;
       color: #c9a961;
+      font-weight: 700;
       display: block;
       margin-bottom: 0.8rem;
     }
