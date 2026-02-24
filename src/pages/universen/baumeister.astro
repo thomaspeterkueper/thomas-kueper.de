@@ -1,7 +1,8 @@
 ---
 // Dateipfad: src/pages/universen/baumeister.astro
 // Beschreibung: Die vollständige, ungekürzte 60.000-jährige Chronik.
-// Enthält alle Sektionen: Timeline, Ursprung, Historie, Moderne, Zukunft & Konzepte.
+// Enthält alle Sektionen: Timeline, Ursprung, Historie, Moderne, YinHua-Lied, Zukunft & Konzepte.
+// UPDATE 2026-02-24: YinHua-Kinderlied "Die drei Muscheln am Strand" mit Bedeutungsebenen eingefügt.
 
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
@@ -68,8 +69,112 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     .btn-secondary { border: 1px solid #c9a961; color: #1a1a1a; }
     .btn-secondary:hover { background: #c9a961; color: #fff; }
 
+    /* ── YinHua Lied (NEU 2026-02-24) ── */
+    .yh-section { margin-top: 6rem; max-width: 900px; margin-left: auto; margin-right: auto; }
+    .yh-intro { margin-bottom: 3rem; }
+    .yh-intro h2 { font-family: 'Crimson Text', serif; font-size: 2.5rem; font-weight: 300; margin-bottom: 0.3rem; }
+    .yh-meta { font-family: 'Lato', sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: #4a9b9b; font-weight: 700; margin-bottom: 2rem; display: block; }
+
+    .lied-box {
+      background: #faf9f6;
+      border: 1px solid #eee;
+      margin: 3rem 0;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+    }
+    .lied-kopf {
+      padding: 2rem 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+    }
+    .lied-kopf h3 { font-family: 'Crimson Text', serif; font-size: 1.8rem; font-weight: 400; font-style: italic; margin: 0 0 0.3rem; }
+    .lied-herkunft { font-family: 'Lato', sans-serif; font-size: 0.65rem; letter-spacing: 2px; text-transform: uppercase; color: #999; }
+    .lied-inhalt { padding: 2rem 3rem 3rem; }
+
+    .str { margin-bottom: 2rem; }
+    .str-label {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.6rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #c9a961;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      display: block;
+    }
+    .str p { font-family: 'Lora', serif; font-size: 0.98rem; line-height: 1.9; margin: 0; }
+
+    .ref {
+      margin: 1.5rem 0;
+      padding: 1.2rem 2rem;
+      border-left: 3px solid #c9a961;
+      background: rgba(201, 169, 97, 0.04);
+    }
+    .ref p { font-family: 'Lora', serif; font-style: italic; font-size: 0.95rem; line-height: 1.9; margin: 0; color: #333; }
+
+    .str-schatten {
+      margin: 2.5rem 0;
+      padding: 1.5rem 2rem;
+      border-left: 3px solid #999;
+      background: rgba(0,0,0,0.015);
+    }
+    .str-schatten .str-label { color: #888; }
+    .str-schatten p { color: #555; }
+
+    .ref-schatten {
+      margin: 1rem 0 0;
+      padding: 1rem 1.5rem;
+      border-left: 2px solid #bbb;
+      background: rgba(0,0,0,0.01);
+    }
+    .ref-schatten p { font-family: 'Lora', serif; font-style: italic; font-size: 0.9rem; line-height: 1.9; margin: 0; color: #777; }
+
+    .lied-trenner { width: 30px; height: 1px; background: #ddd; margin: 1.8rem auto; }
+
+    .yh-bedeutung { margin-top: 3rem; }
+    .yh-bedeutung h4 {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #eee;
+    }
+    .muschel-reihe {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: #eee;
+      border: 1px solid #eee;
+      margin-bottom: 2rem;
+    }
+    .muschel-feld { background: #faf9f6; padding: 1.5rem; text-align: center; }
+    .muschel-farbe { font-family: 'Lato', sans-serif; font-size: 0.6rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.3rem; }
+    .mf-rosa { color: #c48b9f; }
+    .mf-weiss { color: #999; }
+    .mf-gold { color: #c9a961; }
+    .muschel-zeit { font-family: 'Crimson Text', serif; font-style: italic; font-size: 1.05rem; margin-bottom: 0.2rem; }
+    .muschel-bed { font-family: 'Lato', sans-serif; font-size: 0.7rem; color: #888; line-height: 1.4; }
+
+    .ebenen-liste { display: grid; grid-template-columns: 1fr; gap: 1px; background: #eee; border: 1px solid #eee; }
+    .eb { background: #fff; padding: 2rem 2.5rem; }
+    .eb-label {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #4a9b9b;
+      margin-bottom: 0.6rem;
+      display: block;
+    }
+    .eb p { font-family: 'Lora', serif; font-size: 0.95rem; line-height: 1.8; margin: 0; }
+
     @media (max-width: 768px) {
       .cards-grid { grid-template-columns: 1fr; }
+      .lied-inhalt { padding: 1.5rem; }
+      .lied-kopf { padding: 1.5rem; }
+      .muschel-reihe { grid-template-columns: 1fr; }
+      .eb { padding: 1.5rem; }
     }
   </style>
 
@@ -212,7 +317,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           </div>
           <div class="card">
             <span class="meta">Klangarchäologie</span>
-            <h3>Yin Hua Chronik</h3>
+            <h3><a href="#yinhua-lied" style="text-decoration: none; color: inherit;">Yin Hua Chronik</a></h3>
             <p>Eine rationale Archäologin untersucht spezifische Frequenzen (110 Hz) an antiken Stätten und schlägt die Brücke zur Mystik.</p>
           </div>
           <div class="card">
@@ -227,6 +332,184 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           </div>
         </div>
       </section>
+
+      <!-- ═══════════════════════════════════════════════════════════ -->
+      <!-- YIN HUA: DAS LIED                                         -->
+      <!-- Eingefügt 2026-02-24                                       -->
+      <!-- ═══════════════════════════════════════════════════════════ -->
+      <section class="yh-section" id="yinhua-lied">
+        
+        <div class="yh-intro">
+          <h2>Yin Hua &amp; Das Lied</h2>
+          <span class="yh-meta">40.000 Jahre Vergangenheit · 21. Jahrhundert</span>
+          
+          <p>
+            Eine chinesische Pianistin im 21. Jahrhundert spürt Erinnerungen, die nicht ihre eigenen sind. Ihr Leben verwebt sich mit Ereignissen, die 40.000 Jahre zurückliegen. Sie muss herausfinden, ob das Wahnsinn ist — oder eine Form von Wahrheit, die wir noch nicht verstehen.
+          </p>
+          <p>
+            In Yin Huas Familie wird seit Generationen ein Lied gesungen, dessen Ursprünge niemand mehr kennt. Drei Muscheln, drei Farben, drei Zeitebenen. Für Kinder ist es ein Strand-Abenteuer. Für Erwachsene eine Meditation über Erinnerung und Verlust. Für Yin Hua selbst wird es zum Schlüssel.
+          </p>
+        </div>
+
+        <!-- Das Lied -->
+        <div class="lied-box">
+          <div class="lied-kopf">
+            <h3>Die drei Muscheln am Strand</h3>
+            <span class="lied-herkunft">Traditionell überliefert · Ursprung unbekannt</span>
+          </div>
+
+          <div class="lied-inhalt">
+
+            <div class="str">
+              <span class="str-label">Strophe 1</span>
+              <p>
+                Drei Muscheln liegen am Strand so weit,<br>
+                Die erste erzählt von alter Zeit,<br>
+                Die zweite singt vom tiefen Meer,<br>
+                Die dritte ruft: „Komm näher her!"
+              </p>
+            </div>
+
+            <div class="ref">
+              <p>
+                Muschel, Muschel, sing mir dein Lied,<br>
+                Von Wellen, die keiner vergisst,<br>
+                Muschel, Muschel, zeig mir den Weg,<br>
+                Wo Himmel und Wasser sich küsst.
+              </p>
+            </div>
+
+            <div class="lied-trenner"></div>
+
+            <div class="str">
+              <span class="str-label">Strophe 2</span>
+              <p>
+                Die erste Muschel, rosa und rund,<br>
+                Macht leise einen summenden Laut,<br>
+                Sie trägt die Stimmen aus weiter Fern,<br>
+                Von Großmutter, Mutter, vertraut.
+              </p>
+            </div>
+
+            <div class="lied-trenner"></div>
+
+            <div class="str">
+              <span class="str-label">Strophe 3</span>
+              <p>
+                Die zweite Muschel, perlweiß und glatt,<br>
+                Bewahrt, was das Meer ihr gesagt,<br>
+                Sie flüstert von Schiffen aus aller Welt,<br>
+                Die Geschichten über die Wogen gerollt.
+              </p>
+            </div>
+
+            <div class="lied-trenner"></div>
+
+            <div class="str">
+              <span class="str-label">Strophe 4</span>
+              <p>
+                Die dritte Muschel, golden wie Licht,<br>
+                Hört zu, aber sie spricht noch nicht,<br>
+                Sie wartet, bis du bereit bist zu hören,<br>
+                Was Wellen und Wind dir gehören.
+              </p>
+            </div>
+
+            <div class="ref">
+              <p>
+                Muschel, Muschel, sing mir dein Lied,<br>
+                Von Wellen, die keiner vergisst,<br>
+                Muschel, Muschel, zeig mir den Weg,<br>
+                Wo Himmel und Wasser sich küsst.
+              </p>
+            </div>
+
+            <div class="lied-trenner"></div>
+
+            <!-- Schatten-Strophe -->
+            <div class="str-schatten">
+              <span class="str-label">Strophe 4½ · Die Schatten-Strophe</span>
+              <p>
+                Doch manchmal find ich eine Muschel so leer,<br>
+                Sie singt nicht mehr, schweigt wie das Meer,<br>
+                Sie trägt die Stille von denen, die gingen,<br>
+                Und lehrt mich: auch Abschied kann singen.
+              </p>
+              <div class="ref-schatten">
+                <p>
+                  Muschel, Muschel, still ist dein Lied,<br>
+                  Von Wellen, die niemand mehr hört,<br>
+                  Muschel, Muschel, zeigst mir den Weg,<br>
+                  Wie Liebe durch Leere sich kehrt.
+                </p>
+              </div>
+            </div>
+
+            <div class="lied-trenner"></div>
+
+            <!-- Finale -->
+            <div class="str">
+              <span class="str-label">Strophe 5 · Finale</span>
+              <p>
+                Drei Muscheln nehm ich mit nach Haus,<br>
+                Eine für Erinnerung, eine für Träume aus,<br>
+                Die dritte leg ich ans Ohr ganz sacht —<br>
+                Und höre das Meer, das in mir erwacht.
+              </p>
+            </div>
+
+            <div class="ref">
+              <p>
+                Muschel, Muschel, <em>ich</em> sing dein Lied,<br>
+                Von Wellen, die keiner vergisst,<br>
+                Muschel, Muschel, <em>ich kenn</em> den Weg,<br>
+                Wo Himmel und Wasser sich küsst.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Bedeutungsebenen -->
+        <div class="yh-bedeutung">
+          <h4>Drei Lesarten, eine Wahrheit</h4>
+
+          <div class="muschel-reihe">
+            <div class="muschel-feld">
+              <div class="muschel-farbe mf-rosa">Rosa</div>
+              <div class="muschel-zeit">Vergangenheit</div>
+              <div class="muschel-bed">Ahnenstimmen, kulturelle Überlieferung</div>
+            </div>
+            <div class="muschel-feld">
+              <div class="muschel-farbe mf-weiss">Perlweiß</div>
+              <div class="muschel-zeit">Gegenwart</div>
+              <div class="muschel-bed">Weltverbindung, Kulturaustausch</div>
+            </div>
+            <div class="muschel-feld">
+              <div class="muschel-farbe mf-gold">Golden</div>
+              <div class="muschel-zeit">Zukunft</div>
+              <div class="muschel-bed">Bereitschaft, spirituelle Entwicklung</div>
+            </div>
+          </div>
+
+          <div class="ebenen-liste">
+            <div class="eb">
+              <span class="eb-label">Für Kinder</span>
+              <p>Ein Strand-Abenteuer: Muscheln sammeln, ans Ohr halten, das Meer hören. Drei Farben zum Merken, eine Melodie zum Mitsummen, eine Geschichte, in der das Meer ein Freund ist — und manchmal still.</p>
+            </div>
+            <div class="eb">
+              <span class="eb-label">Für Erwachsene</span>
+              <p>Eine Meditation über drei Zeitebenen: Erinnerung (die rosa Muschel trägt Großmutters Stimme), Verbindung (die weiße bewahrt, was das Meer sagt), Bereitschaft (die goldene wartet). Die Schatten-Strophe benennt, was fehlt — und verwandelt Verlust in Klang.</p>
+            </div>
+            <div class="eb">
+              <span class="eb-label">Im Yin-Hua-Universum</span>
+              <p>Ein Frequenz-Anker. Die 528-Hz-Grundresonanz verbindet Welten. „Wo Himmel und Wasser sich küsst" markiert den Übergang zwischen Realitäten. Die drei Muscheln sind drei Generationen — Großmutter, Mutter, Yin Hua. Die leere Muschel ist die Erinnerung an eine Zeit, die 40.000 Jahre zurückliegt.</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <!-- ═══ ENDE YINHUA LIED ═══ -->
 
       <!-- Galaktische Zukunft -->
       <section style="margin-top: 8rem; max-width: 900px; margin-left: auto; margin-right: auto;">
