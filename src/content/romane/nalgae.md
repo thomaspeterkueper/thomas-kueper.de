@@ -46,6 +46,14 @@ tags: ["Roman", "Zereya Saga", "Baumeister Universe", "Coming of Age"]
   날개 — Flügel.
 </blockquote>
 
+<h2>Nalgae – Musik zum Roman</h2>
+
+<audio controls style="width: 100%; margin: 1rem 0;">
+  <source src="/audio/golden-scars-anfang.mp3" type="audio/mpeg">
+</audio>
+
+<hr />
+
 <h2>Leseprobe: Kapitel 05 — Zu viel Himmel</h2>
 
 <p>Der Flughafen riecht nach Plastik und kalter Luft.</p>
