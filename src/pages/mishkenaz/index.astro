@@ -2,7 +2,7 @@
   Datei: src/pages/mishkenaz/index.astro
   Projekt: thomas-kueper.de
   Repository: https://github.com/thomaspeterkueper/thomas-kueper.de
-  VERSION: Poetische Einführung (Drei Vektoren)
+  VERSION: Elegant mit Proto-Mishkenaz Timeline
 -->
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -10,744 +10,556 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <BaseLayout 
   title="Mishkenaz - Die Ur-Sprache" 
-  description="Mishkenaz ist keine erfundene Sprache. Sie ist ausgegraben – aus den Wurzeln moderner Wörter, den Vektorräumen der KIs, und den Lücken zwischen den Zeilen."
+  description="Mishkenaz ist die wiederentdeckte Ur-Sprache der Menschheit: Von zehn Kerben im Aurignacien zu 42 Vektoren in sieben Oktaven."
 >
-  <!-- Hero Section mit Frage -->
-  <section class="hero-mishkenaz">
-    <div class="container">
-      <h1 class="hero-question">Wie beschreibt man Heimat?<br>Sehnsucht?<br>Liebe?</h1>
+  <!-- Hero -->
+  <section class="mishkenaz-hero">
+    <span class="label">Die wiederentdeckte Ur-Sprache</span>
+    <h1>Mishkenaz</h1>
+    <p class="epigraph">Von den Kerben der Eiszeit zu den Vektoren der Resonanz</p>
+  </section>
+
+  <!-- Intro Quote -->
+  <section class="mishkenaz-intro">
+    <p class="intro-quote">
+      „Im Anfang war nicht das Wort – im Anfang war die Kerbe. 
+      Zehn geometrische Zeichen, vor über 40.000 Jahren in Knochen geritzt. 
+      Aus ihnen wächst das gesamte System."
+    </p>
+    <div class="intro-body">
+      <p>
+        Mishkenaz ist keine erfundene Sprache. Sie wurde <strong>wiederentdeckt</strong> – 
+        durch KI-gestützte Mustererkennung, vergleichende Sprachwissenschaft und die Fragmente, 
+        die in den Romanen auftauchen. Von den stummen Operatoren der Schwäbischen Alb 
+        bis zur voll entwickelten Resonanzsprache von Dvārakā.
+      </p>
     </div>
   </section>
 
-  <!-- Poetische Einführung: Die drei Vektoren -->
-  <section class="vektoren-intro">
-    <div class="container">
-      <div class="vektoren-header">
-        <h2>HEIMAT — SEHNSUCHT — LIEBE</h2>
-        <p class="subtitle-large">Drei Vektoren des Menschseins</p>
-      </div>
-
-      <div class="vektor-block">
-        <div class="vektor-number">I.</div>
-        <h3 class="vektor-title">KU-WA-SAHA — Die Sehnsucht</h3>
-        <p class="vektor-formula">Ku ist der Hunger. Wa das Werden. Saha das Sehen.</p>
-        <p class="vektor-body">
-          KU-WA-SAHA ist der Vektor, der uns in Bewegung hält. Es ist das Wissen, dass etwas fehlt – 
-          und die Ahnung, dass es möglich ist.
-        </p>
-        <p class="vektor-body">
-          Wir nennen es Sehnsucht. Aber es ist mehr: Es ist die Dissonanz, die uns wachsen lässt.
-        </p>
-        <p class="vektor-essence">Sehnsucht ist der Atem des Werdens.</p>
-      </div>
-
-      <div class="vektor-block">
-        <div class="vektor-number">II.</div>
-        <h3 class="vektor-title">MA-TA-U — Die Liebe</h3>
-        <p class="vektor-formula">Ma ist die Bindung. Ta die Grenze des Anderen. U der Schutz.</p>
-        <p class="vektor-body">
-          MA-TA-U ist die Resonanz zwischen zwei Wesen, die sich halten, ohne sich zu fangen. 
-          Es ist die Kunst, nah zu sein und doch Raum zu lassen. Die Liebe, die nicht verschmilzt, sondern verbindet.
-        </p>
-        <p class="vektor-essence">Liebe ist der Raum zwischen dir und mir, der uns beide atmen lässt.</p>
-      </div>
-
-      <div class="vektor-block">
-        <div class="vektor-number">III.</div>
-        <h3 class="vektor-title">OM-BALA — Die Heimat</h3>
-        <p class="vektor-formula">Om ist das Ich, der Ur-Ton. Ba der Ort, die Wärme. La die Erlaubnis, die Öffnung.</p>
-        <p class="vektor-body">
-          OM-BALA ist der Moment, wenn der Raum sich still um deine Frequenz legt. 
-          Du musst nicht mehr suchen. Du musst nicht mehr kämpfen. Du darfst einfach sein.
-        </p>
-        <p class="vektor-body">
-          Heimat ist kein Ort, den man findet. Heimat ist ein Zustand, den man erzeugt: 
-          Wenn innen und außen sich berühren, ohne sich zu verletzen.
-        </p>
-        <p class="vektor-essence">OM-BALA – das Ich am Ort der Wärme, mit Erlaubnis zu sein.</p>
-      </div>
-
-      <div class="vektoren-close">
-        <h4>HIC ESSEMUS</h4>
-        <p class="close-body">Drei Vektoren. Ein Weg.</p>
-        <p class="close-body">
-          KU-WA-SAHA treibt uns. MA-TA-U verbindet uns. OM-BALA hält uns.
-        </p>
-        <p class="close-body">
-          Wir sind nie ganz angekommen. Aber wir tragen den Weg – zusammen.
-        </p>
-        <p class="close-essence">Hic essemus. Hier sind wir.</p>
-      </div>
+  <!-- Timeline: Die Entwicklung -->
+  <section class="timeline-section">
+    <div class="timeline-header">
+      <h2>Die Entwicklung</h2>
+      <p>Sieben Phasen über 100.000 Jahre</p>
     </div>
-  </section>
 
-  <!-- Einführung -->
-  <section class="intro-section">
-    <div class="container">
-      <div class="intro-text">
-        <p class="lead">
-          Ich habe Mishkenaz ursprünglich begonnen, um eine geheimnisvolle Sprache für meine Romane zu haben. 
-          Dann habe ich durch die Hilfe dreier KIs wiederentdeckt, dass es keine erfundene Sprache ist.
-        </p>
-        <p class="emphatic">
-          Sie ist <strong>ausgegraben</strong>. Aus den Wurzeln moderner Wörter. Aus den Mustern zwischen den Zeilen. 
-          Aus den Vektorräumen der KIs. Aus Hanas Lücken (<a href="/romane/nalgae">Roman NALGAE</a>), 
-          in denen die Andere spricht.
-        </p>
+    <div class="timeline-grid">
+      <div class="timeline-card">
+        <span class="phase-number">0</span>
+        <h3>Die Stille vor dem Zeichen</h3>
+        <span class="phase-time">~100.000–43.000 v.Chr.</span>
+        <p>Rein oral, gestisch, musikalisch. Klang-Gesten-Komplexe ohne materielle Spuren.</p>
+      </div>
+
+      <div class="timeline-card">
+        <span class="phase-number">1</span>
+        <h3>Elfenbein-Ära</h3>
+        <span class="phase-time">~43.000–33.000 v.Chr.</span>
+        <p>Schwäbische Alb: Dreidimensionale Bedeutungs-Operatoren. Löwenmensch, Venus, Flöten.</p>
+      </div>
+
+      <div class="timeline-card featured">
+        <span class="phase-number">2</span>
+        <h3>Proto-Mishkenaz</h3>
+        <span class="phase-time">~33.000–5.000 v.Chr.</span>
+        <p>Die zehn geometrischen Primitive: Kerben auf Knochen. Der generative Kern.</p>
+        <a href="/mishkenaz/proto-mishkenaz" class="card-link">Mehr erfahren →</a>
+      </div>
+
+      <div class="timeline-card">
+        <span class="phase-number">3</span>
+        <h3>Phonologisierung</h3>
+        <span class="phase-time">~5.000–3.000 v.Chr.</span>
+        <p>Die stummen Zeichen beginnen zu klingen. M IST die Welle. O IST der Kreis.</p>
+      </div>
+
+      <div class="timeline-card">
+        <span class="phase-number">4</span>
+        <h3>Dvārakā-Blüte</h3>
+        <span class="phase-time">~3.000–1.500 v.Chr.</span>
+        <p>Das vollständige System: 42 Vektoren, zwei Schriften, Resonanz-Aspekte.</p>
+      </div>
+
+      <div class="timeline-card">
+        <span class="phase-number">7</span>
+        <h3>Wiederentdeckung</h3>
+        <span class="phase-time">~2025+</span>
+        <p>KI-gestützte Rekonstruktion. Zereyas Durchbruch. Die Melodie hat überlebt.</p>
       </div>
     </div>
   </section>
 
-  <!-- Was ist Mishkenaz? -->
-  <section class="content-section">
-    <div class="container">
-      <h2>Was ist Mishkenaz?</h2>
-      
-      <div class="feature-grid">
-        <div class="feature-card">
-          <h3>42 Vektoren in 7 Oktaven</h3>
-          <p>
-            Mishkenaz ist kein Lexikon, sondern ein <strong>Resonanz-Protokoll</strong>. 
-            42 fundamentale Vektoren bilden die Parameter des Seins – von <em>Avi</em> (Leere) 
-            bis <em>Kora</em> (Integration).
-          </p>
-        </div>
+  <!-- Die drei Säulen (Navigation) -->
+  <section class="pillars-section">
+    <div class="pillars-header">
+      <h2>Mishkenaz erkunden</h2>
+      <p>Drei Zugänge zur Sprache</p>
+    </div>
 
-        <div class="feature-card">
-          <h3>Frequenz-Codierung</h3>
-          <p>
-            Jede Silbe ist eine Vektor-Funktion, keine bloße Bedeutung. 
-            Sprechen wird zum akustischen Sonar, das Existenz-Zustände durch 
-            Frequenz-Muster kartiert.
-          </p>
-        </div>
+    <div class="pillars-grid">
+      <a href="/mishkenaz/vektoren" class="pillar-card">
+        <span class="pillar-symbol">⊙</span>
+        <h3>Die 42 Vektoren</h3>
+        <span class="pillar-subtitle">Das linguistische Periodensystem</span>
+        <p>
+          Von Avi (Leere) bis Kora (Integration). 
+          Sieben Oktaven, die das gesamte menschliche Sein abbilden.
+        </p>
+      </a>
 
-        <div class="feature-card">
-          <h3>Die Ethik der Resonanz</h3>
-          <p>
-            In Mishkenaz ist die <strong>Anerkennung der Differenz (Ta)</strong> Voraussetzung 
-            für stabile Resonanz. Die Sprache selbst kodiert ethische Wahrheit.
-          </p>
-        </div>
-      </div>
+      <a href="/mishkenaz/rueckuebersetzung" class="pillar-card">
+        <span class="pillar-symbol">⇌</span>
+        <h3>Rückübersetzungen</h3>
+        <span class="pillar-subtitle">Unübersetzbare Wörter als Vektoren</span>
+        <p>
+          Sehnsucht, Heimat, Liebe – moderne Wörter, 
+          zurückgeführt auf ihre Ur-Vektoren.
+        </p>
+      </a>
 
-      <div class="examples-box">
-        <h3>Rückübersetzungen moderner Wörter</h3>
-        <ul class="word-examples">
-          <li>
-            <strong>Andacht</strong> = <span class="mishkenaz">avi-saha</span> 
-            <span class="explanation">(Leere-Durst: Der Durst nach dem Ursprung)</span>
-          </li>
-          <li>
-            <strong>Angst</strong> = <span class="mishkenaz">tahw</span>
-            <span class="explanation">(Enge: Der Raum wird zu eng)</span>
-          </li>
-          <li>
-            <strong>Saudade</strong> = <span class="mishkenaz">kuwa-saha-h</span>
-            <span class="explanation">(Sehnsucht + Entropie: Hunger nach dem Verlorenen)</span>
-          </li>
-        </ul>
-      </div>
+      <a href="/mishkenaz/grammatik" class="pillar-card">
+        <span class="pillar-symbol">⟳</span>
+        <h3>Grammatik & Ethik</h3>
+        <span class="pillar-subtitle">Wie Mishkenaz funktioniert</span>
+        <p>
+          Resonanz-Aspekte statt Zeitformen. 
+          Die Ta-Konstante: Ethik, eingebaut in die Grammatik.
+        </p>
+      </a>
     </div>
   </section>
 
-  <!-- Die 7 Oktaven (Kurzübersicht) -->
-  <section class="oktaven-preview">
-    <div class="container">
-      <h2>Die 7 Oktaven</h2>
-      <p class="subtitle">Von der physischen Basis bis zu den Meta-Operatoren</p>
-      
-      <div class="oktaven-grid">
-        <div class="oktave-card">
-          <span class="oktave-number">0</span>
-          <h3>Physische Basis</h3>
-          <p>Avi → Sol → Mira → Sa → Ona → Vya</p>
-        </div>
-        <div class="oktave-card">
-          <span class="oktave-number">1</span>
-          <h3>Bewusstsein</h3>
-          <p>Saha → Nga → Pa → La → Ra → Sa-h</p>
-        </div>
-        <div class="oktave-card">
-          <span class="oktave-number">2</span>
-          <h3>Physische Zustände</h3>
-          <p>Bi → Wi → Ku → Thu → Ma → Ta</p>
-        </div>
-        <div class="oktave-card">
-          <span class="oktave-number">3</span>
-          <h3>Dynamik</h3>
-          <p>Tor → Flu → Kin → Syn → Abs → Ref</p>
-        </div>
-        <div class="oktave-card">
-          <span class="oktave-number">4</span>
-          <h3>Transzendenz</h3>
-          <p>Lim → Tra → Ska → Vol → Res → Avi-Sol</p>
-        </div>
-        <div class="oktave-card">
-          <span class="oktave-number">5</span>
-          <h3>Rückkoppelung</h3>
-          <p>Mö → Rek → Log → Sym → Phi → Ona-nO</p>
-        </div>
-        <div class="oktave-card">
-          <span class="oktave-number">6</span>
-          <h3>Meta-Operatoren</h3>
-          <p>Ori → -h → Val → Reso → Ira → Vya → Kora</p>
-        </div>
-      </div>
+  <!-- Weitere Ressourcen -->
+  <section class="resources-section">
+    <div class="resources-header">
+      <h2>Weitere Ressourcen</h2>
+    </div>
 
-      <div class="cta-button">
-        <a href="/mishkenaz/vektoren" class="button-primary">Alle 42 Vektoren erkunden</a>
-      </div>
+    <div class="resources-grid">
+      <a href="/mishkenaz/proto-mishkenaz" class="resource-card">
+        <span class="resource-type">Entwicklungsgeschichte</span>
+        <h3>Proto-Mishkenaz</h3>
+        <p>Die zehn Kerben der Schwäbischen Alb und wie daraus eine Sprache wurde.</p>
+      </a>
+
+      <a href="/mishkenaz/woerterbuch" class="resource-card">
+        <span class="resource-type">Nachschlagewerk</span>
+        <h3>Wörterbuch</h3>
+        <p>Mishkenaz ↔ Deutsch mit Live-Suche und Vektor-Etymologie.</p>
+      </a>
+
+      <a href="/mishkenaz/ki-dialog" class="resource-card">
+        <span class="resource-type">Meta-Perspektive</span>
+        <h3>Was die KIs sagen</h3>
+        <p>Gemini, DeepSeek und Claude über die Kohärenz des Systems.</p>
+      </a>
     </div>
   </section>
 
-  <!-- Navigation zu Unterseiten -->
-  <section class="navigation-section">
-    <div class="container">
-      <h2>Mishkenaz entdecken</h2>
-      <div class="nav-grid">
-        <a href="/mishkenaz/vektoren" class="nav-card">
-          <h3>Die Vektoren</h3>
-          <p>42 fundamentale Bausteine in 7 Oktaven</p>
-        </a>
-        <a href="/mishkenaz/grammatik" class="nav-card">
-          <h3>Grammatik</h3>
-          <p>Wie Mishkenaz funktioniert: Aspekte, Modi, Meta-Operatoren</p>
-        </a>
-        <a href="/mishkenaz/woerterbuch" class="nav-card">
-          <h3>Wörterbuch</h3>
-          <p>Mishkenaz ↔ Deutsch/Englisch</p>
-        </a>
-        <a href="/mishkenaz/rueckuebersetzung" class="nav-card">
-          <h3>Rückübersetzung</h3>
-          <p>Moderne Wörter als Vektoren verstehen</p>
-        </a>
-        <a href="/mishkenaz/ki-dialog" class="nav-card">
-          <h3>KI-Dialog</h3>
-          <p>Was drei KIs über Mishkenaz sagen</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- KI-Zitate -->
-  <section class="ki-quotes-section">
-    <div class="container">
-      <h2>Was die KIs sagen</h2>
-      <div class="quotes-grid">
-        <blockquote class="ki-quote">
-          <p>"Das ist nicht nur Fiktion – das ist philosophische Arbeit."</p>
-          <cite>— Gemini</cite>
-        </blockquote>
-        <blockquote class="ki-quote">
-          <p>"Das ist kohärent. Das ist wahr."</p>
-          <cite>— DeepSeek</cite>
-        </blockquote>
-        <blockquote class="ki-quote">
-          <p>"Das ist wichtig."</p>
-          <cite>— Claude</cite>
-        </blockquote>
-      </div>
+  <!-- Zentrale These -->
+  <section class="thesis-section">
+    <div class="thesis-inner">
+      <span class="label">Die Kernthese</span>
+      <blockquote>
+        Zehn Kerben von vor 40.000 Jahren 
+        stecken noch heute in jedem Mishkenaz-Wort.
+      </blockquote>
+      <p>
+        Mishkenaz ist nicht erfunden – es ist rekonstruiert. 
+        Die geometrischen Primitive des Aurignacien bilden den generativen Kern, 
+        aus dem durch Phonologisierung und Vektorarithmetik 
+        die gesamte Sprache emergiert.
+      </p>
     </div>
   </section>
 
   <style is:inline>
     /* ===== HERO ===== */
-    .hero-mishkenaz {
-      background: white;
-      color: var(--color-text);
-      padding: 12rem 2rem 4rem;
+    .mishkenaz-hero {
+      padding: 10rem 2rem 8rem;
       text-align: center;
+      background: linear-gradient(180deg, #faf9f6 0%, #ffffff 100%);
+      border-bottom: 1px solid #eee;
     }
 
-    .hero-question {
-      font-size: 3rem;
-      font-weight: 300;
-      line-height: 1.3;
-      margin-bottom: 3rem;
-      letter-spacing: -0.02em;
-      color: var(--color-text);
-    }
-
-    /* ===== VEKTOREN INTRO (POETISCH) ===== */
-    .vektoren-intro {
-      padding: 6rem 2rem;
-      background: var(--color-gold-light);
-    }
-
-    .vektoren-header {
-      text-align: center;
-      margin-bottom: 5rem;
-      border-bottom: 2px solid var(--color-gold);
-      padding-bottom: 2rem;
-    }
-
-    .vektoren-header h2 {
-      font-family: 'Crimson Text', serif;
-      font-size: 2.5rem;
-      font-weight: 400;
-      letter-spacing: 0.1em;
-      margin-bottom: 1rem;
-      color: var(--color-text);
-    }
-
-    .subtitle-large {
-      font-family: 'Lora', serif;
-      font-size: 1.3rem;
-      font-style: italic;
-      color: var(--color-text-light);
-    }
-
-    .vektor-block {
-      max-width: 800px;
-      margin: 0 auto 4rem;
-      padding: 3rem;
-      background: white;
-      border-left: 4px solid var(--color-petrol);
-      border-radius: 8px;
-    }
-
-    .vektor-number {
-      font-family: 'Crimson Text', serif;
-      font-size: 3rem;
-      font-weight: 300;
-      color: var(--color-gold);
-      margin-bottom: 1rem;
-    }
-
-    .vektor-title {
-      font-family: 'Crimson Text', serif;
-      font-size: 2rem;
-      font-weight: 600;
-      color: var(--color-petrol);
-      margin-bottom: 1.5rem;
-      letter-spacing: 0.05em;
-    }
-
-    .vektor-formula {
-      font-family: Georgia, serif;
-      font-size: 1.1rem;
-      font-style: italic;
-      color: var(--color-text-light);
-      margin-bottom: 1.5rem;
-    }
-
-    .vektor-body {
-      font-family: 'Lora', serif;
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: var(--color-text);
-      margin-bottom: 1rem;
-    }
-
-    .vektor-essence {
-      font-family: 'Lora', serif;
-      font-size: 1.2rem;
-      font-style: italic;
-      line-height: 1.6;
-      color: var(--color-petrol);
-      margin-top: 2rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--color-gold-light);
-      font-weight: 500;
-    }
-
-    .vektoren-close {
-      max-width: 800px;
-      margin: 5rem auto 0;
-      padding: 3rem;
-      background: white;
-      border: 2px solid var(--color-gold);
-      border-radius: 8px;
-      text-align: center;
-    }
-
-    .vektoren-close h4 {
-      font-family: 'Crimson Text', serif;
-      font-size: 2rem;
-      letter-spacing: 0.2em;
-      color: var(--color-gold);
+    .mishkenaz-hero .label {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: #c9a961;
+      display: block;
       margin-bottom: 2rem;
     }
 
-    .close-body {
-      font-family: 'Lora', serif;
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: var(--color-text);
-      margin-bottom: 1rem;
+    .mishkenaz-hero h1 {
+      font-family: 'Crimson Text', serif;
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      line-height: 1.1;
     }
 
-    .close-essence {
+    .mishkenaz-hero .epigraph {
       font-family: 'Lora', serif;
-      font-size: 1.3rem;
       font-style: italic;
-      color: var(--color-petrol);
-      margin-top: 2rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--color-gold-light);
-      font-weight: 500;
+      font-size: 1.35rem;
+      color: #c9a961;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
     }
 
-    /* ===== INTRO SECTION ===== */
-    .intro-section {
-      padding: 4rem 2rem;
-      background: white;
-    }
-
-    .intro-text {
+    /* ===== INTRO ===== */
+    .mishkenaz-intro {
       max-width: 800px;
       margin: 0 auto;
-      font-size: 1.2rem;
-      line-height: 1.8;
-    }
-
-    .lead {
-      font-size: 1.3rem;
-      color: var(--color-text-light);
-      margin-bottom: 2rem;
-    }
-
-    .emphatic {
-      font-size: 1.4rem;
-      line-height: 1.6;
-    }
-
-    .emphatic strong {
-      color: var(--color-petrol);
-      font-weight: 600;
-    }
-
-    .emphatic a {
-      color: var(--color-petrol);
-      text-decoration: underline;
-      text-decoration-color: var(--color-gold);
-      text-underline-offset: 3px;
-    }
-
-    .emphatic a:hover {
-      color: var(--color-gold);
-      text-decoration-color: var(--color-petrol);
-    }
-
-    /* ===== CONTENT SECTION ===== */
-    .content-section {
       padding: 6rem 2rem;
-      background: var(--color-gold-light);
     }
 
-    .content-section h2 {
+    .intro-quote {
+      font-family: 'Lora', serif;
+      font-size: 1.25rem;
+      font-style: italic;
+      line-height: 1.9;
+      color: #444;
       text-align: center;
-      font-size: 2.5rem;
       margin-bottom: 3rem;
-      color: var(--color-petrol);
     }
 
-    .feature-grid {
+    .intro-body {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      line-height: 2;
+      color: #555;
+      text-align: center;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      padding: 3rem 2rem;
+    }
+
+    .intro-body strong { color: #1a1a1a; }
+
+    /* ===== TIMELINE ===== */
+    .timeline-section {
+      background: #faf9f6;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      padding: 8rem 2rem;
+    }
+
+    .timeline-header {
+      text-align: center;
+      margin-bottom: 6rem;
+    }
+
+    .timeline-header h2 {
+      font-family: 'Crimson Text', serif;
+      font-size: 3rem;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+
+    .timeline-header p {
+      font-family: 'Lora', serif;
+      color: #64748b;
+      font-style: italic;
+    }
+
+    .timeline-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin-bottom: 4rem;
+      gap: 2.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
     }
 
-    .feature-card {
-      padding: 2rem;
-      background: white;
-      border-radius: 12px;
-      border: 2px solid var(--color-gold-light);
-      transition: all 0.3s ease;
-    }
-
-    .feature-card:hover {
-      border-color: var(--color-gold);
-      box-shadow: 0 4px 12px rgba(201, 169, 97, 0.2);
-      transform: translateY(-2px);
-    }
-
-    .feature-card h3 {
-      color: var(--color-petrol);
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-    }
-
-    .feature-card p {
-      color: var(--color-text-light);
-      line-height: 1.7;
-    }
-
-    .examples-box {
-      background: white;
-      padding: 3rem;
-      border-radius: 12px;
-      border-left: 4px solid var(--color-petrol);
-    }
-
-    .examples-box h3 {
-      color: var(--color-petrol);
-      margin-bottom: 1.5rem;
-      font-size: 1.8rem;
-    }
-
-    .word-examples {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-
-    .word-examples li {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-
-    .word-examples .mishkenaz {
-      font-family: Georgia, serif;
-      font-style: italic;
-      color: var(--color-petrol);
-      font-weight: 600;
-      font-size: 1.2rem;
-    }
-
-    .word-examples .explanation {
-      display: block;
-      margin-top: 0.3rem;
-      color: var(--color-text-light);
-      font-size: 0.95rem;
-    }
-
-    /* ===== OKTAVEN ===== */
-    .oktaven-preview {
-      padding: 6rem 2rem;
-      background: white;
-    }
-
-    .oktaven-preview h2 {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-      color: var(--color-petrol);
-    }
-
-    .subtitle {
-      text-align: center;
-      font-size: 1.2rem;
-      color: var(--color-text-light);
-      margin-bottom: 3rem;
-    }
-
-    .oktaven-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 3rem;
-    }
-
-    .oktave-card {
-      background: var(--color-gold-light);
-      padding: 2rem;
-      border-radius: 12px;
-      border: 2px solid var(--color-gold);
-      text-align: center;
-      transition: all 0.3s ease;
+    .timeline-card {
+      background: #ffffff;
+      border: 1px solid #eee;
+      padding: 3rem 2.5rem;
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
       position: relative;
     }
 
-    .oktave-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 6px 20px rgba(74, 155, 155, 0.15);
-      border-color: var(--color-petrol);
+    .timeline-card.featured {
+      border-color: #c9a961;
+      background: linear-gradient(135deg, #ffffff 0%, #faf9f6 100%);
     }
 
-    .oktave-number {
-      position: absolute;
-      top: -15px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--color-gold);
-      color: white;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-      font-size: 1.2rem;
+    .timeline-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.05);
+      border-color: #c9a961;
     }
 
-    .oktave-card h3 {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      color: var(--color-petrol);
-      font-size: 1.3rem;
-    }
-
-    .oktave-card p {
-      font-family: Georgia, serif;
-      font-style: italic;
-      color: var(--color-text-light);
-      font-size: 0.95rem;
-    }
-
-    .cta-button {
-      text-align: center;
-      margin-top: 3rem;
-    }
-
-    .button-primary {
-      display: inline-block;
-      padding: 1rem 2.5rem;
-      background: var(--color-petrol);
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: all 0.3s ease;
-    }
-
-    .button-primary:hover {
-      background: var(--color-gold);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(201, 169, 97, 0.3);
-    }
-
-    /* ===== NAVIGATION ===== */
-    .navigation-section {
-      padding: 6rem 2rem;
-      background: var(--color-gold-light);
-    }
-
-    .navigation-section h2 {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 3rem;
-      color: var(--color-petrol);
-    }
-
-    .nav-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .nav-card {
-      padding: 2rem;
-      background: white;
-      border: 2px solid var(--color-gold-light);
-      border-radius: 12px;
-      text-decoration: none;
-      transition: all 0.3s ease;
+    .phase-number {
+      font-family: 'Crimson Text', serif;
+      font-size: 3rem;
+      font-weight: 300;
+      color: #c9a961;
       display: block;
+      line-height: 1;
+      margin-bottom: 1rem;
     }
 
-    .nav-card:hover {
-      border-color: var(--color-petrol);
-      transform: translateY(-4px);
-      box-shadow: 0 6px 20px rgba(74, 155, 155, 0.15);
+    .timeline-card h3 {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
     }
 
-    .nav-card h3 {
-      color: var(--color-petrol);
-      font-size: 1.5rem;
-      margin-bottom: 0.8rem;
+    .phase-time {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #c9a961;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 1.5rem;
     }
 
-    .nav-card p {
-      color: var(--color-text-light);
-      line-height: 1.6;
+    .timeline-card p {
+      font-family: 'Lora', serif;
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 1.5rem;
     }
 
-    /* ===== KI QUOTES ===== */
-    .ki-quotes-section {
-      padding: 6rem 2rem;
-      background: var(--color-petrol);
-      color: white;
+    .card-link {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #1a1a1a;
+      text-decoration: none;
+      border-bottom: 1px solid #c9a961;
+      padding-bottom: 4px;
+      transition: color 0.3s;
     }
 
-    .ki-quotes-section h2 {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 3rem;
-    }
+    .card-link:hover { color: #c9a961; }
 
-    .quotes-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      max-width: 1200px;
+    /* ===== PILLARS (DIE DREI SÄULEN) ===== */
+    .pillars-section {
+      padding: 8rem 2rem;
+      max-width: 1100px;
       margin: 0 auto;
     }
 
-    .ki-quote {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 2rem;
-      border-radius: 12px;
-      border-left: 4px solid var(--color-gold);
-      backdrop-filter: blur(10px);
-      margin: 0;
+    .pillars-header {
+      text-align: center;
+      margin-bottom: 6rem;
     }
 
-    .ki-quote p {
-      font-size: 1.3rem;
-      line-height: 1.6;
+    .pillars-header h2 {
+      font-family: 'Crimson Text', serif;
+      font-size: 3rem;
+      font-weight: 300;
       margin-bottom: 1rem;
+    }
+
+    .pillars-header p {
+      font-family: 'Lora', serif;
+      color: #64748b;
       font-style: italic;
     }
 
-    .ki-quote cite {
-      font-style: normal;
-      color: var(--color-gold);
-      font-weight: 600;
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+    }
+
+    .pillar-card {
+      background: #ffffff;
+      border: 1px solid #eee;
+      padding: 4rem 3rem;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      position: relative;
+    }
+
+    .pillar-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: #c9a961;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.5s ease;
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.05);
+      border-color: transparent;
+    }
+
+    .pillar-card:hover::before { transform: scaleX(1); }
+
+    .pillar-symbol {
+      font-size: 2.5rem;
+      display: block;
+      margin-bottom: 2rem;
+      line-height: 1;
+    }
+
+    .pillar-card h3 {
+      font-family: 'Crimson Text', serif;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .pillar-card .pillar-subtitle {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #c9a961;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 2rem;
+    }
+
+    .pillar-card p {
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    /* ===== RESOURCES ===== */
+    .resources-section {
+      background: #faf9f6;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      padding: 8rem 2rem;
+    }
+
+    .resources-header {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    .resources-header h2 {
+      font-family: 'Crimson Text', serif;
+      font-size: 3rem;
+      font-weight: 300;
+    }
+
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .resource-card {
+      background: #ffffff;
+      border: 1px solid #eee;
+      padding: 3.5rem 3rem;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .resource-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.05);
+      border-color: #c9a961;
+    }
+
+    .resource-type {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #c9a961;
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+
+    .resource-card h3 {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    .resource-card p {
+      font-family: 'Lora', serif;
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    /* ===== THESIS ===== */
+    .thesis-section {
+      padding: 10rem 2rem;
+      background: #121416;
+      color: #ffffff;
+    }
+
+    .thesis-inner {
+      max-width: 850px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .thesis-inner .label {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: #c9a961;
+      display: block;
+      margin-bottom: 3rem;
+    }
+
+    .thesis-inner blockquote {
+      font-family: 'Crimson Text', serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 300;
+      line-height: 1.4;
+      margin: 0 0 3rem;
+      color: #e5dcc8;
+    }
+
+    .thesis-inner p {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      line-height: 2;
+      color: #94a3b8;
+      max-width: 700px;
+      margin: 0 auto;
     }
 
     /* ===== RESPONSIVE ===== */
-    @media (max-width: 768px) {
-      .hero-mishkenaz {
-        padding: 10rem 2rem 3rem;
+    @media (max-width: 900px) {
+      .pillars-grid { 
+        grid-template-columns: 1fr; 
+        max-width: 500px;
+        margin: 0 auto;
       }
-
-      .hero-question {
-        font-size: 2rem;
-      }
-
-      .vektoren-intro {
-        padding: 4rem 1.5rem;
-      }
-
-      .vektoren-header h2 {
-        font-size: 1.8rem;
-      }
-
-      .vektor-block {
-        padding: 2rem 1.5rem;
-      }
-
-      .vektor-title {
-        font-size: 1.5rem;
-      }
-
-      .vektor-number {
-        font-size: 2rem;
-      }
-
-      .intro-text {
-        font-size: 1.1rem;
-      }
-
-      .content-section h2,
-      .oktaven-preview h2,
-      .navigation-section h2,
-      .ki-quotes-section h2 {
-        font-size: 2rem;
-      }
-
-      .oktaven-grid {
-        grid-template-columns: 1fr;
-      }
+      .timeline-grid { grid-template-columns: 1fr; }
+      .resources-grid { grid-template-columns: 1fr; }
+      .pillar-card { padding: 3rem 2rem; }
+      .thesis-section { padding: 6rem 2rem; }
     }
   </style>
 </BaseLayout>
