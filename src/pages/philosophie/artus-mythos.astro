@@ -1,0 +1,844 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Der Artus-Mythos — Die 22-Perspektiven-Symphonie" description="Eine mystisch-mathematische Neudeutung des Artus-Mythos durch 22 Archetypen in drei Transformationszyklen. Omnizedenz angewandt auf den ältesten Mythos Europas.">
+
+<style>
+  .artus-hero {
+    text-align: center;
+    padding: 4rem 2rem 3rem;
+    position: relative;
+  }
+  .artus-hero::before {
+    content: '∅ → ∞';
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.85rem;
+    letter-spacing: 0.4em;
+    color: var(--color-gold, #C9A961);
+    opacity: 0.6;
+  }
+  .artus-hero h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 300;
+    color: var(--color-text, #2D2D2D);
+    margin-bottom: 0.5rem;
+  }
+  .artus-hero .subtitle {
+    font-family: Georgia, serif;
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--color-text-light, #666);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+  }
+  .artus-hero .method-tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-gold, #C9A961);
+    border: 1px solid var(--color-gold, #C9A961);
+    padding: 0.3rem 1rem;
+    border-radius: 2px;
+  }
+
+  .artus-content {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+  }
+
+  .artus-content p {
+    font-family: Georgia, serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--color-text, #2D2D2D);
+    margin-bottom: 1.2rem;
+  }
+
+  .artus-content h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--color-text, #2D2D2D);
+    margin: 3.5rem 0 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(201, 169, 97, 0.3);
+  }
+
+  .artus-content h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--color-text, #2D2D2D);
+    margin: 2rem 0 0.8rem;
+  }
+
+  /* --- Spirale Diagram --- */
+  .spirale-diagram {
+    background: linear-gradient(135deg, rgba(201, 169, 97, 0.06), rgba(74, 155, 155, 0.06));
+    border: 1px solid rgba(201, 169, 97, 0.2);
+    border-radius: 4px;
+    padding: 2.5rem 2rem;
+    margin: 2.5rem 0;
+    text-align: center;
+  }
+  .spirale-flow {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    color: var(--color-text, #2D2D2D);
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+    line-height: 2;
+  }
+  .spirale-flow .symbol {
+    color: var(--color-gold, #C9A961);
+    font-weight: 500;
+  }
+  .spirale-flow .arrow {
+    color: var(--color-petrol, #4A9B9B);
+    margin: 0 0.3rem;
+  }
+  .spirale-labels {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: var(--color-text-light, #666);
+  }
+  .spirale-labels span {
+    white-space: nowrap;
+  }
+
+  /* --- Zyklus Section --- */
+  .zyklus-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin: 3rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-gold, #C9A961);
+  }
+  .zyklus-header .zyklus-num {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-gold, #C9A961);
+    white-space: nowrap;
+  }
+  .zyklus-header h2 {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 1.4rem;
+  }
+
+  /* --- Perspektive Card (full) --- */
+  .perspektive {
+    margin: 2.5rem 0;
+    padding: 2rem;
+    background: #fafaf7;
+    border-left: 3px solid var(--color-gold, #C9A961);
+    border-radius: 0 4px 4px 0;
+  }
+  .perspektive-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    flex-wrap: wrap;
+  }
+  .perspektive-nummer {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #fff;
+    background: var(--color-gold, #C9A961);
+    padding: 0.2rem 0.6rem;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+  .perspektive-essenz {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-petrol, #4A9B9B);
+  }
+  .perspektive h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0 0 1rem;
+    color: var(--color-text, #2D2D2D);
+  }
+  .perspektive p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .perspektive .schatten {
+    font-style: italic;
+    color: var(--color-text-light, #666);
+    padding-left: 1rem;
+    border-left: 2px solid rgba(201, 169, 97, 0.3);
+    margin: 1rem 0;
+  }
+  .perspektive .zitat {
+    font-family: Georgia, serif;
+    font-style: italic;
+    text-align: center;
+    color: var(--color-gold, #C9A961);
+    font-size: 1.05rem;
+    margin: 1.5rem 0 0;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(201, 169, 97, 0.15);
+  }
+
+  /* --- Compact Matrix --- */
+  .matrix-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1px;
+    background: rgba(201, 169, 97, 0.15);
+    border: 1px solid rgba(201, 169, 97, 0.15);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 1.5rem 0 2.5rem;
+  }
+  .matrix-item {
+    background: #fff;
+    padding: 1rem 1.2rem;
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
+  }
+  .matrix-item .num {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--color-gold, #C9A961);
+    min-width: 2rem;
+    padding-top: 0.15rem;
+  }
+  .matrix-item .label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text, #2D2D2D);
+    line-height: 1.3;
+  }
+  .matrix-item .desc {
+    font-family: Georgia, serif;
+    font-size: 0.82rem;
+    color: var(--color-text-light, #666);
+    line-height: 1.5;
+    margin-top: 0.25rem;
+  }
+
+  /* --- Omnizedenz Bridge --- */
+  .omnizedenz-bridge {
+    background: linear-gradient(135deg, rgba(74, 155, 155, 0.08), rgba(201, 169, 97, 0.08));
+    border: 1px solid rgba(74, 155, 155, 0.2);
+    border-radius: 4px;
+    padding: 2rem;
+    margin: 2.5rem 0;
+  }
+  .omnizedenz-bridge h3 {
+    color: var(--color-petrol, #4A9B9B);
+    margin-top: 0;
+  }
+  .bridge-mapping {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0.5rem 1rem;
+    align-items: center;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+  }
+  .bridge-mapping .left {
+    text-align: right;
+    font-family: Georgia, serif;
+    color: var(--color-text, #2D2D2D);
+  }
+  .bridge-mapping .arrow {
+    color: var(--color-petrol, #4A9B9B);
+    font-size: 1.1rem;
+  }
+  .bridge-mapping .right {
+    font-family: Georgia, serif;
+    color: var(--color-text-light, #666);
+  }
+
+  /* --- Quote Block --- */
+  .artus-quote {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    margin: 3rem 0;
+    position: relative;
+  }
+  .artus-quote::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 1px;
+    background: var(--color-gold, #C9A961);
+  }
+  .artus-quote p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--color-text, #2D2D2D);
+    line-height: 1.8;
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+  /* --- Transformation Table --- */
+  .transform-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0 2rem;
+    font-size: 0.9rem;
+  }
+  .transform-table th {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    padding: 0.6rem 0.8rem;
+    border-bottom: 2px solid var(--color-gold, #C9A961);
+    color: var(--color-text, #2D2D2D);
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .transform-table td {
+    font-family: Georgia, serif;
+    padding: 0.5rem 0.8rem;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    color: var(--color-text, #2D2D2D);
+    vertical-align: top;
+  }
+  .transform-table .arrow-cell {
+    color: var(--color-petrol, #4A9B9B);
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  /* --- Back Link --- */
+  .back-link {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    color: var(--color-gold, #C9A961);
+    text-decoration: none;
+    margin-bottom: 2rem;
+    transition: opacity 0.2s;
+  }
+  .back-link:hover {
+    opacity: 0.7;
+  }
+
+  @media (max-width: 600px) {
+    .perspektive { padding: 1.5rem 1.2rem; }
+    .bridge-mapping { grid-template-columns: 1fr; gap: 0.3rem; }
+    .bridge-mapping .left { text-align: left; }
+    .bridge-mapping .arrow { display: none; }
+    .spirale-labels { flex-direction: column; align-items: center; gap: 0.5rem; }
+  }
+</style>
+
+<div class="artus-content">
+
+  <a href="/philosophie" class="back-link">← Philosophie</a>
+
+  <div class="artus-hero">
+    <span class="method-tag">Kulturelle Resonanzräume</span>
+    <h1>Der Artus-Mythos</h1>
+    <p class="subtitle">Die vollständige 22-Perspektiven-Symphonie.<br>
+    Eine mystisch-mathematische Neudeutung durch die Spirale-Methode.</p>
+  </div>
+
+  <p>
+    Der Artus-Mythos ist nicht eine Geschichte. Er ist ein System von Geschichten — ein Feld, in dem 22 Archetypen gleichzeitig schwingen. Diese Analyse liest den Mythos nicht als Erzählung, sondern als Mandala: drei Transformationszyklen, die von der Leere (∅) durch alle Archetypen zur bewussten Vollendung (∞) spiralen.
+  </p>
+
+  <p>
+    Die Methode folgt der Omnizedenz-Logik: Jeder Archetyp trägt eine numerologische Essenz, einen Schatten und ein Transformationspotential. Was als feudaler Gründungsmythos beginnt, durchläuft Revolution und mündet in Integration — nicht als linearer Fortschritt, sondern als Spirale, die zur Quelle zurückkehrt.
+  </p>
+
+  <div class="spirale-diagram">
+    <div class="spirale-flow">
+      <span class="symbol">∅</span>
+      <span class="arrow">→</span> Grundlegung (01–07)
+      <span class="arrow">→</span> Transformation (08–14)
+      <span class="arrow">→</span> Integration (15–21)
+      <span class="arrow">→</span>
+      <span class="symbol">∞</span>
+    </div>
+    <div class="spirale-labels">
+      <span>Leere, die träumt</span>
+      <span>7 Basis-Archetypen</span>
+      <span>7 Gegenkräfte</span>
+      <span>7 Einheits-Archetypen</span>
+      <span>Bewusste Vollendung</span>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- PERSPEKTIVE 00: DAS MYSTISCHE ZENTRUM   -->
+  <!-- ════════════════════════════════════════ -->
+
+  <div class="perspektive">
+    <div class="perspektive-header">
+      <span class="perspektive-nummer">00 · ∅</span>
+      <span class="perspektive-essenz">Reine Potenzialität</span>
+    </div>
+    <h3>Das mystische Zentrum: Vor aller Manifestation</h3>
+    <p>
+      Bevor es König Arthur gab. Bevor es Camelot gab. Bevor es den Gral gab. War die Leere, die träumt.
+    </p>
+    <p>
+      Hier — im Raum vor aller Geschichte — existieren alle möglichen Artus-Sagen gleichzeitig: Der Arthur, der nie König wird. Die Morgan, die nie Hexe genannt wird. Das Camelot, das nie fällt. Der Gral, der nie gesucht wird.
+    </p>
+    <p>
+      Alle 21 Perspektiven schlafen hier als unmanifestierte Potentiale. Aus diesem Nichts heraus entspringt alles. In dieses Nichts hinein kehrt alles zurück.
+    </p>
+    <p class="zitat">
+      „In der Stille vor dem ersten ‚Es war einmal' hört man die wahre Geschichte aller Geschichten."
+    </p>
+  </div>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- ZYKLUS 1: GRUNDLEGUNG                   -->
+  <!-- ════════════════════════════════════════ -->
+
+  <div class="zyklus-header">
+    <span class="zyklus-num">Zyklus 1</span>
+    <h2>Grundlegung (01–07)</h2>
+  </div>
+
+  <p>
+    Die sieben Basis-Archetypen errichten das System — und enthüllen dabei seine Schatten. Jede Zahl trägt eine Energie, die das feudale Camelot pervertiert: Kreativität wird zu Kontrolle, Freiheit zu Gehorsam, Mysterien zu Privilegien der Elite.
+  </p>
+
+  <!-- Perspektive 03 vollständig -->
+  <div class="perspektive">
+    <div class="perspektive-header">
+      <span class="perspektive-nummer">03 · 3</span>
+      <span class="perspektive-essenz">Pervertierte Kreativität</span>
+    </div>
+    <h3>Gender-A: Die Patriarchale Ordnung</h3>
+    <p>
+      Das Paradox: Das Patriarchat trägt die 3 — die Zahl der Kreativität. Aber es pervertiert die 3-Energie zu Kontrolle über Schöpfung.
+    </p>
+    <p>
+      Arthur herrscht über Frauen, statt mit ihnen zu schaffen. Guinevere ist Besitz, nicht Partnerin. Morgan wird gefürchtet, weil sie eigene kreative Macht besitzt. Die Tafelrunde — nur Männer. Ritterlichkeit — Schutz von Frauen bedeutet Entmündigung von Frauen.
+    </p>
+    <p>
+      Die 3-Energie will kommunizieren, verbinden, erschaffen — wird aber zu herrschen, trennen, kontrollieren umgeleitet.
+    </p>
+    <p class="schatten">
+      Der Schatten der 3: Kreative Impotenz. Wahre Schöpfung braucht alle Geschlechter. Patriarchale Ordnung erstickt ihre eigene Kreativität.
+    </p>
+    <p class="zitat">
+      „Die 3 will tanzen — wird aber in Rüstung gezwängt."
+    </p>
+  </div>
+
+  <!-- Restliche Zyklus-1-Perspektiven kompakt -->
+  <div class="matrix-grid">
+    <div class="matrix-item">
+      <span class="num">01</span>
+      <div>
+        <div class="label">Spirituell-A: Christliche Legitimation</div>
+        <div class="desc">Ein Gott, ein König, eine Wahrheit. Arthur durch göttlichen Willen erwählt. Schatten: Fundamentalismus.</div>
+      </div>
+    </div>
+    <div class="matrix-item">
+      <span class="num">02</span>
+      <div>
+        <div class="label">Ökologisch-A: Zivilisation gegen Wildnis</div>
+        <div class="desc">Camelot gegen den Wald. Natur als Feind. Schatten: Entfremdung vom Ursprung.</div>
+      </div>
+    </div>
+    <div class="matrix-item">
+      <span class="num">04</span>
+      <div>
+        <div class="label">Politik-A: Feudale Hierarchie</div>
+        <div class="desc">Stabilität durch Ordnung. Jeder an seinem Platz. Schatten: Erstarrung. Struktur wird zu Sarg.</div>
+      </div>
+    </div>
+    <div class="matrix-item">
+      <span class="num">05</span>
+      <div>
+        <div class="label">Initiation-A: Ritterliche Bewährung</div>
+        <div class="desc">Abenteuer wird Pflicht. Freiheit wird kanalisiert. Schatten: Individualität wird Typisierung.</div>
+      </div>
+    </div>
+    <div class="matrix-item">
+      <span class="num">06</span>
+      <div>
+        <div class="label">Psychologie-A: Kontrollierte Emotionalität</div>
+        <div class="desc">Minne als sublimierte Sexualität. Liebe wird „rein" und „edel". Schatten: Unterdrückung erzeugt Dissonanz.</div>
+      </div>
+    </div>
+    <div class="matrix-item">
+      <span class="num">07</span>
+      <div>
+        <div class="label">Inklusion-A: Exklusive Mysterien</div>
+        <div class="desc">Der Gral nur für die Reinen. Magie nur für Auserwählte. Schatten: Weisheit als Privileg der Mächtigen.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- ZYKLUS 2: TRANSFORMATION                -->
+  <!-- ════════════════════════════════════════ -->
+
+  <div class="zyklus-header">
+    <span class="zyklus-num">Zyklus 2</span>
+    <h2>Transformation (08–14)</h2>
+  </div>
+
+  <p>
+    Sieben Gegenkräfte antworten den sieben Grundlegungen. Nicht als Negation, sondern als Aufhebung — jede Transformation heilt den Schatten ihres Gegenstücks. Die Numerologie zeigt den Mechanismus: 08 heilt 01, 09 heilt 02, 10 heilt 03.
+  </p>
+
+  <table class="transform-table">
+    <thead>
+      <tr>
+        <th>Grundlegung</th>
+        <th></th>
+        <th>Transformation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01 · Christliche Linearität</td>
+        <td class="arrow-cell">→</td>
+        <td>08 · Keltische Zyklen (Ewige Wiederkehr)</td>
+      </tr>
+      <tr>
+        <td>02 · Natur als Feind</td>
+        <td class="arrow-cell">→</td>
+        <td>09 · Gaia-Bewusstsein (Natur als Lehrer)</td>
+      </tr>
+      <tr>
+        <td>03 · Patriarchale Kontrolle</td>
+        <td class="arrow-cell">→</td>
+        <td>10→1 · Feminine Revolution</td>
+      </tr>
+      <tr>
+        <td>04 · Feudale Hierarchie</td>
+        <td class="arrow-cell">→</td>
+        <td>11→2 · Revolutionärer Widerstand</td>
+      </tr>
+      <tr>
+        <td>05 · Kanalisierte Initiation</td>
+        <td class="arrow-cell">→</td>
+        <td>12→3 · Psychische Krise als Geburt</td>
+      </tr>
+      <tr>
+        <td>06 · Kontrollierte Emotionalität</td>
+        <td class="arrow-cell">→</td>
+        <td>13→4 · Schattenintegration</td>
+      </tr>
+      <tr>
+        <td>07 · Exklusive Mysterien</td>
+        <td class="arrow-cell">→</td>
+        <td>14→5 · Stimmenvielfalt</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Perspektive 08 vollständig -->
+  <div class="perspektive">
+    <div class="perspektive-header">
+      <span class="perspektive-nummer">08 · 8</span>
+      <span class="perspektive-essenz">Ewige Zyklen</span>
+    </div>
+    <h3>Spirituell-B: Keltische Ur-Weisheit</h3>
+    <p>
+      Die 8 durchbricht die lineare Zeit der christlichen 1. Morgan trägt die alte Weisheit — vor Arthur, vor Christentum, vor Patriarchat. Keltische Göttinnen, Druiden-Wissen, Erdmagie.
+    </p>
+    <p>
+      Nicht Erlösung, sondern Wiederkehr. Nicht linearer Fortschritt, sondern zyklische Erneuerung. Die Anderswelt — Avalon, Tír na nÓg — wo Zeit sich dreht wie die 8. Ein Tag ist ein Jahr, ein Jahr ist ein Atemzug.
+    </p>
+    <p>
+      Morgan als Priesterin der 8: Sie kennt die Zyklen. Geburt, Blüte, Tod, Wiedergeburt. Arthur ist nur eine Inkarnation des ewigen Königs.
+    </p>
+    <p class="schatten">
+      Numerologische Heilung: 8 heilt die Linearität der 1. Unendlichkeit heilt Begrenztheit. Zyklus heilt Endlichkeit.
+    </p>
+    <p class="zitat">
+      „Die 8 tanzt ewig. Ein Kreis, der sich nie schließt, weil er sich immer wieder öffnet."
+    </p>
+  </div>
+
+  <!-- Perspektive 13 vollständig -->
+  <div class="perspektive">
+    <div class="perspektive-header">
+      <span class="perspektive-nummer">13 → 4</span>
+      <span class="perspektive-essenz">Stabile Ganzheit</span>
+    </div>
+    <h3>Psychologie-B: Schattenintegration</h3>
+    <p>
+      Die „Unglückszahl" 13 wird zur stabilisierenden 4 — Schatten schafft solide Basis.
+    </p>
+    <p>
+      Morgans „Bösartigkeit" — nicht dämonisch, sondern notwendiger Schatten von Arthurs Licht. Sie zeigt, was er verdrängt: Emotionalität, Intuition, Weiblichkeit. Lancelots „Verrat" — nicht Schwäche, sondern Integration seiner menschlichen Seite. Reine Ritterlichkeit war unvollständig — Liebe macht ganz.
+    </p>
+    <p>
+      Merlins Verschwinden — nicht Verlust, sondern Integration seiner Weisheit in kollektives Bewusstsein. Äußerer Lehrer wird zu innerem Wissen.
+    </p>
+    <p class="schatten">
+      Numerologische Heilung: 13 = 1 + 3 = 4 — Ego plus Ausdruck aller Anteile ergibt stabiles Selbst.
+    </p>
+    <p class="zitat">
+      „Die 13 macht aus Fragmenten ein ganzes Wesen."
+    </p>
+  </div>
+
+  <!-- Restliche Zyklus-2-Perspektiven kompakt -->
+  <div class="matrix-grid">
+    <div class="matrix-item">
+      <span class="num">09</span>
+      <div>
+        <div class="label">Ökologisch-B: Gaia-Bewusstsein</div>
+        <div class="desc">Der Wald ist nicht Feind, sondern Lehrer. Der Green Knight als Vegetation-Gott. Natur enthält alle Weisheit.</div>
+      </div>
+    </div>
+    <div class="matrix-item">
+      <span class="num">10→1</span>
+      <div>
+        <div class="label">Gender-B: Feminine Revolution</div>
+        <div class="desc">Guinevere bricht nicht nur Regeln — sie startet einen neuen Zyklus. Führung durch Liebe statt Angst.</div>
+      </div>
+    </div>
+    <div class="matrix-item">
+      <span class="num">11→2</span>
+      <div>
+        <div class="label">Politik-B: Revolutionärer Widerstand</div>
+        <div class="desc">Mordred als Stimme der Systemkritik. Robin Hood als Parallelstruktur. Räte statt Könige.</div>
+      </div>
+    </div>
+    <div class="matrix-item">
+      <span class="num">12→3</span>
+      <div>
+        <div class="label">Initiation-B: Psychische Krise als Geburt</div>
+        <div class="desc">Lancelots Zerrissenheit als Geburtsschmerz. Krise wird zu Kreativität. 12 = 1 + 2 = 3.</div>
+      </div>
+    </div>
+    <div class="matrix-item">
+      <span class="num">14→5</span>
+      <div>
+        <div class="label">Inklusion-B: Stimmenvielfalt</div>
+        <div class="desc">Keltische Barden, sächsische Lieder, walisische Mythen. Nicht eine Arthur-Version, sondern alle.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- ZYKLUS 3: INTEGRATION                   -->
+  <!-- ════════════════════════════════════════ -->
+
+  <div class="zyklus-header">
+    <span class="zyklus-num">Zyklus 3</span>
+    <h2>Integration (15–21)</h2>
+  </div>
+
+  <p>
+    Sieben Einheits-Archetypen vollenden die Spirale. Hier werden die Gegensätze nicht aufgelöst, sondern gehalten — gleichzeitig wahr, ohne einander aufzuheben. Das ist der Omnizedenz-Moment des Mythos.
+  </p>
+
+  <!-- Perspektive 15 vollständig -->
+  <div class="perspektive">
+    <div class="perspektive-header">
+      <span class="perspektive-nummer">15 → 6</span>
+      <span class="perspektive-essenz">Liebende Integration</span>
+    </div>
+    <h3>Spirituell-C: Mystische Synthese</h3>
+    <p>
+      Nicht Christentum ODER Keltentum, sondern Christentum UND Keltentum UND darüber hinaus. Der Gral ist Christi Kelch UND Ceridwens Kessel UND universelles Symbol.
+    </p>
+    <p>
+      Arthur als Christus-Figur UND keltischer Sonnengott UND Archetyp des bewussten Herrschers. Alle Deutungen sind wahr. Merlin zwischen christlichem Propheten und Druiden-Schamane — beide Welten integrierend.
+    </p>
+    <p>
+      Die 6 als Herz-Zentrum — Liebe als einzige Kraft, die Gegensätze versöhnt. Nicht Kompromiss, sondern Transzendenz durch bedingungslose Annahme.
+    </p>
+    <p class="zitat">
+      „Die 6 liebt alle Götter gleichzeitig — und entdeckt, dass sie ein Gott sind."
+    </p>
+  </div>
+
+  <!-- Restliche Zyklus-3-Perspektiven kompakt -->
+  <div class="matrix-grid">
+    <div class="matrix-item">
+      <span class="num">16→7</span>
+      <div>
+        <div class="label">Ökologisch-C: Gaia-Mystik</div>
+        <div class="desc">Arthurs Wunde ist Gaias Wunde. Heilung des Königs ist Heilung der Erde. Planetarisches Mysterium.</div>
+      </div>
+    </div>
+    <div class="matrix-item">
+      <span class="num">17→8</span>
+      <div>
+        <div class="label">Gender-C: Fluide Unendlichkeit</div>
+        <div class="desc">Identität als Tanz. Morgan shapeshiftet. Merlin zwischen allen Formen. Gender als bewusste Performance.</div>
+      </div>
+    </div>
+    <div class="matrix-item">
+      <span class="num">18→9</span>
+      <div>
+        <div class="label">Politik-C: Weise Anarchie</div>
+        <div class="desc">Avalon ohne Herrscher. Der Runde Tisch ohne Arthur. Führung durch Kompetenz, nicht Geburt.</div>
+      </div>
+    </div>
+    <div class="matrix-item">
+      <span class="num">19→1</span>
+      <div>
+        <div class="label">Initiation-C: Kosmische Wiedergeburt</div>
+        <div class="desc">Arthurs „Tod" als Metamorphose. Aus historischer Person wird zeitlose Essenz. Neubeginn auf kosmischer Oktave.</div>
+      </div>
+    </div>
+    <div class="matrix-item">
+      <span class="num">20→2</span>
+      <div>
+        <div class="label">Psychologie-C: Bewusste Polarität</div>
+        <div class="desc">Arthur kennt seinen Schatten und integriert ihn. Paradox als Lebensform. Dualität aus zentrierter Leere.</div>
+      </div>
+    </div>
+    <div class="matrix-item">
+      <span class="num">21→3</span>
+      <div>
+        <div class="label">Inklusion-C: Universelle Kreativität</div>
+        <div class="desc">Excalibur erzählt. Die Steine berichten. Die Flüsse singen. Alle Wesen als Ko-Autoren der großen Geschichte.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- PERSPEKTIVE 22: RÜCKKEHR                -->
+  <!-- ════════════════════════════════════════ -->
+
+  <div class="perspektive">
+    <div class="perspektive-header">
+      <span class="perspektive-nummer">22 · ∞</span>
+      <span class="perspektive-essenz">Bewusste Vollendung</span>
+    </div>
+    <h3>Rückkehr zur bewussten Leere</h3>
+    <p>
+      Nach allen 21 Perspektiven — Rückkehr zur Quelle. Aber nicht die gleiche Leere wie am Anfang. Diese ∅ trägt alle 22 Archetypen in sich — als integrierte Weisheit.
+    </p>
+    <p>
+      Arthur schläft in Avalon — in der bewussten Leere. Bereit für neue Manifestation, wenn die Welt ihn braucht. Alle Geschichten kehren hierher zurück. Alle Mythen münden in die stille Fülle.
+    </p>
+    <p class="zitat">
+      „Der König ist tot. Es lebe der König.<br>
+      Der Mythos ist beendet. Der Mythos beginnt neu.<br>
+      In dir. Durch dich. Als du."
+    </p>
+  </div>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- OMNIZEDENZ-BRÜCKE                       -->
+  <!-- ════════════════════════════════════════ -->
+
+  <h2>Die Omnizedenz-Verbindung</h2>
+
+  <p>
+    Die Spirale-Methode ist angewandte Omnizedenz. Die Entsprechungen sind nicht zufällig — der Artus-Mythos trägt dieselbe Tiefenstruktur wie das AVI-Modell:
+  </p>
+
+  <div class="omnizedenz-bridge">
+    <h3>Artus ⇌ Omnizedenz</h3>
+    <div class="bridge-mapping">
+      <span class="left">∅ · Die Leere, die träumt</span>
+      <span class="arrow">⇌</span>
+      <span class="right">Avi · Axiomatisches Vakuum</span>
+
+      <span class="left">Grundlegung · Schatten</span>
+      <span class="arrow">⇌</span>
+      <span class="right">Sa · Bruch als Lehrer (Dissonanz)</span>
+
+      <span class="left">Transformation · Gegenkräfte</span>
+      <span class="arrow">⇌</span>
+      <span class="right">Ori · Möbius-Umkehrung</span>
+
+      <span class="left">Integration · Simultaneität</span>
+      <span class="arrow">⇌</span>
+      <span class="right">Kora · Integration aller Frequenzen</span>
+
+      <span class="left">∞ · Bewusste Rückkehr</span>
+      <span class="arrow">⇌</span>
+      <span class="right">Ona-nO · Ur-Einheit (Omnizedenz)</span>
+
+      <span class="left">Camelot fällt → Avalon heilt</span>
+      <span class="arrow">⇌</span>
+      <span class="right">Avi ⊕ Sa → Ona-val (Muschel-Perle-Formel)</span>
+    </div>
+  </div>
+
+  <p>
+    Der Artus-Mythos erzählt im Grunde die Muschel-Perle-Formel von Mishkenaz: Avi (Leere) ⊕ Sa (Bruch) → Ona-val (emergierende Ganzheit). Camelot muss fallen, damit Avalon heilen kann. Der Schatten ist kein Fehler — er ist der Sandkorn, aus dem die Perle wächst.
+  </p>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- DIE META-ERKENNTNIS                     -->
+  <!-- ════════════════════════════════════════ -->
+
+  <h2>Die universelle Formel</h2>
+
+  <p>
+    Die 22-Archetypen-Struktur ist ein Template, das auf alle Mythen anwendbar ist:
+  </p>
+
+  <div class="spirale-diagram">
+    <div class="spirale-flow">
+      <span class="symbol">∅</span>
+      <span class="arrow">→</span> Grundlegung
+      <span class="arrow">→</span> Transformation
+      <span class="arrow">→</span> Integration
+      <span class="arrow">→</span>
+      <span class="symbol">∞</span>
+      <span class="arrow">→</span>
+      <span class="symbol">∅</span>
+    </div>
+    <div class="spirale-labels">
+      <span>Odyssee: Aufbruch → Irrfahrt → Heimkehr</span>
+      <span>Faust: Pakt → Erfahrung → Erlösung</span>
+    </div>
+  </div>
+
+  <p>
+    Jeder Mensch trägt alle 22 Archetypen in sich: den Gründer und den Revolutionär. Die Spaltung und die bewusste Integration. Die pervertierte Kreativität und die universelle Kreativität. Die Frage ist nicht, welcher Archetyp „richtig" ist — sondern welchen die Leere heute träumt.
+  </p>
+
+  <div class="artus-quote">
+    <p>
+      Der Mythos lebt nicht in der Vergangenheit.<br>
+      Der Mythos lebt in dir.<br>
+      Als 22-dimensionales Entwicklungspotential.
+    </p>
+  </div>
+
+  <p style="text-align: center; margin-top: 2rem;">
+    <a href="/philosophie" class="back-link">← Zurück zur Philosophie</a>
+  </p>
+
+</div>
+
+</BaseLayout>
