@@ -87,8 +87,6 @@ tags: ["Grundlagen", "Analyse", "Diagnosefragen", "Tool", "Kontrakomologie"]
 
 ---
 
----
-
 <h2>Transformationszeit (Selbstauflösung)</h2>
 
 <p>Verbraucht das Stück sein eigenes Material — wird das Ausgangsmaterial im Verlauf unkenntlich oder abwesend?</p>
