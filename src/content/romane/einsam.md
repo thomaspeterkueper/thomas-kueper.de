@@ -11,7 +11,7 @@ tags: ["Roman"]
 <section>
   <h2>Gelesen. Aber keine Antwort.</h2>
   <p>
-    Mit vierzig Jahren sitzt sie in einer deutschen Wohnung und starrt auf ihr Handy. Gelesen. Aber keine Antwort. Der Kindsvater hat seine Ruhe gefunden – ohne sie. Ihr Sohn, ein Teenager, verschwindet Stunde um Stunde aus ihrem Leben. Die Kollegen sprechen über das Wetter, nie über das, was wirklich zählt. Und aus Südamerika, wo sie einst zu Hause war, stalkt ein Mann, der vor zwanzig Jahren ein Video hochgeladen hat, das sie nie vergessen kann.
+    Mit vierzig Jahren sitzt sie in ihrer Wohnung und starrt auf ihr Handy. Gelesen. Aber keine Antwort. Der Kindsvater hat seine Ruhe gefunden – ohne sie. Ihr Sohn, ein Teenager, verschwindet Stunde um Stunde aus ihrem Leben. Die Kollegen sprechen über das Wetter, nie über das, was wirklich zählt. Und aus Südafrika, wo sie einst zu Hause war, stalkt ein Mann, der vor zwanzig Jahren ein Video hochgeladen hat, das sie nie vergessen kann.
   </p>
 
   <h2>Eine Geschichte zwischen zwei Welten</h2>
@@ -19,7 +19,7 @@ tags: ["Roman"]
     EINSAM ist die Geschichte einer Frau, die dreimal verlassen wurde und nicht mehr weiß, ob ihre Angst berechtigt ist oder ob sie die Welt nur noch durch die Linse ihrer Wunden sieht. Als Au-pair kam sie nach Deutschland, mit Träumen von einem Studium und einem Neuanfang. Doch das Leben hatte andere Pläne: Ausbeutung, eine Abtreibung nach Verlassenwerden, und schließlich die Hoffnung auf Rettung in den Armen des Kindsvaters.
   </p>
   <p>
-    Jetzt, fünfzehn Jahre und eine Mutterschaft später, wiederholt sich das Muster. In Rückblenden entfaltet sich ein Leben zwischen zwei Kulturen, zwischen Spanisch und Deutsch, zwischen Trauma und dem verzweifelten Versuch, anzukommen.
+    Jetzt, fünfzehn Jahre und eine Mutterschaft später, wiederholt sich das Muster. In Rückblenden entfaltet sich ein Leben zwischen zwei Kulturen, zwischen Zulu, Deutsch und Englisch, zwischen Trauma und dem verzweifelten Versuch, anzukommen.
   </p>
 
   <h2>Themen & Resonanz</h2>
