@@ -1,7 +1,7 @@
 ---
 title: "Einsam"
 genre: "Psychologischer Roman / Migrantenliteratur"
-description: "Sie hat drei Kontinente durchquert, drei Männer geliebt, drei Mal alles verloren. Jetzt, mit vierzig, steht sie wieder am Anfang – und diesmal gibt es niemanden mehr, der antwortet."
+description: "Sie hat zwei Kontinente durchquert, drei Männer geliebt, drei Mal alles verloren. Jetzt, mit vierzig, steht sie wieder am Anfang – und diesmal gibt es niemanden mehr, der antwortet."
 status: "In Vorbereitung"
 order: 22
 cover: "/assets/romane/einsam/cover.jpg"
