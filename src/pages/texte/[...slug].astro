@@ -1,0 +1,289 @@
+---
+// Dateipfad: src/pages/texte/[...slug].astro
+// Beschreibung: Dynamisches Rendering einzelner Texte aus der Content Collection.
+// Jede .md-Datei in src/content/texte/ wird automatisch als Seite verfügbar.
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const texte = await getCollection('texte', ({ data }) => !data.draft);
+  return texte.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+// Kategorie-Labels
+const katLabels: Record<string, string> = {
+  'mythen-maerchen-sagen': 'Mythen, Märchen & Sagen',
+  'gesellschaft-gegenwart': 'Gesellschaft & Gegenwart',
+  'musik-klang': 'Musik & Klang',
+  'natur-wissenschaft': 'Natur & Wissenschaft',
+  'geschichte': 'Geschichte',
+  'forschung': 'Forschung',
+  'lyrik-manifest': 'Lyrik & Manifest',
+};
+
+const katLabel = katLabels[entry.data.kategorie] || entry.data.kategorie;
+---
+
+<BaseLayout
+  title={`${entry.data.title} — Thomas Peter Küper`}
+  description={entry.data.description}>
+
+  <style is:inline>
+    /* ===== ESSAY HERO ===== */
+    .essay-hero {
+      padding: 12rem 2rem 5rem;
+      text-align: center;
+      background: linear-gradient(180deg, #faf9f6 0%, #ffffff 100%);
+      border-bottom: 1px solid #eee;
+    }
+
+    .essay-hero .label {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: #c9a961;
+      display: block;
+      margin-bottom: 2.5rem;
+    }
+
+    .essay-hero h1 {
+      font-family: 'Crimson Text', serif;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 300;
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .essay-hero .subtitle {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: #64748b;
+      max-width: 650px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.6;
+    }
+
+    .essay-hero .meta-line {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #aaa;
+    }
+
+    .essay-hero .meta-line .typ-badge {
+      display: inline-block;
+      background: #f5f5f5;
+      padding: 0.3rem 0.8rem;
+      margin-right: 0.8rem;
+      color: #666;
+    }
+
+    /* ===== ESSAY BODY (Markdown) ===== */
+    .essay-content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+
+    .essay-content p {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      line-height: 2;
+      color: #333;
+      margin-bottom: 1.6rem;
+    }
+
+    /* Drop cap on first paragraph */
+    .essay-content > p:first-of-type::first-letter {
+      font-family: 'Crimson Text', serif;
+      font-size: 4rem;
+      float: left;
+      line-height: 0.8;
+      margin-right: 0.15em;
+      margin-top: 0.1em;
+      color: #c9a961;
+    }
+
+    .essay-content h2 {
+      font-family: 'Crimson Text', serif;
+      font-size: 2rem;
+      font-weight: 300;
+      margin-top: 4rem;
+      margin-bottom: 1.5rem;
+      color: #1a1a1a;
+      text-align: center;
+    }
+
+    .essay-content h3 {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
+    }
+
+    .essay-content hr {
+      border: none;
+      text-align: center;
+      margin: 3.5rem 0;
+      color: #c9a961;
+    }
+
+    .essay-content hr::after {
+      content: '· · ·';
+      letter-spacing: 0.8em;
+      font-size: 1rem;
+    }
+
+    .essay-content blockquote {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 1.5;
+      color: #c9a961;
+      text-align: center;
+      padding: 2.5rem 2rem;
+      margin: 3rem 0;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+    }
+
+    .essay-content blockquote p {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit;
+      margin: 0;
+    }
+
+    .essay-content strong {
+      color: #1a1a1a;
+      font-weight: 600;
+    }
+
+    .essay-content em {
+      color: #555;
+    }
+
+    .essay-content ul, .essay-content ol {
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: #444;
+      margin-bottom: 1.6rem;
+      padding-left: 1.5rem;
+    }
+
+    .essay-content li { margin-bottom: 0.5rem; }
+
+    .essay-content a {
+      color: #c9a961;
+      text-decoration: none;
+      border-bottom: 1px solid #e8dcc8;
+      transition: border-color 0.3s;
+    }
+
+    .essay-content a:hover { border-color: #c9a961; }
+
+    /* Tags at bottom */
+    .essay-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      padding: 3rem 2rem;
+      max-width: 720px;
+      margin: 0 auto;
+      border-top: 1px solid #eee;
+    }
+
+    .essay-tag {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #999;
+      background: #f8f8f8;
+      padding: 0.35rem 0.8rem;
+    }
+
+    /* Back link */
+    .essay-back {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 2rem 5rem;
+      text-align: center;
+    }
+
+    .essay-back a {
+      display: inline-block;
+      text-decoration: none;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #1a1a1a;
+      border-bottom: 1px solid #c9a961;
+      padding-bottom: 4px;
+      transition: color 0.3s;
+    }
+
+    .essay-back a:hover { color: #c9a961; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 600px) {
+      .essay-hero { padding: 8rem 1.5rem 3rem; }
+      .essay-content { padding: 3rem 1.5rem 4rem; }
+      .essay-content p { font-size: 1.05rem; }
+      .essay-content blockquote { font-size: 1.25rem; padding: 2rem 1rem; }
+    }
+  </style>
+
+  <!-- Hero -->
+  <section class="essay-hero">
+    <span class="label">{katLabel}</span>
+    <h1>{entry.data.title}</h1>
+    {entry.data.subtitle && <p class="subtitle">{entry.data.subtitle}</p>}
+    <span class="meta-line">
+      <span class="typ-badge">{entry.data.typ}</span>
+      {entry.data.author}
+    </span>
+  </section>
+
+  <!-- Content (rendered Markdown) -->
+  <article class="essay-content">
+    <Content />
+  </article>
+
+  <!-- Tags -->
+  {entry.data.tags && entry.data.tags.length > 0 && (
+    <div class="essay-tags">
+      {entry.data.tags.map(tag => (
+        <span class="essay-tag">{tag}</span>
+      ))}
+    </div>
+  )}
+
+  <!-- Back -->
+  <div class="essay-back">
+    <a href="/texte">← Alle Texte</a>
+  </div>
+
+</BaseLayout>
