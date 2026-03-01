@@ -1,1 +1,351 @@
+---
+// Dateipfad: src/pages/texte/index.astro
+// Beschreibung: Hub-Seite für alle Texte mit Kategorie-Filtern.
+// Neue Texte einfach als .md in src/content/texte/ ablegen — sie erscheinen automatisch.
+// Aktualisiert am: 01.03.2026
 
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allTexte = await getCollection('texte', ({ data }) => !data.draft);
+
+// Sortierung: nach Kategorie-Order, dann nach order-Feld
+const texte = allTexte.sort((a, b) => a.data.order - b.data.order);
+
+// Kategorie-Definitionen mit Labels und Reihenfolge
+const kategorien = [
+  { id: 'mythen-maerchen-sagen', label: 'Mythen, Märchen & Sagen', icon: '🌙' },
+  { id: 'gesellschaft-gegenwart', label: 'Gesellschaft & Gegenwart', icon: '◉' },
+  { id: 'musik-klang', label: 'Musik & Klang', icon: '♪' },
+  { id: 'natur-wissenschaft', label: 'Natur & Wissenschaft', icon: '∿' },
+  { id: 'geschichte', label: 'Geschichte', icon: '⟳' },
+  { id: 'forschung', label: 'Forschung', icon: '⇌' },
+  { id: 'lyrik-manifest', label: 'Lyrik & Manifest', icon: '∅' },
+];
+
+// Nur Kategorien anzeigen, die tatsächlich Texte enthalten
+const activeKategorien = kategorien.filter(k => 
+  texte.some(t => t.data.kategorie === k.id)
+);
+---
+
+<BaseLayout 
+  title="Texte" 
+  description="Essays, Analysen, Forschung und Lyrik von Thomas Peter Küper. Gedanken zu Gesellschaft, Mythen, Natur, Geschichte und Klang.">
+
+  <style is:inline>
+    /* ===== HERO ===== */
+    .texte-hero {
+      padding: 10rem 2rem 6rem;
+      text-align: center;
+      background: linear-gradient(180deg, #faf9f6 0%, #ffffff 100%);
+      border-bottom: 1px solid #eee;
+    }
+
+    .texte-hero .label {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: #c9a961;
+      display: block;
+      margin-bottom: 2rem;
+    }
+
+    .texte-hero h1 {
+      font-family: 'Crimson Text', serif;
+      font-size: clamp(3rem, 8vw, 5rem);
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.5rem;
+    }
+
+    .texte-hero .intro {
+      font-family: 'Lora', serif;
+      font-size: 1.15rem;
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    /* ===== FILTER ===== */
+    .filter-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3rem 2rem 1rem;
+    }
+
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      justify-content: center;
+    }
+
+    .filter-btn {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      padding: 0.7rem 1.4rem;
+      border: 1px solid #ddd;
+      background: #fff;
+      color: #666;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .filter-btn:hover {
+      border-color: #c9a961;
+      color: #c9a961;
+    }
+
+    .filter-btn.active {
+      background: #1a1a1a;
+      color: #fff;
+      border-color: #1a1a1a;
+    }
+
+    .filter-count {
+      font-family: 'Lora', serif;
+      font-size: 0.9rem;
+      color: #999;
+      text-align: center;
+      margin-top: 1.5rem;
+      font-style: italic;
+    }
+
+    /* ===== TEXTE-LISTE ===== */
+    .texte-list {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 2rem 6rem;
+    }
+
+    /* Kategorie-Gruppe */
+    .kat-group {
+      margin-bottom: 3rem;
+    }
+
+    .kat-group-header {
+      display: flex;
+      align-items: baseline;
+      gap: 0.8rem;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    .kat-group-icon {
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+
+    .kat-group-header h2 {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    .kat-group-count {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: #c9a961;
+      letter-spacing: 1px;
+    }
+
+    /* Einzelne Text-Karte */
+    .text-card {
+      display: flex;
+      align-items: baseline;
+      gap: 1.2rem;
+      padding: 1.1rem 1.4rem;
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid transparent;
+      border-bottom: 1px solid #f5f5f5;
+      transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .text-card:last-child { border-bottom-color: transparent; }
+
+    .text-card:hover {
+      border-color: #c9a961;
+      background: #fdfcfa;
+      transform: translateX(6px);
+    }
+
+    .text-card .card-typ {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #c9a961;
+      white-space: nowrap;
+      min-width: 65px;
+    }
+
+    .text-card .card-body {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .text-card .card-title {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.2rem;
+      display: block;
+      margin-bottom: 0.2rem;
+      line-height: 1.3;
+    }
+
+    .text-card .card-desc {
+      font-family: 'Lora', serif;
+      font-size: 0.85rem;
+      color: #888;
+      line-height: 1.5;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .text-card .card-arrow {
+      font-size: 0.9rem;
+      color: #ddd;
+      transition: color 0.3s, transform 0.3s;
+      flex-shrink: 0;
+    }
+
+    .text-card:hover .card-arrow {
+      color: #c9a961;
+      transform: translateX(4px);
+    }
+
+    /* Tags (optional, bei Hover sichtbar) */
+    .text-card .card-tags {
+      display: none;
+      gap: 0.4rem;
+      margin-top: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .text-card:hover .card-tags { display: flex; }
+
+    .card-tag {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.55rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #999;
+      background: #f5f5f5;
+      padding: 0.2rem 0.5rem;
+    }
+
+    /* Hidden state for filtering */
+    .kat-group.hidden { display: none; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 700px) {
+      .texte-hero { padding: 7rem 1.5rem 4rem; }
+      .filter-btn { font-size: 0.6rem; padding: 0.5rem 1rem; }
+      .text-card { padding: 0.9rem 1rem; flex-wrap: wrap; }
+      .text-card .card-desc { white-space: normal; }
+      .text-card .card-typ { min-width: auto; }
+    }
+  </style>
+
+  <!-- Hero -->
+  <section class="texte-hero">
+    <span class="label">Essays · Analysen · Forschung · Lyrik</span>
+    <h1>Texte</h1>
+    <p class="intro">
+      Gedanken zu dem, was zwischen den Dingen passiert — 
+      in Gesellschaft, Mythen, Natur, Geschichte und Klang.
+    </p>
+  </section>
+
+  <!-- Filter -->
+  <section class="filter-section">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="alle">Alle</button>
+      {activeKategorien.map(k => (
+        <button class="filter-btn" data-filter={k.id}>{k.label}</button>
+      ))}
+    </div>
+    <p class="filter-count">
+      <span id="visible-count">{texte.length}</span> Texte
+    </p>
+  </section>
+
+  <!-- Texte-Liste, gruppiert nach Kategorie -->
+  <section class="texte-list">
+    {activeKategorien.map(k => {
+      const katTexte = texte.filter(t => t.data.kategorie === k.id);
+      return (
+        <div class="kat-group" data-kategorie={k.id}>
+          <div class="kat-group-header">
+            <span class="kat-group-icon">{k.icon}</span>
+            <h2>{k.label}</h2>
+            <span class="kat-group-count">{katTexte.length}</span>
+          </div>
+          {katTexte.map(t => (
+            <a href={`/texte/${t.slug}`} class="text-card" data-kategorie={k.id}>
+              <span class="card-typ">{t.data.typ}</span>
+              <span class="card-body">
+                <span class="card-title">{t.data.title}</span>
+                <span class="card-desc">{t.data.description}</span>
+                {t.data.tags && (
+                  <span class="card-tags">
+                    {t.data.tags.map(tag => (
+                      <span class="card-tag">{tag}</span>
+                    ))}
+                  </span>
+                )}
+              </span>
+              <span class="card-arrow">→</span>
+            </a>
+          ))}
+        </div>
+      );
+    })}
+  </section>
+
+  <!-- Client-side Filtering -->
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.filter-btn');
+      const groups = document.querySelectorAll('.kat-group');
+      const countEl = document.getElementById('visible-count');
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Active state
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filter = btn.dataset.filter;
+          let visibleCount = 0;
+
+          groups.forEach(group => {
+            if (filter === 'alle' || group.dataset.kategorie === filter) {
+              group.classList.remove('hidden');
+              visibleCount += group.querySelectorAll('.text-card').length;
+            } else {
+              group.classList.add('hidden');
+            }
+          });
+
+          if (countEl) countEl.textContent = visibleCount;
+        });
+      });
+    });
+  </script>
+
+</BaseLayout>
