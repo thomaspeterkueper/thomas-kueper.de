@@ -1,7 +1,7 @@
 ---
 // Dateipfad: src/layouts/BaseLayout.astro
 // Beschreibung: Basis-Layout mit Dropdown-Menü für Bücher (Romane, Sachbücher, Universen)
-// Aktualisiert am: 22.02.2026 (Kontrakomologie & Mishkenaz als Hauptmenüpunkte)
+// Aktualisiert am: 01.03.2026 — Texte als Hauptmenüpunkt hinzugefügt
 
 const { title, description } = Astro.props;
 
@@ -283,6 +283,7 @@ import headerAvatar from '../assets/header-avatar.jpg';
     .mobile-overlay.is-open .mobile-nav-link:nth-child(5) { transition-delay: 0.32s; }
     .mobile-overlay.is-open .mobile-nav-link:nth-child(6) { transition-delay: 0.38s; }
     .mobile-overlay.is-open .mobile-nav-link:nth-child(7) { transition-delay: 0.44s; }
+    .mobile-overlay.is-open .mobile-nav-link:nth-child(8) { transition-delay: 0.50s; }
 
     .mobile-nav-link::after {
       content: '';
@@ -361,6 +362,7 @@ import headerAvatar from '../assets/header-avatar.jpg';
         <a href="/philosophie" class="nav-link">Philosophie</a>
         <a href="/kontrakomologie" class="nav-link">Kontrakomologie</a>
         <a href="/mishkenaz" class="nav-link">Mishkenaz</a>
+        <a href="/texte" class="nav-link">Texte</a>
         <a href="/ueber-mich" class="nav-link">Über mich</a>
         <a href="/overtime-archive" class="nav-link">OTA</a>
       </div>
@@ -381,6 +383,7 @@ import headerAvatar from '../assets/header-avatar.jpg';
     <a href="/philosophie" class="mobile-nav-link">Philosophie</a>
     <a href="/kontrakomologie" class="mobile-nav-link">Kontrakomologie</a>
     <a href="/mishkenaz" class="mobile-nav-link">Mishkenaz</a>
+    <a href="/texte" class="mobile-nav-link">Texte</a>
     <a href="/ueber-mich" class="mobile-nav-link">Über mich</a>
     <div class="mobile-nav-divider"></div>
   </div>
