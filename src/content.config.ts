@@ -42,4 +42,28 @@ const kontrakomologie = defineCollection({
   }),
 });
 
-export const collections = { romane, philosophie, sachbuecher, kontrakomologie };
+const texte = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    subtitle: z.string().optional(),
+    description: z.string(),
+    kategorie: z.enum([
+      'mythen-maerchen-sagen',
+      'gesellschaft-gegenwart',
+      'musik-klang',
+      'natur-wissenschaft',
+      'geschichte',
+      'lyrik-manifest',
+      'forschung',
+    ]),
+    typ: z.string().default('Essay'),
+    tags: z.array(z.string()).default([]),
+    date: z.string().optional(),
+    author: z.string().default('Thomas Peter Küper'),
+    order: z.number().default(99),
+    draft: z.boolean().default(false),
+  }),
+});
+
+export const collections = { romane, philosophie, sachbuecher, kontrakomologie, texte };
