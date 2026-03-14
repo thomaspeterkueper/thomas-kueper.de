@@ -2,7 +2,7 @@
 title: "Tarnfarben"
 subtitle: "Versuch einer Zeitdiagnose am falschen Auto"
 description: "Warum wir grau kaufen, grau bauen, grau leben — und was die Farben der Kinder über uns verraten."
-kategorie: "gesellschaft"
+kategorie: "gesellschaft-gegenwart"
 typ: "Essay"
 tags: ["Gesellschaft", "Konsum", "Konditionierung", "Ästhetik", "Zeitdiagnose"]
 date: "2026-03"
