@@ -2,7 +2,7 @@
 title: "Rotkäppchen 4.0"
 subtitle: "Die 7 Stimmen der Wahrheit"
 description: "Sieben gleichzeitig wahre Stimmen in einem Märchen. Eine Übung in Fluider Hermeneutik — angewandt auf die bekannteste Geschichte der Welt."
-kategorie: "Mythen, Märchen & Sagen"
+kategorie: "mythen-maerchen-sagen"
 typ: "Fluide Hermeneutik"
 tags: ["Omnizedenz", "Fluide Hermeneutik", "Mishkenaz", "Resonanz-Ethik", "Ta-Konstante", "Märchen"]
 date: "2025-02"
