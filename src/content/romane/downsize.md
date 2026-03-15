@@ -57,6 +57,7 @@ tags: ["Roman"]
   not gone, only just out of sight — <em>only just outside</em><br />
   watching the whole room plays too bright,<br />
   I'm on the edge of the light …
+  
 </p>
 
 <span class="tagline-item">„Ein Roman über Unsichtbarkeit — geschrieben in einer Sprache, die selbst kleiner wird."</span>
