@@ -52,9 +52,11 @@ tags: ["Roman"]
 
 <p style="font-style: italic; color: var(--gold); font-size: 0.95rem; line-height: 1.9;">
   People move like they were born here,<br />
-  I stand where the music grows faint.<br />
-  Half within the room, half gone —<br />
-  I'm on the edge of the light.
+  every step is already known.<br /><br />
+  I'm on the edge of the light — <em>at the edge of the light</em><br />
+  not gone, only just out of sight — <em>only just outside</em><br />
+  watching the whole room plays too bright,<br />
+  I'm on the edge of the light …
 </p>
 
 <span class="tagline-item">„Ein Roman über Unsichtbarkeit — geschrieben in einer Sprache, die selbst kleiner wird."</span>
