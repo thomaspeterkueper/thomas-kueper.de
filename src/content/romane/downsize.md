@@ -39,4 +39,22 @@ tags: ["Roman"]
   Kein Happy End. Aber ein Funken.
 </p>
 
+<h2 style="margin-top: 6rem;">Musik zum Roman</h2>
+
+<audio controls preload="metadata">
+  <source src="/audio/soft-divergence-edge-of-the-light.mp3" type="audio/mpeg" />
+  Dein Browser unterstützt kein Audio.
+</audio>
+
+<p style="font-size: 0.85rem; color: #888; margin-top: 0.5rem; font-style: italic;">
+  Soft Divergence — Edge of the Light · Driving Pop/Rock in D-Moll · Thomas Peter Küper
+</p>
+
+<p style="font-style: italic; color: var(--gold); font-size: 0.95rem; line-height: 1.9;">
+  People move like they were born here,<br />
+  I stand where the music grows faint.<br />
+  Half within the room, half gone —<br />
+  I'm on the edge of the light.
+</p>
+
 <span class="tagline-item">„Ein Roman über Unsichtbarkeit — geschrieben in einer Sprache, die selbst kleiner wird."</span>
