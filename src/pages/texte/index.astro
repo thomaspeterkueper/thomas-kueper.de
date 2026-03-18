@@ -2,17 +2,17 @@
 // Dateipfad: src/pages/texte/index.astro
 // Beschreibung: Hub-Seite für alle Texte mit Kategorie-Filtern.
 // Neue Texte einfach als .md in src/content/texte/ ablegen — sie erscheinen automatisch.
-// Aktualisiert am: 01.03.2026
+// Aktualisiert am: 18.03.2026
 
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
 const allTexte = await getCollection('texte', ({ data }) => !data.draft);
 
-// Sortierung: nach Kategorie-Order, dann nach order-Feld
+// Sortierung: nach order-Feld
 const texte = allTexte.sort((a, b) => a.data.order - b.data.order);
 
-// Kategorie-Definitionen mit Labels und Reihenfolge
+// Kategorie-Definitionen mit Labels, Reihenfolge und optionaler Einleitung
 const kategorien = [
   { id: 'mythen-maerchen-sagen', label: 'Mythen, Märchen & Sagen', icon: '🌙' },
   { id: 'gesellschaft-gegenwart', label: 'Gesellschaft & Gegenwart', icon: '◉' },
@@ -21,6 +21,7 @@ const kategorien = [
   { id: 'geschichte', label: 'Geschichte', icon: '⟳' },
   { id: 'forschung', label: 'Forschung', icon: '⇌' },
   { id: 'lyrik-manifest', label: 'Lyrik & Manifest', icon: '∅' },
+  { id: 'tiefenwoerter', label: 'Tiefenwörter', icon: '◈', intro: 'Manche Wörter tragen mehr als ihre Bedeutung. Sie tragen eine Ethik, eine Haltung, ein ganzes Weltbild — verdichtet in eine Handvoll Silben. Diese Reihe folgt solchen Wörtern durch verschiedene Sprachen und fragt, was sichtbar wird, wenn man sie ernst nimmt.' },
 ];
 
 // Nur Kategorien anzeigen, die tatsächlich Texte enthalten
@@ -134,7 +135,7 @@ const activeKategorien = kategorien.filter(k =>
       display: flex;
       align-items: baseline;
       gap: 0.8rem;
-      margin-bottom: 1.2rem;
+      margin-bottom: 0.5rem;
       padding-bottom: 0.8rem;
       border-bottom: 1px solid #eee;
     }
@@ -157,6 +158,16 @@ const activeKategorien = kategorien.filter(k =>
       font-weight: 700;
       color: #c9a961;
       letter-spacing: 1px;
+    }
+
+    .kat-group-intro {
+      font-family: 'Lora', serif;
+      font-size: 0.92rem;
+      font-style: italic;
+      color: #888;
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+      padding: 0.8rem 0;
     }
 
     /* Einzelne Text-Karte */
@@ -295,6 +306,9 @@ const activeKategorien = kategorien.filter(k =>
             <h2>{k.label}</h2>
             <span class="kat-group-count">{katTexte.length}</span>
           </div>
+          {k.intro && (
+            <p class="kat-group-intro">{k.intro}</p>
+          )}
           {katTexte.map(t => (
             <a href={`/texte/${t.slug}`} class="text-card" data-kategorie={k.id}>
               <span class="card-typ">{t.data.typ}</span>
