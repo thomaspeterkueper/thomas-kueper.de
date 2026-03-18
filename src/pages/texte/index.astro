@@ -1,6 +1,6 @@
 ---
 // Dateipfad: src/pages/texte/index.astro
-// Beschreibung: Hub-Seite für alle Texte mit Kategorie-Filtern.
+// Beschreibung: Hub-Seite für alle Texte mit Kategorie-Filtern und Zwei-Spalten-Layout.
 // Neue Texte einfach als .md in src/content/texte/ ablegen — sie erscheinen automatisch.
 // Aktualisiert am: 18.03.2026
 
@@ -8,23 +8,21 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
 const allTexte = await getCollection('texte', ({ data }) => !data.draft);
-
-// Sortierung: nach order-Feld
 const texte = allTexte.sort((a, b) => a.data.order - b.data.order);
 
-// Kategorie-Definitionen mit Labels, Reihenfolge und optionaler Einleitung
+// Kategorie-Definitionen — Reihenfolge bestimmt Anzeige
+// fullWidth: true → nimmt beide Spalten ein
 const kategorien = [
   { id: 'mythen-maerchen-sagen', label: 'Mythen, Märchen & Sagen', icon: '🌙' },
   { id: 'gesellschaft-gegenwart', label: 'Gesellschaft & Gegenwart', icon: '◉' },
+  { id: 'forschung', label: 'Forschung', icon: '⇌' },
   { id: 'musik-klang', label: 'Musik & Klang', icon: '♪' },
   { id: 'natur-wissenschaft', label: 'Natur & Wissenschaft', icon: '∿' },
   { id: 'geschichte', label: 'Geschichte', icon: '⟳' },
-  { id: 'forschung', label: 'Forschung', icon: '⇌' },
-  { id: 'lyrik-manifest', label: 'Lyrik & Manifest', icon: '∅' },
-  { id: 'tiefenwoerter', label: 'Tiefenwörter', icon: '◈', intro: 'Manche Wörter tragen mehr als ihre Bedeutung. Sie tragen eine Ethik, eine Haltung, ein ganzes Weltbild — verdichtet in eine Handvoll Silben. Diese Reihe folgt solchen Wörtern durch verschiedene Sprachen und fragt, was sichtbar wird, wenn man sie ernst nimmt.' },
+  { id: 'lyrik-manifest', label: 'Lyrik & Manifest', icon: '∅', fullWidth: true },
+  { id: 'tiefenwoerter', label: 'Tiefenwörter', icon: '◈', fullWidth: true, intro: 'Manche Wörter tragen mehr als ihre Bedeutung. Sie tragen eine Ethik, eine Haltung, ein ganzes Weltbild — verdichtet in eine Handvoll Silben. Diese Reihe folgt solchen Wörtern durch verschiedene Sprachen und fragt, was sichtbar wird, wenn man sie ernst nimmt.' },
 ];
 
-// Nur Kategorien anzeigen, die tatsächlich Texte enthalten
 const activeKategorien = kategorien.filter(k => 
   texte.some(t => t.data.kategorie === k.id)
 );
@@ -73,7 +71,7 @@ const activeKategorien = kategorien.filter(k =>
 
     /* ===== FILTER ===== */
     .filter-section {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 3rem 2rem 1rem;
     }
@@ -119,16 +117,26 @@ const activeKategorien = kategorien.filter(k =>
       font-style: italic;
     }
 
-    /* ===== TEXTE-LISTE ===== */
-    .texte-list {
-      max-width: 1100px;
+    /* ===== TEXTE-GRID (2-spaltig) ===== */
+    .texte-grid-wrapper {
+      max-width: 1200px;
       margin: 0 auto;
       padding: 2rem 2rem 6rem;
     }
 
+    .texte-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem 3.5rem;
+    }
+
     /* Kategorie-Gruppe */
     .kat-group {
-      margin-bottom: 3rem;
+      min-width: 0;
+    }
+
+    .kat-group.full-width {
+      grid-column: 1 / -1;
     }
 
     .kat-group-header {
@@ -166,16 +174,34 @@ const activeKategorien = kategorien.filter(k =>
       font-style: italic;
       color: #888;
       line-height: 1.7;
-      margin-bottom: 1.2rem;
-      padding: 0.8rem 0;
+      margin-bottom: 1rem;
+      padding: 0.6rem 0;
+    }
+
+    /* Karten innerhalb einer Gruppe */
+    .kat-essays {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    /* Full-width Gruppen: Karten horizontal */
+    .kat-group.full-width .kat-essays {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .kat-group.full-width .text-card {
+      flex: 1 1 320px;
     }
 
     /* Einzelne Text-Karte */
     .text-card {
       display: flex;
       align-items: baseline;
-      gap: 1.2rem;
-      padding: 1.1rem 1.4rem;
+      gap: 1rem;
+      padding: 1rem 1.3rem;
       text-decoration: none;
       color: inherit;
       border: 1px solid transparent;
@@ -209,7 +235,7 @@ const activeKategorien = kategorien.filter(k =>
 
     .text-card .card-title {
       font-family: 'Crimson Text', serif;
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       display: block;
       margin-bottom: 0.2rem;
       line-height: 1.3;
@@ -217,13 +243,14 @@ const activeKategorien = kategorien.filter(k =>
 
     .text-card .card-desc {
       font-family: 'Lora', serif;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       color: #888;
       line-height: 1.5;
       display: block;
-      white-space: nowrap;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
       overflow: hidden;
-      text-overflow: ellipsis;
     }
 
     .text-card .card-arrow {
@@ -238,7 +265,7 @@ const activeKategorien = kategorien.filter(k =>
       transform: translateX(4px);
     }
 
-    /* Tags (optional, bei Hover sichtbar) */
+    /* Tags (bei Hover sichtbar) */
     .text-card .card-tags {
       display: none;
       gap: 0.4rem;
@@ -263,12 +290,18 @@ const activeKategorien = kategorien.filter(k =>
     .kat-group.hidden { display: none; }
 
     /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .texte-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .kat-group.full-width .kat-essays { flex-direction: column; }
+    }
+
     @media (max-width: 700px) {
       .texte-hero { padding: 7rem 1.5rem 4rem; }
       .filter-btn { font-size: 0.6rem; padding: 0.5rem 1rem; }
       .text-card { padding: 0.9rem 1rem; flex-wrap: wrap; }
-      .text-card .card-desc { white-space: normal; }
+      .text-card .card-desc { -webkit-line-clamp: 3; }
       .text-card .card-typ { min-width: auto; }
+      .texte-grid-wrapper { padding: 1.5rem 1.5rem 4rem; }
     }
   </style>
 
@@ -295,40 +328,44 @@ const activeKategorien = kategorien.filter(k =>
     </p>
   </section>
 
-  <!-- Texte-Liste, gruppiert nach Kategorie -->
-  <section class="texte-list">
-    {activeKategorien.map(k => {
-      const katTexte = texte.filter(t => t.data.kategorie === k.id);
-      return (
-        <div class="kat-group" data-kategorie={k.id}>
-          <div class="kat-group-header">
-            <span class="kat-group-icon">{k.icon}</span>
-            <h2>{k.label}</h2>
-            <span class="kat-group-count">{katTexte.length}</span>
-          </div>
-          {k.intro && (
-            <p class="kat-group-intro">{k.intro}</p>
-          )}
-          {katTexte.map(t => (
-            <a href={`/texte/${t.slug}`} class="text-card" data-kategorie={k.id}>
-              <span class="card-typ">{t.data.typ}</span>
-              <span class="card-body">
-                <span class="card-title">{t.data.title}</span>
-                <span class="card-desc">{t.data.description}</span>
-                {t.data.tags && (
-                  <span class="card-tags">
-                    {t.data.tags.map(tag => (
-                      <span class="card-tag">{tag}</span>
-                    ))}
+  <!-- Texte-Grid -->
+  <section class="texte-grid-wrapper">
+    <div class="texte-grid">
+      {activeKategorien.map(k => {
+        const katTexte = texte.filter(t => t.data.kategorie === k.id);
+        return (
+          <div class={`kat-group ${k.fullWidth ? 'full-width' : ''}`} data-kategorie={k.id}>
+            <div class="kat-group-header">
+              <span class="kat-group-icon">{k.icon}</span>
+              <h2>{k.label}</h2>
+              <span class="kat-group-count">{katTexte.length}</span>
+            </div>
+            {k.intro && (
+              <p class="kat-group-intro">{k.intro}</p>
+            )}
+            <div class="kat-essays">
+              {katTexte.map(t => (
+                <a href={`/texte/${t.slug}`} class="text-card" data-kategorie={k.id}>
+                  <span class="card-typ">{t.data.typ}</span>
+                  <span class="card-body">
+                    <span class="card-title">{t.data.title}</span>
+                    <span class="card-desc">{t.data.description}</span>
+                    {t.data.tags && (
+                      <span class="card-tags">
+                        {t.data.tags.map(tag => (
+                          <span class="card-tag">{tag}</span>
+                        ))}
+                      </span>
+                    )}
                   </span>
-                )}
-              </span>
-              <span class="card-arrow">→</span>
-            </a>
-          ))}
-        </div>
-      );
-    })}
+                  <span class="card-arrow">→</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        );
+      })}
+    </div>
   </section>
 
   <!-- Client-side Filtering -->
@@ -340,7 +377,6 @@ const activeKategorien = kategorien.filter(k =>
 
       buttons.forEach(btn => {
         btn.addEventListener('click', () => {
-          // Active state
           buttons.forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
 
