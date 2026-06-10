@@ -1,13 +1,10 @@
 ---
 // Pfad: src/pages/ueber-mich.astro
-// Aktualisiert am: 07.02.2026, 21:30
-// Beschreibung: Ungekürzte Autorenseite mit Meilensteinen und Disziplinen.
-
 import BaseLayout from '../layouts/BaseLayout.astro';
 import authorPortrait from '../assets/portrait2.jpg';
 ---
 
-<BaseLayout title="Über mich" description="Thomas Peter Küper — Autor, Weltenbauer und IT-Consultant.">
+<BaseLayout title="Über mich" description="Thomas Peter Küper — Autor, Komponist, Weltenbauer und IT-Consultant.">
   <style>
     .about-page { max-width: 900px; margin: 0 auto; padding: 4rem 2rem 8rem; line-height: 1.9; }
     .about-hero { text-align: center; margin-bottom: 6rem; }
@@ -19,46 +16,50 @@ import authorPortrait from '../assets/portrait2.jpg';
     .milestone-section { background: var(--bg-soft); border-top: 1px solid var(--gold-light); border-bottom: 1px solid var(--gold-light); padding: 5rem 3rem; margin: 8rem 0; text-align: center; }
     .disciplines { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 4rem; margin-bottom: 10rem; }
     .disc-card h3 { font-size: 1.6rem; color: var(--gold); text-transform: uppercase; margin-bottom:1rem; }
+    .disc-card p { font-size: 1rem; line-height: 1.8; color: var(--text-muted); }
     @media (max-width: 900px) { .split-section { grid-template-columns: 1fr; } .portrait-box { max-width: 280px; margin: 0 auto 3rem; } }
   </style>
 
   <article class="about-page">
     <header class="about-hero">
       <h1>Thomas Peter Küper</h1>
-      <p style="color:var(--gold); font-style:italic;">„Echte Verbindung entsteht dort, wo Welten einander antworten.“</p>
+      <p style="color:var(--gold); font-style:italic;">„Echte Verbindung entsteht dort, wo Welten einander antworten."</p>
     </header>
 
     <div class="split-section">
-      <div class="portrait-box"><img src={authorPortrait.src} alt="Porträt" class="portrait-img" /></div>
+      <div class="portrait-box">
+        <img src={authorPortrait.src} alt="Porträt Thomas Peter Küper" class="portrait-img" />
+      </div>
       <div class="bio-text">
-        <p>Ich schaue genau hin – auf das, was zwischen den Zeilen passiert. Als <strong>IT-Consultant</strong> mit über 30 Jahren Erfahrung weiß ich, dass jedes Gefüge aus Mustern besteht.</p>
-        <p>Ich beobachte nicht nur – ich entwerfe. Aus dem, was ich sehe, entstehen Universen. Was meine Arbeit verbindet, ist die Überzeugung, dass nichts für sich allein steht.</p>
+        <p>Tagsüber arbeite ich in der Welt von Microsoft 365, Azure und IT-Infrastrukturen — seit über dreißig Jahren. Abends sitze ich oft an einem hundertjährigen IBACH-Flügel, schreibe an Romanen oder arbeite an Karten und Sprachen für Welten, die noch niemand betreten hat.</p>
+        <p>Mich interessieren dieselben Fragen in verschiedenen Formen: Wie entstehen Bedeutung, Erinnerung und Verbindung? In Netzwerken. In Geschichten. In Menschen. Die Grenzen zwischen den Disziplinen — Technik, Philosophie, Literatur, Musik — sind für mich keine Grenzen, sondern Resonanzflächen.</p>
+        <p>Ich lebe im Sauerland, reise wenn möglich nach Asien, sammle historische Karten und schreibe meistens nachts.</p>
       </div>
     </div>
 
     <section class="milestone-section">
       <h2 style="margin-bottom:1.5rem; text-transform:uppercase; letter-spacing:2px;">Der Ursprung</h2>
-      <p style="font-size:1.2rem; font-style:italic;">„Heiligabend 2012. Ein Krankenhauszimmer zwischen Sein und Nicht-Sein. In dieser Stille begann meine Suche nach dem, was uns wirklich ausmacht.“</p>
+      <p style="font-size:1.2rem; font-style:italic; max-width:680px; margin:0 auto;">„Heiligabend 2012. Ein Krankenhauszimmer zwischen Sein und Nicht-Sein. In dieser Stille begann meine Suche nach dem, was uns wirklich ausmacht — und nach einer Sprache dafür."</p>
     </section>
 
     <div class="disciplines">
       <div class="disc-card">
-        <h3>Struktur</h3>
-        <p>Ob Cybersecurity oder Dramaturgie: Mich fasziniert das Unsichtbare. Muster zu erkennen und Logik hinter dem Chaos zu finden, prägt mein Denken.</p>
+        <h3>Literatur</h3>
+        <p>Romane, die Zeit nicht beschreiben, sondern erzeugen. Figuren, die in mehreren Zeitschichten gleichzeitig leben. Erfundene Sprachen — Mishkenaz, Baumeister — als Zugang zu dem, was keine vorhandene Sprache fasst.</p>
       </div>
       <div class="disc-card">
-        <h3>Präsenz</h3>
-        <p>Auf der Theaterbühne lerne ich über die Kraft des Augenblicks. Am Klavier erfahre ich den Rhythmus, der auch meinen Sätzen zugrunde liegt.</p>
+        <h3>Musik</h3>
+        <p>Komposition als Denkform. Am IBACH-Flügel entsteht, was in Worten noch nicht möglich ist. Die Kontrakomologie — eine Methode des Hörens — ist aus dieser Praxis hervorgegangen.</p>
       </div>
       <div class="disc-card">
-        <h3>Dialog</h3>
-        <p>Ich suche nicht die Isolation, sondern das Gemeinsame. Ko-Kreativität ist das Fundament meiner Arbeit.</p>
+        <h3>Philosophie</h3>
+        <p>Omnizedenz und das AVI-Modell: der Versuch, Bewusstsein, Resonanz und Wirklichkeit präzise zu beschreiben — ohne die Fragen kleiner zu machen, als sie sind.</p>
       </div>
     </div>
 
     <section style="text-align:center; margin-bottom:8rem;">
       <h2 style="font-size:2.2rem; margin-bottom:1.5rem;">Das gedankliche Dach</h2>
-      <p style="max-width:700px; margin:0 auto 2.5rem; color:var(--text-muted);">Meine Texte kreisen oft um das Konzept der <strong>Omnizedenz</strong>. Ich begreife das Wesentliche als das schwingende Prinzip, das alles durchdringt. Das <strong>AVI-Modell</strong> ist mein Versuch, diese Zusammenhänge präzise zu beschreiben.</p>
+      <p style="max-width:700px; margin:0 auto 2.5rem; color:var(--text-muted);">Alle diese Arbeiten kreisen um dieselbe Grundfrage: Woraus entsteht Wirklichkeit — und wie hört man ihr zu? Die Philosophie der <strong>Omnizedenz</strong> ist mein Versuch einer Antwort. Die Kontrakomologie ist ihre musikalische und literarische Praxis.</p>
       <a href="/philosophie" style="color:var(--gold); text-decoration:none; font-weight:bold; border-bottom:1px solid var(--gold); padding-bottom:5px;">Die Philosophie entdecken →</a>
     </section>
   </article>
