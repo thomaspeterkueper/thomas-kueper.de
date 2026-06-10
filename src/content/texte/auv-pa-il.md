@@ -158,16 +158,16 @@ Dreifach gehaucht, jedes Mal leiser. Das *îl* am Ende kaum noch hörbar. Dann S
 
 **Strophe IV:**
 > Ich bin nicht gegangen — ich bin der Strahl, der dich wärmt.
-> Ich bin der Wind, der dich streift — ich bin das Echo, im Vakuum, das alles enthält.
-> Ich bin die Bindung, die hält — zu euch allen, jede Welle einzeln.
+> Ich bin der Wind, der dich streift — ich bin das Echo in der Leere, die alles enthält.
+> Ich bin das Band, das hält — zu euch allen, jede Welle einzeln.
 > Ich bin in allem, was ist, bis in die zeitlose Ewigkeit.
 
 **Atemvers:**
-> Aue ... Aue ... suchend.
+> Auv ... Auv ... suchend.
 >
-> Aue.
+> Auv.
 >
-> *(Aue: die fließende Tiefe, die alles trägt — phonetisch verwandt mit Avi, der Leere im reinen Mishkenaz)*
+> *(Auv: in Auv-Breth die fließende Tiefe, phonetisch verwandt mit Avi, der Leere im reinen Mishkenaz — das Wort wird nicht übersetzt, nur gehaucht)*
 
 ---
 
