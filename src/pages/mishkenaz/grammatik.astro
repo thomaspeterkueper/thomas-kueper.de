@@ -1,835 +1,336 @@
-<!-- 
-  Datei: src/pages/mishkenaz/grammatik.astro
-  Projekt: thomas-kueper.de
-  Repository: https://github.com/thomaspeterkueper/thomas-kueper.de
--->
 ---
+// src/pages/mishkenaz/grammatik.astro
+// Stand: Juni 2026 — aktualisierte Sprachformen (sa-i/ta-i/ku-i)
+
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = "Grammatik — Mishkenaz";
+const description = "Wie Mishkenaz funktioniert: Resonanz-Aspekte statt Zeitformen, Rollenpartikel, die Ta-Konstante als ethische Grammatikregel.";
 ---
 
-<BaseLayout 
-  title="Grammatik - Mishkenaz" 
-  description="Die vollständige Grammatik von Mishkenaz: Aspekte, Modi, Meta-Operatoren und die Ethik der Resonanz."
->
-  <section class="hero-simple">
-    <div class="container">
-      <h1>Grammatik</h1>
-      <p class="subtitle">Wie Mishkenaz funktioniert</p>
+<BaseLayout title={title} description={description}>
+<style>
+  .gram-page { max-width: var(--max-width); margin: 0 auto; padding: 0 2rem 4rem; }
+
+  .page-header { padding: 3rem 0 2rem; border-bottom: 1px solid var(--gold-light); }
+  .breadcrumb { font-family: 'Lato', sans-serif; font-size: 0.65rem; font-weight: 700;
+    letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.75rem; }
+  .breadcrumb a { color: var(--color-petrol); text-decoration: none; }
+  .breadcrumb span { color: var(--text-muted); margin: 0 0.4rem; }
+  .page-header h1 { font-family: 'Crimson Text', serif; font-size: clamp(2.2rem,5vw,3.5rem);
+    font-weight: 400; color: var(--dark); margin: 0 0 0.5rem; }
+  .page-header .sub { font-family: 'Lora', serif; font-size: 1.1rem;
+    color: var(--text-muted); font-style: italic; }
+
+  .hinweis { background: var(--color-petrol-light); border-left: 3px solid var(--color-petrol);
+    padding: 1.1rem 1.5rem; margin: 2rem 0; font-family: 'Lora', serif;
+    font-size: 0.92rem; line-height: 1.75; }
+
+  .sektion { padding: 2.5rem 0; border-bottom: 1px solid var(--border); }
+  .sektion h2 { font-family: 'Crimson Text', serif; font-size: 1.75rem; font-weight: 400;
+    color: var(--dark); margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem; border-bottom: 1px solid var(--gold-light); }
+  .sektion h3 { font-family: 'Lato', sans-serif; font-size: 0.7rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.2em; color: var(--color-petrol);
+    margin: 1.75rem 0 0.5rem; }
+  .sektion p { font-family: 'Lora', serif; font-size: 0.97rem; line-height: 1.8;
+    margin-bottom: 1rem; color: var(--text); }
+
+  .slot-box { background: var(--dark); color: #FAF8F3; padding: 1.5rem 2rem; margin: 1rem 0 1.5rem; }
+  .slot-box .formel { font-family: monospace; font-size: 1rem; color: var(--gold);
+    letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+  .slot-box .erkl { font-family: 'Lora', serif; font-size: 0.88rem;
+    line-height: 1.8; color: #94a3b8; }
+  .slot-box .erkl strong { color: var(--gold); }
+
+  .aspekte-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin: 1rem 0 1.5rem; }
+  .aspekt-karte { border: 1px solid var(--gold-light); padding: 1.25rem;
+    text-align: center; transition: border-color 0.2s; }
+  .aspekt-karte:hover { border-color: var(--color-petrol); }
+  .aspekt-karte .suffix { font-family: monospace; font-size: 1.4rem;
+    color: var(--gold); display: block; margin-bottom: 0.4rem; }
+  .aspekt-karte .bed { font-family: 'Lato', sans-serif; font-size: 0.75rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-petrol);
+    display: block; margin-bottom: 0.5rem; }
+  .aspekt-karte .bsp { font-family: 'Lora', serif; font-size: 0.88rem;
+    color: var(--text-muted); font-style: italic; }
+
+  .beispiel { background: var(--bg-soft); padding: 0.9rem 1.25rem; margin: 0.5rem 0;
+    font-family: 'Lora', serif; }
+  .beispiel .mish { font-family: 'Crimson Text', serif; font-size: 1.2rem;
+    color: var(--color-petrol); font-style: italic; display: block; margin-bottom: 0.2rem; }
+  .beispiel .de { font-size: 0.92rem; color: var(--text-muted); }
+  .beispiel .aufbau { font-size: 0.82rem; color: var(--text-muted); font-style: italic; }
+
+  .pronomen-tabelle { width: 100%; border-collapse: collapse; margin: 1rem 0 0.5rem; }
+  .pronomen-tabelle th { background: var(--dark); color: #FAF8F3; padding: 0.55rem 1rem;
+    text-align: left; font-family: 'Lato', sans-serif; font-size: 0.65rem;
+    font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+  .pronomen-tabelle td { padding: 0.65rem 1rem; border-bottom: 1px solid var(--border); }
+  .pronomen-tabelle tr:hover td { background: var(--bg-soft); }
+  .pronomen-tabelle .code { font-family: monospace; color: var(--gold); font-size: 1rem; }
+
+  .suffix-liste { list-style: none; padding: 0; display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap: 0.6rem; margin: 1rem 0; }
+  .suffix-liste li { background: var(--bg-soft); padding: 0.65rem 1rem;
+    font-family: 'Lora', serif; font-size: 0.92rem; }
+  .suffix-liste li strong { font-family: monospace; color: var(--gold); }
+
+  .ta-box { border: 1px solid var(--gold); padding: 1.5rem 2rem; margin: 1rem 0; }
+  .ta-box .vergleich { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
+  .ta-box .schlecht { background: #fff0f0; border-left: 3px solid #e57373; padding: 1rem; }
+  .ta-box .gut { background: #f0fff4; border-left: 3px solid #66bb6a; padding: 1rem; }
+  .ta-box .label { font-family: 'Lato', sans-serif; font-size: 0.65rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.15em; display: block; margin-bottom: 0.4rem; }
+  .ta-box .schlecht .label { color: #e57373; }
+  .ta-box .gut .label { color: #66bb6a; }
+  .ta-box .formel { font-family: 'Crimson Text', serif; font-size: 1.3rem;
+    font-style: italic; color: var(--dark); display: block; margin-bottom: 0.3rem; }
+  .ta-box .erkl { font-size: 0.88rem; color: var(--text-muted); font-style: italic; }
+
+  .mish-nav { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0; }
+  .mish-nav a { font-family: 'Lato', sans-serif; font-size: 0.65rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.2em; color: var(--color-petrol);
+    text-decoration: none; border: 1px solid var(--color-petrol);
+    padding: 0.4rem 1rem; transition: all 0.2s; }
+  .mish-nav a:hover { background: var(--color-petrol); color: white; }
+
+  @media (max-width: 640px) {
+    .aspekte-grid { grid-template-columns: 1fr; }
+    .ta-box .vergleich { grid-template-columns: 1fr; }
+  }
+</style>
+
+<div class="gram-page">
+  <header class="page-header">
+    <p class="breadcrumb"><a href="/mishkenaz">Mishkenaz</a><span>›</span>Grammatik</p>
+    <h1>Grammatik</h1>
+    <p class="sub">Wie Mishkenaz funktioniert</p>
+  </header>
+
+  <div class="hinweis">
+    Diese Seite zeigt die Standardgrammatik von <strong>R1</strong> — der rekonstruierten 
+    Dvārakā-Grundform. In den Galut-Schichten gelten Variationen: G1 kennt semitische 
+    Klangmuster und glottale Stopps, G3 weicht die Konsonanten und dehnt die Vokale, 
+    G5 konkurriert mit Tonhöhen. Die Grundgrammatik bleibt in allen Schichten erkennbar.
+  </div>
+
+  <!-- GRUNDPRINZIP -->
+  <section class="sektion">
+    <h2>Das Grundprinzip</h2>
+    <p>Mishkenaz ist nicht flektiert wie Latein oder Deutsch. Sie ist <strong>slot-basiert</strong> — Bedeutung entsteht durch Vektoren in Positionen, nicht durch Endungen an Wurzeln.</p>
+    <p>Das Wichtigste: Mishkenaz hat <strong>keine Zeitformen</strong>. Stattdessen drei Resonanz-Aspekte — sie kodieren nicht <em>wann</em> etwas geschieht, sondern <em>wie stimmig</em> es ist.</p>
+
+    <div class="slot-box">
+      <p class="formel">(ZEIT) — (NEG) — (INTENS) — STAMM — (COLL) — (ASP) — (EVID)</p>
+      <p class="erkl">
+        Geklammerte Slots sind optional. Nur <strong>STAMM</strong> ist obligatorisch.<br>
+        <strong>ZEIT:</strong> avi- (vergangen) · sol- (gegenwärtig) · val- (zukünftig) · ori- (ewig)<br>
+        <strong>NEG:</strong> wi- (Verneinung)<br>
+        <strong>ASP:</strong> -om / -ath / -il<br>
+        <strong>EVID:</strong> -tum (Deprivationsmarker — kein Aspekt, sondern Zeichen des schmerzhaften Fehlens)
+      </p>
     </div>
   </section>
 
-  <section class="content-section">
-    <div class="container">
-      
-      <!-- Einführung -->
-      <div class="intro-box">
-        <p>
-          Mishkenaz ist keine flektierte Sprache wie Latein oder Deutsch. Sie ist <strong>agglutinativ</strong> – 
-          Bedeutung entsteht durch das Aneinanderreihen von Vektoren und Suffixen.
-        </p>
-        <p>
-          Aber: Mishkenaz hat <strong>keine linearen Zeitformen</strong>. Stattdessen: <strong>Resonanz-Aspekte</strong> 
-          (Bootstrap-Konsistenz). Die Sprache codiert nicht <em>wann</em> etwas geschieht, sondern <em>wie konvergent</em> 
-          es zum System ist.
-        </p>
+  <!-- WORTSTELLUNG -->
+  <section class="sektion">
+    <h2>Wortstellung</h2>
+    <p>Mishkenaz ist <strong>verbinitial, rollenkodiert</strong> — Handlung zuerst, dann Quelle, dann Ziel. Rollenpartikel <em>bi'</em> (von) und <em>la'</em> (zu) markieren Quelle und Ziel, nicht Subjekt und Objekt.</p>
+
+    <div class="beispiel">
+      <span class="mish">Saha-om bi'sa-i la'ta-i</span>
+      <span class="de">Ich sehe dich. Es stimmt.</span>
+      <span class="aufbau">Sehen-stimmig · von-mir · zu-dir</span>
+    </div>
+    <div class="beispiel">
+      <span class="mish">Saha-om bi'ta-i la'sa-i</span>
+      <span class="de">Du siehst mich. Es stimmt.</span>
+      <span class="aufbau">Sehen-stimmig · von-dir · zu-mir</span>
+    </div>
+  </section>
+
+  <!-- DREI ASPEKTE -->
+  <section class="sektion">
+    <h2>Die drei Resonanz-Aspekte</h2>
+    <p>Mishkenaz kodiert nicht <em>wann</em> etwas geschieht, sondern <em>wie stimmig</em> es zur Wirklichkeit ist:</p>
+
+    <div class="aspekte-grid">
+      <div class="aspekt-karte">
+        <span class="suffix">-om</span>
+        <span class="bed">stimmig · angekommen</span>
+        <span class="bsp">Saha-om — Ich sehe dich. Es stimmt.</span>
       </div>
+      <div class="aspekt-karte">
+        <span class="suffix">-ath</span>
+        <span class="bed">dissonant · nicht stimmig</span>
+        <span class="bsp">Saha-ath — Ich sehe dich. Etwas stimmt nicht.</span>
+      </div>
+      <div class="aspekt-karte">
+        <span class="suffix">-il</span>
+        <span class="bed">suchend · unterwegs</span>
+        <span class="bsp">Saha-il — Ich versuche dich zu sehen.</span>
+      </div>
+    </div>
 
-      <!-- Wortstellung -->
-      <section class="grammar-section">
-        <h2>Wortstellung</h2>
-        <div class="rule-box">
-          <h3>Dominant: VSO (Verb-Subjekt-Objekt)</h3>
-          <div class="example">
-            <p class="mishkenaz">Faichom ya ata</p>
-            <p class="gloss">Sehe ich dich</p>
-            <p class="translation">= "Ich sehe dich"</p>
-          </div>
-        </div>
+    <h3>Mit Zeitpartikel</h3>
+    <div class="beispiel">
+      <span class="mish">avi-Saha-om bi'sa-i la'ta-i</span>
+      <span class="de">Ich sah dich. Es stimmte.</span>
+      <span class="aufbau">vergangen · Sehen-stimmig · von-mir · zu-dir</span>
+    </div>
+    <div class="beispiel">
+      <span class="mish">val-Saha-il bi'sa-i la'ta-i</span>
+      <span class="de">Ich werde dich zu sehen versuchen.</span>
+      <span class="aufbau">zukünftig · Sehen-suchend · von-mir · zu-dir</span>
+    </div>
 
-        <div class="rule-box">
-          <h3>Bei Emphase: OVS (Objekt-Verb-Subjekt)</h3>
-          <div class="example">
-            <p class="mishkenaz">Ata faichom ya</p>
-            <p class="gloss">Dich sehe ich</p>
-            <p class="translation">= "Dich sehe ich" (Betonung auf "dich")</p>
-          </div>
-        </div>
-      </section>
+    <h3>Operative Auslassung</h3>
+    <p>Der Aspekt kann weggelassen werden — das ist kein Fehler, sondern eine eigene Form. Nicht <em>-il</em> (gesetzte Offenheit), sondern gehütetes Schweigen: der Sprecher weiß den Zustand, benennt ihn aber nicht.</p>
+  </section>
 
-      <!-- Zeitformen / Aspekte -->
-      <section class="grammar-section">
-        <h2>Zeitformen: Die drei Resonanz-Aspekte</h2>
-        <p class="explanation">
-          Mishkenaz codiert nicht Vergangenheit/Gegenwart/Zukunft, sondern den <strong>Konvergenz-Zustand</strong> 
-          einer Aussage zur Realität.
-        </p>
+  <!-- PRONOMEN -->
+  <section class="sektion">
+    <h2>Pronomen</h2>
+    <p>Die Pronomen entstehen aus Vektoren: <em>sa</em> (Selbst/Quelle), <em>ta</em> (Du/Gegenüber), <em>ku</em> (Vakuum, das Dritte). Suffix <em>-i</em> = Singular, <em>-mira</em> = distributive Mehrheit, <em>-ona</em> = kollektive Einheit.</p>
 
-        <div class="aspects-grid">
-          <div class="aspect-card">
-            <h3><span class="suffix">-om</span> Konvergent</h3>
-            <p class="meaning">Richtig, wahr, im Einklang</p>
-            <div class="example">
-              <p class="mishkenaz">Faich-om</p>
-              <p class="translation">Ich sehe korrekt</p>
-            </div>
-          </div>
+    <table class="pronomen-tabelle">
+      <thead>
+        <tr><th>Person</th><th>Singular</th><th>Plural (distributiv)</th><th>Plural (kollektiv)</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1. Person</td>
+          <td><span class="code">sa-i</span></td>
+          <td><span class="code">sa-mira</span></td>
+          <td><span class="code">sa-ona</span></td>
+        </tr>
+        <tr>
+          <td>2. Person</td>
+          <td><span class="code">ta-i</span></td>
+          <td><span class="code">ta-mira</span></td>
+          <td><span class="code">ta-ona</span></td>
+        </tr>
+        <tr>
+          <td>3. Person</td>
+          <td><span class="code">ku-i</span></td>
+          <td><span class="code">ku-mira</span></td>
+          <td><span class="code">ku-ona</span></td>
+        </tr>
+      </tbody>
+    </table>
 
-          <div class="aspect-card">
-            <h3><span class="suffix">-ath</span> Divergent</h3>
-            <p class="meaning">Falsch, dissonant, schmerzhaft</p>
-            <div class="example">
-              <p class="mishkenaz">Faich-ath</p>
-              <p class="translation">Ich sehe falsch</p>
-            </div>
-          </div>
+    <h3>Possessiv-Suffixe</h3>
+    <ul class="suffix-liste">
+      <li><strong>-sa-i</strong> = mein</li>
+      <li><strong>-ta-i</strong> = dein</li>
+      <li><strong>-ku-i</strong> = sein/ihr</li>
+      <li><strong>-sa-ona</strong> = unser (als Einheit)</li>
+      <li><strong>-ta-ona</strong> = euer (als Einheit)</li>
+    </ul>
 
-          <div class="aspect-card">
-            <h3><span class="suffix">-il</span> Suchend</h3>
-            <p class="meaning">Werdend, noch nicht konvergiert</p>
-            <div class="example">
-              <p class="mishkenaz">Faich-il</p>
-              <p class="translation">Ich suche zu sehen</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="example-sentences">
-          <h4>Beispiele:</h4>
-          <div class="example">
-            <p class="mishkenaz">Ya kubi-om ta</p>
-            <p class="translation">Ich finde dich (erfolgreich)</p>
-          </div>
-          <div class="example">
-            <p class="mishkenaz">Ya kubi-ath ta</p>
-            <p class="translation">Ich finde dich nicht (dissonant)</p>
-          </div>
-          <div class="example">
-            <p class="mishkenaz">Ya kubi-il ta</p>
-            <p class="translation">Ich suche dich (noch im Prozess)</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Modi -->
-      <section class="grammar-section">
-        <h2>Modi</h2>
-        
-        <div class="mode-grid">
-          <div class="mode-card">
-            <h3>Indikativ (Standard)</h3>
-            <div class="example">
-              <p class="mishkenaz">Ya faichom ata</p>
-              <p class="translation">Ich sehe dich</p>
-            </div>
-          </div>
-
-          <div class="mode-card">
-            <h3>Imperativ (Befehl/Bitte)</h3>
-            <div class="example">
-              <p class="mishkenaz">Faichom!</p>
-              <p class="translation">Sieh! / Schau!</p>
-            </div>
-            <div class="example">
-              <p class="mishkenaz">Thuwa-ya!</p>
-              <p class="translation">Hilf mir!</p>
-            </div>
-          </div>
-
-          <div class="mode-card">
-            <h3>Optativ (Wunsch)</h3>
-            <div class="example">
-              <p class="mishkenaz">Vala ili-punu</p>
-              <p class="translation">Mögen die Blumen blühen</p>
-            </div>
-          </div>
-
-          <div class="mode-card">
-            <h3>Konditional (Wenn-Dann)</h3>
-            <div class="example">
-              <p class="mishkenaz">Si ya faichom ta, ya matau ta</p>
-              <p class="translation">Wenn ich dich sehe, liebe ich dich</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Pronomen -->
-      <section class="grammar-section">
-        <h2>Pronomen</h2>
-        
-        <table class="pronoun-table">
-          <thead>
-            <tr>
-              <th>Person</th>
-              <th>Singular</th>
-              <th>Plural</th>
-              <th>Wurzel</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1. Person</td>
-              <td><strong>Ya</strong></td>
-              <td><strong>Ya-ma</strong></td>
-              <td>Ich / Wir</td>
-            </tr>
-            <tr>
-              <td>2. Person</td>
-              <td><strong>Ta</strong> / <strong>Ata</strong></td>
-              <td><strong>Ta-va</strong></td>
-              <td>Du / Ihr</td>
-            </tr>
-            <tr>
-              <td>3. Person</td>
-              <td><strong>Bi</strong></td>
-              <td><strong>Bi-va</strong></td>
-              <td>Er/Sie/Es / Sie (Pl.)</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>Possessiv-Suffixe</h3>
-        <ul class="suffix-list">
-          <li><strong>-ya</strong> = mein</li>
-          <li><strong>-ta</strong> = dein</li>
-          <li><strong>-bi</strong> = sein/ihr</li>
-          <li><strong>-ma</strong> = unser</li>
-          <li><strong>-va</strong> = euer</li>
-        </ul>
-
-        <div class="example">
-          <p class="mishkenaz">Om-bala-ya</p>
-          <p class="translation">Meine Heimat (Om-bala + -ya)</p>
-        </div>
-        <div class="example">
-          <p class="mishkenaz">Ku-wa-ta</p>
-          <p class="translation">Dein Wasser (Ku-wa + -ta)</p>
-        </div>
-      </section>
-
-      <!-- Negation -->
-      <section class="grammar-section">
-        <h2>Negation</h2>
-        
-        <div class="negation-box">
-          <h3>Primär: <span class="mishkenaz-highlight">Wi</span> (nicht, kein)</h3>
-          <div class="example">
-            <p class="mishkenaz">Ya faichom ata</p>
-            <p class="translation">Ich sehe dich</p>
-          </div>
-          <div class="example">
-            <p class="mishkenaz">Ya faichom-wi ata</p>
-            <p class="translation">Ich sehe dich nicht</p>
-          </div>
-          <div class="example">
-            <p class="mishkenaz">Wi-faichom ya ata</p>
-            <p class="translation">Nicht-sehe ich dich</p>
-          </div>
-        </div>
-
-        <div class="negation-box">
-          <h3>Philosophisch: <span class="mishkenaz-highlight">Avi</span> (∅, Leere)</h3>
-          <p>Verwendet für paradoxe/spirituelle Aussagen:</p>
-          <div class="example">
-            <p class="mishkenaz">Avi essem Ona</p>
-            <p class="translation">Leere ist Ganzheit (Nichts = Alles)</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Meta-Operatoren -->
-      <section class="grammar-section highlight-section">
-        <h2>Die 8 Meta-Operatoren</h2>
-        <p class="section-intro">
-          Diese Suffixe verändern nicht die Bedeutung eines Vektors, sondern seine <strong>Phase</strong> und <strong>Amplitude</strong>. 
-          Sie sind wie Steuerungsparameter in einem Synthesizer.
-        </p>
-
-        <div class="operators-grid">
-          <div class="operator-card">
-            <h3><span class="suffix">-ori</span> Möbius</h3>
-            <p class="studio">LFO / Phase Shift</p>
-            <p class="meaning">Zyklische Prozesse, Wiederholung</p>
-            <div class="example">
-              <p class="mishkenaz">matau-ori</p>
-              <p class="translation">Liebe (On-Off-Schleife)</p>
-            </div>
-          </div>
-
-          <div class="operator-card">
-            <h3><span class="suffix">-h / '</span> Entropie</h3>
-            <p class="studio">Bitcrush / Noise</p>
-            <p class="meaning">Zerfall, Loslassen, Trauer</p>
-            <div class="example">
-              <p class="mishkenaz">matau-h</p>
-              <p class="translation">Liebe (im Abschied)</p>
-            </div>
-          </div>
-
-          <div class="operator-card">
-            <h3><span class="suffix">-val</span> Emergenz</h3>
-            <p class="studio">Resonance Peak</p>
-            <p class="meaning">Innovation, Geburt, Überraschung</p>
-            <div class="example">
-              <p class="mishkenaz">matau-val</p>
-              <p class="translation">Liebe (Neues entsteht)</p>
-            </div>
-          </div>
-
-          <div class="operator-card">
-            <h3><span class="suffix">-reso</span> Resonanz</h3>
-            <p class="studio">Chorus / Reverb</p>
-            <p class="meaning">Spiegelung, tiefes Verstehen</p>
-            <div class="example">
-              <p class="mishkenaz">matau-reso</p>
-              <p class="translation">Liebe (gegenseitig)</p>
-            </div>
-          </div>
-
-          <div class="operator-card">
-            <h3><span class="suffix">-ira</span> Attraktor</h3>
-            <p class="studio">Kompression</p>
-            <p class="meaning">Fokus, Leidenschaft, Besessenheit</p>
-            <div class="example">
-              <p class="mishkenaz">matau-ira</p>
-              <p class="translation">Liebe (obsessiv)</p>
-            </div>
-          </div>
-
-          <div class="operator-card">
-            <h3><span class="suffix">-vya</span> Repulsor</h3>
-            <p class="studio">High-Pass Filter</p>
-            <p class="meaning">Distanzierung, Ekel, Schutzraum</p>
-            <div class="example">
-              <p class="mishkenaz">matau-vya</p>
-              <p class="translation">Liebe (wegdrängen)</p>
-            </div>
-          </div>
-
-          <div class="operator-card">
-            <h3><span class="suffix">-kora</span> Integration</h3>
-            <p class="studio">Summing / Mixdown</p>
-            <p class="meaning">Grenzverlust, Einheit (Warnung!)</p>
-            <div class="example">
-              <p class="mishkenaz">matau-kora</p>
-              <p class="translation">Liebe (Verschmelzung)</p>
-            </div>
-          </div>
-
-          <div class="operator-card">
-            <h3><span class="suffix">-kran</span> Differentiation</h3>
-            <p class="studio">Gate / EQ-Cut</p>
-            <p class="meaning">Klarheit, Analyse, Abstand</p>
-            <div class="example">
-              <p class="mishkenaz">matau-kran</p>
-              <p class="translation">Liebe (mit Abgrenzung)</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Die Ta-Konstante -->
-      <section class="grammar-section ethics-section">
-        <h2>Die Ethik der Resonanz: Das Ta-Konstanten-Gesetz</h2>
-        <div class="ethics-box">
-          <p class="lead">
-            In Mishkenaz ist die <strong>Anerkennung der Differenz (Ta)</strong> die Voraussetzung 
-            für jede stabile Resonanz.
-          </p>
-          
-          <div class="formula-comparison">
-            <div class="formula-bad">
-              <p class="mishkenaz">Ma'U (ohne Ta)</p>
-              <p class="translation">= Besessenheit, Verschlucken, Co-Abhängigkeit</p>
-            </div>
-            <div class="formula-good">
-              <p class="mishkenaz">Ma'Ta'U (mit Ta)</p>
-              <p class="translation">= Heilige Resonanz (Zwei Ichs, ein gemeinsamer Raum)</p>
-            </div>
-          </div>
-
-          <p class="ethics-note">
-            <strong>Das bedeutet:</strong> In Mishkenaz kann man nicht lügen, ohne die physikalische Symmetrie 
-            der Laute zu brechen. Die Sprache selbst kodiert ethische Wahrheit.
-          </p>
-        </div>
-      </section>
-
-      <!-- Beispielsätze -->
-      <section class="grammar-section">
-        <h2>Praktische Beispiele</h2>
-        
-        <div class="examples-collection">
-          <div class="example-group">
-            <h3>"Ich liebe dich."</h3>
-            <div class="example">
-              <p class="mishkenaz">Ya matau ata</p>
-              <p class="breakdown">Ya (Ich) + matau (liebe, Ma'Ta'U) + ata (dich)</p>
-            </div>
-          </div>
-
-          <div class="example-group">
-            <h3>"Wo bist du?"</h3>
-            <div class="example">
-              <p class="mishkenaz">Kubita essem ata?</p>
-              <p class="breakdown">Kubita (Wo, Ku'Bi'Ta) + essem (bist) + ata (du)</p>
-            </div>
-            <p class="alternative">Oder kürzer: <span class="mishkenaz">Kubita ta?</span></p>
-          </div>
-
-          <div class="example-group">
-            <h3>"Bitte hilf mir!"</h3>
-            <div class="example">
-              <p class="mishkenaz">Thuwa-ya!</p>
-              <p class="breakdown">Thu'Wa (Hilf!) + ya (mir)</p>
-            </div>
-            <p class="alternative">Höflicher: <span class="mishkenaz">Ndapandula, thuwa-ya.</span></p>
-          </div>
-
-          <div class="example-group">
-            <h3>"Wenn ich dich sehe, liebe ich dich."</h3>
-            <div class="example">
-              <p class="mishkenaz">Si ya faichom ata, ya matau ata.</p>
-              <p class="breakdown">Si (wenn) + ya faichom ata (ich sehe dich) + ya matau ata (ich liebe dich)</p>
-            </div>
-          </div>
-
-          <div class="example-group">
-            <h3>"Ich suche dich, finde dich, verliere dich, suche dich..."</h3>
-            <div class="example">
-              <p class="mishkenaz">Ya-kubi-ori-ta</p>
-              <p class="breakdown">Ya (Ich) + kubi (suche) + ori (Möbius) + ta (dich)</p>
-              <p class="translation">= Das Mishkenaz-Wort für <strong>Sehnsucht</strong></p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+    <div class="beispiel">
+      <span class="mish">Ma-om bi'sa-i la'ta-mira</span>
+      <span class="de">Ich bin euch als Einzelnen verbunden.</span>
+      <span class="aufbau">Bindung-stimmig · von-mir · zu-euch-distributiv</span>
     </div>
   </section>
 
-  <style>
-    .hero-simple {
-      background: linear-gradient(135deg, var(--color-petrol) 0%, var(--color-gold) 100%);
-      color: white;
-      padding: 6rem 2rem 4rem;
-      text-align: center;
-    }
+  <!-- NEGATION -->
+  <section class="sektion">
+    <h2>Negation</h2>
+    <p><strong>wi-</strong> ist die einfache Verneinung — aber sie ist nicht rein logisch. Wi ist verwandt mit Vektor V13 (Kälte, Abwesenheit). Wi-Saha sagt nicht nur "ich sehe nicht", sondern "das Sehen ist kalt, abwesend".</p>
 
-    .hero-simple h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
+    <div class="beispiel">
+      <span class="mish">Wi-Saha-om bi'sa-i la'ta-i</span>
+      <span class="de">Ich sehe dich nicht.</span>
+    </div>
 
-    .subtitle {
-      font-size: 1.3rem;
-      opacity: 0.9;
-    }
+    <p><strong>Avi-</strong> ist die philosophische Negation — paradoxe Leere, das Nicht-Sein das alles enthält:</p>
+    <div class="beispiel">
+      <span class="mish">Avi-Saha-om bi'sa-i la'ta-i</span>
+      <span class="de">Ich sehe ins Nicht-Sehen. (Andacht, Meditation)</span>
+    </div>
+  </section>
 
-    .intro-box {
-      background: var(--color-gold-light);
-      padding: 2rem;
-      border-radius: 12px;
-      margin-bottom: 4rem;
-      border-left: 4px solid var(--color-gold);
-    }
+  <!-- FRAGEN -->
+  <section class="sektion">
+    <h2>Fragen</h2>
+    <p>Mishkenaz hat keine separate Fragesyntax. Der <em>-il</em>-Aspekt trägt von sich aus Offenheit.</p>
 
-    .intro-box p {
-      margin-bottom: 1rem;
-      line-height: 1.7;
-      font-size: 1.1rem;
-    }
+    <h3>Polare Fragen (Ja/Nein)</h3>
+    <div class="beispiel">
+      <span class="mish">Saha-il bi'sa-i la'ta-i</span>
+      <span class="de">Siehst du mich? (wörtl.: Sehen-suchend von-mir zu-dir)</span>
+    </div>
 
-    .intro-box p:last-child {
-      margin-bottom: 0;
-    }
+    <h3>Ergänzungsfragen (Wer/Was/Wo)</h3>
+    <div class="beispiel">
+      <span class="mish">Ku-il</span>
+      <span class="de">Was ist das? / Ich weiß nicht. (beides ist dasselbe)</span>
+      <span class="aufbau">Vakuum-suchend — der Hohlraum der noch sucht</span>
+    </div>
+    <div class="beispiel">
+      <span class="mish">Ra-il</span>
+      <span class="de">Wohin? Woher?</span>
+    </div>
 
-    .grammar-section {
-      margin-bottom: 4rem;
-    }
+    <p>Mishkenaz-Figuren formulieren Fragen selten direkt. Die offene Haltung (<em>-il</em>) ist bereits eine Einladung zur Antwort.</p>
+  </section>
 
-    .grammar-section h2 {
-      color: var(--color-petrol);
-      font-size: 2.2rem;
-      margin-bottom: 2rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid var(--color-gold);
-    }
+  <!-- TA-KONSTANTE -->
+  <section class="sektion">
+    <h2>Die Ta-Konstante</h2>
+    <p>In Mishkenaz ist die Anerkennung der Differenz (Ta) die grammatische Voraussetzung für stabile Resonanz. Die Sprache kodiert diesen ethischen Unterschied direkt in ihrer Morphologie.</p>
 
-    .explanation {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      color: var(--color-text-light);
-      margin-bottom: 2rem;
-    }
+    <div class="ta-box">
+      <div class="vergleich">
+        <div class="schlecht">
+          <span class="label">Ohne Ta</span>
+          <span class="formel">Ma-U</span>
+          <span class="erkl">Bindung ohne Grenze — Verschmelzung, Co-Abhängigkeit, Übergriff</span>
+        </div>
+        <div class="gut">
+          <span class="label">Mit Ta</span>
+          <span class="formel">Ma'Ta'U</span>
+          <span class="erkl">Bindung mit Grenze — Verbindung die das Andere als Anderes lässt</span>
+        </div>
+      </div>
+      <p style="font-family: 'Lora', serif; font-size: 0.92rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic;">
+        Der Apostroph markiert eine kurze Stille — als hielte die Sprache den Atem an. In dieser Stille ist die Grenze.
+      </p>
+    </div>
+  </section>
 
-    .rule-box {
-      background: white;
-      border: 2px solid var(--color-gold-light);
-      border-radius: 8px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
+  <!-- PRAKTISCHE BEISPIELE -->
+  <section class="sektion">
+    <h2>Praktische Beispiele</h2>
 
-    .rule-box h3 {
-      color: var(--color-petrol);
-      margin-bottom: 1rem;
-      font-size: 1.3rem;
-    }
+    <h3>Vollständiger Satz mit mehreren Slots</h3>
+    <div class="beispiel">
+      <span class="mish">avi-Ma-ath bi'sa-i la'ta-i</span>
+      <span class="de">Ich war dir verbunden. Es stimmte nicht.</span>
+      <span class="aufbau">vergangen · Bindung-dissonant · von-mir · zu-dir</span>
+    </div>
 
-    .example {
-      background: var(--color-petrol-light);
-      padding: 1rem 1.5rem;
-      border-radius: 6px;
-      margin-top: 1rem;
-    }
+    <h3>Sehnsucht</h3>
+    <div class="beispiel">
+      <span class="mish">Ku-Saha-ori bi'sa-i la'ta-i</span>
+      <span class="de">Sehnsucht — Ich suche dich, sehe dich, verliere dich, suche dich…</span>
+      <span class="aufbau">Vakuum-Sehen-Möbius · von-mir · zu-dir</span>
+    </div>
 
-    .example .mishkenaz {
-      font-family: Georgia, serif;
-      font-size: 1.5rem;
-      font-style: italic;
-      color: var(--color-petrol);
-      font-weight: 600;
-      margin-bottom: 0.3rem;
-    }
+    <h3>Das Abschiedsritual</h3>
+    <div class="beispiel">
+      <span class="mish">Kin-il bi'ta-i, la'avi-Avi</span>
+      <span class="de">Pilgerschaft-suchend, von-dir, zur Leere-Leere</span>
+    </div>
 
-    .example .gloss,
-    .example .breakdown {
-      font-size: 0.95rem;
-      color: var(--color-text-light);
-      margin-bottom: 0.3rem;
-    }
-
-    .example .translation {
-      font-size: 1.05rem;
-      color: var(--color-text);
-      font-weight: 500;
-    }
-
-    /* Aspects Grid */
-    .aspects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-    }
-
-    .aspect-card {
-      background: white;
-      border: 2px solid var(--color-gold);
-      border-radius: 8px;
-      padding: 1.5rem;
-      text-align: center;
-    }
-
-    .aspect-card h3 {
-      color: var(--color-petrol);
-      margin-bottom: 0.8rem;
-      font-size: 1.4rem;
-    }
-
-    .aspect-card .suffix {
-      font-family: Georgia, serif;
-      font-style: italic;
-      color: var(--color-gold);
-      font-size: 1.6rem;
-    }
-
-    .aspect-card .meaning {
-      color: var(--color-text-light);
-      margin-bottom: 1rem;
-      font-size: 0.95rem;
-    }
-
-    .example-sentences {
-      margin-top: 2rem;
-      padding: 2rem;
-      background: var(--color-gold-light);
-      border-radius: 8px;
-    }
-
-    .example-sentences h4 {
-      color: var(--color-petrol);
-      margin-bottom: 1.5rem;
-      font-size: 1.3rem;
-    }
-
-    /* Mode Grid */
-    .mode-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .mode-card {
-      background: white;
-      border: 2px solid var(--color-petrol-light);
-      border-radius: 8px;
-      padding: 1.5rem;
-    }
-
-    .mode-card h3 {
-      color: var(--color-petrol);
-      margin-bottom: 1rem;
-      font-size: 1.3rem;
-    }
-
-    /* Pronoun Table */
-    .pronoun-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 2rem 0;
-      background: white;
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .pronoun-table thead {
-      background: var(--color-petrol);
-      color: white;
-    }
-
-    .pronoun-table th,
-    .pronoun-table td {
-      padding: 1rem;
-      text-align: left;
-      border-bottom: 1px solid var(--color-gold-light);
-    }
-
-    .pronoun-table tbody tr:hover {
-      background: var(--color-gold-light);
-    }
-
-    .pronoun-table strong {
-      font-family: Georgia, serif;
-      font-style: italic;
-      color: var(--color-petrol);
-      font-size: 1.1rem;
-    }
-
-    .suffix-list {
-      list-style: none;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      margin: 1.5rem 0;
-    }
-
-    .suffix-list li {
-      background: var(--color-petrol-light);
-      padding: 0.8rem 1.2rem;
-      border-radius: 6px;
-      font-size: 1.05rem;
-    }
-
-    .suffix-list strong {
-      font-family: Georgia, serif;
-      font-style: italic;
-      color: var(--color-petrol);
-    }
-
-    /* Negation */
-    .negation-box {
-      background: white;
-      border: 2px solid var(--color-gold-light);
-      border-radius: 8px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    .negation-box h3 {
-      color: var(--color-petrol);
-      margin-bottom: 1rem;
-      font-size: 1.4rem;
-    }
-
-    .mishkenaz-highlight {
-      font-family: Georgia, serif;
-      font-style: italic;
-      color: var(--color-gold);
-      font-size: 1.3rem;
-      font-weight: 600;
-    }
-
-    /* Meta-Operators */
-    .highlight-section {
-      background: linear-gradient(180deg, white 0%, var(--color-gold-light) 100%);
-      padding: 3rem 2rem;
-      border-radius: 12px;
-      border: 2px solid var(--color-gold);
-    }
-
-    .section-intro {
-      font-size: 1.15rem;
-      line-height: 1.7;
-      margin-bottom: 2rem;
-      color: var(--color-text-light);
-    }
-
-    .operators-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .operator-card {
-      background: white;
-      border: 2px solid var(--color-petrol);
-      border-radius: 8px;
-      padding: 1.5rem;
-      transition: all 0.3s ease;
-    }
-
-    .operator-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(74, 155, 155, 0.2);
-    }
-
-    .operator-card h3 {
-      color: var(--color-petrol);
-      margin-bottom: 0.5rem;
-      font-size: 1.3rem;
-    }
-
-    .operator-card .suffix {
-      font-family: Georgia, serif;
-      font-style: italic;
-      color: var(--color-gold);
-      font-size: 1.4rem;
-    }
-
-    .operator-card .studio {
-      font-size: 0.85rem;
-      color: var(--color-gold);
-      font-style: italic;
-      margin-bottom: 0.8rem;
-    }
-
-    .operator-card .meaning {
-      font-size: 0.95rem;
-      color: var(--color-text-light);
-      margin-bottom: 1rem;
-      line-height: 1.5;
-    }
-
-    /* Ethics Section */
-    .ethics-section {
-      background: var(--color-petrol);
-      color: white;
-      padding: 3rem 2rem;
-      border-radius: 12px;
-      margin-top: 4rem;
-    }
-
-    .ethics-section h2 {
-      color: white;
-      border-bottom-color: var(--color-gold);
-    }
-
-    .ethics-box {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 2rem;
-      border-radius: 8px;
-      backdrop-filter: blur(10px);
-    }
-
-    .ethics-box .lead {
-      font-size: 1.3rem;
-      line-height: 1.6;
-      margin-bottom: 2rem;
-    }
-
-    .formula-comparison {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-    }
-
-    .formula-bad,
-    .formula-good {
-      padding: 1.5rem;
-      border-radius: 8px;
-    }
-
-    .formula-bad {
-      background: rgba(255, 100, 100, 0.2);
-      border: 2px solid rgba(255, 100, 100, 0.5);
-    }
-
-    .formula-good {
-      background: rgba(100, 255, 100, 0.2);
-      border: 2px solid rgba(100, 255, 100, 0.5);
-    }
-
-    .formula-bad .mishkenaz,
-    .formula-good .mishkenaz {
-      font-family: Georgia, serif;
-      font-size: 1.4rem;
-      font-style: italic;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-
-    .ethics-note {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      padding-top: 1.5rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    /* Example Groups */
-    .examples-collection {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
-
-    .example-group {
-      background: white;
-      border: 2px solid var(--color-gold-light);
-      border-radius: 8px;
-      padding: 1.5rem;
-    }
-
-    .example-group h3 {
-      color: var(--color-petrol);
-      margin-bottom: 1rem;
-      font-size: 1.3rem;
-    }
-
-    .alternative {
-      margin-top: 1rem;
-      font-size: 0.95rem;
-      color: var(--color-text-light);
-    }
-
-    .alternative .mishkenaz {
-      font-family: Georgia, serif;
-      font-style: italic;
-      color: var(--color-petrol);
-      font-weight: 600;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .hero-simple h1 {
-        font-size: 2rem;
-      }
-
-      .grammar-section h2 {
-        font-size: 1.8rem;
-      }
-
-      .aspects-grid,
-      .operators-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .pronoun-table {
-        font-size: 0.9rem;
-      }
-    }
-  </style>
+    <nav class="mish-nav" style="margin-top: 2rem;">
+      <a href="/mishkenaz/vektoren">Die 42 Vektoren →</a>
+      <a href="/mishkenaz/proto-mishkenaz">Urgesten →</a>
+      <a href="/mishkenaz">← Mishkenaz Übersicht</a>
+    </nav>
+  </section>
+</div>
 </BaseLayout>
