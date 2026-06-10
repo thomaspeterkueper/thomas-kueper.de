@@ -1,957 +1,323 @@
 ---
-// Datei: src/pages/mishkenaz/proto-mishkenaz.astro
-// Projekt: thomas-kueper.de
+// src/pages/mishkenaz/proto-mishkenaz.astro
+// Komplett neu — ersetzt die Schwäbische-Alb-Version
+// Stand: Juni 2026
+
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = "Urgesten — Proto-Mishkenaz";
+const description = "Die zwölf Urgesten sind das physiologische Fundament von Mishkenaz: Körperpositionen mit Bedeutungsrichtungen, aus denen alle Vektoren und Phoneme abgeleitet werden.";
 ---
 
-<BaseLayout
-  title="Proto-Mishkenaz – Die zehn Kerben"
-  description="Vor 40.000 Jahren in Knochen geritzt: zehn geometrische Zeichen der Schwäbischen Alb. Der generative Kern, aus dem alle Vektoren emergieren."
->
-
-  <!-- HERO -->
-  <section class="pm-hero">
-    <a href="/mishkenaz" class="breadcrumb">← Mishkenaz</a>
-    <span class="label">Phase 2 · ~33.000–5.000 v.Chr.</span>
-    <h1>Proto-Mishkenaz</h1>
-    <p class="epigraph">Die zehn Kerben und der Ursprung der Sprache</p>
-  </section>
-
-  <!-- EINFÜHRUNG -->
-  <section class="pm-intro">
-    <p class="intro-quote">
-      „Im Anfang war nicht das Wort – im Anfang war die Kerbe.
-      Zehn geometrische Zeichen, vor über 40.000 Jahren in Knochen geritzt.
-      Aus ihnen wächst das gesamte System."
-    </p>
-    <div class="intro-columns">
-      <div class="intro-col">
-        <p>
-          Proto-Mishkenaz ist nicht der Beginn der menschlichen Kommunikation –
-          das war die <strong>Stille vor dem Zeichen</strong>, die rein orale Phase über
-          Hunderttausende von Jahren. Aber Proto-Mishkenaz ist der Moment,
-          in dem Bedeutung zum ersten Mal eine materielle Form annahm.
-        </p>
-      </div>
-      <div class="intro-col">
-        <p>
-          Die Funde der Schwäbischen Alb – Löwenmensch, Venusstatuen, Knochenflöten –
-          sind keine Kunstgegenstände im modernen Sinne. Sie sind
-          <strong>dreidimensionale Bedeutungs-Operatoren</strong>: stumme Vektoren,
-          die in der Hand liegen und das Denken formen.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- DIE DREI PHASEN -->
-  <section class="phases-section">
-    <div class="section-header">
-      <span class="label">Kontext</span>
-      <h2>Die Phasen vor und nach</h2>
-    </div>
-
-    <div class="phases-timeline">
-      <div class="phase-block dim">
-        <span class="phase-badge">Phase 0</span>
-        <h3>Die Stille</h3>
-        <span class="phase-time">~100.000–43.000 v.Chr.</span>
-        <p>Rein oral, gestisch, musikalisch. Klang-Gesten-Komplexe ohne materielle Spuren. Die Sprache existiert, aber sie hinterlässt keine Spur.</p>
-      </div>
-
-      <div class="phase-connector">↓</div>
-
-      <div class="phase-block dim">
-        <span class="phase-badge">Phase 1</span>
-        <h3>Elfenbein-Ära</h3>
-        <span class="phase-time">~43.000–33.000 v.Chr.</span>
-        <p>Schwäbische Alb. Löwenmensch aus Mammutelfenbein. Venusstatuetten. Knochenflöten. Dreidimensionale Operatoren – keine Kunst, sondern Denk-Werkzeuge.</p>
-      </div>
-
-      <div class="phase-connector">↓</div>
-
-      <div class="phase-block current">
-        <span class="phase-badge active">Phase 2 · Jetzt</span>
-        <h3>Proto-Mishkenaz</h3>
-        <span class="phase-time">~33.000–5.000 v.Chr.</span>
-        <p>Die zehn geometrischen Primitive. Kerben auf Knochen, Ritzungen in Höhlenwände. Der generative Kern: stumme Operatoren, die warten, bis sie klingen.</p>
-      </div>
-
-      <div class="phase-connector">↓</div>
-
-      <div class="phase-block dim">
-        <span class="phase-badge">Phase 3</span>
-        <h3>Phonologisierung</h3>
-        <span class="phase-time">~5.000–3.000 v.Chr.</span>
-        <p>Die stummen Zeichen beginnen zu klingen. M IST die Welle – nicht weil jemand es entschieden hat, sondern weil die Geste, die M schreibt, die Lippen schließt und öffnet wie eine Schwingung.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- DIE 10 PRIMITIVEN -->
-  <section class="primitives-section">
-    <div class="section-header">
-      <span class="label">Der generative Kern</span>
-      <h2>Die zehn geometrischen Primitive</h2>
-      <p class="section-sub">Nicht Buchstaben. Nicht Zahlen. <em>Operatoren.</em></p>
-    </div>
-
-    <div class="primitives-grid">
-
-      <div class="primitive-card">
-        <span class="prim-symbol">—</span>
-        <h3>Die Kerbe</h3>
-        <span class="prim-name">Vektor: <strong>Sol</strong></span>
-        <p>Horizontale Linie. Der erste Schnitt in die Oberfläche. Impuls, Richtung, Beginn. Aus dieser Kerbe emergiert alles andere.</p>
-        <span class="prim-freq">Frequenz: Dirac-Stoß</span>
-      </div>
-
-      <div class="primitive-card">
-        <span class="prim-symbol">○</span>
-        <h3>Der Kreis</h3>
-        <span class="prim-name">Vektor: <strong>Ona / Mira</strong></span>
-        <p>Geschlossene Kurve ohne Anfang und Ende. Ganzheit, Wiederkehr, Zyklus. Der Kreis ist die einzige Form, die sich selbst enthält.</p>
-        <span class="prim-freq">Frequenz: Sinus-Oszillation</span>
-      </div>
-
-      <div class="primitive-card">
-        <span class="prim-symbol">∅</span>
-        <h3>Der durchkreuzte Kreis</h3>
-        <span class="prim-name">Vektor: <strong>Avi</strong></span>
-        <p>Kreis mit Kerbe. Das Paradox der fruchtbaren Leere: Form und Nicht-Form gleichzeitig. Quantenvakuum als Zeichen.</p>
-        <span class="prim-freq">Frequenz: 0 Hz / Axiom</span>
-      </div>
-
-      <div class="primitive-card">
-        <span class="prim-symbol">∧</span>
-        <h3>Der Winkel</h3>
-        <span class="prim-name">Vektor: <strong>Vya</strong></span>
-        <p>Zwei Linien, die sich treffen. Richtungsgebung, Entscheidung, Vektor. Wo zwei Wege zusammenlaufen oder auseinandergehen.</p>
-        <span class="prim-freq">Frequenz: Gerichtete Energie</span>
-      </div>
-
-      <div class="primitive-card">
-        <span class="prim-symbol">~</span>
-        <h3>Die Welle</h3>
-        <span class="prim-name">Vektor: <strong>Mira / Reso</strong></span>
-        <p>Horizontale Schwingungslinie. Resonanz, Verbindung, Übertragung. Das Zeichen, das entsteht, wenn die Hand zittert und gleichzeitig zieht.</p>
-        <span class="prim-freq">Frequenz: 528 Hz</span>
-      </div>
-
-      <div class="primitive-card">
-        <span class="prim-symbol">|</span>
-        <h3>Der Strich</h3>
-        <span class="prim-name">Vektor: <strong>Ta</strong></span>
-        <p>Vertikale Linie. Grenze, Unterscheidung, Anderes. Das einfachste Zeichen für: hier endet eines, dort beginnt ein anderes.</p>
-        <span class="prim-freq">Frequenz: 1–5 kHz Noise</span>
-      </div>
-
-      <div class="primitive-card">
-        <span class="prim-symbol">✕</span>
-        <h3>Das Kreuz</h3>
-        <span class="prim-name">Vektor: <strong>Sa / Kora</strong></span>
-        <p>Zwei Kerben, die sich schneiden. Bruch und Integration zugleich. Wo Kräfte aufeinandertreffen, entsteht Schmerz – oder Synthesis.</p>
-        <span class="prim-freq">Frequenz: Destruktive Interferenz</span>
-      </div>
-
-      <div class="primitive-card">
-        <span class="prim-symbol">▲</span>
-        <h3>Das Dreieck</h3>
-        <span class="prim-name">Vektor: <strong>Val / Vya</strong></span>
-        <p>Drei Linien, die eine Fläche einschließen. Emergenz, Entfaltung nach oben. Das Dreieck ist die stabilste Form – und die gerichtetste.</p>
-        <span class="prim-freq">Frequenz: Harmonische Reihe</span>
-      </div>
-
-      <div class="primitive-card">
-        <span class="prim-symbol">⟳</span>
-        <h3>Die Spirale</h3>
-        <span class="prim-name">Vektor: <strong>Ori / Ra</strong></span>
-        <p>Kreis, der sich nicht schließt, sondern weiterwächst. Möbius-Prinzip: Wiederkehr mit Versatz. Wachstum als strukturierte Wiederholung.</p>
-        <span class="prim-freq">Frequenz: Pink Noise / φ</span>
-      </div>
-
-      <div class="primitive-card">
-        <span class="prim-symbol">·</span>
-        <h3>Der Punkt</h3>
-        <span class="prim-name">Vektor: <strong>Sol / Om</strong></span>
-        <p>Der kleinste mögliche Eingriff in die Oberfläche. Ursprung, Impuls, Sein. Der Punkt ist das Zeichen, das alles andere bereits enthält.</p>
-        <span class="prim-freq">Frequenz: 108 Hz / Ur-Ton</span>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- DIE KERNTHESE: VON KERBE ZU KLANG -->
-  <section class="thesis-section">
-    <div class="thesis-inner">
-      <span class="label">Die entscheidende Transformation</span>
-      <h2>Von der Kerbe zum Klang</h2>
-      <p class="thesis-lead">
-        Die stummen Zeichen wurden nicht irgendwann mit Lauten „verknüpft".
-        Die Geste, die das Zeichen erzeugt, <em>ist</em> bereits der Laut.
-      </p>
-      <div class="thesis-examples">
-        <div class="thesis-ex">
-          <span class="ex-symbol">~</span>
-          <div class="ex-text">
-            <strong>M / Mira</strong>
-            <p>Die Lippen schließen und öffnen sich wie eine Welle. Die Geste, die ~ zeichnet, formt gleichzeitig das M. Klang und Zeichen sind ein einziger Körpervorgang.</p>
-          </div>
-        </div>
-        <div class="thesis-ex">
-          <span class="ex-symbol">○</span>
-          <div class="ex-text">
-            <strong>O / Ona</strong>
-            <p>Der Mund öffnet sich zur Kreisform. Wer O spricht, zeichnet mit den Lippen den Kreis. Das Zeichen ist der Laut ist die Geste – unteilbar.</p>
-          </div>
-        </div>
-        <div class="thesis-ex">
-          <span class="ex-symbol">|</span>
-          <div class="ex-text">
-            <strong>T / Ta</strong>
-            <p>Die Zunge schlägt kurz gegen den Gaumen – ein Schnitt durch den Luftstrom. Wie ein Strich durch eine weiche Oberfläche. Grenze als akustisches Ereignis.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- VEKTOR-ARITHMETIK -->
-  <section class="arithmetic-section">
-    <div class="section-header light">
-      <span class="label">Das generative Prinzip</span>
-      <h2>Vektor-Arithmetik</h2>
-      <p class="section-sub">Aus zehn Primitiven emergiert durch Kombination das gesamte Mishkenaz-System.</p>
-    </div>
-
-    <div class="arithmetic-grid">
-
-      <div class="arith-card">
-        <div class="arith-formula">
-          <span class="arith-part">∅</span>
-          <span class="arith-op">+</span>
-          <span class="arith-part">·</span>
-          <span class="arith-op">=</span>
-          <span class="arith-result">Avi-Sol</span>
-        </div>
-        <p><strong>Leere + Impuls</strong> → Lichtentstehung. Das Quantenvakuum, das einen Dirac-Stoß erzeugt. Schöpfung als physikalisches Ereignis.</p>
-      </div>
-
-      <div class="arith-card">
-        <div class="arith-formula">
-          <span class="arith-part">○</span>
-          <span class="arith-op">+</span>
-          <span class="arith-part">|</span>
-          <span class="arith-op">=</span>
-          <span class="arith-result">Ona-Ta</span>
-        </div>
-        <p><strong>Ganzheit + Grenze</strong> → Das Selbst, das weiß, wo es aufhört. Gesundes Ich-Bewusstsein. Die Ta-Konstante als Voraussetzung für Resonanz.</p>
-      </div>
-
-      <div class="arith-card">
-        <div class="arith-formula">
-          <span class="arith-part">~</span>
-          <span class="arith-op">+</span>
-          <span class="arith-part">~</span>
-          <span class="arith-op">=</span>
-          <span class="arith-result">Reso</span>
-        </div>
-        <p><strong>Welle + Welle</strong> → Resonanz. Wenn zwei Schwingungen die gleiche Frequenz finden, entsteht etwas, das keine von ihnen allein war.</p>
-      </div>
-
-      <div class="arith-card">
-        <div class="arith-formula">
-          <span class="arith-part">✕</span>
-          <span class="arith-op">→</span>
-          <span class="arith-part">○</span>
-          <span class="arith-op">=</span>
-          <span class="arith-result">Ona-val</span>
-        </div>
-        <p><strong>Bruch → Ganzheit</strong> → Die Perlen-Formel. Der Sand in der Muschel, der durch Reibung zur Perle wird. Dissonanz als Informationsgewinn.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FUNDE: DIE SCHWÄBISCHE ALB -->
-  <section class="finds-section">
-    <div class="section-header">
-      <span class="label">Materielle Zeugen</span>
-      <h2>Die Funde der Schwäbischen Alb</h2>
-      <p class="section-sub">Keine Kunst. Denk-Werkzeuge.</p>
-    </div>
-
-    <div class="finds-grid">
-
-      <div class="find-card">
-        <span class="find-age">~40.000 v.Chr.</span>
-        <h3>Löwenmensch</h3>
-        <span class="find-loc">Stadel, Lone-Tal</span>
-        <p>
-          Mammutelfenbein, 31 cm. Mensch-Tier-Chimäre. Kein Abbild der Realität –
-          ein dreidimensionaler Operator für das Konzept <strong>„Transformation"</strong>.
-          Val + Bi: Entfaltung der inneren Energie.
-        </p>
-        <span class="find-vector">Vektor: Val-Bi (Emergenz-Feuer)</span>
-      </div>
-
-      <div class="find-card">
-        <span class="find-age">~35.000 v.Chr.</span>
-        <h3>Venus vom Hohle Fels</h3>
-        <span class="find-loc">Schelklingen</span>
-        <p>
-          Älteste bekannte menschliche Figurine. Übertriebene Körperproportionen –
-          kein Schönheitsideal, sondern ein Operator für <strong>Ma</strong>:
-          Bindung, Nahrung, das Prinzip des Gebens und Empfangens.
-        </p>
-        <span class="find-vector">Vektor: Ma-Ona (Bindung-Ganzheit)</span>
-      </div>
-
-      <div class="find-card">
-        <span class="find-age">~43.000 v.Chr.</span>
-        <h3>Knochenflöten</h3>
-        <span class="find-loc">Geißenklösterle, Vogelherd</span>
-        <p>
-          Aus Gänsegeier- und Mammutelfenbeinknochen. Fünf-Ton-Skalen.
-          Der erste Beweis, dass das Proto-Mishkenaz-System bereits
-          <strong>klingende Frequenzen</strong> kannte und gezielt erzeugte.
-        </p>
-        <span class="find-vector">Vektor: Mira-Reso (Welle-Resonanz)</span>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- WAS FOLGT -->
-  <section class="next-section">
-    <div class="next-inner">
-      <span class="label">Nächste Phase</span>
-      <p class="next-bridge">
-        ~5.000 v.Chr.: Die stummen Zeichen beginnen zu klingen.
-        Die Phonologisierung setzt ein – nicht als willkürliche Entscheidung,
-        sondern als physikalische Notwendigkeit.
-        M IST die Welle. O IST der Kreis.
-        Die Sprache findet ihre Stimme.
-      </p>
-      <div class="next-links">
-        <a href="/mishkenaz/vektoren" class="next-link primary">
-          <span class="nl-label">Weiter</span>
-          <span class="nl-title">Die 42 Vektoren →</span>
-        </a>
-        <a href="/mishkenaz" class="next-link secondary">
-          <span class="nl-label">Zurück</span>
-          <span class="nl-title">← Mishkenaz Übersicht</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-</BaseLayout>
-
-<style is:inline>
-
-/* ===== HERO ===== */
-.pm-hero {
-  padding: 10rem 2rem 8rem;
-  text-align: center;
-  background: linear-gradient(180deg, #faf9f6 0%, #ffffff 100%);
-  border-bottom: 1px solid #eee;
-  position: relative;
-}
-
-.breadcrumb {
-  position: absolute;
-  top: 4rem;
-  left: 3rem;
-  font-family: 'Lato', sans-serif;
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #c9a961;
-  text-decoration: none;
-  transition: opacity 0.3s;
-}
-.breadcrumb:hover { opacity: 0.7; }
-
-.pm-hero .label {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.65rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  color: #c9a961;
-  display: block;
-  margin-bottom: 2rem;
-}
-
-.pm-hero h1 {
-  font-family: 'Crimson Text', serif;
-  font-size: clamp(2.5rem, 6vw, 4rem);
-  font-weight: 300;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  line-height: 1.1;
-}
-
-.pm-hero .epigraph {
-  font-family: 'Lora', serif;
-  font-style: italic;
-  font-size: 1.35rem;
-  color: #c9a961;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-/* ===== INTRO ===== */
-.pm-intro {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 7rem 2rem;
-}
-
-.intro-quote {
-  font-family: 'Lora', serif;
-  font-size: 1.3rem;
-  font-style: italic;
-  line-height: 1.9;
-  color: #444;
-  text-align: center;
-  margin-bottom: 4rem;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 4rem;
-}
-
-.intro-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-}
-
-.intro-col {
-  font-family: 'Lora', serif;
-  font-size: 1.05rem;
-  line-height: 2;
-  color: #555;
-}
-
-.intro-col strong { color: #1a1a1a; }
-
-/* ===== PHASES ===== */
-.phases-section {
-  background: #faf9f6;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  padding: 8rem 2rem;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 5rem;
-}
-
-.section-header .label {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.65rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  color: #c9a961;
-  display: block;
-  margin-bottom: 1.5rem;
-}
-
-.section-header h2 {
-  font-family: 'Crimson Text', serif;
-  font-size: 3rem;
-  font-weight: 300;
-  margin-bottom: 1rem;
-}
-
-.section-sub {
-  font-family: 'Lora', serif;
-  font-style: italic;
-  color: #64748b;
-  font-size: 1.05rem;
-}
-
-.phases-timeline {
-  max-width: 700px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0;
-}
-
-.phase-block {
-  width: 100%;
-  background: #ffffff;
-  border: 1px solid #eee;
-  padding: 2.5rem 3rem;
-  transition: all 0.3s ease;
-}
-
-.phase-block.dim {
-  opacity: 0.65;
-}
-
-.phase-block.current {
-  border-color: #c9a961;
-  background: linear-gradient(135deg, #ffffff 0%, #faf9f6 100%);
-  opacity: 1;
-  box-shadow: 0 10px 40px rgba(201, 169, 97, 0.1);
-}
-
-.phase-badge {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.65rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #999;
-  display: inline-block;
-  margin-bottom: 0.75rem;
-}
-
-.phase-badge.active {
-  color: #c9a961;
-}
-
-.phase-block h3 {
-  font-family: 'Crimson Text', serif;
-  font-size: 1.6rem;
-  margin-bottom: 0.4rem;
-}
-
-.phase-time {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #c9a961;
-  font-weight: 700;
-  display: block;
-  margin-bottom: 1rem;
-}
-
-.phase-block p {
-  font-family: 'Lora', serif;
-  font-size: 0.95rem;
-  line-height: 1.8;
-  color: #555;
-  margin: 0;
-}
-
-.phase-connector {
-  font-size: 1.5rem;
-  color: #c9a961;
-  line-height: 2;
-  opacity: 0.5;
-}
-
-/* ===== PRIMITIVES ===== */
-.primitives-section {
-  padding: 8rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.primitives-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2.5rem;
-}
-
-.primitive-card {
-  background: #ffffff;
-  border: 1px solid #eee;
-  padding: 3rem 2.5rem;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  position: relative;
-}
-
-.primitive-card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 3px;
-  background: #c9a961;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.4s ease;
-}
-
-.primitive-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 45px rgba(0,0,0,0.05);
-}
-
-.primitive-card:hover::before {
-  transform: scaleX(1);
-}
-
-.prim-symbol {
-  font-size: 2.8rem;
-  display: block;
-  margin-bottom: 1.5rem;
-  line-height: 1;
-  color: #1a1a1a;
-}
-
-.primitive-card h3 {
-  font-family: 'Crimson Text', serif;
-  font-size: 1.5rem;
-  margin-bottom: 0.4rem;
-}
-
-.prim-name {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #c9a961;
-  display: block;
-  margin-bottom: 1.2rem;
-}
-
-.primitive-card p {
-  font-family: 'Lora', serif;
-  font-size: 0.9rem;
-  line-height: 1.8;
-  color: #555;
-  margin-bottom: 1.5rem;
-}
-
-.prim-freq {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.65rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #aaa;
-  display: block;
-  border-top: 1px solid #f0f0f0;
-  padding-top: 1rem;
-}
-
-/* ===== THESIS / KERBE ZU KLANG ===== */
-.thesis-section {
-  background: #121416;
-  color: #ffffff;
-  padding: 10rem 2rem;
-}
-
-.thesis-inner {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.thesis-section .label {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.65rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  color: #c9a961;
-  display: block;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.thesis-section h2 {
-  font-family: 'Crimson Text', serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 300;
-  color: #e5dcc8;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.thesis-lead {
-  font-family: 'Lora', serif;
-  font-size: 1.2rem;
-  line-height: 1.9;
-  color: #94a3b8;
-  text-align: center;
-  margin-bottom: 5rem;
-  max-width: 750px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.thesis-lead em { color: #c9a961; font-style: italic; }
-
-.thesis-examples {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-
-.thesis-ex {
-  display: grid;
-  grid-template-columns: 5rem 1fr;
-  gap: 3rem;
-  align-items: start;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  padding-bottom: 3rem;
-}
-
-.thesis-ex:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.ex-symbol {
-  font-size: 3rem;
-  color: #c9a961;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.ex-text strong {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #ffffff;
-  display: block;
-  margin-bottom: 1rem;
-}
-
-.ex-text p {
-  font-family: 'Lora', serif;
-  font-size: 1rem;
-  line-height: 1.9;
-  color: #94a3b8;
-  margin: 0;
-}
-
-/* ===== ARITHMETIC ===== */
-.arithmetic-section {
-  padding: 8rem 2rem;
-  background: #faf9f6;
-  border-top: 1px solid #eee;
-}
-
-.section-header.light h2 {
-  font-family: 'Crimson Text', serif;
-  font-size: 3rem;
-  font-weight: 300;
-}
-
-.arithmetic-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2.5rem;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.arith-card {
-  background: #ffffff;
-  border: 1px solid #eee;
-  padding: 3rem 2.5rem;
-  transition: all 0.4s ease;
-}
-
-.arith-card:hover {
-  border-color: #c9a961;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.04);
-}
-
-.arith-formula {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
-
-.arith-part {
-  font-size: 2rem;
-  line-height: 1;
-  color: #1a1a1a;
-}
-
-.arith-op {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.2rem;
-  color: #c9a961;
-  font-weight: 300;
-}
-
-.arith-result {
-  font-family: 'Crimson Text', serif;
-  font-size: 1.4rem;
-  color: #c9a961;
-  font-style: italic;
-}
-
-.arith-card p {
-  font-family: 'Lora', serif;
-  font-size: 0.95rem;
-  line-height: 1.9;
-  color: #555;
-  margin: 0;
-}
-
-.arith-card strong { color: #1a1a1a; }
-
-/* ===== FINDS ===== */
-.finds-section {
-  padding: 8rem 2rem;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.finds-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-}
-
-.find-card {
-  border-top: 3px solid #c9a961;
-  padding-top: 2.5rem;
-}
-
-.find-age {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.65rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #c9a961;
-  display: block;
-  margin-bottom: 0.8rem;
-}
-
-.find-card h3 {
-  font-family: 'Crimson Text', serif;
-  font-size: 1.8rem;
-  margin-bottom: 0.3rem;
-}
-
-.find-loc {
-  font-family: 'Lora', serif;
-  font-style: italic;
-  font-size: 0.85rem;
-  color: #999;
-  display: block;
-  margin-bottom: 1.5rem;
-}
-
-.find-card p {
-  font-family: 'Lora', serif;
-  font-size: 0.95rem;
-  line-height: 1.9;
-  color: #555;
-  margin-bottom: 1.5rem;
-}
-
-.find-card strong { color: #1a1a1a; }
-
-.find-vector {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.65rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #aaa;
-}
-
-/* ===== NEXT ===== */
-.next-section {
-  background: #1a1a1a;
-  padding: 8rem 2rem;
-}
-
-.next-inner {
-  max-width: 750px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.next-section .label {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.65rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  color: #c9a961;
-  display: block;
-  margin-bottom: 2.5rem;
-}
-
-.next-bridge {
-  font-family: 'Lora', serif;
-  font-size: 1.1rem;
-  line-height: 2;
-  color: #94a3b8;
-  margin-bottom: 4rem;
-}
-
-.next-links {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.next-link {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 3rem;
-  text-decoration: none;
-  border: 1px solid rgba(255,255,255,0.1);
-  transition: all 0.4s ease;
-  min-width: 200px;
-}
-
-.next-link.primary {
-  border-color: #c9a961;
-  background: rgba(201, 169, 97, 0.05);
-}
-
-.next-link:hover {
-  background: rgba(201, 169, 97, 0.1);
-  border-color: #c9a961;
-}
-
-.nl-label {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #c9a961;
-  margin-bottom: 0.5rem;
-}
-
-.nl-title {
-  font-family: 'Crimson Text', serif;
-  font-size: 1.2rem;
-  color: #e5dcc8;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
-  .intro-columns { grid-template-columns: 1fr; gap: 2rem; }
-  .finds-grid { grid-template-columns: 1fr; }
-  .thesis-ex { grid-template-columns: 1fr; gap: 1rem; }
-  .ex-symbol { text-align: left; }
-  .breadcrumb { position: static; display: block; margin-bottom: 2rem; text-align: left; }
-  .pm-hero { padding-top: 5rem; }
-  .primitives-grid { grid-template-columns: 1fr 1fr; }
-}
-
-@media (max-width: 600px) {
-  .primitives-grid { grid-template-columns: 1fr; }
-}
-
+<BaseLayout title={title} description={description}>
+
+<style>
+  .proto-page { max-width: var(--max-width); margin: 0 auto; padding: 0 2rem 4rem; }
+
+  .page-header {
+    padding: 3rem 0 2rem;
+    border-bottom: 1px solid var(--gold-light);
+  }
+  .breadcrumb {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+  .breadcrumb a { color: var(--color-petrol); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .breadcrumb span { color: var(--text-muted); margin: 0 0.5rem; }
+
+  .page-header h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-weight: 400;
+    color: var(--dark);
+    margin: 0 0 0.5rem;
+  }
+  .page-header .sub {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  .intro-box {
+    background: var(--bg-soft);
+    border-left: 3px solid var(--gold);
+    padding: 1.25rem 1.75rem;
+    margin: 2rem 0;
+    font-family: 'Lora', serif;
+    font-size: 0.97rem;
+    line-height: 1.75;
+  }
+
+  .sektion { padding: 2.5rem 0; border-bottom: 1px solid var(--border); }
+  .sektion h2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 1rem;
+  }
+  .sektion p {
+    font-family: 'Lora', serif;
+    font-size: 0.97rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: var(--text);
+  }
+
+  .urgesten-tabelle {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-family: 'Lora', serif;
+    font-size: 0.9rem;
+  }
+  .urgesten-tabelle th {
+    background: var(--dark);
+    color: #FAF8F3;
+    padding: 0.6rem 1rem;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .urgesten-tabelle td {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  .urgesten-tabelle tr:hover td { background: var(--bg-soft); }
+  .urgesten-tabelle .nr {
+    color: var(--color-petrol);
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .urgesten-tabelle .name {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.15rem;
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  .hinweis {
+    background: #f0f7f7;
+    border-left: 3px solid var(--color-petrol);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    font-family: 'Lora', serif;
+    font-size: 0.92rem;
+    line-height: 1.75;
+  }
+
+  .ableitungs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  .ableitungs-karte {
+    border: 1px solid var(--border);
+    padding: 1rem 1.25rem;
+    font-family: 'Lora', serif;
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+  .ableitungs-karte .urgeste {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.1rem;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+  .ableitungs-karte .phoneme { color: var(--color-petrol); margin: 0.2rem 0; }
+  .ableitungs-karte .prinzip { color: var(--text-muted); font-size: 0.82rem; font-style: italic; }
+
+  .mish-nav {
+    display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0;
+  }
+  .mish-nav a {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--color-petrol);
+    text-decoration: none;
+    border: 1px solid var(--color-petrol);
+    padding: 0.4rem 1rem;
+    transition: all 0.2s;
+  }
+  .mish-nav a:hover { background: var(--color-petrol); color: white; }
+
+  @media (max-width: 640px) {
+    .urgesten-tabelle { font-size: 0.82rem; }
+    .ableitungs-grid { grid-template-columns: 1fr 1fr; }
+  }
 </style>
+
+<div class="proto-page">
+
+  <header class="page-header">
+    <p class="breadcrumb">
+      <a href="/mishkenaz">Mishkenaz</a>
+      <span>›</span>
+      Urgesten
+    </p>
+    <h1>Die zwölf Urgesten</h1>
+    <p class="sub">Das physiologische Fundament von Mishkenaz</p>
+  </header>
+
+  <div class="intro-box">
+    Die Urgesten sind nicht die ältesten bekannten Sprachfunde. Sie sind das <strong>theoretische Fundament</strong> von Mishkenaz: die Antwort auf die Frage, welche körperlichen Bewegungen allen menschlichen Lauten vorausgehen. Zwölf Körperpositionen — jede mit einer Lautklasse und einer Bedeutungsrichtung. Keine Phoneme, sondern Artikulationsereignisse. Aus jeder Urgeste entstehen mehrere Phoneme, je nachdem welcher Ausgang gewählt wird.
+  </div>
+
+  <!-- DIE 12 URGESTEN -->
+  <section class="sektion">
+    <h2>Die Tabelle</h2>
+
+    <table class="urgesten-tabelle">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Körper</th>
+          <th>Bedeutungsrichtung</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="nr">1</td>
+          <td class="name">Oh</td>
+          <td>Mund weit-rund, tief</td>
+          <td>Offenheit, Staunen, Weite</td>
+        </tr>
+        <tr>
+          <td class="nr">2</td>
+          <td class="name">Ah</td>
+          <td>Mund maximal offen</td>
+          <td>Weite, Raumgeben, das Äußerste</td>
+        </tr>
+        <tr>
+          <td class="nr">3</td>
+          <td class="name">Om</td>
+          <td>Rund, nasal schließend</td>
+          <td>Stimmigkeit, Ankommen — Om als untrennbare Einheit, nicht O+M</td>
+        </tr>
+        <tr>
+          <td class="nr">4</td>
+          <td class="name">Ma</td>
+          <td>Bilabial-nasal, Saugbewegung</td>
+          <td>Bindung, Nähren — gibt M (nasal)</td>
+        </tr>
+        <tr>
+          <td class="nr">5</td>
+          <td class="name">Pa</td>
+          <td>Bilabial explosiv</td>
+          <td>Impuls, Echo — gibt P/B als Paar (B kommt von Pa, nicht Ma)</td>
+        </tr>
+        <tr>
+          <td class="nr">6</td>
+          <td class="name">Sa</td>
+          <td>Frikativ, Zahn-Lippen</td>
+          <td>Schwelle, Bruch, Übergang — gibt S / Z / SH</td>
+        </tr>
+        <tr>
+          <td class="nr">7</td>
+          <td class="name">Auv</td>
+          <td>Diphthong, fließend tief, labial</td>
+          <td>Fließende Tiefe, Tragen, Bewegung ohne Ziel</td>
+        </tr>
+        <tr>
+          <td class="nr">8</td>
+          <td class="name">Avi</td>
+          <td>Zentralvokal (Schwa ə), minimal markiert</td>
+          <td>Leere, Nullpunkt, Potenzial — V00, kein Duplikat von Ah</td>
+        </tr>
+        <tr>
+          <td class="nr">9</td>
+          <td class="name">Il</td>
+          <td>Hoher Vokal, Zunge vorne</td>
+          <td>Bewegung, Sehnsucht, Unterwegs-sein — gibt I / L / J/Y</td>
+        </tr>
+        <tr>
+          <td class="nr">10</td>
+          <td class="name">Ku</td>
+          <td>Velar, Kehlenraum</td>
+          <td>Hohlraum, Suche — gibt K / G / Ng</td>
+        </tr>
+        <tr>
+          <td class="nr">11</td>
+          <td class="name">Bi</td>
+          <td>Bilabial, hoher Vokal — Startposition</td>
+          <td>Ansatzpunkt, Quelle — vokalisch-positional, kein eigener Plosiv</td>
+        </tr>
+        <tr>
+          <td class="nr">12</td>
+          <td class="name">Ta</td>
+          <td>Alveolar, Zunge/Gaumen</td>
+          <td>Gegenüber, Grenze, das Andere — gibt T / D / N / R</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="hinweis">
+      <strong>Om als Einheit:</strong> Om ist phonologisch nicht O+M — der Übergang von Vokalrundung in den nasalen Verschluss ist eine einzige Geste, keine Sequenz.<br><br>
+      <strong>Avi als Schwa (ə):</strong> Avi ist der unbetonbare Zentralvokal — der am wenigsten markierte Laut. Eigenständig, kein Duplikat von Ah. Er entspricht dem Vektor V00 — dem Nullpunkt außerhalb der 42.
+    </div>
+  </section>
+
+  <!-- DAS ABLEITUNGSPRINZIP -->
+  <section class="sektion">
+    <h2>Das Ableitungsprinzip</h2>
+    <p>Eine Urgeste ist eine Körperposition. Die Phoneme entstehen durch verschiedene Ausgangswege — oral oder nasal, stimmhaft oder stimmlos, lateral oder direkt. Aus zwölf Urgesten entstehen so ~25 Phoneme des R1-Inventars.</p>
+
+    <div class="ableitungs-grid">
+      <div class="ableitungs-karte">
+        <p class="urgeste">Ku →</p>
+        <p class="phoneme">K (stimmlos) · G (stimmhaft) · Ng (nasal)</p>
+        <p class="prinzip">Dieselbe veleare Geste, drei Ausgänge</p>
+      </div>
+      <div class="ableitungs-karte">
+        <p class="urgeste">Il →</p>
+        <p class="phoneme">I · E · L (lateral) · J/Y (Gleitlaut)</p>
+        <p class="prinzip">Zunge berührt Gaumen → Lateral</p>
+      </div>
+      <div class="ableitungs-karte">
+        <p class="urgeste">Ma →</p>
+        <p class="phoneme">M (nasal)</p>
+        <p class="prinzip">Pa gibt P/B — Ma gibt nur M</p>
+      </div>
+      <div class="ableitungs-karte">
+        <p class="urgeste">Pa →</p>
+        <p class="phoneme">P (stimmlos) · B (stimmhaft)</p>
+        <p class="prinzip">Impuls-Plosiv-Paar</p>
+      </div>
+      <div class="ableitungs-karte">
+        <p class="urgeste">Ta →</p>
+        <p class="phoneme">T · D · N · R</p>
+        <p class="prinzip">Alveolarer Raum: vier Ausgänge</p>
+      </div>
+      <div class="ableitungs-karte">
+        <p class="urgeste">Sa →</p>
+        <p class="phoneme">S · Z · SH</p>
+        <p class="prinzip">Frikativ: stimmlos / stimmhaft / palatalisiert</p>
+      </div>
+    </div>
+
+    <nav class="mish-nav">
+      <a href="/mishkenaz/grammatik">Zur Grammatik →</a>
+      <a href="/mishkenaz/vektoren">Zu den 42 Vektoren →</a>
+      <a href="/mishkenaz">← Mishkenaz Übersicht</a>
+    </nav>
+  </section>
+
+</div>
+</BaseLayout>
