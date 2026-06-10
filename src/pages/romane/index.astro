@@ -27,11 +27,21 @@ const sortedBooks = books.sort((a, b) => (a.data.order ?? 99) - (b.data.order ??
       margin-bottom: 1.5rem;
       line-height: 1.1;
     }
-    .archive-header p {
+    .archive-header .subtitle {
       font-family: 'Lora', serif;
       font-style: italic;
       color: #c9a961;
       font-size: 1.25rem;
+      display: block;
+      margin-bottom: 1.2rem;
+    }
+    .archive-header .intro {
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
     }
 
     /* Grid */
@@ -77,6 +87,12 @@ const sortedBooks = books.sort((a, b) => (a.data.order ?? 99) - (b.data.order ??
       flex-direction: column;
       flex: 1;
     }
+    .book-meta {
+      display: flex;
+      align-items: baseline;
+      gap: 0.8rem;
+      margin-bottom: 0.6rem;
+    }
     .genre-label {
       font-family: 'Lato', sans-serif;
       font-size: 0.7rem;
@@ -84,8 +100,12 @@ const sortedBooks = books.sort((a, b) => (a.data.order ?? 99) - (b.data.order ??
       letter-spacing: 3px;
       color: #c9a961;
       font-weight: 700;
-      display: block;
-      margin-bottom: 0.6rem;
+    }
+    .year-label {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.7rem;
+      color: #aaa;
+      letter-spacing: 1px;
     }
     .content-box h2 {
       font-family: 'Crimson Text', serif;
@@ -122,13 +142,18 @@ const sortedBooks = books.sort((a, b) => (a.data.order ?? 99) - (b.data.order ??
       .cover-box { max-width: 260px; margin: 0 auto; }
       .book-card { text-align: center; }
       .details-link { align-self: center; }
+      .book-meta { justify-content: center; }
     }
   </style>
 
   <div class="archive-container">
     <header class="archive-header">
       <h1>Romane</h1>
-      <p>Fiktion, Resonanz und Weltentwürfe</p>
+      <span class="subtitle">Fiktion, Resonanz und Weltentwürfe</span>
+      <p class="intro">
+        Literarische Welten, in denen die Philosophie der Omnizedenz
+        hörbar wird — Sprache, die nicht Zeit beschreibt, sondern Zeit erzeugt.
+      </p>
     </header>
 
     <div class="book-grid">
@@ -146,13 +171,18 @@ const sortedBooks = books.sort((a, b) => (a.data.order ?? 99) - (b.data.order ??
             )}
           </div>
           <div class="content-box">
-            <span class="genre-label">{book.data.genre ?? 'Roman'}</span>
+            <div class="book-meta">
+              <span class="genre-label">{book.data.genre ?? 'Roman'}</span>
+              {book.data.erscheinungsjahr && (
+                <span class="year-label">{book.data.erscheinungsjahr}</span>
+              )}
+            </div>
             <h2>{book.data.title ?? book.slug}</h2>
             {book.data.description
               ? <p class="description-text">{book.data.description}</p>
               : null}
             <a href={`/romane/${book.slug}/`} class="details-link">
-              Zur Detailseite →
+              Zum Roman →
             </a>
           </div>
         </article>
