@@ -203,13 +203,14 @@ const description = "Mishkenaz ist die konstruierte Sprache des Baumeister-Unive
 
   /* LIED-BLOCK */
   .lied-block {
-    background: var(--dark);
+    background: #1a1410;
     color: #FAF8F3;
     padding: 2rem 2.5rem;
     margin: 1.5rem 0;
     font-family: 'Crimson Text', serif;
     font-size: 1.15rem;
     line-height: 1.9;
+    border-left: 3px solid var(--gold);
   }
   .lied-block .mishkenaz { color: var(--gold); letter-spacing: 0.02em; }
   .lied-block .uebersetzung {
@@ -220,6 +221,21 @@ const description = "Mishkenaz ist die konstruierte Sprache des Baumeister-Unive
     border-top: 1px solid #2a2a2a;
     padding-top: 0.75rem;
   }
+  .lied-link {
+    display: inline-block;
+    margin-top: 1.25rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 2px;
+    transition: opacity 0.2s;
+  }
+  .lied-link:hover { opacity: 0.7; }
 
   /* NICHT-BOX */
   .nicht-box {
@@ -386,6 +402,7 @@ const description = "Mishkenaz ist die konstruierte Sprache des Baumeister-Unive
       Von uns als Wellen: sein — stimmig — jetzt.<br>
       Spirale-suchend, von uns als Einheit. Bis zur Wiederkehr.</p>
     </div>
+    <a href="/texte/auv-pa-il" class="lied-link">Das vollständige Lied →</a>
   </section>
 
   <!-- SEKTION 5: WAS MISHKENAZ NICHT IST -->
