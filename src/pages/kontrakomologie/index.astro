@@ -24,6 +24,7 @@ const kategorieLabels: Record<string, string> = {
   'neue-musik': 'Neue Musik',
   'grundlagen': 'Grundlagen',
   'eigenes-werk': 'Eigenes Werk',
+  'literatur': 'Literatur',
 };
 
 const richtungLabels: Record<string, string> = {
@@ -32,12 +33,12 @@ const richtungLabels: Record<string, string> = {
 };
 ---
 
-<BaseLayout title="Kontrakomologie" description="Was Musik mit Zeit macht — und was Zeit mit Musik macht. Essays und Analysen von Thomas Peter Küper.">
+<BaseLayout title="Kontrakomologie" description="Was Musik und Literatur mit Zeit machen — und was Zeit mit ihnen macht. Essays und Analysen von Thomas Peter Küper.">
 
   <section class="kk-hero">
     <div class="container">
       <h1>Kontrakomologie</h1>
-      <p class="subtitle">Was Musik mit Zeit macht — und was Zeit mit Musik macht</p>
+      <p class="subtitle">Was Musik und Literatur mit Zeit machen — und was Zeit mit ihnen macht</p>
     </div>
   </section>
 
@@ -52,12 +53,19 @@ const richtungLabels: Record<string, string> = {
 
       <nav class="kk-start">
         <span class="kk-start-label">Einstieg</span>
-        <a href="/kontrakomologie/kontrakomologie-systemmatrix/">Systemmatrix</a>
-        <a href="/kontrakomologie/kontrakomologie-diagnosefragen/">Diagnosefragen</a>
-        <a href="/kontrakomologie/kontrakomologie-kompositionsprinzipien/">Kontrakomologisch komponieren</a>
+        <a href="/kontrakomologie/systemmatrix/">Systemmatrix</a>
+        <a href="/kontrakomologie/diagnosefragen/">Diagnosefragen</a>
+        <a href="/kontrakomologie/kontrakomologisches-komponieren/">Kontrakomologisch komponieren</a>
+        <a href="/kontrakomologie/kontrakomologisch-lesen/">Kontrakomologisch lesen</a>
       </nav>
 
-      <p>Das führt zu einer ungewöhnlichen Einsicht: Musik erzeugt Zeit. Sie ist nicht in der Zeit — sie macht sie. Bach macht Zeit gleichzeitig. Davis macht Zeit offen. Coltrane macht Zeit gerichtet. Lucier macht Zeit so lange, bis das Material sich selbst aufgebraucht hat und nur noch der Raum übrig ist, in dem die Musik stattgefunden hat.</p>
+      <p>Das führt zu einer Einsicht: Musik erzeugt Zeit. Sie ist nicht in der Zeit — sie macht sie. Bach macht Zeit gleichzeitig. Davis macht Zeit offen. Coltrane macht Zeit gerichtet. Lucier macht Zeit so lange, bis das Material sich selbst aufgebraucht hat und nur noch der Raum übrig ist, in dem die Musik stattgefunden hat.</p>
+
+      <p>Inzwischen stellt die Kontrakomologie dieselben Fragen auch an Literatur — weil Literatur wie Musik Zeit erzeugt, nicht nur beschreibt. Ein Roman spielt nicht in der Zeit, er macht sie: Er bestimmt, wie schnell oder langsam, wie offen oder geschlossen, wie vorwärts oder rückwirkend Zeit beim Lesen erfahren wird.</p>
+
+      <p>Kontrapunktisches Lesen heißt: mehrere Bedeutungsebenen gleichzeitig im Fluss der Lesezeit halten, ohne dass eine die anderen auflöst. Nicht als Übertragung der Musik auf Sprache — sondern weil die Grundfragen dieselben sind. Ein Satz kann zwei Wahrheiten tragen. Eine Figur kann in zwei Zeiten gleichzeitig leben. Ein Anfang kann sein Ende bereits enthalten, auch wenn man es beim ersten Lesen nicht weiß.</p>
+
+      <p>Die Kontrakomologie folgt dem Material. Wenn das Material Prosa ist, folgt sie der Prosa.</p>
 
       <details class="kk-details">
         <summary>Was ist kontrapunktische Koexistenz?</summary>
@@ -110,7 +118,7 @@ const richtungLabels: Record<string, string> = {
   <section class="kk-composers">
     <div class="container">
       <h2>Ausgangspunkte</h2>
-      <p class="kk-composers-intro">Die Kontrakomologie hat sich an einer Reihe von Werken entwickelt — von Barock bis Gegenwart, von Klassik bis Jazz bis Pop bis Klangkunst.</p>
+      <p class="kk-composers-intro">Die Kontrakomologie hat sich an einer Reihe von Werken entwickelt — von Barock bis Gegenwart, von Klassik bis Jazz bis Pop bis Klangkunst bis Literatur.</p>
       <div class="kk-composers-grid">
         <div class="kk-composer-card">
           <span class="kk-composer-label">Struktur</span>
@@ -142,8 +150,13 @@ const richtungLabels: Record<string, string> = {
           <h3>Lucier</h3>
           <p>Das Material verbraucht sich selbst. Am Ende ist die Stimme weg — und was bleibt, ist der Raum, der immer schon gesprochen hat.</p>
         </div>
+        <div class="kk-composer-card">
+          <span class="kk-composer-label">Mehrschichtige Gegenwart</span>
+          <h3>Nalgae</h3>
+          <p>Eine Figur, die in mehreren Zeitschichten gleichzeitig lebt, ohne dass eine die andere erklärt. Dasselbe Analysewerkzeug — an Prosa gestellt.</p>
+        </div>
       </div>
-      <p class="kk-composers-more">Weitere Zeitformen: Reich (Pulsfluss), Madonna (stehende Innenzeit), The Cars (simultane Gegensätze), Evanescence (aufrecht erhaltene Gegenwart).</p>
+      <p class="kk-composers-more">Weitere Zeitformen: Reich (Pulsfluss), Madonna (stehende Innenzeit), The Cars (simultane Gegensätze), Evanescence (aufrecht erhaltene Gegenwart). Literarische Analysen: Nalgae (mehrschichtige Gegenwart).</p>
     </div>
   </section>
 
@@ -173,7 +186,7 @@ const richtungLabels: Record<string, string> = {
   <section class="kk-section">
     <div class="container">
       <h2>Analysen</h2>
-      <p class="kk-section-intro">Einzelne Werke — gehört, beschrieben, kontrakomologisch gelesen.</p>
+      <p class="kk-section-intro">Einzelne Werke — gehört, beschrieben, kontrakomologisch gelesen. Musik und Literatur.</p>
       <div class="essays-grid">
         {analysen.map((entry) => (
           <a href={`/kontrakomologie/${entry.slug}/`} class="essay-card">
