@@ -110,7 +110,65 @@ import authorImg from '../assets/portrait3.jpg';
       .universe-cards { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
       .uni-card { padding: 3.5rem 2.5rem; }
     }
-  </style>
+
+/* ===== ARCHIV-SEKTION ===== */
+.archiv-section {
+  padding: 6rem 0;
+  background: var(--bg-soft);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.archiv-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.archiv-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.archiv-section h2 {
+  font-family: 'Crimson Text', serif;
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--text);
+  letter-spacing: 0.1em;
+  margin-bottom: 1.25rem;
+}
+
+.archiv-section p {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.85;
+  font-style: italic;
+  margin-bottom: 2.5rem;
+}
+
+.archiv-link {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 4px;
+  transition: color 0.3s;
+}
+
+.archiv-link:hover { color: var(--gold); }
+
+</style>
 
   <section class="home-hero">
     <div class="container hero-grid">
@@ -153,4 +211,19 @@ import authorImg from '../assets/portrait3.jpg';
       </div>
     </div>
   </section>
+
+<section class="archiv-section">
+  <div class="container archiv-inner">
+    <span class="archiv-label">Wissenschaftliche Grundlagen</span>
+    <h2>kueper.com</h2>
+    <p>
+      Hinter diesen Welten steht Forschung. Peer-reviewed Physik, 
+      philosophische Frameworks, plausible Spekulation — 
+      dokumentiert und frei zugänglich.
+    </p>
+    <a href="https://www.kueper.com" target="_blank" rel="noopener" class="archiv-link">
+      Archiv betreten →
+    </a>
+  </div>
+</section>
 </BaseLayout>
