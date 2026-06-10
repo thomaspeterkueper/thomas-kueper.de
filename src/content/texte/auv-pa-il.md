@@ -187,4 +187,6 @@ Dreifach gehaucht, jedes Mal leiser. Das *îl* am Ende kaum noch hörbar. Dann S
 
 ---
 
-*© Thomas Peter Küper, Mai 2026 · CC BY-SA 4.0*
+*© Thomas Peter Küper, Mai 2026*
+
+*Dieses Lied darf frei aufgeführt, gesungen und geteilt werden — mit Namensnennung. Textbearbeitungen nur mit ausdrücklicher Zustimmung des Autors. Kommerzielle Nutzung nur mit Genehmigung und Vertrag. [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.de)*
