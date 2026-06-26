@@ -1,4 +1,4 @@
-# robots.txt für thomas-kueper.com
+# robots.txt für thomas-kueper.de
 # Website von Thomas Peter Küper – Autor und Weltenbauer
 
 User-agent: *
@@ -23,4 +23,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://thomas-kueper.com/sitemap-index.xml
+Sitemap: https://thomas-kueper.de/sitemap-index.xml
