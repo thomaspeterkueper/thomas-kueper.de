@@ -3,6 +3,6 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://thomas-kueper.com',
+  site: 'https://thomas-kueper.de',
   integrations: [sitemap()],
 });
