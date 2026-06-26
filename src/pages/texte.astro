@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Texte" description="Essays, Beobachtungsnotizen, Fragmente und Arbeitsnotizen von Thomas Peter Küper.">
+  <style>
+    .page{padding:7rem 0}.intro{max-width:780px;margin:0 auto 5rem;text-align:center}.intro h1{font-size:4rem;margin-bottom:1rem}.intro p{color:var(--text-muted);font-size:1.1rem}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}.card{border:1px solid var(--border);background:#fff;padding:2.5rem}.card h2{font-size:2rem;margin-bottom:1rem}.card p{color:#555}@media(max-width:900px){.grid{grid-template-columns:1fr}.intro h1{font-size:3rem}}
+  </style>
+
+  <section class="page">
+    <div class="container">
+      <div class="intro">
+        <h1>Texte</h1>
+        <p>Essays, Beobachtungsnotizen, Fragmente, Forschungs- und Arbeitsnotizen. Dieser Bereich sammelt Texte, die nicht unmittelbar Roman oder Weltbeschreibung sind.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card"><h2>Essays</h2><p>Ausformulierte Gedanken zu Literatur, Philosophie, Technik, Zeit und Zukunft.</p></article>
+        <article class="card"><h2>Beobachtungsnotizen</h2><p>Kurze, präzise Notizen zu wissenschaftlichen, kulturellen oder philosophischen Beobachtungen.</p></article>
+        <article class="card"><h2>Fragmente</h2><p>Skizzen, Ansätze, offene Gedanken und Materialien aus laufenden Projekten.</p></article>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
