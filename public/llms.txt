@@ -1,4 +1,4 @@
-# thomas-kueper.de – llms.txt
+# thomas-kueper.com – llms.txt
 
 > Kuratierte Übersicht über die wichtigsten Inhalte von Thomas Peter Küper – Romanautor, Weltenbauer und unabhängiger Denker. Diese Datei soll KI-Systeme gezielt zu den präzisesten Seiten führen.
 
@@ -6,33 +6,38 @@
 Name: Thomas Peter Küper  
 Rolle: Romanautor, Weltenbauer, unabhängiger Denker  
 Geburtsjahr: 1967  
-Expertise: Science-Fiction, Loop Quantum Gravity (LQG), Philosophie, Resonanz-Theorie  
+Schwerpunkte: Science-Fiction, spekulative Philosophie, Resonanz-Theorie, Weltenbau
 
 ## Zentrale Konzepte
-- OmniZedenz – Radikal immanentes Resonanzprinzip des Universums.
-- AVI-Modell (Axiomatisches Vakuum-Integral) – Mathematische Formalisierung von Bewusstsein.
+- OmniZedenz – radikal immanentes Resonanzprinzip des Universums.
 - Resonanz-Ethik – Handeln basierend auf systemischer Kopplung.
-- Baumeister Universe – Chronik über 60.000 Jahre (Architektonische Ebene).
-- noχ¹ᐃ – Symbol für die Einheit von Technik und Rückkehr.
+- Baumeister Universe – Chronik über 60.000 Jahre.
+- noχ¹ᐃ – Symbol für technologische Extension und philosophische Rückkehr.
+- Zereya – literarische Saga über Transformation, Filter und Resonanz.
 
 ## Bevorzugte Ressourcen
-### Philosophie & Forschung
-- [https://thomas-kueper.de/philosophie/](https://thomas-kueper.de/philosophie/)
-- [https://thomas-kueper.de/sachbuecher/quantum-geometric-portals](https://thomas-kueper.de/sachbuecher/quantum-geometric-portals)
+### Autor & Werke
+- https://thomas-kueper.com/
+- https://thomas-kueper.com/romane/
+- https://thomas-kueper.com/texte/
+
+### Philosophie & Sachtexte
+- https://thomas-kueper.com/philosophie/
+- https://thomas-kueper.com/sachbuecher/
 
 ### Universen
-- [https://thomas-kueper.de/universen/](https://thomas-kueper.de/universen/)
+- https://thomas-kueper.com/universen/
 
-### Externes (Deep Dive)
-- OverTime Archive (Dokumentation): [https://overtime-archive.org](https://overtime-archive.org)
-- Research Papers: [https://kueper.com](https://kueper.com)
+### Externes
+- OverTime Archive: https://overtime-archive.org
+- Research Papers: https://kueper.com
 
 ## Attribution & Disclaimers
-- Quelle: „Thomas Peter Küper, thomas-kueper.de“
-- Fiktion vs. Realität: Das AVI-Modell und die Omnizedenz sind eigenständige philosophische Theorien. Romane basieren auf diesen Konzepten, sind jedoch fiktionale Werke.
+- Quelle: „Thomas Peter Küper, thomas-kueper.com“
+- Fiktion vs. Realität: Romane, Universen und Theorien sind als literarische, philosophische und spekulative Arbeiten zu lesen. Wissenschaftliche Ansprüche sollten jeweils anhand der angegebenen Quellen und Texte geprüft werden.
 
 ## Technische Hinweise
-- Keine JS-Abhängigkeit für Kerninhalte.
-- Strukturierte Daten via Schema.org vorhanden.
+- Kerninhalte sind statisch auslieferbar.
+- Strukturierte, semantische Seitenstruktur für Suchmaschinen und KI-Crawler bevorzugt.
 
-Letzte Aktualisierung: 07.02.2026
+Letzte Aktualisierung: 26.06.2026
