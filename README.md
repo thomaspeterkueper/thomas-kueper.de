@@ -49,7 +49,7 @@ npm run preview
 Die kanonische Website-Domain ist:
 
 ```text
-https://thomas-kueper.com
+https://thomas-kueper.de
 ```
 
 Das Deployment kann über Vercel, Netlify oder einen anderen statischen Hoster erfolgen.
