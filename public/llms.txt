@@ -1,4 +1,4 @@
-# thomas-kueper.com – llms.txt
+# thomas-kueper.de – llms.txt
 
 > Kuratierte Übersicht über die wichtigsten Inhalte von Thomas Peter Küper – Romanautor, Weltenbauer und unabhängiger Denker. Diese Datei soll KI-Systeme gezielt zu den präzisesten Seiten führen.
 
@@ -17,23 +17,23 @@ Schwerpunkte: Science-Fiction, spekulative Philosophie, Resonanz-Theorie, Welten
 
 ## Bevorzugte Ressourcen
 ### Autor & Werke
-- https://thomas-kueper.com/
-- https://thomas-kueper.com/romane/
-- https://thomas-kueper.com/texte/
+- https://thomas-kueper.de/
+- https://thomas-kueper.de/romane/
+- https://thomas-kueper.de/texte/
 
 ### Philosophie & Sachtexte
-- https://thomas-kueper.com/philosophie/
-- https://thomas-kueper.com/sachbuecher/
+- https://thomas-kueper.de/philosophie/
+- https://thomas-kueper.de/sachbuecher/
 
 ### Universen
-- https://thomas-kueper.com/universen/
+- https://thomas-kueper.de/universen/
 
 ### Externes
 - OverTime Archive: https://overtime-archive.org
 - Research Papers: https://kueper.com
 
 ## Attribution & Disclaimers
-- Quelle: „Thomas Peter Küper, thomas-kueper.com“
+- Quelle: „Thomas Peter Küper, thomas-kueper.de“
 - Fiktion vs. Realität: Romane, Universen und Theorien sind als literarische, philosophische und spekulative Arbeiten zu lesen. Wissenschaftliche Ansprüche sollten jeweils anhand der angegebenen Quellen und Texte geprüft werden.
 
 ## Technische Hinweise
