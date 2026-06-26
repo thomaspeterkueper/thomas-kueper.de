@@ -1,220 +1,80 @@
 ---
-// Pfad: src/pages/index.astro
 import BaseLayout from '../layouts/BaseLayout.astro';
 import authorImg from '../assets/portrait3.jpg';
 ---
 
-<BaseLayout title="Home" description="Thomas Peter Küper — Autor, Weltenbauer und Philosoph.">
+<BaseLayout title="Thomas Peter Küper" description="Autor, Weltenbauer und Entwickler von Ideen.">
   <style>
-    .home-hero { padding: 8rem 0 6rem; background-color: var(--bg-soft); border-bottom: 1px solid var(--border); }
-    .hero-grid { display: grid; grid-template-columns: 400px 1fr; gap: 6rem; align-items: center; }
-    .portrait-img { width: 100%; border-radius: 2px; box-shadow: 0 30px 60px rgba(0,0,0,0.1); border: 1px solid var(--border); transition: transform 0.5s ease; }
-    .portrait-img:hover { transform: scale(1.02); }
-    .hero-text h1 { font-family: 'Crimson Text', serif; font-size: clamp(3rem, 6vw, 4.5rem); font-weight: 300; margin-bottom: 1.5rem; line-height: 1; }
-    .lead-text { font-family: 'Lora', serif; font-size: 1.25rem; color: var(--gold); font-style: italic; margin-bottom: 2rem; display: block; }
-    .btn-primary { display: inline-block; text-decoration: none; background-color: var(--text); color: #fff; padding: 1.2rem 3rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em; transition: 0.3s; }
-    .btn-primary:hover { background-color: var(--gold); transform: translateY(-3px); }
-
-    .universen-section { padding: 10rem 0; }
-    .universen-section h2 { text-align: center; font-size: 3.5rem; margin-bottom: 5rem; }
-
-    .universe-cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2.5rem;
-      margin-top: 0;
-    }
-
-    .uni-card {
-      background: #fff;
-      border: 1px solid var(--border);
-      padding: 4rem 3rem;
-      text-decoration: none;
-      color: inherit;
-      text-align: center;
-      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .uni-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 3px;
-      background: var(--card-accent, var(--gold));
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.5s ease;
-    }
-
-    .uni-card:hover {
-      border-color: var(--gold);
-      transform: translateY(-10px);
-      box-shadow: 0 30px 60px rgba(0,0,0,0.05);
-    }
-
-    .uni-card:hover::before { transform: scaleX(1); }
-
-    .uni-card .card-label {
-      font-family: 'Lato', sans-serif;
-      font-size: 0.6rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      color: var(--gold);
-      display: block;
-      margin-bottom: 1.5rem;
-    }
-
-    .uni-card h3 {
-      font-family: 'Crimson Text', serif;
-      font-size: 2.2rem;
-      font-weight: 300;
-      margin-bottom: 1rem;
-    }
-
-    .uni-card p {
-      font-family: 'Lora', serif;
-      font-style: italic;
-      font-size: 1rem;
-      color: #555;
-      line-height: 1.7;
-    }
-
-    .uni-card .enter-link {
-      display: inline-block;
-      margin-top: 2rem;
-      font-family: 'Lato', sans-serif;
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: var(--text);
-      border-bottom: 1px solid var(--gold);
-      padding-bottom: 4px;
-      transition: color 0.3s;
-    }
-
-    .uni-card:hover .enter-link { color: var(--gold); }
-
-    @media (max-width: 950px) {
-      .hero-grid { grid-template-columns: 1fr; text-align: center; }
-      .portrait-box { max-width: 320px; margin: 0 auto; }
-      .universe-cards { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
-      .uni-card { padding: 3.5rem 2.5rem; }
-    }
-
-    .archiv-section {
-      padding: 6rem 0;
-      background: var(--bg-soft);
-      border-top: 1px solid var(--border);
-      text-align: center;
-    }
-
-    .archiv-inner { max-width: 600px; margin: 0 auto; }
-
-    .archiv-label {
-      font-family: 'Lato', sans-serif;
-      font-size: 0.65rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.25em;
-      color: var(--gold);
-      display: block;
-      margin-bottom: 1.5rem;
-    }
-
-    .archiv-section h2 {
-      font-family: 'Crimson Text', serif;
-      font-size: 3rem;
-      font-weight: 300;
-      color: var(--text);
-      letter-spacing: 0.1em;
-      margin-bottom: 1.25rem;
-    }
-
-    .archiv-section p {
-      font-family: 'Lora', serif;
-      font-size: 1rem;
-      color: var(--text-muted);
-      line-height: 1.85;
-      font-style: italic;
-      margin-bottom: 2.5rem;
-    }
-
-    .archiv-link {
-      font-family: 'Lato', sans-serif;
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--text);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold);
-      padding-bottom: 4px;
-      transition: color 0.3s;
-    }
-
-    .archiv-link:hover { color: var(--gold); }
+    .home-hero{padding:8rem 0 6rem;background:var(--bg-soft);border-bottom:1px solid var(--border)}
+    .hero-grid{display:grid;grid-template-columns:400px 1fr;gap:6rem;align-items:center}
+    .portrait-img{width:100%;border:1px solid var(--border);box-shadow:0 30px 60px rgba(0,0,0,.1)}
+    .lead{color:var(--gold);font-style:italic;font-size:1.2rem}
+    h1{font-size:clamp(3rem,6vw,4.5rem);font-weight:300;margin:1rem 0}
+    .btn{display:inline-block;padding:1rem 2rem;background:#111;color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:.15em}
+    .section{padding:6rem 0}
+    .section h2{text-align:center;font-size:3rem;margin-bottom:3rem}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+    .card{background:#fff;border:1px solid var(--border);padding:2rem;text-decoration:none;color:inherit}
+    .card h3{margin-bottom:.75rem}
+    .soft{background:var(--bg-soft);border-top:1px solid var(--border)}
+    @media(max-width:950px){.hero-grid,.grid{grid-template-columns:1fr}}
   </style>
 
   <section class="home-hero">
     <div class="container hero-grid">
-      <div class="portrait-box">
-        <img src={authorImg.src} alt="Thomas Peter Küper" class="portrait-img" />
-      </div>
-      <div class="hero-text">
-        <span class="lead-text">Thomas Peter Küper</span>
-        <h1>Schreiber & Weltenbauer</h1>
-        <p style="font-size:1.15rem; line-height:1.9; margin-bottom:3rem;">Tagsüber arbeite ich in IT-Infrastrukturen. Abends an einem hundertjährigen Flügel, an Romanen, an Karten für Welten die noch niemand betreten hat. Mich interessiert dieselbe Frage in verschiedenen Formen: Wie entsteht Bedeutung — in Netzwerken, in Geschichten, in Menschen?</p>
-        <a href="/romane" class="btn-primary">Bibliothek betreten</a>
+      <div><img src={authorImg.src} alt="Thomas Peter Küper" class="portrait-img" /></div>
+      <div>
+        <div class="lead">Thomas Peter Küper</div>
+        <h1>Autor, Weltenbauer und Entwickler von Ideen</h1>
+        <p>Ich schreibe Science-Fiction, Gegenwartsromane, Kinderbücher und philosophische Texte. Manche Geschichten stehen für sich allein. Andere sind Teil größerer Welten, die sich von der Vergangenheit bis in die Zukunft des Sonnensystems erstrecken.</p>
+        <a href="/romane" class="btn">Bücher entdecken</a>
       </div>
     </div>
   </section>
 
-  <section class="universen-section">
+  <section class="section">
     <div class="container">
-      <h2>Die Universen</h2>
-      <div class="universe-cards">
-
-        <a href="/universen/baumeister" class="uni-card" style="--card-accent: #c9a961;">
-          <span class="card-label">60.000 Jahre Epik</span>
-          <h3>Baumeister</h3>
-          <p>Von den Uralten bis zu den Sternen. Die Architektur des Seins.</p>
-          <span class="enter-link">Gefüge betreten</span>
-        </a>
-
-        <a href="/universen/nox" class="uni-card" style="--card-accent: #2C4E7A;">
-          <span class="card-label">Realistischer Aufbruch</span>
-          <h3>noχ¹ᐃ</h3>
-          <p>Der Mars, das χ-Feld und die Grenzen der Identität.</p>
-          <span class="enter-link">Mission starten</span>
-        </a>
-
-        <a href="/universen/zereya" class="uni-card" style="--card-accent: #4a9b9b;">
-          <span class="card-label">Saga in 8 Bänden</span>
-          <h3>Zereya</h3>
-          <p>Das summende Haus. Der lebende Dreiklang. Wo Transformation geschieht.</p>
-          <span class="enter-link">Filter erforschen</span>
-        </a>
-
+      <h2>Aktuelle Werke</h2>
+      <div class="grid">
+        <div class="card"><h3>Nichts gefragt</h3><p>Erinnerung, Identität und die Folgen einer Entscheidung.</p></div>
+        <div class="card"><h3>Zereya</h3><p>Transformation, Resonanz und Veränderung.</p></div>
+        <div class="card"><h3>Die Horcher</h3><p>Eine Expedition stößt auf etwas, das möglicherweise zuhört.</p></div>
       </div>
     </div>
   </section>
 
-  <section class="archiv-section">
-    <div class="container archiv-inner">
-      <span class="archiv-label">Wissenschaftliche Grundlagen</span>
-      <h2>kueper.com</h2>
-      <p>
-        Hinter diesen Welten steht Forschung. Peer-reviewed Physik,
-        philosophische Frameworks, plausible Spekulation —
-        dokumentiert und frei zugänglich.
-      </p>
-      <a href="https://www.kueper.com" target="_blank" rel="noopener" class="archiv-link">
-        Archiv betreten →
-      </a>
+  <section class="section soft">
+    <div class="container">
+      <h2>Welten</h2>
+      <div class="grid">
+        <a href="/universen/baumeister" class="card"><h3>Baumeister</h3><p>Geschichten aus Vergangenheit und Gegenwart. Ein literarisches Kontinuum aus Romanen, Figuren und Ideen.</p></a>
+        <a href="/universen/nox" class="card"><h3>NOXIA</h3><p>Die Zukunft der Menschheit im Sonnensystem. Romane, Spielentwicklung und Wissenschaftsvermittlung.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Grundlagen</h2>
+      <div class="grid">
+        <div class="card"><h3>Omnizedenz</h3></div>
+        <div class="card"><h3>AVI</h3></div>
+        <div class="card"><h3>Mishkenaz</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container" style="max-width:800px;text-align:center;">
+      <h2>Kontrakomologie</h2>
+      <p>Eine Betrachtungsweise für Texte, Musik und Kunst. Nicht nur was erzählt wird, sondern wie Zeit, Rhythmus, Erinnerung und Erwartung erlebt werden.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width:800px;text-align:center;">
+      <h2>Texte</h2>
+      <p>Essays, Beobachtungsnotizen, Fragmente, Forschungs- und Arbeitsnotizen.</p>
     </div>
   </section>
 </BaseLayout>
