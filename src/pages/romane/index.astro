@@ -1,159 +1,51 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+
+const PUBLIC_ROMAN_SLUGS = [
+  'nichts-gefragt',
+  'feli-und-das-lichthaus',
+  'die-horcher',
+  'xerxes',
+];
+
 const books = await getCollection('romane');
-const sortedBooks = books.sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+const sortedBooks = books
+  .filter((book) => PUBLIC_ROMAN_SLUGS.includes(book.slug))
+  .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
 ---
-<BaseLayout
-  title="Romane"
-  description="Romane und literarische Projekte von Thomas Peter Küper."
->
+
+<BaseLayout title="Bücher" description="Ausgewählte Romane und Bücher von Thomas Peter Küper.">
   <style is:inline>
-    .archive-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 8rem 2rem;
-    }
-    .archive-header {
-      text-align: center;
-      margin-bottom: 7rem;
-    }
-    .archive-header h1 {
-      font-family: 'Crimson Text', serif;
-      font-size: clamp(3rem, 8vw, 4.5rem);
-      font-weight: 300;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 1.5rem;
-      line-height: 1.1;
-    }
-    .archive-header .subtitle {
-      font-family: 'Lora', serif;
-      font-style: italic;
-      color: #c9a961;
-      font-size: 1.25rem;
-      display: block;
-      margin-bottom: 1.2rem;
-    }
-    .archive-header .intro {
-      font-family: 'Lora', serif;
-      font-size: 1.05rem;
-      color: #666;
-      max-width: 600px;
-      margin: 0 auto;
-      line-height: 1.8;
-    }
-
-    /* Grid */
-    .book-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 4rem 3rem;
-    }
-    @media (min-width: 700px) {
-      .book-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    @media (min-width: 1100px) {
-      .book-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    /* Karte */
-    .book-card {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-    .cover-box {
-      overflow: hidden;
-    }
-    .cover-box img {
-      width: 100%;
-      height: auto;
-      display: block;
-      box-shadow: 0 12px 35px rgba(0,0,0,0.10);
-      border: 1px solid #eee;
-      border-radius: 2px;
-      transition: transform 0.5s ease;
-    }
-    .book-card:hover .cover-box img {
-      transform: translateY(-6px);
-    }
-    .content-box {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-    }
-    .book-meta {
-      display: flex;
-      align-items: baseline;
-      gap: 0.8rem;
-      margin-bottom: 0.6rem;
-    }
-    .genre-label {
-      font-family: 'Lato', sans-serif;
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      color: #c9a961;
-      font-weight: 700;
-    }
-    .year-label {
-      font-family: 'Lato', sans-serif;
-      font-size: 0.7rem;
-      color: #aaa;
-      letter-spacing: 1px;
-    }
-    .content-box h2 {
-      font-family: 'Crimson Text', serif;
-      font-size: 2rem;
-      font-weight: 300;
-      margin: 0 0 0.8rem;
-      line-height: 1.15;
-    }
-    .description-text {
-      font-family: 'Lora', serif;
-      font-size: 0.95rem;
-      line-height: 1.8;
-      color: #555;
-      margin-bottom: 1.5rem;
-      flex: 1;
-    }
-    .details-link {
-      font-family: 'Lato', sans-serif;
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: #1a1a1a;
-      text-decoration: none;
-      border-bottom: 1px solid #c9a961;
-      padding-bottom: 4px;
-      transition: opacity 0.3s;
-      align-self: flex-start;
-    }
-    .details-link:hover { opacity: 0.6; }
-
-    @media (max-width: 699px) {
-      .book-grid { gap: 5rem; }
-      .cover-box { max-width: 260px; margin: 0 auto; }
-      .book-card { text-align: center; }
-      .details-link { align-self: center; }
-      .book-meta { justify-content: center; }
-    }
+    .archive-container{max-width:1200px;margin:0 auto;padding:8rem 2rem}
+    .archive-header{text-align:center;margin-bottom:7rem}
+    .archive-header h1{font-family:'Crimson Text',serif;font-size:clamp(3rem,8vw,4.5rem);font-weight:300;text-transform:uppercase;letter-spacing:.1em;margin-bottom:1.5rem;line-height:1.1}
+    .archive-header .subtitle{font-family:'Lora',serif;font-style:italic;color:#c9a961;font-size:1.25rem;display:block;margin-bottom:1.2rem}
+    .archive-header .intro{font-family:'Lora',serif;font-size:1.05rem;color:#666;max-width:680px;margin:0 auto;line-height:1.8}
+    .book-grid{display:grid;grid-template-columns:1fr;gap:4rem 3rem}
+    @media(min-width:700px){.book-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1100px){.book-grid{grid-template-columns:repeat(4,1fr)}}
+    .book-card{display:flex;flex-direction:column;gap:1.5rem}
+    .cover-box{overflow:hidden}
+    .cover-box img{width:100%;height:auto;display:block;box-shadow:0 12px 35px rgba(0,0,0,.1);border:1px solid #eee;border-radius:2px;transition:transform .5s ease;background:#faf9f6}
+    .book-card:hover .cover-box img{transform:translateY(-6px)}
+    .cover-placeholder{aspect-ratio:2/3;background:#faf9f6;border:1px solid #eee;display:flex;align-items:center;justify-content:center;color:#aaa;font-family:'Lato',sans-serif;font-size:.7rem;text-transform:uppercase;letter-spacing:.2em;text-align:center;padding:1rem}
+    .content-box{display:flex;flex-direction:column;flex:1}
+    .book-meta{display:flex;align-items:baseline;gap:.8rem;margin-bottom:.6rem}
+    .genre-label{font-family:'Lato',sans-serif;font-size:.7rem;text-transform:uppercase;letter-spacing:3px;color:#c9a961;font-weight:700}
+    .year-label{font-family:'Lato',sans-serif;font-size:.7rem;color:#aaa;letter-spacing:1px}
+    .content-box h2{font-family:'Crimson Text',serif;font-size:1.8rem;font-weight:300;margin:0 0 .8rem;line-height:1.15}
+    .description-text{font-family:'Lora',serif;font-size:.95rem;line-height:1.8;color:#555;margin-bottom:1.5rem;flex:1}
+    .details-link{font-family:'Lato',sans-serif;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#1a1a1a;text-decoration:none;border-bottom:1px solid #c9a961;padding-bottom:4px;transition:opacity .3s;align-self:flex-start}
+    .details-link:hover{opacity:.6}
+    @media(max-width:699px){.book-grid{gap:5rem}.cover-box{max-width:260px;margin:0 auto}.book-card{text-align:center}.details-link{align-self:center}.book-meta{justify-content:center}}
   </style>
 
   <div class="archive-container">
     <header class="archive-header">
-      <h1>Romane</h1>
-      <span class="subtitle">Fiktion, Resonanz und Weltentwürfe</span>
-      <p class="intro">
-        Literarische Welten, in denen die Philosophie der Omnizedenz
-        hörbar wird — Sprache, die nicht Zeit beschreibt, sondern Zeit erzeugt.
-      </p>
+      <h1>Bücher</h1>
+      <span class="subtitle">Vier öffentliche Einstiege</span>
+      <p class="intro">Eine Auswahl der Bücher, die derzeit im Vordergrund stehen: Gegenwartsliteratur, Kinderbuch, Science-Fiction und literarische Systemfiktion.</p>
     </header>
 
     <div class="book-grid">
@@ -161,29 +53,19 @@ const sortedBooks = books.sort((a, b) => (a.data.order ?? 99) - (b.data.order ??
         <article class="book-card">
           <div class="cover-box">
             {book.data.cover ? (
-              <img
-                src={book.data.cover}
-                alt={book.data.title ?? book.slug}
-                loading="lazy"
-              />
+              <img src={book.data.cover} alt={book.data.title ?? book.slug} loading="lazy" />
             ) : (
-              <div style="aspect-ratio:2/3; background:#faf9f6; border:1px solid #eee;"></div>
+              <div class="cover-placeholder">Cover folgt</div>
             )}
           </div>
           <div class="content-box">
             <div class="book-meta">
               <span class="genre-label">{book.data.genre ?? 'Roman'}</span>
-              {book.data.erscheinungsjahr && (
-                <span class="year-label">{book.data.erscheinungsjahr}</span>
-              )}
+              {book.data.erscheinungsjahr && <span class="year-label">{book.data.erscheinungsjahr}</span>}
             </div>
             <h2>{book.data.title ?? book.slug}</h2>
-            {book.data.description
-              ? <p class="description-text">{book.data.description}</p>
-              : null}
-            <a href={`/romane/${book.slug}/`} class="details-link">
-              Zum Roman →
-            </a>
+            {book.data.description ? <p class="description-text">{book.data.description}</p> : null}
+            <a href={`/romane/${book.slug}/`} class="details-link">Zum Buch →</a>
           </div>
         </article>
       ))}
