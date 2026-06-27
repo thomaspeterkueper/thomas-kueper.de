@@ -3,33 +3,44 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import authorImg from '../assets/portrait3.jpg';
 ---
 
-<BaseLayout title="Thomas Peter Küper" description="Autor, Weltenbauer und Entwickler von Ideen.">
-  <style>
-    .home-hero{padding:clamp(4.5rem,7vh,6.5rem) 0 clamp(4rem,6vh,5.5rem);background:var(--bg-soft);border-bottom:1px solid var(--border)}
-    .hero-grid{display:grid;grid-template-columns:minmax(320px,390px) minmax(520px,680px);gap:clamp(4rem,6vw,6.5rem);align-items:center;justify-content:center}
-    .portrait-img{width:100%;max-height:520px;object-fit:cover;border:1px solid var(--border);box-shadow:0 24px 56px rgba(0,0,0,.08)}
-    h1{font-size:clamp(3.3rem,4.8vw,5.3rem);font-weight:300;line-height:1.12;margin:0 0 1.75rem;max-width:680px}
-    .hero-text p{max-width:620px;font-size:1.05rem;line-height:1.85;margin-bottom:1.5rem}
-    .text-link{display:inline-block;font-family:'Lato',sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.22em;color:var(--text);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:.35rem;transition:color .25s ease,border-color .25s ease}
-    .text-link:hover{color:var(--gold);border-color:var(--text)}
-    .section{padding:6rem 0}.section h2{text-align:center;font-size:3rem;margin-bottom:3rem}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}.card{background:#fff;border:1px solid var(--border);padding:2rem;text-decoration:none;color:inherit}.card h3{margin-bottom:.75rem}.soft{background:var(--bg-soft);border-top:1px solid var(--border)}
-    @media(max-width:950px){.hero-grid,.grid{grid-template-columns:1fr}.hero-grid{text-align:center}.portrait-img{max-width:340px;margin:0 auto}.hero-text p{margin-left:auto;margin-right:auto}}
-  </style>
+<BaseLayout title="Thomas Peter Küper" description="Autor von Gegenwartsliteratur, Kinderbüchern und Science-Fiction.">
+<style>
+.home-hero{padding:4.5rem 0;background:var(--bg-soft);border-bottom:1px solid var(--border)}
+.hero-grid{display:grid;grid-template-columns:minmax(320px,390px) minmax(520px,680px);gap:5rem;align-items:center;justify-content:center}
+.portrait-img{width:100%;max-height:520px;object-fit:cover;border:1px solid var(--border);box-shadow:0 24px 56px rgba(0,0,0,.08)}
+h1{font-size:clamp(3rem,4.5vw,5rem);font-weight:300;line-height:1.1;margin:0 0 1.5rem}
+.hero-text p{max-width:620px;font-size:1.05rem;line-height:1.85;margin-bottom:1.5rem}
+.text-link{display:inline-block;font-family:'Lato',sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.22em;color:var(--text);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:.35rem}
+.section{padding:5rem 0}.section h2{text-align:center;font-size:3rem;margin-bottom:3rem}
+.books-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}.book{border:1px solid var(--border);padding:2rem;background:#fff;text-decoration:none;color:inherit}.book h3{margin:.5rem 0}.label{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem}.card{background:#fff;border:1px solid var(--border);padding:2rem;text-decoration:none;color:inherit}.soft{background:var(--bg-soft);border-top:1px solid var(--border)}
+@media(max-width:950px){.hero-grid,.books-grid,.grid{grid-template-columns:1fr}.hero-grid{text-align:center}.portrait-img{max-width:340px;margin:0 auto}.hero-text p{margin:auto}}
+</style>
 
-  <section class="home-hero">
-    <div class="container hero-grid">
-      <div><img src={authorImg.src} alt="Thomas Peter Küper" class="portrait-img" /></div>
-      <div class="hero-text">
-        <h1>Autor, Weltenbauer und Entwickler von Ideen</h1>
-        <p>Ich schreibe Science-Fiction, Gegenwartsromane, Kinderbücher und philosophische Texte. Manche Geschichten stehen für sich allein. Andere sind Teil größerer Welten, die sich von der Vergangenheit bis in die Zukunft des Sonnensystems erstrecken.</p>
-        <a href="/romane" class="text-link">Bücher entdecken</a>
-      </div>
-    </div>
-  </section>
+<section class="home-hero">
+<div class="container hero-grid">
+<div><img src={authorImg.src} alt="Thomas Peter Küper" class="portrait-img" /></div>
+<div class="hero-text">
+<h1>Autor von Gegenwartsliteratur, Kinderbüchern und Science-Fiction</h1>
+<p>Geschichten über Erinnerung, Herkunft, Neugier, Wahrnehmung und die Zukunft. Manche spielen in unserer Gegenwart. Andere reichen bis in die äußeren Regionen des Sonnensystems.</p>
+<a href="/romane" class="text-link">Zu den Büchern</a>
+</div></div></section>
 
-  <section class="section"><div class="container"><h2>Aktuelle Werke</h2><div class="grid"><div class="card"><h3>Nichts gefragt</h3><p>Erinnerung, Identität und die Folgen einer Entscheidung.</p></div><div class="card"><h3>Zereya</h3><p>Transformation, Resonanz und Veränderung.</p></div><div class="card"><h3>Die Horcher</h3><p>Eine Expedition stößt auf etwas, das möglicherweise zuhört.</p></div></div></div></section>
-  <section class="section soft"><div class="container"><h2>Welten</h2><div class="grid"><a href="/universen/baumeister" class="card"><h3>Baumeister</h3><p>Geschichten aus Vergangenheit und Gegenwart. Ein literarisches Kontinuum aus Romanen, Figuren und Ideen.</p></a><a href="/universen/nox" class="card"><h3>NOXIA</h3><p>Die Zukunft der Menschheit im Sonnensystem. Romane, Spielentwicklung und Wissenschaftsvermittlung.</p></a></div></div></section>
-  <section class="section"><div class="container"><h2>Grundlagen</h2><div class="grid"><div class="card"><h3>Omnizedenz</h3></div><div class="card"><h3>AVI</h3></div><div class="card"><h3>Mishkenaz</h3></div></div></div></section>
-  <section class="section soft"><div class="container" style="max-width:800px;text-align:center;"><h2>Kontrakomologie</h2><p>Eine Betrachtungsweise für Texte, Musik und Kunst. Nicht nur was erzählt wird, sondern wie Zeit, Rhythmus, Erinnerung und Erwartung erlebt werden.</p></div></section>
-  <section class="section"><div class="container" style="max-width:800px;text-align:center;"><h2>Texte</h2><p>Essays, Beobachtungsnotizen, Fragmente, Forschungs- und Arbeitsnotizen.</p></div></section>
+<section class="section">
+<div class="container">
+<h2>Aktuelle Bücher</h2>
+<div class="books-grid">
+<a class="book" href="/romane/nichts-gefragt/"><div class="label">Roman</div><h3>Nichts gefragt</h3><p>Vaterschaft, Herkunft und siebzehn Jahre Schweigen zwischen Delhi, Chiang Mai und London.</p></a>
+<a class="book" href="/romane/feli-und-das-lichthaus/"><div class="label">Kinderbuch</div><h3>Feli und das Lichthaus</h3><p>Ein altes Haus auf der Klippe leuchtet jede Nacht. Feli möchte herausfinden warum.</p></a>
+<a class="book" href="/romane/die-horcher/"><div class="label">Science Fiction</div><h3>Die Horcher</h3><p>Eine Expedition stößt auf etwas, das möglicherweise zuhört.</p></a>
+<a class="book" href="/romane/xerxes/"><div class="label">Das Gefälle</div><h3>Xerxes</h3><p>Ein funktionierendes System steuert auf einen Kollaps zu, den niemand verhindern kann.</p></a>
+</div>
+</div>
+</section>
+
+<section class="section soft"><div class="container"><h2>Welten</h2><div class="grid"><a href="/universen/baumeister" class="card"><h3>Baumeister</h3><p>Geschichten, Ideen und Zusammenhänge von der Vergangenheit bis zur Gegenwart.</p></a><a href="/universen/nox" class="card"><h3>NOXIA</h3><p>Die Zukunft der Menschheit im Sonnensystem.</p></a></div></div></section>
+
+<section class="section"><div class="container" style="max-width:800px;text-align:center;"><h2>Grundlagen</h2><p>Omnizedenz, AVI, Mishkenaz und weitere Konzepte hinter den Welten und Texten.</p></div></section>
+
+<section class="section soft"><div class="container" style="max-width:800px;text-align:center;"><h2>Kontrakomologie</h2><p>Eine Betrachtungsweise für Texte, Musik und das Erleben von Zeit.</p></div></section>
 </BaseLayout>
