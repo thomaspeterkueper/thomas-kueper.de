@@ -1,72 +1,32 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import nichtsGefragtCover from '../../assets/romane/Nichts_Gefragt/nichts_gefragt Cover.png';
+import feliCover from '../../assets/romane/Feli_Und/Das_Lichthaus.png';
+import horcherCover from '../../assets/romane/Soma_Retep/Die_Horcher_Cover.png';
+import xerxesCover from '../../assets/romane/xerxes/XERXES.png';
 
-const PUBLIC_ROMAN_SLUGS = [
-  'nichts-gefragt',
-  'feli-und-das-lichthaus',
-  'die-horcher',
-  'xerxes',
-];
+const PUBLIC_ROMAN_SLUGS = ['nichts-gefragt','feli-und-das-lichthaus','die-horcher','xerxes'];
+const coverMap = {
+  'nichts-gefragt': nichtsGefragtCover.src,
+  'feli-und-das-lichthaus': feliCover.src,
+  'die-horcher': horcherCover.src,
+  'xerxes': xerxesCover.src,
+};
 
 export async function getStaticPaths() {
   const romane = await getCollection('romane');
-  return romane
-    .filter((r) => PUBLIC_ROMAN_SLUGS.includes(r.slug))
-    .map((r) => ({
-      params: { slug: r.slug },
-      props: { roman: r },
-    }));
+  return romane.filter((r) => PUBLIC_ROMAN_SLUGS.includes(r.slug)).map((r) => ({params:{slug:r.slug},props:{roman:r}}));
 }
 
 const { roman } = Astro.props;
 const { Content } = await roman.render();
+const coverSrc = coverMap[roman.slug];
 ---
 
 <BaseLayout title={`${roman.data.title} — Roman von Thomas Peter Küper`} description={roman.data.description ?? ''}>
   <style>
-    .book-page{max-width:1050px;margin:0 auto;padding:6rem 2rem 8rem;color:#1a1a1a;font-family:'Lora',serif;line-height:1.9}
-    .hero-split{display:grid;grid-template-columns:280px 1fr;gap:5rem;align-items:start;margin-bottom:5rem}
-    .cover-sticky{position:sticky;top:120px}
-    .book-cover{width:100%;height:auto;border-radius:2px;box-shadow:0 30px 60px rgba(0,0,0,.12);border:1px solid #f0f0f0;background:#faf9f6}
-    .cover-placeholder{aspect-ratio:2/3;background:#faf9f6;border:1px solid #eee;display:flex;align-items:center;justify-content:center;color:#aaa;font-family:'Lato',sans-serif;font-size:.7rem;text-transform:uppercase;letter-spacing:.2em;text-align:center;padding:1rem}
-    .meta{font-family:'Lato',sans-serif;text-transform:uppercase;letter-spacing:3px;font-size:.7rem;color:#c9a961;display:block;margin-bottom:1rem;font-weight:700}
-    h1{font-family:'Crimson Text',serif;font-size:clamp(2.2rem,5vw,3.4rem);text-transform:uppercase;letter-spacing:.08em;margin:0 0 1rem;font-weight:300;line-height:1.1}
-    .tagline{font-size:1.05rem;color:#888;font-style:italic;display:block;line-height:1.6;max-width:620px}
-    .status{font-family:'Lato',sans-serif;font-size:.7rem;text-transform:uppercase;letter-spacing:.18em;color:#777;margin-top:1rem;display:block}
-    .main-content{padding-top:1rem}
-    .main-content h2{font-family:'Crimson Text',serif;font-size:2rem;font-weight:300;margin:4.5rem 0 1.2rem;letter-spacing:.05em;line-height:1.2;color:#1a1a1a}
-    .main-content h3{font-family:'Lato',sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:#c9a961;margin:3rem 0 .8rem}
-    .main-content p{font-size:1.05rem;line-height:2;color:#3a3a3a;margin-bottom:2rem;max-width:720px}
-    .main-content blockquote{border-left:2px solid #c9a961;margin:3.5rem 0;padding:.25rem 0 .25rem 2rem;font-style:italic;color:#c9a961;font-size:1.1rem;line-height:1.85;max-width:720px}
-    .main-content blockquote p{margin-bottom:0;color:#c9a961}
-    .main-content hr{border:none;border-top:1px solid #f0ede8;margin:3.5rem 0;max-width:120px}
-    .back-link{display:inline-block;margin-top:5rem;font-family:'Lato',sans-serif;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:#1a1a1a;text-decoration:none;border-bottom:1px solid #c9a961;padding-bottom:.35rem}
-    .back-link:hover{color:#c9a961}
-    @media(max-width:800px){.hero-split{grid-template-columns:1fr;gap:2.5rem}.cover-sticky{position:static;max-width:260px;margin:0 auto}.book-page{padding-top:4rem}h1{text-align:center}.meta,.tagline,.status{text-align:center}.tagline{margin:0 auto}}
+    .book-page{max-width:1050px;margin:0 auto;padding:6rem 2rem 8rem;color:#1a1a1a;font-family:'Lora',serif;line-height:1.9}.hero-split{display:grid;grid-template-columns:280px 1fr;gap:5rem;align-items:start;margin-bottom:5rem}.cover-sticky{position:sticky;top:120px}.book-cover{width:100%;height:auto;border-radius:2px;box-shadow:0 30px 60px rgba(0,0,0,.12);border:1px solid #f0f0f0;background:#faf9f6}.cover-placeholder{aspect-ratio:2/3;background:#faf9f6;border:1px solid #eee;display:flex;align-items:center;justify-content:center;color:#aaa;font-family:'Lato',sans-serif;font-size:.7rem;text-transform:uppercase;letter-spacing:.2em;text-align:center;padding:1rem}.meta{font-family:'Lato',sans-serif;text-transform:uppercase;letter-spacing:3px;font-size:.7rem;color:#c9a961;display:block;margin-bottom:1rem;font-weight:700}h1{font-family:'Crimson Text',serif;font-size:clamp(2.2rem,5vw,3.4rem);text-transform:uppercase;letter-spacing:.08em;margin:0 0 1rem;font-weight:300;line-height:1.1}.tagline{font-size:1.05rem;color:#888;font-style:italic;display:block;line-height:1.6;max-width:620px}.status{font-family:'Lato',sans-serif;font-size:.7rem;text-transform:uppercase;letter-spacing:.18em;color:#777;margin-top:1rem;display:block}.main-content{padding-top:1rem}.main-content h2{font-family:'Crimson Text',serif;font-size:2rem;font-weight:300;margin:4.5rem 0 1.2rem;letter-spacing:.05em;line-height:1.2;color:#1a1a1a}.main-content h3{font-family:'Lato',sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:#c9a961;margin:3rem 0 .8rem}.main-content p{font-size:1.05rem;line-height:2;color:#3a3a3a;margin-bottom:2rem;max-width:720px}.main-content blockquote{border-left:2px solid #c9a961;margin:3.5rem 0;padding:.25rem 0 .25rem 2rem;font-style:italic;color:#c9a961;font-size:1.1rem;line-height:1.85;max-width:720px}.main-content blockquote p{margin-bottom:0;color:#c9a961}.main-content hr{border:none;border-top:1px solid #f0ede8;margin:3.5rem 0;max-width:120px}.back-link{display:inline-block;margin-top:5rem;font-family:'Lato',sans-serif;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:#1a1a1a;text-decoration:none;border-bottom:1px solid #c9a961;padding-bottom:.35rem}.back-link:hover{color:#c9a961}@media(max-width:800px){.hero-split{grid-template-columns:1fr;gap:2.5rem}.cover-sticky{position:static;max-width:260px;margin:0 auto}.book-page{padding-top:4rem}h1{text-align:center}.meta,.tagline,.status{text-align:center}.tagline{margin:0 auto}}
   </style>
-
-  <article class="book-page">
-    <header class="hero-split">
-      <div class="cover-sticky">
-        {roman.data.cover ? (
-          <img class="book-cover" src={roman.data.cover} alt={`Cover: ${roman.data.title}`} />
-        ) : (
-          <div class="cover-placeholder">Cover folgt</div>
-        )}
-      </div>
-      <div>
-        <span class="meta">{roman.data.genre ?? 'Roman'}</span>
-        <h1>{roman.data.title}</h1>
-        {roman.data.description && <span class="tagline">{roman.data.description}</span>}
-        {roman.data.status && <span class="status">{roman.data.status}</span>}
-      </div>
-    </header>
-
-    <section class="main-content">
-      <Content />
-    </section>
-
-    <a href="/romane/" class="back-link">Zurück zu den Büchern</a>
-  </article>
+  <article class="book-page"><header class="hero-split"><div class="cover-sticky">{coverSrc ? (<img class="book-cover" src={coverSrc} alt={`Cover: ${roman.data.title}`} />) : (<div class="cover-placeholder">Cover folgt</div>)}</div><div><span class="meta">{roman.data.genre ?? 'Roman'}</span><h1>{roman.data.title}</h1>{roman.data.description && <span class="tagline">{roman.data.description}</span>}{roman.data.status && <span class="status">{roman.data.status}</span>}</div></header><section class="main-content"><Content /></section><a href="/romane/" class="back-link">Zurück zu den Büchern</a></article>
 </BaseLayout>
