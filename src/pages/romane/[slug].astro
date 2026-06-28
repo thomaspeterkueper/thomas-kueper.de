@@ -6,7 +6,6 @@ import feliCover from '../../assets/romane/Feli_Und/Das_Lichthaus.png';
 import horcherCover from '../../assets/romane/Soma_Retep/Die_Horcher_Cover.png';
 import xerxesCover from '../../assets/romane/xerxes/XERXES.png';
 
-const PUBLIC_ROMAN_SLUGS = ['nichts-gefragt','feli-und-das-lichthaus','die-horcher','xerxes'];
 const coverMap: Record<string, string> = {
   'nichts-gefragt': nichtsGefragtCover.src,
   'feli-und-das-lichthaus': feliCover.src,
@@ -15,8 +14,9 @@ const coverMap: Record<string, string> = {
 };
 
 export async function getStaticPaths() {
+  const publicRomanSlugs = ['nichts-gefragt','feli-und-das-lichthaus','die-horcher','xerxes'];
   const romane = await getCollection('romane');
-  return romane.filter((r) => PUBLIC_ROMAN_SLUGS.includes(r.slug)).map((r) => ({params:{slug:r.slug},props:{roman:r}}));
+  return romane.filter((r) => publicRomanSlugs.includes(r.slug)).map((r) => ({params:{slug:r.slug},props:{roman:r}}));
 }
 
 const { roman } = Astro.props;
