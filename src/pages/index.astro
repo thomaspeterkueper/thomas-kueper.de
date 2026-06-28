@@ -3,33 +3,86 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import authorImg from '../assets/portrait3.jpg';
 ---
 
-<BaseLayout title="Thomas Peter Küper" description="Autor, Weltenbauer, Musiker und Entwickler von Ideen.">
-<style>
-.home-hero{padding:clamp(4.5rem,7vh,6.5rem) 0;background:var(--bg-soft);border-bottom:1px solid var(--border)}
-.hero-grid{display:grid;grid-template-columns:minmax(320px,400px) minmax(520px,720px);gap:clamp(4rem,6vw,6rem);align-items:center;justify-content:center}
-.portrait-img{width:100%;max-height:560px;object-fit:cover;border:1px solid var(--border);box-shadow:0 24px 56px rgba(0,0,0,.08)}
-.eyebrow{font-family:'Lato',sans-serif;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.22em;color:var(--gold);margin-bottom:1rem}
-h1{font-size:clamp(3rem,4.8vw,5.2rem);font-weight:300;line-height:1.1;margin:0 0 1.5rem}
-.hero-text p{max-width:660px;font-size:1.08rem;line-height:1.9;margin-bottom:1.5rem;color:#333}
-.links{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:2rem}.text-link{display:inline-block;font-family:'Lato',sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.22em;color:var(--text);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:.35rem}
-.section{padding:5rem 0}.section h2{text-align:center;font-size:3rem;margin-bottom:3rem}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}.card{background:#fff;border:1px solid var(--border);padding:2rem;text-decoration:none;color:inherit}.card h3{margin-bottom:.75rem}.soft{background:var(--bg-soft);border-top:1px solid var(--border)}
-@media(max-width:950px){.hero-grid,.grid{grid-template-columns:1fr}.hero-grid{text-align:center}.portrait-img{max-width:340px;margin:0 auto}.hero-text p{margin-left:auto;margin-right:auto}.links{justify-content:center}}
-</style>
+<BaseLayout title="Home" description="Thomas Peter Küper — Autor, Weltenbauer und Entwickler von Ideen.">
+  <style>
+    .home-hero{padding:8rem 0 6rem;background-color:var(--bg-soft);border-bottom:1px solid var(--border)}
+    .hero-grid{display:grid;grid-template-columns:400px 1fr;gap:6rem;align-items:center}
+    .portrait-img{width:100%;border-radius:2px;box-shadow:0 30px 60px rgba(0,0,0,.1);border:1px solid var(--border);transition:transform .5s ease}
+    .portrait-img:hover{transform:scale(1.02)}
+    .hero-text h1{font-family:'Crimson Text',serif;font-size:clamp(3rem,6vw,4.5rem);font-weight:300;margin-bottom:1.5rem;line-height:1}
+    .lead-text{font-family:'Lora',serif;font-size:1.25rem;color:var(--gold);font-style:italic;margin-bottom:2rem;display:block}
+    .hero-text p{font-size:1.15rem;line-height:1.9;margin-bottom:3rem;max-width:680px}
+    .btn-primary{display:inline-block;text-decoration:none;background-color:var(--text);color:#fff;padding:1.2rem 3rem;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.2em;transition:.3s}
+    .btn-primary:hover{background-color:var(--gold);transform:translateY(-3px)}
 
-<section class="home-hero">
-<div class="container hero-grid">
-<div><img src={authorImg.src} alt="Thomas Peter Küper" class="portrait-img" /></div>
-<div class="hero-text">
-<div class="eyebrow">Über mich</div>
-<h1>Thomas Peter Küper</h1>
-<p>Ich schreibe Romane, Kinderbücher, Science-Fiction und Essays. Meine Arbeit verbindet Geschichten, Sprache, Musik, Wissenschaft, Zeitwahrnehmung und eigene Denkmodelle.</p>
-<p>Im Zentrum stehen Menschen, die etwas sehen, hören oder begreifen, das nicht in die vorhandenen Systeme passt — und die trotzdem versuchen, dafür eine Form zu finden.</p>
-<div class="links"><a href="/ueber-mich" class="text-link">Mehr über mich</a><a href="/romane" class="text-link">Bücher ansehen</a></div>
-</div></div></section>
+    .universen-section{padding:10rem 0}.universen-section h2{text-align:center;font-size:3.5rem;margin-bottom:5rem}
+    .universe-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem}
+    .uni-card{background:#fff;border:1px solid var(--border);padding:4rem 3rem;text-decoration:none;color:inherit;text-align:center;transition:all .5s cubic-bezier(.165,.84,.44,1);position:relative;overflow:hidden}
+    .uni-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--card-accent,var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .5s ease}
+    .uni-card:hover{border-color:var(--gold);transform:translateY(-10px);box-shadow:0 30px 60px rgba(0,0,0,.05)}
+    .uni-card:hover::before{transform:scaleX(1)}
+    .uni-card .card-label{font-family:'Lato',sans-serif;font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--gold);display:block;margin-bottom:1.5rem}
+    .uni-card h3{font-family:'Crimson Text',serif;font-size:2.2rem;font-weight:300;margin-bottom:1rem}
+    .uni-card p{font-family:'Lora',serif;font-style:italic;font-size:1rem;color:#555;line-height:1.7}
+    .uni-card .enter-link{display:inline-block;margin-top:2rem;font-family:'Lato',sans-serif;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--text);border-bottom:1px solid var(--gold);padding-bottom:4px;transition:color .3s}
+    .uni-card:hover .enter-link{color:var(--gold)}
 
-<section class="section">
-<div class="container"><h2>Aktuelle Bücher</h2><div class="grid"><a class="card" href="/romane/nichts-gefragt/"><h3>Nichts gefragt</h3><p>Ein literarischer Roman über Vaterschaft, Herkunft und siebzehn Jahre Schweigen.</p></a><a class="card" href="/romane/feli-und-das-lichthaus/"><h3>Feli und das Lichthaus</h3><p>Ein Kinderbuch über Neugier, Rätsel und ein Haus, das nachts leuchtet.</p></a><a class="card" href="/romane/die-horcher/"><h3>Die Horcher</h3><p>Science-Fiction über eine Expedition und etwas, das möglicherweise zuhört.</p></a></div></div>
-</section>
+    .archiv-section{padding:6rem 0;background:var(--bg-soft);border-top:1px solid var(--border);text-align:center}
+    .archiv-inner{max-width:680px;margin:0 auto}.archiv-label{font-family:'Lato',sans-serif;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.25em;color:var(--gold);display:block;margin-bottom:1.5rem}
+    .archiv-section h2{font-family:'Crimson Text',serif;font-size:3rem;font-weight:300;color:var(--text);letter-spacing:.1em;margin-bottom:1.25rem}
+    .archiv-section p{font-family:'Lora',serif;font-size:1rem;color:var(--text-muted);line-height:1.85;font-style:italic;margin-bottom:2.5rem}
+    .archiv-link{font-family:'Lato',sans-serif;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--text);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:4px;transition:color .3s}
+    .archiv-link:hover{color:var(--gold)}
 
-<section class="section soft"><div class="container"><h2>Welten und Grundlagen</h2><div class="grid"><a href="/universen" class="card"><h3>Welten</h3><p>Baumeister und NOXIA als literarische Räume.</p></a><a href="/grundlagen" class="card"><h3>Grundlagen</h3><p>Omnizedenz, AVI und Mishkenaz.</p></a><a href="/kontrakomologie" class="card"><h3>Kontrakomologie</h3><p>Texte, Musik und das Erleben von Zeit.</p></a></div></div></section>
+    @media(max-width:950px){.hero-grid{grid-template-columns:1fr;text-align:center}.portrait-box{max-width:320px;margin:0 auto}.universe-cards{grid-template-columns:1fr;max-width:500px;margin:0 auto}.uni-card{padding:3.5rem 2.5rem}.hero-text p{margin-left:auto;margin-right:auto}}
+  </style>
+
+  <section class="home-hero">
+    <div class="container hero-grid">
+      <div class="portrait-box"><img src={authorImg.src} alt="Thomas Peter Küper" class="portrait-img" /></div>
+      <div class="hero-text">
+        <span class="lead-text">Thomas Peter Küper</span>
+        <h1>Schreiber & Weltenbauer</h1>
+        <p>Ich schaue genau hin – auf das, was zwischen den Zeilen passiert, in den Pausen zwischen zwei Tönen, in dem Moment, bevor eine Entscheidung fällt. Meine Geschichten entstehen dort, wo die Dinge aneinanderstoßen.</p>
+        <a href="/ueber-mich" class="btn-primary">Mehr über mich</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="universen-section">
+    <div class="container">
+      <h2>Die Eingänge</h2>
+      <div class="universe-cards">
+        <a href="/romane" class="uni-card" style="--card-accent:#c9a961;">
+          <span class="card-label">Bücher</span>
+          <h3>Romane</h3>
+          <p>Gegenwartsliteratur, Kinderbuch, Science-Fiction und literarische Systemfiktion.</p>
+          <span class="enter-link">Bibliothek betreten</span>
+        </a>
+
+        <a href="/universen" class="uni-card" style="--card-accent:#2C4E7A;">
+          <span class="card-label">Welten</span>
+          <h3>Baumeister & NOXIA</h3>
+          <p>Zwei große literarische Räume: Vergangenheit bis Gegenwart, Zukunft des Sonnensystems.</p>
+          <span class="enter-link">Welten betreten</span>
+        </a>
+
+        <a href="/grundlagen" class="uni-card" style="--card-accent:#4a9b9b;">
+          <span class="card-label">Grundlagen</span>
+          <h3>Ideen & Sprache</h3>
+          <p>Omnizedenz, AVI, Mishkenaz und die Modelle hinter vielen Texten.</p>
+          <span class="enter-link">Grundlagen lesen</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="archiv-section">
+    <div class="container archiv-inner">
+      <span class="archiv-label">Kontrakomologie</span>
+      <h2>Zeit im Werk</h2>
+      <p>Eine Betrachtungsweise für Texte, Musik und Kunst: nicht nur was erzählt wird, sondern wie Zeit, Rhythmus, Erinnerung und Erwartung erlebt werden.</p>
+      <a href="/kontrakomologie" class="archiv-link">Kontrakomologie betreten →</a>
+    </div>
+  </section>
 </BaseLayout>
