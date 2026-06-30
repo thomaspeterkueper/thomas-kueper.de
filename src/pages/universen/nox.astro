@@ -1,7 +1,7 @@
 ---
 // Dateipfad: src/pages/universen/nox.astro
 // Beschreibung: Vollständige Detailseite zur noχ¹ᐃ (Noxia) Saga.
-// Korrektur: Kontrast für Meta-Texte erhöht, Links vereinheitlicht, volle Inhaltslänge.
+// Aktualisiert: 30.06.2026 — Schwarzer Infoblock durch bildgetragene Noxia-Hero-Section ersetzt.
 
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
@@ -15,31 +15,70 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     
     .hero-section { text-align: center; margin-bottom: 8rem; padding: 8rem 0; background: #faf9f6; border-bottom: 1px solid #eee; }
     .hero-section h1 { font-family: 'Crimson Text', serif; font-size: clamp(3rem, 10vw, 5.5rem); font-weight: 300; letter-spacing: 0.15em; color: #2a4e7a; margin-bottom: 1.5rem; }
-    .subtitle { color: #8a6d2b; /* Dunkleres Gold für besseren Kontrast */ font-size: 1.1rem; letter-spacing: 5px; text-transform: uppercase; font-weight: 700; font-family: 'Lato', sans-serif; }
+    .subtitle { color: #8a6d2b; font-size: 1.1rem; letter-spacing: 5px; text-transform: uppercase; font-weight: 700; font-family: 'Lato', sans-serif; }
 
     .content-block { max-width: 850px; margin: 0 auto 6rem; }
     .intro-lead { font-size: 1.35rem; margin-bottom: 2.5rem; border-left: 4px solid #c9a961; padding-left: 2rem; color: #1a1a1a; }
 
-    .field-info { background: #121416; color: #fff; padding: 10rem 0; margin: 8rem 0; }
-    .field-info h2 { color: #c9a961; font-size: 3rem; margin-bottom: 2.5rem; font-family: 'Crimson Text', serif; }
-    
-    .highlight-box { 
-      background: rgba(255, 255, 255, 0.05); 
-      border-left: 4px solid #c9a961; 
-      padding: 4rem; 
-      margin: 4rem 0; 
+    .nox-event-hero {
+      position: relative;
+      width: 100vw;
+      min-height: 620px;
+      margin: 8rem 0 8rem calc(50% - 50vw);
+      padding: 7rem clamp(2rem, 6vw, 7rem);
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background-image: linear-gradient(90deg, rgba(3, 8, 14, 0.36), rgba(3, 8, 14, 0.08)), url('/images/noxia-hero.png');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      box-shadow: inset 0 -1px 0 rgba(255,255,255,0.35), inset 0 1px 0 rgba(0,0,0,0.08);
     }
-    .highlight-box h3 { color: #c9a961; margin-top: 0; font-family: 'Crimson Text', serif; font-size: 2rem; }
+
+    .nox-event-panel {
+      max-width: 900px;
+      padding: clamp(2.25rem, 4vw, 4rem);
+      color: #f4efe4;
+      background: rgba(8, 12, 18, 0.66);
+      border-left: 6px solid #d1b26a;
+      border-radius: 0 12px 12px 0;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.34);
+    }
+
+    .nox-event-panel h2 {
+      color: #d1b26a;
+      font-family: 'Crimson Text', serif;
+      font-size: clamp(2.2rem, 4vw, 3.25rem);
+      font-weight: 400;
+      line-height: 1.15;
+      margin: 0 0 1.8rem;
+    }
+
+    .nox-event-line {
+      width: 140px;
+      height: 1px;
+      margin: 0 0 1.9rem;
+      background: linear-gradient(90deg, #d1b26a, rgba(209,178,106,0));
+    }
+
+    .nox-event-panel p {
+      max-width: 760px;
+      margin: 0 0 0.75rem;
+      color: rgba(255,255,255,0.92);
+      font-size: clamp(1.05rem, 1.5vw, 1.35rem);
+      line-height: 1.75;
+    }
 
     .series-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-top: 8rem; }
     .series-card { border: 1px solid #eee; padding: 5rem 4rem; background: #fff; transition: all 0.5s ease; height: 100%; display: flex; flex-direction: column; }
     .series-card:hover { transform: translateY(-10px); border-color: #c9a961; box-shadow: 0 40px 80px rgba(0,0,0,0.06); }
     .series-card h3 { font-size: 2.8rem; margin-bottom: 1rem; font-family: 'Crimson Text', serif; color: #2a4e7a; font-weight: 400; }
     
-    /* KORREKTUR: HÖHERER KONTRAST FÜR META-TEXT */
     .series-meta { 
       font-family: 'Lato', sans-serif; 
-      color: #7a5f20; /* Deutlich dunkleres Gold für Lesbarkeit auf Weiß */
+      color: #7a5f20;
       font-size: 0.85rem; 
       text-transform: uppercase; 
       letter-spacing: 3px; 
@@ -72,7 +111,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     }
     .btn-betreten:hover { color: #c9a961; }
 
-    @media (max-width: 1000px) { .series-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 1000px) {
+      .series-grid { grid-template-columns: 1fr; }
+      .nox-event-hero { min-height: 560px; padding: 4rem 1.5rem; align-items: flex-end; }
+      .nox-event-panel { max-width: none; border-left-width: 4px; }
+    }
   </style>
 
   <article class="nox-page">
@@ -93,31 +136,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         </p>
       </section>
 
-      <section class="field-info">
-        <div class="container">
-          <div style="max-width: 850px; margin: 0 auto;">
-            <h2>Das χ-Feld (Chi-Feld)</h2>
-            <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 3rem;">
-              Es ist eine fundamentale Eigenschaft des Raums auf der Ebene von <strong>Bewusstsein und Information</strong>. Das χ-Feld manifestiert das Prinzip der Omnizedenz in der messbaren Realität.
-            </p>
-            
-            <div class="highlight-box">
-              <h3>Fähigkeiten & Anomalien</h3>
-              <ul style="line-height: 2; list-style-type: square; padding-left: 1.5rem; font-size: 1.1rem;">
-                <li><strong>Instantane Kopplung:</strong> Kommunikation über Lichtjahre ohne Latenz.</li>
-                <li><strong>Neuro-Interfaces:</strong> Die direkte Verschmelzung von Geist und technologischer Struktur.</li>
-                <li><strong>Resonanz-Echo:</strong> Der Zugriff auf das kollektive Informationsfeld früherer Baumeister-Phasen.</li>
-                <li><strong>χ-Antrieb:</strong> Raumkrümmung durch Resonanz statt durch klassische Massenverdrängung.</li>
-              </ul>
-            </div>
-
-            <div style="border-top: 1px solid #444; padding-top: 3rem; margin-top: 4rem;">
-              <h3 style="color: #c9a961; font-family: 'Crimson Text', serif; font-size: 2rem; margin-bottom: 1.5rem;">Ereignis: Die Große Stille (2087)</h3>
-              <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.8;">
-                Wenige Tage nach der Entdeckung der Monolithen geschieht das Unfassbare: Alle konventionelle Langstrecken-Kommunikation im Sonnensystem fällt aus. Der Mars ist isoliert. In dieser totalen Stille muss die Kolonie autark überleben, während sie gleichzeitig die Natur der Monolithe entschlüsselt, die möglicherweise für die Störung verantwortlich sind.
-              </p>
-            </div>
-          </div>
+      <section class="nox-event-hero" aria-label="Ereignis: Die Große Stille">
+        <div class="nox-event-panel">
+          <h2>Ereignis: Die Große Stille (2087)</h2>
+          <div class="nox-event-line"></div>
+          <p>Wenige Tage nach der Entdeckung der Monolithen geschieht das Unfassbare: Alle konventionelle Langstrecken-Kommunikation im Sonnensystem fällt aus.</p>
+          <p>Der Mars ist isoliert. In dieser totalen Stille muss die Kolonie autark überleben, während sie gleichzeitig die Natur der Monolithe entschlüsselt.</p>
         </div>
       </section>
 
