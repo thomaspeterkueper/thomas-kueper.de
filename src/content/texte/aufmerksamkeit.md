@@ -1,15 +1,15 @@
 ---
 title: Aufmerksamkeit
 description: Eine Beobachtung über Wahrnehmung, Verdrängung und die Frage, was Menschen sehen – und was sie lieber nicht sehen.
-category: Gesellschaft & Gegenwart
-type: Kurzgeschichte
+kategorie: gesellschaft-gegenwart
+typ: Kurzgeschichte
 tags:
   - Wahrnehmung
   - Aufmerksamkeit
   - Gesellschaft
   - Beobachtung
   - Verantwortung
-date: 2026-07-01
+date: "2026-07-01"
 order: 50
 draft: false
 ---
