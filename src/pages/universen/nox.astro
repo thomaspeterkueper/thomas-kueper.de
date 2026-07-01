@@ -2,67 +2,15 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout
-  title="noχ¹ᐃ Universe"
-  description="Realistische Science-Fiction über die Zukunft des Sonnensystems, Forschung, Kolonisation und die Wiederentdeckung eines vergessenen Erbes."
->
-  <style>
-    .nox-page{background:#fff;color:var(--text)}
-    .nox-hero{position:relative;min-height:680px;margin:0 0 6rem;padding:7rem clamp(1.5rem,5vw,5rem);display:flex;align-items:center;overflow:hidden;background-image:linear-gradient(90deg,rgba(250,248,243,.86) 0%,rgba(250,248,243,.58) 38%,rgba(250,248,243,.12) 68%,rgba(250,248,243,0) 100%),url('/images/noxia-hero.png');background-size:cover;background-position:center center;border-bottom:1px solid var(--border)}
-    .nox-hero::after{content:'';position:absolute;inset:auto 0 0;height:34%;background:linear-gradient(180deg,rgba(255,255,255,0),#fff);pointer-events:none}
-    .hero-panel{position:relative;z-index:1;max-width:720px;padding:clamp(2rem,4vw,3.5rem);background:rgba(255,255,255,.68);border:1px solid rgba(255,255,255,.72);border-left:4px solid var(--gold);box-shadow:0 28px 70px rgba(10,18,28,.16);backdrop-filter:blur(10px)}
-    .eyebrow{font-family:'Lato',sans-serif;font-size:.66rem;font-weight:800;text-transform:uppercase;letter-spacing:.28em;color:#2a4e7a;display:block;margin-bottom:1.4rem}.hero-panel h1{font-family:'Crimson Text',serif;font-size:clamp(3.1rem,7vw,5.4rem);font-weight:300;line-height:.96;letter-spacing:.08em;color:#2a4e7a;margin:0 0 1.5rem}.hero-panel p{font-family:'Lora',serif;font-size:clamp(1.05rem,1.35vw,1.28rem);line-height:1.8;color:#263241;margin:0}.hero-panel .lead{font-style:italic;color:#52606d;margin-bottom:1.4rem}.hero-links{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:2rem}.hero-links a{font-family:'Lato',sans-serif;font-size:.65rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;color:#2a4e7a;border:1px solid rgba(42,78,122,.35);background:rgba(255,255,255,.55);padding:.65rem 1rem}.hero-links a:hover{border-color:#2a4e7a;background:#2a4e7a;color:#fff}
-    .container-narrow{max-width:920px;margin:0 auto;padding:0 2rem}.intro{margin:0 auto 5rem;text-align:center}.intro h2,.section h2{font-family:'Crimson Text',serif;font-size:clamp(2.4rem,5vw,3.5rem);font-weight:300;line-height:1.1;margin-bottom:1.5rem}.intro p,.section p{font-family:'Lora',serif;font-size:1rem;line-height:1.9;color:#555}.section{max-width:920px;margin:0 auto;padding:4.5rem 2rem;border-top:1px solid var(--border)}
-    .event-card{margin:2rem 0 0;padding:2.5rem;background:var(--bg-soft);border-left:3px solid var(--gold)}.event-card h3{font-family:'Crimson Text',serif;font-size:2rem;font-weight:400;color:#2a4e7a;margin-bottom:1rem}.event-card p{margin-bottom:.8rem}.series-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2.5rem}.series-card{border:1px solid var(--border);border-top:4px solid var(--accent,#2a4e7a);background:#fff;padding:2.5rem;transition:transform .25s,box-shadow .25s}.series-card:hover{transform:translateY(-6px);box-shadow:0 24px 55px rgba(0,0,0,.06)}.series-meta{font-family:'Lato',sans-serif;font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.22em;color:var(--gold);display:block;margin-bottom:1rem}.series-card h3{font-family:'Crimson Text',serif;font-size:2.15rem;font-weight:400;color:#2a4e7a;margin-bottom:1rem}.series-card ul{list-style:none;margin:1.5rem 0 0;padding:1.5rem 0 0;border-top:1px solid var(--border)}.series-card li{font-family:'Lora',serif;font-size:.9rem;line-height:1.75;color:#666;margin-bottom:.55rem}.series-card strong{color:#2a4e7a}.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-top:2.5rem}.fact{background:var(--bg-soft);border:1px solid var(--border);padding:1.6rem;text-align:center}.fact h4{font-family:'Lato',sans-serif;font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.18em;color:#2a4e7a;margin-bottom:.75rem}.fact p{font-size:.84rem;line-height:1.65;margin:0}.game-box{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;margin-top:2rem;align-items:stretch}.game-panel{border:1px solid var(--border);background:#fff;padding:2.25rem}.game-panel h3{font-family:'Crimson Text',serif;font-size:1.8rem;font-weight:400;margin-bottom:1rem;color:#2a4e7a}.game-panel ul{margin:.5rem 0 0;padding-left:1.2rem}.game-panel li{font-family:'Lora',serif;font-size:.9rem;line-height:1.75;color:#666;margin-bottom:.3rem}.cta{display:inline-block;margin-top:1.5rem;background:#2a4e7a;color:#fff;text-decoration:none;font-family:'Lato',sans-serif;font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.22em;padding:1rem 1.6rem;border:1px solid #2a4e7a}.cta:hover{background:#fff;color:#2a4e7a}.small-note{font-family:'Lato',sans-serif;font-size:.62rem;text-transform:uppercase;letter-spacing:.18em;color:#888;margin-top:.9rem}
-    @media(max-width:900px){.nox-hero{min-height:620px;align-items:flex-end;background-image:linear-gradient(180deg,rgba(250,248,243,.05) 0%,rgba(250,248,243,.88) 72%,#fff 100%),url('/images/noxia-hero.png');padding:5rem 1.25rem}.hero-panel{max-width:none}.series-grid,.game-box{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr}}
-    @media(max-width:520px){.facts{grid-template-columns:1fr}.hero-links{display:none}.hero-panel{padding:1.5rem}.nox-hero{min-height:560px}}
-  </style>
-
-  <article class="nox-page">
-    <header class="nox-hero">
-      <div class="hero-panel">
-        <span class="eyebrow">Zukunft des Sonnensystems</span>
-        <h1>noχ¹ᐃ Universe</h1>
-        <p class="lead">Realistische Science-Fiction über Forschung, Kolonisation und die Wiederentdeckung eines vergessenen Erbes.</p>
-        <p>Mond und Mars sind besiedelt. Raumstationen, Handelsrouten und Forschungskolonien verbinden das innere Sonnensystem. Doch 2087 stößt eine Mars-Kolonie auf etwas, das nicht in die Geschichte der Menschheit passt.</p>
-        <nav class="hero-links" aria-label="Seitennavigation"><a href="#universum">Universum</a><a href="#stille">Große Stille</a><a href="#serien">Serien</a><a href="#spiel">Spiel</a></nav>
-      </div>
-    </header>
-
-    <section class="intro container-narrow" id="universum">
-      <h2>Eine Zukunft, die aus Spuren wächst</h2>
-      <p>noχ¹ᐃ ist der Zukunftsraum des Baumeister-Universums: eine Welt aus Raumfahrt, Wissenschaft, Handel, Forschung und gesellschaftlicher Reibung. Bis zur Entdeckung unter dem Mars-Regolith bleibt alles hart an Physik, Logistik und menschlicher Begrenzung. Danach beginnt die eigentliche Frage: Was geschieht, wenn die Zukunft auf ein Wissen trifft, das viel älter ist als sie selbst?</p>
-    </section>
-
-    <section class="section" id="stille">
-      <h2>Ereignis: Die Große Stille</h2>
-      <p>2087 wird unter dem Mars-Regolith eine Axis-Kammer entdeckt. Hexagonale Monolithen, unbekannte Muster, Hinweise auf eine ältere Architektur. Wenige Tage später fällt die konventionelle Langstrecken-Kommunikation im Sonnensystem aus.</p>
-      <div class="event-card">
-        <h3>Der Mars ist isoliert.</h3>
-        <p>Die Kolonie muss autark überleben, während Versorgungsketten brechen, politische Zuständigkeiten verschwimmen und die Wissenschaftler versuchen, die Natur der Monolithe zu verstehen.</p>
-        <p>Die Große Stille ist kein Effektfeuerwerk. Sie ist ein Einschnitt: Plötzlich zeigt sich, welche Systeme tragen — und welche nur so lange funktionieren, wie Verbindung selbstverständlich ist.</p>
-      </div>
-    </section>
-
-    <section class="section" id="serien">
-      <h2>Zwei Serien, ein Universum</h2>
-      <p>noχ¹ᐃ wird von zwei Erzählregistern erschlossen: einer erwachsenen Hauptserie und einer jungen Perspektive auf die Generation, die nach der Großen Stille aufwächst.</p>
-      <div class="series-grid">
-        <article class="series-card" style="--accent:#2a4e7a;"><span class="series-meta">Hauptserie · Erwachsene · ab 2087</span><h3>noχ¹ᐃ</h3><p>Kosmischer Horror trifft Hard-SF: Mars-Kolonien, Konzerne, Forschungsteams und eine Entdeckung, die die menschliche Identität infrage stellt.</p><ul><li><strong>Kasumi Nakahara</strong> — Astrophysikerin, erkennt die ersten Muster.</li><li><strong>Darian Kostas</strong> — Ingenieur, öffnet die Axis-Kammer.</li><li><strong>Sahana Iyengar</strong> — Therapeutin und moralischer Anker.</li></ul></article>
-        <article class="series-card" style="--accent:#c9a961;"><span class="series-meta">YA-Serie · Generation Mars · ab 2091</span><h3>Generation Mars</h3><p>Vier Jahre nach der Großen Stille wächst eine Generation auf, für die die Erde nur noch ein ferner Mythos in Datenarchiven ist.</p><ul><li><strong>Lena Kowalski</strong> — hört Frequenzen, die andere nicht wahrnehmen.</li><li><strong>Keiko Nakamura</strong> — sucht die Wahrheit über ihren Vater.</li><li><strong>Rashid Al-Mansouri</strong> — versteht Muster in den Strukturen.</li></ul></article>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Hard-SF Fundament</h2>
-      <p>Bevor das Unbekannte sichtbar wird, zählt jedes Kilogramm, jedes Transferfenster, jede Reparatur und jede psychologische Belastung.</p>
-      <div class="facts"><div class="fact"><h4>Orbitalmechanik</h4><p>Transferfenster und Delta-V-Budgets als Grundlage der Logistik.</p></div><div class="fact"><h4>Mars-Physik</h4><p>0,38 g, Strahlung, Staub und die Fragilität geschlossener Systeme.</p></div><div class="fact"><h4>Psychologie</h4><p>Isolation, Generationentrauma und Heimweh nach dem Blau.</p></div><div class="fact"><h4>Ökonomie</h4><p>Ressourcenknappheit, Handelsrouten und Konzernmacht.</p></div></div>
-    </section>
-
-    <section class="section" id="spiel">
-      <h2>Das Spiel</h2>
-      <p>Parallel zur Buchwelt entsteht eine Handelssimulation im selben Zukunftsraum. Das Spiel ist kein Anhang, sondern ein anderer Zugang zu noχ¹ᐃ: über Orte, Ressourcen, Aufträge, Forschung und Entscheidungen.</p>
-      <div class="game-box"><div class="game-panel"><h3>Sonnensystem-Handel</h3><ul><li>Standorte wie Mond, Mars und Phobos</li><li>Ressourcen mit Produktion, Verbrauch und Lagerbestand</li><li>Dynamische Marktpreise und Handelsaufträge</li><li>Schiffe, Werften und Ausbau</li></ul></div><div class="game-panel"><h3>Alpha</h3><p>Die spielbare Fassung befindet sich in aktiver Entwicklung. Mechaniken, Inhalte und Balancing wachsen schrittweise mit der Welt.</p><a href="https://noxiagame.vercel.app" target="_blank" rel="noopener" class="cta">Spiel starten →</a><p class="small-note">Externe Alpha-Version</p></div></div>
-    </section>
-  </article>
-</BaseLayout>
+<BaseLayout title="noχ¹ᐃ Universe" description="Realistische Science-Fiction über die Zukunft des Sonnensystems, Forschung, Kolonisation und die Wiederentdeckung eines vergessenen Erbes.">
+<style>
+.nox-page{background:#fff;color:var(--text)} .nox-hero{position:relative;min-height:680px;margin:0 0 6rem;padding:7rem clamp(1.5rem,5vw,5rem);display:flex;align-items:center;overflow:hidden;background-image:linear-gradient(90deg,rgba(250,248,243,.86) 0%,rgba(250,248,243,.58) 38%,rgba(250,248,243,.12) 68%,rgba(250,248,243,0) 100%),url('/images/noxia-hero.png');background-size:cover;background-position:center center;border-bottom:1px solid var(--border)} .nox-hero::after{content:'';position:absolute;inset:auto 0 0;height:34%;background:linear-gradient(180deg,rgba(255,255,255,0),#fff)} .hero-panel{position:relative;z-index:1;max-width:720px;padding:clamp(2rem,4vw,3.5rem);background:rgba(255,255,255,.68);border-left:4px solid var(--gold);backdrop-filter:blur(10px)} .container-narrow{max-width:920px;margin:0 auto;padding:0 2rem}.intro,.section{max-width:920px;margin:0 auto;padding:4.5rem 2rem}.section{border-top:1px solid var(--border)} .intro{text-align:center}
+.ssf-grid,.series-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}.series-grid{grid-template-columns:1fr 1fr}.ssf-card,.series-card,.fact,.game-panel{background:#fff;border:1px solid var(--border);padding:2rem}.ssf-quote{margin:2rem 0;padding-left:1.5rem;border-left:3px solid var(--gold);font-style:italic}.event-card{margin-top:2rem;padding:2.5rem;background:var(--bg-soft);border-left:3px solid var(--gold)} .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2rem}.game-box{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem}.cta{display:inline-block;margin-top:1rem;padding:1rem 1.6rem;background:#2a4e7a;color:#fff;text-decoration:none}
+@media(max-width:900px){.ssf-grid,.series-grid,.game-box{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr}}
+</style>
+<article class="nox-page">
+<header class="nox-hero"><div class="hero-panel"><h1>noχ¹ᐃ Universe</h1><p>Realistische Science-Fiction über Forschung, Kolonisation und die Wiederentdeckung eines vergessenen Erbes.</p></div></header>
+<section class="intro" id="universum"><h2>Eine Zukunft, die aus Spuren wächst</h2><p>noχ¹ᐃ ist der Zukunftsraum des Baumeister-Universums.</p></section>
+<section class="section" id="ssf"><h2>Solar Science Foundation</h2><p>Die Solar Science Foundation (SSF) ist die größte unabhängige wissenschaftliche Bildungs- und Dokumentationsplattform des Sonnensystems.</p><p>Gegründet während der frühen Expansion zum Mond und Mars sammelt die Stiftung Forschungsergebnisse, technische Handbücher, historische Dokumente und öffentliche Bildungsangebote.</p><div class="ssf-quote">Wissen bewahren. Wissen teilen. Wissen weiterentwickeln.</div><div class="ssf-grid"><div class="ssf-card"><h3>Archive</h3><p>Chroniken, Missionen und Forschungsberichte.</p></div><div class="ssf-card"><h3>Akademie</h3><p>Freie Bildung im gesamten Sonnensystem.</p></div><div class="ssf-card"><h3>Forschung</h3><p>Offene Datensammlungen und Kooperationen.</p></div></div><div class="event-card"><h3>Generation-Mars-Austauschprogramm</h3><p>Vom Mars über Mond, Ceres, Asteroidenkolonien, Orbitalstationen bis zu mobilen Habitaten und Raumschiffkindern.</p><p>Für manche Teilnehmer ist es die erste Begegnung mit einem Menschen, der unter einem anderen Himmel geboren wurde.</p></div></section>
+<section class="section" id="stille"><h2>Ereignis: Die Große Stille</h2><p>2087 wird unter dem Mars-Regolith eine Axis-Kammer entdeckt.</p></section>
+</article></BaseLayout>
