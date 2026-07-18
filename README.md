@@ -56,4 +56,4 @@ Das Deployment kann über Vercel, Netlify oder einen anderen statischen Hoster e
 
 ## Kontakt
 
-mail@thomas-kueper.de
+t.kueper@camaleo.de
