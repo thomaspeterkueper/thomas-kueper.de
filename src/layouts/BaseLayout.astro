@@ -62,8 +62,10 @@ import headerAvatar from '../assets/header-avatar.jpg';
     .site-footer{padding:10rem 0 5rem;background:var(--dark);color:#94a3b8;text-align:center}
     .footer-title{font-size:1.8rem;color:#fff;margin-bottom:1rem;letter-spacing:3px;text-transform:uppercase}
     .footer-divider{width:40px;height:1px;background:var(--gold);margin:2rem auto}
-    .footer-links{margin-bottom:4rem;display:flex;justify-content:center;gap:2rem;font-size:.7rem;text-transform:uppercase;letter-spacing:2px;flex-wrap:wrap}
+    .footer-links{margin-bottom:2.5rem;display:flex;justify-content:center;gap:2rem;font-size:.7rem;text-transform:uppercase;letter-spacing:2px;flex-wrap:wrap}
     .footer-links a{color:inherit;text-decoration:none;transition:color .3s}.footer-links a:hover{color:var(--gold)}
+    .ai-transparency-note{max-width:760px;margin:0 auto 3rem;font-family:'Lora',serif;font-size:.78rem;line-height:1.8;color:#7f8b99}
+    .ai-transparency-note a{color:#b8a16b;text-decoration:none}.ai-transparency-note a:hover{text-decoration:underline}
     .copyright{font-size:.65rem;text-transform:uppercase;letter-spacing:3px;opacity:.5}
 
     @media(max-width:1000px){.nav-menu{gap:1.1rem}.nav-link{letter-spacing:.14em}}
@@ -116,8 +118,12 @@ import headerAvatar from '../assets/header-avatar.jpg';
         <a href="mailto:t.kueper@camaleo.de">Kontakt</a>
         <a href="/impressum">Impressum</a>
         <a href="/datenschutz">Datenschutz</a>
+        <a href="/ki-transparenz">KI-Transparenz</a>
         <a href="/overtime-archive">OverTime Archive</a>
       </div>
+      <p class="ai-transparency-note">
+        Bei der sprachlichen, redaktionellen und teilweise konzeptionellen Bearbeitung von Inhalten kommen KI-gestützte Werkzeuge zum Einsatz. Inhaltliche Entscheidungen, Endredaktion und Verantwortung für veröffentlichte Fassungen liegen bei Thomas Peter Küper. <a href="/ki-transparenz">Mehr dazu</a>.
+      </p>
       <p class="copyright">
         &copy; {new Date().getFullYear()} — Alle Rechte vorbehalten.<br />
         Konstruktion von Welten & Sinn.
