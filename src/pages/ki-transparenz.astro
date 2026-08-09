@@ -1,0 +1,78 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="KI-Transparenz"
+  description="Hinweis zum Einsatz KI-gestützter Werkzeuge bei Texten und Inhalten von Thomas Peter Küper.">
+  <style is:inline>
+    .transparency-page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 8rem 2rem 7rem;
+    }
+    .eyebrow {
+      font-family: 'Lato', sans-serif;
+      font-size: .68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .22em;
+      color: #c9a961;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-family: 'Crimson Text', serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 400;
+      line-height: 1.1;
+      margin-bottom: 2.5rem;
+    }
+    .lead, .transparency-page p {
+      font-family: 'Lora', serif;
+      font-size: 1.08rem;
+      line-height: 1.9;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+    .lead {
+      font-size: 1.22rem;
+      color: #444;
+    }
+    .note {
+      margin: 3rem 0;
+      padding: 2rem;
+      background: #faf9f6;
+      border-left: 2px solid #c9a961;
+    }
+    .note p:last-child { margin-bottom: 0; }
+    .meta {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #eee;
+      font-family: 'Lato', sans-serif;
+      font-size: .78rem;
+      line-height: 1.7;
+      color: #777;
+    }
+  </style>
+
+  <article class="transparency-page">
+    <div class="eyebrow">Transparenz</div>
+    <h1>Zum Einsatz von KI</h1>
+
+    <p class="lead">Bei der sprachlichen, redaktionellen und teilweise konzeptionellen Bearbeitung meiner Inhalte kommen KI-gestützte Werkzeuge zum Einsatz.</p>
+
+    <p>Je nach Text reicht dieser Einsatz von Rechtschreib- und Stilkorrekturen über redaktionelle Strukturierung bis zur dialogischen, konzeptionellen Mitarbeit. Die Intensität ist deshalb nicht bei allen Inhalten gleich.</p>
+
+    <p>Die veröffentlichten Fassungen werden von mir ausgewählt und redaktionell verantwortet. Inhaltliche Entscheidungen, die Annahme oder Verwerfung von Vorschlägen sowie die Endredaktion liegen bei mir.</p>
+
+    <div class="note">
+      <p><strong>Reine Korrektur-, Lektorats- oder Formatierungsschritte werden nicht bei jedem einzelnen Inhalt gesondert ausgewiesen.</strong></p>
+      <p>Wo generative KI substanziell an der Entwicklung eines Textes, Modells oder Konzepts beteiligt war und ein zusätzlicher werkbezogener Hinweis zur Einordnung sinnvoll ist, kann dieser direkt am jeweiligen Inhalt ergänzt werden.</p>
+    </div>
+
+    <p>Der allgemeine Hinweis soll weder menschliche Autorschaft verschleiern noch aus jeder Rechtschreibkorrektur eine vermeintlich KI-generierte Publikation machen. Er beschreibt die tatsächliche Arbeitsweise: KI kann Werkzeug, Gegenleser und Dialogpartner sein; die Verantwortung für das Veröffentlichte bleibt bei mir.</p>
+
+    <div class="meta">Thomas Peter Küper · Fassung 1.0 · 9. August 2026</div>
+  </article>
+</BaseLayout>
