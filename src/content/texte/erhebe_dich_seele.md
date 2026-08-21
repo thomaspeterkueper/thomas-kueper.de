@@ -1,11 +1,13 @@
 ---
 title: "Erhebe dich, Seele"
 subtitle: ""
-description: "Über Entwicklung, Erfahrungen, die manchmal wehtun — und darüber, wie man daran wachsen kann."
+description: "Über Entwicklung, Erfahrungen, die manchmal wehtun – und darüber, wie man daran wachsen kann."
 kategorie: "lyrik-manifest"
 typ: "Gedicht"
 tags: ["Lyrik", "Gedicht", "Wachstum", "Seele", "Transformation", "Glaube"]
 date: "2025-01"
+author: "Thomas Peter Küper"
+draft: false
 order: 5
 ---
 
@@ -13,7 +15,7 @@ order: 5
 
 ---
 
-Dieses Gedicht entstand nebenbei — aus Gedanken über Glaube, Philosophie und den Ursprung des Seins. Es geht um Entwicklung, um Erfahrungen, die manchmal wehtun, und darum, wie man daran wachsen kann.
+Dieses Gedicht entstand nebenbei – aus Gedanken über Glaube, Philosophie und den Ursprung des Seins. Es geht um Entwicklung, um Erfahrungen, die manchmal wehtun, und darum, wie man daran wachsen kann.
 
 ---
 
