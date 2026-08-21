@@ -21,10 +21,10 @@ tags: ["Roman"]
   <p>
     Die Geschichte entfaltet sich über 90 Kapitel und folgt dem Aufbau einer großen Symphonie. Jeder Band entspricht einem Satz und einem entscheidenden Stadium der menschlichen Wandlung:
   </p>
-  <p><strong>Band 1: Der Narr</strong> — Die unbewusste Reise beginnt.</p>
-  <p><strong>Band 2: Der Hierophant</strong> — Bestehende Strukturen werden herausgefordert.</p>
-  <p><strong>Band 3: Der Turm</strong> — Alte Systeme stürzen ein.</p>
-  <p><strong>Band 4: Die Welt</strong> — Ein neuer Zyklus des Bewusstseins beginnt.</p>
+  <p><strong>Band 1: Der Narr</strong> – Die unbewusste Reise beginnt.</p>
+  <p><strong>Band 2: Der Hierophant</strong> – Bestehende Strukturen werden herausgefordert.</p>
+  <p><strong>Band 3: Der Turm</strong> – Alte Systeme stürzen ein.</p>
+  <p><strong>Band 4: Die Welt</strong> – Ein neuer Zyklus des Bewusstseins beginnt.</p>
 
   <p style="font-style: italic; margin-top: 2rem;">
     22 Archetypen der menschlichen Psyche strukturieren die Erzählung wie Leitmotive. 90 Stimmen verschmelzen zu einem Chor, der die Vielfalt menschlicher Erfahrung singt.
