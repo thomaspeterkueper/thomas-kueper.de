@@ -6,6 +6,8 @@ kategorie: "tiefenwoerter"
 typ: "Tiefenwörter"
 tags: ["Tiefenwörter", "Sprache", "Selbstwert", "Norwegisch", "Hebräisch", "Arabisch", "Japanisch", "Chinesisch", "Vietnamesisch", "Russisch"]
 date: "2026-03"
+author: "Thomas Peter Küper"
+draft: false
 order: 3
 ---
 
