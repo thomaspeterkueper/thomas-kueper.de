@@ -1,7 +1,7 @@
 ---
 title: "Feli und das Lichthaus"
 genre: "Kinderbuch"
-description: "Feli mag keine Abenteuer. Aber ein gutes Rätsel — das ist etwas ganz anderes. Als sie in eine kleine Küstenstadt zieht, beginnt ein altes Haus auf der Klippe nachts sanft zu leuchten."
+description: "Feli mag keine Abenteuer. Aber ein gutes Rätsel – das ist etwas ganz anderes. Als sie in eine kleine Küstenstadt zieht, beginnt ein altes Haus auf der Klippe nachts sanft zu leuchten."
 status: "In Vorbereitung"
 order: 20
 cover: "/assets/romane/feli-und-das-lichthaus/cover.jpg"
@@ -10,11 +10,11 @@ tags: ["Kinderbuch", "Feli", "Band 1"]
 
 <h2>Band 1 der Feli-Reihe</h2>
 
-<p><em>Feli mag keine Abenteuer. Aber ein gutes Rätsel — das ist etwas ganz anderes.</em></p>
+<p><em>Feli mag keine Abenteuer. Aber ein gutes Rätsel – das ist etwas ganz anderes.</em></p>
 
 <p>Als Feli mit ihrer Mutter in eine kleine Küstenstadt zieht, fällt ihr sofort das alte Haus auf der Klippe auf. Es ist schief, die Farbe blättert ab, und die Dachrinne hängt herunter wie eine müde Augenbraue.</p>
 
-<p>Aber nachts leuchtet es. Nicht wie eine Lampe. Von innen heraus, sanft und golden — und immer gleich. Eins, zwei, drei, hell.</p>
+<p>Aber nachts leuchtet es. Nicht wie eine Lampe. Von innen heraus, sanft und golden – und immer gleich. Eins, zwei, drei, hell.</p>
 
 <p>Feli will wissen, wie das geht.</p>
 
