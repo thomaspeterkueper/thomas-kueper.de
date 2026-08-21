@@ -57,6 +57,7 @@ const texte = defineCollection({
       'lyrik-manifest',
       'forschung',
       'tiefenwoerter',
+      'denken',
     ]),
     typ: z.string().default('Essay'),
     tags: z.array(z.string()).default([]),
