@@ -49,7 +49,7 @@ Nicht mystisch. Nicht metaphorisch. Physikalisch fragwürdig.
 
 ### 3. Der Beobachter ist kein Zuschauer
 
-Das Messproblem der Quantenmechanik ist seit einem Jahrhundert ungelöst. Ein Quantenteilchen befindet sich in einem Zustand der Überlagerung – es ist gleichzeitig hier und dort, so und anders – bis es gemessen wird. Danach ist es eines von beidem. Aber *was* bewirkt diesen Übergang?
+Das Messproblem der Quantenmechanik ist seit einem Jahrhundert ungelöst. Ein Quantenteilchen befindet sich in einem Zustand der Überlagerung: Es ist gleichzeitig hier und dort, so und anders – bis es gemessen wird. Danach ist es eines von beidem. Aber *was* bewirkt diesen Übergang?
 
 Die Standardantwort der Physik – „die Messung" – ist eine Verlegenheitslösung. Denn was ist eine Messung? Wann genau kollabiert die Wellenfunktion? Braucht es dazu ein Gerät? Ein Gehirn? Ein Bewusstsein?
 
@@ -115,7 +115,7 @@ Das sind keine frommen Wünsche. Das sind Konsequenzen aus Positionen, die ernst
 
 Die Physik hat die Welt nicht erklärt. Sie hat gezeigt, wie wenig selbstverständlich sie ist.
 
-Das ist ein Geschenk.
+Das ist ein Geschenk – mit einem Vorbehalt. Denn wenn man Hoffmans Interface-Theorie ernst nimmt, sagt die Physik streng genommen *gar nichts* über die Welt aus. Sie beschreibt nur die Benutzeroberfläche, nicht das, was dahinter liegt. Dann wäre die Physik nicht die Überwindung der Täuschung, sondern ein besonders präzises Bild von ihr. Das ist ein Widerspruch, den dieser Essay nicht auflöst. Aber er benennt ihn: Die Physik ist, nach Hoffman, Teil des Interfaces – nicht seine Überwindung. Aber sie ist der Teil des Interfaces, der sich selbst als unzureichend erkennt. Das ist ihr besonderer Status.
 
 Omnizedenz ist der Versuch, dieses Geschenk anzunehmen – ohne es zu verklären und ohne es zu verwerfen. Nicht als Lehre, sondern als Haltung.
 
