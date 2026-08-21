@@ -16,7 +16,7 @@ tags: ["Roman"]
 </p>
 
 <strong>Zara Benali</strong>
-    <p style="font-size: 0.95rem;">24 Jahre alt. Ihre perfekte Genetik macht sie zum begehrtesten "Produkt" für die Elite — und zum Spielball der Mächtigen.</p>
+    <p style="font-size: 0.95rem;">24 Jahre alt. Ihre perfekte Genetik macht sie zum begehrtesten "Produkt" für die Elite – und zum Spielball der Mächtigen.</p>
   <strong>Jin Nakamura</strong>
     <p style="font-size: 0.95rem;">Ein brillanter Hacker auf der Suche nach der Wahrheit hinter dem Verschwinden seiner Eltern in den VitalGen-Laboren.</p>
   <strong>David Ashworth</strong>
@@ -27,7 +27,7 @@ tags: ["Roman"]
   Als Zara und Jin der Wahrheit hinter VitalGens gläsernen Fassaden näherkommen, beginnt ein Wettlauf gegen die Zeit. In einer Welt, in der menschliches Leben zur handelbaren Ware wurde, ist Widerstand nicht nur gefährlich – er ist der letzte Akt der Menschlichkeit.
 </p>
 
-<p>„Im Jahr 2086 ist Menschlichkeit die wertvollste Ware — und die billigste Ressource.“</p>
+<p>„Im Jahr 2086 ist Menschlichkeit die wertvollste Ware – und die billigste Ressource.“</p>
 
 <p style="text-align: center; font-style: italic; color: #64748b; margin-top: 4rem;">
   Ein Science-Fiction-Thriller über Macht, Bioethik und den unerschütterlichen Willen zur Freiheit.
