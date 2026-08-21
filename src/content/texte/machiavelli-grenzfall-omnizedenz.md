@@ -1,7 +1,7 @@
 ---
 title: "Machiavelli als Grenzfall der Omnizedenz"
 subtitle: "Ein Essay über Resonanzphänomene, politische Macht und den fehlenden Term"
-description: "Machiavelli beschreibt das Resonanzfeld sozialer Systeme mit außerordentlicher Präzision — und entfernt systematisch einen einzigen Term aus seiner Gleichung: den ethischen Rückkopplungsterm. Genau dadurch wird er zum Grenzfall."
+description: "Machiavelli beschreibt das Resonanzfeld sozialer Systeme mit außerordentlicher Präzision – und entfernt systematisch einen einzigen Term aus seiner Gleichung: den ethischen Rückkopplungsterm. Genau dadurch wird er zum Grenzfall."
 kategorie: "denken"
 typ: "Essay"
 tags: ["Philosophie", "Omnizedenz", "Machiavelli", "Macht", "Resonanz", "Luhmann", "Arendt", "Ethik", "Politik"]
