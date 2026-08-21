@@ -1,11 +1,13 @@
 ---
 title: "物の哀れ · mono no aware"
 subtitle: "Japanisch · Wörtlich: das Pathos der Dinge"
-description: "Im Deutschen sagen wir Vergänglichkeit. Das Japanische sagt etwas anderes: nicht dass Dinge vergehen — sondern dass ihre Schönheit darin liegt, dass sie vergehen. Acht Sprachen, acht Antworten auf dasselbe Verschwinden."
+description: "Im Deutschen sagen wir Vergänglichkeit. Das Japanische sagt etwas anderes: nicht dass Dinge vergehen – sondern dass ihre Schönheit darin liegt, dass sie vergehen. Acht Sprachen, acht Antworten auf dasselbe Verschwinden."
 kategorie: "tiefenwoerter"
 typ: "Tiefenwörter"
 tags: ["Tiefenwörter", "Sprache", "Japanisch", "Vergänglichkeit", "Schönheit", "Stille", "Türkisch", "Koreanisch", "Finnisch", "Akan", "Aborigines", "Buddhismus"]
 date: "2026-03"
+author: "Thomas Peter Küper"
+draft: false
 order: 5
 ---
 
