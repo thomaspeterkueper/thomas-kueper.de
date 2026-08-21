@@ -10,6 +10,7 @@ tags:
   - Beobachtung
   - Verantwortung
 date: "2026-07-01"
+author: "Thomas Peter Küper"
 order: 50
 draft: false
 ---
