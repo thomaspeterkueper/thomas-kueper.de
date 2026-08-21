@@ -6,6 +6,8 @@ kategorie: "musik-klang"
 typ: "Essay"
 tags: ["Musik", "Klavier", "Resonanz", "Erfahrung", "Auflösung", "Loslassen"]
 date: "2025"
+author: "Thomas Peter Küper"
+draft: false
 order: 1
 ---
 
