@@ -6,6 +6,8 @@ kategorie: "tiefenwoerter"
 typ: "Tiefenwörter"
 tags: ["Tiefenwörter", "Sprache", "Erinnerung", "Hebräisch", "Arabisch", "Russisch", "Dänisch", "Spanisch", "Latein", "Chinesisch", "Japanisch", "Otjiherero", "Aborigines"]
 date: "2026-03"
+author: "Thomas Peter Küper"
+draft: false
 order: 4
 ---
 
