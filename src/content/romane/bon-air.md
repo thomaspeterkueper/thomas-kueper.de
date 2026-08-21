@@ -31,10 +31,10 @@ tags: ["Roman"]
   </p>
 
   <h2>Die vier Bände</h2>
-  <p><strong>Band 1: DIE HOFFNUNG</strong> (2048–2050) — Science-Thriller. Optimistisch, dann beunruhigend. Erste Experimente, erste Warnzeichen.</p>
-  <p><strong>Band 2: DER SCHOCK</strong> (2050–2055) — Disaster Horror. Systeme kollidieren, Millionen fliehen. London überwuchert.</p>
-  <p><strong>Band 3: DER KRIEG</strong> (2055–2065) — Post-Apocalyptic Action. Überlebende kämpfen um Ressourcen und Lösungen.</p>
-  <p><strong>Band 4: DIE NEUE WELT</strong> (2065–2080) — Philosophical SF. Erde und Menschheit finden eine neue, fremdartige Symbiose.</p>
+  <p><strong>Band 1: DIE HOFFNUNG</strong> (2048–2050) – Science-Thriller. Optimistisch, dann beunruhigend. Erste Experimente, erste Warnzeichen.</p>
+  <p><strong>Band 2: DER SCHOCK</strong> (2050–2055) – Disaster Horror. Systeme kollidieren, Millionen fliehen. London überwuchert.</p>
+  <p><strong>Band 3: DER KRIEG</strong> (2055–2065) – Post-Apocalyptic Action. Überlebende kämpfen um Ressourcen und Lösungen.</p>
+  <p><strong>Band 4: DIE NEUE WELT</strong> (2065–2080) – Philosophical SF. Erde und Menschheit finden eine neue, fremdartige Symbiose.</p>
 
   <p style="font-style: italic; margin-top: 3rem;">
     BON AIR ist ein vierbändiger Science-Thriller über die unbeabsichtigten Folgen unserer besten Absichten – und darüber, dass manchmal die Rettung gefährlicher ist als die Katastrophe selbst.
