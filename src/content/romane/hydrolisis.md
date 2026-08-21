@@ -8,17 +8,17 @@ cover: "/assets/romane/hydrolisis/cover.jpg"
 tags: ["Roman"]
 ---
 
-<h2>Band 1: DURST — Ein Tropfen genügt</h2>
+<h2>Band 1: DURST – Ein Tropfen genügt</h2>
 <p>
   Ein Laborunfall in München. Ein modifiziertes Bakterium macht jedes Wasser auf der Erde tödlich. Während die Menschheit gegen ihr ältestes Verlangen kämpft – Durst – wird klar: Die Erde ist verloren.
 </p>
 
-<h2>Band 2: FLUCHT — Ein Planet ist nicht genug</h2>
+<h2>Band 2: FLUCHT – Ein Planet ist nicht genug</h2>
 <p>
   Zwei Jahre später auf dem Mars. Geologen entdecken versteinerte Wasserspuren, die beweisen: Die Katastrophe ist schon einmal passiert. Die Menschheit ist nicht die erste Spezies, die daran scheitert.
 </p>
 
-<h2>Band 3: QUELLE — Ein Neuanfang</h2>
+<h2>Band 3: QUELLE – Ein Neuanfang</h2>
 <p>
   Erde. Mars. Und eine Menschheit, die begreift: Flucht ist keine Lösung. Weltraum-Technologie trifft auf antikes Wissen – ein Neuanfang für eine Spezies, die durch Weisheit überlebt.
 </p>
