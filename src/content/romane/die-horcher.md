@@ -16,4 +16,4 @@ tags: ["Science Fiction", "NOXIA", "Soma Retep"]
 
 <p><em>Die Horcher</em> erzählt von Soma Retep, einer Forscherin, die einen Bericht vorlegt, weil Schweigen in diesem Fall einer Lüge gleichkäme. Was als Untersuchung beginnt, wird zu einer Begegnung mit etwas, das älter sein könnte als jede bekannte Zivilisation.</p>
 
-<p>Ein Science-Fiction-Text über Wahrnehmung, Erinnerung und die Frage, ob das Universum vielleicht nicht nur beobachtet wird — sondern selbst beobachtet.</p>
+<p>Ein Science-Fiction-Text über Wahrnehmung, Erinnerung und die Frage, ob das Universum vielleicht nicht nur beobachtet wird – sondern selbst beobachtet.</p>
