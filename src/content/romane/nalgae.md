@@ -25,13 +25,13 @@ tags: ["Roman", "Zereya Saga", "Baumeister Universe", "Coming of Age"]
 <h2>Über das Buch</h2>
 
 <p>
-  Hana Ra ist achtzehn und weiß genau, wie ihr Leben aussehen soll — oder zumindest, wie es aussehen muss. Im Kunstladen ihrer Familie in Insadong bedient sie Kunden, die sie nicht sehen. Zu Hause schläft sie neben einer Wand, hinter der die Mutter schweigt, und einer Großmutter, die manchmal Dinge sagt, die Hana nicht versteht.
+  Hana Ra ist achtzehn und weiß genau, wie ihr Leben aussehen soll – oder zumindest, wie es aussehen muss. Im Kunstladen ihrer Familie in Insadong bedient sie Kunden, die sie nicht sehen. Zu Hause schläft sie neben einer Wand, hinter der die Mutter schweigt, und einer Großmutter, die manchmal Dinge sagt, die Hana nicht versteht.
 </p>
 
 <p>Und dann sind da die Zeichnungen.</p>
 
 <p>
-  Sie entstehen in den frühen Morgenstunden, wenn Hana schläft — oder glaubt zu schlafen. Linien, die sich zu Gesichtern formen. Zu Türen. Zu einem Himmel, den sie nie gesehen hat. Sie gehören ihr und gehören ihr nicht.
+  Sie entstehen in den frühen Morgenstunden, wenn Hana schläft – oder glaubt zu schlafen. Linien, die sich zu Gesichtern formen. Zu Türen. Zu einem Himmel, den sie nie gesehen hat. Sie gehören ihr und gehören ihr nicht.
 </p>
 
 <p>
@@ -43,7 +43,7 @@ tags: ["Roman", "Zereya Saga", "Baumeister Universe", "Coming of Age"]
 </p>
 
 <blockquote>
-  날개 — Flügel.
+  날개 – Flügel.
 </blockquote>
 
 <h2>Nalgae – Musik zum Roman</h2>
@@ -54,17 +54,17 @@ tags: ["Roman", "Zereya Saga", "Baumeister Universe", "Coming of Age"]
 </audio>
 
 <p style="font-size: 0.85rem; color: #888; margin-top: 0.5rem; font-style: italic;">
-  Golden Scars — Moderner koreanischer Folk &amp; Ambient Pop · Komponiert mit Gemini
+  Golden Scars – Moderner koreanischer Folk &amp; Ambient Pop · Komponiert mit Gemini
 </p>
 
 <p style="font-style: italic; color: var(--gold); font-size: 0.95rem; line-height: 1.9;">
-  길 잃은 Nalgae, 내 조각난 꿈 Maomkoro —<br />
+  길 잃은 Nalgae, 내 조각난 꿈 Maomkoro –<br />
   찬란한 빛 속에 새로운 나를 봐 (Golden scars)<br />
   내 안의 Resomira 영원히 빛나리 (Ondanima)<br />
   I found my Gealjot
 </p>
 
-<h2>Leseprobe: Kapitel 05 — Zu viel Himmel</h2>
+<h2>Leseprobe: Kapitel 05 – Zu viel Himmel</h2>
 
 <p>Der Flughafen riecht nach Plastik und kalter Luft.</p>
 
@@ -77,7 +77,7 @@ tags: ["Roman", "Zereya Saga", "Baumeister Universe", "Coming of Age"]
 
 <p>
   Hana zieht ihn vom Band. Schaut auf das Schild, das jemand für sie
-  hochhält — ihren Namen, falsch geschrieben. <em>Hana Raa.</em>
+  hochhält – ihren Namen, falsch geschrieben. <em>Hana Raa.</em>
 </p>
 
 <p>
@@ -95,7 +95,7 @@ Fester Händedruck, kurz. Als hätte sie es geübt.<br />
 
 <p>
   Hana sitzt am Fenster. Grau, braun, vereinzelte Bäume. Der Himmel ist
-  weit — weiter als in Seoul, wo die Hochhäuser ihn in Stücke schneiden.
+  weit – weiter als in Seoul, wo die Hochhäuser ihn in Stücke schneiden.
   Hier liegt er einfach da, ohne Unterbrechung, von einem Horizont zum
   anderen.
 </p>
@@ -131,7 +131,7 @@ Lena lässt sie allein.</p>
 Dasselbe. Nur der Raum drum herum ist anders.</p>
 
 <p style="text-align: center; color: var(--gold); font-style: italic; margin-top: 3.5rem; font-size: 0.85rem; letter-spacing: 0.05em;">
-  — Leseprobe endet hier —
+  – Leseprobe endet hier –
 </p>
 
 <p style="text-align: center; font-style: italic; color: #aaa; margin-top: 1rem; font-size: 0.8rem;">
