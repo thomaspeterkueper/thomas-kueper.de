@@ -6,6 +6,8 @@ kategorie: "lyrik-manifest"
 typ: "Manifest"
 tags: ["Philosophie", "Verbindung", "Resonanz", "Stille", "Omnizedenz", "Präsenz"]
 date: "2026"
+author: "Thomas Peter Küper"
+draft: false
 order: 7
 ---
 
