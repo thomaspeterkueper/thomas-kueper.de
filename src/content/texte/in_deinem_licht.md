@@ -1,11 +1,13 @@
 ---
 title: "In Deinem Licht"
 subtitle: "Ein Lied der Nähe, des Glaubens – und leiser Stärke"
-description: "Entstanden aus dem stillen Staunen über die Tiefe eines Menschen. Ein Lied für jemanden, dessen Glaube Hoffnung schenkt — auch wenn das Herz manchmal schwer ist."
+description: "Entstanden aus dem stillen Staunen über die Tiefe eines Menschen. Ein Lied für jemanden, dessen Glaube Hoffnung schenkt – auch wenn das Herz manchmal schwer ist."
 kategorie: "lyrik-manifest"
 typ: "Lied"
 tags: ["Lyrik", "Lied", "Liebe", "Glaube", "Licht", "Widmung"]
 date: "2025-03"
+author: "Thomas Peter Küper"
+draft: false
 order: 2
 ---
 
@@ -15,11 +17,11 @@ order: 2
 
 ## Vorwort
 
-Dieses Lied ist einem Menschen gewidmet, der mehr Licht in mein Leben gebracht hat, als Worte je ganz erfassen könnten. Es ist ein Lied für jemanden, dessen Glaube tief verwurzelt ist — ein Glaube, der Hoffnung schenkt, auch wenn das Herz manchmal schwer ist.
+Dieses Lied ist einem Menschen gewidmet, der mehr Licht in mein Leben gebracht hat, als Worte je ganz erfassen könnten. Es ist ein Lied für jemanden, dessen Glaube tief verwurzelt ist – ein Glaube, der Hoffnung schenkt, auch wenn das Herz manchmal schwer ist.
 
 Diese Zeilen entstanden aus dem stillen Staunen über die Tiefe eines Wesens, das zugleich Stärke und Verletzlichkeit in sich trägt. Sie sind getragen von Dankbarkeit, Zuneigung und dem Wunsch, ein kleines Echo jener inneren Schönheit zu sein, die mich immer wieder inspiriert.
 
-> „In deinem Licht erkenne ich die Welt neu — und manchmal auch mich selbst."
+> „In deinem Licht erkenne ich die Welt neu – und manchmal auch mich selbst."
 
 ---
 
@@ -44,7 +46,7 @@ weil Liebe stark ist, wenn sie sich nicht verirrt.
 Du bist der Wind, der meine Flügel trägt,
 der neue Wege in mein Heute legt.
 Du bist das Licht, das meine Welt befreit,
-ein Klang von Dir — so hell wie Zärtlichkeit.
+ein Klang von Dir – so hell wie Zärtlichkeit.
 
 **Strophe 3**
 
@@ -70,7 +72,7 @@ wie Morgentau auf stillen Blütenwegen.
 Wir teilen Brot, wir teilen unser Sein,
 kein Weg zu schwer, kein Tag zu klein.
 Dein Glaube zeigt mir, was ich nie verstand,
-dass Liebe bleibt, wenn alles fällt — und hält, wie deine Hand.
+dass Liebe bleibt, wenn alles fällt – und hält, wie deine Hand.
 
 **Strophe 5**
 
@@ -89,7 +91,7 @@ ein sanftes Licht in einer rauen Welt.
 **Strophe 6**
 
 Dein Lächeln wärmt wie Sonnenlicht im Mai,
-dein Blick berührt — so zärtlich, still und frei.
+dein Blick berührt – so zärtlich, still und frei.
 Dein Glaube leuchtet, wenn die Nacht erwacht,
 mit dir wird selbst das Schweigen sanft und sacht.
 
@@ -113,7 +115,7 @@ Dies Lied ist mein Geschenk aus Herz und Zeit,
 ein Echo dessen, was in mir übrigbleibt.
 
 Mit dir zu gehn durch Sturm und auch durch Stille,
-ist mehr als ein Wunsch — es ist mein tiefster Wille.
+ist mehr als ein Wunsch – es ist mein tiefster Wille.
 Durch dich erklingt in mir ein neuer Klang,
 und jedes Wort wird dir zum Lobgesang.
 
@@ -121,8 +123,8 @@ und jedes Wort wird dir zum Lobgesang.
 
 ## Nachwort
 
-Vielleicht ist es nur ein Lied — doch es trägt Spuren. Von Gedanken, die lange geschwiegen haben, und von Gefühlen, die ihren Ausdruck suchten.
+Vielleicht ist es nur ein Lied – doch es trägt Spuren. Von Gedanken, die lange geschwiegen haben, und von Gefühlen, die ihren Ausdruck suchten.
 
 Wenn du dich in diesen Zeilen wiederfindest, wenn du ein Echo deiner selbst darin spürst, dann ist der tiefste Sinn dieses Liedes erfüllt. Denn manches, was wir einander nicht sagen können, erklingt durch Worte, die gesungen werden.
 
-Danke, dass es dich gibt. Und dass dein Licht weithin leuchtet — auch dann, wenn du es selbst kaum fühlst.
+Danke, dass es dich gibt. Und dass dein Licht weithin leuchtet – auch dann, wenn du es selbst kaum fühlst.
