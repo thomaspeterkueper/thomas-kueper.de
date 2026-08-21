@@ -6,6 +6,8 @@ kategorie: "tiefenwoerter"
 typ: "Tiefenwörter"
 tags: ["Tiefenwörter", "Sprache", "Koreanisch", "Han", "Trauma", "Generationen", "Erinnerung"]
 date: "2026-03"
+author: "Thomas Peter Küper"
+draft: false
 order: 7
 ---
 
