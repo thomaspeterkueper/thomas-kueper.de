@@ -89,7 +89,7 @@ Die Widersprüche als *produktiv* behandeln – als Hinweis darauf, dass die Wir
 
 Omnizedenz ist kein Konkurrenzmodell zu Rovelli, Hoffman oder Kastrup. Sie macht keine empirischen Vorhersagen. Sie ist eine *metaphysische Rahmung*, die die offenen Fragen der Physik nicht beantwortet, sondern in eine bestimmte Richtung orientiert.
 
-Omnizedenz ist keine Antwort auf diese Fragen, sondern eine Haltung zu ihnen: dass die Spannung selbst – zwischen Beobachter und Beobachtetem, Teil und Ganzem, Zeit und Ewigkeit – der Ort ist, an dem Wirklichkeit sich ereignet.
+Omnizedenz ist keine Antwort auf diese Fragen, sondern eine Haltung zu ihnen: dass die Spannung selbst – zwischen Beobachter und Beobachtetem, Teil und Ganzem, Zeit und Ewigkeit – ein Ort ist, an dem Wirklichkeit sich ereignet.
 
 **Sie übernimmt Rovellis Zeitlosigkeit** – aber deutet sie nicht als Reduktion, sondern als Öffnung. Der Augenblick ist nicht klein. Er enthält alles.
 
