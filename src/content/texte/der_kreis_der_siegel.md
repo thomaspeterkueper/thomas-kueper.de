@@ -1,15 +1,17 @@
 ---
 title: "Der Kreis der Siegel"
 subtitle: "Gedanken zur Offenbarung"
-description: "Die sieben Gemeinden der Offenbarung als Stufen des Bewusstseins — und eine achte Strophe, die aus dem Bibelkanon heraustritt."
+description: "Die sieben Gemeinden der Offenbarung als Stufen des Bewusstseins – und eine achte Strophe, die aus dem Bibelkanon heraustritt."
 kategorie: "lyrik-manifest"
 typ: "Gedichtzyklus"
 tags: ["Lyrik", "Zyklus", "Offenbarung", "Omnizedenz", "Bewusstsein", "Theologie"]
 date: "2025"
+author: "Thomas Peter Küper"
+draft: false
 order: 6
 ---
 
-Sieben Gemeinden, sieben Siegel — die Offenbarung des Johannes als Karte innerer Zustände. Dieser Zyklus liest die biblischen Stationen nicht als historische Orte, sondern als Stufen eines Bewusstseinswegs. Eine achte Strophe tritt aus dem Kanon heraus.
+Sieben Gemeinden, sieben Siegel – die Offenbarung des Johannes als Karte innerer Zustände. Dieser Zyklus liest die biblischen Stationen nicht als historische Orte, sondern als Stufen eines Bewusstseinswegs. Eine achte Strophe tritt aus dem Kanon heraus.
 
 Der Zyklus existiert auch in englischer und chinesischer Fassung.
 
