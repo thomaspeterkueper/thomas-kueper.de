@@ -6,12 +6,14 @@ kategorie: "lyrik-manifest"
 typ: "Gedicht"
 tags: ["Lyrik", "Tod", "Omnizedenz", "Stille", "Sein", "Philosophie"]
 date: "2025-03"
+author: "Thomas Peter Küper"
+draft: false
 order: 1
 ---
 
 ## Zur Entstehung
 
-Dieses Gedicht entstand aus einer sehr persönlichen Erfahrung und aus intensiven Gesprächen mit anderen Menschen über den Tod. Diese Begegnungen haben meine Sichtweise tief beeinflusst. Für mich erschien der Tod nicht als Ende, sondern als Übergang zu etwas Größerem. In Momenten tiefer Stille — beim Meditieren, in der Natur — spürte ich oft eine Verbundenheit, die zeigte, dass unsere Trennung vielleicht nur eine Illusion ist. Daraus entstand das Bild des Todes als Lampe, die noch eine Zeit brennt — und dann nur noch ihr Licht im Raum lässt.
+Dieses Gedicht entstand aus einer sehr persönlichen Erfahrung und aus intensiven Gesprächen mit anderen Menschen über den Tod. Diese Begegnungen haben meine Sichtweise tief beeinflusst. Für mich erschien der Tod nicht als Ende, sondern als Übergang zu etwas Größerem. In Momenten tiefer Stille – beim Meditieren, in der Natur – spürte ich oft eine Verbundenheit, die zeigte, dass unsere Trennung vielleicht nur eine Illusion ist. Daraus entstand das Bild des Todes als Lampe, die noch eine Zeit brennt – und dann nur noch ihr Licht im Raum lässt.
 
 ---
 
