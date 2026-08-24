@@ -4,10 +4,10 @@ subtitle: "Von Gebet, Intention und der Möglichkeit einer Antwort"
 description: "Was geschieht beim Beten? Nicht wer antwortet — sondern was überhaupt passiert, wenn ein Mensch aufhört, die Welt ausschließlich aus seinem eigenen Mittelpunkt zu betrachten."
 kategorie: "texte"
 typ: "Essay"
-tags: ["Essay", "Theologie", "Gebet", "Aufmerksamkeit", "Stille", "Resonanz", "Beziehung"]
+tags: ["Essay", "Theologie", "Gebet", "Aufmerksamkeit", "Stille", "Resonanz", "Beziehung", "Theologische Reihe"]
 date: "2025"
 author: "Thomas Peter Küper"
-order: 99
+order: 11
 draft: false
 ---
 
