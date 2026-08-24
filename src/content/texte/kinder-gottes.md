@@ -4,10 +4,10 @@ subtitle: "Vom Fall zur Mündigkeit"
 description: "Was bedeutet es, sich als „Kind Gottes" zu bezeichnen? Über Elternschaft als theologische Metapher, Genesis 3 als Eintritt in Mündigkeit, und die Grammatik des Vaterunsers."
 kategorie: "texte"
 typ: "Essay"
-tags: ["Essay", "Theologie", "Kindschaft", "Mündigkeit", "Genesis", "Verantwortung", "Beziehung"]
+tags: ["Essay", "Theologie", "Kindschaft", "Mündigkeit", "Genesis", "Verantwortung", "Beziehung", "Theologische Reihe"]
 date: "2026"
 author: "Thomas Peter Küper"
-order: 99
+order: 13
 draft: false
 ---
 
