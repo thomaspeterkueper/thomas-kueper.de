@@ -4,10 +4,10 @@ subtitle: "Wer dient hier eigentlich wem?"
 description: "Ein Wort, das man so oft hört, dass man aufhört, es zu hören. Und was passiert, wenn man es wieder auseinanderzieht."
 kategorie: "texte"
 typ: "Essay"
-tags: ["Essay", "Theologie", "Omnizedenz", "Sprache", "Resonanz", "Ethik", "Beziehung"]
+tags: ["Essay", "Theologie", "Omnizedenz", "Sprache", "Resonanz", "Ethik", "Beziehung", "Theologische Reihe"]
 date: "2025"
 author: "Thomas Peter Küper"
-order: 99
+order: 10
 draft: false
 ---
 
