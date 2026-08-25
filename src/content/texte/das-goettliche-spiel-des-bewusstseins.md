@@ -47,7 +47,7 @@ Die Kraft der Offenbarung liegt in ihrer reichen Symbolsprache. Aus omnizedenter
 
 **Verkörperte Transformation** – Die oft drastische, körperliche Bildsprache (Blut, Wunden etc.) zeigt: Transformation ist nicht nur Symbol, sondern tiefgreifende, verkörperte Erfahrung. Radikaler Wandel durchdringt das ganze Sein.
 
-**Relationale Dynamik** – Die Interaktionen (Botschaften, Dialoge) spiegeln die relationale Natur der Omnizedenz wider, bei der das Feld kommuniziert und unsere Haltung die Beziehung zur Quelle und zueinander beeinflusst.
+**Beziehungen und Wechselwirkungen** – Die Interaktionen (Botschaften, Dialoge) spiegeln die relationale Natur der Omnizedenz wider, bei der das Feld kommuniziert und unsere Haltung die Beziehung zur Quelle und zueinander beeinflusst.
 
 ---
 
@@ -85,7 +85,7 @@ Diese Liebe wird im Alltag erfahrbar und kultivierbar: durch bewusst gewähltes 
 
 **Spirituelle Praxis im Alltag** – Die Offenbarung, so gedeutet, lädt zur Praxis ein. Achtsamkeit und ähnliche Techniken helfen, die Illusion der Trennung zu durchschauen.
 
-*Konkrete Übung (Achtsamkeit):* Nimm dir täglich Momente, bewusst den Atem zu spüren. Beobachte Gedanken und Gefühle ohne Urteil als Phänomene im Bewusstseinsraum.
+*Konkrete Übung (Achtsamkeit):* Nimm dir täglich Momente, bewusst den Atem zu spüren. Beobachte Gedanken und Gefühle ohne Urteil als Regungen im eigenen Geist.
 
 *Konkrete Übung (Schattenreflexion):* Frage dich am Abend: Wo handelte ich heute aus Angst, Urteil oder einem Gefühl des Mangels? Wo spürte ich Verbindung und Mitgefühl? Nimm beides wertfrei wahr. Diese Praxis hilft, die Symbolik der Offenbarung im Alltag lebendig werden zu lassen – nicht als abstrakte Theorie, sondern als Weg der Selbstentdeckung.
 
@@ -117,7 +117,7 @@ So wird die Offenbarung zu einer Inspiration für bewusste Lebensgestaltung im H
 
 ## Anhang: Schlüsselbegriffe der Omnizedenz
 
-**Omnizedenz** – Das allumfassende, bewusste, intelligente und liebende Feld oder Prinzip des Seins; zugleich transzendenter Ursprung (Quelle) und immanente, lebendige Präsenz; erfährt sich selbst im ewigen Zyklus von Entfaltung und Integration.
+**Omnizedenz** – Das allumfassende, bewusste, intelligente und liebende Feld oder Prinzip des Seins; zugleich überweltlicher Ursprung (Quelle) und gegenwärtige, lebendige Präsenz; erfährt sich selbst im ewigen Zyklus von Entfaltung und Integration.
 
 **Ewiges Jetzt / Zeitlosigkeit** – Perspektive, dass Zeit nicht linear ist, sondern alle Momente (Vergangenheit, Gegenwart, Zukunft) als Dimensionen eines dynamischen Ganzen gleichzeitig existieren.
 
