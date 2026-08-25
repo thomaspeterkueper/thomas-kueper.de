@@ -178,3 +178,7 @@ Und dann lautet die letzte Frage nicht mehr:
 Sondern:
 
 **Wie soll ich mich in dem verhalten, was größer ist als ich und zu dem ich dennoch gehöre?**
+
+---
+
+*Dieser Essay ist der erste einer Reihe. Weiter: [Die Architektur der Stille](/texte/architektur-der-stille)*
