@@ -31,7 +31,7 @@ Die Omnizedenz ist kein Versuch, diese Frage zu beantworten. Sie ist der Versuch
 
 ### 1. Zeit ist nicht das, was wir erleben
 
-Carlo Rovelli, einer der bedeutendsten Physiker unserer Gegenwart, schreibt in *Die Ordnung der Zeit* mit einer Sachlichkeit, die einem den Atem verschlägt: Auf fundamentaler Ebene gibt es keine Zeit. Was wir erleben – diesen Fluss, dieses Nacheinander, dieses unerbittliche Voranschreiten –, das ist kein Merkmal der Realität. Es ist ein Merkmal *unserer* Realität. Ein emergentes Phänomen, das aus Wärme, Entropie und der Begrenztheit unserer Wahrnehmung entsteht.
+Carlo Rovelli, einer der bedeutendsten Physiker unserer Gegenwart, schreibt in *Die Ordnung der Zeit* mit einer Sachlichkeit, die einem den Atem verschlägt: Auf fundamentaler Ebene gibt es keine Zeit. Was wir erleben – diesen Fluss, dieses Nacheinander, dieses unerbittliche Voranschreiten –, das ist kein Merkmal der Realität. Es ist ein Merkmal *unserer* Realität. Ein entstehendes Muster, das aus Wärme, Entropie und der Begrenztheit unserer Wahrnehmung entsteht.
 
 Das Block-Universum der Relativitätstheorie sagt: Vergangenheit, Gegenwart und Zukunft existieren gleichzeitig. Nicht nacheinander. Der Augenblick, in dem du das hier liest, und der Augenblick, in dem Augustinus fragte *„Was also ist Zeit?"*, sind beide – irgendwo in der Struktur der Raumzeit – einfach: vorhanden.
 
@@ -61,7 +61,7 @@ Die Physik hat diese Frage noch nicht beantwortet. Aber sie hat sie gestellt. Un
 
 ### Donald Hoffman: Die Welt als Interface
 
-Donald Hoffman, Kognitionswissenschaftler an der University of California, hat einen radikalen Vorschlag gemacht: Was wir wahrnehmen, ist nicht die Wirklichkeit – es ist eine Benutzeroberfläche. Wie das Icon auf einem Computerbildschirm keine Auskunft über die darunter liegenden Schaltkreise gibt, so gibt unser Erleben von Bäumen, Steinen und Menschen keine Auskunft über die fundamentale Struktur der Realität.
+Donald Hoffman, Wahrnehmungsforscher an der University of California, hat einen radikalen Vorschlag gemacht: Was wir wahrnehmen, ist nicht die Wirklichkeit – es ist eine Benutzeroberfläche. Wie das Icon auf einem Computerbildschirm keine Auskunft über die darunter liegenden Schaltkreise gibt, so gibt unser Erleben von Bäumen, Steinen und Menschen keine Auskunft über die fundamentale Struktur der Realität.
 
 Der Beweis kommt aus der Evolutionstheorie, mathematisch formalisiert: Evolution optimiert für Überleben, nicht für Wahrheit. In fast allen evolutionären Simulationen gewinnt die fitnessoptimierte Täuschung gegen die wahrheitsabbildende Wahrnehmung.
 
@@ -87,7 +87,7 @@ Die Widersprüche als *produktiv* behandeln – als Hinweis darauf, dass die Wir
 
 ## V. Omnizedenz – nicht als Theorie, sondern als Rahmung
 
-Omnizedenz ist kein Konkurrenzmodell zu Rovelli, Hoffman oder Kastrup. Sie macht keine empirischen Vorhersagen. Sie ist eine *metaphysische Rahmung*, die die offenen Fragen der Physik nicht beantwortet, sondern in eine bestimmte Richtung orientiert.
+Omnizedenz ist kein Konkurrenzmodell zu Rovelli, Hoffman oder Kastrup. Sie macht keine empirischen Vorhersagen. Sie ist ein *gedanklicher Rahmen*, der die offenen Fragen der Physik nicht beantwortet, sondern in eine bestimmte Richtung orientiert.
 
 Omnizedenz ist keine Antwort auf diese Fragen, sondern eine Haltung zu ihnen: dass die Spannung selbst – zwischen Beobachter und Beobachtetem, Teil und Ganzem, Zeit und Ewigkeit – ein Ort ist, an dem Wirklichkeit sich ereignet.
 
@@ -95,7 +95,7 @@ Omnizedenz ist keine Antwort auf diese Fragen, sondern eine Haltung zu ihnen: da
 
 **Sie übernimmt Hoffmans Interface-Gedanken** – aber stellt die Folgefrage: Wer oder was *trägt* das Interface? Omnizedenz nennt diesen Hintergrundprozess ein dynamisches, sich selbst erfahrendes Bewusstseinsfeld, das sich in Perspektiven entfaltet, ohne sich in ihnen zu erschöpfen.
 
-**Sie übernimmt Kastrups Einheitsintuition** – aber in einer nicht-statischen Form. Das Eine ist ein dynamischer Prozess, der sich in Trennung und Wiederfindung, in Form und Auflösung vollzieht.
+**Sie übernimmt Kastrups Ahnung von Einheit** – aber in einer nicht-statischen Form. Das Eine ist ein dynamischer Prozess, der sich in Trennung und Wiederfindung, in Form und Auflösung vollzieht.
 
 Den Widerspruch zwischen Hoffman und Kastrup löst die Omnizedenz nicht auf. Viele Agenten oder ein Bewusstsein – das ist keine Stilfrage, sondern eine echte metaphysische Unvereinbarkeit. Omnizedenz behauptet hier keine Überlegenheit. Sie benennt den Widerspruch und hält ihn aus – nicht als Verlegenheitslösung, sondern weil das Aushalten ungelöster Spannungen eine eigene erkenntnistheoretische Haltung ist. Wer zu schnell versöhnt, sieht nicht mehr, was ihn getrennt hat.
 
