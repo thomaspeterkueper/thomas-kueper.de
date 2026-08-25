@@ -2,7 +2,7 @@
 title: "Gottesdienst"
 subtitle: "Wer dient hier eigentlich wem?"
 description: "Ein Wort, das man so oft hört, dass man aufhört, es zu hören. Und was passiert, wenn man es wieder auseinanderzieht."
-kategorie: "texte"
+kategorie: "denken"
 typ: "Essay"
 tags: ["Essay", "Theologie", "Omnizedenz", "Sprache", "Resonanz", "Ethik", "Beziehung", "Theologische Reihe"]
 date: "2025"
