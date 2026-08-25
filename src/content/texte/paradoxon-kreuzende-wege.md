@@ -183,4 +183,8 @@ Sondern:
 
 **Was mache ich mit dem Möglichkeitsraum, der an dieser Kreuzung entstanden ist?**
 
-Darin liegt vielleicht eine nüchternere Form von Vertrauen. Nicht das Vertrauen, dass alles so geschehen musste. Sondern das Vertrauen, dass nicht alles festgelegt sein muss, damit aus dem, was geschieht, noch eine verantwortbare Antwort möglich ist.
+Darin liegt vielleicht eine nüchternere Form von Vertrauen.
+
+---
+
+*← [Die Architektur der Stille](/texte/architektur-der-stille) · Weiter: [Kinder Gottes](/texte/kinder-gottes) →* Nicht das Vertrauen, dass alles so geschehen musste. Sondern das Vertrauen, dass nicht alles festgelegt sein muss, damit aus dem, was geschieht, noch eine verantwortbare Antwort möglich ist.
