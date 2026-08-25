@@ -4,7 +4,7 @@ subtitle: "Gericht als letzte Konsequenz der Mündigkeit"
 description: "Wenn Mündigkeit das Ziel ist, verändert das nicht nur den Sinn des Lebens: es verändert die Frage des Gerichts. Nicht: Hast du gehorcht? Sondern: Was hast du aus deiner Freiheit gemacht? Und was ist anderen durch dich geschehen?"
 kategorie: "texte"
 typ: "Essay"
-tags: ["Essay", "Theologie", "Eschatologie", "Mündigkeit", "Gericht", "Verantwortung", "Theologische Reihe"]
+tags: ["Essay", "Theologie", "Lehre von den letzten Dingen", "Mündigkeit", "Gericht", "Verantwortung", "Theologische Reihe"]
 date: "2026"
 author: "Thomas Peter Küper"
 order: 14
