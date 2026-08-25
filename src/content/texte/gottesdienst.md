@@ -149,9 +149,9 @@ Dazwischen liegt: **Durchlässigkeit bei erhaltener Verantwortung.**
 
 Nun muss die unangenehme Frage gestellt werden.
 
-Wenn wir über Beziehung, Aufmerksamkeit, Alterität, Durchlässigkeit und Verantwortung sprechen können, wozu benötigen wir dann noch das Wort Gott?
+Wenn wir über Beziehung, Aufmerksamkeit, Offenheit für das Andere, Durchlässigkeit und Verantwortung sprechen können, wozu benötigen wir dann noch das Wort Gott?
 
-Vielleicht benötigen wir es nicht. Dann wäre das Ergebnis eine relationale Ethik mit religiöser Herkunft.
+Vielleicht benötigen wir es nicht. Dann wäre das Ergebnis eine Ethik der Beziehung mit religiöser Herkunft.
 
 Aber „das Göttliche" bezeichnet vielleicht auch keinen weiteren Gegenstand innerhalb der Wirklichkeit – ein Name für jene Dimension, in der Beziehung für uns mehr sein kann als bloße Wechselwirkung: in der ein anderer Mensch nicht nur auf uns einwirkt, sondern uns etwas angeht; in der aus Wirkung Antwort und aus Antwort Verantwortung werden kann.
 
