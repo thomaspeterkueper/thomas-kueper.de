@@ -168,3 +168,7 @@ Die schwierigere Frage, vielleicht die letzte, lautet:
 **Was hast du aus deiner Freiheit gemacht? Was ist durch dich entstanden? Und was ist anderen durch dich geschehen?**
 
 Erst wer diese drei Fragen aushält, darf vielleicht fragen: Was bringst du zurück?
+
+---
+
+*← [Kinder Gottes](/texte/kinder-gottes) · Theologische Reihe: Essays 1–5*
