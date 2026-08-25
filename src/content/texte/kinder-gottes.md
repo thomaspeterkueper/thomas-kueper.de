@@ -106,3 +106,7 @@ Vielleicht gilt deshalb für den Garten dasselbe wie für jedes Elternhaus: Dass
 **Ich komme von dir. Aber ich bin nicht du.**
 
 Darin liegt kein Verrat am Ursprung. Vielleicht beginnt genau dort die Verantwortung, die eine Herkunft ihren Kindern überhaupt erst zutrauen kann.
+
+---
+
+*← [Das Paradoxon der kreuzenden Wege](/texte/paradoxon-kreuzende-wege) · Weiter: [Was ist durch dich geschehen?](/texte/was-ist-durch-dich-geschehen) →*
