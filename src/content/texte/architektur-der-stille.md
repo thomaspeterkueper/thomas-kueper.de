@@ -75,7 +75,7 @@ Das Wunder müsste dann nicht dort beginnen, wo Naturgesetze außer Kraft gesetz
 
 Ein Mensch nimmt einen anderen ernst, obwohl er keinen Vorteil davon hat. Jemand erkennt eine Not, bevor sie ausdrücklich ausgesprochen wurde. Einer unterbricht den eigenen Plan, weil ein anderer plötzlich wichtiger geworden ist.
 
-Nichts davon verletzt ein Naturgesetz. Und trotzdem können solche Augenblicke für den Betroffenen so unwahrscheinlich, so genau und so bedeutsam sein, dass das Wort „Zufall" ebenso unzureichend erscheint wie eine vorschnelle metaphysische Erklärung.
+Nichts davon verletzt ein Naturgesetz. Und trotzdem können solche Augenblicke für den Betroffenen so unwahrscheinlich, so genau und so bedeutsam sein, dass das Wort „Zufall" ebenso unzureichend erscheint wie eine vorschnelle übernatürliche Erklärung.
 
 Die angemessene Haltung besteht zunächst darin, das Ereignis nicht kleiner zu machen, nur weil wir seinen Zusammenhang erklären können.
 
@@ -127,11 +127,11 @@ Aber anschließend darf eine andere Frage gestellt werden:
 
 Wir denken gewöhnlich in getrennten Einheiten. Hier mein Inneres. Dort dein Inneres. Dazwischen Informationen, die ausgetauscht werden.
 
-Vielleicht ist diese Trennung praktisch notwendig, aber ontologisch weniger fundamental, als sie erscheint.
+Vielleicht ist diese Trennung praktisch notwendig, aber auf einer tieferen Ebene weniger grundlegend, als sie erscheint.
 
-Wenn Menschen von Anfang an nur innerhalb von Beziehungen zu Menschen werden, wenn Sprache, Identität, Erinnerung und Selbstverständnis bereits relational entstehen, dann ist Verbindung nicht etwas, das nachträglich zwischen fertigen Individuen hergestellt wird. Sie gehört zu den Bedingungen, unter denen Individualität überhaupt entsteht.
+Wenn Menschen von Anfang an nur innerhalb von Beziehungen zu Menschen werden, wenn Sprache, Identität, Erinnerung und Selbstverständnis bereits durch Beziehung entstehen, dann ist Verbindung nicht etwas, das nachträglich zwischen fertigen Individuen hergestellt wird. Sie gehört zu den Bedingungen, unter denen Individualität überhaupt entsteht.
 
-Hier öffnet sich der Feldgedanke – nicht als unbekannter Übertragungsmechanismus, nicht als Ersatzphysik, sondern als ontologische Frage:
+Hier öffnet sich der Feldgedanke – nicht als unbekannter Übertragungsmechanismus, nicht als Ersatzphysik, sondern als grundlegende Frage:
 
 **Was, wenn Beziehung nicht nur etwas ist, das zwischen den Dingen geschieht, sondern zu dem gehört, was die Dinge überhaupt sind?**
 
