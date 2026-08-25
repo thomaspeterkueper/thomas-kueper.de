@@ -43,7 +43,7 @@ Das ist das Paradox: Die Stabilität, die eine Gesellschaft erfolgreich gemacht 
 
 ## Die Leere als Bedingung für Schöpfung
 
-Es gibt eine Beobachtung, die zunächst kontraintuitiv wirkt: Die fruchtbarsten Phasen in der Geschichte der Kunst, der Wissenschaft und des politischen Denkens waren selten Zeiten der Stabilität. Es waren Zeiten des Umbruchs, der Unsicherheit, manchmal des Chaos. Die italienische Renaissance entstand nicht aus gesichertem Wohlstand, sondern aus dem Spannungsfeld konkurrierender Stadtstaaten. Die Weimarer Klassik blühte in einer Gesellschaft auf, die alles andere als geordnet war. Die großen Innovationsschübe des 20. Jahrhunderts folgten auf Katastrophen.
+Es gibt eine Beobachtung, die zunächst gegen die Erwartung wirkt: Die fruchtbarsten Phasen in der Geschichte der Kunst, der Wissenschaft und des politischen Denkens waren selten Zeiten der Stabilität. Es waren Zeiten des Umbruchs, der Unsicherheit, manchmal des Chaos. Die italienische Renaissance entstand nicht aus gesichertem Wohlstand, sondern aus dem Spannungsfeld konkurrierender Stadtstaaten. Die Weimarer Klassik blühte in einer Gesellschaft auf, die alles andere als geordnet war. Die großen Innovationsschübe des 20. Jahrhunderts folgten auf Katastrophen.
 
 Das soll Katastrophen nicht verherrlichen. Aber es zeigt etwas Wesentliches über die Bedingungen von Kreativität: Sie braucht Lücken. Räume, die noch nicht ausgefüllt sind. Offene Fragen, die noch nicht beantwortet wurden. Eine gewisse Leere, die nicht bedrohlich ist, sondern einladend: ein Feld der Möglichkeiten, in dem sich Neues formen kann.
 
