@@ -162,3 +162,7 @@ Nicht aus Mauern. Sondern aus Aufmerksamkeit, Zeit und der Bereitschaft, nicht s
 Manches, was später Wunder genannt wird, beginnt genau dort:
 
 **Jemand hat lange genug hingehört, um antworten zu können.**
+
+---
+
+*← [Gottesdienst](/texte/gottesdienst) · Weiter: [Das Paradoxon der kreuzenden Wege](/texte/paradoxon-kreuzende-wege) →*
