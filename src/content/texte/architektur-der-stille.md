@@ -63,7 +63,7 @@ Nicht als bloßes Werkzeug eines fremden Willens, sondern als verantwortlicher B
 
 Man könnte den Gedanken aus dem ersten Essay dieser Reihe deshalb umkehren:
 
-**Ich muss nicht Ursprung eines Wunders sein, um derjenige zu sein, durch den es geschieht.**
+**Ich muss kein Wunder bewirken können. Aber ich kann der Ort sein, an dem es geschieht.**
 
 ---
 
@@ -79,7 +79,7 @@ Nichts davon verletzt ein Naturgesetz. Und trotzdem können solche Augenblicke f
 
 Die angemessene Haltung besteht zunächst darin, das Ereignis nicht kleiner zu machen, nur weil wir seinen Zusammenhang erklären können.
 
-Erklärbarkeit und Bedeutung sind keine Gegensätze.
+Dass man erklären kann, warum etwas geschehen ist, macht es nicht weniger bedeutsam.
 
 ---
 
@@ -91,7 +91,7 @@ Unser Alltag ist von Unterbrechungen durchzogen. Nachrichten, Termine, Bilder, A
 
 Das Problem daran ist nicht moralischer Verfall. Es ist auch keine romantische Behauptung, früher seien Menschen aufmerksamer gewesen. Es ist zunächst eine einfache Begrenzung:
 
-**Was ständig unterbrochen wird, kann schwer Tiefe gewinnen.**
+**Was ständig unterbrochen wird, kann schwer wirklich etwas werden.**
 
 Manches braucht Zeit, bevor es überhaupt wahrnehmbar wird. Ein eigener Gedanke. Die Veränderung in der Stimme eines anderen. Ein Unbehagen, für das noch kein Wort existiert. Eine Frage, die nicht sofort beantwortet werden sollte.
 
