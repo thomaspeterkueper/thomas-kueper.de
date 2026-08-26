@@ -2,7 +2,7 @@
 title: "Was ist durch dich geschehen?"
 subtitle: "Gericht als letzte Konsequenz der Mündigkeit"
 description: "Wenn Mündigkeit das Ziel ist, verändert das nicht nur den Sinn des Lebens: es verändert die Frage des Gerichts. Nicht: Hast du gehorcht? Sondern: Was hast du aus deiner Freiheit gemacht? Und was ist anderen durch dich geschehen?"
-kategorie: "texte"
+kategorie: "denken"
 typ: "Essay"
 tags: ["Essay", "Theologie", "Lehre von den letzten Dingen", "Mündigkeit", "Gericht", "Verantwortung", "Theologische Reihe"]
 date: "2026"
