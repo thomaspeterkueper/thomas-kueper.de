@@ -34,6 +34,19 @@ import authorImg from '../assets/portrait3.jpg';
     .archiv-link{font-family:'Lato',sans-serif;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--text);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:4px;transition:color .3s}
     .archiv-link:hover{color:var(--gold)}
 
+
+    .neu-section{padding:7rem 0;border-bottom:1px solid var(--border)}
+    .neu-label{font-family:'Lato',sans-serif;font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.3em;color:var(--gold);display:block;margin-bottom:1rem}
+    .neu-title{font-family:'Crimson Text',serif;font-size:2.5rem;font-weight:300;margin-bottom:3.5rem}
+    .neu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-bottom:2.5rem}
+    .neu-card{display:block;text-decoration:none;color:inherit;border:1px solid var(--border);padding:2.5rem;transition:all .3s}
+    .neu-card:hover{border-color:var(--gold);transform:translateY(-4px)}
+    .neu-card-reihe{font-family:'Lato',sans-serif;font-size:.58rem;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--gold);display:block;margin-bottom:1rem}
+    .neu-card h3{font-family:'Crimson Text',serif;font-size:1.6rem;font-weight:300;margin-bottom:.75rem;line-height:1.2}
+    .neu-card p{font-family:'Lora',serif;font-size:.9rem;color:#666;line-height:1.7;font-style:italic}
+    .neu-more{text-align:center;padding-top:1rem}
+    @media(max-width:950px){.neu-grid{grid-template-columns:1fr}}
+
     @media(max-width:950px){.hero-grid{grid-template-columns:1fr;text-align:center}.portrait-box{max-width:320px;margin:0 auto}.universe-cards{grid-template-columns:1fr;max-width:500px;margin:0 auto}.uni-card{padding:3.5rem 2.5rem}.hero-text p{margin-left:auto;margin-right:auto}}
   </style>
 
@@ -73,6 +86,33 @@ import authorImg from '../assets/portrait3.jpg';
           <p>Omnizedenz, AVI, Mishkenaz und die Modelle hinter vielen Texten.</p>
           <span class="enter-link">Grundlagen lesen</span>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="neu-section">
+    <div class="container">
+      <span class="neu-label">Neu</span>
+      <h2 class="neu-title">Zuletzt erschienen</h2>
+      <div class="neu-grid">
+        <a href="/texte/was-ist-durch-dich-geschehen" class="neu-card">
+          <span class="neu-card-reihe">Theologische Reihe · Essay 5</span>
+          <h3>Was ist durch dich geschehen?</h3>
+          <p>Wenn Mündigkeit das Ziel ist, verändert das die Frage des Gerichts. Nicht: Hast du gehorcht? Sondern: Was hast du aus deiner Freiheit gemacht?</p>
+        </a>
+        <a href="/texte/kinder-gottes" class="neu-card">
+          <span class="neu-card-reihe">Theologische Reihe · Essay 4</span>
+          <h3>Kinder Gottes</h3>
+          <p>Gute Eltern wollen, dass ihre Kinder wachsen und selbstständig werden. Was bedeutet es dann, sich als „Kind Gottes" zu bezeichnen?</p>
+        </a>
+        <a href="/texte/gottesdienst" class="neu-card">
+          <span class="neu-card-reihe">Theologische Reihe · Essay 1</span>
+          <h3>Gottesdienst</h3>
+          <p>Wer dient hier eigentlich wem? Ein Wort, das man so oft hört, dass man aufhört, es zu hören — auseinandergenommen.</p>
+        </a>
+      </div>
+      <div class="neu-more">
+        <a href="/texte" class="archiv-link">Alle Texte →</a>
       </div>
     </div>
   </section>
