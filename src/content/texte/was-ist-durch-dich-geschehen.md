@@ -99,7 +99,7 @@ Diese drei Fragen sind nicht dieselbe Frage. Die erste fragt nach dem, was war. 
 
 Wer „Vater unser" sagt, kann Gott nicht für sich allein haben. Dieser Satz kehrt hier zurück, nicht als frommer Gedanke, sondern als Rechenschaftsforderung.
 
-Die Intuition ist nicht neu. Das Matthäusevangelium kennt eine Gerichtsszene, in der nicht Zugehörigkeit oder Glaube das Kriterium sind, sondern konkrete Handlungen und Unterlassungen am anderen: gespeist, aufgenommen, besucht oder nicht. Die Gerichteten wissen selbst nicht, wann sie es getan oder unterlassen haben. Das Urteil gilt dem, was wirklich geschah, nicht dem, was einer über sich glaubt. Daneben steht das Gleichnis vom vergrabenen Talent: Das Anvertraute vollständig und unversehrt zurückzugeben genügt nicht. Die Frage war, was damit gewagt wurde.
+Die Intuition ist nicht neu. Im Matthäusevangelium gibt es eine Gerichtsszene, in der es nicht auf Glauben ankommt – sondern darauf, ob jemand gehandelt hat. Ob er hungrige Menschen gespeist, Fremde aufgenommen, Kranke besucht hat. Die Gerichteten wissen selbst nicht, wann sie es getan oder unterlassen haben. Das Urteil gilt dem, was wirklich geschah, nicht dem, was einer über sich glaubt. Ein anderes Gleichnis erzählt von einem, der sein anvertrautes Geld nur vergraben hat, um es sicher zurückzugeben. Aber das genügte nicht. Die Frage war nicht: Hast du es behalten? Sondern: Hast du etwas daraus gemacht?
 
 Zwei verschiedene Fragen, die in dieselbe Richtung zeigen: Mündigkeit verlangt beides. Was hast du hervorgebracht? Und was ist anderen durch dich geschehen?
 
@@ -133,7 +133,7 @@ Bezeugen. Dass etwas war. Dass es zerstört wurde. Dass das nicht zurückgenomme
 
 Vielleicht gehört zum Gericht auch die Einsicht, dass es nicht uns gehört.
 
-Was nach dieser Begegnung kommt, was das Gericht im Sinn von Folge, Konsequenz, vielleicht Versöhnung oder deren Unmöglichkeit bedeutet: Das lässt dieser Essay offen. Nicht aus Feigheit. Sondern weil diese Frage über das hinausführt, was sich hier noch ehrlich sagen lässt.
+Was nach diesem Gericht kommt – ob Versöhnung, ob Ende, ob etwas Neues –, das lässt dieser Essay offen. Nicht aus Feigheit. Sondern weil diese Frage über das hinausführt, was sich hier noch ehrlich sagen lässt.
 
 Was sich sagen lässt: Das Gericht ist nicht die Aufhebung der Mündigkeit. Es ist ihre letzte Konsequenz.
 
