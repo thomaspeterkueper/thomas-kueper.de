@@ -8,10 +8,10 @@ tags: ["Essay", "Theologie", "Lehre von den letzten Dingen", "Mündigkeit", "Ger
 date: "2026"
 author: "Thomas Peter Küper"
 order: 14
-draft: true
+draft: false
 ---
 
-*Thomas Peter Küper · Entwurf*
+*Thomas Peter Küper*
 
 ---
 
