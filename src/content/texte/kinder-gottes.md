@@ -2,7 +2,7 @@
 title: "Kinder Gottes"
 subtitle: "Vom Fall zur Mündigkeit"
 description: "Was bedeutet es, sich als „Kind Gottes" zu bezeichnen? Über Elternschaft als theologische Metapher, Genesis 3 als Eintritt in Mündigkeit, und die Grammatik des Vaterunsers."
-kategorie: "texte"
+kategorie: "denken"
 typ: "Essay"
 tags: ["Essay", "Theologie", "Kindschaft", "Mündigkeit", "Genesis", "Verantwortung", "Beziehung", "Theologische Reihe"]
 date: "2026"
