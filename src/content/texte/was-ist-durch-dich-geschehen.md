@@ -171,4 +171,4 @@ Erst wer diese drei Fragen aushält, darf vielleicht fragen: Was bringst du zur�
 
 ---
 
-*← [Kinder Gottes](/texte/kinder-gottes) · Theologische Reihe: Essays 1–5*
+*← [Kinder Gottes](/texte/kinder-gottes) · Weiter: [Die Verdichtung des Widersachers](/texte/verdichtung-des-widersachers) →*
