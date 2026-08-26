@@ -39,12 +39,15 @@ const katLabel = katLabels[entry.data.kategorie] || entry.data.kategorie;
   description={entry.data.description}>
 
   <style is:inline>
+    /* Seitenhintergrund creme */
+    body { background: #f0ede8 !important; }
+
     /* ===== ESSAY HERO ===== */
     .essay-hero {
       padding: 7rem 2rem 2.5rem;
       text-align: center;
-      background: linear-gradient(180deg, #faf9f6 0%, #ffffff 100%);
-      border-bottom: 1px solid #eee;
+      background: linear-gradient(180deg, #faf9f6 0%, #f0ede8 100%);
+      border-bottom: none;
     }
 
     .essay-hero .label {
@@ -60,21 +63,22 @@ const katLabel = katLabels[entry.data.kategorie] || entry.data.kategorie;
 
     .essay-hero h1 {
       font-family: 'Crimson Text', serif;
-      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      font-size: clamp(2rem, 4.5vw, 3rem);
       font-weight: 300;
       line-height: 1.2;
       margin-bottom: 0.85rem;
-      max-width: 700px;
+      max-width: 680px;
       margin-left: auto;
       margin-right: auto;
+      color: #111;
     }
 
     .essay-hero .subtitle {
       font-family: 'Lora', serif;
       font-style: italic;
       font-size: 1.05rem;
-      color: #64748b;
-      max-width: 580px;
+      color: #666;
+      max-width: 560px;
       margin: 0 auto 1.5rem;
       line-height: 1.55;
     }
@@ -89,35 +93,37 @@ const katLabel = katLabels[entry.data.kategorie] || entry.data.kategorie;
 
     .essay-hero .meta-line .typ-badge {
       display: inline-block;
-      background: #f5f5f5;
+      background: rgba(0,0,0,0.05);
       padding: 0.25rem 0.7rem;
       margin-right: 0.8rem;
-      color: #666;
+      color: #777;
     }
 
-    /* ===== ESSAY BODY (Markdown) ===== */
+    /* ===== WEISSES PAPIER ===== */
     .essay-content {
+      background: #ffffff;
+      box-shadow: 0 2px 28px rgba(0,0,0,0.08), 0 0 0 1px rgba(0,0,0,0.04);
       max-width: 660px;
       margin: 0 auto;
-      padding: 2.25rem 2rem 4.5rem;
+      padding: 3rem 3.5rem 3.5rem;
     }
 
+    /* ===== TEXT ===== */
     .essay-content p {
       font-family: 'Lora', serif;
       font-size: 1.05rem;
-      line-height: 1.85;
-      color: #333;
-      margin-bottom: 1.1rem;
+      line-height: 1.82;
+      color: #1a1a1a;
+      margin-bottom: 0.9rem;
     }
 
-    /* The theological essays already show the author in the hero.
-       Hide a duplicated Markdown byline and its separator. */
+    /* Theologische Essays: Autorzeile ausblenden */
     .essay-content.theological > p:first-child:has(> em:only-child),
     .essay-content.theological > p:first-child:has(> em:only-child) + hr {
       display: none;
     }
 
-    /* Drop cap on the first actual prose paragraph */
+    /* Initialbuchstabe */
     .essay-content:not(.theological) > p:first-of-type::first-letter,
     .essay-content.theological > p:first-child:has(> em:only-child) + hr + p::first-letter {
       font-family: 'Crimson Text', serif;
@@ -129,16 +135,16 @@ const katLabel = katLabels[entry.data.kategorie] || entry.data.kategorie;
       color: #c9a961;
     }
 
+    /* Abschnittstitel */
     .essay-content h2 {
       font-family: 'Lato', sans-serif;
-      font-size: 0.68rem;
+      font-size: 0.72rem;
       font-weight: 700;
-      font-variant: normal;
       text-transform: uppercase;
-      letter-spacing: 0.18em;
-      margin-top: 2.5rem;
-      margin-bottom: 0.9rem;
-      color: #999;
+      letter-spacing: 0.16em;
+      margin-top: 2.25rem;
+      margin-bottom: 0.8rem;
+      color: #888;
       text-align: left;
     }
 
@@ -146,35 +152,37 @@ const katLabel = katLabels[entry.data.kategorie] || entry.data.kategorie;
       font-family: 'Crimson Text', serif;
       font-size: 1.2rem;
       font-weight: 400;
-      margin-top: 1.75rem;
-      margin-bottom: 0.6rem;
-      color: #1a1a1a;
+      margin-top: 1.5rem;
+      margin-bottom: 0.55rem;
+      color: #111;
     }
 
+    /* Trennlinien */
     .essay-content hr {
       border: none;
       text-align: center;
-      margin: 2rem 0;
-      color: #c9a961;
+      margin: 1.75rem 0;
+      color: #bbb;
     }
 
     .essay-content hr::after {
       content: '· · ·';
       letter-spacing: 0.8em;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
 
+    /* Blockzitat */
     .essay-content blockquote {
       font-family: 'Crimson Text', serif;
-      font-size: 1.35rem;
+      font-size: 1.3rem;
       font-weight: 300;
       line-height: 1.5;
-      color: #c9a961;
+      color: #1a1a1a;
       text-align: center;
-      padding: 1.5rem 1.75rem;
-      margin: 1.75rem 0;
-      border-top: 1px solid #eee;
-      border-bottom: 1px solid #eee;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
     }
 
     .essay-content blockquote p {
@@ -185,132 +193,130 @@ const katLabel = katLabels[entry.data.kategorie] || entry.data.kategorie;
       margin: 0;
     }
 
-    .essay-content strong {
-      color: #1a1a1a;
-      font-weight: 600;
-    }
-
-    .essay-content em {
-      color: #555;
-    }
+    .essay-content strong { color: #111; font-weight: 600; }
+    .essay-content em { color: #444; }
 
     .essay-content ul, .essay-content ol {
       font-family: 'Lora', serif;
       font-size: 1rem;
       line-height: 1.8;
-      color: #444;
-      margin-bottom: 1.1rem;
+      color: #222;
+      margin-bottom: 0.9rem;
       padding-left: 1.5rem;
     }
 
-    .essay-content li { margin-bottom: 0.35rem; }
+    .essay-content li { margin-bottom: 0.3rem; }
 
+    /* Links im Text */
     .essay-content a {
-      color: #c9a961;
+      color: #1e3a5f;
       text-decoration: none;
-      border-bottom: 1px solid #e8dcc8;
-      transition: border-color 0.3s;
+      border-bottom: 1px solid rgba(30,58,95,0.25);
+      transition: border-color 0.2s;
     }
 
-    .essay-content a:hover { border-color: #c9a961; }
+    .essay-content a:hover { border-color: #1e3a5f; }
 
-    /* Reihen-Navigation */
-    .essay-content hr + p em {
+    /* ===== REIHEN-NAVIGATION (unten, auf cremefarbenem Grund) ===== */
+    .essay-content > p:last-child {
+      margin: 2.5rem -3.5rem -3.5rem;
+      padding: 1.25rem 3.5rem;
+      background: #ebe7e0;
+      border-top: 1px solid #ddd8d0;
+    }
+
+    .essay-content > p:last-child em {
       display: block;
       font-style: normal;
       font-family: 'Lato', sans-serif;
-      font-size: 0.68rem;
+      font-size: 0.7rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: #bbb;
+      letter-spacing: 0.13em;
+      color: #777;
       text-align: center;
-      margin-top: 0.5rem;
-      padding: 1.5rem 0;
     }
 
-    .essay-content hr + p em a {
-      color: #c9a961;
-      border-bottom: 1px solid #e8dcc8;
+    .essay-content > p:last-child em a {
+      color: #1e3a5f;
+      border-bottom: 1px solid rgba(30,58,95,0.3);
       font-style: normal;
       letter-spacing: inherit;
-      padding-bottom: 2px;
     }
 
-    /* Tags at bottom */
+    .essay-content > p:last-child em a:hover {
+      border-color: #1e3a5f;
+    }
+
+    /* ===== TAGS ===== */
     .essay-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
       justify-content: center;
-      padding: 2.25rem 2rem;
-      max-width: 720px;
+      padding: 2rem 2rem 1.5rem;
+      max-width: 660px;
       margin: 0 auto;
-      border-top: 1px solid #eee;
     }
 
     .essay-tag {
       font-family: 'Lato', sans-serif;
-      font-size: 0.6rem;
+      font-size: 0.58rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 1.5px;
       color: #999;
-      background: #f8f8f8;
-      padding: 0.35rem 0.8rem;
+      background: rgba(0,0,0,0.06);
+      padding: 0.3rem 0.75rem;
     }
 
-    /* Back link */
+    /* ===== BACK LINK ===== */
     .essay-back {
-      max-width: 720px;
+      max-width: 660px;
       margin: 0 auto;
-      padding: 1.5rem 2rem 4rem;
+      padding: 0.5rem 2rem 4rem;
       text-align: center;
     }
 
     .essay-back a {
-      display: inline-block;
-      text-decoration: none;
       font-family: 'Lato', sans-serif;
-      font-size: 0.75rem;
+      font-size: 0.65rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 2px;
-      color: #1a1a1a;
-      border-bottom: 1px solid #c9a961;
-      padding-bottom: 4px;
-      transition: color 0.3s;
-    }
-
-    .essay-back a:hover { color: #c9a961; }
-
-    /* Reihen-Navigation */
-    .essay-content hr + p em {
-      display: block;
-      text-align: center;
-      font-style: normal;
-      font-family: 'Lato', sans-serif;
-      font-size: 0.72rem;
       letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: #aaa;
-      margin-top: 0.5rem;
-    }
-    .essay-content hr + p em a {
-      color: #c9a961;
-      border-bottom: 1px solid #e8dcc8;
-      font-style: normal;
-      letter-spacing: inherit;
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 2px;
+      transition: color 0.2s;
     }
 
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 600px) {
-      .essay-hero { padding: 7rem 1.5rem 2.5rem; }
-      .essay-content { padding: 2.25rem 1.5rem 4rem; }
-      .essay-content p { font-size: 1.05rem; line-height: 1.8; }
-      .essay-content h2 { margin-top: 2.25rem; }
-      .essay-content hr { margin: 1.9rem 0; }
-      .essay-content blockquote { font-size: 1.25rem; padding: 1.5rem 1rem; margin: 2rem 0; }
+    .essay-back a:hover { color: #333; }
+
+    /* Reihen-Nav Styling aus altem Block entfernen */
+    .essay-content hr + p em {
+      display: unset;
+      font-style: unset;
+      font-family: unset;
+      font-size: unset;
+      text-transform: unset;
+      letter-spacing: unset;
+      color: unset;
+      text-align: unset;
+      padding: unset;
+    }
+
+    .essay-content hr + p em a {
+      color: unset;
+      border-bottom: unset;
+      letter-spacing: unset;
+      padding-bottom: unset;
+    }
+
+    @media(max-width:720px) {
+      .essay-content { padding: 2rem 1.5rem 2.5rem; }
+      .essay-content > p:last-child { margin: 2rem -1.5rem -2.5rem; padding: 1rem 1.5rem; }
+      .essay-hero h1 { font-size: 1.85rem; }
     }
   </style>
 
