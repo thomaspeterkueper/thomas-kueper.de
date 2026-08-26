@@ -47,6 +47,19 @@ import authorImg from '../assets/portrait3.jpg';
     .neu-more{text-align:center;padding-top:1rem}
     @media(max-width:950px){.neu-grid{grid-template-columns:1fr}}
 
+
+    .aktuelles-section{padding:5rem 0;border-bottom:1px solid var(--border)}
+    .aktuelles-label{font-family:'Lato',sans-serif;font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.3em;color:var(--gold);display:block;margin-bottom:1rem}
+    .aktuelles-title{font-family:'Crimson Text',serif;font-size:2.5rem;font-weight:300;margin-bottom:3rem}
+    .aktuelles-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+    .aktuelles-card{display:block;text-decoration:none;color:inherit;border-left:2px solid var(--border);padding-left:1.75rem;transition:border-color .3s}
+    .aktuelles-card:hover{border-left-color:var(--gold)}
+    .aktuelles-card-type{font-family:'Lato',sans-serif;font-size:.58rem;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--gold);display:block;margin-bottom:.6rem}
+    .aktuelles-card h3{font-family:'Crimson Text',serif;font-size:1.75rem;font-weight:300;margin-bottom:.6rem;line-height:1.2}
+    .aktuelles-card p{font-family:'Lora',serif;font-size:.95rem;color:#666;line-height:1.75;font-style:italic;margin-bottom:1rem}
+    .aktuelles-card .mehr{font-family:'Lato',sans-serif;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:var(--text);border-bottom:1px solid var(--gold);padding-bottom:2px}
+    @media(max-width:750px){.aktuelles-grid{grid-template-columns:1fr}}
+
     @media(max-width:950px){.hero-grid{grid-template-columns:1fr;text-align:center}.portrait-box{max-width:320px;margin:0 auto}.universe-cards{grid-template-columns:1fr;max-width:500px;margin:0 auto}.uni-card{padding:3.5rem 2.5rem}.hero-text p{margin-left:auto;margin-right:auto}}
   </style>
 
@@ -58,6 +71,84 @@ import authorImg from '../assets/portrait3.jpg';
         <h1>Schreiber & Weltenbauer</h1>
         <p>Ich schaue genau hin – auf das, was zwischen den Zeilen passiert, in den Pausen zwischen zwei Tönen, in dem Moment, bevor eine Entscheidung fällt. Meine Geschichten entstehen dort, wo die Dinge aneinanderstoßen.</p>
         <a href="/ueber-mich" class="btn-primary">Mehr über mich</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="aktuelles-section">
+    <div class="container">
+      <span class="aktuelles-label">Aktuelles</span>
+      <h2 class="aktuelles-title">Neue Texte</h2>
+      <div class="aktuelles-grid">
+
+        <a href="/texte/gottesdienst" class="aktuelles-card">
+          <span class="aktuelles-card-type">Theologische Reihe &middot; 6 Essays</span>
+          <h3>Gottesdienst, Freiheit und das Gericht</h3>
+          <p>Eine Reihe &uuml;ber Mündigkeit, Verantwortung und das, was man Gott nennen k&ouml;nnte &ndash; von der Frage, wer hier eigentlich wem dient, bis zur Frage, was am Ende eines Lebens z&auml;hlt.</p>
+          <span class="mehr">Zur Reihe &rarr;</span>
+        </a>
+
+        <a href="/texte/aufmerksamkeit" class="aktuelles-card">
+          <span class="aktuelles-card-type">Kurzgeschichte</span>
+          <h3>Aufmerksamkeit</h3>
+          <p>Er war gerade noch rechtzeitig gekommen. Was er dann nicht sah &ndash; und was das &uuml;ber Wahrnehmung, Verdr&auml;ngung und Verantwortung sagt.</p>
+          <span class="mehr">Lesen &rarr;</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="universen-section">
+    <div class="container">
+      <h2>Die Eingänge</h2>
+      <div class="universe-cards">
+        <a href="/romane" class="uni-card" style="--card-accent:#c9a961;">
+          <span class="card-label">Bücher</span>
+          <h3>Romane</h3>
+          <p>Gegenwartsliteratur, Kinderbuch, Science-Fiction und literarische Systemfiktion.</p>
+          <span class="enter-link">Bibliothek betreten</span>
+        </a>
+
+        <a href="/universen" class="uni-card" style="--card-accent:#2C4E7A;">
+          <span class="card-label">Welten</span>
+          <h3>Baumeister & NOXIA</h3>
+          <p>Zwei große literarische Räume: Vergangenheit bis Gegenwart, Zukunft des Sonnensystems.</p>
+          <span class="enter-link">Welten betreten</span>
+        </a>
+
+        <a href="/grundlagen" class="uni-card" style="--card-accent:#4a9b9b;">
+          <span class="card-label">Grundlagen</span>
+          <h3>Ideen & Sprache</h3>
+          <p>Omnizedenz, AVI, Mishkenaz und die Modelle hinter vielen Texten.</p>
+          <span class="enter-link">Grundlagen lesen</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="aktuelles-section">
+    <div class="container">
+      <span class="aktuelles-label">Aktuelles</span>
+      <h2 class="aktuelles-title">Neue Texte</h2>
+      <div class="aktuelles-grid">
+
+        <a href="/texte/gottesdienst" class="aktuelles-card">
+          <span class="aktuelles-card-type">Theologische Reihe &middot; 6 Essays</span>
+          <h3>Gottesdienst, Freiheit und das Gericht</h3>
+          <p>Eine Reihe &uuml;ber Mündigkeit, Verantwortung und das, was man Gott nennen k&ouml;nnte &ndash; von der Frage, wer hier eigentlich wem dient, bis zur Frage, was am Ende eines Lebens z&auml;hlt.</p>
+          <span class="mehr">Zur Reihe &rarr;</span>
+        </a>
+
+        <a href="/texte/aufmerksamkeit" class="aktuelles-card">
+          <span class="aktuelles-card-type">Kurzgeschichte</span>
+          <h3>Aufmerksamkeit</h3>
+          <p>Er war gerade noch rechtzeitig gekommen. Was er dann nicht sah &ndash; und was das &uuml;ber Wahrnehmung, Verdr&auml;ngung und Verantwortung sagt.</p>
+          <span class="mehr">Lesen &rarr;</span>
+        </a>
+
       </div>
     </div>
   </section>
