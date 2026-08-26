@@ -71,6 +71,8 @@ Dann wäre die Stunde am Sonntag nicht der eigentliche Gottesdienst. Sie wäre E
 
 Ein Blick in ältere Sprachräume beweist diese Überlegung nicht. Etymologie entscheidet keine philosophischen Fragen. Aber sie kann zeigen, dass unsere heutigen begrifflichen Grenzen keineswegs selbstverständlich sind.
 
+Im Hebräischen gibt es dafür ein Wort, das uns zeigen kann, dass unsere Trennung zwischen Arbeit und Gottesdienst nicht selbstverständlich ist.
+
 Das hebräische **ʿAvodah** gehört zu einem Bedeutungsraum, in dem Arbeit und Dienst eng beieinanderliegen. Das Wort kann gewöhnliche Arbeit ebenso bezeichnen wie Dienst und kultischen Dienst.
 
 Das bedeutet nicht, dass jede Arbeit Gottesdienst wäre. Aber die für uns vertraute Trennung zwischen alltäglichem Tätigsein und religiösem Dienst wird weniger selbstverständlich.
