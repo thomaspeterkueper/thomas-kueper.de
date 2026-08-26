@@ -55,7 +55,7 @@ Meine Entscheidung verändert deine Möglichkeiten. Deine Entscheidung veränder
 
 Freiheit ist deshalb kein isoliertes Vermögen. Sie ist **relational wirksam**.
 
-Sobald mehrere freie Wesen denselben Wirklichkeitsraum teilen, entsteht ein Geflecht gegenseitiger Eingriffe. Das Problem der Vorsehung wird damit zu einem Mehrkörperproblem.
+Sobald mehrere freie Wesen denselben Wirklichkeitsraum teilen, entsteht ein Geflecht gegenseitiger Eingriffe. Das Problem der Vorsehung wird damit zu einem Problem der vielen Beteiligten.
 
 ---
 
@@ -71,7 +71,7 @@ Oder vielleicht existiert überhaupt kein individueller Plan im Sinne einer bere
 
 Der entscheidende Punkt ist nicht, eine jahrtausendealte Debatte mit einem logischen Trick zu lösen. Er ist bescheidener und zugleich folgenreicher:
 
-**Wenn Freiheit real ist und Menschen relational miteinander verbunden sind, können ihre Lebenswege nicht als voneinander unabhängige Linien gedacht werden.**
+**Wenn Freiheit wirklich ist und Menschen miteinander verbunden sind, dann kann man ihre Lebenswege nicht als voneinander unabhängige Linien zeichnen.**
 
 ---
 
@@ -127,7 +127,7 @@ Dieser Unterschied ist entscheidend.
 
 Trotzdem bleibt eine tiefere Beobachtung bestehen.
 
-Entwicklung setzt Unterschiede voraus. Wo kein Unterschied besteht, gibt es nichts, worauf geantwortet werden müsste. Neues entsteht häufig dort, wo Erwartungen nicht erfüllt werden, Perspektiven aufeinandertreffen oder vorhandene Ordnungen an ihre Grenzen geraten.
+Damit etwas Neues entstehen kann, muss es Unterschiede geben. Wo kein Unterschied besteht, gibt es nichts, worauf geantwortet werden müsste. Neues entsteht häufig dort, wo Erwartungen nicht erfüllt werden, Perspektiven aufeinandertreffen oder vorhandene Ordnungen an ihre Grenzen geraten.
 
 Man könnte dies Reibung nennen. Doch Reibung ist zunächst moralisch neutral. Sie kann Erkenntnis hervorbringen. Sie kann Kreativität ermöglichen. Sie kann eine Beziehung verändern. Sie kann ebenso in Gewalt, Unterdrückung oder Zerstörung übergehen.
 
