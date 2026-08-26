@@ -31,7 +31,7 @@ Hier greift eine methodische Grenze: Eine Metapher, die nur bestätigt, aber nie
 
 ## Herkunft und Eigenständigkeit
 
-Die theologische Rede vom „Bild Gottes" verleitet dazu, vor allem nach Ähnlichkeit zu fragen. Doch das Bild ist statisch. Kindschaft fügt etwas hinzu: Entwicklung. Das Bild trägt Ähnlichkeit. Das Kind trägt Zukunft.
+Die theologische Rede vom „Bild Gottes" fragt oft nur: Wie ähnlich sind wir Gott? Aber ein Bild ist etwas Fertiges. Ein Kind ist etwas, das wird. Das Bild trägt Ähnlichkeit. Das Kind trägt Zukunft.
 
 Es besitzt Herkunft und entwickelt zugleich Eigenständigkeit. Wenn seine Geschichte wirklich die seine werden soll, kann sie nicht bloß Wiederholung sein. Es muss möglich sein, dass etwas entsteht, das vorher nicht Wirklichkeit war.
 
