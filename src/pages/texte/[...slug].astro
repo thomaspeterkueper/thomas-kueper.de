@@ -26,6 +26,9 @@ const katLabels: Record<string, string> = {
   'geschichte': 'Geschichte',
   'forschung': 'Forschung',
   'lyrik-manifest': 'Lyrik & Manifest',
+  'tiefenwoerter': 'Tiefenwörter',
+  'denken': 'Theologische Reihe',
+  'texte': 'Essay',
 };
 
 const katLabel = katLabels[entry.data.kategorie] || entry.data.kategorie;
@@ -246,6 +249,25 @@ const katLabel = katLabels[entry.data.kategorie] || entry.data.kategorie;
     }
 
     .essay-back a:hover { color: #c9a961; }
+
+    /* Reihen-Navigation */
+    .essay-content hr + p em {
+      display: block;
+      text-align: center;
+      font-style: normal;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #aaa;
+      margin-top: 0.5rem;
+    }
+    .essay-content hr + p em a {
+      color: #c9a961;
+      border-bottom: 1px solid #e8dcc8;
+      font-style: normal;
+      letter-spacing: inherit;
+    }
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 600px) {
