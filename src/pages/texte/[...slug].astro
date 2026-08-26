@@ -41,7 +41,7 @@ const katLabel = katLabels[entry.data.kategorie] || entry.data.kategorie;
   <style is:inline>
     /* ===== ESSAY HERO ===== */
     .essay-hero {
-      padding: 9rem 2rem 3.25rem;
+      padding: 7rem 2rem 2.5rem;
       text-align: center;
       background: linear-gradient(180deg, #faf9f6 0%, #ffffff 100%);
       border-bottom: 1px solid #eee;
@@ -49,22 +49,22 @@ const katLabel = katLabels[entry.data.kategorie] || entry.data.kategorie;
 
     .essay-hero .label {
       font-family: 'Lato', sans-serif;
-      font-size: 0.65rem;
+      font-size: 0.6rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 5px;
+      letter-spacing: 4px;
       color: #c9a961;
       display: block;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
     }
 
     .essay-hero h1 {
       font-family: 'Crimson Text', serif;
-      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
       font-weight: 300;
-      line-height: 1.15;
-      margin-bottom: 1rem;
-      max-width: 800px;
+      line-height: 1.2;
+      margin-bottom: 0.85rem;
+      max-width: 700px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -72,16 +72,16 @@ const katLabel = katLabels[entry.data.kategorie] || entry.data.kategorie;
     .essay-hero .subtitle {
       font-family: 'Lora', serif;
       font-style: italic;
-      font-size: 1.2rem;
+      font-size: 1.05rem;
       color: #64748b;
-      max-width: 650px;
-      margin: 0 auto 1.75rem;
+      max-width: 580px;
+      margin: 0 auto 1.5rem;
       line-height: 1.55;
     }
 
     .essay-hero .meta-line {
       font-family: 'Lato', sans-serif;
-      font-size: 0.7rem;
+      font-size: 0.65rem;
       text-transform: uppercase;
       letter-spacing: 2px;
       color: #aaa;
@@ -90,24 +90,24 @@ const katLabel = katLabels[entry.data.kategorie] || entry.data.kategorie;
     .essay-hero .meta-line .typ-badge {
       display: inline-block;
       background: #f5f5f5;
-      padding: 0.3rem 0.8rem;
+      padding: 0.25rem 0.7rem;
       margin-right: 0.8rem;
       color: #666;
     }
 
     /* ===== ESSAY BODY (Markdown) ===== */
     .essay-content {
-      max-width: 720px;
+      max-width: 660px;
       margin: 0 auto;
-      padding: 2.75rem 2rem 5rem;
+      padding: 2.25rem 2rem 4.5rem;
     }
 
     .essay-content p {
       font-family: 'Lora', serif;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       line-height: 1.85;
       color: #333;
-      margin-bottom: 1.4rem;
+      margin-bottom: 1.1rem;
     }
 
     /* The theological essays already show the author in the hero.
@@ -121,55 +121,58 @@ const katLabel = katLabels[entry.data.kategorie] || entry.data.kategorie;
     .essay-content:not(.theological) > p:first-of-type::first-letter,
     .essay-content.theological > p:first-child:has(> em:only-child) + hr + p::first-letter {
       font-family: 'Crimson Text', serif;
-      font-size: 4rem;
+      font-size: 3.5rem;
       float: left;
-      line-height: 0.8;
-      margin-right: 0.15em;
-      margin-top: 0.1em;
+      line-height: 0.82;
+      margin-right: 0.12em;
+      margin-top: 0.08em;
       color: #c9a961;
     }
 
     .essay-content h2 {
-      font-family: 'Crimson Text', serif;
-      font-size: 2rem;
-      font-weight: 300;
-      margin-top: 2.75rem;
-      margin-bottom: 1.1rem;
-      color: #1a1a1a;
-      text-align: center;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      font-variant: normal;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-top: 2.5rem;
+      margin-bottom: 0.9rem;
+      color: #999;
+      text-align: left;
     }
 
     .essay-content h3 {
       font-family: 'Crimson Text', serif;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-weight: 400;
-      margin-top: 2.25rem;
-      margin-bottom: 0.85rem;
+      margin-top: 1.75rem;
+      margin-bottom: 0.6rem;
       color: #1a1a1a;
     }
 
     .essay-content hr {
       border: none;
       text-align: center;
-      margin: 2.25rem 0;
+      margin: 2rem 0;
       color: #c9a961;
     }
 
     .essay-content hr::after {
       content: '· · ·';
       letter-spacing: 0.8em;
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
 
     .essay-content blockquote {
       font-family: 'Crimson Text', serif;
-      font-size: 1.5rem;
+      font-size: 1.35rem;
       font-weight: 300;
       line-height: 1.5;
       color: #c9a961;
       text-align: center;
-      padding: 1.75rem 2rem;
-      margin: 2.25rem 0;
+      padding: 1.5rem 1.75rem;
+      margin: 1.75rem 0;
       border-top: 1px solid #eee;
       border-bottom: 1px solid #eee;
     }
@@ -193,14 +196,14 @@ const katLabel = katLabels[entry.data.kategorie] || entry.data.kategorie;
 
     .essay-content ul, .essay-content ol {
       font-family: 'Lora', serif;
-      font-size: 1.05rem;
+      font-size: 1rem;
       line-height: 1.8;
       color: #444;
-      margin-bottom: 1.4rem;
+      margin-bottom: 1.1rem;
       padding-left: 1.5rem;
     }
 
-    .essay-content li { margin-bottom: 0.45rem; }
+    .essay-content li { margin-bottom: 0.35rem; }
 
     .essay-content a {
       color: #c9a961;
@@ -210,6 +213,29 @@ const katLabel = katLabels[entry.data.kategorie] || entry.data.kategorie;
     }
 
     .essay-content a:hover { border-color: #c9a961; }
+
+    /* Reihen-Navigation */
+    .essay-content hr + p em {
+      display: block;
+      font-style: normal;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #bbb;
+      text-align: center;
+      margin-top: 0.5rem;
+      padding: 1.5rem 0;
+    }
+
+    .essay-content hr + p em a {
+      color: #c9a961;
+      border-bottom: 1px solid #e8dcc8;
+      font-style: normal;
+      letter-spacing: inherit;
+      padding-bottom: 2px;
+    }
 
     /* Tags at bottom */
     .essay-tags {
