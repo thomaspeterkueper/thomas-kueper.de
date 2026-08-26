@@ -77,7 +77,7 @@ Das hebräische **ʿAvodah** gehört zu einem Bedeutungsraum, in dem Arbeit und 
 
 Das bedeutet nicht, dass jede Arbeit Gottesdienst wäre. Aber die für uns vertraute Trennung zwischen alltäglichem Tätigsein und religiösem Dienst wird weniger selbstverständlich.
 
-Ähnlich interessant ist das griechische **leitourgía**, aus dem unser Wort Liturgie hervorgegangen ist. Sein älterer Bedeutungsraum umfasst den öffentlichen Dienst, ein Werk für die Gemeinschaft. Erst seine Geschichte macht daraus jenen stark kultisch geprägten Begriff, den wir heute kennen.
+Ähnlich interessant ist das griechische **leitourgía**, aus dem unser Wort Liturgie hervorgegangen ist. Es bedeutete ursprünglich: einen öffentlichen Dienst tun, etwas für die Gemeinschaft. Erst später wurde daraus der stark religiös geprägte Begriff Liturgie.
 
 Und dann ist da das lateinische **cultus**, verbunden mit *colere*: pflegen, bebauen, kultivieren, bewohnen, verehren.
 
