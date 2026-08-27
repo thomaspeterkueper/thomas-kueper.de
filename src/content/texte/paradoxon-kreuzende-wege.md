@@ -45,9 +45,9 @@ Was geschieht dann mit seinem vorgesehenen Weg?
 
 ## Das Mehrkörperproblem der Freiheit
 
-Die klassische Frage nach freiem Willen wird häufig behandelt, als beträfe sie eine Beziehung zwischen zwei Beteiligten: Gott und Mensch.
+Wir behandeln die klassische Frage nach freiem Willen häufig, als beträfe sie eine Beziehung zwischen zwei Beteiligten: Gott und Mensch.
 
-Weiß Gott bereits, was ich tun werde? Kann meine Entscheidung frei sein, wenn sie vorher gewusst wird?
+Weiß Gott bereits, was ich tun werde? Kann meine Entscheidung frei sein, wenn Gott sie vorher kennt?
 
 Aber das wirkliche Problem ist größer. Freiheit findet nicht im Vakuum statt.
 
@@ -111,7 +111,7 @@ Hier liegt jedoch eine Versuchung.
 
 Wenn Reibung unvermeidbar ist und Veränderung hervorbringen kann, liegt der Satz nahe: **Leiden ist notwendig, damit Entwicklung möglich wird.**
 
-Dieser Satz sollte nicht gesagt werden.
+Diesen Satz sollten wir nicht sagen.
 
 Er verwandelt fremdes Leiden nachträglich in ein Mittel für einen größeren Zweck. Nicht jedes Leid bildet. Nicht jede Verletzung macht stärker. Nicht jede Katastrophe enthält eine verborgene Lektion.
 
