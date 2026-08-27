@@ -151,7 +151,7 @@ Dann wäre die Zukunft weder vollständig geschrieben noch vollkommen ungeformt.
 
 ## Verantwortung
 
-Damit kehrt ein Satz zurück, der bereits den ersten Essay dieser Reihe beschlossen hat.
+Damit kehrt ein Satz zurück, der bereits *Gottesdienst* beschlossen hat.
 
 Ich bin nicht Ursprung des Ganzen. Ich habe meine Ausgangslage nicht gewählt. Ich habe die anderen Menschen nicht erschaffen. Ich kontrolliere ihre Entscheidungen nicht.
 
