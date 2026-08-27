@@ -45,7 +45,7 @@ Das bedeutet nicht, dass Gebet lediglich eine psychologische Technik wäre. Es b
 
 ## Der Hörende
 
-Doch ein Gebet geschieht selten in einer vollkommen isolierten Welt.
+Doch ein Gebet geschieht selten in einer isolierten Welt.
 
 Menschen sind miteinander verbunden durch Sprache, Verhalten, Gewohnheiten, Nähe, Erinnerung, Fürsorge und zahllose Formen der Wahrnehmung.
 
@@ -119,9 +119,9 @@ Aufmerksamkeit beginnt genau dort: nicht bei einer besonderen Erfahrung, sondern
 
 Bis hierhin benötigen wir keinen Feldbegriff.
 
-Aufmerksamkeit, Verhalten, Kommunikation, Empathie und soziale Beziehungen erklären bereits sehr viel von dem, was Menschen als überraschende Antwort erleben. Das sollte man ernst nehmen. Eine Philosophie verliert nichts dadurch, dass sie das Erklärbare erklären lässt.
+Aufmerksamkeit, Verhalten, Kommunikation, Empathie und soziale Beziehungen erklären bereits vieles von dem, was Menschen als überraschende Antwort erleben. Das sollte man ernst nehmen. Eine Philosophie verliert nichts dadurch, dass sie das Erklärbare erklären lässt.
 
-Aber anschließend darf eine andere Frage gestellt werden:
+Aber anschließend dürfen wir eine andere Frage stellen:
 
 **Ist damit bereits vollständig beschrieben, was Beziehung ist?**
 
@@ -145,7 +145,7 @@ Vielleicht muss Gebet nicht ausschließlich eine Nachricht sein, die von einem M
 
 Es könnte eine Form bewusster Beziehung sein. Eine Weise, etwas nicht gleichgültig sein zu lassen. Ein Mensch, eine Sorge, eine Hoffnung werden für einen Augenblick so ernst genommen, dass sie das eigene Handeln verändern dürfen.
 
-Ob darüber hinaus etwas geschieht, das unsere gewöhnlichen Modelle von Beziehung überschreitet, bleibt offen. Offenheit ist hier keine Schwäche. Sie verhindert lediglich, dass aus einer Erfahrung vorschnell eine Mechanik gemacht wird.
+Ob darüber hinaus etwas geschieht, das unsere gewöhnlichen Modelle von Beziehung überschreitet, bleibt offen. Offenheit ist hier keine Schwäche. Sie verhindert lediglich, dass wir aus einer Erfahrung vorschnell eine Mechanik machen.
 
 ---
 
