@@ -77,7 +77,7 @@ Deshalb gehört eine zweite Frage dazu, untrennbar:
 
 Das eine darf das andere nicht ersetzen. Zusammen bilden sie das, was Mündigkeit tatsächlich fordert: Handle selbst und trage die Folgen deiner Eigenständigkeit. Nicht nur für das, was du erschaffen hast. Auch für das, was du anderen getan oder versäumt hast zu tun.
 
-Das erste Essay dieser Reihe hatte gesagt: Wer „Vater unser" sagt, kann Gott nicht für sich allein haben. In *Kinder Gottes* erzeugte Kindschaft Geschwisterlichkeit.
+*Kinder Gottes* hatte gesagt: Wer „Vater unser“ sagt, kann Gott nicht für sich allein haben. Kindschaft erzeugte darin Geschwisterlichkeit.
 
 Hier kommt diese Geschwisterlichkeit zurück, nicht als frommer Gedanke, sondern als Rechenschaft: Die anderen waren von Anfang an Teil der Geschichte. Sie konnten nie herausgerechnet werden.
 
