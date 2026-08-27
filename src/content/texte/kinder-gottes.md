@@ -105,7 +105,7 @@ Vielleicht gilt deshalb für den Garten dasselbe wie für jedes Elternhaus: Dass
 
 **Ich komme von dir. Aber ich bin nicht du.**
 
-Darin liegt kein Verrat am Ursprung. Vielleicht beginnt genau dort die Verantwortung, die eine Herkunft ihren Kindern überhaupt erst zutrauen kann.
+Darin liegt kein Verrat am Ursprung. Es ist vielleicht das Einzige, was Herkunft wirklich geben kann: die Freiheit, sich von ihr zu unterscheiden und die Verantwortung, die erst daraus entsteht.
 
 ---
 
