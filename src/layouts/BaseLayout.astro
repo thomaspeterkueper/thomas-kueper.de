@@ -1,6 +1,16 @@
 ---
 const { title, description } = Astro.props;
 import headerAvatar from '../assets/header-avatar.jpg';
+
+const depthSiteLinks: Record<string, { href: string; label: string }> = {
+  '/romane/endia': { href: 'https://endia.de', label: 'ENDIA vertiefen' },
+  '/universen/endia': { href: 'https://endia.de', label: 'ENDIA vertiefen' },
+  '/universen/zereya': { href: 'https://zereya.de', label: 'Zereya vertiefen' },
+  '/philosophie/fluide-hermeneutik': { href: 'https://fluide-hermeneutics.org', label: 'Fluide Hermeneutik vertiefen' },
+  '/philosophie/resonanz-ethik': { href: 'https://resonanceethics.org', label: 'Resonanz-Ethik vertiefen' },
+};
+const normalizedPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+const depthSiteLink = depthSiteLinks[normalizedPath];
 ---
 
 <!DOCTYPE html>
@@ -59,6 +69,9 @@ import headerAvatar from '../assets/header-avatar.jpg';
     .mobile-nav-link:hover{color:var(--gold)}
 
     main{min-height:calc(100vh - 100px);padding-top:100px}
+    .depth-site-link{max-width:var(--max-width);margin:2rem auto 0;padding:0 2rem;text-align:right}
+    .depth-site-link a{display:inline-block;font-family:'Lato',sans-serif;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.16em;text-decoration:none;color:var(--brand-blue);border-bottom:1px solid var(--gold);padding-bottom:.25rem}
+    .depth-site-link a:hover{color:var(--gold)}
     .site-footer{padding:10rem 0 5rem;background:var(--dark);color:#94a3b8;text-align:center}
     .footer-title{font-size:1.8rem;color:#fff;margin-bottom:1rem;letter-spacing:3px;text-transform:uppercase}
     .footer-divider{width:40px;height:1px;background:var(--gold);margin:2rem auto}
@@ -69,7 +82,7 @@ import headerAvatar from '../assets/header-avatar.jpg';
     .copyright{font-size:.65rem;text-transform:uppercase;letter-spacing:3px;opacity:.5}
 
     @media(max-width:1000px){.nav-menu{gap:1.1rem}.nav-link{letter-spacing:.14em}}
-    @media(max-width:900px){.nav-menu{display:none}.hamburger{display:block}.logo-name{font-size:.9rem;letter-spacing:.1em}}
+    @media(max-width:900px){.nav-menu{display:none}.hamburger{display:block}.logo-name{font-size:.9rem;letter-spacing:.1em}.depth-site-link{text-align:left}}
   </style>
 </head>
 <body>
@@ -107,6 +120,11 @@ import headerAvatar from '../assets/header-avatar.jpg';
   </div>
 
   <main>
+    {depthSiteLink && (
+      <div class="depth-site-link">
+        <a href={depthSiteLink.href} rel="noopener">{depthSiteLink.label} →</a>
+      </div>
+    )}
     <slot />
   </main>
 
