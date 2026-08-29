@@ -1,6 +1,10 @@
 ---
 // Pfad: src/pages/datenschutz.astro
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getLegalInfo, legalAddressLines } from '../lib/legal';
+
+const legal = await getLegalInfo();
+const addressLines = legalAddressLines(legal.address);
 ---
 
 <BaseLayout title="Datenschutz" description="Datenschutzerklärung für thomas-kueper.de">
@@ -14,10 +18,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <h2 style="font-family:'Crimson Text', serif; font-size: 2rem; margin-bottom: 1.5rem;">0. Verantwortlicher</h2>
       <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
       <p style="margin-top: 0.5rem;">
-        Thomas Peter Küper<br />
-        Mörfelder Landstraße 103<br />
-        60598 Frankfurt am Main<br />
-        E-Mail: <a href="mailto:t.kueper@camaleo.de">t.kueper@camaleo.de</a>
+        {legal.responsible}<br />
+        {addressLines.map((line) => <>{line}<br /></>)}
+        E-Mail: <a href={`mailto:${legal.email}`}>{legal.email}</a>
       </p>
     </section>
 
@@ -73,12 +76,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         Postfach 3163, 65021 Wiesbaden.
       </p>
       <p style="margin-top: 0.75rem;">
-        Anfragen: <a href="mailto:t.kueper@camaleo.de">t.kueper@camaleo.de</a>
+        Anfragen: <a href={`mailto:${legal.email}`}>{legal.email}</a>
       </p>
     </section>
 
     <footer style="margin-top: 6rem; font-size: 0.8rem; opacity: 0.6; border-top: 1px solid var(--border); padding-top: 2rem;">
-      Stand: August 2026 — Thomas Peter Küper
+      Stand: August 2026 — {legal.responsible}
     </footer>
   </article>
 </BaseLayout>
