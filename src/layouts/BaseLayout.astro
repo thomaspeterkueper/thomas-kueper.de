@@ -19,7 +19,7 @@ import headerAvatar from '../assets/header-avatar.jpg';
     @font-face{font-family:'Lato';src:url('/fonts/lato-v25-latin-700.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
 
     :root{
-      --gold:#c9a961;--gold-light:#e5dcc8;--brand-blue:#2C4E7A;--dark:#121416;
+      --gold:#c9a961;--gold-text:#8a6a2a;--gold-light:#e5dcc8;--brand-blue:#2C4E7A;--dark:#121416;
       --text:#1a1a1a;--text-muted:#64748b;--border:#f1f1f1;--bg-soft:#faf9f6;--max-width:1150px;
       --color-gold:#c9a961;--color-petrol:#4a9b9b;--color-petrol-light:rgba(74,155,155,.08);
       --color-border:#f1f1f1;--color-text:#1a1a1a;--color-text-light:#64748b;
@@ -39,9 +39,9 @@ import headerAvatar from '../assets/header-avatar.jpg';
     .header-avatar{width:48px;height:48px;border-radius:50%;object-fit:cover;border:1px solid var(--gold-light)}
     .logo-name{font-size:1.4rem;letter-spacing:.15em;text-transform:uppercase}
     .nav-menu{display:flex;gap:1.75rem;align-items:center}
-    .nav-link{text-decoration:none;color:var(--text);font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.2em;position:relative;padding:.5rem 0}
+    .nav-link{text-decoration:none;color:var(--text);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.2em;position:relative;padding:.5rem 0}
     .nav-link::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--gold);transition:width .3s ease}
-    .nav-link:hover{color:var(--gold)}
+    .nav-link:hover{color:var(--gold-text)}
     .nav-link:hover::after{width:100%}
 
     .hamburger{display:none;background:none;border:0;cursor:pointer;width:44px;height:44px;position:relative;z-index:1100;-webkit-tap-highlight-color:transparent}

@@ -6,12 +6,14 @@ import authorImg from '../assets/portrait3.jpg';
 <BaseLayout title="Home" description="Thomas Peter Küper — Autor, Weltenbauer und Entwickler von Ideen.">
   <style>
     .home-hero{padding:8rem 0 6rem;background-color:var(--bg-soft);border-bottom:1px solid var(--border)}
-    .hero-grid{display:grid;grid-template-columns:400px 1fr;gap:6rem;align-items:center}
-    .portrait-img{width:100%;border-radius:2px;box-shadow:0 30px 60px rgba(0,0,0,.1);border:1px solid var(--border);transition:transform .5s ease}
-    .portrait-img:hover{transform:scale(1.02)}
+    .hero-grid{display:grid;grid-template-columns:460px 1fr;gap:5rem;align-items:center}
+    .portrait-img{display:block;width:100%;border-radius:2px;box-shadow:0 24px 48px rgba(0,0,0,.08)}
     .hero-text h1{font-family:'Crimson Text',serif;font-size:clamp(3rem,6vw,4.5rem);font-weight:300;margin-bottom:1.5rem;line-height:1}
-    .lead-text{font-family:'Lora',serif;font-size:1.25rem;color:var(--gold);font-style:italic;margin-bottom:2rem;display:block}
+    .lead-text{font-family:'Lora',serif;font-size:1.25rem;color:var(--gold-text);font-style:italic;margin-bottom:2rem;display:block}
     .hero-text p{font-size:1.15rem;line-height:1.9;margin-bottom:3rem;max-width:680px}
+    .hero-actions{display:flex;align-items:center;gap:2.5rem;flex-wrap:wrap}
+    .btn-secondary{font-family:'Lato',sans-serif;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--text);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:4px;transition:color .3s}
+    .btn-secondary:hover{color:var(--gold-text)}
     .btn-primary{display:inline-block;text-decoration:none;background-color:var(--text);color:#fff;padding:1.2rem 3rem;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.2em;transition:.3s}
     .btn-primary:hover{background-color:var(--gold);transform:translateY(-3px)}
 
@@ -21,14 +23,14 @@ import authorImg from '../assets/portrait3.jpg';
     .uni-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--card-accent,var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .5s ease}
     .uni-card:hover{border-color:var(--gold);transform:translateY(-10px);box-shadow:0 30px 60px rgba(0,0,0,.05)}
     .uni-card:hover::before{transform:scaleX(1)}
-    .uni-card .card-label{font-family:'Lato',sans-serif;font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--gold);display:block;margin-bottom:1.5rem}
+    .uni-card .card-label{font-family:'Lato',sans-serif;font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--gold-text);display:block;margin-bottom:1.5rem}
     .uni-card h3{font-family:'Crimson Text',serif;font-size:2.2rem;font-weight:300;margin-bottom:1rem}
     .uni-card p{font-family:'Lora',serif;font-style:italic;font-size:1rem;color:#555;line-height:1.7}
     .uni-card .enter-link{display:inline-block;margin-top:2rem;font-family:'Lato',sans-serif;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--text);border-bottom:1px solid var(--gold);padding-bottom:4px;transition:color .3s}
     .uni-card:hover .enter-link{color:var(--gold)}
 
     .archiv-section{padding:6rem 0;background:var(--bg-soft);border-top:1px solid var(--border);text-align:center}
-    .archiv-inner{max-width:680px;margin:0 auto}.archiv-label{font-family:'Lato',sans-serif;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.25em;color:var(--gold);display:block;margin-bottom:1.5rem}
+    .archiv-inner{max-width:680px;margin:0 auto}.archiv-label{font-family:'Lato',sans-serif;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.25em;color:var(--gold-text);display:block;margin-bottom:1.5rem}
     .archiv-section h2{font-family:'Crimson Text',serif;font-size:3rem;font-weight:300;color:var(--text);letter-spacing:.1em;margin-bottom:1.25rem}
     .archiv-section p{font-family:'Lora',serif;font-size:1rem;color:var(--text-muted);line-height:1.85;font-style:italic;margin-bottom:2.5rem}
     .archiv-link{font-family:'Lato',sans-serif;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--text);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:4px;transition:color .3s}
@@ -36,12 +38,12 @@ import authorImg from '../assets/portrait3.jpg';
 
 
     .neu-section{padding:7rem 0;border-bottom:1px solid var(--border)}
-    .neu-label{font-family:'Lato',sans-serif;font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.3em;color:var(--gold);display:block;margin-bottom:1rem}
+    .neu-label{font-family:'Lato',sans-serif;font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.3em;color:var(--gold-text);display:block;margin-bottom:1rem}
     .neu-title{font-family:'Crimson Text',serif;font-size:2.5rem;font-weight:300;margin-bottom:3.5rem}
     .neu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-bottom:2.5rem}
     .neu-card{display:block;text-decoration:none;color:inherit;border:1px solid var(--border);padding:2.5rem;transition:all .3s}
     .neu-card:hover{border-color:var(--gold);transform:translateY(-4px)}
-    .neu-card-reihe{font-family:'Lato',sans-serif;font-size:.58rem;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--gold);display:block;margin-bottom:1rem}
+    .neu-card-reihe{font-family:'Lato',sans-serif;font-size:.58rem;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--gold-text);display:block;margin-bottom:1rem}
     .neu-card h3{font-family:'Crimson Text',serif;font-size:1.6rem;font-weight:300;margin-bottom:.75rem;line-height:1.2}
     .neu-card p{font-family:'Lora',serif;font-size:.9rem;color:#666;line-height:1.7;font-style:italic}
     .neu-more{text-align:center;padding-top:1rem}
@@ -49,18 +51,18 @@ import authorImg from '../assets/portrait3.jpg';
 
 
     .aktuelles-section{padding:5rem 0;border-bottom:1px solid var(--border)}
-    .aktuelles-label{font-family:'Lato',sans-serif;font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.3em;color:var(--gold);display:block;margin-bottom:1rem}
+    .aktuelles-label{font-family:'Lato',sans-serif;font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.3em;color:var(--gold-text);display:block;margin-bottom:1rem}
     .aktuelles-title{font-family:'Crimson Text',serif;font-size:2.5rem;font-weight:300;margin-bottom:3rem}
     .aktuelles-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
     .aktuelles-card{display:block;text-decoration:none;color:inherit;border-left:2px solid var(--border);padding-left:1.75rem;transition:border-color .3s}
     .aktuelles-card:hover{border-left-color:var(--gold)}
-    .aktuelles-card-type{font-family:'Lato',sans-serif;font-size:.58rem;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--gold);display:block;margin-bottom:.6rem}
+    .aktuelles-card-type{font-family:'Lato',sans-serif;font-size:.58rem;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--gold-text);display:block;margin-bottom:.6rem}
     .aktuelles-card h3{font-family:'Crimson Text',serif;font-size:1.75rem;font-weight:300;margin-bottom:.6rem;line-height:1.2}
     .aktuelles-card p{font-family:'Lora',serif;font-size:.95rem;color:#666;line-height:1.75;font-style:italic;margin-bottom:1rem}
     .aktuelles-card .mehr{font-family:'Lato',sans-serif;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:var(--text);border-bottom:1px solid var(--gold);padding-bottom:2px}
     @media(max-width:750px){.aktuelles-grid{grid-template-columns:1fr}}
 
-    @media(max-width:950px){.hero-grid{grid-template-columns:1fr;text-align:center}.portrait-box{max-width:320px;margin:0 auto}.universe-cards{grid-template-columns:1fr;max-width:500px;margin:0 auto}.uni-card{padding:3.5rem 2.5rem}.hero-text p{margin-left:auto;margin-right:auto}}
+    @media(max-width:950px){.hero-grid{grid-template-columns:1fr;text-align:center}.portrait-box{max-width:320px;margin:0 auto}.universe-cards{grid-template-columns:1fr;max-width:500px;margin:0 auto}.uni-card{padding:3.5rem 2.5rem}.hero-text p{margin-left:auto;margin-right:auto}.hero-actions{justify-content:center}}
   </style>
 
   <section class="home-hero">
@@ -70,7 +72,10 @@ import authorImg from '../assets/portrait3.jpg';
         <span class="lead-text">Thomas Peter Küper</span>
         <h1>Schreiber & Weltenbauer</h1>
         <p>Ich schaue genau hin – auf das, was zwischen den Zeilen passiert, in den Pausen zwischen zwei Tönen, in dem Moment, bevor eine Entscheidung fällt. Meine Geschichten entstehen dort, wo die Dinge aneinanderstoßen.</p>
-        <a href="/ueber-mich" class="btn-primary">Mehr über mich</a>
+        <div class="hero-actions">
+          <a href="/romane" class="btn-primary">Zu den Büchern</a>
+          <a href="/ueber-mich" class="btn-secondary">Mehr über mich &rarr;</a>
+        </div>
       </div>
     </div>
   </section>
