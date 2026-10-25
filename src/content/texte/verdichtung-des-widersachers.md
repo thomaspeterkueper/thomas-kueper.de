@@ -43,11 +43,11 @@ Dass *ha-Satan* und Luzifer dieselbe Figur sein sollen – das steht so in keine
 
 Die bekannteste Stelle, auf die sich die Luzifer-Tradition stützt, ist Jesaja 14. Ein Blick in den hebräischen Text zeigt etwas anderes:
 
-> *„Wie bist du vom Himmel gefallen, du Glänzender, Sohn der Morgenröte!"* (Jes 14,12)
+> *„Wie bist du vom Himmel gefallen, du Glänzender, Sohn der Morgenröte!“* (Jes 14,12)
 
-Das hebräische Wort ist **Hêlēl ben-Šāḥar** — „Glänzender, Sohn der Morgenröte". Es ist kein Eigenname, sondern eine Beschreibung, die auf den Planeten Venus als Morgenstern verweist. Der Kontext ist eindeutig: Es handelt sich um ein Spottlied auf den König von Babel, eine politische Satire.
+Das hebräische Wort ist **Hêlēl ben-Šāḥar** — „Glänzender, Sohn der Morgenröte“. Es ist kein Eigenname, sondern eine Beschreibung, die auf den Planeten Venus als Morgenstern verweist. Der Kontext ist eindeutig: Es handelt sich um ein Spottlied auf den König von Babel, eine politische Satire.
 
-Die Verse davor und danach machen das klar: *„Nimm dieses Spottlied gegen den König von Babel auf"* (V. 4). Der König wird mit anderen irdischen Königen verglichen (V. 18–19). Er hat ein Begräbnisproblem (V. 20). Das himmlische Fallen ist die poetische Darstellung des Sturzes eines irdischen Herrschers; der weitere Kontext führt ihn schließlich unter die Toten und nach Scheol.
+Die Verse davor und danach machen das klar: *„Nimm dieses Spottlied gegen den König von Babel auf“* (V. 4). Der König wird mit anderen irdischen Königen verglichen (V. 18–19). Er hat ein Begräbnisproblem (V. 20). Das himmlische Fallen ist die poetische Darstellung des Sturzes eines irdischen Herrschers; der weitere Kontext führt ihn schließlich unter die Toten und nach Scheol.
 
 Die spätere Lesart, die in dieser Passage den Fall eines Engels sah, ist dem Text nicht einfach entnommen. Aber sie ist auch nicht willkürlich. Die Bildsprache — der Aufstieg zur Höhe, der Anspruch, den Göttern gleich zu sein — machte es möglich, diesen Text mit anderen Texten zusammenzulesen. Die **Verdichtung** beginnt nicht mit einem Fehler, sondern mit einer Wahrnehmung von Ähnlichkeit.
 
@@ -63,7 +63,7 @@ Auch hier: Kein Engel, kein Satan. Aber die Motive — Aufstieg, Hybris, Fall �
 
 Das Neue Testament liefert ein weiteres Motiv:
 
-> *„Ich sah den Satan wie einen Blitz vom Himmel fallen."* (Lukas 10,18)
+> *„Ich sah den Satan wie einen Blitz vom Himmel fallen.“* (Lukas 10,18)
 
 Dieser Satz erzählt keine Lebensgeschichte. Er ist ein Bild: Jesus sieht den Sturz des Satans – als Zeichen dafür, dass eine bestimmte Macht gebrochen ist, verbunden mit dem Erfolg der ausgesandten Jünger. Was genau dieses Bild bezeichnet, ist auslegungsbedürftig. Eine vollständige Urgeschichte des Teufels liefert die Stelle jedenfalls nicht.
 

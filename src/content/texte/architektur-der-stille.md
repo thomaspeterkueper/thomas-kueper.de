@@ -75,7 +75,7 @@ Das Wunder müsste dann nicht dort beginnen, wo Naturgesetze außer Kraft gesetz
 
 Ein Mensch nimmt einen anderen ernst, obwohl er keinen Vorteil davon hat. Jemand erkennt eine Not, bevor sie ausdrücklich ausgesprochen wurde. Einer unterbricht den eigenen Plan, weil ein anderer plötzlich wichtiger geworden ist.
 
-Nichts davon verletzt ein Naturgesetz. Und trotzdem können solche Augenblicke für den Betroffenen so unwahrscheinlich, so genau und so bedeutsam sein, dass das Wort „Zufall" ebenso unzureichend erscheint wie eine vorschnelle übernatürliche Erklärung.
+Nichts davon verletzt ein Naturgesetz. Und trotzdem können solche Augenblicke für den Betroffenen so unwahrscheinlich, so genau und so bedeutsam sein, dass das Wort „Zufall“ ebenso unzureichend erscheint wie eine vorschnelle übernatürliche Erklärung.
 
 Die angemessene Haltung besteht zunächst darin, das Ereignis nicht kleiner zu machen, nur weil wir seinen Zusammenhang erklären können.
 

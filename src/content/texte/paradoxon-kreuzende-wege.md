@@ -67,7 +67,7 @@ Vielleicht enthält der göttliche Plan bereits jede Entscheidung von B und jede
 
 Vielleicht kennt Gott sämtliche Möglichkeiten, ohne eine davon festzulegen. Dann wäre der Plan keine festgeschriebene Route mehr, sondern etwas anderes: ein Raum möglicher Verläufe.
 
-Oder vielleicht existiert überhaupt kein individueller Plan im Sinne einer bereits vorgezeichneten Biographie. Dann wäre die Vorstellung vom „richtigen Weg" selbst das Problem.
+Oder vielleicht existiert überhaupt kein individueller Plan im Sinne einer bereits vorgezeichneten Biographie. Dann wäre die Vorstellung vom „richtigen Weg“ selbst das Problem.
 
 Der entscheidende Punkt ist nicht, eine jahrtausendealte Debatte mit einem logischen Trick zu lösen. Er ist bescheidener und zugleich folgenreicher:
 
@@ -141,7 +141,7 @@ Was bleibt dann vom göttlichen Plan?
 
 Weniger Gewissheit. Aber vielleicht eine interessantere Vorstellung.
 
-Vielleicht besteht ein göttlicher Plan nicht darin, dass für jeden Menschen bereits feststeht, welche Straße er am Dienstag um 14.37 Uhr entlanggehen wird. Vielleicht bezeichnet „Plan" überhaupt keine Abfolge von Ereignissen.
+Vielleicht besteht ein göttlicher Plan nicht darin, dass für jeden Menschen bereits feststeht, welche Straße er am Dienstag um 14.37 Uhr entlanggehen wird. Vielleicht bezeichnet „Plan“ überhaupt keine Abfolge von Ereignissen.
 
 Vielleicht liegt Ordnung auf einer anderen Ebene. In den Bedingungen, unter denen Neues entstehen kann. In der Möglichkeit von Beziehung. In der Tatsache, dass Handlungen Folgen haben. In der Offenheit dafür, dass auf Geschehenes geantwortet werden kann.
 

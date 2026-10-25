@@ -89,7 +89,7 @@ Ein Feld kann man nicht besänftigen. Man kann ihm nicht schmeicheln. Aber man k
 
 ## Die übrigen 167 Stunden
 
-Auch das deutsche „Gottesdienst" bezeichnete historisch nicht ausschließlich die zeitlich abgegrenzte gemeinschaftliche Feier. Zu seinem Bedeutungsraum gehörten Glaubensausübung, Lebensführung und Dienst am Nächsten.
+Auch das deutsche „Gottesdienst“ bezeichnete historisch nicht ausschließlich die zeitlich abgegrenzte gemeinschaftliche Feier. Zu seinem Bedeutungsraum gehörten Glaubensausübung, Lebensführung und Dienst am Nächsten.
 
 Wir legen damit vielleicht einen älteren Raum wieder frei.
 
@@ -133,7 +133,7 @@ Ein Mensch bleibt eine konkrete Stelle mit Erinnerung, Geschichte, Entscheidungs
 
 Wir kennen Augenblicke, in denen ein Gedanke auftaucht, bevor wir sagen könnten, woher er kam. Ein Satz stimmt plötzlich. Ein anderer Mensch erreicht uns. Etwas verändert unseren Blick. Wir sind nicht vollständig geschlossen.
 
-Doch daraus darf keine Entschuldigung werden. „Es geschah durch mich" kann niemals bedeuten: „Also bin ich nicht verantwortlich."
+Doch daraus darf keine Entschuldigung werden. „Es geschah durch mich“ kann niemals bedeuten: „Also bin ich nicht verantwortlich.“
 
 Andere Menschen begegnen nicht meinem metaphysischen Ursprung. Sie begegnen meinen Handlungen und ihren Folgen.
 
@@ -155,9 +155,9 @@ Wenn wir über Beziehung, Aufmerksamkeit, Offenheit für das Andere, Durchlässi
 
 Vielleicht benötigen wir es nicht. Dann wäre das Ergebnis eine Ethik der Beziehung mit religiöser Herkunft.
 
-Aber „das Göttliche" bezeichnet vielleicht auch keinen weiteren Gegenstand innerhalb der Wirklichkeit – ein Name für jene Dimension, in der Beziehung für uns mehr sein kann als bloße Wechselwirkung: in der ein anderer Mensch nicht nur auf uns einwirkt, sondern uns etwas angeht; in der aus Wirkung Antwort und aus Antwort Verantwortung werden kann.
+Aber „das Göttliche“ bezeichnet vielleicht auch keinen weiteren Gegenstand innerhalb der Wirklichkeit – ein Name für jene Dimension, in der Beziehung für uns mehr sein kann als bloße Wechselwirkung: in der ein anderer Mensch nicht nur auf uns einwirkt, sondern uns etwas angeht; in der aus Wirkung Antwort und aus Antwort Verantwortung werden kann.
 
-Ob man diese Dimension „Gott" nennen muss, bleibt offen. Denn sobald Gott wieder zu etwas wird, das wir vollständig definieren und besitzen können, beginnt möglicherweise jene Verhärtung, die wir gerade überwinden wollten.
+Ob man diese Dimension „Gott“ nennen muss, bleibt offen. Denn sobald Gott wieder zu etwas wird, das wir vollständig definieren und besitzen können, beginnt möglicherweise jene Verhärtung, die wir gerade überwinden wollten.
 
 ---
 

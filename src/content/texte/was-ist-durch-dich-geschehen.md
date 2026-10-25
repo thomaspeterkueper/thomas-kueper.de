@@ -97,7 +97,7 @@ Sondern: Was hat es getan? Was ist durch es entstanden? Und vor allem: Was ist a
 
 Diese drei Fragen sind nicht dieselbe Frage. Die erste fragt nach dem, was war. Die zweite fragt nach dem, was entstand. Die dritte holt zurück, was die zweite allein unterschlägt: dass die Geschichte nicht im Vakuum stattfand. Andere waren darin. Sie wurden berührt, ermöglicht, verletzt, übergangen. Das kann nicht herausgerechnet werden.
 
-Wer „Vater unser" sagt, kann Gott nicht für sich allein haben. Dieser Satz kehrt hier zurück, nicht als frommer Gedanke, sondern als Rechenschaftsforderung.
+Wer „Vater unser“ sagt, kann Gott nicht für sich allein haben. Dieser Satz kehrt hier zurück, nicht als frommer Gedanke, sondern als Rechenschaftsforderung.
 
 Die Intuition ist nicht neu. Im Matthäusevangelium gibt es eine Gerichtsszene, in der es nicht auf Glauben ankommt – sondern darauf, ob jemand gehandelt hat. Ob er hungrige Menschen gespeist, Fremde aufgenommen, Kranke besucht hat. Die Gerichteten wissen selbst nicht, wann sie es getan oder unterlassen haben. Das Urteil gilt dem, was wirklich geschah, nicht dem, was einer über sich glaubt. Ein anderes Gleichnis erzählt von einem, der sein anvertrautes Geld nur vergraben hat, um es sicher zurückzugeben. Aber das genügte nicht. Die Frage war nicht: Hast du es behalten? Sondern: Hast du etwas daraus gemacht?
 
