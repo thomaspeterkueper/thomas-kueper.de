@@ -132,7 +132,7 @@ Val-il la'val-Om-Bi-La.
 
 *Ori* ist hier nicht der Kreis, sondern die Spirale: Wir kehren wieder, *denn* (*óir*, das keltische Bindewort aus „Auv-Pa-il“) das Echo trägt, was geblieben ist. *Ori-Kol* – die spiralförmige Rückkehr des Klangs – geht von jedem von uns zu jedem von euch. Das Ziel ist *val-Om-Bi-La*: eine Heimat, die erst wird. Nicht hinter uns, sondern vor uns.
 
-**Deutsch V** *(Sopran allein)*
+**Deutsch V** *(Finale: Solisten und Chor, danach noch einmal „Nichts ist fertig. Alles wird.“)*
 > Wir kommen wieder – aber nicht zurück.
 
 ---
@@ -146,6 +146,8 @@ Auv ... Val ... îl
 *[aʊf ... val ... iːl]*
 
 Dreimal gehaucht, aber nicht leiser werdend. *Auv* ist das letzte Wort des ersten Lieds – es erinnert. *Val* ist das Werden. *îl* bleibt offen und hebt sich am Ende leicht an, statt zu verklingen. Kein Punkt, kein abschließendes Wort. Danach eine kurze Stille von etwa drei Sekunden – nicht die Stille des Endes, sondern der Atemzug vor dem Nächsten.
+
+In der Earth-Orchestra-Fassung gibt es keine Stille: Der Atemvers liegt über dem weiterlaufenden Trommelpuls, der sich langsam entfernt.
 
 ---
 
@@ -216,7 +218,7 @@ Dreimal gehaucht, aber nicht leiser werdend. *Auv* ist das letzte Wort des erste
 
 **Liturgische Fassung (einsprachig):** Wie „Auv-Pa-il“ – eine warme Stimme, Drone, Tin Whistle oder Knochenflöte, Bodhrán. Anders als dort: Die Wechselzeilen in Strophe I und in der Brücke werden von einer zweiten Stimme beantwortet. Ein Lied des Werdens braucht ein Gegenüber.
 
-**Earth-Orchestra-Fassung (zweisprachig):** Tenor und Sopran, gemischter Chor, volles Orchester. Siehe das Setup unter `docs/musik/val-il-earth-orchestra.md`.
+**Earth-Orchestra-Fassung (zweisprachig):** Tenor und Sopran, gemischter Chor als antwortende Gemeinschaft, volles Orchester auf durchgehendem Trommelgrund, zwei Höhepunkte. Siehe das Setup unter `docs/musik/val-il-earth-orchestra.md`.
 
 **Als Diptychon:** Beide Lieder können nacheinander aufgeführt werden – zuerst „Auv-Pa-il“, nach der Stille „Val-il“. Dann wird das *Auv* am Anfang des Atemverses von „Val-il“ zur Erinnerung an das letzte Wort davor.
 
