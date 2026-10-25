@@ -17,7 +17,7 @@ Frauen leben im Durchschnitt 5–8 Jahre länger als Männer – global, über a
 
 Die Mechanismen: Singen aktiviert den Vagus-Nerv und schützt das Herz-Kreislauf-System. Singen ermöglicht emotionale Katharsis und baut Stress ab. Singen bindet sozial ein und reduziert Einsamkeit. Männer verzichten auf alle drei – und sterben früher.
 
-Die kulturelle Dimension: Männliche Konditionierung („Singen ist unmännlich") führt zu Selbst-Sabotage und verkürzter Lebensspanne.
+Die kulturelle Dimension: Männliche Konditionierung („Singen ist unmännlich“) führt zu Selbst-Sabotage und verkürzter Lebensspanne.
 
 ---
 
@@ -45,13 +45,13 @@ Frauen singen 2–3 mal häufiger als Männer. Wenn Singen 5–8 Jahre Lebenserw
 
 Die Hemmschwelle funktioniert in drei Schichten.
 
-**Schicht 1 – Kulturelle Konditionierung (Oberfläche):** Jungen lernen „Singen ist für Mädchen". Medien, Eltern, Peers verstärken. Lösbar durch kulturellen Wandel.
+**Schicht 1 – Kulturelle Konditionierung (Oberfläche):** Jungen lernen „Singen ist für Mädchen“. Medien, Eltern, Peers verstärken. Lösbar durch kulturellen Wandel.
 
-**Schicht 2 – Angst vor Bewertung (Mittel):** „Was denken andere?" – „Ich könnte falsch singen." Lösbar durch sichere Räume.
+**Schicht 2 – Angst vor Bewertung (Mittel):** „Was denken andere?“ – „Ich könnte falsch singen.“ Lösbar durch sichere Räume.
 
-**Schicht 3 – Angst vor Kontrollverlust (Tief):** „Wenn ich singe, könnte ich weinen." Emotionen könnten hochkommen. Erfordert tiefere Arbeit.
+**Schicht 3 – Angst vor Kontrollverlust (Tief):** „Wenn ich singe, könnte ich weinen.“ Emotionen könnten hochkommen. Erfordert tiefere Arbeit.
 
-Das „Betrunkenes-Singen"-Phänomen bestätigt die Analyse: Männer singen nach 3–5 Bieren, im Auto, unter betrunkenen Freunden – überall dort, wo die drei Schichten temporär deaktiviert sind. Alkohol ist die ungesunde Lösung für ein kulturelles Problem.
+Das „Betrunkenes-Singen“-Phänomen bestätigt die Analyse: Männer singen nach 3–5 Bieren, im Auto, unter betrunkenen Freunden – überall dort, wo die drei Schichten temporär deaktiviert sind. Alkohol ist die ungesunde Lösung für ein kulturelles Problem.
 
 ---
 
@@ -69,7 +69,7 @@ Eine japanische Langzeitstudie (2015) verglich buddhistische Mönche, die tägli
 
 Eine schwedische Studie (2012) mit 12.000 Teilnehmern über 10 Jahre zeigte: Chormitglieder haben 23% geringere Gesamtmortalität. Der Effekt war bei Männern stärker als bei Frauen – weil Männer die niedrigere Baseline haben.
 
-Eine deutsche HRV-Studie (2019) mit 500 Teilnehmern zeigte: Häufiges Singen (mehr als 3 mal pro Woche) erhöht die Herzratenvariabilität um 18% und senkt den systolischen Blutdruck um 6 mmHg. 62% der „Häufig-Singenden" waren Frauen, nur 21% Männer.
+Eine deutsche HRV-Studie (2019) mit 500 Teilnehmern zeigte: Häufiges Singen (mehr als 3 mal pro Woche) erhöht die Herzratenvariabilität um 18% und senkt den systolischen Blutdruck um 6 mmHg. 62% der „Häufig-Singenden“ waren Frauen, nur 21% Männer.
 
 ---
 
@@ -77,7 +77,7 @@ Eine deutsche HRV-Studie (2019) mit 500 Teilnehmern zeigte: Häufiges Singen (me
 
 Kultur ist Ursache, Angst ist Symptom. Kulturen, in denen Männer singen – Maori (Haka), polynesische Gesellschaften, Mariachi-Tradition – zeigen keine vergleichbare Angst vor stimmlichem Kontrollverlust. Dort ist Singen männlich codiert.
 
-Wenn die kulturelle Konditionierung aufgelöst wird, werden die tieferen Schichten zugänglich. Der Resonanzraum – ein sicherer, privater, technologisch gestützter Raum – bietet die „Permission Structure", die Männer brauchen: nicht „weich sein", sondern „Frequenz-Kalibrierung". Wissenschaftlich gerahmt, nicht emotional.
+Wenn die kulturelle Konditionierung aufgelöst wird, werden die tieferen Schichten zugänglich. Der Resonanzraum – ein sicherer, privater, technologisch gestützter Raum – bietet die „Permission Structure“, die Männer brauchen: nicht „weich sein“, sondern „Frequenz-Kalibrierung“. Wissenschaftlich gerahmt, nicht emotional.
 
 Die Lösung ist möglich: Kultureller Wandel (Vorbilder, Bildung), sichere Räume (Resonanzkammern, Chöre), gesellschaftliche Programme (Ärzte verschreiben Singen, Krankenkassen zahlen Chormitgliedschaft).
 

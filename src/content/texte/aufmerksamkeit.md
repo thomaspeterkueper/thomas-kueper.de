@@ -19,9 +19,9 @@ draft: false
 
 Er war gerade noch rechtzeitig gekommen, hatte sich auf den ersten freien Platz fallen lassen, und erst als der Zug schon anfuhr, registrierte er die zwei Stimmen schräg gegenüber, mitten in einem Satz, den er nur zur Hälfte mitbekam.
 
-„... bis Endstation", sagte der eine gerade, der mit der grauen Kapuzenjacke. „Dann mit dem Bus weiter."
+„... bis Endstation“, sagte der eine gerade, der mit der grauen Kapuzenjacke. „Dann mit dem Bus weiter.“
 
-„Achso, ok", sagte der andere, der offenbar gefragt hatte, was er nicht mehr gehört hatte. Mehr verstand er nicht, weil sein Handy vibrierte und er kurz nach unten sah.
+„Achso, ok“, sagte der andere, der offenbar gefragt hatte, was er nicht mehr gehört hatte. Mehr verstand er nicht, weil sein Handy vibrierte und er kurz nach unten sah.
 
 Er dachte sich nichts dabei. Zwei Männer, die irgendwohin fuhren, irgendein Treffen, eine Verabredung. Es ging ihn nichts an, und er vergaß es in der nächsten Minute wieder, während der Zug aus dem Bahnhof rollte.
 
@@ -51,7 +51,7 @@ Er aber saß ihr jetzt gegenüber. Unausweichlich.
 
 Er schaute aus dem Fenster. Bewusst. Konzentriert. Als gäbe es da draußen etwas wirklich Interessantes zu sehen außer vorbeiziehenden Strommasten. Das Glas war dunkel genug, um den Waggon zu spiegeln – verschwommen, kaum mehr als ein heller Streifen Stoff, eine Bewegung. Er schaute weiter hinaus. Es half nichts. Ein Wärmegefühl im Nacken. Der Atem, der eine Spur flacher ging.
 
-Der Zug ruckelte leicht in einer Kurve, und sie kippte ein Stück zur Seite, gegen die Frau mit dem Buch, die kurz hochsah und automatisch auswich, ohne ein Wort zu sagen. Sie selbst murmelte ein knappes „Sorry", richtete sich wieder auf, strich sich eine Strähne aus dem Gesicht.
+Der Zug ruckelte leicht in einer Kurve, und sie kippte ein Stück zur Seite, gegen die Frau mit dem Buch, die kurz hochsah und automatisch auswich, ohne ein Wort zu sagen. Sie selbst murmelte ein knappes „Sorry“, richtete sich wieder auf, strich sich eine Strähne aus dem Gesicht.
 
 Er sah weg. Zur Frau mit dem Buch, die nicht aufblickte. Zu den beiden Männern gegenüber, von denen einer kurz die Augenbrauen hob, ein stummes Zeichen an den anderen.
 
@@ -63,11 +63,11 @@ Irgendwo hatte er mal etwas über Pfauen gelesen, schon lange her – wie sie ih
 
 Vielleicht auch nicht.
 
-„Wie weit müssen wir noch?", fragte der eine schräg gegenüber, der mit der grauen Kapuzenjacke, und sah dabei nicht seinen Kumpel an, sondern kurz zu ihr hinüber.
+„Wie weit müssen wir noch?“, fragte der eine schräg gegenüber, der mit der grauen Kapuzenjacke, und sah dabei nicht seinen Kumpel an, sondern kurz zu ihr hinüber.
 
-„Endstation", sagte der andere. „Dann mit dem Bus weiter."
+„Endstation“, sagte der andere. „Dann mit dem Bus weiter.“
 
-„Achso, ok." Eine kurze Pause. „Ist ja eh auf dem Weg."
+„Achso, ok.“ Eine kurze Pause. „Ist ja eh auf dem Weg.“
 
 Sein Kumpel sagte nichts darauf.
 

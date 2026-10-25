@@ -1,7 +1,7 @@
 ---
 title: "Die Architektur der Stille"
 subtitle: "Von Gebet, Intention und der Möglichkeit einer Antwort"
-description: "Was geschieht beim Beten? Nicht wer antwortet — sondern was überhaupt passiert, wenn ein Mensch aufhört, die Welt ausschließlich aus seinem eigenen Mittelpunkt zu betrachten."
+description: "Was geschieht beim Beten? Nicht wer antwortet – sondern was überhaupt passiert, wenn ein Mensch aufhört, die Welt ausschließlich aus seinem eigenen Mittelpunkt zu betrachten."
 kategorie: "denken"
 typ: "Essay"
 tags: ["Essay", "Theologie", "Gebet", "Aufmerksamkeit", "Stille", "Resonanz", "Beziehung", "Theologische Reihe"]

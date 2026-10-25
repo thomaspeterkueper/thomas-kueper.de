@@ -1,7 +1,7 @@
 ---
 title: "Das Paradoxon der kreuzenden Wege"
 subtitle: "Freiheit, Vorsehung und die unvermeidliche Reibung"
-description: "Wenn jeder Mensch einen vorgesehenen Weg hat und gleichzeitig frei ist — was geschieht, wenn diese Wege sich kreuzen? Über Freiheit als relationales Phänomen."
+description: "Wenn jeder Mensch einen vorgesehenen Weg hat und gleichzeitig frei ist – was geschieht, wenn diese Wege sich kreuzen? Über Freiheit als relationales Phänomen."
 kategorie: "denken"
 typ: "Essay"
 tags: ["Essay", "Theologie", "Freiheit", "Vorsehung", "Verantwortung", "Beziehung", "Ethik", "Theologische Reihe"]

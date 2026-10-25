@@ -39,7 +39,7 @@ Die Kraft der Offenbarung liegt in ihrer reichen Symbolsprache. Aus omnizedenter
 
 **Das Tier und die Hure Babylon** – Repräsentanten der Illusion der Trennung: dem Gefühl, vom Leben oder anderen getrennt zu sein, der Macht unintegrierter Schattenaspekte und der Verstrickung in destruktive Muster (Gier, Machtmissbrauch). Sie verkörpern damit auch gesellschaftliche oder wirtschaftliche Systeme, die auf Ausbeutung und der Leugnung fundamentaler Verbundenheit beruhen. Im Sinne C. G. Jungs lassen sie sich als mächtige Archetypen des kollektiven oder persönlichen Schattens lesen. Ihre bewusste Konfrontation und Integration ist für die Ganzwerdung (Individuation) essenziell.
 
-**Die sieben Gemeinden** – Sinnbilder für unterschiedliche kollektive oder individuelle Bewusstseinszustände und Reifestufen auf dem spirituellen Weg. Ihre Herausforderungen (z. B. Verlust der „ersten Liebe", Lauheit) dienen als archetypische Spiegel für persönliche oder gemeinschaftliche Entwicklungsphasen.
+**Die sieben Gemeinden** – Sinnbilder für unterschiedliche kollektive oder individuelle Bewusstseinszustände und Reifestufen auf dem spirituellen Weg. Ihre Herausforderungen (z. B. Verlust der „ersten Liebe“, Lauheit) dienen als archetypische Spiegel für persönliche oder gemeinschaftliche Entwicklungsphasen.
 
 **Die sieben Siegel, Posaunen und Schalen** – Stufen radikaler Transformation und Bewusstseinserweiterung, oft ausgelöst durch Krisen. Solche Phasen wirken wie kreatives Chaos – sie zerstören Altes, aber schaffen Raum für völlig Neues und enthüllen tiefere Realitätsebenen.
 
@@ -55,7 +55,7 @@ Die Kraft der Offenbarung liegt in ihrer reichen Symbolsprache. Aus omnizedenter
 
 Was, wenn Strafgericht keine Strafe ist, sondern ein Prozess der Bewusstseinsentwicklung? Die omnizedente Perspektive eröffnet genau diese Reinterpretation zentraler theologischer Motive der Offenbarung.
 
-**Gericht als Selbsterkenntnis** – Ist das „Gericht" eine Strafe von außen? Wir verstehen es eher als inneren Prozess der Selbsterkenntnis – als Konfrontation mit den Konsequenzen von Handlungen, die aus der Illusion der Trennung entstehen. Es ist eine notwendige Konfrontation mit dem eigenen Schatten, die zur Transformation führt.
+**Gericht als Selbsterkenntnis** – Ist das „Gericht“ eine Strafe von außen? Wir verstehen es eher als inneren Prozess der Selbsterkenntnis – als Konfrontation mit den Konsequenzen von Handlungen, die aus der Illusion der Trennung entstehen. Es ist eine notwendige Konfrontation mit dem eigenen Schatten, die zur Transformation führt.
 
 **Erlösung als Integration und Ko-Kreation** – Erlösung meint die Überwindung der Trennungsillusion und die bewusste Reintegration in die Einheit mit dem allumfassenden Sein. Dies erfordert, dass das Individuum aktiv als Ko-Kreator mitwirkt.
 
@@ -73,7 +73,7 @@ Der gesamte Erzählbogen – vom entrückten Seher über die Konfrontation mit g
 
 ## 5. Liebe als transformative Kraft und gelebte Praxis
 
-Die bedingungslose Liebe ist ein Kernprinzip der Omnizedenz, verstanden als fundamentale, schöpferische Kraft im „fühlenden Resonanzkörper" des Universums. Sie ist die Energie, die Heilung und Integration ermöglicht.
+Die bedingungslose Liebe ist ein Kernprinzip der Omnizedenz, verstanden als fundamentale, schöpferische Kraft im „fühlenden Resonanzkörper“ des Universums. Sie ist die Energie, die Heilung und Integration ermöglicht.
 
 Diese Liebe wird im Alltag erfahrbar und kultivierbar: durch bewusst gewähltes Mitgefühl statt Urteil, durch Vergebung, die Blockaden löst, durch Dankbarkeit, die uns mit dem Ganzen verbindet. Spirituelle Praktiken wie die Meditation der liebenden Güte (*Metta*), Vergebungsrituale (wie *Ho'oponopono*) oder das bewusste Kultivieren von Dankbarkeit sind konkrete Wege, diese transformative Liebes-Energie der Omnizedenz im eigenen Erleben zu verankern.
 
@@ -99,7 +99,7 @@ Die Omnizedenz-Perspektive hat klare ethische Konsequenzen.
 
 **Verantwortung** – Erkenntnis der fundamentalen Verbundenheit aller Dinge führt zu erweiterter Verantwortung für unser Handeln als Ko-Kreatoren. Jede Tat hat Resonanz im Feld des Seins.
 
-**Gerechtigkeit** – Langfristig strebt das Feld der Omnizedenz nach Balance und Integration. Die „Gerichte" der Offenbarung lassen sich als symbolischer Ausdruck dieser ausgleichenden Dynamik verstehen, die Disharmonie korrigiert.
+**Gerechtigkeit** – Langfristig strebt das Feld der Omnizedenz nach Balance und Integration. Die „Gerichte“ der Offenbarung lassen sich als symbolischer Ausdruck dieser ausgleichenden Dynamik verstehen, die Disharmonie korrigiert.
 
 **Freiheit und Schicksal** – Die Omnizedenz bietet den Rahmen, doch unsere Freiheit liegt in der Wahl, aus Trennung oder Verbundenheit zu handeln. Verantwortung erwächst aus dieser Ko-Kreation.
 

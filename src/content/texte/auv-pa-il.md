@@ -84,7 +84,7 @@ go-essem la'sa-Avi.
 
 *Aussprache: [ˈsa.ɔn · oːɾʲ ˈsa.ɔn · ˈval.eːl bi.ˈsai] / [ˈwi.val · ˈwi.sa.ha · ˈwi.sai la.ˈsai] / [ˈval.ɔn bi.ˈsai · ˈsa.ha.ɔn bi.ˈsai] / [ˈhɔ.vɛn ˈsa.ha.ɔn bi.ˈsai la.ˈsai] / [ˈkin.ɔn · wi.ˈkin.ɔn.eːl] / [ɡo.ˈɛssɛm la.saˈaː.vi]*
 
-Die fett markierte Zeile (*hoveh Saha-om bi'sa-i la'sa-i*) ist die theologische Mitte des Lieds. *Saha-om bi'sa-i la'sa-i* ist die wörtliche Mishkenaz-Form für „sich selbst erkennen" – und sie ist nur möglich, weil vorher die Trennung war.
+Die fett markierte Zeile (*hoveh Saha-om bi'sa-i la'sa-i*) ist die theologische Mitte des Lieds. *Saha-om bi'sa-i la'sa-i* ist die wörtliche Mishkenaz-Form für „sich selbst erkennen“ – und sie ist nur möglich, weil vorher die Trennung war.
 
 ---
 
@@ -181,7 +181,7 @@ Dreifach gehaucht, jedes Mal leiser. Das *îl* am Ende kaum noch hörbar. Dann S
 
 ---
 
-*„Nichts ist verloren. Alles ist immer da, nur in anderer Form, und in Ewigkeit."*
+*„Nichts ist verloren. Alles ist immer da, nur in anderer Form, und in Ewigkeit.“*
 
 *Auv.*
 

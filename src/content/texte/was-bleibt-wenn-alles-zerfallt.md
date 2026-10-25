@@ -33,7 +33,7 @@ Die Omnizedenz ist kein Versuch, diese Frage zu beantworten. Sie ist der Versuch
 
 Carlo Rovelli, einer der bedeutendsten Physiker unserer Gegenwart, schreibt in *Die Ordnung der Zeit* mit einer Sachlichkeit, die einem den Atem verschlägt: Auf fundamentaler Ebene gibt es keine Zeit. Was wir erleben – diesen Fluss, dieses Nacheinander, dieses unerbittliche Voranschreiten –, das ist kein Merkmal der Realität. Es ist ein Merkmal *unserer* Realität. Ein entstehendes Muster, das aus Wärme, Entropie und der Begrenztheit unserer Wahrnehmung entsteht.
 
-Das Block-Universum der Relativitätstheorie sagt: Vergangenheit, Gegenwart und Zukunft existieren gleichzeitig. Nicht nacheinander. Der Augenblick, in dem du das hier liest, und der Augenblick, in dem Augustinus fragte *„Was also ist Zeit?"*, sind beide – irgendwo in der Struktur der Raumzeit – einfach: vorhanden.
+Das Block-Universum der Relativitätstheorie sagt: Vergangenheit, Gegenwart und Zukunft existieren gleichzeitig. Nicht nacheinander. Der Augenblick, in dem du das hier liest, und der Augenblick, in dem Augustinus fragte *„Was also ist Zeit?“*, sind beide – irgendwo in der Struktur der Raumzeit – einfach: vorhanden.
 
 Das ist keine Poesie. Das ist Physik.
 
@@ -51,7 +51,7 @@ Nicht mystisch. Nicht metaphorisch. Physikalisch fragwürdig.
 
 Das Messproblem der Quantenmechanik ist seit einem Jahrhundert ungelöst. Ein Quantenteilchen befindet sich in einem Zustand der Überlagerung: Es ist gleichzeitig hier und dort, so und anders – bis es gemessen wird. Danach ist es eines von beidem. Aber *was* bewirkt diesen Übergang?
 
-Die Standardantwort der Physik – „die Messung" – ist eine Verlegenheitslösung. Denn was ist eine Messung? Wann genau kollabiert die Wellenfunktion? Braucht es dazu ein Gerät? Ein Gehirn? Ein Bewusstsein?
+Die Standardantwort der Physik – „die Messung“ – ist eine Verlegenheitslösung. Denn was ist eine Messung? Wann genau kollabiert die Wellenfunktion? Braucht es dazu ein Gerät? Ein Gehirn? Ein Bewusstsein?
 
 Die Physik hat diese Frage noch nicht beantwortet. Aber sie hat sie gestellt. Und das allein ist bedeutsam genug.
 

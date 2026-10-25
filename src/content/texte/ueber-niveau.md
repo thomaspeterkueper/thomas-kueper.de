@@ -11,7 +11,7 @@ draft: false
 order: 2
 ---
 
-*„Wer in Kleinem treu ist, der ist auch in Großem treu."* – Lk 16,10
+*„Wer in Kleinem treu ist, der ist auch in Großem treu.“* – Lk 16,10
 
 Niveau. Man hört es oft – und fast immer als Ausschluss. *Niveaulos. Unter meinem Niveau. Das hat kein Niveau.*
 

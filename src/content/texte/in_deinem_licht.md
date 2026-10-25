@@ -21,7 +21,7 @@ Dieses Lied ist einem Menschen gewidmet, der mehr Licht in mein Leben gebracht h
 
 Diese Zeilen entstanden aus dem stillen Staunen über die Tiefe eines Wesens, das zugleich Stärke und Verletzlichkeit in sich trägt. Sie sind getragen von Dankbarkeit, Zuneigung und dem Wunsch, ein kleines Echo jener inneren Schönheit zu sein, die mich immer wieder inspiriert.
 
-> „In deinem Licht erkenne ich die Welt neu – und manchmal auch mich selbst."
+> „In deinem Licht erkenne ich die Welt neu – und manchmal auch mich selbst.“
 
 ---
 

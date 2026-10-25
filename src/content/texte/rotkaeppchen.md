@@ -25,7 +25,7 @@ In der Sprache der Omnizedenz: Das Märchen ist nicht die Summe seiner Figuren. 
 
 ## Die sieben Stimmen
 
-Jede Stimme operiert in einem eigenen Aspekt. Keine ist wahrer als die andere. Alle klingen gleichzeitig – und erst ihr Zusammenklang ergibt das, was wir vorschnell „die Geschichte" nennen.
+Jede Stimme operiert in einem eigenen Aspekt. Keine ist wahrer als die andere. Alle klingen gleichzeitig – und erst ihr Zusammenklang ergibt das, was wir vorschnell „die Geschichte“ nennen.
 
 ---
 
@@ -123,7 +123,7 @@ Der Weg sucht sich → Die Schwelle emergiert → Bruch-Alarm → Leere kehrt zu
 
 Das Fragezeichen am Ende ist kein Fehler. Das Märchen endet mit dem Jäger, nicht mit Ona-nO. Die Grenze wird gesetzt (Ta-kran-om), aber die Rückkehr zur Ganzheit bleibt offen. Der Stein im Bauch des Wolfs zeigt, dass die Integration nicht gelungen ist.
 
-Das Märchen weiß das. Es endet nicht mit „und sie lebten glücklich", sondern mit einer Warnung: Rotkäppchen schwört, nie wieder vom Weg abzuweichen. Das ist kein Happy End – das ist die Amputation des suchenden Aspekts. *La-pina-il* wird zu *La-pina-wi*. Der Weg sucht nicht mehr.
+Das Märchen weiß das. Es endet nicht mit „und sie lebten glücklich“, sondern mit einer Warnung: Rotkäppchen schwört, nie wieder vom Weg abzuweichen. Das ist kein Happy End – das ist die Amputation des suchenden Aspekts. *La-pina-il* wird zu *La-pina-wi*. Der Weg sucht nicht mehr.
 
 ---
 

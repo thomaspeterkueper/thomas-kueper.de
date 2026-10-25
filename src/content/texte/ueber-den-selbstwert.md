@@ -11,7 +11,7 @@ draft: false
 order: 3
 ---
 
-*„Ich bin, der ich bin."* – Ex 3,14
+*„Ich bin, der ich bin.“* – Ex 3,14
 
 Selbstwert. Das Wort klingt nach Arbeit. Nach etwas, das man sich erarbeiten, verdienen, beweisen muss. Dabei ist es das Einzige, das man nicht verdienen kann – weil es keine Gegenleistung kennt.
 

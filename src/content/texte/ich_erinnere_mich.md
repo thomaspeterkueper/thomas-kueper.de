@@ -25,7 +25,7 @@ Ich erinnere mich an dein Lachen im Wind, an das Licht in deinen Augen – es wa
 
 Ich erinnere mich an stille Momente, an deine Wärme, an das, was man nicht erklären musste.
 
-Jetzt sagst du: „Ich bin Chaos." Aber ich sehe dich anders. Nicht als Fehler, nicht als Schuld, sondern als Mensch, der viel fühlt, der geliebt hat, der wichtig war.
+Jetzt sagst du: „Ich bin Chaos.“ Aber ich sehe dich anders. Nicht als Fehler, nicht als Schuld, sondern als Mensch, der viel fühlt, der geliebt hat, der wichtig war.
 
 Du bist nicht verloren. Nur müde. Und das ist okay.
 

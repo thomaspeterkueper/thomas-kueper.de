@@ -11,7 +11,7 @@ draft: false
 order: 2
 ---
 
-*„Die Liebe hört niemals auf."* – 1. Korinther 13,8
+*„Die Liebe hört niemals auf.“* – 1. Korinther 13,8
 
 Liebe. Das zentrale Wort schlechthin.
 
@@ -27,7 +27,7 @@ Liebe ist kein Besitz. Keine Forderung. Kein Beweis. Sie ist ein Raum, der sich 
 
 Liebe ist das Herz des Evangeliums: Agape – die schenkende, haltende Liebe. In Christus zeigt sich Liebe als Zuwendung, Wahrheit, Hingabe. Wahre Liebe urteilt nicht nach Leistung, sondern nach Dasein.
 
-„Gott ist Liebe" – nicht als Eigenschaft, sondern als Wesen selbst.
+„Gott ist Liebe“ – nicht als Eigenschaft, sondern als Wesen selbst.
 
 ---
 

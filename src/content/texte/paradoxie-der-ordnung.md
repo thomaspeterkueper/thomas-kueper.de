@@ -105,7 +105,7 @@ Es gibt eine Form der Emigration, die in keiner Statistik auftaucht. Keine physi
 
 In hochoptimierten Gesellschaften passiert etwas Paradoxes. Die besten Köpfe bleiben, weil die Bedingungen so gut sind. Die Gehälter stimmen, die Infrastruktur ist exzellent, die Lebensqualität hoch. Aber ihre kühnsten Gedanken gehen. Nicht weil sie verfolgt würden, nicht weil jemand sie unterdrückt. Sondern weil das System keine Resonanzfläche bietet für Ideen, die über das Bestehende hinausreichen.
 
-Innovation verkümmert nicht dort, wo die Bedingungen schlecht sind. Sie verkümmert dort, wo es keinen Grund mehr gibt, über das Gegebene hinauszudenken. Wo die Frage „Was wäre, wenn?" ersetzt wird durch die Feststellung „So funktioniert es."
+Innovation verkümmert nicht dort, wo die Bedingungen schlecht sind. Sie verkümmert dort, wo es keinen Grund mehr gibt, über das Gegebene hinauszudenken. Wo die Frage „Was wäre, wenn?“ ersetzt wird durch die Feststellung „So funktioniert es.“
 
 Das ist kein Problem, das sich mit mehr Forschungsgeldern oder Innovationsprogrammen lösen lässt. Es ist ein kulturelles Problem. Ein atmosphärisches. Es betrifft die Art, wie eine Gesellschaft mit Abweichung umgeht, mit Scheitern, mit dem Unerwarteten. Es betrifft die Frage, ob das Unbekannte als Bedrohung wahrgenommen wird – oder als Einladung.
 
