@@ -15,9 +15,9 @@ draft: false
 
 ---
 
-Der Anlass war alltäglich: ein Sonntagvormittag in der Firmgruppe. Das Wort „Gottesdienst" begegnet einem wieder. Und beim Sprechen des „Vater unser" entsteht ein Gedanke, der eine vertraute religiöse Metapher an ihrer empfindlichsten Stelle trifft.
+Der Anlass war alltäglich: ein Sonntagvormittag in der Firmgruppe. Das Wort „Gottesdienst“ begegnet einem wieder. Und beim Sprechen des „Vater unser“ entsteht ein Gedanke, der eine vertraute religiöse Metapher an ihrer empfindlichsten Stelle trifft.
 
-Gute Eltern wollen, dass ihre Kinder wachsen, selbstständig werden und Möglichkeiten erreichen, die ihnen selbst vielleicht verschlossen geblieben sind. Was bedeutet es also, wenn wir uns als „Kinder Gottes" bezeichnen?
+Gute Eltern wollen, dass ihre Kinder wachsen, selbstständig werden und Möglichkeiten erreichen, die ihnen selbst vielleicht verschlossen geblieben sind. Was bedeutet es also, wenn wir uns als „Kinder Gottes“ bezeichnen?
 
 ---
 
@@ -25,13 +25,13 @@ Gute Eltern wollen, dass ihre Kinder wachsen, selbstständig werden und Möglich
 
 Man versteht Frömmigkeit oft als Kleinbleiben und vollkommenen Gehorsam. Das widerspricht jedoch dem, was gelingende Elternschaft will: Wachstum und Eigenständigkeit. Ein Vater, der ewige Unterwerfung fordert, verhält sich nach unserem menschlichen Verständnis ausgerechnet wie ein schlechter Vater: Er würde Entwicklung verhindern, um Abhängigkeit zu konservieren.
 
-Hier greift eine methodische Grenze: Eine Metapher, die nur bestätigt, aber niemals widersprechen darf, erklärt nichts. Wenn wir das Göttliche „Vater" nennen, müssen wir deshalb auch fragen dürfen, was wir bei einem menschlichen Vater als Fürsorge, Besitzanspruch, Loslassen oder Grausamkeit erkennen würden.
+Hier greift eine methodische Grenze: Eine Metapher, die nur bestätigt, aber niemals widersprechen darf, erklärt nichts. Wenn wir das Göttliche „Vater“ nennen, müssen wir deshalb auch fragen dürfen, was wir bei einem menschlichen Vater als Fürsorge, Besitzanspruch, Loslassen oder Grausamkeit erkennen würden.
 
 ---
 
 ## Herkunft und Eigenständigkeit
 
-Die theologische Rede vom „Bild Gottes" fragt oft nur: Wie ähnlich sind wir Gott? Aber ein Bild ist etwas Fertiges. Ein Kind ist etwas, das wird. Das Bild trägt Ähnlichkeit. Das Kind trägt Zukunft.
+Die theologische Rede vom „Bild Gottes“ fragt oft nur: Wie ähnlich sind wir Gott? Aber ein Bild ist etwas Fertiges. Ein Kind ist etwas, das wird. Das Bild trägt Ähnlichkeit. Das Kind trägt Zukunft.
 
 Es besitzt Herkunft und entwickelt zugleich Eigenständigkeit. Wenn seine Geschichte wirklich die seine werden soll, kann sie nicht bloß Wiederholung sein. Es muss möglich sein, dass etwas entsteht, das vorher nicht Wirklichkeit war.
 
@@ -41,13 +41,13 @@ Die Frage ist: Kann echte Neuheit mit vollständiger göttlicher Allwissenheit v
 
 ## Der Garten als Schwelle
 
-Nehmen wir das Bild der Elternschaft ernst, verändert sich auch der Blick auf die Ursprungserzählung. Traditionell lesen wir Genesis 3 als „Sündenfall". Doch dieser Begriff ist dem hebräischen Text nachträglich aufgelegt worden.
+Nehmen wir das Bild der Elternschaft ernst, verändert sich auch der Blick auf die Ursprungserzählung. Traditionell lesen wir Genesis 3 als „Sündenfall“. Doch dieser Begriff ist dem hebräischen Text nachträglich aufgelegt worden.
 
 Lesen wir den Garten versuchsweise als das, was das Elternhaus im Leben eines Kindes sein kann: einen geschützten Raum. Einen Ort, an dem Grenzen bereits bestehen, bevor das Kind sie selbst begründen kann; an dem vieles gegeben ist, wofür es noch nicht selbst Verantwortung trägt.
 
 Vielleicht war Eden weder nur Paradies noch nur Unmündigkeit, sondern wirklich gut – und trotzdem kein Ort zum Bleiben.
 
-Diese Analogie behauptet nicht, Eden sei „eigentlich" eine Kindheitsgeschichte. Sie stellt eine Frage an den Text: Was geschieht, wenn ein Wesen, das bisher innerhalb gesetzter Grenzen lebt, selbst Erkenntnis beansprucht und damit in eine andere Form der Verantwortung eintritt?
+Diese Analogie behauptet nicht, Eden sei „eigentlich“ eine Kindheitsgeschichte. Sie stellt eine Frage an den Text: Was geschieht, wenn ein Wesen, das bisher innerhalb gesetzter Grenzen lebt, selbst Erkenntnis beansprucht und damit in eine andere Form der Verantwortung eintritt?
 
 Diese Lesart ist nicht die einzig mögliche. Sie prüft, was sichtbar wird, wenn wir die Metapher der Kindschaft konsequent auf den Garten anwenden.
 
@@ -81,9 +81,9 @@ Das erwachsene Kind trifft auf andere Kinder.
 
 Das Vaterunser ist kaum als Liste individueller Wünsche aufgebaut. *Unser* Vater. *Unser* Brot. *Unsere* Schuld. Der Betende tritt sprachlich aus der isolierten ersten Person Singular heraus. Das Gebet beginnt bereits als Beziehung. Die Grammatik des Gebets ist keine Privatsache.
 
-Wer „Vater unser" sagt, kann Gott nicht für sich allein haben.
+Wer „Vater unser“ sagt, kann Gott nicht für sich allein haben.
 
-Der andere ist nicht erst nachträglich Gegenstand meiner Ethik; er ist bereits in meiner Gottesrede enthalten. Kindschaft ist von Beginn an keine private Beziehung zwischen mir und dem Ursprung, sondern stellt mich in einen radikalen Plural. Auch die Bitte „Dein Wille geschehe" müssen wir in dieser Lesart nicht als blinde Unterwerfung unter einen bereits festgelegten individuellen Lebensplan verstehen. Sie kann zunächst eine bescheidenere Einsicht eröffnen: Mein Wille ist nicht der einzige Wille in dieser Welt – und ich kann die anderen nicht aus meiner Verantwortung ausschließen.
+Der andere ist nicht erst nachträglich Gegenstand meiner Ethik; er ist bereits in meiner Gottesrede enthalten. Kindschaft ist von Beginn an keine private Beziehung zwischen mir und dem Ursprung, sondern stellt mich in einen radikalen Plural. Auch die Bitte „Dein Wille geschehe“ müssen wir in dieser Lesart nicht als blinde Unterwerfung unter einen bereits festgelegten individuellen Lebensplan verstehen. Sie kann zunächst eine bescheidenere Einsicht eröffnen: Mein Wille ist nicht der einzige Wille in dieser Welt – und ich kann die anderen nicht aus meiner Verantwortung ausschließen.
 
 ---
 
