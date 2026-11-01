@@ -1,105 +1,14 @@
 ---
-id: EXT-OMNI-TKD-20261101-001
-title: Essay „Vom Mut, mitzuleiden“ (Fassung 5) unter Philosophie veröffentlichen
-status: open
-source: OMNI
-target: TKD
-created: 2026-11-01
-requested_by: T.P.K.
-priority: medium
-affects: [TKD, OMNI, RESETH]
-supersedes: []
----
-
-# EXT-OMNI-TKD-20261101-001 – Essay „Vom Mut, mitzuleiden“ veröffentlichen
-
-## Anlass
-
-Der Autor hat am 01.11.2026 den Essay „Vom Mut, mitzuleiden. Über Mitleid,
-Verletzlichkeit und die Grenzen der Anteilnahme“ in vier Durchgängen
-überarbeitet und mit dem Omnizedenz-Kanonstand vom 24.09.2026 abgeglichen.
-Owner-Entscheidung: Der Essay gehört als Einzelessay auf thomas-kueper.de
-(ECO-ARC-0010: themenverwandte Einzelessays bleiben bei TKD), nicht in die
-Bibliothek von omnizedenz.org.
-
-## Gewünschte Änderung
-
-1. Neue Seite `src/pages/philosophie/vom-mut-mitzuleiden.astro` (Route
-   `/philosophie/vom-mut-mitzuleiden`) mit dem Manuskript unten, Fassung 5,
-   im Stil der übrigen Philosophie-Essays.
-2. Eintrag in der Philosophie-Übersicht (`src/pages/philosophie/index.astro`
-   bzw. `philosophie.astro`) und in `public/llms.txt`.
-3. Am Ende des Essays ein kurzer Hinweis mit zwei Verweisen:
-   - auf die Omnizedenz (omnizedenz.org) als ontologischen Hintergrund
-     („Unterschied und Beziehung entstehen miteinander“, Spielraum,
-     Regenerierbarkeit),
-   - auf die Resonanzethik (resonanceethics.org), wo der Essay als
-     Fallstudie für Band 2 vorgemerkt ist.
-4. **Startseite** (`src/pages/index.astro`, Abschnitt „Aktuelles – Neue
-   Texte“): Owner-Wunsch vom 01.11.2026 – der Essay erhält dort einen Platz,
-   als erste Karte. Vorschlag im Stil der bestehenden Karten:
-
-   ```html
-   <a href="/philosophie/vom-mut-mitzuleiden" class="aktuelles-card">
-     <span class="aktuelles-card-type">Essay &middot; Philosophie</span>
-     <h3>Vom Mut, mitzuleiden</h3>
-     <p>&Uuml;ber Mitleid, Verletzlichkeit und die Grenzen der Anteilnahme &ndash; warum fremder Schmerz uns treffen darf, ohne dass wir daraus ein Recht &uuml;ber den anderen ableiten.</p>
-     <span class="mehr">Lesen &rarr;</span>
-   </a>
-   ```
-
-   Owner-Entscheidung vom 01.11.2026: Beide bisherigen Karten
-   („Gottesdienst, Freiheit und das Gericht“, „Aufmerksamkeit“) bleiben;
-   das Raster wird auf drei Spalten erweitert („alle guten Dinge sind
-   drei“). Die Reihenfolge ist: Essay, Gottesdienst-Reihe, Aufmerksamkeit.
-   CSS-Anpassung im Stil von `neu-grid`:
-
-   ```css
-   .aktuelles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem}
-   @media(max-width:950px){.aktuelles-grid{grid-template-columns:1fr}}
-   ```
-
-   Die bisherige Regel `@media(max-width:750px)` für `aktuelles-grid`
-   entfällt. Bei 951–1100 px Breite prüfen, ob die Kartentitel sauber
-   umbrechen.
-5. Textvorgaben: Gedankenstrich ausschließlich als Halbgeviertstrich „–“;
-   deutsche Anführungszeichen „…“; Abschnittsgliederung I–VII beibehalten.
-
-## Begründung
-
-Der Essay ist ein Anwendungstext der Resonanzethik und der relationalen
-Prozessontologie, aber kein Kanontext. Nach ECO-ARC-0010 und ECO-ARC-0016
-ist thomas-kueper.de der Ort für Einzelessays; omnizedenz.org und
-resonanceethics.org verweisen darauf.
-
-## Betroffene Repositories
-
-- `thomas-kueper.de` (TKD) – Veröffentlichung
-- `omnizedenz.org` (OMNI) – Verweis, siehe EXT-TKD-OMNI-20261101-001
-- `resonanceethics.org` (RESETH) – Fallstudie Band 2, siehe EXT-OMNI-RESETH-20261101-001
-
-## Erwartetes Ergebnis
-
-Der Essay ist unter `/philosophie/vom-mut-mitzuleiden` öffentlich lesbar, auf der Startseite unter „Neue Texte“ hervorgehoben,
-in der Übersicht und in `llms.txt` gelistet und verweist auf
-omnizedenz.org und resonanceethics.org. Die endgültige URL wird in den
-beiden Folgetasks nachgetragen.
-
-## Hinweise
-
-- Nietzsche-Stelle *Antichrist* §7 am 01.11.2026 geprüft und präzisiert
-  (Ansteckung des Leidens auf den Mitleidenden, lebensverneinend).
-- Der Essay nennt keine Omnizedenz-Fachbegriffe (keine Kanon- oder
-  Mishkenaz-Terminologie) und soll eigenständig lesbar bleiben.
-
-### Manuskript – Fassung 5 (01.11.2026)
-
-# Vom Mut, mitzuleiden
-
-*Über Mitleid, Verletzlichkeit und die Grenzen der Anteilnahme*
-
-Thomas Peter Küper
-
+title: "Vom Mut, mitzuleiden"
+subtitle: "Über Mitleid, Verletzlichkeit und die Grenzen der Anteilnahme"
+description: "Warum fremder Schmerz uns treffen darf, ohne dass wir daraus ein Recht über den anderen ableiten. Ein Essay über Mitleid zwischen Schopenhauer, Nietzsche und Rosa."
+kategorie: "denken"
+typ: "Essay"
+tags: ["Essay", "Mitleid", "Mitgefühl", "Resonanz", "Resonanzethik", "Spielraum", "Verantwortung", "Nietzsche", "Schopenhauer"]
+date: "2026"
+author: "Thomas Peter Küper"
+order: 1
+draft: false
 ---
 
 ## I. Ein Wort unter Verdacht
@@ -346,4 +255,4 @@ Darin besteht der Mut zum Mitleid: sich vom Leid eines anderen berühren zu lass
 
 ---
 
-Thomas Peter Küper
+*Hintergrund: Der Essay wendet Gedanken der [Omnizedenz](https://omnizedenz-org.vercel.app/) an – Unterschied und Beziehung entstehen miteinander, Spielraum, Regenerierbarkeit – und ist als Fallstudie für die [Resonanzethik](https://omnizedenz-org.vercel.app/resonanzethik/) vorgemerkt.*
