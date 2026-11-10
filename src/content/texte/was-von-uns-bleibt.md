@@ -33,6 +33,6 @@ Die Essays sind literarisch-philosophische Betrachtungen, keine abschließenden 
 
 Ein vierter Essay, **Die Freiheit, ein anderer zu werden**, ist in Vorbereitung. Er führt die Frage nach dem vergessenen Ich zu einer anderen: Wie sehr sind wir an unser früheres Selbstbild gebunden – und welche Möglichkeiten eröffnet uns seine Wiederentdeckung?
 
-Verwandter philosophischer Rahmen: [Omnizedenz](/philosophie/omnizedenz).
+**Philosophische Vertiefung:** [Autobiografische Resonanz](/texte/autobiografische-resonanz) entwickelt aus der Reihe ein Modell der Selbstbeobachtung und Wiederentdeckung – im Rahmen der [Omnizedenz](/philosophie/omnizedenz).
 
 *Erstfassung der Reihe · 10. November 2026.*
