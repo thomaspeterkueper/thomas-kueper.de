@@ -8,7 +8,7 @@ tags: ["Essay", "Resonanzethik", "Mitgefühl", "Spielraum", "Verantwortung", "Ge
 date: "2026"
 author: "Thomas Peter Küper"
 order: 97
-draft: true
+draft: false
 ---
 
 ## I. Die Ungesehenen
@@ -147,6 +147,10 @@ Eine gerechte Ordnung darf nicht darauf angewiesen sein, dass jemand Mitgefühl 
 ---
 
 *Die geschilderten Fälle sind Gedankenbeispiele.*
+
+*Resonanzethik-Essays: [I. Vom Mut, mitzuleiden](/texte/vom-mut-mitzuleiden) · [II. Die Tücken der Resonanz](/texte/die-tuecken-der-resonanz) · **III. Jenseits des Mitgefühls***
+
+---
 
 ## Literatur und Quellen
 
