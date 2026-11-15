@@ -23,9 +23,9 @@ Unsere Aufmerksamkeit ist begrenzt. Nähe und vertraute Geschichten bewegen uns 
 
 Eine Resonanzethik muss deshalb erklären, weshalb auch jene Anspruch auf gerechte Behandlung besitzen, deren Erfahrungen niemals unmittelbar eine Antwort in uns auslösen.
 
-Die Grenze einer persönlichen Begegnung schützt uns vor Vereinnahmung. Sie beantwortet aber noch nicht, wie Menschen geschützt werden, die uns gar nicht begegnen – oder deren Lebensbedingungen bereits bestimmen, ob sie überhaupt gehört werden können.
+In einer persönlichen Begegnung können wir zumindest versuchen, auf die Erfahrung des anderen zu antworten. Aber wie schützen wir Menschen, denen wir niemals begegnen – oder deren Lebensbedingungen bereits bestimmen, ob sie überhaupt gehört werden können?
 
-Bereits beim persönlichen Mitleid stellt sich die Frage nach dem Spielraum des anderen: nach den Möglichkeiten, die ihm tatsächlich offenstehen, sein Leben zu deuten, zu gestalten und selbst zu handeln. Doch jetzt verschiebt sich der Blick. Welche Ansprüche gelten, wenn eine Begegnung niemals stattfindet?
+Entscheidend ist dabei auch ihr Spielraum: die Möglichkeiten, die ihnen tatsächlich offenstehen, ihr Leben zu deuten, zu gestalten und selbst zu handeln. Eine gerechte Ordnung muss diese Möglichkeiten berücksichtigen, selbst wenn niemand persönlich Anteil nimmt.
 
 ## II. Die Ungerechtigkeit der Nähe
 
