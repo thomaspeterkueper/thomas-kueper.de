@@ -7,7 +7,7 @@ typ: "Essay"
 tags: ["Essay", "Resonanzethik", "Mitgefühl", "Spielraum", "Verantwortung", "Gerechtigkeit"]
 date: "2026"
 author: "Thomas Peter Küper"
-order: 97
+order: 1.2
 draft: false
 ---
 
@@ -154,6 +154,6 @@ Eine gerechte Ordnung darf nicht darauf angewiesen sein, dass jemand Mitgefühl 
 
 ## Literatur und Quellen
 
-- Adam Smith: *The Theory of Moral Sentiments* (1759), Teil I, Abschnitt I, Kapitel 1 („Of Sympathy“) sowie Teil III („Of the Foundation of our Judgments concerning our own Sentiments and Conduct“). [Digitaler Text und Inhaltsübersicht](https://www.marxists.org/reference/archive/smith-adam/works/moral/).
+- Adam Smith: *The Theory of Moral Sentiments* (1759), Teil I, Abschnitt I, Kapitel 1 („Of Sympathy“) sowie Teil III („Of the Foundation of our Judgments concerning our own Sentiments and Conduct“). [Digitaler Text und Inhaltsübersicht](https://www.gutenberg.org/files/67363/67363-h/67363-h.htm).
 
 *Die Maßstäbe der Gleichachtung, Begründbarkeit und wirksamen Anfechtbarkeit sowie die Gedankenfälle werden hier als eigenständiger ethischer Vorschlag entwickelt. Sie sind nicht als wörtliche Lehre Adam Smiths zu verstehen.*
