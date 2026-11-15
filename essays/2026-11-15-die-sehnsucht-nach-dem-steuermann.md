@@ -4,7 +4,7 @@ subtitle: "Vielleicht ist die Frage nicht, ob jemand steuert. Vielleicht ist die
 author: "Thomas Peter Küper"
 date: 2026-11-15
 status: "Arbeitsfassung"
-version: "0.4"
+version: "0.5"
 topics: ["Philosophie", "Kontingenz", "Verantwortung", "Erkenntnis", "Omnizedenz"]
 ---
 
@@ -12,7 +12,7 @@ topics: ["Philosophie", "Kontingenz", "Verantwortung", "Erkenntnis", "Omnizedenz
 
 *Vielleicht ist die Frage nicht, ob jemand steuert. Vielleicht ist die Frage, warum wir so dringend wollen, dass jemand steuert.*
 
-**Thomas Peter Küper · Überarbeitete Arbeitsfassung 0.4, 15. November 2026**
+**Thomas Peter Küper · Überarbeitete Arbeitsfassung 0.5, 15. November 2026**
 
 Vielleicht sitzt niemand am Steuer.
 
@@ -102,6 +102,22 @@ Eine alte philosophische Frage lässt die Schwierigkeit sichtbar werden: Ist etw
 
 So tritt neben die Sehnsucht, gesehen zu werden, eine zweite: der Wunsch, dass nicht alles zur Disposition steht. Vielleicht hoffen wir auf eine Instanz, der wir wichtig sind. Vielleicht hoffen wir zugleich auf ein Gutes, das auch dann gilt, wenn niemand von uns es durchsetzt. Und vielleicht geraten gerade diese Hoffnungen in Konflikt, wenn eine vermeintlich höhere Weisung unsere Fürsorge füreinander verletzt.
 
+### Jemand, an den wir uns wenden können
+
+Vielleicht fehlt noch etwas in unserer Beschreibung. Wenn wir uns einen Lenker wünschen, erwarten wir möglicherweise nicht nur, dass er uns sieht oder dass seine Regeln gelten. Wir wünschen uns auch, dass wir ihn ansprechen können. Wir wollen bitten dürfen, danken, klagen, fragen, vielleicht sogar widersprechen.
+
+Ein Gebet kann um Heilung bitten, um Regen, um den Schutz eines Kindes. Es kann aber auch ganz ohne konkrete Bitte auskommen: als Ausdruck der Dankbarkeit, als Übung der Aufmerksamkeit oder als Klage, für die kein menschlicher Empfänger ausreicht. Aus dem Bedürfnis, etwas auszusprechen, folgt noch nicht, dass es einen überweltlichen Hörer gibt. Aber es zeigt, warum ein Universum, das auf menschliche Wünsche nicht antwortet, nicht nur unkontrollierbar, sondern auch einsam erscheinen könnte.
+
+Hier erweist sich die Metapher des Steuermanns erneut als zu eng. Ein Steuermann muss nicht zuhören; jemand, der zuhört, muss nicht lenken können. Und nicht jede religiöse Praxis richtet sich an ein einziges Wesen, das den gesamten Lauf der Dinge bestimmt.
+
+Ein Blick auf vielfältige afrikanische Traditionen verdeutlicht die Frage. Menschen wenden sich dort – je nach Gesellschaft und Überlieferung – an Ahnen, Gottheiten oder weitere spirituelle Vermittler; andere Vorstellungen kennen ein höchstes Wesen. Die Geschichte der Christianisierung lässt sich deshalb nicht einfach als erstmaliges Entdecken eines ansprechbaren Gottes erzählen. Neben religiösen Überzeugungen prägten politische Interessen, Missionsinstitutionen, Bildungschancen, Zwang, eigenständige Aneignung und die Fortführung älterer Praktiken die jeweiligen Veränderungen. Warum einzelne Menschen den Glauben wechselten, muss historisch untersucht werden, statt ihnen pauschal dasselbe Bedürfnis zuzuschreiben.
+
+Auch indigene australische Traditionen laden zur Vorsicht ein. In vielen von ihnen sind spirituelle Beziehungen, Country, Vorfahren und überlieferte Verpflichtungen eng verflochten. Das lässt sich nicht ohne Weiteres in die Vorstellung eines einzelnen himmlischen Steuermanns übersetzen. Ein Gefühl von Eingebundensein kann andere Formen annehmen als das Gespräch mit einer universalen Person.
+
+Wir sollten daher mehrere Wünsche auseinanderhalten: **gesehen zu werden, Orientierung zu finden, auf Gerechtigkeit zu hoffen und eine Bitte an jemanden richten zu können.** Sie können sich in einer Gottesvorstellung vereinen. Sie können aber auch auseinanderfallen oder ganz andere religiöse und nichtreligiöse Ausdrucksformen finden.
+
+Vielleicht beten manche Menschen, weil sie überzeugt sind, dass jemand zuhört. Vielleicht beeinflusst die Erfahrung des Betens bei manchen auch die Vorstellung davon, wer zuhören könnte. Eine allgemeine Kausalerklärung wäre voreilig. Sicher ist nur: Die Frage, an wen wir uns wenden, reicht über die Frage hinaus, wer das Steuer hält.
+
 ## IV. Zusammenhang ohne Absicht
 
 Eine Sprache entwickelt Regeln, ohne dass ein einzelner Sprecher sie erfinden oder durchsetzen müsste. Ein Wald besitzt Struktur, obwohl kein Baum den Wald plant. Märkte, Städte und wissenschaftliche Gemeinschaften zeigen Ordnungen, die weder bloß zufällig noch Ausdruck eines einheitlichen Willens sind. Ihre Strukturen entstehen aus vielen Vorgängen, Rückkopplungen, Gewohnheiten und Begrenzungen.
@@ -144,7 +160,7 @@ Nicht für immer. Nicht aus Gleichgültigkeit. Sondern solange wir ihre Antwort 
 
 ---
 
-## Werkstattvermerk zur Fassung 0.4
+## Werkstattvermerk zur Fassung 0.5
 
 **Textstatus:** redaktionell überprüfter philosophischer Entwurf; noch keine abschließende Quellen- oder Zitatprüfung. Die Beispiele dienen der begrifflichen Klärung, nicht als empirischer Nachweis einer universellen menschlichen Motivation.
 
@@ -161,6 +177,10 @@ Nicht für immer. Nicht aus Gleichgültigkeit. Sondern solange wir ihre Antwort 
 
 **Redaktioneller Abgleich v0.4:** Ergänzung um die eigenständige Sehnsucht nach übergeordneten Regeln, moralischer Verbindlichkeit und Gerechtigkeit. Das Euthyphron-Dilemma wird als Frage, nicht als Widerlegung religiöser Ethik eingeführt; Wunsch nach Orientierung, Freiheit und möglicher Verantwortungsabgabe bleiben unterscheidbar. Titel weiter vorläufig.
 
-**Für die nächste Revision:** Stil und Übergänge weiter verdichten; mögliche Bezüge zu Hume, Nietzsche, Freud, Piaget und Forschung zur Zuschreibung von Absicht nur nach Quellenprüfung einarbeiten; prüfen, ob „Die Sehnsucht nach dem Steuermann“, „Die Sehnsucht nach jemandem am Steuer“ oder „Warum muss jemand steuern?“ den ergebnisoffenen Gedanken am besten trägt.
+**Redaktioneller Abgleich v0.5:** Ursprünglicher Titel „Die Sehnsucht nach dem Steuermann“ bewusst beibehalten, weil seine männlich codierte Führungsmetapher selbst zum Untersuchungsgegenstand wird. Ansprechbarkeit als vierte Bedürfnisdimension ergänzt; kulturvergleichende Beispiele aus Afrika und Australien bewusst vorsichtig und mit Verweis auf die gesonderte Forschungsnotiz eingesetzt. Keine Gleichsetzung von Religionswechsel mit bloßem Bedürfnisausgleich.
+
+**Recherchegrundlage:** [Forschungsnotiz zu Afrika, Australien und spirituellen Adressaten](recherchen/2026-11-15-gebet-spirituelle-adressaten-afrika-australien.md). Für eine Publikationsfassung müssen die historischen Einzelbehauptungen nochmals anhand der dort aufgeführten Quellen geprüft werden.
+
+**Für die nächste Revision:** Stil und Übergänge weiter verdichten; mögliche Bezüge zu Hume, Nietzsche, Freud, Piaget und Forschung zur Zuschreibung von Absicht nur nach Quellenprüfung einarbeiten; bei der Schlussredaktion prüfen, ob die bewusst problematische Metapher für Leserinnen und Leser deutlich genug als Frage statt als Behauptung erkennbar ist.
 
 **Versionsführung:** Jede Überarbeitung als separater Git-Commit mit aussagekräftiger Änderungsbeschreibung; frühere Textfassungen bleiben über die Git-Historie rekonstruierbar.
