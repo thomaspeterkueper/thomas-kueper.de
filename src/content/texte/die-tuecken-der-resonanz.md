@@ -27,7 +27,7 @@ Diese Möglichkeit muss keine böse Absicht voraussetzen. Sie liegt bereits in d
 
 Nicht jede Beeinflussung ist Manipulation. Ohne die Wirkung anderer Menschen auf unser Denken und Fühlen könnten wir kaum lernen, lieben oder uns verändern.
 
-Beim Mitleid haben wir bereits zwei Fragen gestellt: Können wir unsere Wahrnehmung korrigieren lassen? Und was geschieht mit den Möglichkeiten dessen, dem wir helfen wollen? Nun kommt eine dritte Perspektive hinzu: Auch der Mensch, an den eine Bitte gerichtet wird, hat einen eigenen Spielraum – also reale Möglichkeiten, selbst zu entscheiden, zu handeln und sein Leben zu gestalten.
+Wer einem anderen helfen will, muss sich fragen, ob er dessen Lage richtig versteht und was seine Hilfe tatsächlich bewirkt. Doch auch die Person, an die eine Bitte gerichtet wird, hat einen eigenen Spielraum – also reale Möglichkeiten, selbst zu entscheiden, zu handeln und ihr Leben zu gestalten. Wie lassen sich beide Perspektiven achten, wenn ihre Erwartungen auseinandergehen?
 
 Doch wann wird aus dieser Offenheit eine Verwundbarkeit, die andere ausnutzen können? Und wie können wir sie schützen, ohne uns gegen den anderen zu verschließen?
 
