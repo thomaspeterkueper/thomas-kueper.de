@@ -23,6 +23,8 @@ Unsere Aufmerksamkeit ist begrenzt. Nähe und vertraute Geschichten bewegen uns 
 
 Eine Resonanzethik muss deshalb erklären, weshalb auch jene Anspruch auf gerechte Behandlung besitzen, deren Erfahrungen niemals unmittelbar eine Antwort in uns auslösen.
 
+Die Grenze einer persönlichen Begegnung schützt uns vor Vereinnahmung. Sie beantwortet aber noch nicht, wie Menschen geschützt werden, die uns gar nicht begegnen – oder deren Lebensbedingungen bereits bestimmen, ob sie überhaupt gehört werden können.
+
 Bereits beim persönlichen Mitleid stellt sich die Frage nach dem Spielraum des anderen: nach den Möglichkeiten, die ihm tatsächlich offenstehen, sein Leben zu deuten, zu gestalten und selbst zu handeln. Doch jetzt verschiebt sich der Blick. Welche Ansprüche gelten, wenn eine Begegnung niemals stattfindet?
 
 ## II. Die Ungerechtigkeit der Nähe
@@ -34,6 +36,8 @@ Wenn zwei Menschen vergleichbare Ansprüche und denselben Unterstützungsbedarf 
 In Adam Smiths *Theorie der ethischen Gefühle* (1759) entsteht Anteilnahme durch den Versuch, sich mit der Einbildungskraft in die Lage eines anderen zu versetzen. Seine Figur des unparteiischen Beobachters hilft, voreilige Parteinahmen zu prüfen. Sie ist dabei keine gefühllose Instanz: Smith entwickelt moralisches Urteil gerade aus der Auseinandersetzung mit menschlichen Gefühlen. Unser Vorschlag eigenständiger Gerechtigkeitsmaßstäbe geht darüber hinaus; er ist Smith nicht einfach zuzuschreiben.
 
 Auch gleiche Behandlung kann bei ungleichen Voraussetzungen ungerecht sein. Gerechtigkeit verlangt daher keine identischen Gefühle, sondern Gründe, die auch gegenüber Menschen vertreten werden können, deren Perspektive wir nicht teilen.
+
+Diese Voraussetzungen prägen schon persönliche Begegnungen. Wer einen sicheren Arbeitsplatz, Geld oder verständliche Sprache besitzt, kann leichter widersprechen als jemand, der von einem Vorgesetzten, einer Behörde oder einer betreuenden Person abhängig ist. Was wie freie Zustimmung aussieht, kann unter ungleichen Bedingungen entstehen. Deshalb beginnt die Frage nach Gerechtigkeit nicht erst am Schalter einer Institution; sie reicht in die Beziehungen hinein, die gesellschaftliche Ordnungen ermöglichen oder erschweren.
 
 Die Frage nach der Gerechtigkeit kann mit Erschütterung beginnen. Ihre Antwort verlangt eine überprüfbare Begründung.
 
