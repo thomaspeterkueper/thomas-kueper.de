@@ -14,6 +14,8 @@ topics: ["Philosophie", "Kontingenz", "Verantwortung", "Erkenntnis", "Omnizedenz
 
 **Thomas Peter Küper · Überarbeitete Arbeitsfassung 0.8, 15. November 2026**
 
+*Entstehungsgeschichte, Quellen- und Werkstattnotizen sind [separat dokumentiert](werkstatt/2026-11-15-steuermann-versionsnotizen.md).*
+
 Vielleicht sitzt niemand am Steuer.
 
 Vielleicht gibt es keinen verborgenen Plan, keine unsichtbare Hand, die jedes Ereignis an seinen Platz rückt, keinen Regisseur, der längst weiß, wie die Geschichte endet.
@@ -163,6 +165,3 @@ Die wichtigere Einsicht könnte vorerst bescheidener sein: Nicht jedes Geschehen
 Zwischen der Gewissheit, dass jemand steuert, und der Gewissheit, dass niemand steuert, liegt ein Raum, den wir selten lange betreten.
 
 Es ist der Raum, in dem eine Frage eine Frage bleiben darf.
-
-
-*Entstehungsgeschichte, Quellen- und Werkstattnotizen sind [separat dokumentiert](werkstatt/2026-11-15-steuermann-versionsnotizen.md).*
