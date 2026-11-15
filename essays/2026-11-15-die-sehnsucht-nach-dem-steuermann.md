@@ -4,7 +4,7 @@ subtitle: "Über Kontingenz, Absicht und die Übung des Offenlassens"
 author: "Thomas Peter Küper"
 date: 2026-11-15
 status: "Arbeitsfassung"
-version: "0.7"
+version: "0.8"
 topics: ["Philosophie", "Kontingenz", "Verantwortung", "Erkenntnis", "Omnizedenz"]
 ---
 
@@ -12,7 +12,7 @@ topics: ["Philosophie", "Kontingenz", "Verantwortung", "Erkenntnis", "Omnizedenz
 
 *Über Kontingenz, Absicht und die Übung des Offenlassens*
 
-**Thomas Peter Küper · Überarbeitete Arbeitsfassung 0.7, 15. November 2026**
+**Thomas Peter Küper · Überarbeitete Arbeitsfassung 0.8, 15. November 2026**
 
 Vielleicht sitzt niemand am Steuer.
 
@@ -28,9 +28,7 @@ Eine Vorsicht ist nötig: Dass Menschen einen Lenker ersehnen, beweist weder des
 
 ## I. Die Sehnsucht nach dem Steuermann
 
-Ein Schiff ohne Steuermann ist ein beunruhigendes Bild. Wir sehen das Meer, die wechselnden Winde und die Passagiere, die sich an Bord bewegen. Aber wir sehen niemanden an der Brücke. Sofort entsteht die Frage: Wer bestimmt den Kurs?
-
-Vielleicht ist bereits die Frage voreilig. Denn die Welt ist kein Schiff, nur weil wir sie uns so vorstellen. Ein Schiff wurde gebaut, um gesteuert zu werden. Das Universum muss nicht denselben Zweck besitzen. Die Metapher macht eine Vorstellung anschaulich, doch sie schmuggelt zugleich ihre Voraussetzungen ein: ein Fahrzeug, ein Ziel, einen Plan, eine Instanz, die vom Ganzen getrennt ist und darüber verfügt.
+Ein Schiff ohne Steuermann ist ein beunruhigendes Bild. Wir sehen das Meer, die wechselnden Winde und die Passagiere, die sich an Bord bewegen. Aber wir sehen niemanden an der Brücke. Sofort drängt sich die Frage auf: Wer bestimmt den Kurs? Aber vielleicht ist bereits diese Frage voreilig. Denn die Welt ist kein Schiff, nur weil wir sie uns so vorstellen. Ein Schiff wurde gebaut, um gesteuert zu werden. Das Universum muss nicht denselben Zweck besitzen. Die Metapher macht eine Vorstellung anschaulich, doch sie schmuggelt zugleich ihre Voraussetzungen ein: ein Fahrzeug, ein Ziel, einen Plan, eine Instanz, die vom Ganzen getrennt ist und darüber verfügt.
 
 Und warum sagen wir überhaupt „Steuermann“? Das Wort ruft eine historisch vertraute, männlich besetzte Figur der Führung auf. Daraus folgt nicht, dass wir uns tatsächlich einen Mann wünschen. Aber die scheinbar kleine Frage nach dem Geschlecht zeigt, wie viel unsere Metapher schon festlegt, bevor die Untersuchung begonnen hat. Der Steuermann ist ein Bild, nicht die Wirklichkeit selbst. Später werden andere Bilder nötig sein.
 
@@ -80,6 +78,8 @@ Die Unverfügbarkeit der Welt anerkennen heißt nicht, passiv zu werden. Es kann
 
 Eine Grenze des Einflusses ist keine Widerlegung des Handelns. Sie beschreibt die Bedingungen, unter denen wir handeln.
 
+Doch der Wunsch nach einem sicheren Bühnenbild ist noch nicht der Wunsch nach einem Steuermann. Was erhoffen wir uns eigentlich von einer Instanz, die uns nicht alles abnimmt?
+
 ## IV. Vier Sehnsüchte
 
 ### Gesehen werden
@@ -90,7 +90,7 @@ Ein Steuermann kann einen Kurs berechnen, ohne einen einzigen Passagier wirklich
 
 Vielleicht wünschen wir uns nicht in erster Linie einen Herrscher, sondern ein Gegenüber. Das könnte erklären, weshalb die Vorstellung einer gleichgültigen Welt so schmerzlich erscheint: Nicht nur, weil sie unberechenbar wäre, sondern weil unsere Fragen an sie unbeantwortet bleiben könnten.
 
-Die menschliche Sehnsucht nach Zuwendung entscheidet nicht darüber, ob das Universum selbst ein Gegenüber besitzt. Sie eröffnet nur eine Frage, die tiefer reicht als die nach einem Steuerrad: **Ist es jemandem wichtig, dass wir da sind?**
+**Ist es jemandem wichtig, dass wir da sind?**
 
 ### Orientierung und verbindliche Regeln
 
@@ -100,7 +100,7 @@ Dafür lassen sich verschiedene Gründe denken. Eine übergeordnete Norm kann Ha
 
 Dabei sollte man den Wunsch nach Regeln nicht mit dem Wunsch nach Fremdbestimmung verwechseln. Menschen können sich freiwillig an verbindliche Grundsätze binden, gerade um Willkür zu begrenzen. Auch ohne einen übergeordneten Gesetzgeber sind begründbare moralische Maßstäbe denkbar.
 
-Eine alte philosophische Frage lässt die Schwierigkeit sichtbar werden: Ist etwas gut, weil Gott es gebietet, oder gebietet Gott es, weil es gut ist? Im ersten Fall droht Güte bloß der Macht eines Befehls zu folgen. Im zweiten Fall geht das Gute nicht vollständig im Befehl auf. Das Dilemma widerlegt keine göttliche Ordnung; es zeigt, dass die Sehnsucht nach einem Maßstab noch nicht sagt, woher dieser kommt.
+Die Sehnsucht nach einem festen Maßstab beantwortet noch nicht, woher er kommen soll. Das Euthyphron-Dilemma stellt die Frage: Ist etwas gut, weil Gott es gebietet, oder gebietet Gott es, weil es gut ist? Im ersten Fall droht Güte bloß der Macht eines Befehls zu folgen. Im zweiten Fall geht das Gute nicht vollständig im Befehl auf. Das Dilemma widerlegt keine göttliche Ordnung; es zeigt, dass die Sehnsucht nach einem Maßstab noch nicht sagt, woher dieser kommt.
 
 So tritt neben die Sehnsucht, gesehen zu werden, eine zweite: der Wunsch, dass nicht alles zur Disposition steht. Vielleicht hoffen wir auf eine Instanz, der wir wichtig sind. Vielleicht hoffen wir zugleich auf ein Gutes, das auch dann gilt, wenn niemand von uns es durchsetzt. Und vielleicht geraten gerade diese Hoffnungen in Konflikt, wenn eine vermeintlich höhere Weisung unsere Fürsorge füreinander verletzt.
 
@@ -108,11 +108,15 @@ So tritt neben die Sehnsucht, gesehen zu werden, eine zweite: der Wunsch, dass n
 
 Der Wunsch nach Regeln ist noch nicht der Wunsch nach Gerechtigkeit. Regeln können bestehen und dennoch Unrecht zulassen. Wer erlebt hat, dass eine Tat ungesühnt bleibt oder ein Leiden niemanden interessiert, kann hoffen, dass es wenigstens eine Instanz gibt, der nichts entgeht. Ein Gericht kann urteilen, ohne zu trösten; ein liebendes Gegenüber kann trösten, ohne die Welt gerecht zu machen. Darum verdient die Hoffnung auf eine letzte Gerechtigkeit einen eigenen Platz neben dem Wunsch nach Orientierung.
 
+Eine Regel kann uns sagen, was wir tun sollen. Sie garantiert nicht, dass erlittenes Unrecht anerkannt, eine Verletzung wiedergutgemacht oder der Schwächere geschützt wird. Wer auf letzte Gerechtigkeit hofft, hofft nicht nur auf ein Gesetz, sondern darauf, dass nichts endgültig übersehen bleibt. Diese Hoffnung kann Menschen zum Handeln bewegen; sie kann aber auch dazu verführen, notwendige menschliche Gerechtigkeit auf eine spätere Instanz zu verschieben.
+
+Und was, wenn diese Antwort ausbleibt? Dann kann die Hoffnung in Klage, Zweifel oder Protest übergehen. Sie kann eine besondere Schärfe gewinnen, wenn Menschen sich nach einem Schuldigen sehnen, wo Verantwortlichkeit noch ungeklärt ist. Doch aus enttäuschter Gerechtigkeitserwartung folgt nicht zwangsläufig Misstrauen oder der Glaube an einen verborgenen Plan. Gerade darum müssen wir den Wunsch nach Gerechtigkeit vom Bedürfnis nach einem erklärenden Täter unterscheiden.
+
 ### Jemand, an den wir uns wenden können
 
 Vielleicht fehlt noch etwas in unserer Beschreibung. Wenn wir uns einen Lenker wünschen, erwarten wir möglicherweise nicht nur, dass er uns sieht oder dass seine Regeln gelten. Wir wünschen uns auch, dass wir ihn ansprechen können. Wir wollen bitten dürfen, danken, klagen, fragen, vielleicht sogar widersprechen.
 
-Ein Gebet kann um Heilung bitten, um Regen, um den Schutz eines Kindes. Es kann aber auch ganz ohne konkrete Bitte auskommen: als Ausdruck der Dankbarkeit, als Übung der Aufmerksamkeit oder als Klage, für die kein menschlicher Empfänger ausreicht. Aus dem Bedürfnis, etwas auszusprechen, folgt noch nicht, dass es einen überweltlichen Hörer gibt. Aber es zeigt, warum ein Universum, das auf menschliche Wünsche nicht antwortet, nicht nur unkontrollierbar, sondern auch einsam erscheinen könnte.
+Ein Gebet kann um Heilung bitten, um Regen, um den Schutz eines Kindes. Es kann aber auch ganz ohne konkrete Bitte auskommen: als Dankbarkeit oder als Klage, für die kein menschlicher Empfänger ausreicht. Aus dem Bedürfnis, etwas auszusprechen, folgt noch nicht, dass es einen überweltlichen Hörer gibt. Aber es zeigt, warum ein Universum, das auf menschliche Wünsche nicht antwortet, nicht nur unkontrollierbar, sondern auch einsam erscheinen könnte.
 
 Hier erweist sich die Metapher des Steuermanns erneut als zu eng. Ein Steuermann muss nicht zuhören; jemand, der zuhört, muss nicht lenken können. Und nicht jede religiöse Praxis richtet sich an ein einziges Wesen, das den gesamten Lauf der Dinge bestimmt.
 
@@ -134,7 +138,7 @@ Unsere Fähigkeit, hinter Vorgängen absichtsvolle Akteure zu vermuten, ist also
 
 Wir sind der Projektion nicht vollständig ausgeliefert. Wir können unsere Vermutungen korrigieren, auch wenn uns das nicht immer gelingt. Erkenntnis besteht nicht darin, nirgends mehr einen Willen anzunehmen. Sie besteht darin, die Annahme nicht mit ihrem Beleg zu verwechseln.
 
-Das ist auch für die Frage nach dem Ganzen wichtig. Vielleicht besteht es aus Beziehungen und Prozessen, die neue Formen hervorbringen, ohne von einer zentralen Instanz einzeln angewiesen zu werden. Vielleicht besitzt das Ganze selbst eine Form von Bewusstsein, die mit unserem gewöhnlichen Bild eines entscheidenden Subjekts wenig gemeinsam hat. Vielleicht trifft keine dieser Beschreibungen zu.
+Das ist auch für die Frage nach dem Ganzen wichtig. In einem Ökosystem beeinflussen sich Lebewesen, Boden, Wasser und Klima gegenseitig; keine einzelne Art legt dessen Gesamtentwicklung fest. Vielleicht besteht auch das Ganze aus Beziehungen und Prozessen, die neue Formen hervorbringen, ohne von einer zentralen Instanz einzeln angewiesen zu werden. Vielleicht besitzt das Ganze selbst eine Form von Bewusstsein, die mit unserem gewöhnlichen Bild eines entscheidenden Subjekts wenig gemeinsam hat. Vielleicht trifft keine dieser Beschreibungen zu.
 
 Eine Philosophie, die das Ganze denken möchte, sollte ihre eigenen Bilder nicht für die Wirklichkeit halten. Der Steuermann ist ein Bild. Die Maschine ist ein Bild. Auch der Organismus ist ein Bild. Jedes macht etwas sichtbar und lässt anderes verschwinden.
 
@@ -159,8 +163,6 @@ Die wichtigere Einsicht könnte vorerst bescheidener sein: Nicht jedes Geschehen
 Zwischen der Gewissheit, dass jemand steuert, und der Gewissheit, dass niemand steuert, liegt ein Raum, den wir selten lange betreten.
 
 Es ist der Raum, in dem eine Frage eine Frage bleiben darf.
-
-Nicht für immer. Nicht aus Gleichgültigkeit. Sondern solange wir ihre Antwort noch nicht kennen.
 
 
 *Entstehungsgeschichte, Quellen- und Werkstattnotizen sind [separat dokumentiert](werkstatt/2026-11-15-steuermann-versionsnotizen.md).*
