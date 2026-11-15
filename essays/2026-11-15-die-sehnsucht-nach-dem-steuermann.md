@@ -4,7 +4,7 @@ subtitle: "Über Kontingenz, Absicht und die Übung des Offenlassens"
 author: "Thomas Peter Küper"
 date: 2026-11-15
 status: "Arbeitsfassung"
-version: "0.9"
+version: "0.10"
 topics: ["Philosophie", "Kontingenz", "Verantwortung", "Erkenntnis", "Omnizedenz"]
 ---
 
@@ -12,7 +12,7 @@ topics: ["Philosophie", "Kontingenz", "Verantwortung", "Erkenntnis", "Omnizedenz
 
 *Über Kontingenz, Absicht und die Übung des Offenlassens*
 
-**Thomas Peter Küper · Überarbeitete Arbeitsfassung 0.9, 15. November 2026**
+**Thomas Peter Küper · Überarbeitete Arbeitsfassung 0.10, 15. November 2026**
 
 *Entstehungsgeschichte, Quellen- und Werkstattnotizen sind [separat dokumentiert](werkstatt/2026-11-15-steuermann-versionsnotizen.md).*
 
@@ -165,3 +165,19 @@ Die wichtigere Einsicht könnte vorerst bescheidener sein: Nicht jedes Geschehen
 Zwischen der Gewissheit, dass jemand steuert, und der Gewissheit, dass niemand steuert, liegt ein Raum, den wir selten lange betreten.
 
 Es ist der Raum, in dem eine Frage eine Frage bleiben darf.
+
+---
+
+## Quellen und weiterführende Literatur
+
+Die folgenden Arbeiten stützen einzelne philosophiegeschichtliche, psychologische und kulturvergleichende Bezüge des Essays. Die vier Sehnsüchte und die Frage nach einem möglichen Weltenlenker sind philosophische Deutungsangebote, keine durch diese Literatur empirisch bewiesenen Ergebnisse.
+
+- **Platon / Euthyphron-Dilemma:** *Euthyphron* (ursprüngliche Frage nach dem Frommen und dem Geliebtwerden durch die Götter). Zur späteren Anwendung auf göttliche Gebote: *Internet Encyclopedia of Philosophy*, [Divine Command Theory](https://iep.utm.edu/divine-command-theory/).
+- **Verschwörungserzählungen:** Douglas, Karen M.; Sutton, Robbie M.; Cichocka, Aleksandra (2017): „The Psychology of Conspiracy Theories“. *Current Directions in Psychological Science* 26(6), S. 538–542. [DOI: 10.1177/0963721417718261](https://doi.org/10.1177/0963721417718261).
+- **Psychologische Motive und ihre Grenzen:** „Reasons to believe: A systematic review and meta-analytic synthesis of the motives associated with conspiracy beliefs“ (2025). *Psychological Bulletin* 151(1), S. 48–87. [DOI: 10.1037/bul0000463](https://doi.org/10.1037/bul0000463). Die Zusammenhänge belegen nicht, dass Verschwörungsglaube tatsächlich Trost spendet.
+- **Afrikanische Religionsgeschichte:** Olupọna, Jacob K. (2014): *African Religions: A Very Short Introduction*. Oxford University Press, insbesondere „Gods, ancestors, and spirit beings“. [Verlagsseite](https://academic.oup.com/book/465/chapter-abstract/135243892).
+- **Ifá und religiöse Vermittlung:** UNESCO: [Ifa divination system](https://ich.unesco.org/en/RL/ifa-divination-system-00146).
+- **Indigenes australisches Verständnis von Country:** Australian Institute of Aboriginal and Torres Strait Islander Studies (AIATSIS): [Welcome to Country](https://aiatsis.gov.au/explore/welcome-country), insbesondere die Erläuterungen zu Country.
+- **Selbstorganisation:** Green, D. G.; Sadedin, S.; Leishman, T. G. (2008): „Self-Organization“. In: *Encyclopedia of Ecology*. [DOI: 10.1016/B978-008045405-4.00696-0](https://doi.org/10.1016/B978-008045405-4.00696-0).
+
+Ein ausführlicher, nach Kapiteln geordneter [Quellenprüfbericht](recherchen/2026-11-15-steuermann-quellenpruefung-v0-9.md) dokumentiert die Reichweite und Grenzen der Belege. Die [Entstehungsgeschichte](entstehung/2026-11-15-die-sehnsucht-nach-dem-steuermann.md) ist separat zugänglich.
