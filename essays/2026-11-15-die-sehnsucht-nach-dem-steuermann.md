@@ -4,7 +4,7 @@ subtitle: "Vielleicht ist die Frage nicht, ob jemand steuert. Vielleicht ist die
 author: "Thomas Peter Küper"
 date: 2026-11-15
 status: "Arbeitsfassung"
-version: "0.2"
+version: "0.3"
 topics: ["Philosophie", "Kontingenz", "Verantwortung", "Erkenntnis", "Omnizedenz"]
 ---
 
@@ -12,7 +12,7 @@ topics: ["Philosophie", "Kontingenz", "Verantwortung", "Erkenntnis", "Omnizedenz
 
 *Vielleicht ist die Frage nicht, ob jemand steuert. Vielleicht ist die Frage, warum wir so dringend wollen, dass jemand steuert.*
 
-**Thomas Peter Küper · Überarbeitete Arbeitsfassung, 15. November 2026**
+**Thomas Peter Küper · Überarbeitete Arbeitsfassung 0.3, 15. November 2026**
 
 Vielleicht sitzt niemand am Steuer.
 
@@ -80,6 +80,16 @@ Die Unverfügbarkeit der Welt anerkennen heißt nicht, passiv zu werden. Es kann
 
 Eine Grenze des Einflusses ist keine Widerlegung des Handelns. Sie beschreibt die Bedingungen, unter denen wir handeln.
 
+### Gesehen werden, ohne gelenkt zu werden
+
+Vielleicht liegt hinter der Sehnsucht nach einem Steuermann ein noch elementareres Bedürfnis. Nicht unbedingt der Wunsch, dass jemand für uns entscheidet, sondern die Hoffnung, dass jemand bemerkt, dass wir da sind. Dass unser Leben, unsere Freude und unser Schmerz nicht vollkommen gleichgültig sind.
+
+Ein Steuermann kann einen Kurs berechnen, ohne einen einzigen Passagier wirklich wahrzunehmen. Umgekehrt kann jemand uns aufmerksam begleiten, ohne unsere Entscheidungen an sich zu ziehen. Darum sollten wir **Steuerung, Wahrnehmung und Zuwendung** nicht verwechseln. Auch Überwachung bedeutet, gesehen zu werden; sie ist deshalb noch lange keine Fürsorge. Und wer uns liebt, muss nicht unser Schicksal lenken können.
+
+Vielleicht wünschen wir uns nicht in erster Linie einen Herrscher, sondern ein Gegenüber. Jemanden, der uns nicht als austauschbaren Teil eines großen Ablaufs betrachtet. Das könnte erklären, weshalb die Vorstellung einer gleichgültigen Welt so schmerzlich erscheint: Nicht nur, weil sie unberechenbar wäre, sondern weil unsere Fragen an sie unbeantwortet bleiben könnten.
+
+Doch auch diese Deutung darf nicht zum Schlüssel für alle Menschen und alle Formen des Glaubens erklärt werden. Manche suchen Wahrheit, andere Gerechtigkeit, manche Geborgenheit, manche keinen übergeordneten Adressaten. Und die menschliche Sehnsucht nach Zuwendung entscheidet nicht darüber, ob das Universum selbst ein Gegenüber besitzt. Sie eröffnet nur eine Frage, die tiefer reicht als die nach einem Steuerrad: **Ist es jemandem wichtig, dass wir da sind?**
+
 ## IV. Zusammenhang ohne Absicht
 
 Eine Sprache entwickelt Regeln, ohne dass ein einzelner Sprecher sie erfinden oder durchsetzen müsste. Ein Wald besitzt Struktur, obwohl kein Baum den Wald plant. Märkte, Städte und wissenschaftliche Gemeinschaften zeigen Ordnungen, die weder bloß zufällig noch Ausdruck eines einheitlichen Willens sind. Ihre Strukturen entstehen aus vielen Vorgängen, Rückkopplungen, Gewohnheiten und Begrenzungen.
@@ -122,7 +132,7 @@ Nicht für immer. Nicht aus Gleichgültigkeit. Sondern solange wir ihre Antwort 
 
 ---
 
-## Werkstattvermerk zur Fassung 0.2
+## Werkstattvermerk zur Fassung 0.3
 
 **Textstatus:** redaktionell überprüfter philosophischer Entwurf; noch keine abschließende Quellen- oder Zitatprüfung. Die Beispiele dienen der begrifflichen Klärung, nicht als empirischer Nachweis einer universellen menschlichen Motivation.
 
@@ -134,6 +144,8 @@ Nicht für immer. Nicht aus Gleichgültigkeit. Sondern solange wir ihre Antwort 
 5. Offenheit ist eine Praxis, keine vorweggenommene metaphysische Entscheidung.
 
 **Redaktioneller Abgleich v0.2:** Erklärung, Verantwortung und Verfügbarkeit werden am Katastrophenbeispiel differenziert; die entlastende Wirkung eines bösen Plans wird ausdrücklich nicht verallgemeinert; der Gegenfall berechtigter Verantwortungszuschreibung wird gestärkt; die Verbindung zur Omnizedenz bleibt als Möglichkeit statt als Resultat formuliert. Der Titel ist ausdrücklich vorläufig: „Steuermann“ kann ein tradiertes männliches Führungsbild transportieren, ohne dass daraus eine Präferenz für männliche Führung folgt.
+
+**Redaktioneller Abgleich v0.3:** Neuer Abschnitt „Gesehen werden, ohne gelenkt zu werden“ in Kapitel III: Die zentrale Hypothese verschiebt sich von bloßer Kontrolle zu der Sehnsucht nach Wahrnehmung und Zuwendung. Steuerung, Wahrnehmung und Fürsorge werden getrennt; die Gegenprobe der Überwachung und die metaphysische Ergebnisoffenheit bleiben ausdrücklich erhalten. Titelentscheidung weiterhin offen.
 
 **Für die nächste Revision:** Stil und Übergänge weiter verdichten; mögliche Bezüge zu Hume, Nietzsche, Freud, Piaget und Forschung zur Zuschreibung von Absicht nur nach Quellenprüfung einarbeiten; prüfen, ob „Die Sehnsucht nach dem Steuermann“, „Die Sehnsucht nach jemandem am Steuer“ oder „Warum muss jemand steuern?“ den ergebnisoffenen Gedanken am besten trägt.
 
