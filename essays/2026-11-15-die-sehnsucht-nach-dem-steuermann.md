@@ -1,0 +1,136 @@
+---
+title: "Die Sehnsucht nach dem Steuermann"
+subtitle: "Vielleicht ist die Frage nicht, ob jemand steuert. Vielleicht ist die Frage, warum wir so dringend wollen, dass jemand steuert."
+author: "Thomas Peter Küper"
+date: 2026-11-15
+status: "Arbeitsfassung"
+version: "0.1"
+topics: ["Philosophie", "Kontingenz", "Verantwortung", "Erkenntnis", "Omnizedenz"]
+---
+
+# Die Sehnsucht nach dem Steuermann
+
+*Vielleicht ist die Frage nicht, ob jemand steuert. Vielleicht ist die Frage, warum wir so dringend wollen, dass jemand steuert.*
+
+**Thomas Peter Küper · Erstfassung, 15. November 2026**
+
+Vielleicht sitzt niemand am Steuer.
+
+Vielleicht gibt es keinen verborgenen Plan, keine unsichtbare Hand, die jedes Ereignis an seinen Platz rückt, keinen Regisseur, der längst weiß, wie die Geschichte endet.
+
+Vielleicht gibt es ihn aber doch.
+
+Bemerkenswert ist, wie schwer es uns fällt, die Frage offen zu lassen. Wir suchen nach Verantwortlichen, auch dort, wo noch gar nicht feststeht, ob jemand verantwortlich ist. Wir vermuten Absichten, wo Zusammenhänge genügen könnten. Wenn uns etwas Schreckliches widerfährt, fragen wir häufig, warum es geschehen musste, noch bevor wir gefragt haben, ob es überhaupt geschehen musste.
+
+Vielleicht fürchten wir weniger, dass jemand über uns bestimmt, als dass niemand über uns wacht. Aber was genau wäre daran so schwer zu ertragen?
+
+Eine Vorsicht ist nötig, bevor wir beginnen: Dass Menschen einen Lenker ersehnen, beweist weder dessen Existenz noch dessen Nichtexistenz. Aus einem Bedürfnis folgt keine Ontologie. Umgekehrt ist nicht jede Frage nach einer Absicht schon eine Projektion. Manchmal gibt es tatsächlich jemanden, der etwas beschlossen, verursacht oder verschuldet hat. Die folgende Untersuchung will weder den Glauben widerlegen noch das Fragen nach Verantwortung verdächtig machen. Sie richtet sich auf einen Schritt davor: Was geschieht in uns, wenn wir an der Vorstellung festhalten, irgendjemand müsse das Ganze lenken?
+
+## I. Die Sehnsucht nach dem Steuermann
+
+Ein Schiff ohne Steuermann ist ein beunruhigendes Bild. Wir sehen das Meer, die wechselnden Winde und die Passagiere, die sich an Bord bewegen. Aber wir sehen niemanden an der Brücke. Sofort entsteht die Frage: Wer bestimmt den Kurs?
+
+Vielleicht ist bereits die Frage voreilig. Denn die Welt ist kein Schiff, nur weil wir sie uns so vorstellen. Ein Schiff wurde gebaut, um gesteuert zu werden. Das Universum muss nicht denselben Zweck besitzen. Die Metapher macht eine Vorstellung anschaulich, doch sie schmuggelt zugleich ihre Voraussetzungen ein: ein Fahrzeug, ein Ziel, einen Plan, eine Instanz, die vom Ganzen getrennt ist und darüber verfügt.
+
+Warum halten wir solche Bilder dennoch für so naheliegend?
+
+Wir kennen Absichten von innen. Wir nehmen einen Gegenstand in die Hand, weil wir etwas mit ihm vorhaben. Wir gehen an einen Ort, weil wir dort sein wollen. Wir versprechen etwas und versuchen, es einzuhalten. So lernen wir, Handlungen mit Gründen zu verbinden. Es ist nicht verwunderlich, wenn wir auch hinter dem Geschehen der Welt nach Gründen fragen, die denen unseres eigenen Handelns ähneln.
+
+Dieser Übergang kann Erkenntnis ermöglichen. Ein beschädigtes Schloss kann auf einen Einbruch hinweisen; ein politischer Beschluss auf Interessen, Absprachen, Macht. Wer grundsätzlich keine Absichten mehr vermutete, wäre nicht besonders aufgeklärt, sondern oft blind für das Tun anderer.
+
+Doch aus der berechtigten Suche nach einzelnen Urhebern folgt noch kein Urheber des Ganzen. Aus der Erfahrung, dass vieles gesteuert wird, folgt nicht, dass alles gesteuert werden muss.
+
+Wir sollten drei Fragen unterscheiden: Was erklärt ein Ereignis? Wer trägt gegebenenfalls Verantwortung dafür? Und wie weit ist es für uns beeinflussbar? Eine Ursache ist nicht immer eine Absicht; ein Verursacher nicht immer ein Schuldiger; ein verstandener Zusammenhang nicht notwendig beherrschbar. Die Fragen berühren sich, aber sie sind nicht austauschbar.
+
+Gerade wenn sie ineinanderfallen, erscheint der Steuermann so verlockend. Er könnte erklären, verantworten und eingreifen – alles in einer Gestalt. Ein Ansprechpartner für die Welt.
+
+## II. Der Trost des bösen Plans
+
+Es gibt eine merkwürdige Form der Beruhigung, die nicht aus einer guten Nachricht entsteht, sondern aus der Nachricht, dass jemand dahintersteckt.
+
+Eine Krise, die aus vielen ineinandergreifenden Entscheidungen, Zufällen, Fehlanreizen und Missverständnissen erwachsen ist, lässt sich kaum erzählen. Ein geheimer Plan dagegen besitzt Figuren, Motive und eine Richtung. Es gibt Täter, Opfer, Zeichen und vermeintlich versteckte Beweise. Die Geschichte ist bedrohlich, aber sie hat einen Adressaten.
+
+Das bedeutet nicht, dass Menschen Verschwörungserzählungen stets aus demselben Grund glauben. Misstrauen kann aus realen Täuschungen, schlechten Erfahrungen, sozialer Ausgrenzung oder berechtigter Kritik entstehen. Und tatsächliche Verschwörungen kommen vor. Nicht jeder Verdacht ist irrational. Entscheidend ist die Art, wie ein Verdacht geprüft und wie mit Gegenbelegen umgegangen wird.
+
+Dennoch lohnt sich die Frage, warum die Vorstellung eines absichtlich herbeigeführten Übels manchmal leichter auszuhalten scheint als das Zusammentreffen unpersönlicher Prozesse.
+
+Ein böser Lenker ist anklagbar. Man kann ihn benennen, verurteilen, vielleicht bekämpfen. Das verschafft der Klage eine Richtung. Doch genau darin liegt eine Asymmetrie: Derselbe Lenker, der die Welt erzählbar macht, kann den Einzelnen ohnmächtig erscheinen lassen. Je umfassender sein angeblicher Plan, desto kleiner der eigene Handlungsspielraum. Was zunächst entlastet – endlich ist jemand verantwortlich –, kann in die Überzeugung umschlagen, selbst nichts mehr bewirken zu können.
+
+Die Frage nach Verantwortung ist deshalb unverzichtbar, aber sie darf nicht zur Pflicht werden, hinter jedem Ereignis einen Willen zu entdecken. Sonst verwechseln wir Rechenschaft mit Erklärung und verwandeln Unübersichtlichkeit in ein Drama mit vorab besetzten Rollen.
+
+Vielleicht ist die Suche nach dem Schuldigen manchmal auch eine Suche nach der Hoffnung, das Geschehen hätte anders sein können. Wo jemand gehandelt hat, hätte er möglicherweise anders handeln können. Wo niemand entschieden hat, fehlt uns dieser einfache Satz.
+
+## III. Die Zumutung des Unverfügbaren
+
+Wir nennen Freiheit meist etwas Gutes. Wir wollen wählen dürfen, lieben, zweifeln, aufbrechen, bleiben. Aber Freiheit bedeutet nicht nur, dass unsere Entscheidungen offen sind. Sie bedeutet auch, dass andere Menschen anders entscheiden können als wir. Und selbst jenseits menschlicher Entscheidungen bleibt vieles unserem Zugriff entzogen.
+
+Eine Krankheit hält sich nicht an unsere Pläne. Das Wetter folgt keiner Bitte. Eine Begegnung verändert ein Leben, ohne dass jemand sie arrangiert haben muss. Manches lässt sich vorbereiten, kaum etwas vollständig absichern.
+
+Vielleicht fürchten wir deshalb nicht in erster Linie eine freie Welt, sondern eine unverfügbare. Eine Welt, in der das Geschehen nicht auf unsere Wünsche antworten muss.
+
+Der Gedanke an einen Lenker verspricht, diese Unverfügbarkeit wenigstens gedanklich zu mildern. Wo es einen Willen gibt, könnte es Gründe geben. Wo es Gründe gibt, könnte es Verhandlung geben. Vielleicht lässt sich bitten, überzeugen oder verstehen. Selbst ein unzugänglicher Wille scheint uns mitunter näher als ein Prozess, der auf unsere Fragen überhaupt nicht antwortet.
+
+Doch ein gelenktes Ganzes wäre keineswegs automatisch ein tröstliches Ganzes. Es könnte auch eines sein, in dem Freiheit nur noch das Ausführen eines längst feststehenden Skripts bedeutet. Die Sehnsucht nach Schutz und die Sehnsucht nach Selbstbestimmung geraten aneinander.
+
+Wir möchten nicht bloß Marionetten sein. Aber wir wünschen uns bisweilen, dass wenigstens die Bühne sicher steht, der nächste Akt Sinn ergibt und jemand aufpasst, wenn wir fallen.
+
+Die Unverfügbarkeit der Welt anerkennen heißt nicht, passiv zu werden. Es kann im Gegenteil bedeuten, genauer zu unterscheiden: Was kann ich tatsächlich verändern? Was muss ich gemeinsam mit anderen gestalten? Wo ist Widerstand möglich, und wo wäre der Anspruch totaler Kontrolle selbst die Quelle des Leidens?
+
+Eine Grenze des Einflusses ist keine Widerlegung des Handelns. Sie beschreibt die Bedingungen, unter denen wir handeln.
+
+## IV. Zusammenhang ohne Absicht
+
+Eine Sprache entwickelt Regeln, ohne dass ein einzelner Sprecher sie erfinden oder durchsetzen müsste. Ein Wald besitzt Struktur, obwohl kein Baum den Wald plant. Märkte, Städte und wissenschaftliche Gemeinschaften zeigen Ordnungen, die weder bloß zufällig noch Ausdruck eines einheitlichen Willens sind. Ihre Strukturen entstehen aus vielen Vorgängen, Rückkopplungen, Gewohnheiten und Begrenzungen.
+
+Diese Beispiele beweisen nichts über die letzte Beschaffenheit der Wirklichkeit. Sie widerlegen weder Gott noch ein umfassendes Bewusstsein. Sie genügen aber, um eine begriffliche Engführung aufzubrechen: Zusammenhang ist nicht dasselbe wie Absicht.
+
+Ebenso gilt: Dass niemand alles steuert, bedeutet nicht, dass niemand etwas steuert. Eltern entscheiden über vieles im Leben ihrer Kinder, Institutionen über Regeln, Unternehmen über Technologien. Menschen gestalten ihre Umwelt und verändern dabei Bedingungen, die niemand allein geschaffen hat. Zwischen vollständiger Lenkung und vollständigem Chaos liegt ein breites Spektrum begrenzter, miteinander verschränkter Wirksamkeiten.
+
+Unsere Fähigkeit, hinter Vorgängen absichtsvolle Akteure zu vermuten, ist also ambivalent. Sie kann uns täuschen. Aber sie kann uns auch zur Untersuchung antreiben. Wir haben gelernt, Stürme meteorologisch zu verstehen, ohne sie einer erzürnten Gestalt zuschreiben zu müssen. Zugleich konnten wir absichtlich erzeugte Schäden aufdecken, gerade weil wir nach Interessen und Verantwortlichen fragten.
+
+Wir sind der Projektion nicht vollständig ausgeliefert. Wir können unsere Vermutungen korrigieren, auch wenn uns das nicht immer gelingt. Erkenntnis besteht nicht darin, nirgends mehr einen Willen anzunehmen. Sie besteht darin, die Annahme nicht mit ihrem Beleg zu verwechseln.
+
+Das ist auch für die Frage nach dem Ganzen wichtig. Vielleicht besteht es aus Beziehungen und Prozessen, die neue Formen hervorbringen, ohne von einer zentralen Instanz einzeln angewiesen zu werden. Vielleicht besitzt das Ganze selbst eine Form von Bewusstsein, die mit unserem gewöhnlichen Bild eines entscheidenden Subjekts wenig gemeinsam hat. Vielleicht trifft keine dieser Beschreibungen zu.
+
+Eine Philosophie, die das Ganze denken möchte, sollte ihre eigenen Bilder nicht für die Wirklichkeit halten. Der Steuermann ist ein Bild. Die Maschine ist ein Bild. Auch der Organismus ist ein Bild. Jedes macht etwas sichtbar und lässt anderes verschwinden.
+
+Die Frage ist nicht, welches Bild sich am behaglichsten anfühlt, sondern was wir mit ihm erkennen – und an welcher Stelle es uns zu sehen hindert.
+
+## V. Die Übung des Offenlassens
+
+Es wäre einfach, den Steuermann vom Schiff zu schicken und das für Befreiung zu erklären. Aber das wäre nur die Umkehrung derselben Gewissheit. Eben noch musste jemand steuern; jetzt dürfte niemand steuern. In beiden Fällen wäre die Frage geschlossen, bevor wir genügend Gründe besitzen.
+
+Vielleicht liegt die schwierigere Möglichkeit dazwischen.
+
+Wir können weiter nach Ursachen fragen und zugleich akzeptieren, dass nicht jede Ursache ein Wille ist. Wir können Verantwortliche zur Rechenschaft ziehen, wo Verantwortung besteht, ohne für jedes Unglück einen Schuldigen zu erfinden. Wir können nach Sinn suchen, ohne vorauszusetzen, dass er uns von einer höheren Instanz zugewiesen wurde.
+
+Das verlangt keinen heldenhaften Mut. Es ist eine Übung. Manchmal gelingt es uns, eine Erklärung vorläufig zu halten, zwischen Wissen und Vermutung zu unterscheiden und einen Widerspruch nicht sofort aufzulösen. Manchmal gelingt es uns nicht. Dann greifen wir nach einer Geschichte, die die Dinge zusammenbindet. Auch das gehört zu uns.
+
+Offenlassen bedeutet nicht Gleichgültigkeit. Wer eine Frage offenlässt, kann weiter beobachten, prüfen, argumentieren, hoffen und handeln. Er verzichtet nur darauf, das noch Unbekannte durch eine gewünschte Antwort zu ersetzen.
+
+Vielleicht gibt es einen Steuermann. Vielleicht gibt es keinen. Vielleicht ist die Vorstellung eines Steuermanns schon die falsche Form, in der wir nach dem Verhältnis zwischen uns und dem Ganzen fragen.
+
+Die wichtigere Einsicht könnte vorerst bescheidener sein: Nicht jedes Geschehen ist eine Botschaft. Nicht jede Ordnung ist ein Befehl. Nicht jeder Zusammenhang braucht einen Urheber, den wir ansprechen können. Und nicht jedes Schweigen der Welt bedeutet, dass sie uns verlassen hätte.
+
+Zwischen der Gewissheit, dass jemand steuert, und der Gewissheit, dass niemand steuert, liegt ein Raum, den wir selten lange betreten.
+
+Es ist der Raum, in dem eine Frage eine Frage bleiben darf.
+
+Nicht für immer. Nicht aus Gleichgültigkeit. Sondern solange wir ihre Antwort noch nicht kennen.
+
+---
+
+## Werkstattvermerk zur Fassung 0.1
+
+**Textstatus:** philosophischer Erstentwurf; noch keine abschließende Quellen- oder Zitatprüfung. Die Beispiele dienen der begrifflichen Klärung, nicht als empirischer Nachweis einer universellen menschlichen Motivation.
+
+**Methodische Leitlinien:**
+1. Aus einem psychologischen Bedürfnis folgt weder die Existenz noch die Nichtexistenz seines Gegenstands.
+2. Erklärung, Verantwortung und Verfügbarkeit sind zu unterscheiden.
+3. Die Suche nach Absichten ist zugleich mögliche Erkenntniskraft und mögliche Fehlerquelle.
+4. Zusammenhang ist nicht dasselbe wie Absicht.
+5. Offenheit ist eine Praxis, keine vorweggenommene metaphysische Entscheidung.
+
+**Für die nächste Revision:** Übergänge verdichten; Gegenbeispiele (berechtigte Suche nach Täter und Ursachen) weiter prüfen; mögliche Bezüge zu Hume, Nietzsche, Freud, Piaget und Forschung zu Agency Detection nur nach Quellenprüfung einarbeiten; Verhältnis zu Omnizedenz und Resonanzethik behutsam abgleichen.
+
+**Versionsführung:** Jede Überarbeitung als separater Git-Commit mit aussagekräftiger Änderungsbeschreibung; frühere Textfassungen bleiben über die Git-Historie rekonstruierbar.
