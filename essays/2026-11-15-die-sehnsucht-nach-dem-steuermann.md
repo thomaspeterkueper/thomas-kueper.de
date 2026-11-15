@@ -4,7 +4,7 @@ subtitle: "Vielleicht ist die Frage nicht, ob jemand steuert. Vielleicht ist die
 author: "Thomas Peter Küper"
 date: 2026-11-15
 status: "Arbeitsfassung"
-version: "0.1"
+version: "0.2"
 topics: ["Philosophie", "Kontingenz", "Verantwortung", "Erkenntnis", "Omnizedenz"]
 ---
 
@@ -12,7 +12,7 @@ topics: ["Philosophie", "Kontingenz", "Verantwortung", "Erkenntnis", "Omnizedenz
 
 *Vielleicht ist die Frage nicht, ob jemand steuert. Vielleicht ist die Frage, warum wir so dringend wollen, dass jemand steuert.*
 
-**Thomas Peter Küper · Erstfassung, 15. November 2026**
+**Thomas Peter Küper · Überarbeitete Arbeitsfassung, 15. November 2026**
 
 Vielleicht sitzt niemand am Steuer.
 
@@ -32,6 +32,8 @@ Ein Schiff ohne Steuermann ist ein beunruhigendes Bild. Wir sehen das Meer, die 
 
 Vielleicht ist bereits die Frage voreilig. Denn die Welt ist kein Schiff, nur weil wir sie uns so vorstellen. Ein Schiff wurde gebaut, um gesteuert zu werden. Das Universum muss nicht denselben Zweck besitzen. Die Metapher macht eine Vorstellung anschaulich, doch sie schmuggelt zugleich ihre Voraussetzungen ein: ein Fahrzeug, ein Ziel, einen Plan, eine Instanz, die vom Ganzen getrennt ist und darüber verfügt.
 
+Und warum sagen wir überhaupt „Steuermann“? Das Wort ruft eine historisch vertraute, männlich besetzte Figur der Führung auf. Daraus folgt nicht, dass wir uns tatsächlich lieber einen Mann als eine Frau an der Spitze wünschen. Sprache kann ein überliefertes Bild bereithalten, noch bevor wir unsere Vorstellung bewusst prüfen. Vielleicht wäre uns eine Steuerfrau ebenso recht, vielleicht eine sorgende Mutterfigur, vielleicht eine unpersönliche Ordnung. Gerade die scheinbar kleine Frage nach dem Geschlecht des Steuerns zeigt, wie viel unsere Metapher schon festlegt, bevor die philosophische Untersuchung begonnen hat.
+
 Warum halten wir solche Bilder dennoch für so naheliegend?
 
 Wir kennen Absichten von innen. Wir nehmen einen Gegenstand in die Hand, weil wir etwas mit ihm vorhaben. Wir gehen an einen Ort, weil wir dort sein wollen. Wir versprechen etwas und versuchen, es einzuhalten. So lernen wir, Handlungen mit Gründen zu verbinden. Es ist nicht verwunderlich, wenn wir auch hinter dem Geschehen der Welt nach Gründen fragen, die denen unseres eigenen Handelns ähneln.
@@ -40,7 +42,7 @@ Dieser Übergang kann Erkenntnis ermöglichen. Ein beschädigtes Schloss kann au
 
 Doch aus der berechtigten Suche nach einzelnen Urhebern folgt noch kein Urheber des Ganzen. Aus der Erfahrung, dass vieles gesteuert wird, folgt nicht, dass alles gesteuert werden muss.
 
-Wir sollten drei Fragen unterscheiden: Was erklärt ein Ereignis? Wer trägt gegebenenfalls Verantwortung dafür? Und wie weit ist es für uns beeinflussbar? Eine Ursache ist nicht immer eine Absicht; ein Verursacher nicht immer ein Schuldiger; ein verstandener Zusammenhang nicht notwendig beherrschbar. Die Fragen berühren sich, aber sie sind nicht austauschbar.
+Wir sollten drei Fragen unterscheiden: Was erklärt ein Ereignis? Wer trägt gegebenenfalls Verantwortung dafür? Und wie weit ist es für uns beeinflussbar? Eine Ursache ist nicht immer eine Absicht; ein Verursacher nicht immer ein Schuldiger; ein verstandener Zusammenhang nicht notwendig beherrschbar. Die Fragen berühren sich, aber sie sind nicht austauschbar. Ein Erdbeben lässt sich geologisch erklären, ohne dass eine Person dafür verantwortlich wäre; mangelhafte Bauvorschriften können dagegen sehr wohl Gegenstand politischer Verantwortung sein. Beides kann bei derselben Katastrophe zutreffen.
 
 Gerade wenn sie ineinanderfallen, erscheint der Steuermann so verlockend. Er könnte erklären, verantworten und eingreifen – alles in einer Gestalt. Ein Ansprechpartner für die Welt.
 
@@ -50,7 +52,7 @@ Es gibt eine merkwürdige Form der Beruhigung, die nicht aus einer guten Nachric
 
 Eine Krise, die aus vielen ineinandergreifenden Entscheidungen, Zufällen, Fehlanreizen und Missverständnissen erwachsen ist, lässt sich kaum erzählen. Ein geheimer Plan dagegen besitzt Figuren, Motive und eine Richtung. Es gibt Täter, Opfer, Zeichen und vermeintlich versteckte Beweise. Die Geschichte ist bedrohlich, aber sie hat einen Adressaten.
 
-Das bedeutet nicht, dass Menschen Verschwörungserzählungen stets aus demselben Grund glauben. Misstrauen kann aus realen Täuschungen, schlechten Erfahrungen, sozialer Ausgrenzung oder berechtigter Kritik entstehen. Und tatsächliche Verschwörungen kommen vor. Nicht jeder Verdacht ist irrational. Entscheidend ist die Art, wie ein Verdacht geprüft und wie mit Gegenbelegen umgegangen wird.
+Damit ist weder gesagt, dass eine bedrohliche Erzählung ihren Anhängern wirklich Trost spendet, noch dass Menschen Verschwörungserzählungen stets aus demselben Grund glauben. Misstrauen kann aus realen Täuschungen, schlechten Erfahrungen, sozialer Ausgrenzung oder berechtigter Kritik entstehen. Und tatsächliche Verschwörungen kommen vor. Nicht jeder Verdacht ist irrational. Entscheidend ist die Art, wie ein Verdacht geprüft und wie mit Gegenbelegen umgegangen wird.
 
 Dennoch lohnt sich die Frage, warum die Vorstellung eines absichtlich herbeigeführten Übels manchmal leichter auszuhalten scheint als das Zusammentreffen unpersönlicher Prozesse.
 
@@ -58,7 +60,7 @@ Ein böser Lenker ist anklagbar. Man kann ihn benennen, verurteilen, vielleicht 
 
 Die Frage nach Verantwortung ist deshalb unverzichtbar, aber sie darf nicht zur Pflicht werden, hinter jedem Ereignis einen Willen zu entdecken. Sonst verwechseln wir Rechenschaft mit Erklärung und verwandeln Unübersichtlichkeit in ein Drama mit vorab besetzten Rollen.
 
-Vielleicht ist die Suche nach dem Schuldigen manchmal auch eine Suche nach der Hoffnung, das Geschehen hätte anders sein können. Wo jemand gehandelt hat, hätte er möglicherweise anders handeln können. Wo niemand entschieden hat, fehlt uns dieser einfache Satz.
+Die Suche nach Verantwortung wird dann produktiv, wenn sie überprüfbare Entscheidungen und reale Handlungsspielräume sichtbar macht. Sie wird zum Gefängnis, wenn die Antwort bereits vor jeder Prüfung feststeht.
 
 ## III. Die Zumutung des Unverfügbaren
 
@@ -94,7 +96,7 @@ Das ist auch für die Frage nach dem Ganzen wichtig. Vielleicht besteht es aus B
 
 Eine Philosophie, die das Ganze denken möchte, sollte ihre eigenen Bilder nicht für die Wirklichkeit halten. Der Steuermann ist ein Bild. Die Maschine ist ein Bild. Auch der Organismus ist ein Bild. Jedes macht etwas sichtbar und lässt anderes verschwinden.
 
-Die Frage ist nicht, welches Bild sich am behaglichsten anfühlt, sondern was wir mit ihm erkennen – und an welcher Stelle es uns zu sehen hindert.
+Die Frage ist nicht, welches Bild sich am behaglichsten anfühlt, sondern was wir mit ihm erkennen – und an welcher Stelle es uns zu sehen hindert. Vielleicht ist die Alternative „Lenker oder niemand“ selbst Ausdruck eines solchen Bildes: Auch eine Wirklichkeit mit Bewusstsein müsste nicht wie ein einzelner Mensch entscheiden; auch eine Wirklichkeit ohne übergeordneten Willen wäre nicht frei von Verbindungen, Formen und lokalen Absichten.
 
 ## V. Die Übung des Offenlassens
 
@@ -120,9 +122,9 @@ Nicht für immer. Nicht aus Gleichgültigkeit. Sondern solange wir ihre Antwort 
 
 ---
 
-## Werkstattvermerk zur Fassung 0.1
+## Werkstattvermerk zur Fassung 0.2
 
-**Textstatus:** philosophischer Erstentwurf; noch keine abschließende Quellen- oder Zitatprüfung. Die Beispiele dienen der begrifflichen Klärung, nicht als empirischer Nachweis einer universellen menschlichen Motivation.
+**Textstatus:** redaktionell überprüfter philosophischer Entwurf; noch keine abschließende Quellen- oder Zitatprüfung. Die Beispiele dienen der begrifflichen Klärung, nicht als empirischer Nachweis einer universellen menschlichen Motivation.
 
 **Methodische Leitlinien:**
 1. Aus einem psychologischen Bedürfnis folgt weder die Existenz noch die Nichtexistenz seines Gegenstands.
@@ -131,6 +133,8 @@ Nicht für immer. Nicht aus Gleichgültigkeit. Sondern solange wir ihre Antwort 
 4. Zusammenhang ist nicht dasselbe wie Absicht.
 5. Offenheit ist eine Praxis, keine vorweggenommene metaphysische Entscheidung.
 
-**Für die nächste Revision:** Übergänge verdichten; Gegenbeispiele (berechtigte Suche nach Täter und Ursachen) weiter prüfen; mögliche Bezüge zu Hume, Nietzsche, Freud, Piaget und Forschung zu Agency Detection nur nach Quellenprüfung einarbeiten; Verhältnis zu Omnizedenz und Resonanzethik behutsam abgleichen.
+**Redaktioneller Abgleich v0.2:** Erklärung, Verantwortung und Verfügbarkeit werden am Katastrophenbeispiel differenziert; die entlastende Wirkung eines bösen Plans wird ausdrücklich nicht verallgemeinert; der Gegenfall berechtigter Verantwortungszuschreibung wird gestärkt; die Verbindung zur Omnizedenz bleibt als Möglichkeit statt als Resultat formuliert. Der Titel ist ausdrücklich vorläufig: „Steuermann“ kann ein tradiertes männliches Führungsbild transportieren, ohne dass daraus eine Präferenz für männliche Führung folgt.
+
+**Für die nächste Revision:** Stil und Übergänge weiter verdichten; mögliche Bezüge zu Hume, Nietzsche, Freud, Piaget und Forschung zur Zuschreibung von Absicht nur nach Quellenprüfung einarbeiten; prüfen, ob „Die Sehnsucht nach dem Steuermann“, „Die Sehnsucht nach jemandem am Steuer“ oder „Warum muss jemand steuern?“ den ergebnisoffenen Gedanken am besten trägt.
 
 **Versionsführung:** Jede Überarbeitung als separater Git-Commit mit aussagekräftiger Änderungsbeschreibung; frühere Textfassungen bleiben über die Git-Historie rekonstruierbar.
