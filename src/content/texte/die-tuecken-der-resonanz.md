@@ -27,7 +27,7 @@ Diese Möglichkeit muss keine böse Absicht voraussetzen. Sie liegt bereits in d
 
 Nicht jede Beeinflussung ist Manipulation. Ohne die Wirkung anderer Menschen auf unser Denken und Fühlen könnten wir kaum lernen, lieben oder uns verändern.
 
-Wer einem anderen helfen will, muss sich fragen, ob er dessen Lage richtig versteht und was seine Hilfe tatsächlich bewirkt. Doch auch die Person, an die eine Bitte gerichtet wird, hat einen eigenen Spielraum – also reale Möglichkeiten, selbst zu entscheiden, zu handeln und ihr Leben zu gestalten. Wie lassen sich beide Perspektiven achten, wenn ihre Erwartungen auseinandergehen?
+Wer einem anderen helfen will, muss sich fragen, ob er dessen Lage richtig versteht und was seine Hilfe tatsächlich bewirkt. Doch auch die Person, an die eine Bitte gerichtet wird, hat einen eigenen Spielraum – also reale Möglichkeiten, selbst zu entscheiden, zu handeln und ihr Leben zu gestalten. Gerade wenn Erwartungen auseinandergehen, müssen beide Perspektiven gewahrt bleiben.
 
 Doch wann wird aus dieser Offenheit eine Verwundbarkeit, die andere ausnutzen können? Und wie können wir sie schützen, ohne uns gegen den anderen zu verschließen?
 
@@ -93,7 +93,7 @@ Der Fall löst die Unvereinbarkeit nicht auf. Er verschiebt die Frage: Nicht ob 
 
 Resonanz bezeichnet bei Hartmut Rosa eine besondere Form der Weltbeziehung: Wir können von etwas berührt werden, selbstwirksam mit eigener Stimme antworten und uns dabei verändern. Eine solche Beziehung bleibt unverfügbar. Rosa grenzt sie ausdrücklich von einer gewaltförmigen Durchsetzung des eigenen Willens ab. Wenn die vorliegende Resonanzethik gleichwohl von intensiven, aber vereinnahmenden Bindungen spricht, ist dies zunächst eine Beschreibung starker emotionaler Wechselwirkungen – nicht bereits Resonanz im engeren Sinn Rosas.
 
-Für die hier vorgeschlagene Resonanzethik folgt daraus eine Aufgabe, die sich nicht durch ein allgemeines Gebot zur Offenheit erfüllen lässt: die Erfahrung des anderen ernst zu nehmen, ohne seine Freiheit oder die eigene Selbstbestimmung aufzuheben.
+Die Tücke liegt deshalb nicht darin, dass Resonanz selbst eine Form des Zwangs wäre. Sie liegt darin, dass intensive Betroffenheit, moralischer Druck und das Verlangen nach Zustimmung leicht als Verbundenheit erscheinen. Wo die eigene Stimme des anderen keinen Platz mehr hat, wird aus vermeintlicher Nähe Vereinnahmung. Für die hier vorgeschlagene Resonanzethik folgt daraus eine Aufgabe, die sich nicht durch ein allgemeines Gebot zur Offenheit erfüllen lässt: die Erfahrung des anderen ernst zu nehmen, ohne seine Freiheit oder die eigene Selbstbestimmung aufzuheben.
 
 Sie hebt moralische Verpflichtungen nicht auf. Wer Verantwortung für ein Kind trägt, kann sich ihr nicht durch den Hinweis auf sein Bedürfnis nach Distanz entziehen. Doch eine Verpflichtung begründet keinen allgemeinen Anspruch auf persönliche Verfügbarkeit.
 
