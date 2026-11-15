@@ -4,7 +4,7 @@ subtitle: "Über Kontingenz, Absicht und die Übung des Offenlassens"
 author: "Thomas Peter Küper"
 date: 2026-11-15
 status: "Arbeitsfassung"
-version: "0.8"
+version: "0.9"
 topics: ["Philosophie", "Kontingenz", "Verantwortung", "Erkenntnis", "Omnizedenz"]
 ---
 
@@ -12,7 +12,7 @@ topics: ["Philosophie", "Kontingenz", "Verantwortung", "Erkenntnis", "Omnizedenz
 
 *Über Kontingenz, Absicht und die Übung des Offenlassens*
 
-**Thomas Peter Küper · Überarbeitete Arbeitsfassung 0.8, 15. November 2026**
+**Thomas Peter Küper · Überarbeitete Arbeitsfassung 0.9, 15. November 2026**
 
 *Entstehungsgeschichte, Quellen- und Werkstattnotizen sind [separat dokumentiert](werkstatt/2026-11-15-steuermann-versionsnotizen.md).*
 
@@ -48,7 +48,7 @@ Gerade wenn sie ineinanderfallen, erscheint der Steuermann so verlockend. Er kö
 
 ## II. Der Trost des bösen Plans
 
-Es gibt eine merkwürdige Form der Beruhigung, die nicht aus einer guten Nachricht entsteht, sondern aus der Nachricht, dass jemand dahintersteckt.
+Es gibt ein merkwürdiges Versprechen von Beruhigung, das nicht aus einer guten Nachricht entsteht, sondern aus der Behauptung, dass jemand dahintersteckt.
 
 Eine Krise, die aus vielen ineinandergreifenden Entscheidungen, Zufällen, Fehlanreizen und Missverständnissen erwachsen ist, lässt sich kaum erzählen. Ein geheimer Plan dagegen besitzt Figuren, Motive und eine Richtung. Es gibt Täter, Opfer, Zeichen und vermeintlich versteckte Beweise. Die Geschichte ist bedrohlich, aber sie hat einen Adressaten.
 
@@ -102,7 +102,7 @@ Dafür lassen sich verschiedene Gründe denken. Eine übergeordnete Norm kann Ha
 
 Dabei sollte man den Wunsch nach Regeln nicht mit dem Wunsch nach Fremdbestimmung verwechseln. Menschen können sich freiwillig an verbindliche Grundsätze binden, gerade um Willkür zu begrenzen. Auch ohne einen übergeordneten Gesetzgeber sind begründbare moralische Maßstäbe denkbar.
 
-Die Sehnsucht nach einem festen Maßstab beantwortet noch nicht, woher er kommen soll. Das Euthyphron-Dilemma stellt die Frage: Ist etwas gut, weil Gott es gebietet, oder gebietet Gott es, weil es gut ist? Im ersten Fall droht Güte bloß der Macht eines Befehls zu folgen. Im zweiten Fall geht das Gute nicht vollständig im Befehl auf. Das Dilemma widerlegt keine göttliche Ordnung; es zeigt, dass die Sehnsucht nach einem Maßstab noch nicht sagt, woher dieser kommt.
+Die Sehnsucht nach einem festen Maßstab beantwortet noch nicht, woher er kommen soll. In seiner späteren Anwendung auf göttliche Gebote stellt das Euthyphron-Dilemma die Frage: Ist etwas gut, weil Gott es gebietet, oder gebietet Gott es, weil es gut ist? Im ersten Fall droht Güte bloß der Macht eines Befehls zu folgen. Im zweiten Fall geht das Gute nicht vollständig im Befehl auf. Das Dilemma widerlegt keine göttliche Ordnung; es zeigt, dass die Sehnsucht nach einem Maßstab noch nicht sagt, woher dieser kommt.
 
 So tritt neben die Sehnsucht, gesehen zu werden, eine zweite: der Wunsch, dass nicht alles zur Disposition steht. Vielleicht hoffen wir auf eine Instanz, der wir wichtig sind. Vielleicht hoffen wir zugleich auf ein Gutes, das auch dann gilt, wenn niemand von uns es durchsetzt. Und vielleicht geraten gerade diese Hoffnungen in Konflikt, wenn eine vermeintlich höhere Weisung unsere Fürsorge füreinander verletzt.
 
