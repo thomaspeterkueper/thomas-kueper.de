@@ -39,7 +39,7 @@ Wir möchten gerecht handeln, verlässlich sein, anderen helfen und niemanden un
 
 Eine Bitte, die sich auf unser Selbstbild richtet, kann schwerer abzulehnen sein als eine gewöhnliche Forderung. Denn plötzlich steht nicht nur die erbetene Handlung zur Entscheidung, sondern scheinbar auch unser moralischer Wert. Aus der Frage, ob wir helfen können, wird die Frage, ob wir gute Menschen sind.
 
-Solche Verschiebungen können bewusst herbeigeführt werden oder unbeabsichtigt entstehen. Menschen lernen in Beziehungen, welche Äußerungen bestimmte Reaktionen hervorrufen. Verhaltensweisen, die wiederholt zum gewünschten Ergebnis führen, können sich verfestigen, ohne dass jemand sie ausdrücklich als Strategie plant. Das ist eine plausible Lernhypothese, kein Beweis für die Motive eines bestimmten Menschen.
+Solche Verschiebungen können bewusst herbeigeführt werden oder unbeabsichtigt entstehen. Menschen lernen in Beziehungen, welche Äußerungen bestimmte Reaktionen hervorrufen. Verhaltensweisen, die wiederholt zum gewünschten Ergebnis führen, können sich verfestigen, ohne dass jemand sie ausdrücklich als Strategie plant. Das ist eine plausible Annahme darüber, wie Menschen in Beziehungen lernen – kein Beweis für die Motive eines bestimmten Menschen.
 
 Nietzsche misstraute der moralischen Selbstgewissheit des Mitleidenden. In *Morgenröte* (§133) untersucht er, wie eigene Hilflosigkeit, Ansehen und Unbehagen in scheinbar selbstloser Hilfe mitwirken können. In §134 und später im *Antichrist* (§7) richtet sich sein Einwand auch gegen die mögliche Vermehrung und Verfestigung von Leiden. Daraus folgt keine gesicherte Diagnose einzelner Helfender, wohl aber ein ernst zu nehmender Einwand gegen die Gleichsetzung von Mitleid und moralischer Güte.
 
@@ -52,6 +52,8 @@ Entscheidend ist deshalb nicht allein, was wir über die Absicht eines Menschen 
 **Ein berechtigter Anspruch verliert seine Berechtigung nicht dadurch, dass wir ihn unangenehm finden. Aber er erlaubt nicht jedes Mittel seiner Durchsetzung.**
 
 ## III. Eine Begegnung
+
+*Ein gedachter Fall.*
 
 Eine Frau bittet ihren Bruder, sie am Wochenende zu besuchen. Sie hat eine schwierige Zeit hinter sich und möchte nicht allein sein.
 
@@ -85,6 +87,8 @@ Beide haben Gründe. Beide müssen mit einer Unvereinbarkeit leben, die durch Ve
 
 ## IV. Die Freiheit zur Distanz
 
+Der Fall löst die Unvereinbarkeit nicht auf. Er verschiebt die Frage: Nicht ob wir den anderen vollständig verstehen, sondern wie wir mit dem umgehen, was auch nach dem Verstehen unvereinbar bleibt.
+
 Resonanz bezeichnet bei Hartmut Rosa eine besondere Form der Weltbeziehung: Wir können von etwas berührt werden, selbstwirksam mit eigener Stimme antworten und uns dabei verändern. Eine solche Beziehung bleibt unverfügbar. Rosa grenzt sie ausdrücklich von einer gewaltförmigen Durchsetzung des eigenen Willens ab. Wenn die vorliegende Resonanzethik gleichwohl von intensiven, aber vereinnahmenden Bindungen spricht, ist dies zunächst eine Beschreibung starker emotionaler Wechselwirkungen – nicht bereits Resonanz im engeren Sinn Rosas.
 
 Für die hier vorgeschlagene Resonanzethik folgt daraus eine Aufgabe, die sich nicht durch ein allgemeines Gebot zur Offenheit erfüllen lässt: die Erfahrung des anderen ernst zu nehmen, ohne seine Freiheit oder die eigene Selbstbestimmung aufzuheben.
@@ -101,21 +105,9 @@ Ein Gespräch kann notwendig sein, ohne dass es jederzeit und unter allen Umstä
 
 Auch Schweigen kann Macht ausüben, wenn damit eine notwendige Klärung dauerhaft verweigert wird. Die Pflicht, eine Frage zu beantworten, ist jedoch etwas anderes als die Pflicht, sich zu einem bestimmten Zeitpunkt auf ein bestimmtes Gespräch einzulassen.
 
-Abstand kann eine notwendige Voraussetzung erneuter Begegnung sein. Er garantiert sie nicht.
+Eine Grenze kann jedoch auch vorgeschoben werden. Wer etwa eine zugesagte Hilfe wiederholt mit dem Hinweis auf das eigene Bedürfnis nach Abstand verweigert, obwohl ihm verlässliche Alternativen offenstehen und der andere auf die Zusage angewiesen ist, schützt möglicherweise nicht seine Freiheit, sondern entzieht sich seiner Verantwortung. Auch dies ist kein Urteil über sein verborgenes Motiv. Entscheidend sind die Zusage, die Folgen und die realen Handlungsmöglichkeiten.
 
-## V. Das Wagnis der Offenheit
-
-Eine Ethik der Resonanz könnte versuchen, Offenheit zum höchsten Wert zu erheben: zuhören, sich berühren lassen, Gewissheiten prüfen, Veränderung zulassen.
-
-Doch wer wiederholt erfährt, dass Grenzen missachtet werden, kann auch aufrichtige Bitten als Bedrohung verstehen. Dieser Schutzreflex mag verständlich sein und doch die Wahrnehmung verengen.
-
-Wir müssen unterscheiden lernen: zwischen einer Bitte, die herausfordert, und einer Forderung, die vereinnahmt; zwischen Enttäuschung und Zwang; zwischen Verantwortung und bloß zugeschriebener Schuld.
-
-Solche Unterscheidungen verlangen Aufmerksamkeit für Situationen, Muster, Macht und die Möglichkeit des eigenen Irrtums.
-
-Eine Grenze kann gerechtfertigt sein und dennoch verletzen. Eine Bitte kann aufrichtig sein und trotzdem zu weit gehen. Ein Mensch kann sich schützen und dabei eine Gelegenheit zur Verständigung verlieren.
-
-Die Bereitschaft, sich berühren zu lassen, ist keine Verpflichtung, sich vereinnahmen zu lassen.
+Ebenso kann der Schutz vor früheren Grenzverletzungen unseren Blick verengen. Wer wiederholt bedrängt wurde, mag eine berechtigte Bitte für einen erneuten Übergriff halten. Eine Grenze verdient Achtung, aber ihre Begründung bleibt der Prüfung zugänglich.
 
 Manchmal schützt eine Grenze die Möglichkeit einer späteren Begegnung. Manchmal beendet sie diese Möglichkeit.
 
@@ -124,8 +116,3 @@ Ob wir damit gerecht gehandelt haben, entscheidet sich nicht allein daran, ob wi
 Die Ungewissheit darüber lässt sich nicht immer beseitigen.
 
 **Eine gerechte Beziehung muss Offenheit ermöglichen, ohne sie zu erzwingen. Sie muss Grenzen achten, ohne Verantwortung aufzugeben.**
-
-
----
-
-*Der Geschwisterfall ist ein Gedankenbeispiel.*
