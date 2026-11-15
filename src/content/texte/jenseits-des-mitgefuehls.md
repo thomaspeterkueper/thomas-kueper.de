@@ -103,19 +103,23 @@ Wenn gerechte Ansprüche unabhängig von Mitgefühl gelten, warum bedarf es dann
 
 Die Frage ist berechtigt. Rechte dürfen nicht von persönlicher Sympathie abhängen. Eine gerechte Ordnung muss unter Fremden und sogar unter Menschen bestehen, die einander ablehnen.
 
-Doch unsere Regeln und Kategorien erfassen fremde Erfahrungen nie vollständig. Wir können korrekt handeln und dennoch wichtige Umstände übersehen.
+Doch allgemeine Regeln erfassen besondere Erfahrungen nie vollständig. Sie müssen für viele Fälle gelten und können gerade dadurch übersehen, was für einen einzelnen Menschen entscheidend ist. Auch eine formal korrekte Entscheidung kann auf einem unvollständigen Bild seiner Lage beruhen.
 
-**Spielraum ist der Gegenstand der Prüfung, nicht bereits ihre abschließende Entscheidungsregel.** Wo Ansprüche kollidieren, müssen zusätzliche normative Gründe offengelegt werden. Eine Resonanzethik darf diese Gründe nicht aus dem Gefühl der Stimmigkeit gewinnen; sie muss sich auch an rechts-, pflichten- und gerechtigkeitstheoretischen Maßstäben prüfen lassen.
+Hier ergänzen sich drei Funktionen, ohne dass eine in der anderen aufgeht.
 
-Hier ergänzen sich drei verschiedene Funktionen, ohne dass eine in der anderen aufgeht.
+**Resonanz** kann uns für fremde Erfahrungen empfänglich machen und unsere Wahrnehmung verändern.
 
-**Resonanz** kann uns für Erfahrungen empfänglich machen und unsere Wahrnehmung verändern.
+**Gerechtigkeit** verlangt Gründe für den Umgang mit Ansprüchen – Gründe, deren Geltung nicht von der Stärke unserer Anteilnahme abhängt.
 
-**Gerechtigkeit** prüft Ansprüche mit Gründen, die unabhängig von der Stärke dieses Gefühls gelten.
+**Institutionelle Antwortfähigkeit** eröffnet wirksame Wege für Widerspruch, Überprüfung und Korrektur.
 
-**Institutionelle Antwortfähigkeit** schafft wirksame Möglichkeiten für Widerspruch, Überprüfung und Korrektur.
+Resonanz kann aufmerksam machen. Gerechtigkeit prüft Ansprüche. Antwortfähigkeit ermöglicht, aus begründeten Einwänden Konsequenzen zu ziehen. Diese Funktionen ersetzen einander nicht; insbesondere können gerechte Regeln auch dort schützen, wo Resonanz ausbleibt.
 
-Resonanz ist somit kein hinreichender Maßstab für das Gute. Eine institutionelle Beschwerdestelle ist umgekehrt nicht dadurch „resonant“, dass sie Verfahren besitzt. Der Zusammenhang liegt darin, dass fremde Erfahrungen überhaupt berücksichtigt werden können, ohne von der Empfänglichkeit einer einzelnen Person abhängig zu sein.
+Der Spielraum der Betroffenen bleibt dabei ein wichtiger Gegenstand der Prüfung, aber noch keine abschließende Entscheidungsregel. Wenn Ansprüche kollidieren, müssen wir begründen, welche Einschränkungen gerechtfertigt sind. Ein Gefühl der Stimmigkeit leistet das nicht.
+
+Eine Beschwerdestelle ist nicht schon deshalb „resonant“, weil sie Verfahren besitzt. Sie muss Einwände auch von Menschen ernst nehmen, die niemanden persönlich berühren. Darin liegt die institutionelle Antwortfähigkeit: nicht im Gefühl einer Organisation, sondern in der Möglichkeit, Entscheidungen an Erfahrungen und Gründen zu überprüfen.
+
+Doch dass Gerechtigkeit ohne Mitgefühl gelten muss, macht die menschliche Anteilnahme nicht überflüssig. Sie kann uns daran erinnern, weshalb wir überhaupt nach Gründen suchen.
 
 ## VIII. Jenseits des Mitgefühls
 
