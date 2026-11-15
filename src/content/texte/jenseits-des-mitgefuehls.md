@@ -23,7 +23,7 @@ Unsere Aufmerksamkeit ist begrenzt. Nähe und vertraute Geschichten bewegen uns 
 
 Eine Resonanzethik muss deshalb erklären, weshalb auch jene Anspruch auf gerechte Behandlung besitzen, deren Erfahrungen niemals unmittelbar eine Antwort in uns auslösen.
 
-Bereits beim persönlichen Mitleid stellt sich die Frage, ob Anteilnahme den Spielraum des anderen bewahrt, eröffnet oder verengt. Jetzt verschiebt sich der Blick: Welche Ansprüche gelten, wenn eine Begegnung niemals stattfindet?
+Bereits beim persönlichen Mitleid stellt sich die Frage nach dem Spielraum des anderen: nach den Möglichkeiten, die ihm tatsächlich offenstehen, sein Leben zu deuten, zu gestalten und selbst zu handeln. Doch jetzt verschiebt sich der Blick. Welche Ansprüche gelten, wenn eine Begegnung niemals stattfindet?
 
 ## II. Die Ungerechtigkeit der Nähe
 
@@ -39,11 +39,11 @@ Die Frage nach der Gerechtigkeit kann mit Erschütterung beginnen. Ihre Antwort 
 
 ## III. Ein Bescheid
 
-Ein Mann erhält einen Brief: Sein Antrag auf Unterstützung wurde abgelehnt. Er hat alle verlangten Unterlagen eingereicht, versteht aber nicht, weshalb seine besondere Lage unberücksichtigt blieb.
+*Ein gedachter Fall.*
 
-Eine Mitarbeiterin hört ihm aufmerksam zu. Sie zeigt Verständnis, sagt jedoch, die Entscheidung sei nicht zu ändern.
+Ein Mann erhält einen Brief: Sein Antrag auf Unterstützung wurde abgelehnt. Er hat alle verlangten Unterlagen eingereicht, versteht aber nicht, weshalb seine besondere Lage unberücksichtigt blieb. Im Bescheid steht, seine Situation sei nach den vorgesehenen Kriterien geprüft worden. Welches Kriterium für die Ablehnung ausschlaggebend war, kann er daraus nicht erkennen.
 
-War er gerecht behandelt worden? Wir wissen es nicht.
+Am Schalter faltet er den Brief auseinander und zeigt auf den Satz. Eine Mitarbeiterin hört ihm zu. Sie sagt, sie verstehe seinen Ärger; am Ergebnis könne sie jedoch nichts ändern. Der Mann verlässt das Büro mit demselben Bescheid und einer zusätzlichen Frage: Hat man seine Lage überhaupt richtig beurteilt?
 
 Ein anderer Mitarbeiter könnte kühl und knapp sprechen, aber einen Fehler entdecken, der zur Korrektur des Bescheids führt. Das wäre eine verwaltungsrechtliche Verbesserung. Doch was, wenn nicht die Anwendung, sondern die Regel selbst systematisch benachteiligt?
 
@@ -67,39 +67,45 @@ Eine gerechte Institution benötigt mindestens drei Maßstäbe:
 
 Diese Maßstäbe bestimmen noch nicht, welche Verteilung in jedem Konflikt die richtige ist. Sie verhindern aber, dass Gewohnheit, Sympathie oder schiere Macht bereits als ausreichende Begründung gelten.
 
+Antwortfähigkeit bedeutet dabei mehr als eine freundliche Empfangsbestätigung: Einwände müssen ernsthaft geprüft werden und unter begründbaren Voraussetzungen Entscheidungen verändern können. Dass ein Widerspruch keinen Erfolg hat, beweist noch nicht, dass er übergangen wurde.
+
+Eine Institution fühlt nicht wie ein Mensch. Ihre **Antwortfähigkeit** bezeichnet überprüfbare Wege zu Rechenschaft und Korrektur – keine Emotion eines Kollektivs.
+
+## V. Die Prüfung der Verteilung
+
 Gerade bei knappen Mitteln ist eine weitere Prüfung erforderlich: **Welche realen Möglichkeiten werden geschützt, welche eingeschränkt, und wer trägt die Last?** Dabei darf nicht einfach die größtmögliche Summe von Spielräumen angestrebt werden. Ein Verfahren, das viele Menschen geringfügig begünstigt, kann dennoch ungerecht sein, wenn es wenigen dafür grundlegende Rechte oder unersetzliche Lebensmöglichkeiten entzieht.
 
-Drei Fragen vertiefen diese Prüfung. **Welche Ansprüche setzen der Abwägung Grenzen?** Grundlegende Rechte und der Schutz vor gravierenden Übergriffen dürfen nicht einfach gegen bloße Vorteile anderer aufgerechnet werden. **Wer trägt die Einschränkung – und warum gerade dieser Mensch?** Bedarf, Verletzlichkeit, bisherige Lasten und tatsächliche Handlungsmacht sind relevant. **Was folgt aus der Entscheidung?** Sind ihre Wirkungen überprüfbar, Fristen angemessen und nach einer Beschädigung wieder eigene Möglichkeiten erreichbar?
+**Welche Ansprüche setzen der Abwägung Grenzen?** Grundlegende Rechte und der Schutz vor gravierenden Übergriffen dürfen nicht einfach gegen bloße Vorteile anderer aufgerechnet werden.
+
+**Wer trägt die Einschränkung – und warum gerade dieser Mensch?** Bedarf, Verletzlichkeit, bisherige Lasten und tatsächliche Handlungsmacht sind relevant.
+
+**Was folgt aus der Entscheidung?** Sind ihre Wirkungen überprüfbar, Fristen angemessen und nach einer Beschädigung wieder eigene Möglichkeiten erreichbar?
 
 Man denke an zwei Gemeinden, die während einer Dürre dieselbe knappe Wasserquelle nutzen. Die eine benötigt Wasser für eine medizinische Einrichtung, die andere für die Existenz vieler landwirtschaftlicher Betriebe. Die Entscheidung lässt sich weder aus der Zahl der Betroffenen noch aus der stärkeren Erzählung ihres Leids unmittelbar ableiten. Es braucht gesicherte Informationen über Mindestbedarf, Alternativen, Folgeschäden, bestehende Ansprüche und die Möglichkeit, Lasten abzufedern.
 
 Auch eine begründete Entscheidung kann schmerzlich bleiben. Wo berechtigte Interessen kollidieren, ist nicht jeder Verlust vermeidbar. Es wäre unehrlich, dafür eine mechanische Lösung auszugeben.
 
-**Spielraum ist hier der Gegenstand der Prüfung, nicht bereits ihre abschließende Entscheidungsregel.** Wo Ansprüche kollidieren, müssen zusätzliche normative Gründe offengelegt werden. Die Resonanzethik kann solche Gründe nicht aus dem Gefühl der Stimmigkeit erzeugen; sie muss sich mit bestehenden rechts-, pflichten- und gerechtigkeitstheoretischen Maßstäben auseinandersetzen.
-
-Antwortfähigkeit bedeutet daher mehr als eine freundliche Empfangsbestätigung: Einwände müssen ernsthaft geprüft werden und unter begründbaren Voraussetzungen Entscheidungen verändern können. Dass ein Widerspruch keinen Erfolg hat, beweist noch nicht, dass er übergangen wurde.
-
-Eine Institution fühlt nicht wie ein Mensch. Ihre **Antwortfähigkeit** bezeichnet überprüfbare Wege zu Rechenschaft und Korrektur – keine Emotion eines Kollektivs.
-
-## V. Die Verantwortung für die Abwesenden
+## VI. Die Verantwortung für die Abwesenden
 
 Ein Kind, das erst in fünfzig Jahren geboren wird, kann heute keinen Widerspruch einlegen. Ebenso wenig können alle Kranken, Ausgegrenzten oder Menschen ohne Zugang zu Verfahren ihre Interessen selbst wirksam vertreten.
 
-Darum reicht Anfechtbarkeit allein nicht. Eine gerechte Ordnung muss auch Abwesende berücksichtigen: durch überprüfbare Stellvertretung, wissenschaftliche Folgenabschätzung, Schutzrechte und langfristige Verantwortung.
+Man stelle sich eine Behörde vor, die über eine Anlage entscheidet, deren Rückstände möglicherweise noch Jahrzehnte später das Grundwasser belasten. Die gegenwärtigen Anwohner können Einwände vorbringen. Die Menschen, die künftig aus denselben Brunnen trinken werden, nicht. Wer berücksichtigt ihre Interessen? Ein Gutachten über langfristige Folgen kann helfen; ebenso unabhängige Kontrolle, öffentliche Begründungen und die Möglichkeit, eine Genehmigung bei neuen Erkenntnissen zu überprüfen. Aber keine dieser Maßnahmen spricht mit der eigenen Stimme der noch nicht Geborenen.
 
-Wer stellvertretend spricht, kann sich jedoch täuschen oder eigene Interessen unterschieben. Repräsentation muss deshalb begründet, überprüfbar und soweit möglich korrigierbar sein.
+Darum reicht Anfechtbarkeit allein nicht. Eine gerechte Ordnung muss auch Abwesende berücksichtigen: durch überprüfbare Stellvertretung, wissenschaftliche Folgenabschätzung, Schutzrechte und langfristige Verantwortung. Wer stellvertretend spricht, kann sich jedoch täuschen oder eigene Interessen unterschieben.
 
-Wir dürfen die Abwesenden weder übersehen, weil sie nicht sprechen können, noch vorgeben, ihre Perspektive vollständig zu kennen.
+Eine Vertretung ist deshalb nicht schon gerecht, weil sie sich auf die Zukunft beruft. Sie muss offengelegte Gründe vorweisen, unabhängige Kritik zulassen und Unsicherheit kenntlich machen. Wo Betroffene selbst sprechen können, darf die Berufung auf ihr vermeintliches Wohl ihre tatsächliche Stimme nicht verdrängen.
 
-Die Folgen unseres Handelns enden nicht an den Grenzen unserer Wahrnehmung.
+Die Abwesenden sind der Prüfstein einer Ordnung, die gerecht sein will, auch wenn niemand persönlich um Mitgefühl bitten kann. Die Folgen unseres Handelns enden nicht an den Grenzen unserer Wahrnehmung.
 
-## VI. Was bleibt von der Resonanzethik?
+## VII. Was bleibt von der Resonanzethik?
 
 Wenn gerechte Ansprüche unabhängig von Mitgefühl gelten, warum bedarf es dann einer Resonanzethik?
 
 Die Frage ist berechtigt. Rechte dürfen nicht von persönlicher Sympathie abhängen. Eine gerechte Ordnung muss unter Fremden und sogar unter Menschen bestehen, die einander ablehnen.
 
 Doch unsere Regeln und Kategorien erfassen fremde Erfahrungen nie vollständig. Wir können korrekt handeln und dennoch wichtige Umstände übersehen.
+
+**Spielraum ist der Gegenstand der Prüfung, nicht bereits ihre abschließende Entscheidungsregel.** Wo Ansprüche kollidieren, müssen zusätzliche normative Gründe offengelegt werden. Eine Resonanzethik darf diese Gründe nicht aus dem Gefühl der Stimmigkeit gewinnen; sie muss sich auch an rechts-, pflichten- und gerechtigkeitstheoretischen Maßstäben prüfen lassen.
 
 Hier ergänzen sich drei verschiedene Funktionen, ohne dass eine in der anderen aufgeht.
 
@@ -111,7 +117,7 @@ Hier ergänzen sich drei verschiedene Funktionen, ohne dass eine in der anderen 
 
 Resonanz ist somit kein hinreichender Maßstab für das Gute. Eine institutionelle Beschwerdestelle ist umgekehrt nicht dadurch „resonant“, dass sie Verfahren besitzt. Der Zusammenhang liegt darin, dass fremde Erfahrungen überhaupt berücksichtigt werden können, ohne von der Empfänglichkeit einer einzelnen Person abhängig zu sein.
 
-## VII. Jenseits des Mitgefühls
+## VIII. Jenseits des Mitgefühls
 
 Vielleicht beginnt unser Nachdenken über Gerechtigkeit mit einem Gesicht. Wir sehen einen leidenden Menschen – und erkennen eine Frage, an der wir bisher vorbeigegangen sind.
 
