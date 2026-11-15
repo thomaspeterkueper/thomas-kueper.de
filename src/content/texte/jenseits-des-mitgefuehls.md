@@ -71,13 +71,15 @@ Eine gerechte Institution benötigt mindestens drei Maßstäbe:
 
 **Wirksame Anfechtbarkeit:** Entscheidungen sollen erläutert und Fehler korrigiert werden können; auch Regeln selbst dürfen nicht gegen Kritik abgeschottet sein. Für Menschen ohne wirksamen Zugang zu den Verfahren braucht es geeignete Vertretung.
 
-Diese Maßstäbe bestimmen noch nicht, welche Verteilung in jedem Konflikt die richtige ist. Sie verhindern aber, dass Gewohnheit, Sympathie oder schiere Macht bereits als ausreichende Begründung gelten.
+Diese Maßstäbe bestimmen noch nicht, welche Verteilung in jedem Konflikt die richtige ist. Sie verhindern aber, dass Gewohnheit, Sympathie oder schiere Macht bereits als ausreichende Begründung gelten. Das gilt auch dann, wenn ein Bescheid durch ein automatisiertes Verfahren zustande kommt: Kann niemand die entscheidenden Gründe nachvollziehbar erläutern oder eine fehlerhafte Entscheidung wirksam überprüfen, sind Begründbarkeit und Anfechtbarkeit gerade nicht gesichert.
 
 Antwortfähigkeit bedeutet dabei mehr als eine freundliche Empfangsbestätigung: Einwände müssen ernsthaft geprüft werden und unter begründbaren Voraussetzungen Entscheidungen verändern können. Dass ein Widerspruch keinen Erfolg hat, beweist noch nicht, dass er übergangen wurde.
 
 Eine Institution fühlt nicht wie ein Mensch. Ihre **Antwortfähigkeit** bezeichnet überprüfbare Wege zu Rechenschaft und Korrektur – keine Emotion eines Kollektivs.
 
 ## V. Die Prüfung der Verteilung
+
+Auch ein nachvollziehbares und anfechtbares Verfahren beantwortet noch nicht, wie unvereinbare berechtigte Ansprüche bei Knappheit abzuwägen sind.
 
 Gerade bei knappen Mitteln ist eine weitere Prüfung erforderlich: **Welche realen Möglichkeiten werden geschützt, welche eingeschränkt, und wer trägt die Last?** Dabei darf nicht einfach die größtmögliche Summe von Spielräumen angestrebt werden. Ein Verfahren, das viele Menschen geringfügig begünstigt, kann dennoch ungerecht sein, wenn es wenigen dafür grundlegende Rechte oder unersetzliche Lebensmöglichkeiten entzieht.
 
