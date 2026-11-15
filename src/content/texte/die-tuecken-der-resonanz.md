@@ -8,7 +8,7 @@ tags: ["Essay", "Resonanzethik", "Mitgefühl", "Spielraum", "Verantwortung", "Ge
 date: "2026"
 author: "Thomas Peter Küper"
 order: 96
-draft: true
+draft: false
 ---
 
 ## I. Die verletzliche Seite der Verbundenheit
@@ -118,6 +118,10 @@ Ob wir damit gerecht gehandelt haben, entscheidet sich nicht allein daran, ob wi
 Die Ungewissheit darüber lässt sich nicht immer beseitigen.
 
 **Eine gerechte Beziehung muss Offenheit ermöglichen, ohne sie zu erzwingen. Sie muss Grenzen achten, ohne Verantwortung aufzugeben.**
+
+*Resonanzethik-Essays: [I. Vom Mut, mitzuleiden](/texte/vom-mut-mitzuleiden) · **II. Die Tücken der Resonanz** · [III. Jenseits des Mitgefühls](/texte/jenseits-des-mitgefuehls)*
+
+---
 
 ## Literatur und Quellen
 
