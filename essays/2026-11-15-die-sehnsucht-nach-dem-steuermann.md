@@ -4,7 +4,7 @@ subtitle: "Über Kontingenz, Absicht und die Übung des Offenlassens"
 author: "Thomas Peter Küper"
 date: 2026-11-15
 status: "Arbeitsfassung"
-version: "0.6"
+version: "0.7"
 topics: ["Philosophie", "Kontingenz", "Verantwortung", "Erkenntnis", "Omnizedenz"]
 ---
 
@@ -12,7 +12,7 @@ topics: ["Philosophie", "Kontingenz", "Verantwortung", "Erkenntnis", "Omnizedenz
 
 *Über Kontingenz, Absicht und die Übung des Offenlassens*
 
-**Thomas Peter Küper · Überarbeitete Arbeitsfassung 0.6, 15. November 2026**
+**Thomas Peter Küper · Überarbeitete Arbeitsfassung 0.7, 15. November 2026**
 
 Vielleicht sitzt niemand am Steuer.
 
@@ -116,7 +116,7 @@ Ein Gebet kann um Heilung bitten, um Regen, um den Schutz eines Kindes. Es kann 
 
 Hier erweist sich die Metapher des Steuermanns erneut als zu eng. Ein Steuermann muss nicht zuhören; jemand, der zuhört, muss nicht lenken können. Und nicht jede religiöse Praxis richtet sich an ein einziges Wesen, das den gesamten Lauf der Dinge bestimmt.
 
-Die Vorstellung eines einzigen Steuermanns ist selbst eine kulturelle Form. Andere religiöse Traditionen kennen Beziehungen zu Ahnen, Gottheiten oder spirituellen Vermittlern; manche indigenen australischen Traditionen verstehen Zugehörigkeit auch durch Country, Vorfahren und überlieferte Verpflichtungen. Solche Vorstellungen lassen sich nicht einfach in das Bild eines einzelnen himmlischen Lenkers übersetzen. Ihre konkreten historischen Unterschiede verdienen eine eigene Untersuchung.
+Die Vorstellung eines einzigen Steuermanns ist selbst eine kulturelle Form. Andere religiöse Traditionen kennen Beziehungen zu Ahnen, Gottheiten oder spirituellen Vermittlern; manche indigenen australischen Traditionen verstehen Zugehörigkeit auch in Beziehung zu *Country* – dem mit Herkunft, Lebewesen, Erinnerung und Verantwortung verbundenen Land –, zu Vorfahren und zu überlieferten Verpflichtungen. Solche Vorstellungen lassen sich nicht einfach in das Bild eines einzelnen himmlischen Lenkers übersetzen. Ihre konkreten historischen Unterschiede verdienen eine eigene Untersuchung.
 
 Wir sollten daher mehrere Wünsche auseinanderhalten: **gesehen zu werden, Orientierung zu finden, auf Gerechtigkeit zu hoffen und eine Bitte an jemanden richten zu können.** Sie können sich in einer Gottesvorstellung vereinen. Sie können aber auch auseinanderfallen oder ganz andere religiöse und nichtreligiöse Ausdrucksformen finden.
 
