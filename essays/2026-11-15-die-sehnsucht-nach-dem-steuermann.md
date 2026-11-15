@@ -1,18 +1,18 @@
 ---
 title: "Die Sehnsucht nach dem Steuermann"
-subtitle: "Vielleicht ist die Frage nicht, ob jemand steuert. Vielleicht ist die Frage, warum wir so dringend wollen, dass jemand steuert."
+subtitle: "Über Kontingenz, Absicht und die Übung des Offenlassens"
 author: "Thomas Peter Küper"
 date: 2026-11-15
 status: "Arbeitsfassung"
-version: "0.5"
+version: "0.6"
 topics: ["Philosophie", "Kontingenz", "Verantwortung", "Erkenntnis", "Omnizedenz"]
 ---
 
 # Die Sehnsucht nach dem Steuermann
 
-*Vielleicht ist die Frage nicht, ob jemand steuert. Vielleicht ist die Frage, warum wir so dringend wollen, dass jemand steuert.*
+*Über Kontingenz, Absicht und die Übung des Offenlassens*
 
-**Thomas Peter Küper · Überarbeitete Arbeitsfassung 0.5, 15. November 2026**
+**Thomas Peter Küper · Überarbeitete Arbeitsfassung 0.6, 15. November 2026**
 
 Vielleicht sitzt niemand am Steuer.
 
@@ -24,7 +24,7 @@ Bemerkenswert ist, wie schwer es uns fällt, die Frage offen zu lassen. Wir such
 
 Vielleicht fürchten wir weniger, dass jemand über uns bestimmt, als dass niemand über uns wacht. Aber was genau wäre daran so schwer zu ertragen?
 
-Eine Vorsicht ist nötig, bevor wir beginnen: Dass Menschen einen Lenker ersehnen, beweist weder dessen Existenz noch dessen Nichtexistenz. Aus einem Bedürfnis folgt keine Ontologie. Umgekehrt ist nicht jede Frage nach einer Absicht schon eine Projektion. Manchmal gibt es tatsächlich jemanden, der etwas beschlossen, verursacht oder verschuldet hat. Die folgende Untersuchung will weder den Glauben widerlegen noch das Fragen nach Verantwortung verdächtig machen. Sie richtet sich auf einen Schritt davor: Was geschieht in uns, wenn wir an der Vorstellung festhalten, irgendjemand müsse das Ganze lenken?
+Eine Vorsicht ist nötig: Dass Menschen einen Lenker ersehnen, beweist weder dessen Existenz noch dessen Nichtexistenz. Aus einem Bedürfnis folgt keine Ontologie. Umgekehrt ist nicht jede Frage nach einer Absicht schon eine Projektion. Die folgende Untersuchung will weder den Glauben widerlegen noch das Fragen nach Verantwortung verdächtig machen. Sie richtet sich auf einen Schritt davor: Was geschieht in uns, wenn wir an der Vorstellung festhalten, irgendjemand müsse das Ganze lenken?
 
 ## I. Die Sehnsucht nach dem Steuermann
 
@@ -32,7 +32,7 @@ Ein Schiff ohne Steuermann ist ein beunruhigendes Bild. Wir sehen das Meer, die 
 
 Vielleicht ist bereits die Frage voreilig. Denn die Welt ist kein Schiff, nur weil wir sie uns so vorstellen. Ein Schiff wurde gebaut, um gesteuert zu werden. Das Universum muss nicht denselben Zweck besitzen. Die Metapher macht eine Vorstellung anschaulich, doch sie schmuggelt zugleich ihre Voraussetzungen ein: ein Fahrzeug, ein Ziel, einen Plan, eine Instanz, die vom Ganzen getrennt ist und darüber verfügt.
 
-Und warum sagen wir überhaupt „Steuermann“? Das Wort ruft eine historisch vertraute, männlich besetzte Figur der Führung auf. Daraus folgt nicht, dass wir uns tatsächlich lieber einen Mann als eine Frau an der Spitze wünschen. Sprache kann ein überliefertes Bild bereithalten, noch bevor wir unsere Vorstellung bewusst prüfen. Vielleicht wäre uns eine Steuerfrau ebenso recht, vielleicht eine sorgende Mutterfigur, vielleicht eine unpersönliche Ordnung. Gerade die scheinbar kleine Frage nach dem Geschlecht des Steuerns zeigt, wie viel unsere Metapher schon festlegt, bevor die philosophische Untersuchung begonnen hat.
+Und warum sagen wir überhaupt „Steuermann“? Das Wort ruft eine historisch vertraute, männlich besetzte Figur der Führung auf. Daraus folgt nicht, dass wir uns tatsächlich einen Mann wünschen. Aber die scheinbar kleine Frage nach dem Geschlecht zeigt, wie viel unsere Metapher schon festlegt, bevor die Untersuchung begonnen hat. Der Steuermann ist ein Bild, nicht die Wirklichkeit selbst. Später werden andere Bilder nötig sein.
 
 Warum halten wir solche Bilder dennoch für so naheliegend?
 
@@ -52,7 +52,7 @@ Es gibt eine merkwürdige Form der Beruhigung, die nicht aus einer guten Nachric
 
 Eine Krise, die aus vielen ineinandergreifenden Entscheidungen, Zufällen, Fehlanreizen und Missverständnissen erwachsen ist, lässt sich kaum erzählen. Ein geheimer Plan dagegen besitzt Figuren, Motive und eine Richtung. Es gibt Täter, Opfer, Zeichen und vermeintlich versteckte Beweise. Die Geschichte ist bedrohlich, aber sie hat einen Adressaten.
 
-Damit ist weder gesagt, dass eine bedrohliche Erzählung ihren Anhängern wirklich Trost spendet, noch dass Menschen Verschwörungserzählungen stets aus demselben Grund glauben. Misstrauen kann aus realen Täuschungen, schlechten Erfahrungen, sozialer Ausgrenzung oder berechtigter Kritik entstehen. Und tatsächliche Verschwörungen kommen vor. Nicht jeder Verdacht ist irrational. Entscheidend ist die Art, wie ein Verdacht geprüft und wie mit Gegenbelegen umgegangen wird.
+Damit ist weder gesagt, dass eine bedrohliche Erzählung ihren Anhängern wirklich Trost spendet, noch dass Menschen Verschwörungserzählungen stets aus demselben Grund glauben. Misstrauen kann aus realen Täuschungen entstehen, und tatsächliche Verschwörungen kommen vor. Entscheidend ist die Art, wie ein Verdacht geprüft und wie mit Gegenbelegen umgegangen wird.
 
 Dennoch lohnt sich die Frage, warum die Vorstellung eines absichtlich herbeigeführten Übels manchmal leichter auszuhalten scheint als das Zusammentreffen unpersönlicher Prozesse.
 
@@ -80,27 +80,33 @@ Die Unverfügbarkeit der Welt anerkennen heißt nicht, passiv zu werden. Es kann
 
 Eine Grenze des Einflusses ist keine Widerlegung des Handelns. Sie beschreibt die Bedingungen, unter denen wir handeln.
 
-### Gesehen werden, ohne gelenkt zu werden
+## IV. Vier Sehnsüchte
 
-Vielleicht liegt hinter der Sehnsucht nach einem Steuermann ein noch elementareres Bedürfnis. Nicht unbedingt der Wunsch, dass jemand für uns entscheidet, sondern die Hoffnung, dass jemand bemerkt, dass wir da sind. Dass unser Leben, unsere Freude und unser Schmerz nicht vollkommen gleichgültig sind.
+### Gesehen werden
+
+Vielleicht liegt hinter der Sehnsucht nach einem Steuermann ein noch elementareres Bedürfnis: nicht der Wunsch, dass jemand für uns entscheidet, sondern die Hoffnung, dass jemand bemerkt, dass wir da sind.
 
 Ein Steuermann kann einen Kurs berechnen, ohne einen einzigen Passagier wirklich wahrzunehmen. Umgekehrt kann jemand uns aufmerksam begleiten, ohne unsere Entscheidungen an sich zu ziehen. Darum sollten wir **Steuerung, Wahrnehmung und Zuwendung** nicht verwechseln. Auch Überwachung bedeutet, gesehen zu werden; sie ist deshalb noch lange keine Fürsorge. Und wer uns liebt, muss nicht unser Schicksal lenken können.
 
-Vielleicht wünschen wir uns nicht in erster Linie einen Herrscher, sondern ein Gegenüber. Jemanden, der uns nicht als austauschbaren Teil eines großen Ablaufs betrachtet. Das könnte erklären, weshalb die Vorstellung einer gleichgültigen Welt so schmerzlich erscheint: Nicht nur, weil sie unberechenbar wäre, sondern weil unsere Fragen an sie unbeantwortet bleiben könnten.
+Vielleicht wünschen wir uns nicht in erster Linie einen Herrscher, sondern ein Gegenüber. Das könnte erklären, weshalb die Vorstellung einer gleichgültigen Welt so schmerzlich erscheint: Nicht nur, weil sie unberechenbar wäre, sondern weil unsere Fragen an sie unbeantwortet bleiben könnten.
 
-Doch auch diese Deutung darf nicht zum Schlüssel für alle Menschen und alle Formen des Glaubens erklärt werden. Manche suchen Wahrheit, andere Gerechtigkeit, manche Geborgenheit, manche keinen übergeordneten Adressaten. Und die menschliche Sehnsucht nach Zuwendung entscheidet nicht darüber, ob das Universum selbst ein Gegenüber besitzt. Sie eröffnet nur eine Frage, die tiefer reicht als die nach einem Steuerrad: **Ist es jemandem wichtig, dass wir da sind?**
+Die menschliche Sehnsucht nach Zuwendung entscheidet nicht darüber, ob das Universum selbst ein Gegenüber besitzt. Sie eröffnet nur eine Frage, die tiefer reicht als die nach einem Steuerrad: **Ist es jemandem wichtig, dass wir da sind?**
 
-### Der Wunsch nach einer verbindlichen Ordnung
+### Orientierung und verbindliche Regeln
 
 Doch die Sehnsucht nach einem Gegenüber erklärt nicht alles. Manche Menschen wünschen sich ausdrücklich, dass eine höhere Instanz Regeln setzt, Grenzen zieht und zwischen Gut und Böse unterscheidet. Sie suchen nicht allein Beachtung, sondern Orientierung; nicht nur Fürsorge, sondern einen Maßstab, der über den wechselnden Vorlieben und Machtverhältnissen einzelner Menschen steht.
 
 Dafür lassen sich verschiedene Gründe denken. Eine übergeordnete Norm kann Halt geben, gerade wenn sich menschliche Urteile widersprechen. Sie kann Hoffnung auf Gerechtigkeit wecken, wenn irdische Institutionen versagen. Sie kann auch Verantwortung erleichtern – und im ungünstigen Fall dazu verführen, Verantwortung abzugeben: „Ich folge nur einer höheren Weisung.“ Dieselbe Vorstellung, die Gewissensentscheidungen schärfen könnte, kann sie also ebenso ersetzen.
 
-Dabei sollte man den Wunsch nach Regeln nicht mit dem Wunsch nach Fremdbestimmung verwechseln. Menschen können sich freiwillig an verbindliche Grundsätze binden, gerade um Willkür zu begrenzen und Freiheit füreinander zu ermöglichen. Und auch ohne einen übergeordneten Gesetzgeber sind begründbare, stabile moralische Maßstäbe denkbar.
+Dabei sollte man den Wunsch nach Regeln nicht mit dem Wunsch nach Fremdbestimmung verwechseln. Menschen können sich freiwillig an verbindliche Grundsätze binden, gerade um Willkür zu begrenzen. Auch ohne einen übergeordneten Gesetzgeber sind begründbare moralische Maßstäbe denkbar.
 
-Eine alte philosophische Frage lässt die Schwierigkeit sichtbar werden: Ist etwas gut, weil Gott es gebietet, oder gebietet Gott es, weil es gut ist? Im ersten Fall müssen wir fragen, ob Güte bloß der Macht eines Befehls folgt. Im zweiten Fall scheint das Gute zumindest begrifflich nicht vollständig im Befehl aufzugehen. Religiöse Antworten auf diese Frage sind vielfältig; das Dilemma ist kein einfacher Gegenbeweis gegen eine göttliche Ordnung.
+Eine alte philosophische Frage lässt die Schwierigkeit sichtbar werden: Ist etwas gut, weil Gott es gebietet, oder gebietet Gott es, weil es gut ist? Im ersten Fall droht Güte bloß der Macht eines Befehls zu folgen. Im zweiten Fall geht das Gute nicht vollständig im Befehl auf. Das Dilemma widerlegt keine göttliche Ordnung; es zeigt, dass die Sehnsucht nach einem Maßstab noch nicht sagt, woher dieser kommt.
 
 So tritt neben die Sehnsucht, gesehen zu werden, eine zweite: der Wunsch, dass nicht alles zur Disposition steht. Vielleicht hoffen wir auf eine Instanz, der wir wichtig sind. Vielleicht hoffen wir zugleich auf ein Gutes, das auch dann gilt, wenn niemand von uns es durchsetzt. Und vielleicht geraten gerade diese Hoffnungen in Konflikt, wenn eine vermeintlich höhere Weisung unsere Fürsorge füreinander verletzt.
+
+### Gerechtigkeit, die niemand übersieht
+
+Der Wunsch nach Regeln ist noch nicht der Wunsch nach Gerechtigkeit. Regeln können bestehen und dennoch Unrecht zulassen. Wer erlebt hat, dass eine Tat ungesühnt bleibt oder ein Leiden niemanden interessiert, kann hoffen, dass es wenigstens eine Instanz gibt, der nichts entgeht. Ein Gericht kann urteilen, ohne zu trösten; ein liebendes Gegenüber kann trösten, ohne die Welt gerecht zu machen. Darum verdient die Hoffnung auf eine letzte Gerechtigkeit einen eigenen Platz neben dem Wunsch nach Orientierung.
 
 ### Jemand, an den wir uns wenden können
 
@@ -110,15 +116,13 @@ Ein Gebet kann um Heilung bitten, um Regen, um den Schutz eines Kindes. Es kann 
 
 Hier erweist sich die Metapher des Steuermanns erneut als zu eng. Ein Steuermann muss nicht zuhören; jemand, der zuhört, muss nicht lenken können. Und nicht jede religiöse Praxis richtet sich an ein einziges Wesen, das den gesamten Lauf der Dinge bestimmt.
 
-Ein Blick auf vielfältige afrikanische Traditionen verdeutlicht die Frage. Menschen wenden sich dort – je nach Gesellschaft und Überlieferung – an Ahnen, Gottheiten oder weitere spirituelle Vermittler; andere Vorstellungen kennen ein höchstes Wesen. Die Geschichte der Christianisierung lässt sich deshalb nicht einfach als erstmaliges Entdecken eines ansprechbaren Gottes erzählen. Neben religiösen Überzeugungen prägten politische Interessen, Missionsinstitutionen, Bildungschancen, Zwang, eigenständige Aneignung und die Fortführung älterer Praktiken die jeweiligen Veränderungen. Warum einzelne Menschen den Glauben wechselten, muss historisch untersucht werden, statt ihnen pauschal dasselbe Bedürfnis zuzuschreiben.
-
-Auch indigene australische Traditionen laden zur Vorsicht ein. In vielen von ihnen sind spirituelle Beziehungen, Country, Vorfahren und überlieferte Verpflichtungen eng verflochten. Das lässt sich nicht ohne Weiteres in die Vorstellung eines einzelnen himmlischen Steuermanns übersetzen. Ein Gefühl von Eingebundensein kann andere Formen annehmen als das Gespräch mit einer universalen Person.
+Die Vorstellung eines einzigen Steuermanns ist selbst eine kulturelle Form. Andere religiöse Traditionen kennen Beziehungen zu Ahnen, Gottheiten oder spirituellen Vermittlern; manche indigenen australischen Traditionen verstehen Zugehörigkeit auch durch Country, Vorfahren und überlieferte Verpflichtungen. Solche Vorstellungen lassen sich nicht einfach in das Bild eines einzelnen himmlischen Lenkers übersetzen. Ihre konkreten historischen Unterschiede verdienen eine eigene Untersuchung.
 
 Wir sollten daher mehrere Wünsche auseinanderhalten: **gesehen zu werden, Orientierung zu finden, auf Gerechtigkeit zu hoffen und eine Bitte an jemanden richten zu können.** Sie können sich in einer Gottesvorstellung vereinen. Sie können aber auch auseinanderfallen oder ganz andere religiöse und nichtreligiöse Ausdrucksformen finden.
 
-Vielleicht beten manche Menschen, weil sie überzeugt sind, dass jemand zuhört. Vielleicht beeinflusst die Erfahrung des Betens bei manchen auch die Vorstellung davon, wer zuhören könnte. Eine allgemeine Kausalerklärung wäre voreilig. Sicher ist nur: Die Frage, an wen wir uns wenden, reicht über die Frage hinaus, wer das Steuer hält.
+Vielleicht beten manche Menschen, weil sie überzeugt sind, dass jemand zuhört. Vielleicht beeinflusst die Erfahrung des Betens bei manchen auch die Vorstellung davon, wer zuhören könnte. Die Frage, an wen wir uns wenden, reicht über die Frage hinaus, wer das Steuer hält.
 
-## IV. Zusammenhang ohne Absicht
+## V. Zusammenhang ohne Absicht
 
 Eine Sprache entwickelt Regeln, ohne dass ein einzelner Sprecher sie erfinden oder durchsetzen müsste. Ein Wald besitzt Struktur, obwohl kein Baum den Wald plant. Märkte, Städte und wissenschaftliche Gemeinschaften zeigen Ordnungen, die weder bloß zufällig noch Ausdruck eines einheitlichen Willens sind. Ihre Strukturen entstehen aus vielen Vorgängen, Rückkopplungen, Gewohnheiten und Begrenzungen.
 
@@ -136,7 +140,7 @@ Eine Philosophie, die das Ganze denken möchte, sollte ihre eigenen Bilder nicht
 
 Die Frage ist nicht, welches Bild sich am behaglichsten anfühlt, sondern was wir mit ihm erkennen – und an welcher Stelle es uns zu sehen hindert. Vielleicht ist die Alternative „Lenker oder niemand“ selbst Ausdruck eines solchen Bildes: Auch eine Wirklichkeit mit Bewusstsein müsste nicht wie ein einzelner Mensch entscheiden; auch eine Wirklichkeit ohne übergeordneten Willen wäre nicht frei von Verbindungen, Formen und lokalen Absichten.
 
-## V. Die Übung des Offenlassens
+## VI. Die Übung des Offenlassens
 
 Es wäre einfach, den Steuermann vom Schiff zu schicken und das für Befreiung zu erklären. Aber das wäre nur die Umkehrung derselben Gewissheit. Eben noch musste jemand steuern; jetzt dürfte niemand steuern. In beiden Fällen wäre die Frage geschlossen, bevor wir genügend Gründe besitzen.
 
@@ -158,29 +162,5 @@ Es ist der Raum, in dem eine Frage eine Frage bleiben darf.
 
 Nicht für immer. Nicht aus Gleichgültigkeit. Sondern solange wir ihre Antwort noch nicht kennen.
 
----
 
-## Werkstattvermerk zur Fassung 0.5
-
-**Textstatus:** redaktionell überprüfter philosophischer Entwurf; noch keine abschließende Quellen- oder Zitatprüfung. Die Beispiele dienen der begrifflichen Klärung, nicht als empirischer Nachweis einer universellen menschlichen Motivation.
-
-**Methodische Leitlinien:**
-1. Aus einem psychologischen Bedürfnis folgt weder die Existenz noch die Nichtexistenz seines Gegenstands.
-2. Erklärung, Verantwortung und Verfügbarkeit sind zu unterscheiden.
-3. Die Suche nach Absichten ist zugleich mögliche Erkenntniskraft und mögliche Fehlerquelle.
-4. Zusammenhang ist nicht dasselbe wie Absicht.
-5. Offenheit ist eine Praxis, keine vorweggenommene metaphysische Entscheidung.
-
-**Redaktioneller Abgleich v0.2:** Erklärung, Verantwortung und Verfügbarkeit werden am Katastrophenbeispiel differenziert; die entlastende Wirkung eines bösen Plans wird ausdrücklich nicht verallgemeinert; der Gegenfall berechtigter Verantwortungszuschreibung wird gestärkt; die Verbindung zur Omnizedenz bleibt als Möglichkeit statt als Resultat formuliert. Der Titel ist ausdrücklich vorläufig: „Steuermann“ kann ein tradiertes männliches Führungsbild transportieren, ohne dass daraus eine Präferenz für männliche Führung folgt.
-
-**Redaktioneller Abgleich v0.3:** Neuer Abschnitt „Gesehen werden, ohne gelenkt zu werden“ in Kapitel III: Die zentrale Hypothese verschiebt sich von bloßer Kontrolle zu der Sehnsucht nach Wahrnehmung und Zuwendung. Steuerung, Wahrnehmung und Fürsorge werden getrennt; die Gegenprobe der Überwachung und die metaphysische Ergebnisoffenheit bleiben ausdrücklich erhalten. Titelentscheidung weiterhin offen.
-
-**Redaktioneller Abgleich v0.4:** Ergänzung um die eigenständige Sehnsucht nach übergeordneten Regeln, moralischer Verbindlichkeit und Gerechtigkeit. Das Euthyphron-Dilemma wird als Frage, nicht als Widerlegung religiöser Ethik eingeführt; Wunsch nach Orientierung, Freiheit und möglicher Verantwortungsabgabe bleiben unterscheidbar. Titel weiter vorläufig.
-
-**Redaktioneller Abgleich v0.5:** Ursprünglicher Titel „Die Sehnsucht nach dem Steuermann“ bewusst beibehalten, weil seine männlich codierte Führungsmetapher selbst zum Untersuchungsgegenstand wird. Ansprechbarkeit als vierte Bedürfnisdimension ergänzt; kulturvergleichende Beispiele aus Afrika und Australien bewusst vorsichtig und mit Verweis auf die gesonderte Forschungsnotiz eingesetzt. Keine Gleichsetzung von Religionswechsel mit bloßem Bedürfnisausgleich.
-
-**Recherchegrundlage:** [Forschungsnotiz zu Afrika, Australien und spirituellen Adressaten](recherchen/2026-11-15-gebet-spirituelle-adressaten-afrika-australien.md). Für eine Publikationsfassung müssen die historischen Einzelbehauptungen nochmals anhand der dort aufgeführten Quellen geprüft werden.
-
-**Für die nächste Revision:** Stil und Übergänge weiter verdichten; mögliche Bezüge zu Hume, Nietzsche, Freud, Piaget und Forschung zur Zuschreibung von Absicht nur nach Quellenprüfung einarbeiten; bei der Schlussredaktion prüfen, ob die bewusst problematische Metapher für Leserinnen und Leser deutlich genug als Frage statt als Behauptung erkennbar ist.
-
-**Versionsführung:** Jede Überarbeitung als separater Git-Commit mit aussagekräftiger Änderungsbeschreibung; frühere Textfassungen bleiben über die Git-Historie rekonstruierbar.
+*Entstehungsgeschichte, Quellen- und Werkstattnotizen sind [separat dokumentiert](werkstatt/2026-11-15-steuermann-versionsnotizen.md).*
