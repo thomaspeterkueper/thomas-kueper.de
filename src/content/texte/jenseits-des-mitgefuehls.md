@@ -23,6 +23,8 @@ Unsere Aufmerksamkeit ist begrenzt. Nähe und vertraute Geschichten bewegen uns 
 
 Eine Resonanzethik muss deshalb erklären, weshalb auch jene Anspruch auf gerechte Behandlung besitzen, deren Erfahrungen niemals unmittelbar eine Antwort in uns auslösen.
 
+Mit Resonanz ist hier die Möglichkeit gemeint, von fremden Erfahrungen berührt zu werden, mit eigener Stimme zu antworten und dabei den eigenen Blick zu verändern. Eine solche Offenheit kann wertvoll sein; die Rechte anderer dürfen aber nicht davon abhängen, ob sie tatsächlich entsteht.
+
 In einer persönlichen Begegnung können wir zumindest versuchen, auf die Erfahrung des anderen zu antworten. Aber wie schützen wir Menschen, denen wir niemals begegnen – oder deren Lebensbedingungen bereits bestimmen, ob sie überhaupt gehört werden können?
 
 Entscheidend ist dabei auch ihr Spielraum: die Möglichkeiten, die ihnen tatsächlich offenstehen, ihr Leben zu deuten, zu gestalten und selbst zu handeln. Eine gerechte Ordnung muss diese Möglichkeiten berücksichtigen, selbst wenn niemand persönlich Anteil nimmt.
