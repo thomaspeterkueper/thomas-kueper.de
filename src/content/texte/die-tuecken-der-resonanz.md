@@ -7,7 +7,7 @@ typ: "Essay"
 tags: ["Essay", "Resonanzethik", "Mitgefühl", "Spielraum", "Verantwortung", "Gerechtigkeit"]
 date: "2026"
 author: "Thomas Peter Küper"
-order: 96
+order: 1.1
 draft: false
 ---
 
@@ -127,7 +127,7 @@ Die Ungewissheit darüber lässt sich nicht immer beseitigen.
 
 - Friedrich Nietzsche: *Morgenröthe. Gedanken über die moralischen Vorurtheile* (1881), Zweites Buch, §§ 133–134. [Digitaler Originaltext](https://projekt-gutenberg.org/authors/friedrich-wilhelm-nietzsche/books/morgenroethe/chapter/3/).
 - Friedrich Nietzsche: *Der Antichrist* (verfasst 1888, zuerst veröffentlicht 1895), § 7. [Digitaler Text](https://www.nietzschesource.org/eKGWB/AC-1).
-- Hartmut Rosa: *Resonanz. Eine Soziologie der Weltbeziehung*. Berlin: Suhrkamp, 2016, ISBN 978-3-518-58626-6. [Bibliografischer Nachweis](https://www.suhrkamp.de/rights/book/hartmut-rosa-resonance-fr-9783518586266).
+- Hartmut Rosa: *Resonanz. Eine Soziologie der Weltbeziehung*. Berlin: Suhrkamp, 2016, ISBN 978-3-518-58626-6. [Bibliografischer Nachweis](https://library.fes.de/TouchPoint/perma.do?b=0&l=de&q=010+%3D+%22BV042615685%22+IN+%5B2%5D&v=sunrise).
 - Hartmut Rosa: *Unverfügbarkeit*. Salzburg/Wien: Residenz Verlag, 2018, ISBN 978-3-7017-3446-7. [Verlagsangaben](https://www.residenzverlag.com/buch/unverfugbarkeit-1).
 
 *Die Gedankenfälle und die hier entwickelte normative Position sind eigene Überlegungen; die genannten Werke dienen der begrifflichen und philosophischen Einordnung.*
