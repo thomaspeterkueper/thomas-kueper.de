@@ -27,7 +27,7 @@ Diese Möglichkeit muss keine böse Absicht voraussetzen. Sie liegt bereits in d
 
 Nicht jede Beeinflussung ist Manipulation. Ohne die Wirkung anderer Menschen auf unser Denken und Fühlen könnten wir kaum lernen, lieben oder uns verändern.
 
-Beim Mitleid haben wir bereits zwei Fragen gestellt: Können wir unsere Wahrnehmung korrigieren lassen? Und was geschieht mit den Möglichkeiten dessen, dem wir helfen wollen? Nun kommt eine dritte Perspektive hinzu: Auch der Mensch, an den eine Bitte gerichtet wird, hat einen eigenen Spielraum.
+Beim Mitleid haben wir bereits zwei Fragen gestellt: Können wir unsere Wahrnehmung korrigieren lassen? Und was geschieht mit den Möglichkeiten dessen, dem wir helfen wollen? Nun kommt eine dritte Perspektive hinzu: Auch der Mensch, an den eine Bitte gerichtet wird, hat einen eigenen Spielraum – also reale Möglichkeiten, selbst zu entscheiden, zu handeln und sein Leben zu gestalten.
 
 Doch wann wird aus dieser Offenheit eine Verwundbarkeit, die andere ausnutzen können? Und wie können wir sie schützen, ohne uns gegen den anderen zu verschließen?
 
@@ -48,6 +48,8 @@ Die Motive menschlichen Handelns bleiben selten vollkommen durchsichtig. Ein Men
 Wer jede unangenehme Forderung als Manipulation deutet, kann sich gegen berechtigte Kritik immunisieren. Wer dagegen jede Äußerung von Leid als zwingend versteht, gibt womöglich die eigene Entscheidungsfreiheit auf.
 
 Entscheidend ist deshalb nicht allein, was wir über die Absicht eines Menschen vermuten, sondern auch, **wie eine Forderung begründet und durchgesetzt wird**. Können Gründe ausgetauscht werden? Welche Verpflichtungen bestehen bereits? Darf widersprochen werden, ohne dass daraus ein Anspruch auf Unterwerfung entsteht?
+
+Dabei sind nicht alle Beteiligten gleich mächtig. Wer über Geld, Wohnraum, Pflege oder Anerkennung verfügt, kann Erwartungen auch ohne offene Drohung durchsetzen. Eine formale Möglichkeit zum Nein bedeutet wenig, wenn ihre Ausübung den Verlust der Lebensgrundlage oder notwendiger Unterstützung nach sich zieht.
 
 **Ein berechtigter Anspruch verliert seine Berechtigung nicht dadurch, dass wir ihn unangenehm finden. Aber er erlaubt nicht jedes Mittel seiner Durchsetzung.**
 
