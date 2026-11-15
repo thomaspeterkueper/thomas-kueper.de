@@ -4,7 +4,7 @@ subtitle: "Vielleicht ist die Frage nicht, ob jemand steuert. Vielleicht ist die
 author: "Thomas Peter Küper"
 date: 2026-11-15
 status: "Arbeitsfassung"
-version: "0.3"
+version: "0.4"
 topics: ["Philosophie", "Kontingenz", "Verantwortung", "Erkenntnis", "Omnizedenz"]
 ---
 
@@ -12,7 +12,7 @@ topics: ["Philosophie", "Kontingenz", "Verantwortung", "Erkenntnis", "Omnizedenz
 
 *Vielleicht ist die Frage nicht, ob jemand steuert. Vielleicht ist die Frage, warum wir so dringend wollen, dass jemand steuert.*
 
-**Thomas Peter Küper · Überarbeitete Arbeitsfassung 0.3, 15. November 2026**
+**Thomas Peter Küper · Überarbeitete Arbeitsfassung 0.4, 15. November 2026**
 
 Vielleicht sitzt niemand am Steuer.
 
@@ -90,6 +90,18 @@ Vielleicht wünschen wir uns nicht in erster Linie einen Herrscher, sondern ein 
 
 Doch auch diese Deutung darf nicht zum Schlüssel für alle Menschen und alle Formen des Glaubens erklärt werden. Manche suchen Wahrheit, andere Gerechtigkeit, manche Geborgenheit, manche keinen übergeordneten Adressaten. Und die menschliche Sehnsucht nach Zuwendung entscheidet nicht darüber, ob das Universum selbst ein Gegenüber besitzt. Sie eröffnet nur eine Frage, die tiefer reicht als die nach einem Steuerrad: **Ist es jemandem wichtig, dass wir da sind?**
 
+### Der Wunsch nach einer verbindlichen Ordnung
+
+Doch die Sehnsucht nach einem Gegenüber erklärt nicht alles. Manche Menschen wünschen sich ausdrücklich, dass eine höhere Instanz Regeln setzt, Grenzen zieht und zwischen Gut und Böse unterscheidet. Sie suchen nicht allein Beachtung, sondern Orientierung; nicht nur Fürsorge, sondern einen Maßstab, der über den wechselnden Vorlieben und Machtverhältnissen einzelner Menschen steht.
+
+Dafür lassen sich verschiedene Gründe denken. Eine übergeordnete Norm kann Halt geben, gerade wenn sich menschliche Urteile widersprechen. Sie kann Hoffnung auf Gerechtigkeit wecken, wenn irdische Institutionen versagen. Sie kann auch Verantwortung erleichtern – und im ungünstigen Fall dazu verführen, Verantwortung abzugeben: „Ich folge nur einer höheren Weisung.“ Dieselbe Vorstellung, die Gewissensentscheidungen schärfen könnte, kann sie also ebenso ersetzen.
+
+Dabei sollte man den Wunsch nach Regeln nicht mit dem Wunsch nach Fremdbestimmung verwechseln. Menschen können sich freiwillig an verbindliche Grundsätze binden, gerade um Willkür zu begrenzen und Freiheit füreinander zu ermöglichen. Und auch ohne einen übergeordneten Gesetzgeber sind begründbare, stabile moralische Maßstäbe denkbar.
+
+Eine alte philosophische Frage lässt die Schwierigkeit sichtbar werden: Ist etwas gut, weil Gott es gebietet, oder gebietet Gott es, weil es gut ist? Im ersten Fall müssen wir fragen, ob Güte bloß der Macht eines Befehls folgt. Im zweiten Fall scheint das Gute zumindest begrifflich nicht vollständig im Befehl aufzugehen. Religiöse Antworten auf diese Frage sind vielfältig; das Dilemma ist kein einfacher Gegenbeweis gegen eine göttliche Ordnung.
+
+So tritt neben die Sehnsucht, gesehen zu werden, eine zweite: der Wunsch, dass nicht alles zur Disposition steht. Vielleicht hoffen wir auf eine Instanz, der wir wichtig sind. Vielleicht hoffen wir zugleich auf ein Gutes, das auch dann gilt, wenn niemand von uns es durchsetzt. Und vielleicht geraten gerade diese Hoffnungen in Konflikt, wenn eine vermeintlich höhere Weisung unsere Fürsorge füreinander verletzt.
+
 ## IV. Zusammenhang ohne Absicht
 
 Eine Sprache entwickelt Regeln, ohne dass ein einzelner Sprecher sie erfinden oder durchsetzen müsste. Ein Wald besitzt Struktur, obwohl kein Baum den Wald plant. Märkte, Städte und wissenschaftliche Gemeinschaften zeigen Ordnungen, die weder bloß zufällig noch Ausdruck eines einheitlichen Willens sind. Ihre Strukturen entstehen aus vielen Vorgängen, Rückkopplungen, Gewohnheiten und Begrenzungen.
@@ -132,7 +144,7 @@ Nicht für immer. Nicht aus Gleichgültigkeit. Sondern solange wir ihre Antwort 
 
 ---
 
-## Werkstattvermerk zur Fassung 0.3
+## Werkstattvermerk zur Fassung 0.4
 
 **Textstatus:** redaktionell überprüfter philosophischer Entwurf; noch keine abschließende Quellen- oder Zitatprüfung. Die Beispiele dienen der begrifflichen Klärung, nicht als empirischer Nachweis einer universellen menschlichen Motivation.
 
@@ -146,6 +158,8 @@ Nicht für immer. Nicht aus Gleichgültigkeit. Sondern solange wir ihre Antwort 
 **Redaktioneller Abgleich v0.2:** Erklärung, Verantwortung und Verfügbarkeit werden am Katastrophenbeispiel differenziert; die entlastende Wirkung eines bösen Plans wird ausdrücklich nicht verallgemeinert; der Gegenfall berechtigter Verantwortungszuschreibung wird gestärkt; die Verbindung zur Omnizedenz bleibt als Möglichkeit statt als Resultat formuliert. Der Titel ist ausdrücklich vorläufig: „Steuermann“ kann ein tradiertes männliches Führungsbild transportieren, ohne dass daraus eine Präferenz für männliche Führung folgt.
 
 **Redaktioneller Abgleich v0.3:** Neuer Abschnitt „Gesehen werden, ohne gelenkt zu werden“ in Kapitel III: Die zentrale Hypothese verschiebt sich von bloßer Kontrolle zu der Sehnsucht nach Wahrnehmung und Zuwendung. Steuerung, Wahrnehmung und Fürsorge werden getrennt; die Gegenprobe der Überwachung und die metaphysische Ergebnisoffenheit bleiben ausdrücklich erhalten. Titelentscheidung weiterhin offen.
+
+**Redaktioneller Abgleich v0.4:** Ergänzung um die eigenständige Sehnsucht nach übergeordneten Regeln, moralischer Verbindlichkeit und Gerechtigkeit. Das Euthyphron-Dilemma wird als Frage, nicht als Widerlegung religiöser Ethik eingeführt; Wunsch nach Orientierung, Freiheit und möglicher Verantwortungsabgabe bleiben unterscheidbar. Titel weiter vorläufig.
 
 **Für die nächste Revision:** Stil und Übergänge weiter verdichten; mögliche Bezüge zu Hume, Nietzsche, Freud, Piaget und Forschung zur Zuschreibung von Absicht nur nach Quellenprüfung einarbeiten; prüfen, ob „Die Sehnsucht nach dem Steuermann“, „Die Sehnsucht nach jemandem am Steuer“ oder „Warum muss jemand steuern?“ den ergebnisoffenen Gedanken am besten trägt.
 
