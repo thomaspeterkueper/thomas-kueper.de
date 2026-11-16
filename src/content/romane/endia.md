@@ -25,3 +25,9 @@ tags: ["Roman"]
   <h4>Buch 3</h4>
     <span class="vol-title">Die Transformation</span>
     <p>Vale versteht die wahre Natur von SUN und seiner eigenen Rolle.</p>
+
+<h2>Vertiefung</h2>
+<p>
+  Die ausführliche Weltarbeit zu ENDIA entsteht im eigenständigen Projekt <em>endia.de</em>:
+  <a href="https://github.com/thomaspeterkueper/endia.de" rel="external">Zur Vertiefung: ENDIA →</a>
+</p>
