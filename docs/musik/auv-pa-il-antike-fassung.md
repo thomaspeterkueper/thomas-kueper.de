@@ -1,6 +1,6 @@
-# Auv-Pa-il – antike Fassung (Entwurf v0.1)
+# Auv-Pa-il – antike Fassung (Entwurf v0.2)
 
-**Stand:** 21. November 2026 – Entwurf, erste der „antiken Fassungen“ (wöchentlich samstags, Thomas: „vielleicht erstmal ein Song, dann nächsten Samstag wieder einen“)
+**Stand:** 21. November 2026 – v0.2: Thomas' Entscheidungen eingearbeitet (Wechselklage ja, Seikilos-Vorspiel ja, Lizenz CC BY-SA 4.0 mit Namensnennung, keine Textänderung); v0.1 Entwurf, erste der „antiken Fassungen“ (wöchentlich samstags, Thomas: „vielleicht erstmal ein Song, dann nächsten Samstag wieder einen“)
 **Text:** `src/content/texte/auv-pa-il.md` – unverändert, einsprachig Auv-Breth, ♩ = 44, D-Dorisch
 **Gegenstücke:** Earth-Orchestra-Fassung „Nichts ist verloren“ (Lyria 3.0, SharePoint Büro → Musik/NOXIA); `val-il-earth-orchestra.md`
 **Grundlage:** noxiagame `docs/world/chronomap-erde/wissen/musik-klang.md` (Abschnitt 5) und `urkunden-archive.md` (Abschnitt 4e)
@@ -62,7 +62,7 @@ Das Lied des Seikilos aus Tralles (1. oder 2. Jh.) ist die einzige vollständig 
 
 Auch inhaltlich antwortet es. Seikilos singt gegen den Tod: Solange du lebst, strahle, lass dich durch nichts betrüben; das Leben ist kurz, die Zeit fordert ihr Ende. „Auv-Pa-il“ singt in Strophe IV: Ich bin der Strahl, der dich wärmt. Die Klagefrauen Galiläas sangen den Tod dagegen aus. Zwei Antworten der Nachbarn auf dieselbe Frage – und Thomas' Lied steht zwischen ihnen.
 
-**Vorschlag:** Die Melodie des Seikilos-Lieds (gemeinfrei) erklingt **ohne Text** als Vorspiel auf dem Aulos, einen Ganzton tiefer, nach der Übertragung bei Pöhlmann/West (*Documents of Ancient Greek Music*, Nr. 23). So bleibt das Lied einsprachig, und die Nachbarschaft ist trotzdem hörbar.
+**Entschieden (Thomas, 21.11.2026):** Die Melodie des Seikilos-Lieds (gemeinfrei) erklingt **ohne Text** als Vorspiel auf dem Aulos, einen Ganzton tiefer, nach der Übertragung bei Pöhlmann/West (*Documents of Ancient Greek Music*, Nr. 23). So bleibt das Lied einsprachig, und die Nachbarschaft ist trotzdem hörbar.
 
 ## 4. Besetzung
 
@@ -75,7 +75,7 @@ Auch inhaltlich antwortet es. Seikilos singt gegen den Tod: Solange du lebst, st
 | Bodhrán | **Rahmentrommel** (*tof*), von einer Frau gespielt | Ex 15,20 | erst in Strophe IV, wie im Original |
 | Glasharfe auf *wi-Tor-ath* | **eine Zimbel**, ein einziger Schlag | Arachin 2,3–6 (eine Zimbel im Tempel) | der Riss, der keiner ist |
 | (Ende, Drone verklingt) | **eine einzige Rohrflöte** schließt | Arachin 2,3: „mit einer Flöte, weil sie schön ausklingt“ | Atemvers |
-| – | **Frauen** (3–5), *optional* | Moed Katan 3,8–9 | Wehklage im Unisono, Händeklatschen als Trauergeste |
+| – | **Frauen** (3–5) | Moed Katan 3,8–9 | Wehklage im Unisono, Händeklatschen als Trauergeste |
 
 Rohrflöten, nicht Metall: Die Mischna sagt, die Flöten im Tempel waren aus Rohr, „weil ihr Klang süßer ist“ (Arachin 2,3). Der Aulos hatte ein Doppelrohrblatt wie die Oboe. Er war keine Flöte im heutigen Sinn.
 
@@ -91,7 +91,7 @@ Rohrflöten, nicht Metall: Die Mischna sagt, die Flöten im Tempel waren aus Roh
 | Strophe IV – *Ich bin nicht gegangen* | 8 | Rahmentrommel setzt ein, sehr leise, im Atemrhythmus. Der Bordun wechselt von D auf A: die Bleibende wird zur Gehenden |
 | Atemvers | frei | Trommel und Leier verstummen. Aulos II hält noch A, dann verklingt er. *Auv … Auv … îl.* Stille. *Auv.* Zuletzt **eine einzige Rohrflöte**, ein Ton, verklingend. Danach die Stille von 30 Sekunden wie im Original |
 
-**Option Wechselklage (Thomas entscheidet).** Die Mischna unterscheidet zwei Formen. Bei der Wehklage singen alle zugleich. Bei der Klage spricht eine vor, und alle antworten nach ihr (Moed Katan 3,9, nach Jer 9,19). Für eine Aufführung im Erlebnis-Studio könnten die Frauen jeweils nur die Schlussformel einer Strophe wiederholen: *go-Ori-Ori* (I), *go-Ori* (II), *ku-i bi'sa-ona* (III), *go-Avi-Avi* (IV). Das wäre keine Änderung am Text, aber eine neue Aufführungsform. Weil der Text unter CC BY-NC-ND steht und das Lied für eine einzige Stimme gedacht ist, nur mit Thomas' Zustimmung.
+**Wechselklage (Thomas, 21.11.2026: ja).** Die Mischna unterscheidet zwei Formen. Bei der Wehklage singen alle zugleich. Bei der Klage spricht eine vor, und alle antworten nach ihr (Moed Katan 3,9, nach Jer 9,19). Für eine Aufführung im Erlebnis-Studio könnten die Frauen jeweils nur die Schlussformel einer Strophe wiederholen: *go-Ori-Ori* (I), *go-Ori* (II), *ku-i bi'sa-ona* (III), *go-Avi-Avi* (IV). Der Text bleibt unverändert: Die Frauen wiederholen nur, was die Klagefrau gesungen hat, kein neues Wort. Die Verwandlung der einen Stimme bleibt bei der Klagefrau.
 
 ## 6. Für eine eigene Produktion
 
@@ -114,16 +114,20 @@ reed pipe fading into silence.
 
 ## 7. Für noxia
 
-- **Erlebnis-Studio „Begräbnis im Dorf“ (Galiläa um 30):** zwei Flöten, eine Klagefrau, Frauen, die klagen und klatschen. Thomas' Lied als einzige gesungene Musik, angekündigt als „antike Fassung – eigene Schöpfung“.
+- **Erlebnis-Studio „Begräbnis im Dorf“ (Galiläa um 30):** zwei Flöten, eine Klagefrau, Frauen, die klagen und klatschen. Thomas' Lied als einzige gesungene Musik, angekündigt als „antike Fassung – eigene Schöpfung von Thomas Peter Küper“ (Namensnennung Pflicht).
 - **In einer griechischen Stadt (Gadara, Skythopolis):** nur das Seikilos-Vorspiel, als Musik der Nachbarn.
 - **Verbindung zu den Musikerverträgen:** Wer die Fassung im Spiel aufführen lässt, engagiert Musiker wie Sosos oder Kopreus' Truppe – Tageslohn, Brot, Öl, Esel (`urkunden-archive.md`, 4e).
 
-## 8. Offen
+## 8. Entscheidungen und Offenes
 
-- Option Wechselklage: ja oder nein?
-- Seikilos-Vorspiel: ja oder nein?
+**Entschieden (Thomas, 21.11.2026):** „Zu deinen Fragen 1 und 2 ja, Lizenzen wie bei nichts ist verloren, keine Textänderung und mein Name muss genannt werden.“
+- Wechselklage: ja – die Frauen wiederholen die Schlussformeln, ohne neuen Text.
+- Seikilos-Vorspiel: ja – ohne Text, einen Ganzton tiefer.
+- Lizenz der antiken Fassung (Musik, Arrangement, Aufnahmen): **CC BY-SA 4.0** wie „Nichts ist verloren“. Namensnennung Pflicht: „Thomas Peter Küper“.
+- Der Liedtext bleibt unverändert und behält seine eigene Lizenz (CC BY-NC-ND 4.0).
+
+**Offen:**
 - Bordun auf dem Doppelaulos: dass eine Röhre einen Bordun hielt, ist eine verbreitete Deutung, aber nicht gesichert.
-- Lizenz der antiken Fassung: wie der Text (CC BY-NC-ND 4.0) oder wie „Nichts ist verloren“ (CC BY-SA 4.0)?
 - Nächster Samstag (28.11.2026): „Val-il“ – dort passt die Festtruppe des Kopreus (Aulosspieler, Trommeln, Tanz) zum Volksgesang und zur durchgehenden Perkussion.
 
 ## Quellen
@@ -139,4 +143,6 @@ reed pipe fading into silence.
 
 ---
 
-*© Thomas Peter Küper, November 2026 – Entwurf. Text des Lieds: CC BY-NC-ND 4.0.*
+*© Thomas Peter Küper, November 2026 – Entwurf.*
+
+*Antike Fassung (Musik, Arrangement, Aufnahmen): [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de) – Namensnennung: Thomas Peter Küper. Liedtext unverändert: [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.de). In noxia stets mit dem Hinweis „antike Fassung – eigene Schöpfung von Thomas Peter Küper“.*
