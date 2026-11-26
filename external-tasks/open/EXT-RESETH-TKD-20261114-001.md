@@ -1,3 +1,16 @@
+---
+id: EXT-RESETH-TKD-20261114-001
+title: "Essays: Rückabgleich mit neuer Resonanzethik-Trilogie"
+status: open
+source: RESETH
+target: TKD
+created: 2026-11-14
+requested_by: T.P.K.
+priority: medium
+affects: [TKD, RESETH, OMNI]
+supersedes: []
+---
+
 # EXT-RESETH-TKD-20261114-001 – Essays: Rückabgleich mit neuer Resonanzethik-Trilogie
 
 **Status:** open / redaktioneller Prüfauftrag, keine stille Veröffentlichung. **Quelle:** [Resonanzethik PR #3](https://github.com/thomaspeterkueper/resonanceethics.org/pull/3).
